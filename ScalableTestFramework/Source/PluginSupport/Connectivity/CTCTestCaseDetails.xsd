@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CTCTestCaseDetails" targetNamespace="http://tempuri.org/CTCTestCaseDetails.xsd" xmlns:mstns="http://tempuri.org/CTCTestCaseDetails.xsd" xmlns="http://tempuri.org/CTCTestCaseDetails.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CTCTestCaseDetails" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="CTCTestCaseDetails" msprop:Generator_UserDSName="CTCTestCaseDetails">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TestCaseDetails" msprop:Generator_TableClassName="TestCaseDetailsDataTable" msprop:Generator_TableVarName="tableTestCaseDetails" msprop:Generator_TablePropName="TestCaseDetails" msprop:Generator_RowDeletingName="TestCaseDetailsRowDeleting" msprop:Generator_UserTableName="TestCaseDetails" msprop:Generator_RowChangingName="TestCaseDetailsRowChanging" msprop:Generator_RowEvHandlerName="TestCaseDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="TestCaseDetailsRowDeleted" msprop:Generator_RowEvArgName="TestCaseDetailsRowChangeEvent" msprop:Generator_RowChangedName="TestCaseDetailsRowChanged" msprop:Generator_RowClassName="TestCaseDetailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IsSelected" msprop:Generator_ColumnVarNameInTable="columnIsSelected" msprop:Generator_ColumnPropNameInRow="IsSelected" msprop:Generator_ColumnPropNameInTable="IsSelectedColumn" msprop:Generator_UserColumnName="IsSelected" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="Category" msprop:Generator_ColumnVarNameInTable="columnCategory" msprop:Generator_ColumnPropNameInRow="Category" msprop:Generator_ColumnPropNameInTable="CategoryColumn" msprop:Generator_UserColumnName="Category" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" minOccurs="0" />
+              <xs:element name="Protocol" msprop:Generator_ColumnVarNameInTable="columnProtocol" msprop:Generator_ColumnPropNameInRow="Protocol" msprop:Generator_ColumnPropNameInTable="ProtocolColumn" msprop:Generator_UserColumnName="Protocol" type="xs:string" minOccurs="0" />
+              <xs:element name="Connectivity" msprop:Generator_ColumnVarNameInTable="columnConnectivity" msprop:Generator_ColumnPropNameInRow="Connectivity" msprop:Generator_ColumnPropNameInTable="ConnectivityColumn" msprop:Generator_UserColumnName="Connectivity" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

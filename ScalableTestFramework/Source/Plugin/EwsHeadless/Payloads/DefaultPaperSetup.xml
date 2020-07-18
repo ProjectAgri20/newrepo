@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Printers FilterType="DefaultPaperSetup">
+  <Printer Type="PHOENIX" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>http://{0}/hp/device/set_config_ph.html/config</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>sizePromptSupported={sizePromptSupported}amp;DefaultPaperSize={DefaultPaperSize}amp;DefaultPaperType={DefaultPaperType}amp;ManualFeed={ManualFeed}amp;SizePrompt={SizePrompt}amp;Duplex={Duplex}amp;PaperOutHandling={PaperOutHandling}amp;Apply=Apply</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+</Printers>

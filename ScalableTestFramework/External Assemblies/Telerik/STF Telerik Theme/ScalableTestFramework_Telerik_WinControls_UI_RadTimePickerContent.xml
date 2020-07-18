@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ScalableTestFramework" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="TPContentBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadTimePickerContentElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimeTableStackLayoutElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimeTableStackLayoutElement.ClockBeforeTables" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="TimePickerClockStack" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TPHeaderFill,BlackText,TPCLockHeaderBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderLeftColor" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderRightColor" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderTopColor" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderTopWidth" Value="4" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ClockHeaderElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TPCustomBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="True" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimePickerHourAndMinustesTablesStack.ClockBeforeTables" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimePickerHourAndMinustesTablesStack" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TPHeaderFill,BlackText,TPPMHeaderBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimePickerContainerHoursHeader" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TPHeaderFill,BlackText,TPPMHeaderBorder2">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimePickerContainerHoursHeader.ClockBeforeTables1" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NavigateBackImage,TransparentBorder1,TransparentFill,5060Padding">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimeTableHeaderElementLeftArrow" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NavigateForwardImage,TransparentBorder1,TransparentFill,6050Padding">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimeTableHeaderElementRightArrow" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverBorder,ButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimeTableHeaderElementLeftArrow.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedBorder,ButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimeTableHeaderElementLeftArrow.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverBorder,ButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimeTableHeaderElementRightArrow.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedBorder,ButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimeTableHeaderElementRightArrow.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalendarCellHoverBorder,CalendarCellHoverFill,RoundRectShapeAll2">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimeTableVisualElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalendarCellSelectedBorder,CalendarCellSelectedFill,RoundRectShapeAll2">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimeTableVisualElement.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder1,TransparentFill,RoundRectShapeAll2">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimeTableVisualElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,TransparentBorder1">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimeTableVisualElement.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="TimePickerContainerMinutes" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TPHeaderFill,BlackText,TPPMHeaderBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimePickerContainerMinutesHeader" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TPHeaderFill,BlackText,TPPMHeaderBorder3">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimePickerContainerMinutesHeader.ClockBeforeTables1" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DoneBorder,DoneFill,Padding(3;3;3;3)">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.TimePickerDoneButtonElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadTimePickerContent" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadTimePickerContentElement" />
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadTimePickerContent" ElementType="Telerik.WinControls.UI.RadButtonElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

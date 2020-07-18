@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0A46E0AE-CFDE-4E44-BD45-94FA38C8FC1A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HP.ScalableTest.PluginSupport.PullPrint</RootNamespace>
+    <AssemblyName>PluginSupport.PullPrint</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OutputPath>..\..\..\Binaries\STF.Plugin\</OutputPath>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
+    <CodeAnalysisRuleSet>BasicDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DeviceAutomation-2.2, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\External Assemblies\DeviceAutomation-2.2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.WinControls, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\External Assemblies\Telerik\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\External Assemblies\Telerik\Telerik.WinControls.GridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\External Assemblies\Telerik\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="EmptyQueueException.cs" />
+    <Compile Include="ExistingQueueForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExistingQueueForm.Designer.cs">
+      <DependentUpon>ExistingQueueForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocalQueueSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocalQueueSelectionForm.Designer.cs">
+      <DependentUpon>LocalQueueSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintManager.cs" />
+    <Compile Include="PrintQueueNotAvailableException.cs" />
+    <Compile Include="PrintTabConfigControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PrintTabConfigControl.designer.cs">
+      <DependentUpon>PrintTabConfigControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PullPrintException.cs" />
+    <Compile Include="PullPrintingActivityData.cs" />
+    <Compile Include="PullPrintingSimulationException.cs" />
+    <Compile Include="PullPrintJobRetrievalLog.cs" />
+    <Compile Include="PullPrintManager.cs" />
+    <Compile Include="RemoteQueueSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoteQueueSelectionForm.Designer.cs">
+      <DependentUpon>RemoteQueueSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeStatusEventArgs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DeviceAutomation\STF.DeviceAutomation.csproj">
+      <Project>{8fa37af9-f2b8-4e72-bff7-580491a62832}</Project>
+      <Name>STF.DeviceAutomation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FrameworkInternal\STF.FrameworkInternal.csproj">
+      <Project>{1D38C759-E5F6-4603-BBBC-566F1276ABA2}</Project>
+      <Name>STF.FrameworkInternal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\STF.Framework.csproj">
+      <Project>{b91dcc51-8664-49e3-97d0-6fcfd2918a1a}</Project>
+      <Name>STF.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Print\STF.Print.csproj">
+      <Project>{b549acae-daed-4f96-a962-14bd02428770}</Project>
+      <Name>STF.Print</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utility\STF.Utility.csproj">
+      <Project>{0a02ea9d-11d5-4078-9036-385709cb365a}</Project>
+      <Name>STF.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MemoryCollection\PluginSupport.MemoryCollection.csproj">
+      <Project>{C994BC14-B4D7-4F61-9DD9-C18F2619502C}</Project>
+      <Name>PluginSupport.MemoryCollection</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ExistingQueueForm.resx">
+      <DependentUpon>ExistingQueueForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalQueueSelectionForm.resx">
+      <DependentUpon>LocalQueueSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintTabConfigControl.resx">
+      <DependentUpon>PrintTabConfigControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="RemoteQueueSelectionForm.resx">
+      <DependentUpon>RemoteQueueSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <CodeAnalysisLogFile>$(IntermediateOutputPath)$(TargetFileName).CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisSucceededFile>$(IntermediateOutputPath)$(TargetFileName).lastcodeanalysissucceeded</CodeAnalysisSucceededFile>
+  </PropertyGroup>
+</Project>

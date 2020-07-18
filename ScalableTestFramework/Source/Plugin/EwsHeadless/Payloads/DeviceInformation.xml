@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Printers FilterType="DeviceInformation">
+  <Printer Type="PHOENIX" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>http://{0}/hp/device/set_config_deviceInfo.html/config</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>DeviceDescription={DeviceDescription}amp;AssetNumber={AssetNumber}amp;CompanyName={CompanyName}amp;ContactPerson={ContactPerson}amp;DeviceLocation={DeviceLocation}amp;geoLocation={geoLocation}amp;apply_button=Apply</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="JEDI" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/DeviceInformation/Save</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>DeviceName={DeviceDescription}amp;DeviceLocation={DeviceLocation}amp;AssetNumber={AssetNumber}amp;CompanyName={CompanyName}amp;ContactPerson={ContactPerson}amp;FormButtonSubmit=Apply</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip, deflate, br</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Cache-Control</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="PHOENIX" SubFilterType="">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>20130717_0848</FirmwareVersion>
+      <FirmwareVersion>20140205_0550</FirmwareVersion>
+    </FirmwareVersions>
+    <NoOfRequests>1</NoOfRequests>
+    <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+      <URL>http://{0}/hp/device/set_config_deviceInfo.html/config</URL>
+      <WizardIDURL></WizardIDURL>
+      <ViewstateURL></ViewstateURL>
+      <HideURL></HideURL>
+      <Method>POST</Method>
+	    <Payload>DeviceDescription={DeviceDescription}amp;AssetNumber={AssetNumber}amp;CompanyName={CompanyName}amp;ContactPerson={ContactPerson}amp;DeviceLocation={DeviceLocation}amp;geoLocation={geoLocation}amp;Apply=Apply</Payload>
+      <Headers>
+        <Header Order="1">
+          <HeaderName>AcceptEncoding</HeaderName>
+          <HeaderValue>gzip,deflate</HeaderValue>
+        </Header>
+        <Header Order="2">
+          <HeaderName>Pragma</HeaderName>
+          <HeaderValue>no-cache</HeaderValue>
+        </Header>
+      </Headers>
+    </Request>
+  </Printer>
+  <Printer Type="JEDI" SubFilterType="">
+    <ModelNames>
+      <ModelName>HP LaserJet 700 color MFP M775</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>2357492_473170</FirmwareVersion>
+    </FirmwareVersions>
+    <NoOfRequests>1</NoOfRequests>
+    <Request Order="1" sessionID="Yes" Viewstate="">
+      <URL>https://{0}/hp/device/DeviceInformation/Save</URL>
+      <WizardIDURL></WizardIDURL>
+      <ViewstateURL></ViewstateURL>
+      <HideURL></HideURL>
+      <Method>POST</Method>
+      <Payload>DeviceName={DeviceDescription}amp;DeviceLocation={DeviceLocation}amp;AssetNumber={AssetNumber}amp;CompanyName={CompanyName}amp;ContactPerson={ContactPerson}amp;FormButtonSubmit=Apply</Payload>
+      <Headers>
+        <Header Order="1">
+          <HeaderName>Accept-Encoding</HeaderName>
+          <HeaderValue>gzip, deflate, br</HeaderValue>
+        </Header>
+        <Header Order="2">
+          <HeaderName>Cache-Control</HeaderName>
+          <HeaderValue>no-cache</HeaderValue>
+        </Header>
+      </Headers>
+    </Request>
+  </Printer>
+<Printer Type="OMNI" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <NoOfRequests>1</NoOfRequests>
+    <Request Order="1" sessionID="Yes" Viewstate="">
+      <URL>https://{0}/hp/device/DeviceInformation/Save</URL>
+      <Referer>https://{0}/hp/device/DeviceInformation/Index</Referer>
+      <WizardIDURL></WizardIDURL>
+      <ViewstateURL></ViewstateURL>
+      <HideURL></HideURL>
+      <Method>POST</Method>
+      <Payload>DeviceName={DeviceName}amp;DeviceLocation={DeviceLocation}amp;AssetNumber={AssetNumber}amp;CompanyName={CompanyName}amp;ContactPerson={ContactPerson}amp;FormButtonSubmit=Apply</Payload>
+      <Headers>
+        <Header Order="1">
+          <HeaderName>Accept-Encoding</HeaderName>
+          <HeaderValue>gzip, deflate</HeaderValue>
+        </Header>
+        <Header Order="2">
+          <HeaderName>Cache-Control</HeaderName>
+          <HeaderValue>no-cache</HeaderValue>
+        </Header>
+      </Headers>
+    </Request>
+  </Printer>
+</Printers>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dictionary>
+  <Words>
+    <Recognized>
+      <Word>param</Word>
+      <Word>str</Word>
+      <Word>Util</Word>
+    </Recognized>
+  </Words>
+  <Acronyms>
+    <CasingExceptions>
+      <Acronym>STF</Acronym>
+    </CasingExceptions>
+  </Acronyms>
+</Dictionary>

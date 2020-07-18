@@ -1,0 +1,18 @@
+select distinct
+	es.EnterpriseScenarioId as ESID,
+	es.Name as ESN,
+	es.FolderId as ESFID,
+	vr.VirtualResourceId as VRID,
+	vr.Name as VRN,
+	vr.FolderId as VRFID,
+	vr.ResourceType as VRT,
+	vr.Enabled as VRE,
+	md.VirtualResourceMetadataId as MDID,
+	md.Name as MDN,
+	md.FolderId as MDFID,
+	md.MetadataType as MDT,
+	md.Enabled as MDE
+from
+	EnterpriseScenario es
+		left outer join VirtualResource vr on vr.EnterpriseScenarioId = es.EnterpriseScenarioId
+		left outer join VirtualResourceMetadata md on vr.VirtualResourceId = md.VirtualResourceId

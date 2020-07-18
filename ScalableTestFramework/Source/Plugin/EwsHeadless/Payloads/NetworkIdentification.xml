@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Printers FilterType="NetworkIdentification">
+  
+  <Printer Type="SIRIUS" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>  
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>  
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/IoMgmt/IoConfig.xml</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>PUT</Method>
+        <Payload>
+          lt;?xml version="1.0" encoding="UTF-8"?gt;lt;!-- THIS DATA SUBJECT TO DISCLAIMER(S) INCLUDED WITH THE PRODUCT OF ORIGIN. --gt;lt;io:IoConfig xmlns:io="http://www.hp.com/schemas/imaging/con/ledm/iomgmt/2008/11/30" xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/" xmlns:dd3="http://www.hp.com/schemas/imaging/con/dictionaries/2009/04/06" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.hp.com/schemas/imaging/con/ledm/iomgmt/2008/11/30 ../../schemas/IoMgmt.xsd"gt;lt;io:IoDeviceConfiggt;lt;dd3:Hostnamegt;{HostName}lt;/dd3:Hostnamegt;lt;/io:IoDeviceConfiggt;lt;io:IoDeviceProtocolConfiggt;lt;io:IPv4DomainNamegt;lt;dd3:DomainNamegt;{DomainNameIPv4IPv6}lt;/dd3:DomainNamegt;lt;/io:IPv4DomainNamegt;lt;io:IPv6DomainNamegt;lt;dd3:DomainNamegt;{DomainNameIPv6Only}lt;/dd3:DomainNamegt;lt;/io:IPv6DomainNamegt;lt;/io:IoDeviceProtocolConfiggt;lt;/io:IoConfiggt;
+        </Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="PHOENIX" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/set_config_netIdentification.html/config</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>HostName={HostName}amp;DomainName={DomainName}amp;DomainNameIPv6={DomainNameIPv6}amp;DNSPrimaryV4={DNSPrimaryV4}amp;DNSSecV4={DNSSecV4}amp;DNSPrimaryV6={DNSPrimaryV6}amp;DNSSecV6={DNSSecV6}amp;WINS={WINS}amp;BonjourServiceName={BonjourServiceName}amp;BonjourHighestService={BonjourHighestService}amp;restore_button_txt=Restore+Defaultsamp;restore_button_click=Noamp;apply_button=Applyamp;requiredField=*+required+fieldamp;invalidEntryStr=Entry+is+invalid.amp;HostNameConfig=unknownamp;DomainNameConfig=unknownamp;DomainNameIPv6Config=unknownamp;resetPrompt=Are+you+sure+you+want+to+restore+all%0D%0Asecurity+settings+to+default%3Famp;mustSelect=You+must+select+an+entry+to+move.amp;cfgPrecedence_0=eManualPriorityamp;cfgPrecedence_1=eTFTPPriorityamp;cfgPrecedence_2=eDhcpBootpPriorityamp;cfgPrecedence_3=eDhcpv6Priorityamp;cfgPrecedence_4=eDefaultPriorityamp;manualCfgPrompt=Are+you+sure+you+want+to+use+manual+configuration%3Famp;dhcpv6Priority=unknownamp;dhcpv4Priority=unknownamp;nameWarningStr=Warning%3A+Changing+this+setting+will+result+in+a+loss+of+connectivity%0D%0Aof+the+connected+clients.amp;areYouSureStr=Are+you+sure+you+want+to+change+this+setting%3Famp;prevBonjourName=HP+LaserJet+MFP+M426fdw+%28DA2639%29amp;BonjourEnabled=1amp;IPv4Enabled=1amp;IPv6Enabled=1amp;previousHostName={previousHostName}amp;previousDomainName={previousDomainName}amp;previousDomainNameIPv6={previousDomainNameIPv6}amp;previousDNSPrimaryV4={previousDNSPrimaryV4}amp;previousDNSSecV4={previousDNSSecV4}amp;previousDNSPrimaryV6={previousDNSPrimaryV6}amp;previousDNSSecV6={previousDNSSecV6}amp;previousWINS={previousWINS}amp;configPrecedenceChanged=noamp;LPD_enable=yesamp;IPP_enable=yesamp;Printing_9100_enable=yes</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+</Printers>

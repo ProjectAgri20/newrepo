@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AFBAAF94-E87A-40E2-8AFA-E24195AC5200}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DartLogCollectorService</RootNamespace>
+    <AssemblyName>DartLogCollectorService</AssemblyName>
+    <OutputPath>..\..\..\..\VirtualResource\Distribution\DartLogCollectorService\</OutputPath>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DeviceAutomation-2.2">
+      <HintPath>..\..\..\..\ScalableTestFramework\External Assemblies\DeviceAutomation-2.2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\WindowsPowerShell\3.0\System.Management.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\ScalableTestFramework\Source\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="BashLogCollector\BashLogCollectorService.cs" />
+    <Compile Include="BashLogCollector\CtfCommonConstants.cs" />
+    <Compile Include="DartCollectorService.cs" />
+    <Compile Include="DartLogCollectorWindowsService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BashLogCollector\IParser.cs" />
+    <Compile Include="BashLogCollector\LLParser.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\AssetInventory\STF.Core.AssetInventory.csproj">
+      <Project>{b84feab0-3c8d-4934-bd59-d3948c0595f1}</Project>
+      <Name>STF.Core.AssetInventory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\Configuration\STF.Core.Configuration.csproj">
+      <Project>{5c0fb620-0ac0-4f06-97d6-0ee90818e92f}</Project>
+      <Name>STF.Core.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\Root\STF.Core.csproj">
+      <Project>{1B4E6157-55BA-4F35-B73F-9A7E8FAAB8D1}</Project>
+      <Name>STF.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\FrameworkInternal\STF.FrameworkInternal.csproj">
+      <Project>{1D38C759-E5F6-4603-BBBC-566F1276ABA2}</Project>
+      <Name>STF.FrameworkInternal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Utility\STF.Utility.csproj">
+      <Project>{0A02EA9D-11D5-4078-9036-385709CB365A}</Project>
+      <Name>STF.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\FrameworkCommon.Library\STF.FrameworkCommon.Library.csproj">
+      <Project>{4a72b792-4c4e-4217-befc-8f128917f836}</Project>
+      <Name>STF.FrameworkCommon.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="dart.exe" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EntityFramework">
+      <Version>6.1.3</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

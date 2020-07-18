@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{425F3AA3-D7C6-47D8-B204-8EE8EDEC919D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HP.RDL.EDT.AutoTestHelper</RootNamespace>
+    <AssemblyName>AutoTestHelper</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>HPLOGO.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DDSConstants">
+      <HintPath>..\..\..\STF\Utility\AutoTestHelper\DDSConstants.dll</HintPath>
+    </Reference>
+    <Reference Include="DeviceAutomation-2.1, Version=2.1.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ScalableTestFramework\External Assemblies\DeviceAutomation-2.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DurationDataCoreLibrary">
+      <HintPath>..\..\..\STF\Utility\AutoTestHelper\DurationDataCoreLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ScalableTestFramework\External Assemblies\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ScalableTestFramework\External Assemblies\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="BulkEditorWindow.xaml.cs">
+      <DependentUpon>BulkEditorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Database\EnterpriseScenario.cs" />
+    <Compile Include="Database\VirtualResource.cs" />
+    <Compile Include="Database\VirtualResourceMetadata.cs" />
+    <Compile Include="ScenarioQueueItem.cs" />
+    <Page Include="BlackTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BulkEditorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\FaultEventHandler.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ListDialogBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ExecutionWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\FaultEventHandler.xaml.cs">
+      <DependentUpon>FaultEventHandler.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ListDialogBox.xaml.cs">
+      <DependentUpon>ListDialogBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DDS\AccessDDS.cs" />
+    <Compile Include="DDS\ContractServiceClient.cs" />
+    <Compile Include="DDS\DDSResult.cs" />
+    <Compile Include="DDS\FaultEventConstants.cs" />
+    <Compile Include="DDS\IContractService.cs" />
+    <Compile Include="ExecutionWindow.xaml.cs">
+      <DependentUpon>ExecutionWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\Core\AssetInventory\STF.Core.AssetInventory.csproj">
+      <Project>{b84feab0-3c8d-4934-bd59-d3948c0595f1}</Project>
+      <Name>STF.Core.AssetInventory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\Core\Configuration\STF.Core.Configuration.csproj">
+      <Project>{5C0FB620-0AC0-4F06-97D6-0EE90818E92F}</Project>
+      <Name>STF.Core.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\Core\DataLog\STF.Core.DataLog.csproj">
+      <Project>{93E02676-956F-4E18-A564-5DA1967A9E1C}</Project>
+      <Name>STF.Core.DataLog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\Core\Root\STF.Core.csproj">
+      <Project>{1B4E6157-55BA-4F35-B73F-9A7E8FAAB8D1}</Project>
+      <Name>STF.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\FrameworkInternal\STF.FrameworkInternal.csproj">
+      <Project>{1D38C759-E5F6-4603-BBBC-566F1276ABA2}</Project>
+      <Name>STF.FrameworkInternal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\Framework\STF.Framework.csproj">
+      <Project>{b91dcc51-8664-49e3-97d0-6fcfd2918a1a}</Project>
+      <Name>STF.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\Utility\STF.Utility.csproj">
+      <Project>{0A02EA9D-11D5-4078-9036-385709CB365A}</Project>
+      <Name>STF.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\WindowsAutomation\STF.WindowsAutomation.csproj">
+      <Project>{D9823F40-464D-451E-86CC-0C5339196522}</Project>
+      <Name>STF.WindowsAutomation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\STFAdminConsole\StfConsole.Library.csproj">
+      <Project>{DFBC1FED-978B-431C-A9B2-81047CDF5D0F}</Project>
+      <Name>StfConsole.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\STFCore\Source\Data\EnterpriseTest.Library\STF.EnterpriseTest.Library.csproj">
+      <Project>{4FD3AAD9-F8A4-46CB-9C8E-4165FE64674C}</Project>
+      <Name>STF.EnterpriseTest.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\STFCore\Source\Data\EnterpriseTestModel\STF.EnterpriseTest.Model.csproj">
+      <Project>{975C43D5-C1C6-4A45-82D4-1ABDC6805C05}</Project>
+      <Name>STF.EnterpriseTest.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\STFCore\Source\Framework\FrameworkCommon.Library\STF.FrameworkCommon.Library.csproj">
+      <Project>{4A72B792-4C4E-4217-BEFC-8F128917F836}</Project>
+      <Name>STF.FrameworkCommon.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\STFCore\Source\Framework\STF.FrameworkCore.Library\STF.FrameworkCore.Library.csproj">
+      <Project>{0C83CB1E-3FC2-4E07-BAB3-532A5BE53A38}</Project>
+      <Name>STF.FrameworkCore.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\STFCore\Source\Framework\STF.PluginFrameworkServices\STF.PluginFrameworkServices.csproj">
+      <Project>{77FDBBF6-F0B1-4351-B218-FFB8B7C0A06E}</Project>
+      <Name>STF.PluginFrameworkServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\STFCore\Source\UI\FrameworkControls.Library\STF.FrameworkControls.csproj">
+      <Project>{E2574F75-2943-4138-AA2E-D270447655A8}</Project>
+      <Name>STF.FrameworkControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\STFCore\Source\UI\ScenarioConfiguration.Library\STF.ScenarioConfiguration.Library.csproj">
+      <Project>{97C22A18-16D4-49DA-AC1A-487FB0C7818F}</Project>
+      <Name>STF.ScenarioConfiguration.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\STFCore\Source\UI\ScenarioExecution.Library\STF.SessionExecution.Library.csproj">
+      <Project>{D3A02882-F97B-4D0B-AA94-9DBAC057946A}</Project>
+      <Name>STF.SessionExecution.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\STFCore\Source\UI\UICommon.Library\STF.UICommon.Library.csproj">
+      <Project>{e9b7ac42-4716-49a5-bc39-3937bae531c5}</Project>
+      <Name>STF.UICommon.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="HPLOGO.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

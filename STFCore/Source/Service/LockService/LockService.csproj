@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3C21D7E-FC3B-4D7D-8287-6D513AE308E9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>HP.ScalableTest.Service.Lock</RootNamespace>
+    <AssemblyName>LockService</AssemblyName>
+    <OutputPath>..\..\..\..\VirtualResource\Distribution\LockService\</OutputPath>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\ScalableTestFramework\Source\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="LockWindowsService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\Lock\STF.Core.Lock.csproj">
+      <Project>{d630797c-dee8-42c9-af18-dec96374acb1}</Project>
+      <Name>STF.Core.Lock</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\Root\STF.Core.csproj">
+      <Project>{1b4e6157-55ba-4f35-b73f-9a7e8faab8d1}</Project>
+      <Name>STF.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\FrameworkInternal\STF.FrameworkInternal.csproj">
+      <Project>{1D38C759-E5F6-4603-BBBC-566F1276ABA2}</Project>
+      <Name>STF.FrameworkInternal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Utility\STF.Utility.csproj">
+      <Project>{0A02EA9D-11D5-4078-9036-385709CB365A}</Project>
+      <Name>STF.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\FrameworkCommon.Library\STF.FrameworkCommon.Library.csproj">
+      <Project>{4a72b792-4c4e-4217-befc-8f128917f836}</Project>
+      <Name>STF.FrameworkCommon.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

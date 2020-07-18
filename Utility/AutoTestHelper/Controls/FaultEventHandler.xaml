@@ -1,0 +1,80 @@
+﻿<Window x:Class="HP.RDL.EDT.AutoTestHelper.Controls.FaultEventHandler"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HP.RDL.EDT.AutoTestHelper.Controls"
+        xmlns:autoTestHelper="clr-namespace:HP.RDL.EDT.AutoTestHelper"
+        mc:Ignorable="d"
+        Title="EDT Fault Event Handler" Height="480" Width="640" Loaded="FaultEventHandler_OnLoaded">
+    <Grid>
+        <Grid.Resources>
+            <autoTestHelper:BoolToOppositeBoolConverter x:Key="InverseBooleanConverter" />
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.9*"/>
+            <RowDefinition Height="0.1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Style="{StaticResource StyledLeftTopGrid}">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.4*" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Label Content="Fault Type:" Grid.Row="0" Grid.Column="0" Margin="10,5,0,0" />
+            <ComboBox Name="FaultTypeComboBox" Width="175" IsReadOnly="True" HorizontalAlignment="Left" Margin="10,5,0,0" Grid.Row="0" Grid.Column="1" Style="{StaticResource StyledComboBox}" SelectionChanged="FaultTypeComboBox_OnSelectionChanged" 
+                       ToolTip="Select whether a Jam or Error occurred."/>
+
+            <Label Content="Fault Sub Type:" Grid.Row="1" Grid.Column="0" Margin="10,5,0,0" />
+            <ComboBox Name="FaultSubTypeComboBox" Width="175" IsReadOnly="True" HorizontalAlignment="Left" Margin="10,5,0,0" Grid.Row="1" Grid.Column="1" Style="{StaticResource StyledComboBox}" 
+                       ToolTip="Use the drop down list to best describe the fault that has occurred." SelectionChanged="FaultSubTypeComboBox_OnSelectionChanged"/>
+
+            <Label Content="Fault Code:" Grid.Row="2" Grid.Column="0" Margin="10,5,0,0" />
+            <ComboBox Name="FaultCodeComboBox" Width="175"  Margin="10,5,0,0" HorizontalAlignment="Left" Grid.Row="2" Grid.Column="1"  
+                      ToolTip="Select or Type the Error or Jam number; (e.g: 49.3807 or 99.00.01)"/>
+
+            <Label Content="Operation in Progress:" Grid.Row="3" Grid.Column="0" Margin="10,5,0,0" />
+            <ComboBox Name="OperationComboBox" Width="175" IsReadOnly="True" Margin="10,5,0,0" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" Style="{StaticResource StyledComboBox}" 
+                       ToolTip="Select from the drop down list to best describe the operation in progress when the event occurred."/>
+
+            <Label Content="Time To Ready:" Grid.Row="4" Grid.Column="0" Margin="10,5,0,0" />
+            <TextBox Name="TimeToReadyTextBox" Width="175" Margin="10,5,0,0" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" Style="{StaticResource StyledTextBox}" ToolTip="Enter the time to ready or use the buttons to collect the info."/>
+            <Button Content="Start" Name="StartTimerButton" Margin="200,5,0,0" Width="75" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" Style="{StaticResource StyledButton}" Click="StartTimerButton_OnClick" />
+            <Button Content="Stop" Name="StopTimerButton" Margin="290,5,0,0" Width="75" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" Style="{StaticResource StyledButton}" 
+                    IsEnabled="{Binding ElementName=StartTimerButton, Path=IsEnabled, Converter={StaticResource InverseBooleanConverter}}" Click="StopTimerButton_OnClick"/>
+
+            <Label Content="Recovery:" Grid.Row="5" Grid.Column="0" Margin="10,5,0,0" />
+            <ComboBox Name="RecoveryComboBox" Width="175" IsReadOnly="True" Margin="10,5,0,0" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Left" Style="{StaticResource StyledComboBox}" 
+                       ToolTip="Select the best description on how the device recovered from the fault."/>
+
+            <Label Content="Job Disposition:" Grid.Row="6" Grid.Column="0" Margin="10,5,0,0" />
+            <ComboBox Name="JobComboBox" Width="175" IsReadOnly="True" Margin="10,5,0,0" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Left" Style="{StaticResource StyledComboBox}"
+                       ToolTip="Select the best description of what happened to the job or task."/>
+
+            <Label Content="Root Cause Id:" Grid.Row="7" Grid.Column="0" Margin="10,5,0,0" />
+            <ComboBox Name="RootCauseComboBox" Width="175" IsReadOnly="True" Margin="10,5,0,0" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Left" Style="{StaticResource StyledComboBox}"
+                       ToolTip="Select the root cause for the fault."/>
+
+            <Label Content="Comments/Quality Center CR:" Grid.Row="8" Grid.Column="0" Margin="10,5,0,0" />
+            <TextBox Name="CommentsTextBox" Width="300" Margin="10,5,0,0" Grid.Row="8" Grid.Column="1" HorizontalAlignment="Left" Style="{StaticResource StyledTextBox}" ToolTip="Optional: Enter a short comment or CR # of the fault if applicable"/>
+
+            <CheckBox Name="ChainedEventCheckBox" Width="200" Height="16" Content="Event is caused by last event" Margin="10,5,0,0" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" 
+                      Style="{StaticResource StyledCheckBox}"  ToolTip="Select this if the fault was caused by previous event." ToolTipOpening="ChainedEventCheckBox_OnToolTipOpening"/>
+        </Grid>
+        <Grid Row="1">
+            <Button Content="Submit" Name="SubmitButton" Width="120" HorizontalAlignment="Right" Margin="0,5,150,5" Style="{StaticResource StyledButton}" Click="SubmitButton_OnClick"/>
+            <Button Content="Skip" Name="SkipButton" Width="120" HorizontalAlignment="Right" Margin="0,5,10,5" Style="{StaticResource StyledButton}" Click="SkipButton_OnClick"/>
+        </Grid>
+    </Grid>
+</Window>

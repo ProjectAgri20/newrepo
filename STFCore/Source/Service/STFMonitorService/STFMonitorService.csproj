@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6F5D6380-3B94-4D04-B0F1-CBB0BDDDB6AE}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HP.ScalableTest.Service.Monitor</RootNamespace>
+    <AssemblyName>STFMonitorService</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\VirtualResource\Distribution\STFMonitorService\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\..\..\VirtualResource\Distribution\STFMonitorService\STFMonitorService.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\ScalableTestFramework\Source\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="AutoStore\AutoStoreMonitor.cs" />
+    <Compile Include="AutoStore\AutoStoreXmlDefinitions.cs" />
+    <Compile Include="DigitalSend\DigitalSendDatabaseMonitor.cs" />
+    <Compile Include="DigitalSend\DigitalSendServerJobLogger.cs" />
+    <Compile Include="DigitalSend\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DigitalSend\SessionEventArgs.cs" />
+    <Compile Include="Directory\DirectoryMonitor.cs" />
+    <Compile Include="Directory\DirectorySnapshotLogger.cs" />
+    <Compile Include="Eprint\EPrintDataLogger.cs" />
+    <Compile Include="Eprint\EPrintJobMonitorService.cs" />
+    <Compile Include="Eprint\EPrintServerJobLogger.cs" />
+    <Compile Include="Eprint\Extension.cs" />
+    <Compile Include="Eprint\PendingJob.cs" />
+    <Compile Include="Eprint\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Eprint\SequentialID64.cs" />
+    <Compile Include="Hpcr\HpcrArchiveRecord.cs" />
+    <Compile Include="Hpcr\HpcrDatabaseMonitor.cs" />
+    <Compile Include="Output\DigitalSendJobNotificationLogger.cs" />
+    <Compile Include="Output\DigitalSendJobOutputLogger.cs" />
+    <Compile Include="Output\DigitalSendNotificationMonitor.cs" />
+    <Compile Include="Output\LANFaxMonitor.cs" />
+    <Compile Include="Output\OutputDirectoryMonitor.cs" />
+    <Compile Include="Output\OutputEmailMonitor.cs" />
+    <Compile Include="Output\OutputMonitorBase.cs" />
+    <Compile Include="Output\OutputProcessor.cs" />
+    <Compile Include="Output\SharePointMonitor.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisteredSessionInfo.cs" />
+    <Compile Include="StfMonitor.cs" />
+    <Compile Include="STFMonitorService.cs" />
+    <Compile Include="STFMonitorWindowsService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\AssetInventory\STF.Core.AssetInventory.csproj">
+      <Project>{b84feab0-3c8d-4934-bd59-d3948c0595f1}</Project>
+      <Name>STF.Core.AssetInventory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\Configuration\STF.Core.Configuration.csproj">
+      <Project>{5C0FB620-0AC0-4F06-97D6-0EE90818E92F}</Project>
+      <Name>STF.Core.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\DataLog\STF.Core.DataLog.csproj">
+      <Project>{93e02676-956f-4e18-a564-5da1967a9e1c}</Project>
+      <Name>STF.Core.DataLog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\Root\STF.Core.csproj">
+      <Project>{1B4E6157-55BA-4F35-B73F-9A7E8FAAB8D1}</Project>
+      <Name>STF.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\DeviceAutomation\STF.DeviceAutomation.csproj">
+      <Project>{8fa37af9-f2b8-4e72-bff7-580491a62832}</Project>
+      <Name>STF.DeviceAutomation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Email\STF.Email.csproj">
+      <Project>{907179e4-37e2-4eeb-b334-d4265359d070}</Project>
+      <Name>STF.Email</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\FileAnalysis\STF.FileAnalysis.csproj">
+      <Project>{2f14f446-a362-4a34-b25a-43b27a117fdd}</Project>
+      <Name>STF.FileAnalysis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\FrameworkInternal\STF.FrameworkInternal.csproj">
+      <Project>{1d38c759-e5f6-4603-bbbc-566f1276aba2}</Project>
+      <Name>STF.FrameworkInternal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Framework\STF.Framework.csproj">
+      <Project>{b91dcc51-8664-49e3-97d0-6fcfd2918a1a}</Project>
+      <Name>STF.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\SharePoint\STF.SharePoint.csproj">
+      <Project>{d281d5f6-5ab4-48fb-9725-73f9f45ec982}</Project>
+      <Name>STF.SharePoint</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Utility\STF.Utility.csproj">
+      <Project>{0a02ea9d-11d5-4078-9036-385709cb365a}</Project>
+      <Name>STF.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\WindowsAutomation\STF.WindowsAutomation.csproj">
+      <Project>{d9823f40-464d-451e-86cc-0c5339196522}</Project>
+      <Name>STF.WindowsAutomation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\FrameworkCommon.Library\STF.FrameworkCommon.Library.csproj">
+      <Project>{4a72b792-4c4e-4217-befc-8f128917f836}</Project>
+      <Name>STF.FrameworkCommon.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Eprint\CloudPrintTrigger.sql" />
+    <Content Include="Eprint\CreateMonitorDatabase.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DigitalSend\Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eprint\Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EntityFramework">
+      <Version>6.1.3</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

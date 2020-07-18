@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D9823F40-464D-451E-86CC-0C5339196522}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HP.ScalableTest.WindowsAutomation</RootNamespace>
+    <AssemblyName>STF.WindowsAutomation</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OutputPath>..\..\Binaries\STF.Common\</OutputPath>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
+    <CodeAnalysisRuleSet>Properties\STF.WindowsAutomation.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug (Code Analysis)|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Management" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="ActiveDirectoryController.cs" />
+    <Compile Include="FileSystem.cs" />
+    <Compile Include="NetworkConnection.cs" />
+    <Compile Include="PopupAssassin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Registry\DuregUtility.cs" />
+    <Compile Include="Registry\RegistryAnalyzer.cs" />
+    <Compile Include="Registry\RegistryChangeEventArgs.cs" />
+    <Compile Include="Registry\RegistryEventWatcher.cs" />
+    <Compile Include="Registry\RegistryHive.cs" />
+    <Compile Include="Registry\RegistryKeyEventWatcher.cs" />
+    <Compile Include="Registry\RegistryMonitorCondition.cs" />
+    <Compile Include="Registry\RegistrySnapshot.cs" />
+    <Compile Include="Registry\RegistrySnapshotKey.cs" />
+    <Compile Include="Registry\RegistrySnapshotValue.cs" />
+    <Compile Include="Registry\RegistryTreeEventWatcher.cs" />
+    <Compile Include="Registry\RegistryValueEventWatcher.cs" />
+    <Compile Include="SafeUnmanagedMemoryHandle.cs" />
+    <Compile Include="Sspi\ClientSecurityContext.cs" />
+    <Compile Include="Sspi\ClientSecurityCredential.cs" />
+    <Compile Include="Sspi\CredentialUse.cs" />
+    <Compile Include="Sspi\SafeContextHandle.cs" />
+    <Compile Include="Sspi\SafeCredentialHandle.cs" />
+    <Compile Include="Sspi\SafeSspiHandle.cs" />
+    <Compile Include="Sspi\SecureBuffer.cs" />
+    <Compile Include="Sspi\SecurityContext.cs" />
+    <Compile Include="Sspi\SecurityContextAttributes.cs" />
+    <Compile Include="Sspi\SecurityCredential.cs" />
+    <Compile Include="Sspi\SecurityPackage.cs" />
+    <Compile Include="Sspi\SecurityPackageCapabilities.cs" />
+    <Compile Include="Sspi\SecurityPackageInfo.cs" />
+    <Compile Include="Sspi\SecurityStatus.cs" />
+    <Compile Include="Sspi\ServerSecurityContext.cs" />
+    <Compile Include="Sspi\ServerSecurityCredential.cs" />
+    <Compile Include="Sspi\SspiException.cs" />
+    <Compile Include="Sspi\SspiToken.cs" />
+    <Compile Include="SystemSetup.cs" />
+    <Compile Include="UserImpersonator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FrameworkInternal\STF.FrameworkInternal.csproj">
+      <Project>{1d38c759-e5f6-4603-bbbc-566f1276aba2}</Project>
+      <Name>STF.FrameworkInternal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\STF.Framework.csproj">
+      <Project>{b91dcc51-8664-49e3-97d0-6fcfd2918a1a}</Project>
+      <Name>STF.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility\STF.Utility.csproj">
+      <Project>{0a02ea9d-11d5-4078-9036-385709cb365a}</Project>
+      <Name>STF.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Properties\STF.WindowsAutomation.Dictionary.xml" />
+    <None Include="Properties\STF.WindowsAutomation.ruleset" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <CodeAnalysisLogFile>$(IntermediateOutputPath)$(TargetFileName).CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisSucceededFile>$(IntermediateOutputPath)$(TargetFileName).lastcodeanalysissucceeded</CodeAnalysisSucceededFile>
+  </PropertyGroup>
+</Project>

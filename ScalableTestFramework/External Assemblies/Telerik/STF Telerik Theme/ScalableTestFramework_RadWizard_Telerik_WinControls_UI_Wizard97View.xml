@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ScalableTestFramework" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="WizardExternalBgShape">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="2" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="WelcomeImage" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WizardExternalBgShape">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="2" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="CompletionImage" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WizardPageHeaderBgShape,Wizard97PageHeaderPadding">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.WizardPageHeaderElement.Icon" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="WizardPageHeaderElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Wizard97TitleFont,WizardTitleMargin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Wizard97HeaderFont,WizardHeaderMargin">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Wizard97HeaderFont,WizardHeaderMargin">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Collapsed" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderElement.IsWelcomePage" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Wizard97HeaderFont,WizardHeaderMargin">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Collapsed" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderElement.IsCompletionPage" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WizardCommandAreaPadding,WizardCommandAreaBgShape">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="3" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="Wizard97CommandArea" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WizardHelpFont,WizardHelpImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HelpButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WizardPageHeaderBgShape,Wizard97PageHeaderPadding">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.WizardPageHeaderElement.Icon" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="WizardPageHeaderElement.IsWelcomePage" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WizardPageHeaderBgShape,Wizard97PageHeaderPadding">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.WizardPageHeaderElement.Icon" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="WizardPageHeaderElement.IsCompletionPage" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2,Padding(3;3;3;3),WizardButtonMargin">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.UseDefaultDisabledPaint" Value="True" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NextButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.UseDefaultDisabledPaint" Value="True" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NextButton.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NextButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NextButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NextButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NextButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NextButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NextButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Wizard97TitleFont,WizardTitleMargin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleElement.IsWelcomePage" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Wizard97TitleFont,WizardTitleMargin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleElement.IsCompletionPage" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2,Padding(3;3;3;3),WizardButtonMargin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NextButton.IsFocusedWizardButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NextButton.IsFocusedWizardButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WizardButtonBorderFocused">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NextButton.IsFocusedWizardButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2,Padding(3;3;3;3),WizardButtonMargin">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.UseDefaultDisabledPaint" Value="True" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CancelButtont" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.UseDefaultDisabledPaint" Value="True" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CancelButtont.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2,Padding(3;3;3;3),WizardButtonMargin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CancelButtont.IsFocusedWizardButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CancelButtont">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CancelButtont.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CancelButtont.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CancelButtont.IsFocusedWizardButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CancelButtont">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CancelButtont.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CancelButtont.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WizardButtonBorderFocused">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CancelButtont.IsFocusedWizardButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2,Padding(3;3;3;3),WizardButtonMargin">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.UseDefaultDisabledPaint" Value="True" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FinishButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.UseDefaultDisabledPaint" Value="True" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FinishButton.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2,Padding(3;3;3;3),WizardButtonMargin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FinishButton.IsFocusedWizardButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FinishButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FinishButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FinishButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FinishButton.IsFocusedWizardButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FinishButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FinishButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FinishButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WizardButtonBorderFocused">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FinishButton.IsFocusedWizardButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2,Padding(3;3;3;3),WizardButtonMargin">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.UseDefaultDisabledPaint" Value="True" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.UseDefaultDisabledPaint" Value="True" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackButton.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2,Padding(3;3;3;3),WizardButtonMargin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackButton.IsFocusedWizardButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackButton.IsFocusedWizardButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WizardButtonBorderFocused">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackButton.IsFocusedWizardButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadWizard" ElementType="Telerik.WinControls.UI.Wizard97View" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.Wizard97View" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

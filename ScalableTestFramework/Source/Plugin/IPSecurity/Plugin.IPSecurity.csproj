@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD12B1C8-74FC-4A58-A14D-A0ED07F7EA0B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HP.ScalableTest.Plugin.IPSecurity</RootNamespace>
+    <AssemblyName>Plugin.IPSecurity</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OutputPath>..\..\..\..\VirtualResource\Distribution\Plugin\</OutputPath>
+    <CodeAnalysisRuleSet>BasicDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DeviceAutomation-2.2, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\External Assemblies\DeviceAutomation-2.2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="IPSecurityActivityData.cs" />
+    <Compile Include="IPSecurityConfigurationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IPSecurityConfigurationControl.Designer.cs">
+      <DependentUpon>IPSecurityConfigurationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IPSecurityExecutionEngine.cs" />
+    <Compile Include="IPSecurityTemplates.cs" />
+    <Compile Include="IPSecurityTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\FrameworkInternal\STF.FrameworkInternal.csproj">
+      <Project>{1d38c759-e5f6-4603-bbbc-566f1276aba2}</Project>
+      <Name>STF.FrameworkInternal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\STF.Framework.csproj">
+      <Project>{b91dcc51-8664-49e3-97d0-6fcfd2918a1a}</Project>
+      <Name>STF.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PluginSupport\Connectivity\PluginSupport.Connectivity.csproj">
+      <Project>{0b2a00ee-bc24-490e-bbc0-f8fb7e12985c}</Project>
+      <Name>PluginSupport.Connectivity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utility\STF.Utility.csproj">
+      <Project>{0a02ea9d-11d5-4078-9036-385709cb365a}</Project>
+      <Name>STF.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="IPSecurityConfigurationControl.resx">
+      <DependentUpon>IPSecurityConfigurationControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <CodeAnalysisLogFile>$(IntermediateOutputPath)$(TargetFileName).CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisSucceededFile>$(IntermediateOutputPath)$(TargetFileName).lastcodeanalysissucceeded</CodeAnalysisSucceededFile>
+  </PropertyGroup>
+</Project>

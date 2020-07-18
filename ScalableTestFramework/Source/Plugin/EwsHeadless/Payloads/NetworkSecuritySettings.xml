@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Printers FilterType="NetworkSecuritySettings">
+  
+  <Printer Type="JEDI" SubFilterType="BasicSecurity" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>  
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>  
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="Yes">
+        <URL>https://{0}/welcome.html/config</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL>https://{0}/welcome.html/config</HideURL>
+        <Method>POST</Method>
+        <Payload>startwizard=Start+Wizard</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+      <Request Order="2" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/level.html/config</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>level=BASICamp;Next=Next+%3Eamp;Hide={HideID}</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+      <Request Order="3" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/password.html/config</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>passwd={passwd}amp;confirmpassword={confirmpassword}amp;Next=Next+%3Eamp;Hide={HideID}</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+      <Request Order="4" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/review.html/config</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>Finish=Finishamp;Hide={HideID}</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+</Printers>

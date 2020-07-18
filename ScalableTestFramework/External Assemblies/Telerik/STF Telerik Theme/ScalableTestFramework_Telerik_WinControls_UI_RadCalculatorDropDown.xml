@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ScalableTestFramework" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="RadCalculatorFont">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorDropDownElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CalculatorBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorDropDownElement.ContainsMouse">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CalculatorBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorDropDownElement.ContainsMouse">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CalculatorFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorDropDownElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CalculatorFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorEditorContentElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TextBoxFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorArrowFillNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorArrowButtonElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorArrowFillHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorArrowButtonElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorArrowFillPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorArrowButtonElement.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorArrowFillPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorArrowButtonElement.IsDropDownShown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorArrowBorderNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorArrowButtonElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorArrowBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorArrowButtonElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorMemoryFontNormal">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadCalculatorMemoryElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorContentFill,CalculatorContentBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadCalculatorContentElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonShape,CalculatorDigitButtonFont">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorDigitButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorDigitButtonFillNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorDigitButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorDigitButtonFillHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorDigitButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonFillPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorDigitButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorDigitButtonBorderNormal">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorDigitButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorDigitButtonBorderHover">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorDigitButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonBorderPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorDigitButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonShape,CalculatorOperationButtonFont">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorOperationButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorDigitButtonFillHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorOperationButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorOperationButtonFillNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorOperationButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonFillPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorOperationButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorOperationButtonBorderNormal">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorOperationButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorDigitButtonBorderHover">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorOperationButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonBorderPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorOperationButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonShape,CalculatorDigitButtonFont">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorCommandButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorOperationButtonFillNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorCommandButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorDigitButtonFillHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorCommandButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonFillPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorCommandButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorOperationButtonBorderNormal">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorCommandButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorDigitButtonBorderHover">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorCommandButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonBorderPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorCommandButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonShape">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorDeleteButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorOperationButtonFillNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorDeleteButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorDigitButtonFillHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorDeleteButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonFillPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorDeleteButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorOperationButtonBorderNormal">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorDeleteButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorDigitButtonBorderHover">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorDeleteButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonBorderPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorDeleteButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonShape,CalculatorEqualsButtonFont">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorEqualsButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonShape,CalculatorMemoryButtonFontNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorMemoryButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonFillPressed">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorMemoryButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonBorderPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorMemoryButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorDigitButtonFillHover">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorMemoryButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorDigitButtonBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorMemoryButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RadCalculatorArrowMargin">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="16, 18" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorArrowButtonElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorMemoryButtonFillNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorMemoryButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorMemoryButtonBorderNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorMemoryButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorArrowBorderPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorArrowButtonElement.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorArrowBorderPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorArrowButtonElement.IsDropDownShown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorMemoryButtonFontHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorMemoryButton.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Collapsed" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorEqualsButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorTransparentBorder,CalculatorEqualsButtonNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorEqualsButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorTransparentBorder,CalculatorEqualsButtonHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorEqualsButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorTransparentBorder,CalculatorEqualsButtonPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalculatorEqualsButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonShape,CalculatorDigitButtonFillNormal,CalculatorDigitButtonBorderNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorDigitButtonElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonShape,CalculatorOperationButtonFont,CalculatorOperationButtonFillNormal,CalculatorOperationButtonBorderNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorOperationButtonElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonShape,CalculatorDigitButtonFont,CalculatorOperationButtonFillNormal,CalculatorOperationButtonBorderNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorCommandButtonElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonShape,CalculatorMemoryButtonFontNormal,CalculatorMemoryButtonFillNormal,CalculatorMemoryButtonBorderNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorMemoryButtonElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonShape,CalculatorOperationButtonFillNormal,CalculatorOperationButtonBorderNormal,CalculatorDeleteImageNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorDeleteButtonElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonShape,CalculatorEqualsButtonFont,CalculatorEqualsButtonNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorEqualsButtonElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorDigitButtonFillHover,CalculatorDigitButtonBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorDigitButtonElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonFillPressed,CalculatorButtonBorderPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorDigitButtonElement.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorDigitButtonFillHover,CalculatorDigitButtonBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorOperationButtonElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonFillPressed,CalculatorButtonBorderPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorOperationButtonElement.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorDigitButtonFillHover,CalculatorDigitButtonBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorCommandButtonElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonFillPressed,CalculatorButtonBorderPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorCommandButtonElement.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorMemoryButtonFontHover,CalculatorDigitButtonFillHover,CalculatorDigitButtonBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorMemoryButtonElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonFillPressed,CalculatorButtonBorderPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorMemoryButtonElement.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorDigitButtonFillHover,CalculatorDigitButtonBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorDeleteButtonElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorButtonFillPressed,CalculatorButtonBorderPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorDeleteButtonElement.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorEqualsButtonHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorEqualsButtonElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalculatorEqualsButtonPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorEqualsButtonElement.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorDropDownElement.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorDropDownElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Windows7LightGray">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorDropDownElement.Disabled">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CalculatorFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadCalculatorDropDown" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadCalculatorDropDownElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadCalculatorContentElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

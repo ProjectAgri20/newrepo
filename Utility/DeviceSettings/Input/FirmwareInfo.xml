@@ -1,0 +1,17 @@
+<DeviceSettings>
+    <EndPoint>fim
+        <ResourceURI>urn:hp:imaging:con:service:fim:FIMService:Assets</ResourceURI>
+        <Parent Name="Assets">Assets
+            <Parent Name="Asset">Asset
+                <Parent Name="AssetMetadata">AssetMetadata
+                    <IdentName>AssetName</IdentName>
+                    <IdentName>AssetType</IdentName>
+                    <Parent Name="Version">Version
+                        <IdentName>Revision</IdentName>
+                        <IdentName>Date</IdentName>
+                    </Parent>
+                </Parent>
+            </Parent>
+        </Parent>
+    </EndPoint>
+</DeviceSettings>

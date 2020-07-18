@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E2574F75-2943-4138-AA2E-D270447655A8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HP.ScalableTest.UI.Framework</RootNamespace>
+    <AssemblyName>HP.STF.FrameworkControls</AssemblyName>
+    <CodeAnalysisRuleSet>..\..\..\..\STF Standard Rules.ruleset</CodeAnalysisRuleSet>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <CodeAnalysisForceOutput>false</CodeAnalysisForceOutput>
+    <CodeAnalysisGenerateSuccessFile>false</CodeAnalysisGenerateSuccessFile>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug (XML Doc)|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug (Code Analysis + XML Doc)|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug %28XML Doc%29|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug %28Code Analysis + XML Doc%29|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.WinControls, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ScalableTestFramework\External Assemblies\Telerik\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ScalableTestFramework\External Assemblies\Telerik\Telerik.WinControls.GridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ScalableTestFramework\External Assemblies\Telerik\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddRemoveListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddRemoveListControl.Designer.cs">
+      <DependentUpon>AddRemoveListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationExceptionHandler.cs" />
+    <Compile Include="AssetSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssetSelectionForm.Designer.cs">
+      <DependentUpon>AssetSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssetUsageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssetUsageForm.Designer.cs">
+      <DependentUpon>AssetUsageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTypeMismatchException.cs" />
+    <Compile Include="DatabaseMonitorConfigControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DatabaseMonitorConfigControl.Designer.cs">
+      <DependentUpon>DatabaseMonitorConfigControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DirectoryMonitorConfigControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DirectoryMonitorConfigControl.Designer.cs">
+      <DependentUpon>DirectoryMonitorConfigControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnvironmentConnectionException.cs" />
+    <Compile Include="CitrixServerDetailsComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CitrixServerDetailsComboBox.Designer.cs">
+      <DependentUpon>CitrixServerDetailsComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExceptionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExceptionDialog.Designer.cs">
+      <DependentUpon>ExceptionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FieldValidatedControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FlashWindow.cs" />
+    <Compile Include="HelpDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpDialog.Designer.cs">
+      <DependentUpon>HelpDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormConnectDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormConnectDialog.Designer.cs">
+      <DependentUpon>MainFormConnectDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormLogOnDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormLogOnDialog.Designer.cs">
+      <DependentUpon>MainFormLogOnDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonitorConfigControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MonitorConfigControl.Designer.cs">
+      <DependentUpon>MonitorConfigControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutputMonitorConfigControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutputMonitorConfigControl.Designer.cs">
+      <DependentUpon>OutputMonitorConfigControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDriverCfmManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintDriverCfmManagementForm.Designer.cs">
+      <DependentUpon>PrintDriverCfmManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDriverCredentialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintDriverCredentialForm.Designer.cs">
+      <DependentUpon>PrintDriverCredentialForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDriverDownloadControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PrintDriverDownloadControl.Designer.cs">
+      <DependentUpon>PrintDriverDownloadControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelectedNodeEventArgs.cs" />
+    <Compile Include="STFLoginManager.cs" />
+    <Compile Include="STFDispatcherManager.cs" />
+    <Compile Include="TimeDelayControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TimeDelayControl.Designer.cs">
+      <DependentUpon>TimeDelayControl.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\AssetInventory\STF.Core.AssetInventory.csproj">
+      <Project>{B84FEAB0-3C8D-4934-BD59-D3948C0595F1}</Project>
+      <Name>STF.Core.AssetInventory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\Configuration\STF.Core.Configuration.csproj">
+      <Project>{5C0FB620-0AC0-4F06-97D6-0EE90818E92F}</Project>
+      <Name>STF.Core.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\DocumentLibrary\STF.Core.DocumentLibrary.csproj">
+      <Project>{270D101E-EFDB-4B57-883C-47937FE76F5D}</Project>
+      <Name>STF.Core.DocumentLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\Root\STF.Core.csproj">
+      <Project>{1B4E6157-55BA-4F35-B73F-9A7E8FAAB8D1}</Project>
+      <Name>STF.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\UI\STF.Core.UI.csproj">
+      <Project>{66F4D6FC-ECEF-49C7-8D2E-4D0102353E94}</Project>
+      <Name>STF.Core.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\FrameworkInternal\STF.FrameworkInternal.csproj">
+      <Project>{1d38c759-e5f6-4603-bbbc-566f1276aba2}</Project>
+      <Name>STF.FrameworkInternal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Framework\STF.Framework.csproj">
+      <Project>{b91dcc51-8664-49e3-97d0-6fcfd2918a1a}</Project>
+      <Name>STF.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Utility\STF.Utility.csproj">
+      <Project>{0A02EA9D-11D5-4078-9036-385709CB365A}</Project>
+      <Name>STF.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\WindowsAutomation\STF.WindowsAutomation.csproj">
+      <Project>{D9823F40-464D-451E-86CC-0C5339196522}</Project>
+      <Name>STF.WindowsAutomation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\EnterpriseTestModel\STF.EnterpriseTest.Model.csproj">
+      <Project>{975C43D5-C1C6-4A45-82D4-1ABDC6805C05}</Project>
+      <Name>STF.EnterpriseTest.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\EnterpriseTest.Library\STF.EnterpriseTest.Library.csproj">
+      <Project>{4FD3AAD9-F8A4-46CB-9C8E-4165FE64674C}</Project>
+      <Name>STF.EnterpriseTest.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\FrameworkCommon.Library\STF.FrameworkCommon.Library.csproj">
+      <Project>{4A72B792-4C4E-4217-BEFC-8F128917F836}</Project>
+      <Name>STF.FrameworkCommon.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\STF.FrameworkCore.Library\STF.FrameworkCore.Library.csproj">
+      <Project>{0c83cb1e-3fc2-4e07-bab3-532a5be53a38}</Project>
+      <Name>STF.FrameworkCore.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddRemoveListControl.resx">
+      <DependentUpon>AddRemoveListControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssetSelectionForm.resx">
+      <DependentUpon>AssetSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssetUsageForm.resx">
+      <DependentUpon>AssetUsageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CitrixServerDetailsComboBox.resx">
+      <DependentUpon>CitrixServerDetailsComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseMonitorConfigControl.resx">
+      <DependentUpon>DatabaseMonitorConfigControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DirectoryMonitorConfigControl.resx">
+      <DependentUpon>DirectoryMonitorConfigControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExceptionDialog.resx">
+      <DependentUpon>ExceptionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpDialog.resx">
+      <DependentUpon>HelpDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFormConnectDialog.resx">
+      <DependentUpon>MainFormConnectDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFormLogOnDialog.resx">
+      <DependentUpon>MainFormLogOnDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonitorConfigControl.resx">
+      <DependentUpon>MonitorConfigControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutputMonitorConfigControl.resx">
+      <DependentUpon>OutputMonitorConfigControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintDriverCfmManagementForm.resx">
+      <DependentUpon>PrintDriverCfmManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintDriverCredentialForm.resx">
+      <DependentUpon>PrintDriverCredentialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintDriverDownloadControl.resx">
+      <DependentUpon>PrintDriverDownloadControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeDelayControl.resx">
+      <DependentUpon>TimeDelayControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="..\..\..\..\_STFDictionary.xml">
+      <Link>_STFDictionary.xml</Link>
+    </CodeAnalysisDictionary>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\HP.ScalableTest.Data.EnterpriseTest.Model.ServerInventory.datasource" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="..\..\..\..\ScalableTestFramework\Source\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EntityFramework">
+      <Version>6.1.3</Version>
+    </PackageReference>
+  </ItemGroup>
+</Project>

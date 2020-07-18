@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Printers FilterType="AccessControlHpacIrmSetup">
+  <Printer Type="OMNI" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/AccessControlSetup/Save?jsAnchor=AgentsMasterCustomViewSectionId</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>deviceGuest=deviceMaintenanceamp;deviceGuest=admin-TroubleshootingMenuamp;deviceGuest=retrieveDiagnosticDataamp;deviceGuest=admin-ReportsMenuamp;deviceGuest=admin-ConfigurationStatusMenuamp;deviceGuest=printConfigurationPageamp;deviceGuest=admin-UsageMenuamp;deviceGuest=printFileDirectoryamp;deviceGuest=admin-SuppliesStatusMenuamp;deviceGuest=printColorUsageReportamp;deviceGuest=admin-FaxReportsMenuamp;deviceGuest=printFaxBillingCodesReportamp;deviceGuest=printBlockedFaxListamp;deviceGuest=printFaxActivityLogamp;deviceGuest=printLastFaxCallReportamp;deviceGuest=admin-OtherPagesMenuamp;deviceGuest=adminamp;deviceGuest=admin-GeneralSettingsMenuamp;deviceGuest=admin-DateTimeMenuamp;deviceGuest=admin-EnergySettingsMenuamp;deviceGuest=admin-RestoreFactorySettingsMenuamp;deviceGuest=admin-DisplaySettingsMenuamp;deviceGuest=admin-CopyPrintSettingsMenuamp;deviceGuest=HP_ConfigureDeviceUSB_v1amp;deviceGuest=admin-PrintQualityMenuamp;deviceGuest=admin-ManageStoredJobsamp;deviceGuest=admin-PrintSettingsMenuamp;deviceGuest=admin-PrintOptionsMenuamp;deviceGuest=admin-ManageTraysMenuamp;deviceGuest=admin-PrintFromUSBMassStorageSettingsMenuamp;deviceGuest=admin-NetworkSettingsMenuamp;deviceGuest=admin-NetworkProtocolsMenuamp;deviceGuest=admin-FaxSettingsMenuamp;deviceGuest=fax-ConfigureSendSetupWizardamp;deviceGuest=admin-FaxSendSettingsMenuamp;deviceGuest=fax-GeneralFaxSendSettingsMenuamp;deviceGuest=admin-FaxArchiveAndForwardingMenuamp;deviceGuest=admin-FaxReceiveSettingsMenuamp;deviceGuest=fax-ConfigureReceiveSetupamp;deviceGuest=fax-ConfigurePrintingScheduleamp;deviceGuest=fax-ConfigureReceiveBlockedFaxNumberamp;deviceGuest=fax-ConfigureReceiveDefaultJobOptionsamp;deviceGuest=admin-ManageSuppliesMenuamp;deviceGuest=admin-ResetSuppliesMenuamp;deviceGuest=admin-DigitalSendSettingsMenuamp;deviceGuest=configureDigitalSendServiceSetupamp;deviceGuest=admin-DigitalSendEmailSettingsMenuamp;deviceGuest=sendToEmail-ConfigureSetupamp;deviceGuest=admin-SendToFolderSettingsMenuamp;deviceGuest=admin-SaveToUSBMassStorageSettingsMenuamp;deviceGuest=jobStoragePrintamp;deviceGuest=jobStorage-AccessStoredFaxJobamp;deviceGuest=copyamp;deviceGuest=HP_copySimplexOutput_v1amp;deviceGuest=copy-Coloramp;deviceGuest=admin-CopySettingsMenuamp;deviceGuest=supplyStatusamp;deviceGuest=trayStatus-ModifyTraysamp;deviceGuest=printFromUSBMassStorageamp;deviceGuest=print-Coloramp;deviceGuest=faxamp;deviceGuest=HP_faxEditBillingCode_v1amp;deviceGuest=fax-ConfigureSendDefaultJobOptionsamp;deviceGuest=sendToEmailamp;deviceGuest=HP_sendToEmailEditFromField_v1amp;deviceGuest=HP_sendToEmailEditToField_v1amp;deviceGuest=HP_sendToEmailEditCcField_v1amp;deviceGuest=HP_sendToEmailEditBccField_v1amp;deviceGuest=HP_sendToEmailEditSubjectField_v1amp;deviceGuest=HP_sendToEmailEditMessageBody_v1amp;deviceGuest=sendToEmail-ConfigureDefaultJobSettingsamp;deviceGuest=contactsamp;deviceGuest=fax-EditSpeedDialamp;deviceGuest=modifyPrivateAddressBooksamp;deviceGuest=modifyPublicAddressBookamp;deviceGuest=sendToFolderamp;deviceGuest=sendToFolder-EditPathamp;deviceGuest=sendToFolder-ConfigureDefaultJobSettingsamp;deviceGuest=jobStatusamp;deviceGuest=jobStatus-ManageAllJobsamp;deviceGuest=jobStatus-PromoteJobamp;deviceGuest=jobStatus-ViewAllJobsamp;deviceGuest=sendToUSBMassStorageamp;deviceGuest=sendToUSBMassStorage-ConfigureJobSettingsamp;deviceGuest=jobStorageSaveamp;deviceGuest=oxpworkflow_436170656C6C614D4A20110209495001_v16amp;deviceGuest=print-Coloramp;deviceGuest=print-Coloramp;deviceUser=deviceMaintenanceamp;deviceUser=admin-TroubleshootingMenuamp;deviceUser=retrieveDiagnosticDataamp;deviceUser=admin-ReportsMenuamp;deviceUser=admin-ConfigurationStatusMenuamp;deviceUser=printConfigurationPageamp;deviceUser=admin-UsageMenuamp;deviceUser=printFileDirectoryamp;deviceUser=admin-SuppliesStatusMenuamp;deviceUser=printColorUsageReportamp;deviceUser=admin-FaxReportsMenuamp;deviceUser=printFaxBillingCodesReportamp;deviceUser=printBlockedFaxListamp;deviceUser=printFaxActivityLogamp;deviceUser=printLastFaxCallReportamp;deviceUser=admin-OtherPagesMenuamp;deviceUser=adminamp;deviceUser=admin-GeneralSettingsMenuamp;deviceUser=admin-DateTimeMenuamp;deviceUser=admin-EnergySettingsMenuamp;deviceUser=admin-RestoreFactorySettingsMenuamp;deviceUser=admin-DisplaySettingsMenuamp;deviceUser=admin-CopyPrintSettingsMenuamp;deviceUser=HP_ConfigureDeviceUSB_v1amp;deviceUser=admin-PrintQualityMenuamp;deviceUser=admin-ManageStoredJobsamp;deviceUser=admin-PrintSettingsMenuamp;deviceUser=admin-PrintOptionsMenuamp;deviceUser=admin-ManageTraysMenuamp;deviceUser=admin-PrintFromUSBMassStorageSettingsMenuamp;deviceUser=admin-NetworkSettingsMenuamp;deviceUser=admin-NetworkProtocolsMenuamp;deviceUser=admin-FaxSettingsMenuamp;deviceUser=fax-ConfigureSendSetupWizardamp;deviceUser=admin-FaxSendSettingsMenuamp;deviceUser=fax-GeneralFaxSendSettingsMenuamp;deviceUser=admin-FaxArchiveAndForwardingMenuamp;deviceUser=admin-FaxReceiveSettingsMenuamp;deviceUser=fax-ConfigureReceiveSetupamp;deviceUser=fax-ConfigurePrintingScheduleamp;deviceUser=fax-ConfigureReceiveBlockedFaxNumberamp;deviceUser=fax-ConfigureReceiveDefaultJobOptionsamp;deviceUser=admin-ManageSuppliesMenuamp;deviceUser=admin-ResetSuppliesMenuamp;deviceUser=admin-DigitalSendSettingsMenuamp;deviceUser=configureDigitalSendServiceSetupamp;deviceUser=admin-DigitalSendEmailSettingsMenuamp;deviceUser=sendToEmail-ConfigureSetupamp;deviceUser=admin-SendToFolderSettingsMenuamp;deviceUser=admin-SaveToUSBMassStorageSettingsMenuamp;deviceUser=jobStoragePrintamp;deviceUser=jobStorage-AccessStoredFaxJobamp;deviceUser=copyamp;deviceUser=HP_copySimplexOutput_v1amp;deviceUser=copy-Coloramp;deviceUser=admin-CopySettingsMenuamp;deviceUser=supplyStatusamp;deviceUser=trayStatus-ModifyTraysamp;deviceUser=printFromUSBMassStorageamp;deviceUser=print-Coloramp;deviceUser=faxamp;deviceUser=HP_faxEditBillingCode_v1amp;deviceUser=fax-ConfigureSendDefaultJobOptionsamp;deviceUser=sendToEmailamp;deviceUser=HP_sendToEmailEditFromField_v1amp;deviceUser=HP_sendToEmailEditToField_v1amp;deviceUser=HP_sendToEmailEditCcField_v1amp;deviceUser=HP_sendToEmailEditBccField_v1amp;deviceUser=HP_sendToEmailEditSubjectField_v1amp;deviceUser=HP_sendToEmailEditMessageBody_v1amp;deviceUser=sendToEmail-ConfigureDefaultJobSettingsamp;deviceUser=contactsamp;deviceUser=fax-EditSpeedDialamp;deviceUser=modifyPrivateAddressBooksamp;deviceUser=modifyPublicAddressBookamp;deviceUser=sendToFolderamp;deviceUser=sendToFolder-EditPathamp;deviceUser=sendToFolder-ConfigureDefaultJobSettingsamp;deviceUser=jobStatusamp;deviceUser=jobStatus-ManageAllJobsamp;deviceUser=jobStatus-PromoteJobamp;deviceUser=jobStatus-ViewAllJobsamp;deviceUser=sendToUSBMassStorageamp;deviceUser=sendToUSBMassStorage-ConfigureJobSettingsamp;deviceUser=jobStorageSaveamp;deviceUser=oxpworkflow_436170656C6C614D4A20110209495001_v16amp;deviceUser=print-Coloramp;deviceUser=print-Coloramp;SignInMethod__DefaultValue=hp_EmbeddedPin_v1amp;SignInMethod__deviceMaintenance=defaultamp;SignInMethod__reports=defaultamp;SignInMethod__administration=defaultamp;SignInMethod__jobStoragePrint=defaultamp;SignInMethod__copy=defaultamp;SignInMethod__supplyStatus=defaultamp;SignInMethod__trayStatus=defaultamp;SignInMethod__printFromUSBMassStorage=defaultamp;SignInMethod__printing=defaultamp;SignInMethod__fax=defaultamp;SignInMethod__sendToEmail=defaultamp;SignInMethod__addressBook=defaultamp;SignInMethod__sendToFolder=defaultamp;SignInMethod__jobStatus=defaultamp;SignInMethod__sendToUSBMassStorage=defaultamp;SignInMethod__jobStorageSave=defaultamp;SignInMethod__oxpworkflow_436170656C6C614D4A20110209495001_v16=defaultamp;AllowUsersChooseSignIn=onamp;SignOutDelay=Immediateamp;RetainSettingsCopy=Alwaysamp;RetainSettingsSend=Promptamp;RetainSettingsFax=Promptamp;DefaultRole__hp_EmbeddedLDAP_v1=deviceUseramp;DefaultRole__hp_EmbeddedWindows_v1=deviceUseramp;DefaultPermissionSetNewAccounts=deviceUseramp;PinListPagination__itemsPerPage=25amp;PinListPagination__current=1amp;PinListPagination__totalNumberOfItems=0amp;ButtonEdit_XAC_AuthenticationAgent4_v0=Setupamp;StepBackAnchor=AgentsMasterCustomViewSectionIdamp;jsAnchor=AgentsMasterCustomViewSectionId</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Language</HeaderName>
+            <HeaderValue>en-US</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="3">
+            <HeaderName>Cache-Control</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+          <Header Order="4">
+            <HeaderName>DNT</HeaderName>
+            <HeaderValue>1</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+      <Request Order="2" sessionID="yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/ThirdPartyAuthentication/Save</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Default item="EnableField">on</Default>
+        <Payload>EnableField={EnableField}amp;FormButtonSubmit=OK</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Language</HeaderName>
+            <HeaderValue>en-US</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="3">
+            <HeaderName>Cache-Control</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+          <Header Order="4">
+            <HeaderName>DNT</HeaderName>
+            <HeaderValue>1</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+</Printers>

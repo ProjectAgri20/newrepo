@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Printers FilterType="NetworkContacts">
+  <Printer Type="PHOENIX" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>http://{0}/hp/device/set_config_emailLDAP.html/config</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+		<Default item="ldapLookEnable">on</Default>
+		<Default item="ldapServerAddress">15.212.64.21</Default>
+		<Default item="ldapServerPort">389</Default>
+		<Default item="authentication">AUTH_NO</Default>
+		<Default item="searchRoot">cn</Default>
+		<Default item="nameAttribute">cn</Default>
+		<Default item="emailAttribute">mail</Default>
+        <Payload>ldapLookEnable={ldapLookEnable}amp;ldapServerAddress={ldapServerAddress}amp;ldapServerPort={ldapServerPort}amp;authentication={authentication}amp;searchRoot={searchRoot}amp;nameAttribute={nameAttribute}amp;emailAttribute={emailAttribute}amp;ldapDomainTextTest=amp;WindowsUserNameTextTest=amp;WindowsPasswordTextTest=amp;testText=amp;testingInProgress=Testing+...amp;nameTxt=Usernameamp;emailTxt=E-mail+Addressamp;noMatchTxt=No+matches+found.amp;saveSettingsTxt=Click+%5BAPPLY%5D+to+save+settingsamp;requiredField=*+required+fieldamp;Apply=Apply</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+        <NameValuePairs>
+          <NameValuePair Order="1">
+            <Name></Name>
+            <Value></Value>
+          </NameValuePair>
+        </NameValuePairs>
+      </Request>
+    </Requests>
+  </Printer>
+  </Printers>

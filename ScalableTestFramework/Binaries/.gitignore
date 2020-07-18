@@ -1,0 +1,3 @@
+# Ignore build artifacts in this directory, but ensure it exists on a fresh clone or after git clean
+*
+!.gitignore

@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ScalableTestFramework" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="CommandBarFill">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadCommandBarElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarStripElementFill,RoundRectShapeAll2,CommandBarStripElementBorder,DefaultForeColor">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.CommandBarStripElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarGrip,Margin(2;0;2;0)">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="2, 0, 2, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCommandBarGrip" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarOverflowButtonFill,CommandBarStripElementBorder,RoundRectShape2Right,CommandBarOverflowButtonImage">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.ImageAlignment" Value="BottomCenter" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCommandBarOverflowButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarStripElementBorder,CommandBarOverflowButtonFill,RoundRectShape2Right,CommandBarOverflowButtonHasItemsImage">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.ImageAlignment" Value="BottomCenter" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCommandBarOverflowButton.HasOverflowedItems" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarOverflowButtonHoverFill,CommandBarOverflowButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCommandBarOverflowButton.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarOverflowButtonDropDownOpened">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCommandBarOverflowButton.IsDropDownShown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,TransparentBorder(OuterInner),RoundRectShapeAll2">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarButtonHoverFill,CommandBarButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarButton.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarButtonPressedFill,CommandBarButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarButton.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder(OuterInner),TransparentFill,RoundRectShapeAll2">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarToggleButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarButtonHoverFill,CommandBarButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarToggleButton.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarButtonPressedFill,CommandBarButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarToggleButton.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarButtonToggledBorder,CommandBarButtonToggledHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarToggleButton.MouseOver.Toggled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarButtonPressedFill,CommandBarButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarToggleButton.MouseDown.Toggled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarButtonToggledFill,RoundRectShapeAll2,CommandBarButtonToggledBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarToggleButton.Toggled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,RoundRectShapeAll2,TransparentBorder(OuterInner)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarDropDownButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarButtonHoverFill,CommandBarButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarDropDownButton.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarButtonToggledFill,CommandBarButtonToggledBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarDropDownButton.Pressed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarButtonToggledFill,CommandBarButtonToggledBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarDropDownButton.DropDownOpened" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="0, 35, 64" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarDropDownButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonArrow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarSeparator,TransparentFill,2020Margin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarSeparator" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarTextBoxNormalFill">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.CommandBarTextBox" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder,WhiteFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListEditableAreaElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownTextBoxElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TextBoxBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownTextBoxElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TextBoxFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="DropDownFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarTextBoxNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCommandBarTextBoxElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TextBoxFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCommandBarTextBoxElement.ContainsMouse">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TextBoxFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="243, 248, 253" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCommandBarTextBoxElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="White" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCommandBarTextBoxElement.ContainsMouse" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarTextBoxBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCommandBarTextBoxElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TextBoxBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarTextBoxHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCommandBarTextBoxElement.ContainsMouse">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TextBoxBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarTextBoxHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCommandBarTextBoxElement.ContainsFocus">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TextBoxBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCommandBarTextBoxElement.ContainsFocus">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TextBoxFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarTextBoxHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListElement.ContainsMouse">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="DropDownListBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarTextBoxHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListElement.ContainsFocus">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="DropDownListBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarTextBoxBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="DropDownListBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListArrowButtonElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder(OuterInner)">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListArrowButtonElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListArrowButtonElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarButtonHoverBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListArrowButtonElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarButtonToggledBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListArrowButtonElement.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarButtonToggledFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListArrowButtonElement.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarButtonToggledFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListArrowButtonElement.IsDropDownShown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarButtonToggledBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListArrowButtonElement.IsDropDownShown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,RoundRectShapeAll2,TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarSplitButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.PaintUsingParentShape" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarSplitButton">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.BorderPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.MaxSize" Value="1, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderLeftColor" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderGradientStyle" Value="Solid" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderBoxStyle" Value="FourBorders" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderRightColor" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarSplitButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CommandBarSplitButtonSeparator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarSplitButton.MouseOver.ActionPart" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarStripElementFill,TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarSplitButton.MouseOver.ActionPart">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CommandBarSplitButtonArrow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarButtonHoverFill,CommandBarSplitButtonInnerBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarSplitButton.MouseOver.ArrowPart">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CommandBarSplitButtonArrow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarStripElementFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarSplitButton.MouseOver.ArrowPart" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder,CommandBarSplitButtonInnerBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarSplitButton.MouseOver.ActionPart">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.BorderPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarSplitButton.MouseOver.ArrowPart">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.BorderPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder,CommandBarSplitButtonInnerBorderPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarSplitButton.Pressed">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.BorderPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder,CommandBarSplitButtonInnerBorderPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarSplitButton.DropDownOpened">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.BorderPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarSplitButton.MouseOver">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.BorderPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarSplitButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CommandBarSplitButtonArrow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarSplitButton.Pressed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarSplitButton.DropDownOpened" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarButtonToggledFill,CommandBarSplitButtonInnerBorderPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarSplitButton.DropDownOpened">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CommandBarSplitButtonArrow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarStripElementFill,TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarSplitButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CommandBarSplitButtonArrow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.MaxSize" Value="1, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="46, 100, 140" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.GradientStyle" Value="Solid" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarSplitButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CommandBarSplitButtonSeparator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="0, 35, 64" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListArrowButtonElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonArrow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="0, 35, 64" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarSplitButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonArrow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarSplitButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CommandBarSplitButtonArrow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarSplitButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CommandBarSplitButton.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadCommandBar" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadCommandBarElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.CommandBarButton" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadCommandBarGrip" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.CommandBarDropDownButton" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.CommandBarSeparator" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.CommandBarDropDownList" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.CommandBarLabel" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.CommandBarToggleButton" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadCommandBarOverflowButton" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.CommandBarSplitButton" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.CommandBarTextBox" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadCommandBarArrowButton" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

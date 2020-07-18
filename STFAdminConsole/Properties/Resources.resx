@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="XslData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\XslData.xslt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GlobalSettingsManagementHelpPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\HelpPages\GlobalSettingsManagementHelpPage.htm;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PluginMetadataHelpPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\HelpPages\PluginMetadataHelpPage.htm;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BusySpinner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BusySpinner.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddQueues" xml:space="preserve">
+    <value>The following print queue(s) are new to the server, select which queues you would like to add to the database and click OK.</value>
+  </data>
+  <data name="NewQueuesAdded" xml:space="preserve">
+    <value>The print server and associated queues have been added.  Please review the Device Type for each queue to ensure the data is correct.  Also associate any actual devices (Asset Id) to each queue. This information will be used to reserve the specified devices in the Asset Inventory system during test execution.</value>
+  </data>
+  <data name="NoQueuesAvailable" xml:space="preserve">
+    <value>There are no queues available to add from {0}.</value>
+  </data>
+  <data name="PrintServerDialogHelp" xml:space="preserve">
+    <value>Use this dialog to update the Print Servers and associated Print Queues that can be used by print activities in the STF.  This dialog will allow you to add new print servers and any queues on that server.  It will let you refresh the queues installed on a print server and it will let you remove print servers from the database.  Note that print servers may not be released if they contain any print queues currently referenced by any metadata.  Use the checkmarks to enable or disable both print servers and print queues.  Double click on the Asset Id or click the adjacent button to select devices from the Asset Inventory database. The selected devices will be associated with each queue and will be reserved during the test run.</value>
+  </data>
+  <data name="PrintServerUpToDate" xml:space="preserve">
+    <value>The database queues are in sync with the queues on the server. No changes were made.</value>
+  </data>
+  <data name="RemovePrintServer" xml:space="preserve">
+    <value>Remove print server '{0}' and associated queues?</value>
+  </data>
+  <data name="RemoveQueues" xml:space="preserve">
+    <value>The following print queue(s) are no longer detected on the server. They are listed with their associated test scenario. Select which queues you would like to forcefully remove from the database and click Remove. Queues with no associated scenerios will be automatically removed.{0}Note: Removed printed queues will no longer be usable in test scenarios.</value>
+  </data>
+  <data name="RemoveUnusedQueues" xml:space="preserve">
+    <value>This print server cannot be removed as test scenarios are using queues on this server.  Do you want to remove any unused queues from the database?</value>
+  </data>
+  <data name="AlmDomain" xml:space="preserve">
+    <value>IPG</value>
+  </data>
+  <data name="AlmFarm" xml:space="preserve">
+    <value>qc1f.austin.hp.com</value>
+  </data>
+  <data name="AlmProject" xml:space="preserve">
+    <value>SWPROCESS</value>
+  </data>
+  <data name="RemoveQueueManually" xml:space="preserve">
+    <value>Remove {0}?</value>
+  </data>
+  <data name="QueuesInUse" xml:space="preserve">
+    <value>'{0}' is in use by the following scenarios:{1}Remove the queue from all scenarios before proceeding.</value>
+  </data>
+  <data name="Diagnostic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\diagnostic.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CommandLineUsage" xml:space="preserve">
+    <value>Usage: {0} -dispatcher &lt;DispatcherName&gt; -database &lt;DatabaseName&gt; -scenario &lt;ScenarioName&gt; [-reservation &lt;ReservationKey&gt;]</value>
+  </data>
+  <data name="PluginSettingsPrompt" xml:space="preserve">
+    <value>Select additional Plugin Types to copy the current settings to those respective types.</value>
+  </data>
+  <data name="AddPluginPrompt" xml:space="preserve">
+    <value>Click the dropdown to view the assemblies that were found in the Plugin directory. If the desired assembly is not listed, ensure it is copied to the following location:</value>
+  </data>
+  <data name="ExistingPlugin" xml:space="preserve">
+    <value>A plugin named '{0}' ({1}) already exists in the system.
+Please choose a different plugin name.</value>
+  </data>
+  <data name="SimulatorUsagePieChartSql" xml:space="preserve">
+    <value>SELECT r.SessionId as Value, COUNT(r.AssetId) AS Count
+FROM AssetReservation r
+INNER JOIN DeviceSimulator s ON r.AssetId = s.AssetId
+WHERE r.SessionId IS NOT NULL
+GROUP BY r.SessionId
+UNION
+SELECT 'Available' AS Value, COUNT(s.AssetId) AS Count
+FROM AssetReservation r
+RIGHT OUTER JOIN DeviceSimulator s ON r.AssetId = s.AssetId
+WHERE r.SessionId IS NULL
+Group BY r.SessionId</value>
+  </data>
+  <data name="VMUsagePieChartSql" xml:space="preserve">
+    <value>SELECT SessionId AS Value, COUNT(FrameworkClientHostName) AS Count
+FROM FrameworkClient
+WHERE SessionId IS NOT NULL
+GROUP BY SessionId
+UNION
+SELECT UsageState AS Value, COUNT(UsageState) AS Count
+FROM FrameworkClient
+WHERE SessionId IS NULL
+GROUP BY UsageState</value>
+  </data>
+  <data name="MissingAssemblyName" xml:space="preserve">
+    <value>Enter a name for the plugin assembly.</value>
+  </data>
+  <data name="SelectApplicableResource" xml:space="preserve">
+    <value>Select at least one item in the Applicable Resource checkbox list.</value>
+  </data>
+</root>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+Request for increase in Machine Assignments<br /><br />
+    <b>User:</b>&nbsp;{USER}<br />
+    <b>Scenario:</b>&nbsp;{SCENARIO}<br />
+	<br />
+
+    <table border="1" cellpadding="3" cellspacing="0" style="font-family:'Courier New'; font-size:10pt">
+	<thead>
+		<tr>
+			<th scope="col">PlatformId</th>
+			<th scope="col">Required</th>
+			<th scope="col">Authorized</th>
+		</tr>
+	</thead>
+	<tbody>
+        {ROWS}
+	</tbody>
+</table>
+
+</body>
+</html>

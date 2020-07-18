@@ -1,0 +1,53 @@
+<NetworkEmulationProfile name="Dial-up_56k_Modem" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+<Emulation>
+  <VirtualChannel name="Modem-Channel1">
+    <FilterList />
+    <VirtualLink instances="1" name="link1">
+      <LinkRule dir="upstream">
+        <Bandwidth>
+          <Speed unit="kbps">56</Speed>
+          <QueueManagement>
+            <NormalQueue>
+              <Size>100</Size>
+              <QueueMode>packet</QueueMode>
+              <DropType>DropTail</DropType>
+            </NormalQueue>
+          </QueueManagement>
+        </Bandwidth>
+        <Latency>
+          <Fixed>
+            <Time unit="msec">200</Time>
+          </Fixed>
+        </Latency>
+        <Loss>
+          <Random>
+            <Rate>0.035</Rate>
+          </Random>
+        </Loss>
+      </LinkRule>
+      <LinkRule dir="downstream">
+        <Bandwidth>
+          <Speed unit="kbps">33</Speed>
+          <QueueManagement>
+            <NormalQueue>
+              <Size>100</Size>
+              <QueueMode>packet</QueueMode>
+              <DropType>DropTail</DropType>
+            </NormalQueue>
+          </QueueManagement>
+        </Bandwidth>
+        <Latency>
+          <Fixed>
+            <Time unit="msec">200</Time>
+          </Fixed>
+        </Latency>
+        <Loss>
+          <Random>
+            <Rate>0.035</Rate>
+          </Random>
+        </Loss>
+      </LinkRule>
+    </VirtualLink>
+  </VirtualChannel>
+</Emulation>
+</NetworkEmulationProfile>

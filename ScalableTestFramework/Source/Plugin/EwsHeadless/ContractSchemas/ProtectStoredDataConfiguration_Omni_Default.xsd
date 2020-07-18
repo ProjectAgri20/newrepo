@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ProtectStoredDataConfiguration_Omni_Default" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xs:element name="Contract">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="Parameters" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="RequirePinMaxDigits"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="RequirePinSaveDeviceMemory"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="RequirePinPrintStoredJobs"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="CancelPrintJobsWithoutPin"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AddPinToJobsWithout"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="PIN"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="SortOrder"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="PublicFolderName"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="TemporaryStoreJobRetainOnPowerCycle"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="TemporaryStoreJobLimit"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="TemporaryStoreJobHeldTimeout"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="PermanentStoreJobHeldTimeout"  type="xs:string" minOccurs="0" maxOccurs="1" />
+					<xs:element name="SecureDataEraseMode"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="EraseMode"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      
+    
+    <xs:element name="ProtectStoredDataConfiguration_Omni_Default" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+	<xs:choice minOccurs="0" maxOccurs="1">
+	<xs:element name="Contract" />
+	</xs:choice>
+	</xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Printers FilterType="AddContactsToEmailAddressBook">
+
+  <Printer Type="SIRIUS" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/DevMgmt/Email/Contacts</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>PUT</Method>
+        <Payload>lt;emaildyn:EmailContact xmlns:emaildyn="http://www.hp.com/schemas/imaging/con/ledm/emailservicedyn/2010/11/22"gt;lt;dd:DisplayName xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/"gt;{DisplayName}lt;/dd:DisplayNamegt;lt;dd:EmailAddress xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/"gt;{EmailAddress}lt;/dd:EmailAddressgt;lt;/emaildyn:EmailContactgt;</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="PHOENIX" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/set_config_emailContacts.html/AddEntry</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>Contact_Name={Contact_Name}amp;Email_Address={Email_Address}amp;Add_Button=Add%2FEditamp;requiredField=*+required+fieldamp;emailFormatWarning=E-mail+address+is+in+a+non+standard%0D%0Aformat.%0D%0APress+%5BOK%5D+to+use+anyway.amp;duplicateNameError=Duplicate+display+name.+Enter+a%0D%0Adifferent+display+name+and+try+again.amp;duplicateEmailError=Duplicate+email+address.+Enter+a+different+email+address+and+try+again.amp;duplicateError=Duplicate+entry.+Enter+a+different+display+name+and+different+email+address+and+try+again.amp;Edit_Entry_Num=amp;addressBookFull=0</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+</Printers>
+
+
+

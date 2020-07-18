@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NetworkIPV4Config_Phoenix_Default" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Contract">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="Parameters" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+			  <xs:element name="preferedMethodSelection" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="IPAddr" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="Gateway" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="newNetworkMask" type="xs:string" minOccurs="0" maxOccurs="1" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NetworkIPV4Config_Phoenix_Default" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="1" maxOccurs="1">
+        <xs:element ref="Contract" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

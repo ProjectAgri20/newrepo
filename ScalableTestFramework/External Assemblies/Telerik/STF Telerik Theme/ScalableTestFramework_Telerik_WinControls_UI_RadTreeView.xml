@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ScalableTestFramework" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="WhiteFill,TreeViewBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadTreeViewElement.FullRowSelect" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadTreeViewElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll4,TransparentBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="AntiAlias" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 0, 0, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderColor" Value="Transparent" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TreeNodeContentElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.DrawSignBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.SignStyle" Value="Image" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.SignImage" Value="Qk0OAQAAAAAAADYAAAAoAAAABgAAAAkAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAxMTE//Hx8f8AAAAAAAAAAAAAAAAAAAAApaWl/6ampv/p6en/AAAAAAAAAAAAAAAApaWl/+jo6P+ZmZn/4eHh/wAAAAAAAAAApaWl//z8/P/q6ur/jo6O/9fX1/8AAAAApaWl//z8/P/8/Pz/5OTk/4CAgP/r6+v/paWl//z8/P/p6en/jo6O/9fX1/8AAAAApaWl/+fn5/+ZmZn/4eHh/wAAAAAAAAAApaWl/6ampv/p6en/AAAAAAAAAAAAAAAAxMTE//Hx8f8AAAAAAAAAAAAAAAAAAAAA" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TreeNodeExpanderItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.SignImage" Value="Qk3GAAAAAAAAADYAAAAoAAAABgAAAAYAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAiIiI/yYmJv8mJib/JiYm/yYmJv+Ghob/u7u7/yoqKv9YWFj/WVlZ/1lZWf8mJib/AAAAALu7u/8qKir/WFhY/1lZWf8mJib/AAAAAAAAAAC7u7v/Kioq/1hYWP8mJib/AAAAAAAAAAAAAAAAu7u7/yoqKv8mJib/AAAAAAAAAAAAAAAAAAAAAL29vf+IiIj/" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.DrawSignBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.SignStyle" Value="Image" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TreeNodeExpanderItem.IsExpanded" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll4,TransparentBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="AntiAlias" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI, 9pt" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TreeNodeElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TreeNodeHoverBorder,TreeNodeHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TreeNodeElement.FullRowSelect.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TreeNodeInactiveBorder,TreeViewInactiveFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TreeNodeElement.ControlInactive.FullRowSelect.Selected.Current" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Shape" Value="(none)" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TreeNodeContentElement.FullRowSelect" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TreeNodeInactiveBorder,TreeViewInactiveFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TreeNodeContentElement.Current.ControlInactive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="-1, 0, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.TreeNodeLineElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TreeNodeCurrentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TreeNodeElement.FullRowSelect.Current" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TreeNodeCurrentFill,TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TreeNodeElement.FullRowSelect.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TreeNodeCurrentBorder,TreeNodeCurrentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TreeNodeElement.FullRowSelect.Selected.Current" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TreeViewInactiveFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TreeNodeElement.ControlInactive.FullRowSelect.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TreeNodeInactiveBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TreeNodeElement.ControlInactive.FullRowSelect.Current" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TreeNodeCurrentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TreeNodeContentElement.Current" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TreeNodeCurrentFill,TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TreeNodeContentElement.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TreeNodeCurrentFill,TreeNodeCurrentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TreeNodeContentElement.Selected.Current" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TreeNodeInactiveBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TreeNodeContentElement.ControlInactive.Current" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TreeViewInactiveFill,TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TreeNodeContentElement.ControlInactive.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TreeViewInactiveFill,TreeNodeInactiveBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TreeNodeContentElement.ControlInactive.Selected.Current" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TreeNodeHoverBorder,TreeNodeHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TreeNodeContentElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadTreeView" ElementType="Telerik.WinControls.RootRadElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

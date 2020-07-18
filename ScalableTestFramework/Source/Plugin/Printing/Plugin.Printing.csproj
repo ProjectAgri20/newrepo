@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8ECBBA36-FE22-4002-8BEB-C6725177ACDF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HP.ScalableTest.Plugin.Printing</RootNamespace>
+    <AssemblyName>Plugin.Printing</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OutputPath>..\..\..\..\VirtualResource\Distribution\Plugin\</OutputPath>
+    <CodeAnalysisRuleSet>BasicDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.WinControls, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\External Assemblies\Telerik\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\External Assemblies\Telerik\Telerik.WinControls.GridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\External Assemblies\Telerik\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="ConverterProvider.cs" />
+    <Compile Include="PluginValidation.cs" />
+    <Compile Include="PrintingConfigurationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PrintingConfigurationControl.designer.cs">
+      <DependentUpon>PrintingConfigurationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintingDataConverter1_1.cs" />
+    <Compile Include="PrintingExecutionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PrintingExecutionControl.Designer.cs">
+      <DependentUpon>PrintingExecutionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\FrameworkInternal\STF.FrameworkInternal.csproj">
+      <Project>{1d38c759-e5f6-4603-bbbc-566f1276aba2}</Project>
+      <Name>STF.FrameworkInternal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\STF.Framework.csproj">
+      <Project>{b91dcc51-8664-49e3-97d0-6fcfd2918a1a}</Project>
+      <Name>STF.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PluginSupport\Print\PluginSupport.Print.csproj">
+      <Project>{0d774600-2d99-4376-b8c9-83967ddd56f9}</Project>
+      <Name>PluginSupport.Print</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Print\STF.Print.csproj">
+      <Project>{b549acae-daed-4f96-a962-14bd02428770}</Project>
+      <Name>STF.Print</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utility\STF.Utility.csproj">
+      <Project>{0a02ea9d-11d5-4078-9036-385709cb365a}</Project>
+      <Name>STF.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PrintingConfigurationControl.resx">
+      <DependentUpon>PrintingConfigurationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintingExecutionControl.resx">
+      <DependentUpon>PrintingExecutionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <CodeAnalysisLogFile>$(IntermediateOutputPath)$(TargetFileName).CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisSucceededFile>$(IntermediateOutputPath)$(TargetFileName).lastcodeanalysissucceeded</CodeAnalysisSucceededFile>
+  </PropertyGroup>
+</Project>

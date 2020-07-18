@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1D38C759-E5F6-4603-BBBC-566F1276ABA2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HP.ScalableTest.Framework</RootNamespace>
+    <AssemblyName>STF.FrameworkInternal</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OutputPath>..\..\Binaries\STF.Common\</OutputPath>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
+    <CodeAnalysisRuleSet>Properties\STF.FrameworkInternal.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug (Code Analysis)|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\External Assemblies\Telerik\Telerik.WinControls.GridView.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Assets\CameraInfo.cs" />
+    <Compile Include="Assets\DeviceSimulatorInfo.cs" />
+    <Compile Include="Assets\DynamicLocalPrintQueueDefinition.cs" />
+    <Compile Include="Assets\DynamicLocalPrintQueueInfo.cs" />
+    <Compile Include="Assets\IAssetInventoryInternal.cs" />
+    <Compile Include="Assets\LprPrinterPortInfo.cs" />
+    <Compile Include="Assets\MobileDeviceInfo.cs" />
+    <Compile Include="Assets\MobileDeviceType.cs" />
+    <Compile Include="Assets\PrintDeviceInfoInternal.cs" />
+    <Compile Include="Assets\PrintDriverConfiguration.cs" />
+    <Compile Include="Assets\PrintDriverInfo.cs" />
+    <Compile Include="Assets\PrinterPortInfo.cs" />
+    <Compile Include="Assets\RawPrinterPortInfo.cs" />
+    <Compile Include="Assets\VirtualPrinterInfo.cs" />
+    <Compile Include="Data\FrameworkDataLog.cs" />
+    <Compile Include="Data\IDataLoggerInternal.cs" />
+    <Compile Include="FrameworkServiceExtension.cs" />
+    <Compile Include="IEnvironmentConfigurationInternal.cs" />
+    <Compile Include="IFileRepositoryInternal.cs" />
+    <Compile Include="ISessionRuntimeInternal.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="Plugin\PluginDataConverter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\DynamicLocalPrintQueueForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DynamicLocalPrintQueueForm.Designer.cs">
+      <DependentUpon>DynamicLocalPrintQueueForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\InputDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\InputDialog.Designer.cs">
+      <DependentUpon>InputDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\InvertedBinding.cs" />
+    <Compile Include="UI\IPAddressControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\PrintDriverSelectionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\PrintDriverSelectionControl.Designer.cs">
+      <DependentUpon>PrintDriverSelectionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SimulatorAssetSelectionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SimulatorAssetSelectionControl.Designer.cs">
+      <DependentUpon>SimulatorAssetSelectionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SimulatorConfigurationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SimulatorConfigurationForm.Designer.cs">
+      <DependentUpon>SimulatorConfigurationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TextDisplayDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\TextDisplayDialog.Designer.cs">
+      <DependentUpon>TextDisplayDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\XmlDisplayDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\XmlDisplayDialog.Designer.cs">
+      <DependentUpon>XmlDisplayDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wcf\BindingFactory.cs" />
+    <Compile Include="Wcf\MessageTransferType.cs" />
+    <Compile Include="Wcf\WcfClient.cs" />
+    <Compile Include="Wcf\WcfDualChannelClient.cs" />
+    <Compile Include="Wcf\WcfHost.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Properties\STF.FrameworkInternal.Dictionary.xml" />
+    <None Include="Properties\STF.FrameworkInternal.ruleset" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Framework\STF.Framework.csproj">
+      <Project>{b91dcc51-8664-49e3-97d0-6fcfd2918a1a}</Project>
+      <Name>STF.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="UI\DynamicLocalPrintQueueForm.resx">
+      <DependentUpon>DynamicLocalPrintQueueForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\InputDialog.resx">
+      <DependentUpon>InputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PrintDriverSelectionControl.resx">
+      <DependentUpon>PrintDriverSelectionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SimulatorAssetSelectionControl.resx">
+      <DependentUpon>SimulatorAssetSelectionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SimulatorConfigurationForm.resx">
+      <DependentUpon>SimulatorConfigurationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TextDisplayDialog.resx">
+      <DependentUpon>TextDisplayDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\XmlDisplayDialog.resx">
+      <DependentUpon>XmlDisplayDialog.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <CodeAnalysisLogFile>$(IntermediateOutputPath)$(TargetFileName).CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisSucceededFile>$(IntermediateOutputPath)$(TargetFileName).lastcodeanalysissucceeded</CodeAnalysisSucceededFile>
+  </PropertyGroup>
+</Project>

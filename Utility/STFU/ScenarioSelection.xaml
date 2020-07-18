@@ -1,0 +1,51 @@
+﻿<Window x:Class="HP.ScalableTest.STFU.ScenarioSelection"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:HP.ScalableTest.STFU"
+        Name="ScenarioSelectionWindow"
+         Loaded="ScenarioSelection_Loaded"
+        Title="Scenario Selection" Height="357" Width="320" ResizeMode="NoResize" Icon="Images/Scenario.png">
+    <Grid Style="{StaticResource StyledLeftTopGrid}">
+        <StackPanel>
+            <TreeView ItemsSource="{Binding Folders}" Height="280" Name="ScenarioTree" Background="LightGray">
+                <TreeView.ItemContainerStyle>
+                    <!-- 
+        This Style binds a TreeViewItem to a TreeViewItemViewModel. 
+        -->
+                    <Style TargetType="{x:Type TreeViewItem}">
+                        <Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay}" />
+                        <Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay}" />
+                        <Setter Property="FontWeight" Value="Normal" />
+                        <Style.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="FontWeight" Value="Bold" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </TreeView.ItemContainerStyle>
+
+                <TreeView.Resources>
+                    <HierarchicalDataTemplate 
+          DataType="{x:Type local:ScenarioFolderViewModel}" 
+          ItemsSource="{Binding Children}"
+          >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Width="18" Height="18" Margin="3,0" Source="Images\Folder.png" />
+                            <TextBlock Text="{Binding FolderName}" />
+                        </StackPanel>
+                    </HierarchicalDataTemplate>                  
+                    <DataTemplate DataType="{x:Type local:ScenarioViewModel}">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Width="18" Height="18" Margin="3,0" Source="Images\Scenario.png" />
+                            <TextBlock Text="{Binding ScenarioName}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </TreeView.Resources>
+            </TreeView>
+            <StackPanel Orientation="Horizontal" Margin="30,5,0,0" Height="30">
+                <Button Name="buttonOK" Content="OK" Width="75" Margin="100,0,0,0" Click="buttonOK_Click" Style="{StaticResource StyledButton}"/>
+                <Button Name="buttonCancel" Content="Cancel" Width="75" Margin="20,0,0,0" Click="buttonCancel_Click" Style="{StaticResource StyledButton}"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

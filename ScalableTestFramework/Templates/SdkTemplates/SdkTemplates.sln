@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SdkPluginTemplate", "SdkPluginTemplate\SdkPluginTemplate.csproj", "{349338F2-A290-492B-AE15-5DBA299E0709}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SdkTemplateWizard", "SdkTemplateWizard\SdkTemplateWizard.csproj", "{1A403C79-FE27-4887-8FCF-1E3B8DC05C84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{349338F2-A290-492B-AE15-5DBA299E0709}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{349338F2-A290-492B-AE15-5DBA299E0709}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{349338F2-A290-492B-AE15-5DBA299E0709}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{349338F2-A290-492B-AE15-5DBA299E0709}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A403C79-FE27-4887-8FCF-1E3B8DC05C84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A403C79-FE27-4887-8FCF-1E3B8DC05C84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A403C79-FE27-4887-8FCF-1E3B8DC05C84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A403C79-FE27-4887-8FCF-1E3B8DC05C84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {99ED8660-23F9-4601-A82C-5453FB0904CC}
+	EndGlobalSection
+EndGlobal

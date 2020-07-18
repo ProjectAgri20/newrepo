@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AccessControlWindowsSignin_Omni_Default" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xs:element name="Contract">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="Parameters" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+					<xs:element name="TrustedDomainLabel" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="DefaultDomain" type="xs:string" minOccurs="0" maxOccurs="1" />
+					<xs:element name="EnableSsl" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="ReverseDns" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="SearchMatchField" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="EmailMatchField"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="DisplayNameMatchField"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="TestDomain" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="TestUsername" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="TestPassword" type="xs:string" minOccurs="0" maxOccurs="1" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+	<xs:element name="AccessControlWindowsSignin_Omni_Default" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+	<xs:complexType>
+      <xs:choice minOccurs="1" maxOccurs="1">
+        <xs:element ref="Contract" />
+      </xs:choice>
+    </xs:complexType>
+	</xs:element>
+</xs:schema>

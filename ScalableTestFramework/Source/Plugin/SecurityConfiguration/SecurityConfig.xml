@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SecurityOption>
+  <Data>
+    <Name>Administrator</Name>
+    <Key>Administrator Password        :</Key>
+    <Value>Set</Value>
+  </Data>
+
+  <Data>
+    <Name>Printing9100</Name>
+    <Key>9100 Printing:</Key>
+    <Value>Enabled</Value>
+  </Data>
+
+  <Data>
+    <Name>LPD</Name>
+    <Key>LPD Printing:</Key>
+    <Value>Enabled</Value>
+  </Data>
+
+  <Data>
+    <Name>IPP</Name>
+    <Key>IPP Printing:</Key>
+    <Value>Enabled</Value>
+  </Data>
+
+  <Data>
+    <Name>IPPS</Name>
+    <Key>IPPS Printing:</Key>
+    <Value>Enabled</Value>
+  </Data>
+
+  <Data>
+    <Name>FTP</Name>
+    <Key>FTP Printing:</Key>
+    <Value>Enabled</Value>
+  </Data>
+
+  <Data>
+    <Name>WebServices</Name>
+    <Key>Web Services Print:</Key>
+    <Value>Enabled</Value>
+  </Data>
+
+  <Data>
+    <Name>EnableWINSPort</Name>
+    <Key>Enable WINS Port:</Key>
+    <Value>Enabled</Value>
+  </Data>
+
+  <Data>
+    <Name>WINSRegistration</Name>
+    <Key>WINS Registration:</Key>
+    <Value>Enabled</Value>
+  </Data>
+
+  <Data>
+    <Name>SLPConfig</Name>
+    <Key>SLP Config:</Key>
+    <Value>Enabled</Value>
+  </Data>
+  <Data>
+    <Name>Bonjour</Name>
+    <Key>Bonjour:</Key>
+    <Value>Enabled</Value>
+  </Data>
+
+  <Data>
+    <Name>MulticastIPv4</Name>
+    <Key>Multicast IPv4:</Key>
+    <Value>Enabled</Value>
+  </Data>
+
+  <Data>
+    <Name>LLMNR</Name>
+    <Key>LLMNR</Key>
+    <Value>Enabled</Value>
+  </Data>
+
+  <Data>
+    <Name>SetCommunityName</Name>
+    <Key>Set Community Name:</Key>
+    <Value>Set</Value>
+  </Data>
+
+  <Data>
+    <Name>Telnet</Name>
+    <Key>Telnet:</Key>
+    <Value>Disabled</Value>
+  </Data>
+
+  <Data>
+    <Name>SNMPV3Basic</Name>
+    <Key>Status:_1</Key>
+    <Value>Disabled</Value>
+  </Data>
+
+  <Data>
+    <Name>SNMPV1V2</Name>
+    <Key>Status:</Key>
+    <Value>Enabled</Value>
+  </Data>
+
+  <Data>
+    <Name>WSDiscovery</Name>
+    <Key>WS-Discovery:</Key>
+    <Value>Disabled</Value>
+  </Data>
+
+  <Data>
+    <Name>AccessControl</Name>
+    <Key>Access Control:</Key>
+    <Value>Disabled</Value>
+  </Data>
+
+  <Data>
+    <Name>EncryptAllWebCommunication</Name>
+    <Key>Encrypt All Web Communication:</Key>
+    <Value>Disabled</Value>
+  </Data>
+
+  <Data>
+    <Name>AirPrint</Name>
+    <Key>AirPrint:</Key>
+    <Value>Enabled</Value>
+  </Data>
+
+  <Data>
+    <Name>HPJetdirectXMLServices</Name>
+    <Key>HP Jetdirect XML Services</Key>
+    <Value>Enabled</Value>
+  </Data>
+
+  <Data>
+    <Name>TFTPConfigurationFile</Name>
+    <Key>TFTP Configuration File:</Key>
+    <Value>Enabled</Value>
+  </Data>
+
+  <Data>
+    <Name>CertificateMgmtService</Name>
+    <Key>Certificate Mgmt Service</Key>
+    <Value>Enabled</Value>
+  </Data>
+
+  <Data>
+    <Name>Telnet</Name>
+    <Key>Telnet:</Key>
+    <Value>Disabled</Value>
+  </Data>
+
+  <Data>
+    <Name>CCCLogging</Name>
+    <Key>CCC Logging:</Key>
+    <Value>Disabled</Value>
+  </Data>
+
+  <Data>
+    <Name>SNMPV1V2ReadOnlyAccess</Name>
+    <Key>Status:</Key>
+    <Value>Read-Only Access Enabled</Value>
+  </Data>
+
+  <Data>
+    <Name>EncryptionStrength1</Name>
+    <Key>Encryption Strength:</Key>
+    <Value>Low                        ;;Encryption Supported</Value>
+  </Data>
+
+  <Data>
+    <Name>EncryptionStrength2</Name>
+    <Key>Encryption Strength:</Key>
+    <Value>Medium                        ;;Encryption Supported</Value>
+  </Data>
+
+  <Data>
+    <Name>EncryptionStrength3</Name>
+    <Key>Encryption Strength:</Key>
+    <Value>High                        ;;Encryption Supported</Value>
+  </Data>
+
+  <Data>
+    <Name>EAPUserName</Name>
+    <Key>EAP User Name:</Key>
+    <Value>Set</Value>
+  </Data>
+
+  <Data>
+    <Name>EAPPassword</Name>
+    <Key>EAP Password:</Key>
+    <Value>Set</Value>
+  </Data>
+
+ <Data>
+    <Name>ACLConfig</Name>
+    <Key>ACLConfig</Key>
+    <Value>aclCheckOn=on&amp;1.0.10.en=on&amp;1.0.10.ip={0}&amp;1.0.10.sm={1}&amp;1.1.10.ip=&amp;1.1.10.sm=&amp;1.2.10.ip=&amp;1.2.10.sm=&amp;1.3.10.ip=&amp;1.3.10.sm=&amp;1.4.10.ip=&amp;1.4.10.sm=&amp;1.5.10.ip=&amp;1.5.10.sm=&amp;1.6.10.ip=&amp;1.6.10.sm=&amp;1.7.10.ip=&amp;1.7.10.sm=&amp;1.8.10.ip=&amp;1.8.10.sm=&amp;1.9.10.ip=&amp;1.9.10.sm=&amp;Next=Next+%3E&amp;Hide={2}</Value>
+  </Data>
+
+  <Data>
+    <Name>Dot1xConfig</Name>
+    <Key>Dot1xConfig</Key>
+    <Value>dot1x_auth_eap_username={0}&amp;dot1x_auth_eap_passwd={1}&amp;dot1x_auth_eap_passwd_conf={2}&amp;dot1x_auth_eap_serverid=&amp;dot1x_auth_eap_encrstr=EAP_ENCRSTR_MED&amp;AuthState=CONNECT&amp;dot1x_auth_reauth=on&amp;Next=Next+%3E&amp;Hide={3}</Value>
+  </Data>
+
+ <Data>
+    <Name>ProtocolConfig</Name>
+    <Key>ProtocolConfig</Key>
+    <Value>Port9100=on&amp;LPD=on&amp;IPP=on&amp;IPPS=on&amp;FTP=on&amp;WS_wizPrint=on&amp;SLP=on&amp;M_DNS=on&amp;M_IPV4=on&amp;Ws_wizDiscovery=on&amp;LLMNR=on&amp;WINSPort=on&amp;WINSReg=on&amp;XML_Ser=on&amp;TftpFilePullDown=on&amp;CertMs=on&amp;CertPullPrint=on&amp;Next=Next+%3E&amp;Hide={0}</Value>
+  </Data>
+
+    <Data>
+    <Name>SignInIndexConfig</Name>
+    <Key>SignInIndexConfig</Key>
+    <Value>UserNameTextBox={0}&amp;PinTextBox=public&amp;signInOk=OK&amp;agentId=hp_EmbeddedPin_v1</Value>
+  </Data>
+
+
+ <Data>
+    <Name>SNMPV1V2Config</Name>
+    <Key>SNMPV1V2Config</Key>
+    <Value>setcommunity=public&amp;confsetcommunity=public&amp;getcommunity=public&amp;confgetcommunity=public&amp;Next=Next+%3E&amp;Hide={0}</Value>
+  </Data>
+
+  <Data>
+    <Name>WelcomeConfig</Name>
+    <Key>WelcomeConfig</Key>
+    <Value>startwizard=Start+Wizard</Value>
+  </Data>
+  
+    <Data>
+    <Name>LevelConfig</Name>
+    <Key>LevelConfig</Key>
+    <Value>level={0}&amp;Next=Next+%3E&amp;Hide={1}</Value>
+  </Data>
+  
+<Data>
+    <Name>PasswordConfig</Name>
+    <Key>PasswordConfig</Key>
+    <Value>passwd={0}&amp;confirmpassword={0}&amp;Next=Next+%3E&amp;Hide={1}</Value>
+  </Data>
+
+
+<Data>
+    <Name>SNMPConfig</Name>
+    <Key>SNMPConfig</Key>
+    <Value>SNMPv3={0}&amp;Next=Next+%3E&amp;Hide={1}</Value>
+  </Data>
+
+<Data>
+    <Name>SNMPV3Config</Name>
+    <Key>SNMPV3Config</Key>
+    <Value>snmpusername={0}&amp;authPassphraseAlgorithm=AuthPassphraseMD5&amp;authPassphrase={1}&amp;privacyPassphraseAlgorithm=PrivPassphraseDES&amp;privacyPassphrase={2}&amp;Next=Next+%3E&amp;Hide={3}</Value>
+  </Data>
+
+
+<Data>
+    <Name>SNMPLegacy</Name>
+    <Key>SNMPLegacy</Key>
+    <Value>SNMPv1v2ReadOnly={0}&amp;Next=Next+%3E&amp;Hide={1}</Value>
+  </Data>
+
+<Data>
+    <Name>ReviewConfig</Name>
+    <Key>ReviewConfig</Key>
+    <Value>Finish=Finish&amp;Hide={0}</Value>
+  </Data>
+
+
+
+<Data>
+    <Name>WebSecurityConfig</Name>
+    <Key>WebSecurityConfig</Key>
+    <Value>encStrength={0}&amp;TLS10=on&amp;SSL3=on&amp;encryptall=on&amp;Next=Next+%3E&amp;Hide={1}</Value>
+  </Data>
+  
+<Data>
+    <Name>MgmtConfig</Name>
+    <Key>MgmtConfig</Key>
+    <Value>Next=Next+%3E&amp;Hide={0}</Value>
+  </Data>
+
+<Data>
+    <Name>SNMPCustomConfig</Name>
+    <Key>SNMPCustomConfig</Key>
+    <Value>SNMPv1v2=on&amp;Next=Next+%3E&amp;Hide={0}</Value>
+  </Data>
+  
+<Data>
+    <Name>SNMPCustomConfig</Name>
+    <Key>SNMPCustomConfig</Key>
+    <Value>SNMPv1v2=on&amp;Next=Next+%3E&amp;Hide={0}</Value>
+  </Data>
+
+
+</SecurityOption>

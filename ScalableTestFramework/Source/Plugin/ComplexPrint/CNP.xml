@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <ProductName>Madrid</ProductName>
+  <DriverPath>\\etlhubrepo\CTC\VEP\Madrid\Drivers</DriverPath>
+  <DriverModel>PCL</DriverModel>
+  <FilesPath>etlhubrepo\CTC\VEP\Madrid\Documents\CNP</FilesPath>
+  <IPv4Address>192.168.201.10</IPv4Address>
+</Configuration>

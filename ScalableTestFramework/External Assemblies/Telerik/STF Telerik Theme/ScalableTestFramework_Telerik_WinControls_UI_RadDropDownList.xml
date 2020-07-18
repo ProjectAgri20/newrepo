@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ScalableTestFramework" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="Windows7Font8.25AndForeColor">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadTextBoxElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TextBoxBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TextEditorFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="DropDownFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ControlBorderNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="DropDownListBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadTextBoxElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TextBoxFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="Transparent" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadTextBoxElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListArrowButtonElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListArrowButtonElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 1, 1, 1" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="4, 0, 4, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListArrowButtonElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListArrowButtonElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListArrowButtonElement.IsDropDownShown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListArrowButtonElement.IsDropDownShown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListArrowButtonElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ComboDropDownArrow">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListArrowButtonElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonArrow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Padding(2;1;2;0)">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="White" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownTextBoxElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownTextBoxElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TextBoxFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownTextBoxElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TextBoxBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadDropDownList" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadDropDownListElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadDropDownTextBoxElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

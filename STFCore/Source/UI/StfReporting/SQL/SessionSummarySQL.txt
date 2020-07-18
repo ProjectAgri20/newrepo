@@ -1,0 +1,7 @@
+﻿SELECT 
+	*
+FROM 
+	Reports.vw_rpt_SessionSummaryWithCounts 
+ORDER BY 
+	StartDateTime
+	DESC

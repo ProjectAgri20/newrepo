@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Printers FilterType="ScanToUsbConfiguration">
+  <Printer Type="OMNI" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/Usb/Save</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Default item="SameWidthAllEdgesBack">0.00</Default>
+        <Default item="EraseBackRight">0.00</Default>
+        <Default item="EraseBackLeft">0.00</Default>
+        <Default item="EraseBackBottom">0.00</Default>
+        <Default item="EraseBackTop">0.00</Default>
+        <Default item="SameWidthAllEdgesFront">0.00</Default>
+        <Default item="EraseFrontRight">0.00</Default>
+        <Default item="EraseFrontLeft">0.00</Default>
+        <Default item="EraseFrontTop">0.00</Default>
+        <Default item="EraseFrontBottom">0.00</Default>
+        <Default item="FileNumberFormat">0</Default>
+        <Default item="FileType">0</Default>
+        <Default item="NumberOfPagesForEachFile">1</Default>
+        <Default item="ColorPreference">4</Default>
+        <Default item="ColorTiffCompression">4</Default>
+        <Default item="BlackTiffCompression">0</Default>
+        <Default item="OutputQuality">1</Default>
+        <Default item="Resolution">2</Default>
+        <Default item="EncryptPDF">on</Default>
+        <Default item="OriginalSize">0</Default>
+        <Default item="OriginalSides">0</Default>
+        <Default item="Darkness">5</Default>
+        <Default item="Contrast">5</Default>
+        <Default item="Sharpness">2</Default>
+        <Default item="TextPicture">2</Default>
+        <Default item="ImagePreviewConfiguration">2</Default>
+        <Default item="AutoCrop">0</Default>
+        <Default item="ContentOrientation">1</Default>
+        <Default item="BackgroundRemoval">2</Default>
+        <Default item="NotificationMethod">Email</Default>
+        <Default item="ConditionNotify">Never</Default>
+        <Payload>UsbEnabled=onamp;ConditionNotify={ConditionNotify}amp;NotificationMetchod={NotificationMethod}amp;EmailAddress={EmailAddress}amp;EmailAddressEditable=onamp;OriginalSize={OriginalSize}amp;OriginalSides={OriginalSides}amp;TextPicture={TextPicture}amp;ContentOrientation={ContentOrientation}amp;BackgroundRemoval={BackgroundRemoval}amp;Darkness={Darkness}amp;Contrast={Contrast}amp;Sharpness={Sharpness}amp;ImagePreviewConfiguration={ImagePreviewConfiguration}amp;AutoCrop={AutoCrop}amp;EraseUseInches=onamp;FrontSide=diffamp;EraseFrontTop={EraseFrontTop}amp;EraseFrontBottom={EraseFrontBottom}amp;EraseFrontLeft={EraseFrontLeft}amp;EraseFrontRight={EraseFrontRight}amp;SameWidthAllEdgesFront={SameWidthAllEdgesFront}amp;BackSide=diffamp;EraseBackTop={EraseBackTop}amp;EraseBackBottom={EraseBackBottom}amp;EraseBackLeft={EraseBackLeft}amp;EraseBackRight={EraseBackRight}amp;SameWidthAllEdgesBack={SameWidthAllEdgesBack}amp;FileNamePrefix=amp;FileName={FileName}amp;FileNameUserEditable=onamp;FileNameSuffix=amp;FileNumberFormat={FileNumberFormat}amp;FileType={FileType}amp;FileTypeEditable=onamp;EncryptPDF={EncryptPDF}amp;BlackTiffCompression={BlackTiffCompression}amp;ColorTiffCompression={ColorTiffCompression}amp;Resolution={Resolution}amp;OutputQuality={OutputQuality}amp;ColorPreference={ColorPreference}amp;ScanToMultipleFiles={ScanToMultipleFiles}amp;NumberOfPagesForEachFile={NumberOfPagesForEachFile}amp;FormButtonSubmit=Apply</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Language</HeaderName>
+            <HeaderValue>en-US</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="3">
+            <HeaderName>Cache-Control</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+</Printers>

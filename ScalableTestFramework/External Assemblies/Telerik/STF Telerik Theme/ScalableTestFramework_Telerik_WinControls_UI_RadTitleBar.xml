@@ -1,0 +1,866 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ScalableTestFramework" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="TitleBarFillInactive">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBar">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TitleFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Windows7Font8.25AndForeColor">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CloseButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MinimizeButtonImageNormal">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="6, 3, 6, 3" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Shape" Value="Telerik.WinControls.RoundRectShape|3, True, False, False, False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MinimizeButton.IsFormActive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RestoreButtonImageNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MinimizeButton.FormMinimized.IsFormActive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RestoreButtonImageNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MaximizeButton.FormMaximized.IsFormActive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MaximizeButtonImage">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="6, 3, 6, 3" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MaximizeButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CloseButtonImageNormal">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="6, 3, 6, 3" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Shape" Value="Telerik.WinControls.RoundRectShape|3, False, False, True, False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CloseButton.IsFormActive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MaximizeButtonImage">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="6, 3, 6, 3" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MaximizeButton.IsFormActive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RestoreButtonImageNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MaximizeButton.FormMaximized" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MinimizeButtonImageNormal">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="6, 3, 6, 3" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Shape" Value="Telerik.WinControls.RoundRectShape|3, True, False, False, False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MinimizeButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RestoreButtonImageNormal">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="6, 3, 6, 3" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MinimizeButton.FormMinimized" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CloseButtonImageNormal">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="6, 3, 6, 3" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Shape" Value="Telerik.WinControls.RoundRectShape|3, False, False, True, False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CloseButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="FormCloseButtonActiveNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CloseButton.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="FormCloseButtonActivePressedlFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CloseButton.MouseDown.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CloseButton.MouseOver.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CloseButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="FormCloseButtonActivePressedlFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CloseButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MaximizeButton.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MaximizeButton.FormMaximized">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MinimizeButton.FormMinimized">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MinimizeButton.FormMinimized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MinimizeButton.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MinimizeButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MaximizeButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MaximizeButton.FormMaximized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MaximizeButton.MouseOver.FormMaximized">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MaximizeButton.MouseOver.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MaximizeButton.MouseOver.FormMaximized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MaximizeButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MinimizeButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MinimizeButton.MouseOver.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MinimizeButton.MouseOver.FormMinimized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MinimizeButton.MouseOver.FormMinimized">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MinimizeButton.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MinimizeButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MaximizeButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MaximizeButton.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonBorderNormalFormActive">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CloseButton.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CloseButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CloseButtonImageNormal,8383Padding,RoundRectShapeAll2,2020Margin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CloseButtonImageNormal,8383Padding,RoundRectShapeAll2,2020Margin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.FormNormal.IsFormActive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CloseButtonImageNormal,8383Padding,RoundRectShapeAll2,2020Margin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.FormMinimized.IsFormActive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CloseButtonImageNormal,8383Padding,RoundRectShapeAll2,2020Margin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.FormMaximized.IsFormActive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MaximizeButtonImage,8383Padding,RoundRectShapeAll2,2020Margin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMaximizeButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MaximizeButtonImage,8383Padding,RoundRectShapeAll2,2020Margin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMaximizeButton.FormNormal.IsFormActive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="8383Padding,MaximizeButtonImage,RoundRectShapeAll2,2020Margin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMaximizeButton.FormMinimized.IsFormActive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="8383Padding,RestoreButtonImageNormal,RoundRectShapeAll2,2020Margin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMaximizeButton.FormMaximized.IsFormActive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMaximizeButton.MouseOver.FormNormal.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MinimizeButtonImageNormal,8383Padding,RoundRectShapeAll2,2020Margin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MinimizeButtonImageNormal,8383Padding,RoundRectShapeAll2,2020Margin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.FormNormal.IsFormActive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MinimizeButtonImageNormal,8383Padding,RoundRectShapeAll2,2020Margin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.FormMaximized.IsFormActive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="8383Padding,RestoreButtonImageNormal,RoundRectShapeAll2,2020Margin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.FormMinimized.IsFormActive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.MouseOver.FormMaximized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.MouseOver.FormNormal.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.MouseOver.FormMinimized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.MouseOver.FormMaximized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.MouseOver.FormNormal.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.MouseDown.FormMaximized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.MouseDown.FormNormal.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.MouseDown.FormMinimized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMaximizeButton.FormMaximized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMaximizeButton.FormMinimized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMaximizeButton.FormNormal.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMaximizeButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.FormMinimized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.FormMaximized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.FormNormal.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMaximizeButton.MouseOver.FormMaximized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMaximizeButton.MouseOver.FormMinimized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMaximizeButton.MouseOver.FormNormal.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMaximizeButton.MouseDown.FormNormal.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMaximizeButton.MouseDown.FormMinimized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMaximizeButton.MouseDown.FormMaximized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.MouseDown.FormMinimized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.MouseDown.FormMaximized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.MouseDown.FormNormal.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.MouseOver.FormNormal.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.MouseOver.FormMinimized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.MouseOver.FormMaximized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.MouseDown.FormMaximized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.MouseDown.FormMinimized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.MouseDown.FormNormal.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.MouseOver.FormMinimized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.MouseOver.FormMaximized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.MouseOver.FormNormal.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMaximizeButton.MouseDown.FormMaximized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarFillNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBar.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TitleFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.FormMinimized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.FormMaximized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.FormNormal.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMaximizeButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMaximizeButton.FormNormal.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMaximizeButton.FormMinimized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMaximizeButton.FormMaximized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.FormNormal.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.FormMinimized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.FormMaximized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="FormCloseButtonActiveNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="FormCloseButtonActiveNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.FormNormal.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="FormCloseButtonActiveNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.FormMinimized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="FormCloseButtonActiveNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.FormMaximized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBar.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TitleBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBar">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TitleBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.MouseDown.FormMinimized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.MouseDown.FormMaximized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.MouseDown.FormNormal.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.MouseOver.FormMinimized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMaximizeButton.MouseDown.FormNormal.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMaximizeButton.MouseOver.FormMaximized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMaximizeButton.MouseOver.FormMinimized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMaximizeButton.MouseDown.FormMinimized.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Padding(5;5;5;5)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBar" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Padding(5;5;5;5)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBar.IsFormActive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RestoreButtonImageNormal,8383Padding,RoundRectShapeAll2,2020Margin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.FormMinimized" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MinimizeButtonImageNormal,8383Padding,RoundRectShapeAll2,2020Margin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.FormNormal" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MinimizeButtonImageNormal,8383Padding,RoundRectShapeAll2,2020Margin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.FormMaximized" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.FormMinimized">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.FormNormal">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.FormMaximized">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.FormMinimized">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.FormNormal">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarMinimizeButton.FormMaximized">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadTitleBar" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadTitleBarElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

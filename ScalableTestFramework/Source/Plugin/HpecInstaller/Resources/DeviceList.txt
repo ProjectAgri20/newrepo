@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DeviceList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name> DL#752462</Name>
+  <Devices>
+    <Device guid="0e737853-c1d0-4900-a3d3-593a305c5c1d" deviceId="HP LaserJet MFP E72535#CN48JDR00S" ipAddress="15.85.92.217" httpPort="80" httpsPort="443" snmpPort="161">
+      <Username>admin</Username>
+      <Password>--Boundary93504AC0-71EE-49dd-AEB3-D3EF6D251BEA------iomnFARkiXgHO9laozEA7Q==</Password>
+      <SetEWSPwdtoSetComm>false</SetEWSPwdtoSetComm>
+      <SnmpVersion>V1V2</SnmpVersion>
+      <SnmpGet>--Boundary93504AC0-71EE-49dd-AEB3-D3EF6D251BEA------p5R+1h1C/6Uj5l/S8yEcjA==</SnmpGet>
+      <SnmpSet>--Boundary93504AC0-71EE-49dd-AEB3-D3EF6D251BEA------p5R+1h1C/6Uj5l/S8yEcjA==</SnmpSet>
+      <SnmpV3_AuthKey />
+      <SnmpV3_PrivKey />
+      <SnmpV3_ContextName>Jetdirect</SnmpV3_ContextName>
+      <PjlPassword />
+      <Family>JEDI_MFP</Family>
+      <Model>HP LaserJet MFP E72535</Model>
+      <Hostname>NPIC5A97A</Hostname>
+      <FactoryDefaultHostname>NPIC5A97A</FactoryDefaultHostname>
+      <MacAddress>186024C5A97A</MacAddress>
+      <FwVersion>2406048_29614</FwVersion>
+      <FwDate>2018-05-10T00:00:00</FwDate>
+      <Ram>7168</Ram>
+      <SerialNumber>CN48JDR00S</SerialNumber>
+      <SleepState>SLEEP</SleepState>
+      <UpTime>15320208</UpTime>
+      <IsOffline>false</IsOffline>
+      <DeviceAttributes>
+        <AttributeInfo>
+          <Name>SpecificSetting.HostName</Name>
+          <Value />
+        </AttributeInfo>
+        <AttributeInfo>
+          <Name>SpecificSetting.IpAddress</Name>
+          <Value />
+        </AttributeInfo>
+        <AttributeInfo>
+          <Name>SpecificSetting.CompanyName</Name>
+          <Value />
+        </AttributeInfo>
+        <AttributeInfo>
+          <Name>SpecificSetting.Location</Name>
+          <Value />
+        </AttributeInfo>
+        <AttributeInfo>
+          <Name>SpecificSetting.ContactPerson</Name>
+          <Value />
+        </AttributeInfo>
+        <AttributeInfo>
+          <Name>SpecificSetting.AssetNumber</Name>
+          <Value />
+        </AttributeInfo>
+        <AttributeInfo>
+          <Name>SpecificSetting.Language</Name>
+          <Value />
+        </AttributeInfo>
+      </DeviceAttributes>
+    </Device>
+  </Devices>
+</DeviceList>

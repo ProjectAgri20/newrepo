@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>HP Inc. STB Plugin Template</Name>
+    <Description>A project for creating a new HP Inc. STB plugin assembly.</Description>
+    <Icon>HP_Blue_RGB_72_SM.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>4.6</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>24ab28cf-c63d-4276-a14d-995ab36e470d</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>HPInc_STB_Plugin_Template</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeclassprefix$ActivityData.cs" OpenInEditor="true">ActivityData.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeclassprefix$ConfigurationControl.cs">ConfigurationControl.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeclassprefix$ConfigurationControl.Designer.cs">ConfigurationControl.Designer.cs</ProjectItem>
+      <ProjectItem TargetFileName="$safeclassprefix$ConfigurationControl.resx">ConfigurationControl.resx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeclassprefix$ExecutionControl.cs">ExecutionControl.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeclassprefix$ExecutionControl.Designer.cs">ExecutionControl.Designer.cs</ProjectItem>
+      <ProjectItem TargetFileName="$safeclassprefix$ExecutionControl.resx">ExecutionControl.resx</ProjectItem>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>SDK Templates, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=4d48514b5dc61471</Assembly>
+    <FullClassName>SdkTemplateWizard.WizardImplementation</FullClassName>
+  </WizardExtension>
+</VSTemplate>

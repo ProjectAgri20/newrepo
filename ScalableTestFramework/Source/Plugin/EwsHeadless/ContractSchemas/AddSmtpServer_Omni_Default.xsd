@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AddSmtpServer_Omni_Default"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xs:element name="Contract">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name"  type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="Parameters"  minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="SmtpServerName"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="ConfirmSmtpServerAddress"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="SmtpServerPort"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="SmtpSplitEmail"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="UseSsl"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="ValidateServerCertificate"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="SmtpAuthentication"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="SmtpCredentials"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="SmtpUserName"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="SmtpPassword"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="SmtpTestEmailTo"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+	<xs:element name="AddSmtpServer_Omni_Default" msdata:IsDataSet="true" >
+	 <xs:complexType>
+      <xs:choice minOccurs="1" maxOccurs="1">
+        <xs:element ref="Contract" />
+      </xs:choice>
+    </xs:complexType>
+	</xs:element>
+</xs:schema>

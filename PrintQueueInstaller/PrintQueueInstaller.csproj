@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F79AF4D4-1A70-418D-AC6C-2B20C9D182E2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HP.ScalableTest.Print.Utility</RootNamespace>
+    <AssemblyName>HP.STF.PrintQueueInstaller</AssemblyName>
+    <OutputPath>..\VirtualResource\Distribution\PrintQueueInstaller</OutputPath>
+    <CodeAnalysisRuleSet>..\STF Standard Rules.ruleset</CodeAnalysisRuleSet>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <CodeAnalysisForceOutput>false</CodeAnalysisForceOutput>
+    <CodeAnalysisGenerateSuccessFile>false</CodeAnalysisGenerateSuccessFile>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug (XML Doc)|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug (Code Analysis + XML Doc)|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Mamba.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug %28XML Doc%29|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug %28Code Analysis + XML Doc%29|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MTGCCombobox, Version=1.3.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\MTGCCombobox.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DriverClasses\DriverConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverClasses\DriverConfigForm.Designer.cs">
+      <DependentUpon>DriverConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DriverClasses\DriverInstallForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverClasses\DriverInstallForm.Designer.cs">
+      <DependentUpon>DriverInstallForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DriverClasses\DriverInstallUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DriverClasses\DriverInstallUserControl.Designer.cs">
+      <DependentUpon>DriverInstallUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DriverClasses\DriverPackagePaths.cs" />
+    <Compile Include="DriverClasses\DriverUpgradeData.cs" />
+    <Compile Include="DriverClasses\DriverUpgradeManager.cs" />
+    <Compile Include="DriverClasses\MultipleColumnComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DriverStoreScanner.cs" />
+    <Compile Include="DriverStoreScanningEventArgs.cs" />
+    <Compile Include="ErrorEventArgs.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="InboxDriverClasses\DriverStoreScanningForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InboxDriverClasses\DriverStoreScanningForm.Designer.cs">
+      <DependentUpon>DriverStoreScanningForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InboxDriverClasses\InboxDriverSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InboxDriverClasses\InboxDriverSelectionForm.Designer.cs">
+      <DependentUpon>InboxDriverSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DriverClasses\PrintDriverComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintDeviceDriver.cs" />
+    <Compile Include="PrintDeviceDriverCollection.cs" />
+    <Compile Include="PrintDriverLocalCopyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintDriverLocalCopyForm.Designer.cs">
+      <DependentUpon>PrintDriverLocalCopyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDriversManager.cs" />
+    <Compile Include="PrintProcessor.cs" />
+    <Compile Include="PrintQueueException.cs" />
+    <Compile Include="ProcessorArchitecture.cs" />
+    <Compile Include="QueueClasses\QueueInstallerPrintDevice.cs" />
+    <Compile Include="QueueClasses\PortUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueueClasses\PortUpdateForm.Designer.cs">
+      <DependentUpon>PortUpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueueClasses\QueuePortData.cs" />
+    <Compile Include="QueueClasses\StandardTcpIPPort.cs" />
+    <Compile Include="QueueClasses\TcpIPPortInstaller.cs" />
+    <Compile Include="RegistryAnalyzer.cs" />
+    <Compile Include="RegistryInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistryInformationForm.Designer.cs">
+      <DependentUpon>RegistryInformationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrySnapshot.cs" />
+    <Compile Include="RegistrySnapshotKey.cs" />
+    <Compile Include="RegistrySnapshotKeys.cs" />
+    <Compile Include="StatusClasses\InstallStatusData.cs" />
+    <Compile Include="StatusClasses\InstallStatusItem.cs" />
+    <Compile Include="StatusClasses\PrinterInstallStatus.cs" />
+    <Compile Include="StatusClasses\StatusRecord.cs" />
+    <Compile Include="MainEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainEditControl.Designer.cs">
+      <DependentUpon>MainEditControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DriverClasses\ManageDriverPathsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverClasses\ManageDriverPathsForm.Designer.cs">
+      <DependentUpon>ManageDriverPathsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueueClasses\QueueManager.cs" />
+    <Compile Include="QueueClasses\QueueDefinitionUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QueueClasses\QueueDefinitionUserControl.Designer.cs">
+      <DependentUpon>QueueDefinitionUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueueClasses\QueueInstallationDataFactory.cs" />
+    <Compile Include="QueueClasses\QueueDefinitionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueueClasses\QueueDefinitionForm.Designer.cs">
+      <DependentUpon>QueueDefinitionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueueClasses\QueueInstallException.cs" />
+    <Compile Include="StatusClasses\StatusDisplayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatusClasses\StatusDisplayForm.Designer.cs">
+      <DependentUpon>StatusDisplayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueueClasses\QueueInstaller.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SaveData.cs" />
+    <Compile Include="StatusClasses\StatusEventArgs.cs" />
+    <Compile Include="SystemSelectionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemSelectionDialog.Designer.cs">
+      <DependentUpon>SystemSelectionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThreadedInstallForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThreadedInstallForm.Designer.cs">
+      <DependentUpon>ThreadedInstallForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DriverClasses\DriverUpgradeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverClasses\DriverUpgradeForm.Designer.cs">
+      <DependentUpon>DriverUpgradeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueueClasses\VirtualQueueNameUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QueueClasses\VirtualQueueNameUserControl.Designer.cs">
+      <DependentUpon>VirtualQueueNameUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueueClasses\QueueInstallationData.cs" />
+    <Compile Include="QueueClasses\VirtualQueueNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueueClasses\VirtualQueueNameForm.Designer.cs">
+      <DependentUpon>VirtualQueueNameForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverClasses\DriverConfigForm.resx">
+      <DependentUpon>DriverConfigForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverClasses\DriverInstallForm.resx">
+      <DependentUpon>DriverInstallForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverClasses\DriverInstallUserControl.resx">
+      <DependentUpon>DriverInstallUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InboxDriverClasses\DriverStoreScanningForm.resx">
+      <DependentUpon>DriverStoreScanningForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InboxDriverClasses\InboxDriverSelectionForm.resx">
+      <DependentUpon>InboxDriverSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainEditControl.resx">
+      <DependentUpon>MainEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverClasses\ManageDriverPathsForm.resx">
+      <DependentUpon>ManageDriverPathsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintDriverLocalCopyForm.resx">
+      <DependentUpon>PrintDriverLocalCopyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueueClasses\QueueDefinitionUserControl.resx">
+      <DependentUpon>QueueDefinitionUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueueClasses\QueueDefinitionForm.resx">
+      <DependentUpon>QueueDefinitionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueueClasses\PortUpdateForm.resx">
+      <DependentUpon>PortUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistryInformationForm.resx">
+      <DependentUpon>RegistryInformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatusClasses\StatusDisplayForm.resx">
+      <DependentUpon>StatusDisplayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemSelectionDialog.resx">
+      <DependentUpon>SystemSelectionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThreadedInstallForm.resx">
+      <DependentUpon>ThreadedInstallForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverClasses\DriverUpgradeForm.resx">
+      <DependentUpon>DriverUpgradeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueueClasses\VirtualQueueNameUserControl.resx">
+      <DependentUpon>VirtualQueueNameUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="QueueClasses\VirtualQueueNameForm.resx">
+      <DependentUpon>VirtualQueueNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="app.manifest" />
+    <None Include="Properties\DataSources\DriverUpgradeData.datasource" />
+    <None Include="Properties\DataSources\HP.ScalableTest.Print.PrintDriverProperties.datasource" />
+    <None Include="Properties\DataSources\InboxDriver.datasource" />
+    <None Include="Properties\DataSources\PrintQueueData.datasource" />
+    <None Include="Properties\DataSources\PrintQueueInstallData.datasource" />
+    <None Include="Properties\DataSources\QueueData.datasource" />
+    <None Include="Properties\DataSources\RegistryHiveSnapshotData.datasource" />
+    <None Include="Properties\DataSources\RegistryKeySnapshotData.datasource" />
+    <None Include="Properties\DataSources\RegistryPathSnapshotData.datasource" />
+    <None Include="Properties\DataSources\RegistrySnapshotData.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ScalableTestFramework\Source\Core\AssetInventory\STF.Core.AssetInventory.csproj">
+      <Project>{b84feab0-3c8d-4934-bd59-d3948c0595f1}</Project>
+      <Name>STF.Core.AssetInventory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScalableTestFramework\Source\Core\Configuration\STF.Core.Configuration.csproj">
+      <Project>{5C0FB620-0AC0-4F06-97D6-0EE90818E92F}</Project>
+      <Name>STF.Core.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScalableTestFramework\Source\Core\Root\STF.Core.csproj">
+      <Project>{1B4E6157-55BA-4F35-B73F-9A7E8FAAB8D1}</Project>
+      <Name>STF.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScalableTestFramework\Source\FrameworkInternal\STF.FrameworkInternal.csproj">
+      <Project>{1D38C759-E5F6-4603-BBBC-566F1276ABA2}</Project>
+      <Name>STF.FrameworkInternal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScalableTestFramework\Source\Framework\STF.Framework.csproj">
+      <Project>{b91dcc51-8664-49e3-97d0-6fcfd2918a1a}</Project>
+      <Name>STF.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScalableTestFramework\Source\Print\STF.Print.csproj">
+      <Project>{B549ACAE-DAED-4F96-A962-14BD02428770}</Project>
+      <Name>STF.Print</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScalableTestFramework\Source\Utility\STF.Utility.csproj">
+      <Project>{0A02EA9D-11D5-4078-9036-385709CB365A}</Project>
+      <Name>STF.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScalableTestFramework\Source\WindowsAutomation\STF.WindowsAutomation.csproj">
+      <Project>{d9823f40-464d-451e-86cc-0c5339196522}</Project>
+      <Name>STF.WindowsAutomation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\STFCore\Source\Framework\FrameworkCommon.Library\STF.FrameworkCommon.Library.csproj">
+      <Project>{4A72B792-4C4E-4217-BEFC-8F128917F836}</Project>
+      <Name>STF.FrameworkCommon.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\STFCore\Source\Framework\STF.FrameworkCore.Library\STF.FrameworkCore.Library.csproj">
+      <Project>{0C83CB1E-3FC2-4E07-BAB3-532A5BE53A38}</Project>
+      <Name>STF.FrameworkCore.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\STFCore\Source\Framework\STF.PluginFrameworkServices\STF.PluginFrameworkServices.csproj">
+      <Project>{77fdbbf6-f0b1-4351-b218-ffb8b7c0a06e}</Project>
+      <Name>STF.PluginFrameworkServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\STFCore\Source\UI\FrameworkControls.Library\STF.FrameworkControls.csproj">
+      <Project>{E2574F75-2943-4138-AA2E-D270447655A8}</Project>
+      <Name>STF.FrameworkControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoPictureBox1.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="..\_STFDictionary.xml">
+      <Link>_STFDictionary.xml</Link>
+    </CodeAnalysisDictionary>
+    <Content Include="DCU\cfgapp.ico" />
+    <Content Include="DCU\hpbcfgap.exe" />
+    <Content Include="DCU\hpbcfgre.dll" />
+    <Content Include="DCU\hpbcfgui.dll" />
+    <Content Include="DCU\HPCDMC32.dll" />
+    <Content Include="Mamba.ico" />
+    <Content Include="printers.ico" />
+    <None Include="Resources\cd_go.png" />
+    <None Include="Resources\cog.png" />
+    <None Include="Resources\folder_magnify.png" />
+    <None Include="Resources\cd_add.png" />
+    <None Include="Resources\cd.png" />
+    <Content Include="RegistryPaths.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Resources\Registry.png" />
+    <None Include="Resources\page_white_dvd.png" />
+    <None Include="Resources\page_white_text.png" />
+    <None Include="Resources\folder_page_white.png" />
+    <None Include="Resources\drive_cd.png" />
+    <None Include="Resources\Download.png" />
+    <None Include="Resources\table_gear.png" />
+    <None Include="Resources\folder_table.png" />
+    <None Include="Resources\PrinterPort.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EntityFramework">
+      <Version>6.1.3</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="..\ScalableTestFramework\Source\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+  </ItemGroup>
+</Project>

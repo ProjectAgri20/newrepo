@@ -1,0 +1,43 @@
+<NetworkEmulationProfile name="Intra-continental_WAN_1.5_Mbps" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+<Emulation>
+  <VirtualChannel name="ICWAN-Channel2">
+    <FilterList />
+    <VirtualLink instances="1" name="link1">
+      <LinkRule dir="upstream">
+        <Bandwidth>
+          <Speed unit="kbps">1500</Speed>
+          <QueueManagement>
+            <NormalQueue>
+              <Size>100</Size>
+              <QueueMode>packet</QueueMode>
+              <DropType>DropTail</DropType>
+            </NormalQueue>
+          </QueueManagement>
+        </Bandwidth>
+        <Latency>
+          <Fixed>
+            <Time unit="msec">50</Time>
+          </Fixed>
+        </Latency>
+      </LinkRule>
+      <LinkRule dir="downstream">
+        <Bandwidth>
+          <Speed unit="kbps">1500</Speed>
+          <QueueManagement>
+            <NormalQueue>
+              <Size>100</Size>
+              <QueueMode>packet</QueueMode>
+              <DropType>DropTail</DropType>
+            </NormalQueue>
+          </QueueManagement>
+        </Bandwidth>
+        <Latency>
+          <Fixed>
+            <Time unit="msec">50</Time>
+          </Fixed>
+        </Latency>
+      </LinkRule>
+    </VirtualLink>
+  </VirtualChannel>
+</Emulation>
+</NetworkEmulationProfile>

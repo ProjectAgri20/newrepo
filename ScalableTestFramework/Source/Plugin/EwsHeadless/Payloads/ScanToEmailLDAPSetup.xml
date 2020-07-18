@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Printers FilterType="ScanToEmailLDAPSetup">
+
+  <Printer Type="SIRIUS" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/DevMgmt/LDAP/LDAPSettingsDyn.xml</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>PUT</Method>
+        <Payload>lt;ldap:LDAPSettingsDyn xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/" xmlns:dd2="http://www.hp.com/schemas/imaging/con/dictionaries/2008/10/10" xmlns:dd3="http://www.hp.com/schemas/imaging/con/dictionaries/2009/04/06" xmlns:dir="http://www.hp.com/schemas/imaging/con/directoryservices/2009/02/11" xmlns:ldap="http://www.hp.com/schemas/imaging/con/ledm/ldap/2012/12/04" xmlns:ldapdd="http://www.hp.com/schemas/imaging/con/service/ldapaddressing/2009/02/11" xmlns:security="http://www.hp.com/schemas/imaging/con/security/2009/02/11"gt;lt;ldapdd:LDAPAddressingServicegt;lt;dir:LDAPServerSettingsgt;lt;dir:ServerSettingsgt;lt;dd3:NetworkIDgt;{NetworkID}lt;/dd3:NetworkIDgt;lt;dd:Portgt;{Port}lt;/dd:Portgt;lt;dd:LDAPServerBindMethodgt;{LDAPServerBindMethod}lt;/dd:LDAPServerBindMethodgt;lt;dd:LDAPEnableSSLgt;{LDAPEnableSSL}lt;/dd:LDAPEnableSSLgt;lt;dd:UseMFPUsersCredentialsgt;{UseMFPUsersCredentials}lt;/dd:UseMFPUsersCredentialsgt;lt;dd:LDAPBindRootgt;{LDAPBindRoot}lt;/dd:LDAPBindRootgt;lt;/dir:ServerSettingsgt;lt;dir:DatabaseSettingsgt;lt;dd2:LDAPNameAttributegt;{LDAPNameAttribute}lt;/dd2:LDAPNameAttributegt;lt;dd:EmailLDAPAttributegt;{EmailLDAPAttribute}lt;/dd:EmailLDAPAttributegt;lt;/dir:DatabaseSettingsgt;lt;dir:AdvancedDatabaseSettingsgt;lt;dd:LDAPMaxAddressesgt;{LDAPMaxAddresses}lt;/dd:LDAPMaxAddressesgt;lt;dd:LDAPMaxSearchTimegt;{LDAPMaxSearchTime}lt;/dd:LDAPMaxSearchTimegt;lt;dd:LDAPFilterCondition/gt;lt;/dir:AdvancedDatabaseSettingsgt;lt;/dir:LDAPServerSettingsgt;lt;/ldapdd:LDAPAddressingServicegt;lt;/ldap:LDAPSettingsDyngt;</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+
+
+</Printers>
+
+
+

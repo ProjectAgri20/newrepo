@@ -1,0 +1,40 @@
+﻿<DeviceSettings>
+	<EndPoint Name="SystemConfiguration">
+		systemconfiguration
+		<ResourceURI>urn:hp:imaging:con:service:systemconfiguration:SystemConfigurationService:InternalPages</ResourceURI>
+		<Parent Name="SecurityService">SecurityService
+			<IdentName>SystemDefaultAuthenticationAgentIdentifier</IdentName>
+			<IdentName>CurrentPolicyAgent</IdentName>
+			<IdentName>EnableUsb</IdentName>
+			<IdentName>AutomaticallySignUsersOutAfterStartingEachJob</IdentName>
+			<IdentName>DirectConnectPortsAccess</IdentName>
+			<IdentName>PJLPasswordStatus</IdentName>
+			<IdentName>PjlDeviceAccess</IdentName>
+			<IdentName>CustomServicePINStatus</IdentName>
+		</Parent>
+		<Parent Name="AuthenticationAgents">AuthenticationAgents
+			<Parent Name="AuthenticationAgent">AuthenticationAgent
+				<IdentName>AuthenticationAgentIdentifier</IdentName>
+				<IdentName>AuthenticationAgentName</IdentName>
+			</Parent>
+			<Parent Name="AuthenticationAgent">AuthenticationAgent
+				<IdentName>AuthenticationAgentIdentifier</IdentName>
+				<IdentName>AuthenticationAgentName</IdentName>
+			</Parent>
+		</Parent>
+	</EndPoint>
+	<EndPoint Name="Time">time
+		<ResourceURI>urn:hp:imaging:con:service:time:TimeService</ResourceURI>
+		<Parent Name="SNTPTimeSynchronization">SNTPTimeSynchronization
+			<IdentName>EnableDisable</IdentName>
+			<IdentName>Frequency</IdentName>
+			<IdentName>SNTPServerAddress </IdentName>
+			<IdentName>Port</IdentName>
+		</Parent>
+		<Parent Name="AutoOffDelay">AutoOffDelay
+			<IdentName>AutoOffDelaySetting</IdentName>
+			<IdentName>AutoOffDelayAfterTime</IdentName>
+			<IdentName>AutoOffDelayAfterTimeLimit</IdentName>
+		</Parent>
+	</EndPoint> 
+</DeviceSettings>    

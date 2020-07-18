@@ -1,0 +1,30 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+    <head>
+        <title>Global Settings Management</title>
+    </head>
+    <body style="color:#015; font-family:Lucida Sans, Sans-Serif; font-size:9pt">
+    <h3>Global Settings Management</h3>
+    This is an administrative dialog that should be used very seldom.  It provides a way to edit the Global
+    Settings for the Scalable Test Framework, which typically will not change.  Most of the settings are tied
+    directly to functionality embedded within the framework, and the only time these values need to be updated
+        is during a new installation. Note that there are specific Setting Types, and 
+        their purposes are defined below.
+    <ul>
+    <li><b>Dispatcher</b> - this setting is used to define the list of dispatchers available within the STF installation.
+    As new dispatchers come online they can be added with the proper host name and IP address.  This setting is
+    on that may change more frequently than the others.<br /><br />
+    </li>
+    <li><b>FrameworkSetting</b> - This is a core framework setting that can change in different STF installations, but
+    it is important that none of these settings are removed or portions of STF may not function properly.  These
+    values will typically be configured by the administrator during installation of the framework.<br /><br />
+    </li>
+    <li><b>WcfHostSetting</b> - This setting defines the location for core services used by STF.  Most of these
+    services are distributed on other hosts and require WCF communication information.  Note the use of a special
+    "Macro" Value for some of these entries that are defined as "$Dispatcher".   These entries indicate that the
+    STF service is running on the same system as the defined dispatcher, which has already been chosen by the 
+    user.  This provides a way to generically specify a Value by creating an indirect reference to another setting value.
+    </li>
+    </ul>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ScalableTestFramework" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBackgroundNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckmark">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBackGround" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBorderNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckmark">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBorderChecked">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckmark.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="123, 122, 103" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckmark">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.CheckPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="ControlText" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckmark.ToggleState=On">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.CheckPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.RadioPrimitive.UseParentShape" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Transparent" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckmark.ToggleState=Indeterminate">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.CheckPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBorderChecked">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckmark.ToggleState=Indeterminate">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckmarkIndeterminate">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckmark.ToggleState=Indeterminate">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBackGround" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="RadCheckmark" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadCheckmark" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

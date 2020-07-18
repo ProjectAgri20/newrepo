@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ScalableTestFramework" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="Windows7Font8.25AndForeColor">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ControlBorderDark">
+            <Selectors>
+              <XmlClassSelector ElementClass="QuickNavigatorBorder" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Windows7StandardGradient">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DockQuickNavigatorHeader">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="QuickNavigatorHeaderFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DockQuickNavigatorHeader">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="QuickNavigatorHeaderBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Windows7StandardGradient">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DockQuickNavigatorFooter">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="QuickNavigatorFooterFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DockQuickNavigatorFooter">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="QuickNavigatorFooterBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Windows7GrayFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickNavigatorToolWindowListHeaderLabel">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.FillPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Windows7GrayFill">
+            <Selectors>
+              <XmlClassSelector ElementClass="QuickNavigatorContentFill" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickNavigatorListItem">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="QuickNavigatorListItemFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickNavigatorListItem">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="QuickNavigatorListItemBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickNavigatorListItem.IsActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="QuickNavigatorListItemBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickNavigatorListItem.IsActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="QuickNavigatorListItemFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickNavigatorListItem.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="QuickNavigatorListItemFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickNavigatorListItem.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="QuickNavigatorListItemBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.Docking.QuickNavigator" ElementType="Telerik.WinControls.RootRadElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

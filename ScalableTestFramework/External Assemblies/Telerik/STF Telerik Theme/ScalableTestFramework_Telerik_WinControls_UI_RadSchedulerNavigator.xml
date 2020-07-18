@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ScalableTestFramework" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerToggleButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerToggleButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton.ToggleState=On.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerToggleButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerToggleButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton.ToggleState=On.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerToggleButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton.ToggleState=On.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton.ToggleState=On.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ToggleButtonToggleStateOnFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerToggleButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="8383Padding">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="8383Padding">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton.ToggleState=On" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteFill">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.SchedulerNavigatorElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Windows7LightGrayFill">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.SchedulerNavigatorElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorNavigationPanelFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CollapsedBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.SchedulerNavigatorElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorViewPanelBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CollapsedBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.SchedulerNavigatorElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorNavigationPanelBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ControlBorderDark">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.SchedulerNavigatorElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="25-0-0-0Margin">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.SchedulerNavigatorElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorCheckBoxLayout" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerNavigatorBackwardsImage,Margin(8;8;8;8),8888Padding">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.DisplayStyle" Value="Image" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorBackwardsButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerNavigatoForwardsImage,Margin(8;8;8;8),8888Padding">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.DisplayStyle" Value="Image" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorForwardsButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorBackwardsButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorNavigationButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorForwardsButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorNavigationButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder,Margin(8;8;8;8)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorForwardsButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorNavigationButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorBackwardsButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorNavigationButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NavigationButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorBackwardsButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorNavigationButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NavigationButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorForwardsButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorNavigationButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NavigationButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorBackwardsButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorNavigationButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NavigationButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorForwardsButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorNavigationButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Margin(8;8;8;8),Windows7Font14">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorLabel" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Windows7Font8.25AndForeColor">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Windows7LightGrayFill">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.SchedulerNavigatorElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorViewPanelFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="0050Padding">
+            <Selectors>
+              <XmlClassSelector ElementClass="SchedulerNavigatorTimeZonesLayout" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="0050Padding">
+            <Selectors>
+              <XmlClassSelector ElementClass="SchedulerNavigatorTodayLayout" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=Intermediate">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=Intermediate">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBackgroundNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBackGround" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBackgroundNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBackGround" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckmarkIndeterminate">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=Intermediate">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBackGround" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckmarkIndeterminate">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=Intermediate.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBackGround" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckmarkIndeterminate">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=Intermediate.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBackGround" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBackgroundHoverNotChecked">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBackGround" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBackgroundPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBackGround" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBackgroundHoverNotChecked">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBackGround" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBackgroundPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBackGround" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBorderNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBorderChecked">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=Intermediate.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=Intermediate.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBorderChecked">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=Intermediate">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Alignment" Value="MiddleRight" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.MaxSize" Value="200, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.StretchVertically" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorTimeZoneDropDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ControlBorderNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorTimeZoneDropDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="DropDownListBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TextEditorFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorTimeZoneDropDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="DropDownFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 1, 1, 1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListArrowButtonElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListArrowButtonElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListArrowButtonElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListArrowButtonElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListArrowButtonElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListArrowButtonElement.IsDropDownShown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadDropDownListArrowButtonElement.IsDropDownShown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorTodayButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorTodayButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Microsoft Sans Serif, 8.25pt, style=Underline" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorTodayButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadSchedulerNavigator" ElementType="Telerik.WinControls.RootRadElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

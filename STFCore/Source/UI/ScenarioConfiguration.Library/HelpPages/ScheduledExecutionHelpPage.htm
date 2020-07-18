@@ -1,0 +1,58 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+    <head>
+        <title>Global Settings Management</title>
+    </head>
+    <body style="color:#015; font-family:Lucida Sans, Sans-Serif; font-size:9pt">
+    <h3>Scheduled Execution Configuration</h3>
+        This dialog is used to define a schedule of Active and Idle periods for the workers.  
+        These periods are defined as a duration of time defined by you.  Use the Days, Hours
+        and Minutes as defined below to specify the diration for each segment of the schedule.
+        In addition, you have the option to define how the users will transition between schedules,
+        and you can also enter a repeat count.
+
+        The diagram below shows how a set of workers may behave with a scheduled execution defined.
+        
+Note that this sequence will start only after the initial Worker Startup Delay completes.
+    <ul>
+    <li><b>Execution State</b> - There are two values here, <b>Active</b> and <b>Idle</b>.  
+        You can configure your worker to cycle between Active and Idle states by 
+        entering rows in the data grid and defining the state and duration for each row.  In addition
+        you can specify how the segment will transition to the next.&nbsp; Note that there is nothing preventing you
+           from entering adjacent rows with the same state, although it probably doesn&#39;t 
+        make sense to do this.&nbsp; If you enter two rows with the same sate, it means 
+        there will be no change at the transition point.&nbsp; For most uses you will create a schedule 
+        that causes the workers to transation between Active and Idle for different 
+        durations over a period of time.&nbsp; Your decisions on how many transitions to 
+        defined and how long the workers stay in any one state will be deteremine by 
+        your test objectives.<br /><br />
+    </li>
+    <li><b>Duration</b> - Use the Days, Hours and Minutes cells in the data grid to 
+        define the overall duration for that segment.&nbsp; The actual duration value
+        for each segment will be the sum of Days + Hours + Minutes.&nbsp; 
+     <br /><br />
+    </li>
+    <li><b>Stagger</b> - You can indicate if you want each scheduled segment to 
+        randomly stagger through the state transition at the end of they segment.
+        With multiple users, this will create a more gradual 
+        change in load over time. If not checked there will be a sharper transition in 
+        load as all workers will change about the same time.&nbsp; See the graph below 
+        that shows an example of staggered and sharp transitions between states.&nbsp; A 
+        sharp transition may be needed in a test to create a distinct and almost 
+        immediate load on a system.&nbsp; The staggered transition would be used in a 
+        test that may need to simulate a gradual change in worker activities over a 
+        period of time.&nbsp; Currently the staggered transition time for each worker 
+        will fall withing a range of 25% of the current segment (12.5% before or after the transition
+        point).&nbsp; If the target transition point is beyond the transition boundary 
+        and it is greater than the next segment, the transition point will be adjusted 
+        to be no more than one half the next segment.<br /><br />
+    </li>
+    <li><b>Repeat Count</b> - This defines how many times you want the overall schedule to 
+        repeat for this test run.
+    </li>
+    </ul>
+    <br />
+    <img src="DIAGRAM" style="height: 472px; width: 796px" />
+
+</body>
+</html>

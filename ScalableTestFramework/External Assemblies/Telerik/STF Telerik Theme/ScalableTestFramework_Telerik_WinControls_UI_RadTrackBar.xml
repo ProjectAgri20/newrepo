@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ScalableTestFramework" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TrackBarThumb">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ThumbFillBack" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TrackBarThumb.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ThumbFillBack" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TrackBarThumb.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ThumbFillBack" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TrackBarThumb.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TrackBarThumbBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TrackBarThumb.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TrackBarThumbBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TrackBarThumb">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TrackBarThumbBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Shape" Value="Telerik.WinControls.CustomShape|20,20,200,100:40,20,False,0,0,0,0,0:202,20,False,0,0,0,0,0:202,85,False,0,0,0,0,0:120,120,False,0,0,0,0,0:40,85,False,0,0,0,0,0:" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TrackBarThumb" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadTrackBarItem.TickColor" Value="196, 196, 196" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadTrackBarItem.SliderAreaGradientColor2" Value="252, 252, 252" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadTrackBarItem.SliderAreaGradientColor1" Value="176, 176, 176" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadTrackBarItem.SlideAreaWidth" Value="2" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadTrackBarItem.SliderAreaGradientAngle" Value="90" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadTrackBarElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CollapsedBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadTrackBarElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TrackBarBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadTrackBarElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TrackBarFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadTrackBarElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="141, 174, 219" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TrackBarTickElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="Line1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerAllDayCellFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 5, 0, 5" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TrackBarLineElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="5, 0, 5, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TrackBarLineElement.IsVertical" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll1,ThumbFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TrackBarThumbElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ThumbHoverFill,ThumbHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TrackBarThumbElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ThumbPressFill,ThumbPressBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TrackBarThumbElement.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PanelBarGroupHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TrackBarRangeElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Windows7Font8.25AndForeColor">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2,StripLeftArrow">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="2, 2, 2, 2" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 0, 1, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.AngleTransform" Value="0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="LeftArrowButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2,StripRightArrow">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="2, 2, 2, 2" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.AngleTransform" Value="0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RightArrowButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="LeftArrowButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="LeftArrowButton.MouseOver.IsVertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="LeftArrowButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="LeftArrowButton.IsVertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="LeftArrowButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="LeftArrowButton.Pressed.IsVertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="LeftArrowButton.Pressed.IsVertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="LeftArrowButton.MouseOver.IsVertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="LeftArrowButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="LeftArrowButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="LeftArrowButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="LeftArrowButton.IsVertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RightArrowButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RightArrowButton.IsVertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RightArrowButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RightArrowButton.MouseOver.IsVertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RightArrowButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RightArrowButton.Pressed.IsVertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RightArrowButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RightArrowButton.IsVertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RightArrowButton.Pressed.IsVertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RightArrowButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RightArrowButton.MouseOver.IsVertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RightArrowButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.AngleTransform" Value="270" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="LeftArrowButton.IsVertical" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.AngleTransform" Value="270" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RightArrowButton.IsVertical" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadTrackBar" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadTrackBarElement" />
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadTrackBar" ElementType="Telerik.WinControls.UI.RadTrackBarElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

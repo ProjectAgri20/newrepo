@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Printers FilterType="FaxConfiguration">
+    <Printer Type="OMNI" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/Fax/Save</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>FaxMethodDropdown=LanFaxServiceamp;curSelTab=CommonFaxGroupingControlleramp;ConditionNotify=Neveramp;NotificationMethod=Emailamp;EmailAddress=amp;DefaultFaxResolution=16amp;OriginalSize=0amp;OriginalSides=0amp;TextPicture=4amp;ContentOrientation=1amp;BackgroundRemoval=0amp;Darkness=0amp;Contrast=0amp;Sharpness=0amp;ImagePreviewConfiguration=1amp;LanFaxController=LAN+Fax+Setup</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Language</HeaderName>
+            <HeaderValue>en-US</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="3">
+            <HeaderName>Cache-Control</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+      <Request Order="2" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/Fax/Save</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>FaxEnabledCheckBox=onamp;FaxMethodDropdown=LanFaxServiceamp;curSelTab=LanFaxControlleramp;OperationName=amp;OperationIndex=amp;JavaScript=trueamp;SharingMethod={SharingMethod}amp;FTPServerAddress={FTPServerAddress}amp;FTPServerPort={FTPServerPort}amp;FTPFolderPath={FTPFolderPath}amp;FtpUsername={FtpUsername}amp;FtpPassword={FtpPassword}amp;ThirdParty={ThirdPartyLanFaxProduct}amp;LanFaxFileFormat={LanFaxFileFormat}amp;MaxRetry={MaxRetry}amp;RetryInterval={RetryInterval}amp;ErrorCorrection={ErrorCorrection}amp;CoverPage={CoverPage}amp;UsernameMetadata={UsernameMetadata}amp;FaxBillingCodeEnable={FaxBillingCodeEnable}amp;FaxBillingCodeDefault={FaxBillingCodeDefault}amp;FaxBillingCodeMinimumLength={FaxBillingCodeMinimumLength}amp;FaxBillingCodeAllowUsersEdit={FaxBillingCodeAllowUsersEdit}amp;MinLengthBackup={MinLengthBackup}amp;UncPath={UncPath}amp;Domain={Domain}amp;Username={Username}amp;Password={Password}amp;FormButtonSubmit=Apply</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Language</HeaderName>
+            <HeaderValue>en-US</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="3">
+            <HeaderName>Cache-Control</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+</Printers>
+

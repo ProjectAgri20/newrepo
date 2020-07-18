@@ -1,0 +1,411 @@
+<Sitemaps>
+  <Pages>
+    <Page key="Summary" relative_path="info_config_network.html?tab=Networking&amp;menu=NetConfig">
+      <Elements />
+    </Page>
+    <Page key="Home" relative_path="info_deviceStatus.html?tab=Home&amp;menu=DevStatus">
+      <Elements />
+    </Page>
+    <Page key="IPv4_Config" relative_path="set_config_IP.html?tab=Networking&amp;menu=NetIPv4Config">
+      <Elements>
+        <Element key="IP_Configuration_Method" id="preferedMethodSelection" name="" xpath="" class="" type="" />
+        <Element key="Config_By" id="" name="" xpath="//*[@id='ipv4SettingsDiv']/table[2]/tbody/tr[2]/td[2]" class="" type="" />
+        <Element key="DHCP" id="PrefDHCP" name="" xpath="" class="" type="" />
+        <Element key="BOOTP" id="PrefBootP" name="" xpath="" class="" type="" />
+        <Element key="AutoIP" id="PrefAutoIP" name="" xpath="" class="" type="" />
+        <Element key="Manual" id="PrefManual" name="" xpath="" class="" type="" />
+        <Element key="IP_Address" id="IPAddr" name="" xpath="" class="" type="" />
+        <Element key="Subnet_Mask" id="NetworkMask" name="" xpath="" class="" type="" />
+        <Element key="Default_Gateway" id="Gateway" name="" xpath="" class="" type="" />
+        <Element key="Apply" id="Apply" name="" xpath="" class="" type="" />
+        <Element key="Cancel" id="Cancel" name="" xpath="" class="" type="" />
+      </Elements>
+    </Page>
+    <Page key="IPv6_Config" relative_path="set_config_networkIPv6.html?tab=Networking&amp;menu=NetIPv6Config">
+      <Elements>
+        <Element key="IPv6AddrLst" id="IPv6AddressList" name="IPv6AddressList" xpath="" class="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Wireless_Config" relative_path="set_config_network_Wireless.html?tab=Networking&amp;menu=NetWireless">
+      <Elements>
+        <Element key="WirelessList" id="wifiScanList" name="" type="" />
+        <Element key="WirelessEnable" id="" name="WirelessEnable" xpath="" class="" type="" />
+        <Element key="EnterName_text" id="EnterName_text" name="EnterName_text" xpath="" class="" type="" />
+        <Element key="Mode_NoAuthentication" id="" name="secNone" xpath="" class="" type="" />
+        <Element key="WEP" id="secWEP" name="" xpath="" class="" type="" />
+        <Element key="Mode_WEPInput" id="WEP_mode" name="" xpath="" class="" type="" />
+        <Element key="WEPKey" id="WEP_text" name="" xpath="" class="" type="" />
+        <Element key="WPA" id="secWPA" name="" xpath="" class="" type="" />
+        <Element key="WPA_Version" id="WPA_version" name="" xpath="" class="" type="" />
+        <Element key="Mode_Encryption" id="WPA_encryption" name="" xpath="" class="" type="" />
+        <Element key="Mode_WPAPersonal" id="secWPAPersonal" name="" xpath="" class="" type="" />
+        <Element key="Mode_WPA_Enterprise" id="secWPAEnterprise" name="" xpath="" class="" type="" />
+        <Element key="WPAPassphrase" id="WPA_text" name="" xpath="" class="" type="" />
+        <Element key="WirelessSSIDList" id="wifiScanList" name="" xpath="" class="" type="" />
+        <Element key="Clear" id="Clear" name="" xpath="" class="" type="" />
+        <Element key="Apply" id="ApplyButton" name="Apply" xpath="" class="" type="" />
+        <Element key="Cancel" id="CancelButton" name="" xpath="" class="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Wireless_Direct_Setup" relative_path="set_config_directPrint.html?tab=Networking&amp;menu=DirectWifi">
+      <Elements>
+        <Element key="Wireless_Direct_Printing" id="dp_status" name="" xpath="" class="" type="" />
+        <Element key="Apply" id="Apply" name="" xpath="" class="" type="" />
+        <Element key="Cancel" id="Cancel" name="" xpath="" class="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Network_Identification" relative_path="set_config_netIdentification.html?tab=Networking&amp;menu=NetIdent">
+      <Elements>
+        <Element key="HostName" id="HostName" name="" xpath="" class="" type="" />
+        <Element key="DomainName_IPv4" id="DomainName" name="" xpath="" class="" type="" />
+        <Element key="Domain_Name_IPv4_IPv6" id="DomainName" name="" xpath="" class="" type="" />
+        <Element key="DomainName_IPv6" id="DomainNameIPv6" name="" xpath="" class="" type="" />
+        <Element key="Configuration_Precedence" id="netIDCfgPrecedenceList" name="" xpath="" class="" type="" />
+        <Element key="DNS_IPv4Primary" id="DNSPrimaryV4" name="" xpath="" class="" type="" />
+        <Element key="DNS_IPv4_Secondary" id="DNSSecV4" name="" xpath="" class="" type="" />
+        <Element key="DNS_IPv6_Primary" id="DNSPrimaryV6" name="" xpath="" class="" type="" />
+        <Element key="DNS_IPv6_Secondary" id="DNSSecV6" name="" xpath="" class="" type="" />
+        <Element key="Primary_IPv4" id="WINS" name="" xpath="" class="" type="" />
+        <Element key="Bonjour_Service_Name" id="BonjourServiceName" name="" xpath="" class="" type="" />
+        <Element key="Bonjour_Highest_Priority_Service" id="BonjourHighestService" name="" xpath="" class="" type="" />
+        <Element key="Restore_defaults" id="restore_button" name="" xpath="" class="" type="" />
+        <Element key="Apply" id="apply_button" name="" xpath="" class="" type="" />
+        <Element key="Cancel" id="cancel_button" name="" xpath="" class="" type="" />
+        <Element key="DomainName" id="DomainName" name="" type="" />
+        <Element key="DNSPrimaryIP" id="IPv4_DnsServerId" name="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Advanced" relative_path="set_config_networkAdvanced.html?tab=Networking&amp;menu=NetAdvanced">
+      <Elements>
+        <Element key="ConfirmOk" id="okReboot" name="" xpath="" class="" type="" />
+        <Element key="IPv4" id="IPv4_enable" name="" xpath="" class="" type="" />
+        <Element key="IPv6" id="IPv6_enable" name="" xpath="" class="" type="" />
+        <Element key="DHCP" id="DHCP_enable" name="" xpath="" class="" type="" />
+        <Element key="DHCPv6" id="DHCPv6_enable" name="" xpath="" class="" type="" />
+        <Element key="BOOTP" id="BOOTP_enable" name="" xpath="" class="" type="" />
+        <Element key="AUTOIP" id="AUTOIP_enable" name="" xpath="" class="" type="" />
+        <Element key="LPD_Printing" id="LPD_enable" name="" xpath="" class="" type="" />
+        <Element key="BannerPage" id="BannerPage_enable" name="" xpath="" class="" type="" />
+        <Element key="Bonjour" id="Bonjour_enable" name="" xpath="" class="" type="" />
+        <Element key="IPP" id="IPP_enable" name="" xpath="" class="" type="" />
+        <Element key="AirPrint" id="AirPrint_enable" name="" xpath="" class="" type="" />
+        <Element key="Printing_9100" id="Printing_9100_enable" name="" xpath="" class="" type="" />
+        <Element key="WS_Discovery" id="WSDiscovery_enable" name="" xpath="" class="" type="" />
+        <Element key="WS_Print" id="WSPrint_enable" name="" xpath="" class="" type="" />
+        <Element key="LLMNR" id="LLMNR_enable" name="" xpath="" class="" type="" />
+        <Element key="FTPPrint" id="FTPPrint_enable" name="" xpath="" class="" type="" />
+        <Element key="SLP" id="SLP_enable" name="" xpath="" class="" type="" />
+        <Element key="TelnetConfig" id="TelnetConfig_enable" name="" xpath="" class="" type="" />
+        <Element key="TFTP_File" id="TFTP_File_enable" name="" xpath="" class="" type="" />
+        <Element key="Enable_DHCPv4_FQDN_Compliance" id="FQDN_Enable" name="" xpath="" class="" type="" />
+        <Element key="ARPPing" id="ARPPing_Enable" name="" xpath="" class="" type="" />
+        <Element key="Syslog" id="Syslog_enable" name="" xpath="" class="" type="" />
+        <Element key="Syslog_Server" id="SyslogServerIP" name="" xpath="" class="" type="" />
+        <Element key="SyslogPort" id="SyslogPort" name="" xpath="" class="" type="" />
+        <Element key="SyslogMaxMsg" id="SyslogMaxMsgPerMinute" name="" xpath="" class="" type="" />
+        <Element key="SyslogMaxPriority" id="SyslogMaxPriority" name="" xpath="" class="" type="" />
+        <Element key="SyslogFacility" id="SyslogFacility" name="" xpath="" class="" type="" />
+        <Element key="SyslogProtocol" id="SyslogProtocol" name="" xpath="" class="" type="" />
+        <Element key="Restore" id="Restore" name="" xpath="" class="" type="" />
+        <Element key="Apply" id="" name="apply_button" xpath="" class="" type="" />
+        <Element key="Cancel" id="Cancel_button" name="" xpath="" class="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Settings" relative_path="set_config_networkSettings.html?tab=Networking&amp;menu=NetSettings">
+      <Elements />
+    </Page>
+    <Page key="Certificates" relative_path="set_config_networkCerts.html?tab=Networking&amp;menu=NetCerts">
+      <Elements>
+        <Element key="Printer_Certificate_View" id="" name="ViewPrintCert" xpath="" class="" type="" />
+        <Element key="Printer_Certificate_Configure" id="" name="ConfigurePrintCert" xpath="" class="" type="" />
+        <Element key="CA_Configure" id="" name="ConfigureCACert" xpath="" class="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Certificate_Options" relative_path="hp/device/set_config_networkPrintCerts.html?tab=Networking&amp;menu=NetCertCreateCR">
+      <Elements />
+    </Page>
+    <Page key="Certificate_Request" relative_path="hp/device/set_config_networkCertsCreateCR.html?tab=Networking&amp;menu=NetCertCreateCR">
+      <Elements />
+    </Page>
+    <Page key="CA_InstallCertificate" relative_path="set_config_networkCerts.html?tab=Networking&amp;menu=NetCerts">
+      <Elements>
+        <Element key="Install" id="upFile" name="" xpath="" class="" type="" />
+        <Element key="JDConfigure" id="" name="ConfigurePrintCert" xpath="" class="" type="" />
+        <Element key="Create_New_Self_Signed_Certificate" id="" name="ConfigOpt" xpath="" class="" type="" />
+        <Element key="CAConfigure" id="" name="ConfigureCACert" xpath="" class="" type="submit" />
+        <Element key="CertificateNext" id="" name="Next" xpath="" class="" type="" />
+        <Element key="InstallCA" id="" name="" xpath="/html/body/div[2]/table/tbody/tr[2]/td[2]/form/div[2]/table/tbody/tr/td/input" class="" type="" />
+        <Element key="ImportCert" id="" name="" xpath="/html/body/div[2]/table/tbody/tr[2]/td[2]/form/div[2]/table/tbody/tr[3]/td[1]/input" class="" type="" />
+        <Element key="ImportFile" id="FileName" name="FileName" xpath="" class="" type="" />
+        <Element key="DeleteCA" id="" name="" xpath="/html/body/div[2]/table/tbody/tr[2]/td[2]/form/div[2]/table/tbody/tr[2]/td/input" class="" type="" />
+        <Element key="PasswordJD" id="Password" name="Password" xpath="" class="" type="password" />
+        <Element key="Finish" id="" name="Finish" xpath="" class="" type="" />
+        <Element key="Create_Certificate" id="" name="" xpath="/html/body/div[2]/table/tbody/tr[2]/td[2]/form/div[2]/table/tbody/tr[2]/td/input" class="" type="" />
+        <Element key="Common_Name" id="CName" name="" xpath="" class="" type="" />
+        <Element key="Organization" id="OrgName" name="" xpath="" class="" type="" />
+        <Element key="Organizational_Unit" id="UnitName" name="" xpath="" class="" type="" />
+        <Element key="City" id="CityName" name="" xpath="" class="" type="" />
+        <Element key="State" id="StateName" name="" xpath="" class="" type="" />
+        <Element key="Country" id="CountryCode" name="" xpath="" class="" type="" />
+        <Element key="CertificateNext" id="Next" name="" xpath="" class="" type="" />
+        <Element key="Install_Certificate" id="" name="" xpath="/html/body/div[2]/table/tbody/tr[2]/td[2]/form/div[2]/table/tbody/tr[3]/td/input" class="" type="" />
+        <Element key="Install_Path" id="upFile" name="" xpath="" class="" type="" />
+        <Element key="Install_Confirm" id="Finish" name="" xpath="" class="" type="" />
+        <Element key="Install_Cancel" id="Cancel" name="" xpath="" class="" type="" />
+        <Element key="Install_Ok" id="OkBtn" name="" xpath="" class="" type="" />
+        <Element key="Ok" id="okButton" name="okButton" xpath="" class="buttonA" type="submit" />
+        <Element key="Cancel" id="" name="Cancel" xpath="" class="buttonA" type="submit" />
+        <Element key="Delete_Ca" id="okB" name="okB" xpath="" class="buttonA" type="submit" />
+        <Element key="Install_Ok_Id" id="okBtn" name="okBtn" xpath="" class="buttonA" type="submit" />
+        <Element key="Key_Path" id="" name="" xpath="//*[@id='certResquestResult']" class="" type="" />
+        <Element id="" name="ConfigureCACert" key="RequestCAConfigure" class="" xpath="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Https_Enforcememt" relative_path="set_config_networkMgmt.html?tab=Networking&amp;menu=NetWebMgmt">
+      <Elements>
+        <Element key="Always_Use_HTTPS" id="" name="encryptall" xpath="" class="" type="" />
+        <Element key="Apply" id="Apply" name="" xpath="" class="" type="" />
+        <Element key="Cancel" id="Cancel" name="" xpath="" class="" type="" />
+      </Elements>
+    </Page>
+    <Page key="SNMP" relative_path="set_config_networkSNMP.html?tab=Networking&amp;menu=NetSNMP">
+      <Elements>
+        <Element key="Enable_SNMPv1_v2_read_write" id="SC1" name="" xpath="" class="" type="" />
+        <Element key="Enable_SNMPv1_v2_read_only" id="SC2" name="" xpath="" class="" type="" />
+        <Element key="Disable_SNMPv1_v2" id="SC3" name="" xpath="" class="" type="" />
+        <Element key="Set_Community_Name" id="SetCommunityName" name="" xpath="" class="" type="" />
+        <Element key="Confirm_Set_Community_Name" id="ConfirmSetCommunityName" name="" xpath="" class="" type="" />
+        <Element key="Get_Community_Name" id="GetCommunityName" name="" xpath="" class="" type="" />
+        <Element key="Confirm_Get_Community_Name" id="ConfirmGetCommunityName" name="" xpath="" class="" type="" />
+        <Element key="Disable_SNMPv1_Community_Public" id="DisableCommunityPublic" name="" xpath="" class="" type="" />
+        <Element key="Enable_SNMPV3" id="EnableSNMPv3" name="" xpath="" class="" type="" />
+        <Element key="User_Name" id="UserName" name="" xpath="" class="" type="" />
+        <Element key="Authentication_Key" id="AuthProtocol" name="" xpath="" class="" type="" />
+        <Element key="Privacy_Key" id="PrivacyProtocol" name="" xpath="" class="" type="" />
+        <Element key="Apply" id="" name="apply_button" xpath="" class="" type="" />
+        <Element key="Cancel" id="Cancel_button" name="" xpath="" class="" type="" />
+      </Elements>
+    </Page>
+    <Page key="802.1x_Authentication" relative_path="set_config_network802Auth.html?tab=Networking&amp;menu=802Auth">
+      <Elements>
+        <Element key="Dot1x_PEAP" id="ep1" name="" xpath="" class="" type="" />
+        <Element key="Dot1x_EAPTLS" id="ep2" name="" xpath="" class="" type="" />
+        <Element key="Dot1x_UserName" id="username" name="" xpath="" class="" type="" />
+        <Element key="Dot1x_Password" id="passwd" name="" xpath="" class="" type="" />
+        <Element key="Dot1x_ConfirmPassword" id="passwd_conf" name="" xpath="" class="" type="" />
+        <Element key="Dot1x_ShowPassword" id="showPassword" name="" xpath="" class="" type="" />
+        <Element key="Dot1x_Server_Id" id="serverID" name="serverID" xpath="" class="" type="" />
+        <Element key="Dot1x_Require_Exact_Match" id="serverid_match" name="serverid_match" xpath="" class="" type="" />
+        <Element key="Dot1x_EncryptionStrength" id="dauth_encrstr" name="auth_encrstr" xpath="" class="" type="" />
+        <Element key="OnAuthenticationFail" id="auth_fail" name="auth_fail" xpath="" class="" type="" />
+        <Element key="Dot1x_Authenticate_on_Apply" id="reauth" name="reauth" xpath="" class="" type="" />
+        <Element key="Dot1x_Apply" id="" name="apply_button" xpath="" class="" type="" />
+        <Element key="Dot1x_Cancel" id="" name="cancel_button" xpath="" class="" type="" />
+        <Element key="Dot1x_Restore_Defaults" id="" name="restore_button" xpath="" class="" type="" />
+      </Elements>
+    </Page>
+    <Page key="IPsec_Firewall" relative_path="set_config_networkFirewall.html?tab=Networking&amp;menu=NetFirewall">
+      <Elements>
+        <Element key="Default_Action" id="default_action" name="" xpath="" class="" type="" />
+        <Element key="Enable_IPsec_Firewall" id="firewallEnable" name="" xpath="" class="" type="" />
+        <Element key="Advanced_Option" id="Advanced_button" name="" xpath="" class="" type="" />
+        <Element key="Enable_Failsafe" id="httpsFailsafe" name="" xpath="" class="" type="" />
+        <Element key="IPSec_Apply" id="Apply_button" name="" xpath="" class="" type="" />
+        <Element key="Rules_Table" id="" name="" xpath="//*[@id='entryTable']" class="" type="" />
+        <Element key="Add_rule" id="AddRule_button" name="" xpath="" class="" type="" />
+        <Element key="Address_List" id="firewallAddrTempList" name="" xpath="" class="" type="" />
+        <Element key="Service_List" id="firewallServiceTempList" name="" xpath="" class="" type="" />
+        <Element key="Traffic_Allow" id="Allow" name="" xpath="" class="" type="" />
+        <Element key="Traffic_Drop" id="Drop" name="" xpath="" class="" type="" />
+        <Element key="Finalize_Rule" id="ok_button" name="" xpath="" class="" type="" />
+        <Element key="Restore_Defaults" id="defaults_button" name="" xpath="" class="" type="" />
+        <Element key="Enable_IPsec_Firewall" id="firewallEnable" name="" xpath="" class="" type="" />
+        <Element key="Enable_Failsafe" id="httpsFailsafe" name="" xpath="" class="" type="" />
+        <Element key="Enable_1" id="ruleEnable1" name="" xpath="" class="" type="" />
+        <Element key="Enable_1_Action" id="ruleAction1" name="" xpath="" class="" type="" />
+        <Element key="Default_Action" id="default_action" name="" xpath="" class="" type="" />
+        <Element key="Add_Rules" id="AddRule_button" name="" xpath="" class="" type="" />
+        <Element key="Advanced" id="Advanced_button" name="" xpath="" class="" type="" />
+        <Element key="Restore_Defaults" id="defaults_button" name="" xpath="" class="" type="" />
+        <Element key="Apply" id="Apply" name="" xpath="" class="" type="" />
+        <Element key="Cancel" id="Cancel_button" name="" xpath="" class="" type="" />
+        <Element key="DHCPv4_BOOTP_Option" id="DHCPv4_BOOTP" name="" xpath="" class="" type="" />
+        <Element key="DHCPv6_Option" id="DHCPv6" name="" xpath="" class="" type="" />
+        <Element key="LDAP_Option" id="LDAP" name="" xpath="" class="" type="" />
+        <Element key="NTP_Option" id="NTP" name="" xpath="" class="" type="" />
+        <Element key="ICMPv4_Option" id="ICMPv4" name="" xpath="" class="" type="" />
+        <Element key="ICMPv6_Option" id="ICMPv6" name="" xpath="" class="" type="" />
+        <Element key="IGMPv2_Option" id="IGMPv2" name="" xpath="" class="" type="" />
+        <Element key="Ws_Discovery_Option" id="Ws_Discovery" name="" xpath="" class="" type="" />
+        <Element key="Bonjour_Option" id="Bonjour" name="" xpath="" class="" type="" />
+        <Element key="SLP_Option" id="SLP" name="" xpath="" class="" type="" />
+        <Element key="Advance_Apply" id="" name="Apply" xpath="" class="" type="" />
+        <Element key="Addrlist" id="firewallAddrTempList" name="" xpath="" class="" type="" />
+        <Element key="ServiceTemplates" id="firewallServiceTempList" name="" xpath="" class="" type="" />
+        <Element key="AllowPolicy" id="Allow" name="" xpath="" class="" type="" />
+        <Element key="DropPolicy" id="Drop" name="" xpath="" class="" type="" />
+        <Element key="Rule_Apply" id="Apply" name="" xpath="" class="" type="" />
+        <Element key="Rule_Cancel" id="cancel_button" name="" xpath="" class="" type="" />
+        <Element key="Address_Tmp_Name" id="addrTemplateName" name="" xpath="" class="" type="" />
+        <Element key="IPaddr_Local" id="IPaddr_local_IPL" name="" xpath="" class="" type="" />
+        <Element key="IPaddr_Remote" id="IPaddr_remote_IPR" name="" xpath="" class="" type="" />
+        <Element key="Predefined_Local" id="IPaddr_local_IPLPRE" name="" xpath="" class="" type="" />
+        <Element key="Predefined_Remote" id="IPaddr_remote_IPRPRE" name="" xpath="" class="" type="" />
+        <Element key="Range_Local" id="IPaddr_local_IPLRRNG" name="" xpath="" class="" type="" />
+        <Element key="Range_Remote" id="IPaddr_remote_IPRRNG" name="" xpath="" class="" type="" />
+        <Element key="Prefix_Local" id="IPaddr_local_IPLPREFX" name="" xpath="" class="" type="" />
+        <Element key="Prefix_Remote" id="IPaddr_remote_IPRPREFX" name="" xpath="" class="" type="" />
+        <Element key="IPv4addr_List" id="IPv4addr_list" name="" xpath="" class="" type="" />
+        <Element key="Remote_IPAddr" id="IP_Remote" name="" xpath="" class="" type="" />
+        <Element key="Addr_Local_Prelist" id="addr_prelist" name="" xpath="" class="" type="" />
+        <Element key="Addr_Remote_Prelist" id="addr_prermtlist" name="" xpath="" class="" type="" />
+        <Element key="LocalIPAddr_From" id="IP_Range_Local_From" name="" xpath="" class="" type="" />
+        <Element key="LocalIPAddr_To" id="IP_Range_Local_To" name="" xpath="" class="" type="" />
+        <Element key="RemoteIPAddr_From" id="IP_Range_Remote_From" name="" xpath="" class="" type="" />
+        <Element key="RemoteIPAddr_To" id="IP_Range_Remote_To" name="" xpath="" class="" type="" />
+        <Element key="IPAddrPrefixLocal_From" id="IP_Prefix_Local" name="" xpath="" class="" type="" />
+        <Element key="IPAddrPrefixLocal_To" id="Prefix_local" name="" xpath="" class="" type="" />
+        <Element key="IPAddrPrefixRemote_From" id="IP_Prefix_Remote" name="" xpath="" class="" type="" />
+        <Element key="IPAddrPrefixRemote_To" id="Prefix_remote" name="" xpath="" class="" type="" />
+        <Element key="Addr_Ok" id="" name="Apply" xpath="" class="" type="" />
+        <Element key="Addr_Cancel" id="" name="Cancel_button" xpath="" class="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Support" relative_path="support.html">
+      <Elements />
+    </Page>
+    <Page key="Order_Supplies" relative_path="order_supplies.html">
+      <Elements />
+    </Page>
+    <Page key="Printer_Features" relative_path="set_config_networkAdvanced.html?tab=Networking&amp;menu=NetAdvanced">
+      <Elements>
+        <Element key="Enabled_Features" id="" name="" xpath="/html/body/div[2]/table/tbody/tr[2]/td[2]/form/div[4]/table/tbody//input" class="" type="" />
+        <Element key="IPv4" id="IPv4_enable" name="" xpath="" class="" type="" />
+        <Element key="IPv6" id="IPv6_enable" name="" xpath="" class="" type="" />
+        <Element key="DHCP" id="DHCP_enable" name="" xpath="" class="" type="" />
+        <Element key="DHCPv6" id="DHCPv6_enable" name="" xpath="" class="" type="" />
+        <Element key="BOOTP" id="BOOTP_enable" name="" xpath="" class="" type="" />
+        <Element key="AUTOIP" id="AUTOIP_enable" name="" xpath="" class="" type="" />
+        <Element key="LPD_Printing" id="LPD_enable" name="" xpath="" class="" type="" />
+        <Element key="9100_Printing" id="Printing_9100_enable" name="" xpath="" class="" type="" />
+        <Element key="BannerPage" id="BannerPage_enable" name="" xpath="" class="" type="" />
+        <Element key="Bonjour" id="Bonjour_enable" name="" xpath="" class="" type="" />
+        <Element key="AirPrint" id="AirPrint_enable" name="" xpath="" class="" type="" />
+        <Element key="LLMNR" id="LLMNR_enable" name="" xpath="" class="" type="" />
+        <Element key="IPP_Printing" id="IPP_enable" name="" xpath="" class="" type="" />
+        <Element key="IPPS_Printing" id="IPPS_enable" name="" xpath="" class="" type="" />
+        <Element key="FTP_Printing" id="FTPPrint_enable" name="" xpath="" class="" type="" />
+        <Element key="WS_Discovery" id="WSDiscovery_enable" name="" xpath="" class="" type="" />
+        <Element key="WS_Printing" id="WSPrint_enable" name="" xpath="" class="" type="" />
+        <Element key="WS_Scan" id="WSScan_enable" name="" xpath="" class="" type="" />
+        <Element key="SLP" id="SLP_enable" name="" xpath="" class="" type="" />
+        <Element key="Telnet_Config" id="TelnetConfig_enable" name="" xpath="" class="" type="" />
+        <Element key="TFTP_Config" id="TFTP_File_enable" name="" xpath="" class="" type="" />
+        <Element key="ARPPing" id="ARPPing_Enable" name="" xpath="" class="" type="" />
+        <Element key="Soap_Scan" id="SOAPScan_Enable" name="" xpath="" class="" type="" />
+        <Element key="ESCL" id="eSCL_Enable" name="" xpath="" class="" type="" />
+        <Element key="ECCL" id="eSCL_Enable" name="" xpath="" class="" type="" />
+        <Element key="EFCL" id="eSCL_Enable" name="" xpath="" class="" type="" />
+        <Element key="Enable_DHCPv4_FQDN_Compliance" id="FQDN_Enable" name="" xpath="" class="" type="" />
+        <Element key="AirPrint" id="AirPrint_enable" name="" xpath="" class="" type="" />
+        <Element key="Apply" id="" name="apply_button" xpath="" class="" type="" />
+        <Element key="Cancel" id="Cancel_button" name="" xpath="" class="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Hidden_Page" relative_path="hiddenPage_networking.html">
+      <Elements>
+        <Element key="Telnet_Config" id="TelnetConfig_enable" name="" xpath="" class="" type="" />
+        <Element key="TFTP_Config" id="TFTP_File_enable" name="" xpath="" class="" type="" />
+        <Element key="ARPPing" id="ARPPing_Enable" name="" xpath="" class="" type="" />
+        <Element key="Apply" id="Apply" name="" xpath="" class="" type="" />
+        <Element key="Cancel" id="Cancel" name="" xpath="" class="" type="" />
+      </Elements>
+    </Page>
+  </Pages>
+  <Page key="Admin_Account" relative_path="set_config_password.html?tab=System&amp;menu=Passwd">
+    <Elements>
+      <Element key="Password" id="Password" name="" xpath="" class="" type="" />
+      <Element key="Confirm_Password" id="ConfirmPassword" name="" xpath="" class="" type="" />
+      <Element key="Password_Apply" id="Apply" name="" xpath="" class="" type="" />
+      <Element key="Password_Ok" id="Back" name="" xpath="" class="" type="" />
+      <Element key="ClearPassword_Ok" id="Clear" name="" xpath="" class="" type="" />
+    </Elements>
+  </Page>
+ <Page key="Home" relative_path="">
+      <Elements>
+        <Element key="Home_UserName" id="HomeUserName" name="" xpath="" class="" type="" />
+        <Element key="Home_Link" id="HomeLink" name="" xpath="" class="" type="" />
+        <Element key="SignOut_Link" id="EwsLogoff" name="" xpath="" class="" type="" />
+        <Element key="SignIn_Link" id="EwsLogin" name="" xpath="" class="" type="" />
+        <Element key="Information" id="Information" name="" xpath="" class="" type="" />
+        <Element key="Settings" id="SettingsPages" name="" xpath="" class="" type="" />
+        <Element key="CopyPrint" id="PrintPages" name="" xpath="" class="" type="" />
+        <Element key="ScanDigitalSend" id="SendPages" name="" xpath="" class="" type="" />
+        <Element key="Fax" id="" name="FaxPages" xpath="" class="" type="" />
+        <Element key="Troubleshooting" id="TroubleshootingPages" name="" xpath="" class="" type="" />
+        <Element key="Security" id="SecurityPages" name="" xpath="" class="" type="" />
+        <Element key="HPWebServices" id="HPWebServicesPages" name="" xpath="" class="" type="" />
+        <Element key="Networking" id="Networking" name="" xpath="" class="" type="" />
+        <Element key="" id="" name="" xpath="" class="" type="" />
+        <Element key="" id="" name="" xpath="" class="" type="" />
+        <Element key="" id="" name="" xpath="" class="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Sign_In" relative_path="hp/device/SignIn/Index">
+      <Elements>
+        <Element key="Password" id="PasswordTextBox" name="" xpath="" class="" type="" />
+        <Element key="SignIn_Ok" id="signInOk" name="signInOk" xpath="" class="" type="" />
+        <Element key="signIn_Cancel" id="signInCancel" name="signInCancel" xpath="" class="" type="" />
+      </Elements>
+    </Page>
+  <Page key="Access_Control" relative_path="set_config_networkAccessControl.html?tab=Networking&amp;menu=NetAccessControl">
+    <Elements>      
+      <Element key="EnableACL" id="enableACL" name="" xpath="" class="" type="" />
+      <Element key="Allow_HTTP_Access" id="AllowHttpAccess" name="" xpath="" class="" type="" />
+      <Element key="Save_1" id="Select_Entry0" name="" xpath="" class="" type="" />
+      <Element key="Save_2" id="Select_Entry1" name="" xpath="" class="" type="" />
+      <Element key="Save_3" id="Select_Entry2" name="" xpath="" class="" type="" />
+      <Element key="Save_4" id="Select_Entry3" name="" xpath="" class="" type="" />
+      <Element key="Save_5" id="Select_Entry4" name="" xpath="" class="" type="" />
+      <Element key="Save_6" id="Select_Entry5" name="" xpath="" class="" type="" />
+      <Element key="Save_7" id="Select_Entry6" name="" xpath="" class="" type="" />
+      <Element key="Save_8" id="Select_Entry7" name="" xpath="" class="" type="" />
+      <Element key="Save_9" id="Select_Entry8" name="" xpath="" class="" type="" />
+      <Element key="Save_10" id="Select_Entry9" name="" xpath="" class="" type="" />
+      <Element key="IPv4_Address_1" id="ip0" name="" xpath="" class="" type="" />
+      <Element key="IPv4_Address_2" id="ip1" name="" xpath="" class="" type="" />
+      <Element key="IPv4_Address_3" id="ip2" name="" xpath="" class="" type="" />
+      <Element key="IPv4_Address_4" id="ip3" name="" xpath="" class="" type="" />
+      <Element key="IPv4_Address_5" id="ip4" name="" xpath="" class="" type="" />
+      <Element key="IPv4_Address_6" id="ip5" name="" xpath="" class="" type="" />
+      <Element key="IPv4_Address_7" id="ip6" name="" xpath="" class="" type="" />
+      <Element key="IPv4_Address_8" id="ip7" name="" xpath="" class="" type="" />
+      <Element key="IPv4_Address_9" id="ip8" name="" xpath="" class="" type="" />
+      <Element key="IPv4_Address_10" id="ip9" name="" xpath="" class="" type="" />
+      <Element key="Mask_1" id="" name="mask0" xpath="" class="" type="" />
+      <Element key="Mask_2" id="" name="mask1" xpath="" class="" type="" />
+      <Element key="Mask_3" id="" name="mask2" xpath="" class="" type="" />
+      <Element key="Mask_4" id="" name="mask3" xpath="" class="" type="" />
+      <Element key="Mask_5" id="" name="mask4" xpath="" class="" type="" />
+      <Element key="Mask_6" id="" name="mask5" xpath="" class="" type="" />
+      <Element key="Mask_7" id="" name="mask6" xpath="" class="" type="" />
+      <Element key="Mask_8" id="" name="mask7" xpath="" class="" type="" />
+      <Element key="Mask_9" id="" name="mask8" xpath="" class="" type="" />
+      <Element key="Mask_10" id="" name="mask9" xpath="" class="" type="" />
+      <Element key="ACL_Ok" id="" name="ok" xpath="" class="" />
+      <Element key="Apply" id="" name="Apply" xpath="" class="" type="" />
+      <Element key="Cancel" id="" name="cancel" xpath="" class="" type="" />
+    </Elements>
+  </Page>
+    <Page key="SNMP_Settings" relative_path="hp/device/set_config_networkSNMP.html?tab=Networking&amp;menu=NetSNMP">
+      <Elements>
+        <Element key="Set_Community_Name" id="SetCommunityName" name="" xpath="" class="medium" type="password" />
+        <Element key="Confirm_Set_Community_Name" id="ConfirmSetCommunityName" name="" xpath="" class="medium" type="password" />
+        <Element key="Get_Community_Name" id="GetCommunityName" name="" xpath="" class="medium" type="password" />
+        <Element key="Confirm_Get_Community_Name" id="ConfirmGetCommunityName" name="" xpath="" class="medium" type="password" />
+        <Element key="Disable_Public_Get" id="DisableCommunityPublic" name="" xpath="" class="" type="checkbox" />
+        <Element key="SNMP_Apply" id="" name="apply_button" xpath="" class="buttonA" type="submit" />
+        <Element key="SNMP_Ok" id="Back" name="" xpath="" class="buttonA" type="submit" />
+      </Elements>
+    </Page>
+</Sitemaps>

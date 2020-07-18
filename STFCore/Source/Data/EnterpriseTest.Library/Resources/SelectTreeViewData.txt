@@ -1,0 +1,23 @@
+select distinct
+	es.EnterpriseScenarioId as ESID,
+	es.Name as ESN,
+	es.FolderId as ESFID,
+	vr.VirtualResourceId as VRID,
+	vr.Name as VRN,
+	vr.FolderId as VRFID,
+	vr.ResourceType as VRT,
+	vr.Enabled as VRE,
+	md.VirtualResourceMetadataId as MDID,
+	md.Name as MDN,
+	md.FolderId as MDFID,
+	md.MetadataType as MDT,
+	md.Enabled as MDE
+from 
+	UserGroupAssoc uga,
+	EnterpriseScenarioUserGroupAssoc esga,
+	EnterpriseScenario es
+	left outer join VirtualResource vr on vr.EnterpriseScenarioId = es.EnterpriseScenarioId
+	left outer join VirtualResourceMetadata md on md.VirtualResourceId = vr.VirtualResourceId
+where
+	esga.EnterpriseScenarioId = es.EnterpriseScenarioId and
+	(es.Owner = '{0}' or (uga.UserName = '{0}' and uga.UserGroupName = esga.UserGroupName))

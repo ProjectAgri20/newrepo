@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8FA37AF9-F2B8-4E72-BFF7-580491A62832}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HP.ScalableTest.DeviceAutomation</RootNamespace>
+    <AssemblyName>STF.DeviceAutomation</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OutputPath>..\..\Binaries\STF.Common\</OutputPath>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
+    <CodeAnalysisRuleSet>Properties\STF.DeviceAutomation.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug (Code Analysis)|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DeviceAutomation-2.2, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\External Assemblies\DeviceAutomation-2.2.dll</HintPath>
+    </Reference>
+    <Reference Include="RobotClient, Version=1.2.5911.27640, Culture=neutral, PublicKeyToken=70105130f04d402e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\External Assemblies\RobotClient.dll</HintPath>
+    </Reference>
+    <Reference Include="SESLib">
+      <HintPath>..\..\External Assemblies\SES\SESLib.dll</HintPath>
+    </Reference>
+    <Reference Include="SES_Dependency, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\External Assemblies\SES\SES_Dependency.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Authentication\AuthenticationCredential.cs" />
+    <Compile Include="Authentication\AuthenticationProvider.cs" />
+    <Compile Include="Authentication\AuthenticatorBase.cs" />
+    <Compile Include="Authentication\AuthenticatorFactory.cs" />
+    <Compile Include="Authentication\IAppAuthenticator.cs" />
+    <Compile Include="Authentication\IAuthenticator.cs" />
+    <Compile Include="Authentication\JediOmni\JediOmniEquitracAuthenticator.cs" />
+    <Compile Include="Authentication\JediOmni\JediOmniAppAuthenticatorBase.cs" />
+    <Compile Include="Authentication\JediOmni\JediOmniAppAuthenticatorFactory.cs" />
+    <Compile Include="Authentication\JediOmni\JediOmniAuthenticator.cs" />
+    <Compile Include="Authentication\JediOmni\JediOmniAutoStoreAuthenticator.cs" />
+    <Compile Include="Authentication\JediOmni\JediOmniBlueprintAuthenticator.cs" />
+    <Compile Include="Authentication\JediOmni\JediOmniCardAuthenticator.cs" />
+    <Compile Include="Authentication\JediOmni\JediOmniCeliveoAuthenticator.cs" />
+    <Compile Include="Authentication\JediOmni\JediOmniGeniusBytesAuthenticator.cs" />
+    <Compile Include="Authentication\JediOmni\JediOmniHpacAgentlessAuthenticator.cs" />
+    <Compile Include="Authentication\JediOmni\JediOmniHpacScanAuthenticator.cs" />
+    <Compile Include="Authentication\JediOmni\JediOmniHpacWindowsAuthenticator.cs" />
+    <Compile Include="Authentication\JediOmni\JediOmniHpIdAuthenticator.cs" />
+    <Compile Include="Authentication\JediOmni\JediOmniHPRoamAuthenticator.cs" />
+    <Compile Include="Authentication\JediOmni\JediOmniISecStarAuthenticator.cs" />
+    <Compile Include="Authentication\JediOmni\JediOmniLocalDeviceAuthenticator.cs" />
+    <Compile Include="Authentication\JediOmni\JediOmniMyQAuthenticator.cs" />
+    <Compile Include="Authentication\JediOmni\JediOmniPaperCutAuthenticator.cs" />
+    <Compile Include="Authentication\JediOmni\JediOmniPinAuthenticator.cs" />
+    <Compile Include="Authentication\JediOmni\JediOmniSafeComUCAuthenticator.cs" />
+    <Compile Include="Authentication\JediOmni\JediOmniSafeComAuthenticator.cs" />
+    <Compile Include="Authentication\JediOmni\JediOmniSafeQAuthenticator.cs" />
+    <Compile Include="Authentication\JediOmni\JediOmniPaperCutAgentlessAuthenticator.cs" />
+    <Compile Include="Authentication\JediOmni\JediOmniSkipAuthenticator.cs" />
+    <Compile Include="Authentication\JediOmni\JediOmniUdocxScanAuthenticator.cs" />
+    <Compile Include="Authentication\JediOmni\JediOmniWindowsAuthenticator.cs" />
+    <Compile Include="Authentication\JediWindjammer\JediWindjammerAppAuthenticatorBase.cs" />
+    <Compile Include="Authentication\JediWindjammer\JediWindjammerAppAuthenticatorFactory.cs" />
+    <Compile Include="Authentication\JediWindjammer\JediWindjammerAuthenticator.cs" />
+    <Compile Include="Authentication\JediWindjammer\JediWindjammerAutoStoreAuthenticator.cs" />
+    <Compile Include="Authentication\JediWindjammer\JediWindjammerBlueprintAuthenticator.cs" />
+    <Compile Include="Authentication\JediWindjammer\JediWindjammerCardAuthenticator.cs" />
+    <Compile Include="Authentication\JediWindjammer\JediWindjammerEquitracAuthenticator.cs" />
+    <Compile Include="Authentication\JediWindjammer\JediWindjammerHpacAgentlessAuthenticator.cs" />
+    <Compile Include="Authentication\JediWindjammer\JediWindjammerHpacWindowsAuthenticator.cs" />
+    <Compile Include="Authentication\JediWindjammer\JediWindjammerLocalDeviceAuthenticator.cs" />
+    <Compile Include="Authentication\JediWindjammer\JediWindjammerPaperCutAuthenticator.cs" />
+    <Compile Include="Authentication\JediWindjammer\JediWindjammerPinAuthenticator.cs" />
+    <Compile Include="Authentication\JediWindjammer\JediWindjammerSafeComAuthenticator.cs" />
+    <Compile Include="Authentication\JediWindjammer\JediWindjammerWindowsAuthenticator.cs" />
+    <Compile Include="Authentication\OzWindjammer\OzWindjammerAuthenticator.cs" />
+    <Compile Include="Authentication\OzWindjammer\OzWindjammerWindowsAuthenticator.cs" />
+    <Compile Include="Authentication\PhoenixMagicFrame\PhoenixMagicFrameAuthenticator.cs" />
+    <Compile Include="Authentication\PhoenixMagicFrame\PhoenixMagicFrameWindowsAuthenticator.cs" />
+    <Compile Include="Authentication\PhoenixNova\PhoenixNovaAuthenticator.cs" />
+    <Compile Include="Authentication\PhoenixNova\PhoenixNovaWindowsAuthenticator.cs" />
+    <Compile Include="Authentication\SiriusUIv2\SiriusUIv2Authenticator.cs" />
+    <Compile Include="Authentication\SiriusUIv2\SiriusUIv2OxpdAuthenticator.cs" />
+    <Compile Include="Authentication\SiriusUIv2\SiriusUIv2WindowsAuthenticator.cs" />
+    <Compile Include="Authentication\AppAuthenticatorFactoryCore.cs" />
+    <Compile Include="Authentication\SiriusUIv3\SiriusUIv3AppAuthenticatorBase.cs" />
+    <Compile Include="Authentication\SiriusUIv3\SiriusUIv3Authenticator.cs" />
+    <Compile Include="Authentication\SiriusUIv3\SiriusUIv3CardAuthenticator.cs" />
+    <Compile Include="Authentication\SiriusUIv3\SiriusUIv3HpacIrmAuthenticator.cs" />
+    <Compile Include="Authentication\SiriusUIv3\SiriusUIv3PinAuthenticator.cs" />
+    <Compile Include="Authentication\SiriusUIv3\SiriusUIv3SafeComAuthenticator.cs" />
+    <Compile Include="Authentication\SiriusUIv3\SiriusUIv3WindowsAuthenticator.cs" />
+    <Compile Include="Authentication\SiriusUIv3\SiruisUIv3AppAuthenticatorFactory.cs" />
+    <Compile Include="ControlPanelExtension.cs" />
+    <Compile Include="DeviceConstructor.cs" />
+    <Compile Include="DeviceFactoryCore.cs" />
+    <Compile Include="DeviceFactoryCoreException.cs" />
+    <Compile Include="DevicePreparation\DevicePreparationManagerFactory.cs" />
+    <Compile Include="DevicePreparation\IDevicePreparationManager.cs" />
+    <Compile Include="DevicePreparation\JediOmniPreparationManager.cs" />
+    <Compile Include="DevicePreparation\JediWindjammerPreparationManager.cs" />
+    <Compile Include="DevicePreparation\OzWindjammerPreparationManager.cs" />
+    <Compile Include="DevicePreparation\PhoenixMagicFramePreparationManager.cs" />
+    <Compile Include="DevicePreparation\PhoenixNovaPreparationManager.cs" />
+    <Compile Include="DevicePreparation\SignOutMethod.cs" />
+    <Compile Include="DevicePreparation\SiriusUIv2PreparationManager.cs" />
+    <Compile Include="DevicePreparation\SiriusUIv3PreparationManager.cs" />
+    <Compile Include="DeviceScreen.cs" />
+    <Compile Include="DeviceSettings\DeviceSettingsManagerFactory.cs" />
+    <Compile Include="DeviceSettings\IDeviceSettingsManager.cs" />
+    <Compile Include="DeviceSettings\JediDeviceSettingsManager.cs" />
+    <Compile Include="DeviceSettings\JobMediaMode.cs" />
+    <Compile Include="DeviceSettings\OzDeviceSettingsManager.cs" />
+    <Compile Include="DeviceSettings\PhoenixDeviceSettingsManager.cs" />
+    <Compile Include="DeviceSettings\SettingsManagerResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SettingsManagerResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceSettings\SiriusDeviceSettingsManager.cs" />
+    <Compile Include="DeviceWorkflowException.cs" />
+    <Compile Include="DeviceWorkflowLogger.cs" />
+    <Compile Include="DeviceWorkflowLogSource.cs" />
+    <Compile Include="DeviceWorkflowMarker.cs" />
+    <Compile Include="Enums\CloudConnectorEnum.cs" />
+    <Compile Include="Enums\HpacEnum.cs" />
+    <Compile Include="Enums\LinkScanOptionsEnum.cs" />
+    <Compile Include="Enums\LinkPrintOptionsEnum.cs" />
+    <Compile Include="Enums\CopyJobOptionsEnum.cs" />
+    <Compile Include="Enums\ScanJobOptionsEnum.cs" />
+    <Compile Include="Helpers\Android\AndroidHelper.cs" />
+    <Compile Include="Helpers\JediOmni\JediOmniJobExecutionManager.cs" />
+    <Compile Include="Helpers\JediOmni\JediOmniJobOptionsManager.cs" />
+    <Compile Include="Helpers\JediOmni\JediOmniLaunchHelper.cs" />
+    <Compile Include="Helpers\JediOmni\JediOmniMasthead.cs" />
+    <Compile Include="Helpers\JediOmni\JediOmniNotificationPanel.cs" />
+    <Compile Include="Helpers\JediOmni\JediOmniPopupManager.cs" />
+    <Compile Include="Helpers\JediOmni\JediOmniQuicksetManager.cs" />
+    <Compile Include="Helpers\JediWindjammer\JediWindjammerJobExecutionManager.cs" />
+    <Compile Include="Helpers\JediWindjammer\JediWindjammerJobOptionsManager.cs" />
+    <Compile Include="Helpers\JediWindjammer\JediWindjammerLaunchHelper.cs" />
+    <Compile Include="Helpers\JetAdvantageLink\JetAdvantageLinkControlHelper.cs" />
+    <Compile Include="Helpers\JetAdvantageLink\JetAdvantageLinkLogAdapter.cs" />
+    <Compile Include="Helpers\JetAdvantageLink\JetAdvantageLinkPrintOptionManager.cs" />
+    <Compile Include="Helpers\JetAdvantageLink\JetAdvantageLinkScanOptionManager.cs" />
+    <Compile Include="Helpers\JetAdvantageLink\JetAdvantageLinkUI.cs" />
+    <Compile Include="Helpers\JetAdvantageLink\OptionNotFoundException.cs" />
+    <Compile Include="Helpers\OzWindjammer\OzWindjammerJobExecutionManager.cs" />
+    <Compile Include="Helpers\OzWindjammer\OzWindjammerJobOptionsManager.cs" />
+    <Compile Include="Helpers\PhoenixMagicFrame\PhoenixMagicFrameJobExecutionManager.cs" />
+    <Compile Include="Helpers\PhoenixNova\PhoenixNovaJobExecutionManager.cs" />
+    <Compile Include="Helpers\PhoenixNova\PhoenixNovaJobOptionsManager.cs" />
+    <Compile Include="Helpers\SiriusUIv3\SiriusUIv3JobExecutionManager.cs" />
+    <Compile Include="Helpers\SiriusUIv3\SiriusUIv3PopupManager.cs" />
+    <Compile Include="IDeviceWorkflowLogSource.cs" />
+    <Compile Include="InfoCollection\DeviceMemory\CategoryLabelParser.cs" />
+    <Compile Include="InfoCollection\DeviceMemory\DeviceMemoryCountLog.cs" />
+    <Compile Include="InfoCollection\DeviceMemory\DeviceMemorySnapshotLog.cs" />
+    <Compile Include="InfoCollection\DeviceMemory\DeviceMemoryXmlLog.cs" />
+    <Compile Include="InfoCollection\DeviceMemory\JediMemoryRetrievalAgent.cs" />
+    <Compile Include="InfoCollection\DeviceMemory\JetAdvantageLink\JetAdvantageLinkDeviceMemoryCountDataLog.cs" />
+    <Compile Include="InfoCollection\DeviceMemory\JetAdvantageLink\JetAdvantageLinkDeviceMemorySnapShotDataLog.cs" />
+    <Compile Include="InfoCollection\DeviceMemory\JetAdvantageLink\JetAdvantageLinkMemoryMonitoring.cs" />
+    <Compile Include="InfoCollection\DeviceUsage\DeviceJobCountLog.cs" />
+    <Compile Include="InfoCollection\DeviceUsage\DeviceJobSnapshotLog.cs" />
+    <Compile Include="InfoCollection\DeviceUsage\DeviceUsageCollector.cs" />
+    <Compile Include="InfoCollection\DeviceUsage\DeviceUsageCounts.cs" />
+    <Compile Include="InfoCollection\TriageData\DeviceMessageWarning.cs" />
+    <Compile Include="InfoCollection\TriageData\ITriage.cs" />
+    <Compile Include="InfoCollection\TriageData\JediOmniTriage.cs" />
+    <Compile Include="InfoCollection\TriageData\JediWindjammerTriage.cs" />
+    <Compile Include="InfoCollection\TriageData\JetAdvantageLinkTriage.cs" />
+    <Compile Include="InfoCollection\TriageData\OzWindjammerTriage.cs" />
+    <Compile Include="InfoCollection\TriageData\PhoenixTriage.cs" />
+    <Compile Include="InfoCollection\TriageData\SiriusUIv2Triage.cs" />
+    <Compile Include="InfoCollection\TriageData\SiriusUIv3Triage.cs" />
+    <Compile Include="InfoCollection\TriageData\TriageBase.cs" />
+    <Compile Include="InfoCollection\TriageData\TriageDataLog.cs" />
+    <Compile Include="InfoCollection\TriageData\TriageFactory.cs" />
+    <Compile Include="JobNotificationCondition.cs" />
+    <Compile Include="LinkApps\CloudConnector\BoxLoginManager.cs" />
+    <Compile Include="LinkApps\CloudConnector\CloudConnectorApp.cs" />
+    <Compile Include="LinkApps\CloudConnector\CloudConnectorsEnum.cs" />
+    <Compile Include="LinkApps\CloudConnector\DropBoxLoginManager.cs" />
+    <Compile Include="LinkApps\CloudConnector\GoogleLoginManager.cs" />
+    <Compile Include="LinkApps\CloudConnector\ICloudLoginManager.cs" />
+    <Compile Include="LinkApps\CloudConnector\MicrosoftLoginManager.cs" />
+    <Compile Include="LinkApps\Kiosk\RegusKiosk\RegusKioskApp.cs" />
+    <Compile Include="LinkApps\Kiosk\RegusKiosk\RegusKioskControlsEnum.cs" />
+    <Compile Include="LinkApps\Kiosk\RegusKiosk\RegusKioskOptionsEnum.cs" />
+    <Compile Include="LinkApps\Kiosk\RegusKiosk\RegusKioskOptionsManager.cs" />
+    <Compile Include="LinkApps\LinkScanApps\LinkScanApp.cs" />
+    <Compile Include="LinkApps\LinkScanApps\LinkScanAppsEnum.cs" />
+    <Compile Include="LinkApps\VerticalConnector\Clio\ClioApp.cs" />
+    <Compile Include="LinkApps\VerticalConnector\Clio\ClioEnum.cs" />
+    <Compile Include="LinkApps\VerticalConnector\iManage\iManageEnum.cs" />
+    <Compile Include="LinkApps\VerticalConnector\iManage\iManageApp.cs" />
+    <Compile Include="NativeApps\Contacts\ContactsAppFactory.cs" />
+    <Compile Include="NativeApps\Contacts\IContactsApp.cs" />
+    <Compile Include="NativeApps\Contacts\JediOmniContactsApp.cs" />
+    <Compile Include="NativeApps\Copy\CopyAppFactory.cs" />
+    <Compile Include="NativeApps\Copy\ICopyApp.cs" />
+    <Compile Include="NativeApps\Copy\ICopyJobOptions.cs" />
+    <Compile Include="NativeApps\Copy\JediOmniCopyApp.cs" />
+    <Compile Include="NativeApps\Copy\JediOmniCopyJobOptionsManager.cs" />
+    <Compile Include="NativeApps\Copy\JediWindjammerCopyApp.cs" />
+    <Compile Include="NativeApps\Copy\JediWindjammerCopyJobOptionsManager.cs" />
+    <Compile Include="NativeApps\Copy\PhoenixNovaCopyApp.cs" />
+    <Compile Include="NativeApps\Copy\PhoenixNovaCopyJobOptionsManager.cs" />
+    <Compile Include="NativeApps\Email\EmailAppFactory.cs" />
+    <Compile Include="NativeApps\Email\IEmailApp.cs" />
+    <Compile Include="NativeApps\Email\IEmailAppWithAddressSource.cs" />
+    <Compile Include="NativeApps\Email\IEmailJobOptions.cs" />
+    <Compile Include="NativeApps\Email\JediOmniEmailApp.cs" />
+    <Compile Include="NativeApps\Email\JediWindjammerEmailApp.cs" />
+    <Compile Include="NativeApps\Email\OzWindjammerEmailApp.cs" />
+    <Compile Include="NativeApps\Email\PhoenixMagicFrameEmailApp.cs" />
+    <Compile Include="NativeApps\Email\PhoenixNovaEmailApp.cs" />
+    <Compile Include="NativeApps\Email\SiriusUIv2EmailApp.cs" />
+    <Compile Include="NativeApps\Email\SiriusUIv3EmailApp.cs" />
+    <Compile Include="NativeApps\Fax\FaxAppFactory.cs" />
+    <Compile Include="NativeApps\Fax\IFaxApp.cs" />
+    <Compile Include="NativeApps\Fax\IFaxJobOptions.cs" />
+    <Compile Include="NativeApps\Fax\JediOmniFaxApp.cs" />
+    <Compile Include="NativeApps\Fax\JediWindjammerFaxApp.cs" />
+    <Compile Include="NativeApps\Fax\OzWindjammerFaxApp.cs" />
+    <Compile Include="NativeApps\Fax\PhoenixNovaFaxApp.cs" />
+    <Compile Include="NativeApps\Fax\SiriusUIv3FaxApp.cs" />
+    <Compile Include="NativeApps\JobStorage\FirmwareVersion.cs" />
+    <Compile Include="NativeApps\JobStorage\IJobStorageJobOptions.cs" />
+    <Compile Include="NativeApps\JobStorage\IJobStoragePrintApp.cs" />
+    <Compile Include="NativeApps\JobStorage\IJobStorageScanApp.cs" />
+    <Compile Include="NativeApps\JobStorage\JediOmniJobStoragePrintApp.cs" />
+    <Compile Include="NativeApps\JobStorage\JediOmniJobStorageScanApp.cs" />
+    <Compile Include="NativeApps\JobStorage\JediWindjammerJobStoragePrintApp.cs" />
+    <Compile Include="NativeApps\JobStorage\JediWindjammerJobStorageScanApp.cs" />
+    <Compile Include="NativeApps\JobStorage\JobStorageDeleteJobException.cs" />
+    <Compile Include="NativeApps\JobStorage\JobStoragePrintAppFactory.cs" />
+    <Compile Include="NativeApps\JobStorage\ScanJobStorageAppFactory.cs" />
+    <Compile Include="NativeApps\NetworkFolder\INetworkFolderApp.cs" />
+    <Compile Include="NativeApps\NetworkFolder\INetworkFolderJobOptions.cs" />
+    <Compile Include="NativeApps\NetworkFolder\JediOmniNetworkFolderApp.cs" />
+    <Compile Include="NativeApps\NetworkFolder\JediWindjammerNetworkFolderApp.cs" />
+    <Compile Include="NativeApps\NetworkFolder\NetworkFolderAppFactory.cs" />
+    <Compile Include="NativeApps\NetworkFolder\OzWindjammerNetworkFolderApp.cs" />
+    <Compile Include="NativeApps\NetworkFolder\PhoenixMagicFrameNetworkFolderApp.cs" />
+    <Compile Include="NativeApps\NetworkFolder\PhoenixNovaNetworkFolderApp.cs" />
+    <Compile Include="NativeApps\NetworkFolder\SiriusUIv2NetworkFolderApp.cs" />
+    <Compile Include="NativeApps\NetworkFolder\SiriusUIv3NetworkFolderApp.cs" />
+    <Compile Include="NativeApps\TraySettings\ITraySettingsApp.cs" />
+    <Compile Include="NativeApps\TraySettings\JediOmniTraySettingsApp.cs" />
+    <Compile Include="NativeApps\TraySettings\TraySettings.cs" />
+    <Compile Include="NativeApps\TraySettings\TraySettingsAppFactory.cs" />
+    <Compile Include="NativeApps\Usb\IUsbApp.cs" />
+    <Compile Include="NativeApps\Usb\IUsbJobOptions.cs" />
+    <Compile Include="NativeApps\Usb\JediOmniUsbApp.cs" />
+    <Compile Include="NativeApps\Usb\JediWindjammerUsbApp.cs" />
+    <Compile Include="NativeApps\Usb\UsbAppFactory.cs" />
+    <Compile Include="SolutionApps\GeniusBytes\GeniusBytesAppBase.cs" />
+    <Compile Include="SolutionApps\GeniusBytes\GeniusBytesAppFactory.cs" />
+    <Compile Include="SolutionApps\GeniusBytes\GeniusBytesEnum.cs" />
+    <Compile Include="SolutionApps\GeniusBytes\GeniusBytesResource.Designer.cs" />
+    <Compile Include="SolutionApps\GeniusBytes\IGeniusBytesApp.cs" />
+    <Compile Include="SolutionApps\GeniusBytes\JediOmniGeniusBytesApp.cs" />
+    <Compile Include="SolutionApps\HpacScan\HpacScanAppBase.cs" />
+    <Compile Include="SolutionApps\HpacScan\HpacScanAppFactory.cs" />
+    <Compile Include="SolutionApps\HpacScan\HpacScanResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HpacScanResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SolutionApps\HpacScan\IHpacScanApp.cs" />
+    <Compile Include="SolutionApps\HpacScan\JediOmniHpacScanApp.cs" />
+    <Compile Include="SolutionApps\iSecStar\IiSecStarApp.cs" />
+    <Compile Include="SolutionApps\iSecStar\iSecStarAppBase.cs" />
+    <Compile Include="SolutionApps\iSecStar\iSecStarAppFactory.cs" />
+    <Compile Include="SolutionApps\iSecStar\iSecStarResource.Designer.cs" />
+    <Compile Include="SolutionApps\iSecStar\JediOmniiSecStarApp.cs" />
+    <Compile Include="SolutionApps\Celiveo\CeliveoAppBase.cs" />
+    <Compile Include="SolutionApps\Celiveo\CeliveoAppFactory.cs" />
+    <Compile Include="SolutionApps\Celiveo\CeliveoResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CeliveoResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SolutionApps\Celiveo\ICeliveoApp.cs" />
+    <Compile Include="SolutionApps\Celiveo\JediOmniCeliveoApp.cs" />
+    <Compile Include="SolutionApps\MyQ\IMyQApp.cs" />
+    <Compile Include="SolutionApps\MyQ\JediOmniMyQApp.cs" />
+    <Compile Include="SolutionApps\MyQ\MyQAppBase.cs" />
+    <Compile Include="SolutionApps\MyQ\MyQAppFactory.cs" />
+    <Compile Include="SolutionApps\MyQ\MyQResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyQResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SolutionApps\PaperCutAgentless\IPaperCutAgentlessApp.cs" />
+    <Compile Include="SolutionApps\PaperCutAgentless\JediOmniPaperCutAgentlessApp.cs" />
+    <Compile Include="SolutionApps\PaperCutAgentless\PaperCutAgentlessAppBase.cs" />
+    <Compile Include="SolutionApps\PaperCutAgentless\PaperCutAgentlessResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PaperCutAgentlessResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SolutionApps\PaperCutAgentless\PaperCutAgentlessAppFactory.cs" />
+    <Compile Include="SolutionApps\SafeComUC\ISafeComUCApp.cs" />
+    <Compile Include="SolutionApps\SafeComUC\JediOmniSafeComUCApp.cs" />
+    <Compile Include="SolutionApps\SafeComUC\SafeComUCAppFactory.cs" />
+    <Compile Include="SolutionApps\SafeComUC\SafeComUCAppBase.cs" />
+    <Compile Include="SolutionApps\SafeComUC\SafeComUCResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SafeComUCResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SolutionApps\SafeQ\ISafeQApp.cs" />
+    <Compile Include="SolutionApps\SafeQ\JediOmniSafeQApp.cs" />
+    <Compile Include="SolutionApps\SafeQ\SafeQAppBase.cs" />
+    <Compile Include="SolutionApps\SafeQ\SafeQAppFactory.cs" />
+    <Compile Include="SolutionApps\SafeQ\SafeQResource.Designer.cs" />
+    <Compile Include="SolutionApps\UdocxScan\IUdocxScanApp.cs" />
+    <Compile Include="SolutionApps\UdocxScan\JediOmniUdocxScanApp.cs" />
+    <Compile Include="SolutionApps\UdocxScan\UdocxScanAppBase.cs" />
+    <Compile Include="SolutionApps\UdocxScan\UdocxScanAppFactory.cs" />
+    <Compile Include="SolutionApps\UdocxScan\UdocxScanEnum.cs" />
+    <Compile Include="SolutionApps\UdocxScan\UdocxScanResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UdocxScanResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="VirtualResourceInstanceStatusLogger.cs" />
+    <Compile Include="OxpdBrowserEngine.cs" />
+    <Compile Include="Pacekeeper.cs" />
+    <Compile Include="PjlMessenger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScanExecutionOptions.cs" />
+    <Compile Include="ScanFilePrefix.cs" />
+    <Compile Include="SolutionApps\AutoStore\AutoStoreAppBase.cs" />
+    <Compile Include="SolutionApps\AutoStore\AutoStoreAppFactory.cs" />
+    <Compile Include="SolutionApps\AutoStore\AutoStoreExecutionOptions.cs" />
+    <Compile Include="SolutionApps\AutoStore\AutoStoreResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoStoreResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SolutionApps\AutoStore\IAutoStoreApp.cs" />
+    <Compile Include="SolutionApps\AutoStore\JediOmniAutoStoreApp.cs" />
+    <Compile Include="SolutionApps\AutoStore\JediWindjammerAutoStoreApp.cs" />
+    <Compile Include="SolutionApps\Blueprint\BlueprintResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BlueprintResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SolutionApps\Blueprint\JediOmniBluePrintApp.cs" />
+    <Compile Include="SolutionApps\Dss\DssEnhancedWorkflowApp.cs" />
+    <Compile Include="SolutionApps\Dss\DssWorkflowAppFactory.cs" />
+    <Compile Include="SolutionApps\Dss\DssWorkflowResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DssWorkflowResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SolutionApps\Dss\IDssWorkflowApp.cs" />
+    <Compile Include="SolutionApps\Dss\IDssWorkflowJobOptions.cs" />
+    <Compile Include="SolutionApps\Dss\JediOmniDssWorkflowApp.cs" />
+    <Compile Include="SolutionApps\Dss\JediWindjammerDssWorkflowApp.cs" />
+    <Compile Include="SolutionApps\Dss\OzWindjammerDssWorkflowApp.cs" />
+    <Compile Include="SolutionApps\Equitrac\EquitracAppBase.cs" />
+    <Compile Include="SolutionApps\Equitrac\EquitracAppFactory.cs" />
+    <Compile Include="SolutionApps\Equitrac\EquitracResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EquitracResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SolutionApps\Equitrac\IEquitracApp.cs" />
+    <Compile Include="SolutionApps\Equitrac\JediOmniEquitracApp.cs" />
+    <Compile Include="SolutionApps\Equitrac\JediWindjammerEquitracApp.cs" />
+    <Compile Include="SolutionApps\Hpac\HpacAppBase.cs" />
+    <Compile Include="SolutionApps\Hpac\HpacAppFactory.cs" />
+    <Compile Include="SolutionApps\Hpac\HpacResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HpacResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SolutionApps\Hpac\IHpacApp.cs" />
+    <Compile Include="SolutionApps\Hpac\JediOmniHpacApp.cs" />
+    <Compile Include="SolutionApps\Hpac\JediWindjammerHpacApp.cs" />
+    <Compile Include="SolutionApps\Hpac\SiriusUIv3HpacApp.cs" />
+    <Compile Include="SolutionApps\Hpcr\HpcrAppBase.cs" />
+    <Compile Include="SolutionApps\Hpcr\HpcrAppFactory.cs" />
+    <Compile Include="SolutionApps\Hpcr\HpcrResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HpcrResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SolutionApps\Hpcr\IHpcrApp.cs" />
+    <Compile Include="SolutionApps\Hpcr\JediOmniHpcrApp.cs" />
+    <Compile Include="SolutionApps\Hpcr\JediWindJammerHpcrApp.cs" />
+    <Compile Include="SolutionApps\Hpcr\OzWindJammerHpcrApp.cs" />
+    <Compile Include="SolutionApps\Hpcr\SiriusUIv2HpcrApp.cs" />
+    <Compile Include="SolutionApps\Hpcr\SiriusUIv3HpcrApp.cs" />
+    <Compile Include="SolutionApps\Hpec\HpecFactory.cs" />
+    <Compile Include="SolutionApps\Hpec\HpecResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HpecResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SolutionApps\Hpec\IHpecApp.cs" />
+    <Compile Include="SolutionApps\Hpec\JediOmniHpecApp.cs" />
+    <Compile Include="SolutionApps\Hpec\JediWindJammerHpecApp.cs" />
+    <Compile Include="SolutionApps\HPRoam\HpRoamAppBase.cs" />
+    <Compile Include="SolutionApps\HPRoam\HpRoamFactory.cs" />
+    <Compile Include="SolutionApps\HPRoam\HpRoamResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HpRoamResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SolutionApps\HPRoam\IHpRoamApp.cs" />
+    <Compile Include="SolutionApps\HPRoam\JediOmniHpRoamApp.cs" />
+    <Compile Include="SolutionApps\JetAdvantage\IJetAdvantageApp.cs" />
+    <Compile Include="SolutionApps\JetAdvantage\JediOmniJetAdvantageApp.cs" />
+    <Compile Include="SolutionApps\JetAdvantage\JediWindjammerJetAdvantageApp.cs" />
+    <Compile Include="SolutionApps\JetAdvantage\JetAdvantageAppBase.cs" />
+    <Compile Include="SolutionApps\JetAdvantage\JetAdvantageFactory.cs" />
+    <Compile Include="SolutionApps\PaperCut\IPaperCutApp.cs" />
+    <Compile Include="SolutionApps\PaperCut\JediOmniPaperCutApp.cs" />
+    <Compile Include="SolutionApps\PaperCut\JediWindjammerPaperCutApp.cs" />
+    <Compile Include="SolutionApps\PaperCut\PaperCutAppBase.cs" />
+    <Compile Include="SolutionApps\PaperCut\PaperCutAppFactory.cs" />
+    <Compile Include="SolutionApps\PaperCut\PaperCutResource.Designer.cs" />
+    <Compile Include="SolutionApps\Blueprint\IBlueprintApp.cs" />
+    <Compile Include="SolutionApps\Blueprint\JediWindjammerBlueprintApp.cs" />
+    <Compile Include="SolutionApps\Blueprint\BlueprintAppBase.cs" />
+    <Compile Include="SolutionApps\Blueprint\BlueprintAppFactory.cs" />
+    <Compile Include="SolutionApps\SafeCom\ISafeComApp.cs" />
+    <Compile Include="SolutionApps\SafeCom\JediOmniSafeComApp.cs" />
+    <Compile Include="SolutionApps\SafeCom\JediWindjammerSafeComApp.cs" />
+    <Compile Include="SolutionApps\SafeCom\SafeComAppBase.cs" />
+    <Compile Include="SolutionApps\SafeCom\SafeComAppFactory.cs" />
+    <Compile Include="SolutionApps\SafeCom\SafeComResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SafeComResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SolutionApps\SafeCom\SiriusUIv3SafeComApp.cs" />
+    <Compile Include="Wireless\Enums.cs" />
+    <Compile Include="Wireless\IWireless.cs" />
+    <Compile Include="Wireless\JediOmniMultipleInterfaceWireless.cs" />
+    <Compile Include="Wireless\JediOmniSingleInterfaceWireless.cs" />
+    <Compile Include="Wireless\PhoenixMagicWireless.cs" />
+    <Compile Include="Wireless\PhoenixNovaWireless.cs" />
+    <Compile Include="Wireless\SiriusUIv3Wireless.cs" />
+    <Compile Include="Wireless\WirelessFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FrameworkInternal\STF.FrameworkInternal.csproj">
+      <Project>{1d38c759-e5f6-4603-bbbc-566f1276aba2}</Project>
+      <Name>STF.FrameworkInternal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\STF.Framework.csproj">
+      <Project>{b91dcc51-8664-49e3-97d0-6fcfd2918a1a}</Project>
+      <Name>STF.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility\STF.Utility.csproj">
+      <Project>{0a02ea9d-11d5-4078-9036-385709cb365a}</Project>
+      <Name>STF.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DeviceSettings\SettingsManagerResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SettingsManagerResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolutionApps\AutoStore\AutoStoreResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AutoStoreResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolutionApps\Blueprint\BlueprintResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BlueprintResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolutionApps\Celiveo\CeliveoResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CeliveoResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolutionApps\Dss\DssWorkflowResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DssWorkflowResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolutionApps\Equitrac\EquitracResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>EquitracResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolutionApps\GeniusBytes\GeniusBytesResource.resx" />
+    <EmbeddedResource Include="SolutionApps\HpacScan\HpacScanResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>HpacScanResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolutionApps\Hpac\HpacResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>HpacResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolutionApps\Hpcr\HpcrResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>HpcrResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolutionApps\Hpec\HpecResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>HpecResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolutionApps\HPRoam\HpRoamResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>HpRoamResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolutionApps\iSecStar\iSecStarResource.resx" />
+    <EmbeddedResource Include="SolutionApps\MyQ\MyQResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MyQResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolutionApps\PaperCutAgentless\PaperCutAgentlessResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PaperCutAgentlessResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolutionApps\PaperCut\PaperCutResource.resx" />
+    <EmbeddedResource Include="SolutionApps\SafeComUC\SafeComUCResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SafeComUCResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolutionApps\SafeCom\SafeComResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SafeComResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolutionApps\SafeQ\SafeQResource.resx" />
+    <EmbeddedResource Include="SolutionApps\UdocxScan\UdocxScanResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UdocxScanResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SolutionApps\AutoStore\AutoStoreJavaScript.js" />
+    <Content Include="SolutionApps\Celiveo\CeliveoJavaScript.js" />
+    <Content Include="SolutionApps\Dss\DssWorkflowJavaScript.js" />
+    <Content Include="SolutionApps\Equitrac\EquitracJavaScript.js" />
+    <Content Include="SolutionApps\GeniusBytes\GeniusBytesJavaScript.js" />
+    <Content Include="SolutionApps\HpacScan\HpacScanJavaScript.js" />
+    <Content Include="SolutionApps\Hpac\HpacJavaScript.js" />
+    <Content Include="SolutionApps\Hpcr\HpcrJavaScript.js" />
+    <Content Include="SolutionApps\Hpec\HpecJavaScript.js" />
+    <Content Include="SolutionApps\HPRoam\HpRoamJavaScript.js" />
+    <Content Include="SolutionApps\iSecStar\iSecStarJavaScript.js" />
+    <Content Include="SolutionApps\MyQ\MyQJavaScript.js" />
+    <Content Include="SolutionApps\PaperCutAgentless\PaperCutAgentlessJavaScript.js" />
+    <Content Include="SolutionApps\PaperCut\PaperCutJavaScript.js" />
+    <Content Include="SolutionApps\Blueprint\BlueprintJavaScript.js" />
+    <Content Include="SolutionApps\SafeComUC\SafeComUCJavaScript.js" />
+    <Content Include="SolutionApps\SafeCom\SafeComJavaScript.js" />
+    <Content Include="SolutionApps\SafeQ\SafeQJavaScript.js" />
+    <Content Include="SolutionApps\UdocxScan\UdocxScanJavaScript.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\STF.DeviceAutomation.ruleset" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack">
+      <Version>1.4.6</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>8.0.3</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <CodeAnalysisLogFile>$(IntermediateOutputPath)$(TargetFileName).CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisSucceededFile>$(IntermediateOutputPath)$(TargetFileName).lastcodeanalysissucceeded</CodeAnalysisSucceededFile>
+  </PropertyGroup>
+</Project>

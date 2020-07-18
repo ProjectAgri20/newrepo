@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Printers FilterType="OutgoingEmailProfiles">
+
+  <Printer Type="PHOENIX" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>http://{0}/hp/device/set_config_emailProfileAddEdit.html/AddProfile</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>emailAddress={emailAddress}amp;displayName={displayName}amp;SMTPserver={SMTPserver}amp;smtpPort={smtpPort}amp;sslCheckBox={sslCheckBox}amp;SMTPAuthCheckBox={SMTPAuthCheckBox}amp;SMTPuid={SMTPuid}amp;SMTPPasswd={SMTPPasswd}amp;profilePin={profilePin}amp;pinConfirm={pinConfirm}amp;fileAttachMax={fileAttachMax}amp;customFileMaxAttach={customFileMaxAttach}amp;AutoCCCheckBox={AutoCCCheckBox}amp;Save_button=Save+Onlyamp;Entry_Num=amp;eProfileNameList=hssl%2C+%2C+%2C+%2C+%2C+%2C+%2C+%2C+%2C+%2C+%2C+%2C+%2C+%2C+%2C+%2C+%2C+%2C+%2C+%2Camp;duplicateError=Duplicate+display+name.%0D%0AEnter+a+different+display%0D%0Aname+and+try+again.amp;emailFormatWarning=E-mail+address+is+in+a%0D%0Anon+standard+format.%0D%0APress+%5BOK%5D+to+use+anyway.amp;requiredField=*+required+fieldamp;pinMismatchErr=Confirm+PIN+entry+doesn%27t+match.+Try+again.amp;pinTooShortErr=PIN+must+be+4+digits.amp;invalidEntryStr=Entry+is+invalid.</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+
+</Printers>
+
+
+

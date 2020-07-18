@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "STB_Merge", "Bangalore_STB_Merge\STB_Merge.dtproj", "{73F9CDE5-B020-4B69-87E0-3D9E8A3B3325}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73F9CDE5-B020-4B69-87E0-3D9E8A3B3325}.Development|Default.ActiveCfg = Development
+		{73F9CDE5-B020-4B69-87E0-3D9E8A3B3325}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DEBF8BB-8255-4641-8C79-2DC4AD5E27F6}
+	EndGlobalSection
+EndGlobal

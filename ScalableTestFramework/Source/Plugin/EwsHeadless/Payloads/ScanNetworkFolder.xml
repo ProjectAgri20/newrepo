@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Printers FilterType="ScanNetworkFolder">
+
+  <Printer Type="PHOENIX" SubFilterType="CreateScanNetworkFolder" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>http://{0}/hp/device/set_config_folderAddNew.html/config</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>displayName={displayName}amp;networkFolderPath={networkFolderPath}amp;UserName={UserName}amp;PassWord={PassWord}amp;folderPin={folderPin}amp;pinConfirm={pinConfirm}amp;fileType={fileType}amp;DefaultPaperSize={DefaultPaperSize}amp;ScanQualitySelection={ScanQualitySelection}amp;scanColorSelection={scanColorSelection}amp;filePrefix={filePrefix}amp;Save_button=Save+Onlyamp;Entry_Num=amp;eProfileNameList=+%2C+%2C+%2C+%2C+%2C+%2C+%2C+%2C+%2C+%2C+%2C+%2C+%2C+%2C+%2C+%2C+%2C+%2C+%2C+%2Camp;duplicateError=Duplicate+display+name.%0D%0AEnter+a+different+display%0D%0Aname+and+try+again.amp;requiredField=*+required+fieldamp;invalidEntry=Entry+is+invalid.amp;pinMismatchErr=Confirm+PIN+entry+doesn%27t+match.+Try+again.amp;pinTooShortErr=PIN+must+be+4+digits.</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+          <Header Order="3">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-US,en;q=0.8</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="PHOENIX" SubFilterType="DeleteScanNetworkFolder" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>http://{0}/hp/device/set_config_scantoConfiguration.html/EditList</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>deletePrompt=Are+you+sure+you+want+to+delete+the+selected+network+folder%3Famp;scanTofolderEnabled=1amp;Delete_Button=Deleteamp;foldersFull=0amp;{displayName}=on</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+          <Header Order="3">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-US,en;q=0.8</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="SIRIUS" SubFilterType="CreateScanNetworkFolder" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>  
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>  
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/DevMgmt/Folder/PredefinedJobs</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>lt;folderdyn:PredefinedJob xmlns:folderdyn="http://www.hp.com/schemas/imaging/con/ledm/folderservicedyn/2010/11/22"gt;lt;dsd:ScanSettings xmlns:dsd="http://www.hp.com/schemas/imaging/con/digitalsending/2009/02/11"gt;lt;dd:Contrast xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/"gt;{Contrast}lt;/dd:Contrastgt;lt;dd:ScanMediaSize xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/"gt;{ScanMediaSize}lt;/dd:ScanMediaSizegt;lt;dd:ScanPlexMode xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/"gt;{ScanPlexMode}lt;/dd:ScanPlexModegt;lt;/dsd:ScanSettingsgt;lt;dsd:AttachmentSettings xmlns:dsd="http://www.hp.com/schemas/imaging/con/digitalsending/2009/02/11"gt;lt;dd:DSColorPreference xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/"gt;{ColorPreference}lt;/dd:DSColorPreferencegt;lt;dd:DSFileType xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/"gt;{DSFileType}lt;/dd:DSFileTypegt;lt;dd:DSImageResolution xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/"gt;{DSImageResolution}lt;/dd:DSImageResolutiongt;lt;dd:CompressAttachment xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/"gt;{CompressAttachment}lt;/dd:CompressAttachmentgt;lt;dd:FileNamePrefix xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/"gt;{FileNamePrefix}lt;/dd:FileNamePrefixgt;lt;/dsd:AttachmentSettingsgt;lt;folder:SendFolderDestinations xmlns:folder="http://www.hp.com/schemas/imaging/con/service/folder/2009/02/11"gt;lt;folder:SendFolderDestinationgt;lt;dd:UNCPath xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/"gt;{UNCPath}lt;/dd:UNCPathgt;lt;security:AuthenticationSettings xmlns:security="http://www.hp.com/schemas/imaging/con/security/2009/02/11"gt;lt;security:WindowsAuthenticationSettingsgt;lt;dd:UserName xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/"gt;{UserName}lt;/dd:UserNamegt;lt;dd:Password xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/"gt;{UserPassword}lt;/dd:Passwordgt;lt;/security:WindowsAuthenticationSettingsgt;lt;/security:AuthenticationSettingsgt;lt;/folder:SendFolderDestinationgt;lt;/folder:SendFolderDestinationsgt;lt;dsd:DisplaySettings xmlns:dsd="http://www.hp.com/schemas/imaging/con/digitalsending/2009/02/11"gt;lt;dd:Name xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/"gt;{Name}lt;/dd:Namegt;lt;/dsd:DisplaySettingsgt;lt;dd:PIN xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/"gt;{PIN}lt;/dd:PINgt;lt;/folderdyn:PredefinedJobgt;</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+          <Header Order="3">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-US,en;q=0.8</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="SIRIUS" SubFilterType="DeleteScanNetworkFolder" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>  
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>  
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/DevMgmt/Folder/PredefinedJobs/{1}</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>DELETE</Method>
+        <Payload></Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="OMNI" SubFilterType="EnableScanNetworkFolder" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>  
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>  
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/Folder/Save</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>FolderEnabled=onamp;ConditionNotify=Neveramp;NotificationMethod=Emailamp;EmailAddress=amp;EmailAddressEditable=onamp;SendFolderFilesystemPermission=Trueamp;VerifyFolderPriorJob=onamp;OriginalSize=0amp;OriginalSides=0amp;TextPicture=2amp;ContentOrientation=1amp;BackgroundRemoval=2amp;Darkness=4amp;Contrast=4amp;Sharpness=2amp;ImagePreviewConfiguration=2amp;AutoCrop=0amp;EraseUseInches=onamp;FrontSide=diffamp;EraseFrontTop=0.00amp;EraseFrontBottom=0.00amp;EraseFrontLeft=0.00amp;EraseFrontRight=0.00amp;SameWidthAllEdgesFront=0.00amp;BackSide=diffamp;EraseBackTop=0.00amp;EraseBackBottom=0.00amp;EraseBackLeft=0.00amp;EraseBackRight=0.00amp;SameWidthAllEdgesBack=0.00amp;FileNamePrefix=amp;FileName=[Untitled]amp;FileNameUserEditable=onamp;FileNameSuffix=amp;FileNumberFormat=0amp;FileType=0amp;FileTypeEditable=onamp;BlackTiffCompression=0amp;ColorTiffCompression=4amp;Resolution=2amp;OutputQuality=1amp;ColorPreference=4amp;NumberOfPagesForEachFile=1amp;FormButtonSubmit=Apply</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+          <Header Order="3">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-US,en;q=0.8</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+<Printer Type="OMNI" SubFilterType="CreateScanNetworkFolder" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>  
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>  
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/QuickSetsUsbWizard/Save</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>StepId=1amp;Operation=addamp;StepBackController=QuickSetsUsbamp;StepBackAction=Editamp;StepBackId=amp;StepBackAnchor=QuickSetListSectionIdamp;QuickSetTitle=Tempamp;QuickSetDescription=amp;QuickSetStartOption=Falseamp;FormButtonNext=Next</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Accept-Language</HeaderName>
+            <HeaderValue>en-US,en;q=0.5</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+</Printers>
+
+
+
+

@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CF67A860-0937-44C7-B63C-6FE1E9E1E516}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HP.ScalableTest.Plugin.RegusKiosk</RootNamespace>
+    <AssemblyName>Plugin.RegusKiosk</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OutputPath>..\..\..\..\VirtualResource\Distribution\Plugin\</OutputPath>
+    <CodeAnalysisRuleSet>BasicDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DeviceAutomation-2.2, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\External Assemblies\DeviceAutomation-2.2.dll</HintPath>
+    </Reference>
+    <Reference Include="SESLib, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\External Assemblies\SES\SESLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="RegusKioskScanManager.cs" />
+    <Compile Include="RegusKioskCopyManager.cs" />
+    <Compile Include="RegusKioskPrintManager.cs" />
+    <Compile Include="RegusKioskActivityData.cs" />
+    <Compile Include="RegusKioskConfigurationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RegusKioskConfigurationControl.Designer.cs">
+      <DependentUpon>RegusKioskConfigurationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegusKioskExecutionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RegusKioskExecutionControl.Designer.cs">
+      <DependentUpon>RegusKioskExecutionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\RegusKioskCopyOptions.cs" />
+    <Compile Include="Options\RegusKioskCopyOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options\RegusKioskCopyOptionsForm.Designer.cs">
+      <DependentUpon>RegusKioskCopyOptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\RegusKioskPrintOptions.cs" />
+    <Compile Include="Options\RegusKioskPrintOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options\RegusKioskPrintOptionsForm.Designer.cs">
+      <DependentUpon>RegusKioskPrintOptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\RegusKioskScanOptions.cs" />
+    <Compile Include="Options\RegusKioskScanOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options\RegusKioskScanOptionsForm.Designer.cs">
+      <DependentUpon>RegusKioskScanOptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DeviceAutomation\STF.DeviceAutomation.csproj">
+      <Project>{8fa37af9-f2b8-4e72-bff7-580491a62832}</Project>
+      <Name>STF.DeviceAutomation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FrameworkInternal\STF.FrameworkInternal.csproj">
+      <Project>{1d38c759-e5f6-4603-bbbc-566f1276aba2}</Project>
+      <Name>STF.FrameworkInternal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\STF.Framework.csproj">
+      <Project>{b91dcc51-8664-49e3-97d0-6fcfd2918a1a}</Project>
+      <Name>STF.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PluginSupport\JetAdvantageLink\PluginSupport.JetAdvantageLink.csproj">
+      <Project>{28f694b4-8e8c-4601-9635-5905cbe72fa2}</Project>
+      <Name>PluginSupport.JetAdvantageLink</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utility\STF.Utility.csproj">
+      <Project>{0a02ea9d-11d5-4078-9036-385709cb365a}</Project>
+      <Name>STF.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RegusKioskConfigurationControl.resx">
+      <DependentUpon>RegusKioskConfigurationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegusKioskExecutionControl.resx">
+      <DependentUpon>RegusKioskExecutionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\RegusKioskCopyOptionsForm.resx">
+      <DependentUpon>RegusKioskCopyOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\RegusKioskPrintOptionsForm.resx">
+      <DependentUpon>RegusKioskPrintOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\RegusKioskScanOptionsForm.resx">
+      <DependentUpon>RegusKioskScanOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <CodeAnalysisLogFile>$(IntermediateOutputPath)$(TargetFileName).CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisSucceededFile>$(IntermediateOutputPath)$(TargetFileName).lastcodeanalysissucceeded</CodeAnalysisSucceededFile>
+  </PropertyGroup>
+</Project>

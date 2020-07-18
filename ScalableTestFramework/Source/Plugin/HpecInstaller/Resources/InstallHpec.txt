@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TaskList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>InstallEC</Name>
+  <Tasks>
+    <Task name="Check if a Bundle is installed" assembly="Hp.NSE.FDT" classname="Hp.NSE.FDT.JediTasks.CheckIfBundleIsInstalled">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>JEDI</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="SolutionName">HPEC</Parameter>
+        <Parameter id="BundleVersion">{0}</Parameter>
+        <Parameter id="BundleSimulator">false</Parameter>
+        <Parameter id="FailIfBundleNotInstalled">false</Parameter>
+        <Parameter id="FailIfBundleInstalled">false</Parameter>
+        <Parameter id="FailIfLegacyBundleInstalled">true</Parameter>
+        <Parameter id="LegacySolutionNames">NSE-Jedi</Parameter>
+        <Parameter id="OldestVersionCompatible">{0}</Parameter>
+        <Parameter id="FailIfApiNotResponding">true</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Check if HPEC jar is installed" assembly="Hp.NSE.FDT" classname="Hp.NSE.FDT.OZTasks.CheckIfJarIsInstalled">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>OZ</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="JarURN">urn:hp:MFPScan</Parameter>
+        <Parameter id="JarVersion">{0}</Parameter>
+        <Parameter id="FailIfJarIsNotInstalled">false</Parameter>
+        <Parameter id="FailIfJarIsInstalled">false</Parameter>
+        <Parameter id="OldestVersionCompatible">{0}</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Install HP Embedded Capture on Future Smart" assembly="Commons" classname="Hp.SolutionsManager.Commons.InstallBundleTask">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>JEDI</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="BundlePathCE">Package\Jedi\HPEC-CE.bdl</Parameter>
+        <Parameter id="BundlePathXP">Package\Jedi\HPEC-XP.bdl</Parameter>
+        <Parameter id="SolutionName">HPEC</Parameter>
+        <Parameter id="BundleSimulator">False</Parameter>
+        <Parameter id="FailIfAlreadyInstalled">False</Parameter>
+        <Parameter id="RebootIfAppNotFound">True</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Update HP Embedded Capture Button on Future Smart" assembly="Hp.NSE.FDT" classname="Hp.NSE.FDT.OZTasks.UpdateButton">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>JEDI</PrinterFamily>
+      </Platforms>
+      <Parameters />
+    </Task>
+    <Task name="Uninstall HP Embedded Capture License Service" assembly="Commons" classname="Hp.SolutionsManager.Commons.UnloadJarTask">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>OZ</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="URN">urn:hp:CHAILicensingService</Parameter>
+        <Parameter id="Reboot">False</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Install ChaiGUI" assembly="Commons" classname="Hp.SolutionsManager.Commons.UploadJarTask">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>OZ</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="URN">urn:hp:laserjet:cgui</Parameter>
+        <Parameter id="Jar6040">.\Package\Oz\lib\6040\hp_laserjet_cgui_30.jar</Parameter>
+        <Parameter id="Jar8090">.\Package\Oz\lib\8090\hp_laserjet_cgui_80.jar</Parameter>
+        <Parameter id="JarKMC">.\Package\Oz\lib\KMC\hp_laserjet_cgui_48.jar</Parameter>
+        <Parameter id="Jar3530">.\Package\Oz\lib\3530\hp_laserjet_cgui_40.jar</Parameter>
+        <Parameter id="Force">false</Parameter>
+        <Parameter id="Reboot">false</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Install ScanControl" assembly="Commons" classname="Hp.SolutionsManager.Commons.UploadJarTask">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>OZ</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="Jar6040">.\Package\Oz\lib\6040\hp_laserjet_scancontrol_30.jar</Parameter>
+        <Parameter id="Jar8090">.\Package\Oz\lib\8090\hp_laserjet_scancontrol_80.jar</Parameter>
+        <Parameter id="JarKMC">.\Package\Oz\lib\KMC\hp_laserjet_scancontrol_48.jar</Parameter>
+        <Parameter id="Jar3530">.\Package\Oz\lib\3530\hp_laserjet_scancontrol_40.jar</Parameter>
+        <Parameter id="Force">false</Parameter>
+        <Parameter id="Reboot">false</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Install Security Services" assembly="Commons" classname="Hp.SolutionsManager.Commons.UploadJarTask">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>OZ</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="Jar6040">.\Package\Oz\lib\6040\hp_laserjet_securityservices_30.jar</Parameter>
+        <Parameter id="Jar8090">.\Package\Oz\lib\8090\hp_laserjet_securityservices_80.jar</Parameter>
+        <Parameter id="JarKMC">.\Package\Oz\lib\KMC\hp_laserjet_securityservices_48.jar</Parameter>
+        <Parameter id="Jar3530">.\Package\Oz\lib\3530\hp_laserjet_securityservices_40.jar</Parameter>
+        <Parameter id="Force">false</Parameter>
+        <Parameter id="Reboot">false</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Install Log4Java Mini" assembly="Commons" classname="Hp.SolutionsManager.Commons.UploadJarTask">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>OZ</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="JarPath">.\Package\Oz\lib\log4jMini-1.3alpha.jar</Parameter>
+        <Parameter id="Force">false</Parameter>
+        <Parameter id="Reboot">false</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Install JCIFS" assembly="Commons" classname="Hp.SolutionsManager.Commons.UploadJarTask">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>OZ</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="JarPath">.\Package\Oz\lib\jcifs_chai.jar</Parameter>
+        <Parameter id="Force">false</Parameter>
+        <Parameter id="Reboot">false</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Install DataListenerPlaceholder" assembly="Commons" classname="Hp.SolutionsManager.Commons.UploadJarTask">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>OZ</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="JarPath">.\Package\Oz\lib\DataListenerPlaceholder.jar</Parameter>
+        <Parameter id="Force">false</Parameter>
+        <Parameter id="Reboot">false</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Install HP Embedded Capture Utils" assembly="Commons" classname="Hp.SolutionsManager.Commons.UploadJarTask">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>OZ</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="JarPath">.\Package\Oz\lib\NSEUtils.jar</Parameter>
+        <Parameter id="Force">false</Parameter>
+        <Parameter id="Reboot">false</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Deploy a License" assembly="LicensingPlugins" classname="Hp.SolutionsManager.LicensingPlugins.DeployLicenseTask">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>ALL</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="LicenseStorage">File</Parameter>
+        <Parameter id="LicensePath" />
+      </Parameters>
+    </Task>
+    <Task name="Validate HP Embedded Capture License" assembly="LicensingPlugins" classname="Hp.SolutionsManager.LicensingPlugins.ValidateLicenseTask">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>ALL</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="ProductGuid">69022ec0-a2d3-01ab-0000-0111134e4a43</Parameter>
+        <Parameter id="SuccessCondition">Licensed</Parameter>
+        <Parameter id="FailIfServiceNotRunning">true</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Install HP Embedded Capture" assembly="Commons" classname="Hp.SolutionsManager.Commons.UploadJarTask">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>OZ</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="JarPath">.\Package\Oz\mfpscan.jar</Parameter>
+        <Parameter id="Force">false</Parameter>
+        <Parameter id="Reboot">false</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Update HP Embedded Capture Button" assembly="Hp.NSE.FDT" classname="Hp.NSE.FDT.OZTasks.UpdateButton">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>OZ</PrinterFamily>
+      </Platforms>
+      <Parameters />
+    </Task>
+  </Tasks>
+</TaskList>

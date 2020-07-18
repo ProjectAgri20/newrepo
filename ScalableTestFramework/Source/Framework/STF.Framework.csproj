@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B91DCC51-8664-49E3-97D0-6FCFD2918A1A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HP.ScalableTest.Framework</RootNamespace>
+    <AssemblyName>STF.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OutputPath>..\..\Binaries\STF.Common\</OutputPath>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
+    <CodeAnalysisRuleSet>Properties\STF.Framework.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug (Code Analysis)|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'SDK Release|AnyCPU'">
+    <OutputPath>..\..\Binaries\PluginSdk\</OutputPath>
+    <DefineConstants>SDK</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.WinControls, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\External Assemblies\Telerik\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\External Assemblies\Telerik\Telerik.WinControls.GridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\External Assemblies\Telerik\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Assets\AssetAttributes.cs" />
+    <Compile Include="Assets\AssetIdCollection.cs" />
+    <Compile Include="Assets\AssetInfo.cs" />
+    <Compile Include="Assets\AssetInfoCollection.cs" />
+    <Compile Include="Assets\AssetSelectionData.cs" />
+    <Compile Include="Assets\BadgeBoxInfo.cs" />
+    <Compile Include="Assets\BadgeInfo.cs" />
+    <Compile Include="Assets\DeviceInfo.cs" />
+    <Compile Include="Assets\ExternalCredentialInfo.cs" />
+    <Compile Include="Assets\ExternalCredentialInfoCollection.cs" />
+    <Compile Include="Assets\ExternalCredentialType.cs" />
+    <Compile Include="Assets\IAssetInfo.cs" />
+    <Compile Include="Assets\IAssetInventory.cs" />
+    <Compile Include="Assets\IDeviceInfo.cs" />
+    <Compile Include="Assets\IPrinterInfo.cs" />
+    <Compile Include="Assets\LocalPrintQueueDefinition.cs" />
+    <Compile Include="Assets\LocalPrintQueueInfo.cs" />
+    <Compile Include="Assets\PrintDeviceInfo.cs" />
+    <Compile Include="Assets\PrintQueueDefinition.cs" />
+    <Compile Include="Assets\PrintQueueDefinitionCollection.cs" />
+    <Compile Include="Assets\PrintQueueInfo.cs" />
+    <Compile Include="Assets\PrintQueueInfoCollection.cs" />
+    <Compile Include="Assets\PrintQueueSelectionData.cs" />
+    <Compile Include="Assets\RemotePrintQueueDefinition.cs" />
+    <Compile Include="Assets\RemotePrintQueueInfo.cs" />
+    <Compile Include="Assets\ServerIdCollection.cs" />
+    <Compile Include="Assets\ServerInfo.cs" />
+    <Compile Include="Assets\ServerInfoCollection.cs" />
+    <Compile Include="Assets\ServerSelectionData.cs" />
+    <Compile Include="CollectionSelectorMode.cs" />
+    <Compile Include="ConfigurationServices.cs" />
+    <Compile Include="Data\ActivityDataLog.cs" />
+    <Compile Include="Data\ActivityExecutionAssetUsageLog.cs" />
+    <Compile Include="Data\ActivityExecutionDetailLog.cs" />
+    <Compile Include="Data\ActivityExecutionDocumentUsageLog.cs" />
+    <Compile Include="Data\ActivityExecutionServerUsageLog.cs" />
+    <Compile Include="Data\ActivityRetryLog.cs" />
+    <Compile Include="Data\DataLogPropertyAttribute.cs" />
+    <Compile Include="Data\IDataLogger.cs" />
+    <Compile Include="Documents\ColorMode.cs" />
+    <Compile Include="Documents\Document.cs" />
+    <Compile Include="Documents\DocumentCollection.cs" />
+    <Compile Include="Documents\DocumentCollectionIterator.cs" />
+    <Compile Include="Documents\DocumentExtension.cs" />
+    <Compile Include="Documents\DocumentIdCollection.cs" />
+    <Compile Include="Documents\DocumentQuery.cs" />
+    <Compile Include="Documents\DocumentQueryCriteria.cs" />
+    <Compile Include="Documents\DocumentQueryProperty.cs" />
+    <Compile Include="Documents\DocumentSelectionData.cs" />
+    <Compile Include="Documents\DocumentSelectionMode.cs" />
+    <Compile Include="Documents\DocumentSet.cs" />
+    <Compile Include="Documents\IDocumentLibrary.cs" />
+    <Compile Include="Documents\Orientation.cs" />
+    <Compile Include="ExecutionServices.cs" />
+    <Compile Include="FrameworkServiceUnavailableException.cs" />
+    <Compile Include="IEnvironmentConfiguration.cs" />
+    <Compile Include="IFileRepository.cs" />
+    <Compile Include="ISessionRuntime.cs" />
+    <Compile Include="ISystemTrace.cs" />
+    <Compile Include="Plugin\IPluginConfigurationControl.cs" />
+    <Compile Include="Plugin\IPluginExecutionEngine.cs" />
+    <Compile Include="Plugin\IPluginMetadataConverter.cs" />
+    <Compile Include="Plugin\IPluginValidation.cs" />
+    <Compile Include="Plugin\PluginConfigurationData.cs" />
+    <Compile Include="Plugin\PluginData.cs" />
+    <Compile Include="Plugin\PluginEnvironment.cs" />
+    <Compile Include="Plugin\PluginExecutionContext.cs" />
+    <Compile Include="Plugin\PluginExecutionData.cs" />
+    <Compile Include="Plugin\PluginExecutionResult.cs" />
+    <Compile Include="Plugin\PluginResult.cs" />
+    <Compile Include="Plugin\PluginRetryAction.cs" />
+    <Compile Include="Plugin\PluginRetryManager.cs" />
+    <Compile Include="Plugin\PluginRetrySetting.cs" />
+    <Compile Include="Plugin\PluginRetrySettingDictionary.cs" />
+    <Compile Include="Plugin\PluginRetryStatus.cs" />
+    <Compile Include="Plugin\PluginValidationResult.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\GlobalSuppressions.cs" />
+    <Compile Include="QueryOperator.cs" />
+    <Compile Include="SequentialGuid.cs" />
+    <Compile Include="Serializer.cs" />
+    <Compile Include="SerializerProxyMap.cs" />
+    <Compile Include="SettingsDictionary.cs" />
+    <Compile Include="Synchronization\AcquireLockTimeoutException.cs" />
+    <Compile Include="Synchronization\AssetLockToken.cs" />
+    <Compile Include="Synchronization\GlobalLockToken.cs" />
+    <Compile Include="Synchronization\HoldLockTimeoutException.cs" />
+    <Compile Include="Synchronization\ICriticalSection.cs" />
+    <Compile Include="Synchronization\LocalLockToken.cs" />
+    <Compile Include="Synchronization\LockTimeoutData.cs" />
+    <Compile Include="Synchronization\LockToken.cs" />
+    <Compile Include="UI\AssetQuickEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AssetQuickEntryForm.Designer.cs">
+      <DependentUpon>AssetQuickEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AssetSelectionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\AssetSelectionControl.designer.cs">
+      <DependentUpon>AssetSelectionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AssetSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AssetSelectionForm.Designer.cs">
+      <DependentUpon>AssetSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DocumentBrowseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DocumentBrowseControl.Designer.cs">
+      <DependentUpon>DocumentBrowseControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DocumentPreviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DocumentPreviewForm.Designer.cs">
+      <DependentUpon>DocumentPreviewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DocumentQueryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DocumentQueryControl.designer.cs">
+      <DependentUpon>DocumentQueryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DocumentSelectionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DocumentSelectionControl.Designer.cs">
+      <DependentUpon>DocumentSelectionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DocumentSetControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DocumentSetControl.Designer.cs">
+      <DependentUpon>DocumentSetControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FieldValidator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\FieldValidator.Designer.cs">
+      <DependentUpon>FieldValidator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LockTimeoutControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\LockTimeoutControl.Designer.cs">
+      <DependentUpon>LockTimeoutControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RemotePrintQueueSelectionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\RemotePrintQueueSelectionControl.Designer.cs">
+      <DependentUpon>RemotePrintQueueSelectionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ServerComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ServerComboBox.Designer.cs">
+      <DependentUpon>ServerComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TimeSpanControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\TimeSpanControl.Designer.cs">
+      <DependentUpon>TimeSpanControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserInterfaceStyler.cs" />
+    <Compile Include="ValidationResult.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Properties\STF.Framework.Dictionary.xml" />
+    <EmbeddedResource Include="..\..\External Assemblies\Telerik\STF Telerik Theme\ScalableTestFramework.tssp">
+      <Link>Properties\ScalableTestFramework.tssp</Link>
+    </EmbeddedResource>
+    <None Include="Properties\STF.Framework.ruleset" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="UI\AssetQuickEntryForm.resx">
+      <DependentUpon>AssetQuickEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AssetSelectionControl.resx">
+      <DependentUpon>AssetSelectionControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AssetSelectionForm.resx">
+      <DependentUpon>AssetSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DocumentBrowseControl.resx">
+      <DependentUpon>DocumentBrowseControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DocumentPreviewForm.resx">
+      <DependentUpon>DocumentPreviewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DocumentQueryControl.resx">
+      <DependentUpon>DocumentQueryControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DocumentSelectionControl.resx">
+      <DependentUpon>DocumentSelectionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DocumentSetControl.resx">
+      <DependentUpon>DocumentSetControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FieldValidator.resx">
+      <DependentUpon>FieldValidator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\LockTimeoutControl.resx">
+      <DependentUpon>LockTimeoutControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\RemotePrintQueueSelectionControl.resx">
+      <DependentUpon>RemotePrintQueueSelectionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ServerComboBox.resx">
+      <DependentUpon>ServerComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TimeSpanControl.resx">
+      <DependentUpon>TimeSpanControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <CodeAnalysisLogFile>$(IntermediateOutputPath)$(TargetFileName).CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisSucceededFile>$(IntermediateOutputPath)$(TargetFileName).lastcodeanalysissucceeded</CodeAnalysisSucceededFile>
+  </PropertyGroup>
+</Project>

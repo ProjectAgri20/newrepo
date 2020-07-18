@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OutgoingEmailProfiles_Phoenix_Default" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Contract">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="Parameters" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+			  <xs:element name="emailAddress" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="displayName" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="SMTPserver" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="smtpPort" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="sslCheckBox" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="SMTPAuthCheckBox" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="SMTPuid" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="SMTPPasswd" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="profilePin" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="pinConfirm" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="fileAttachMax" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="customFileMaxAttach" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="AutoCCCheckBox" type="xs:string" minOccurs="0" maxOccurs="1" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScanNetworkFolder_Phoenix_Default" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="1" maxOccurs="1">
+        <xs:element ref="Contract" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

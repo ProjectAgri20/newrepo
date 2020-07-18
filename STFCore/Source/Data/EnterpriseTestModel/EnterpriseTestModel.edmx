@@ -1,0 +1,2067 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="EnterpriseTestModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ActiveDirectoryGroup">
+          <Key>
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AdminWorker">
+          <Key>
+            <PropertyRef Name="VirtualResourceId" />
+          </Key>
+          <Property Name="VirtualResourceId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ExecutionMode" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AssociatedProduct">
+          <Key>
+            <PropertyRef Name="AssociatedProductId" />
+          </Key>
+          <Property Name="AssociatedProductId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Vendor" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="AssociatedProductMetadataTypeAssoc">
+          <Key>
+            <PropertyRef Name="AssociatedProductId" />
+            <PropertyRef Name="MetadataTypeName" />
+          </Key>
+          <Property Name="AssociatedProductId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="MetadataTypeName" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AssociatedProductVersion">
+          <Key>
+            <PropertyRef Name="AssociatedProductId" />
+            <PropertyRef Name="EnterpriseScenarioId" />
+          </Key>
+          <Property Name="Version" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="AssociatedProductId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="EnterpriseScenarioId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CategoryValue">
+          <Key>
+            <PropertyRef Name="CategoryValueId" />
+          </Key>
+          <Property Name="CategoryValueId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Value" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="Category" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CategoryValueParent">
+          <Key>
+            <PropertyRef Name="CategoryValueId" />
+            <PropertyRef Name="ParentCategoryValueId" />
+          </Key>
+          <Property Name="CategoryValueId" Type="int" Nullable="false" />
+          <Property Name="ParentCategoryValueId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CitrixWorker">
+          <Key>
+            <PropertyRef Name="VirtualResourceId" />
+          </Key>
+          <Property Name="VirtualResourceId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ServerHostName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CitrixExecutionMode" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="PublishedApp" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ConfigurationTreeFolder">
+          <Key>
+            <PropertyRef Name="ConfigurationTreeFolderId" />
+          </Key>
+          <Property Name="ConfigurationTreeFolderId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="FolderType" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ParentId" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="EnterpriseScenario">
+          <Key>
+            <PropertyRef Name="EnterpriseScenarioId" />
+          </Key>
+          <Property Name="EnterpriseScenarioId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="500" />
+          <Property Name="Vertical" Type="nvarchar" MaxLength="50" />
+          <Property Name="Company" Type="nvarchar" MaxLength="50" />
+          <Property Name="FolderId" Type="uniqueidentifier" />
+          <Property Name="Owner" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ScenarioSettings" Type="xml" />
+        </EntityType>
+        <EntityType Name="EnterpriseScenarioSession">
+          <Key>
+            <PropertyRef Name="EnterpriseScenarioId" />
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Name="EnterpriseScenarioId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="Notes" Type="varchar(max)" />
+          <Property Name="EditedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EnterpriseScenarioUserGroupAssoc">
+          <Key>
+            <PropertyRef Name="EnterpriseScenarioId" />
+            <PropertyRef Name="UserGroupName" />
+          </Key>
+          <Property Name="EnterpriseScenarioId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserGroupName" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EventLogCollector">
+          <Key>
+            <PropertyRef Name="VirtualResourceId" />
+          </Key>
+          <Property Name="VirtualResourceId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="HostName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ComponentsData" Type="xml" Nullable="false" />
+          <Property Name="EntryTypesData" Type="xml" Nullable="false" />
+          <Property Name="PollingInterval" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="LoadTester">
+          <Key>
+            <PropertyRef Name="VirtualResourceId" />
+          </Key>
+          <Property Name="VirtualResourceId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ThreadsPerVM" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MetadataType">
+          <Key>
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Title" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Group" Type="varchar" MaxLength="50" />
+          <Property Name="AssemblyName" Type="varchar" MaxLength="255" />
+          <Property Name="Icon" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="OfficeWorker">
+          <Key>
+            <PropertyRef Name="VirtualResourceId" />
+          </Key>
+          <Property Name="VirtualResourceId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RepeatCount" Type="int" Nullable="false" />
+          <Property Name="RandomizeStartupDelay" Type="bit" Nullable="false" />
+          <Property Name="MinStartupDelay" Type="int" Nullable="false" />
+          <Property Name="MaxStartupDelay" Type="int" Nullable="false" />
+          <Property Name="RandomizeActivities" Type="bit" Nullable="false" />
+          <Property Name="RandomizeActivityDelay" Type="bit" Nullable="false" />
+          <Property Name="MinActivityDelay" Type="int" Nullable="false" />
+          <Property Name="MaxActivityDelay" Type="int" Nullable="false" />
+          <Property Name="RunMode" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DurationTime" Type="int" Nullable="false" />
+          <Property Name="SecurityGroups" Type="xml" />
+          <Property Name="ExecutionSchedule" Type="xml" />
+          <Property Name="UserPool" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PerfMonCollector">
+          <Key>
+            <PropertyRef Name="VirtualResourceId" />
+          </Key>
+          <Property Name="VirtualResourceId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="HostName" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ResourceType">
+          <Key>
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="MaxResourcesPerHost" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ResourceTypeMetadataTypeAssoc">
+          <Key>
+            <PropertyRef Name="ResourceTypeName" />
+            <PropertyRef Name="MetadataTypeName" />
+          </Key>
+          <Property Name="ResourceTypeName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="MetadataTypeName" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SoftwareInstaller">
+          <Key>
+            <PropertyRef Name="SoftwareInstallerId" />
+          </Key>
+          <Property Name="SoftwareInstallerId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="500" />
+          <Property Name="FilePath" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="Arguments" Type="varchar" MaxLength="250" />
+          <Property Name="RebootSetting" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CopyDirectory" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SoftwareInstallerPackage">
+          <Key>
+            <PropertyRef Name="SoftwareInstallerPackageId" />
+          </Key>
+          <Property Name="SoftwareInstallerPackageId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="SoftwareInstallerPackageItem">
+          <Key>
+            <PropertyRef Name="SoftwareInstallerPackageId" />
+            <PropertyRef Name="SoftwareInstallerId" />
+          </Key>
+          <Property Name="SoftwareInstallerPackageId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="SoftwareInstallerId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="InstallOrder" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SoftwareInstallerPackageMetadataTypeAssoc">
+          <Key>
+            <PropertyRef Name="MetadataTypeName" />
+            <PropertyRef Name="SoftwareInstallerPackageId" />
+          </Key>
+          <Property Name="MetadataTypeName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SoftwareInstallerPackageId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SoftwareInstallerPackageResourceTypeAssoc">
+          <Key>
+            <PropertyRef Name="ResourceTypeName" />
+            <PropertyRef Name="SoftwareInstallerPackageId" />
+          </Key>
+          <Property Name="ResourceTypeName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SoftwareInstallerPackageId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SolutionTester">
+          <Key>
+            <PropertyRef Name="VirtualResourceId" />
+          </Key>
+          <Property Name="VirtualResourceId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CredentialType" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="UseCredential" Type="bit" Nullable="false" />
+          <Property Name="CredentialName" Type="nvarchar" MaxLength="50" />
+          <Property Name="CredentialDomain" Type="nvarchar" MaxLength="50" />
+          <Property Name="CredentialPassword" Type="nvarchar" MaxLength="1024" />
+        </EntityType>
+        <EntityType Name="SystemSetting">
+          <Key>
+            <PropertyRef Name="Type" />
+            <PropertyRef Name="SubType" />
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Name="Type" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SubType" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Value" Type="varchar(max)" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="UserName" />
+          </Key>
+          <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Domain" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="RoleName" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserGroup">
+          <Key>
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Creator" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Description" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="UserGroupAssoc">
+          <Key>
+            <PropertyRef Name="UserName" />
+            <PropertyRef Name="UserGroupName" />
+          </Key>
+          <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="UserGroupName" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserGroupFrameworkClientAssociation">
+          <Key>
+            <PropertyRef Name="FrameworkClientHostName" />
+            <PropertyRef Name="UserGroupName" />
+          </Key>
+          <Property Name="FrameworkClientHostName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="UserGroupName" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VirtualResource">
+          <Key>
+            <PropertyRef Name="VirtualResourceId" />
+          </Key>
+          <Property Name="VirtualResourceId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="EnterpriseScenarioId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="500" />
+          <Property Name="ResourceType" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="InstanceCount" Type="int" Nullable="false" />
+          <Property Name="Platform" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ResourcesPerVM" Type="int" />
+          <Property Name="Enabled" Type="bit" Nullable="false" />
+          <Property Name="FolderId" Type="uniqueidentifier" />
+          <Property Name="TestCaseId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VirtualResourceMetadata">
+          <Key>
+            <PropertyRef Name="VirtualResourceMetadataId" />
+          </Key>
+          <Property Name="VirtualResourceMetadataId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="VirtualResourceId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="ResourceType" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="MetadataType" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Metadata" Type="xml" Nullable="false" />
+          <Property Name="Enabled" Type="bit" Nullable="false" />
+          <Property Name="FolderId" Type="uniqueidentifier" />
+          <Property Name="ExecutionPlan" Type="xml" />
+          <Property Name="MetadataVersion" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="VirtualResourceMetadataAssetUsage">
+          <Key>
+            <PropertyRef Name="VirtualResourceMetadataId" />
+          </Key>
+          <Property Name="VirtualResourceMetadataId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="AssetSelectionData" Type="xml" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VirtualResourceMetadataDocumentUsage">
+          <Key>
+            <PropertyRef Name="VirtualResourceMetadataId" />
+          </Key>
+          <Property Name="VirtualResourceMetadataId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="DocumentSelectionData" Type="xml" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VirtualResourceMetadataPrintQueueUsage">
+          <Key>
+            <PropertyRef Name="VirtualResourceMetadataId" />
+          </Key>
+          <Property Name="VirtualResourceMetadataId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PrintQueueSelectionData" Type="xml" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VirtualResourceMetadataRetrySetting">
+          <Key>
+            <PropertyRef Name="VirtualResourceMetadataRetrySettingId" />
+          </Key>
+          <Property Name="VirtualResourceMetadataRetrySettingId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="VirtualResourceMetadataId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="State" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Action" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="RetryLimit" Type="int" Nullable="false" />
+          <Property Name="RetryDelay" Type="int" Nullable="false" />
+          <Property Name="LimitExceededAction" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VirtualResourceMetadataServerUsage">
+          <Key>
+            <PropertyRef Name="VirtualResourceMetadataId" />
+          </Key>
+          <Property Name="VirtualResourceMetadataId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ServerSelectionData" Type="xml" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_AdminWorker_VirtualResource">
+          <End Role="VirtualResource" Type="Self.VirtualResource" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AdminWorker" Type="Self.AdminWorker" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="VirtualResource">
+              <PropertyRef Name="VirtualResourceId" />
+            </Principal>
+            <Dependent Role="AdminWorker">
+              <PropertyRef Name="VirtualResourceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AssociatedProductVersion_AssociatedProduct">
+          <End Role="AssociatedProduct" Type="Self.AssociatedProduct" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AssociatedProductVersion" Type="Self.AssociatedProductVersion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AssociatedProduct">
+              <PropertyRef Name="AssociatedProductId" />
+            </Principal>
+            <Dependent Role="AssociatedProductVersion">
+              <PropertyRef Name="AssociatedProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AssociatedProductVersion_EnterpriseScenario">
+          <End Role="EnterpriseScenario" Type="Self.EnterpriseScenario" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AssociatedProductVersion" Type="Self.AssociatedProductVersion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EnterpriseScenario">
+              <PropertyRef Name="EnterpriseScenarioId" />
+            </Principal>
+            <Dependent Role="AssociatedProductVersion">
+              <PropertyRef Name="EnterpriseScenarioId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CategoryValue_CategoryId">
+          <End Role="CategoryValue" Type="Self.CategoryValue" Multiplicity="1" />
+          <End Role="CategoryValueParent" Type="Self.CategoryValueParent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CategoryValue">
+              <PropertyRef Name="CategoryValueId" />
+            </Principal>
+            <Dependent Role="CategoryValueParent">
+              <PropertyRef Name="CategoryValueId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CategoryValue_ParentId">
+          <End Role="CategoryValue" Type="Self.CategoryValue" Multiplicity="1" />
+          <End Role="CategoryValueParent" Type="Self.CategoryValueParent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CategoryValue">
+              <PropertyRef Name="CategoryValueId" />
+            </Principal>
+            <Dependent Role="CategoryValueParent">
+              <PropertyRef Name="ParentCategoryValueId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CitrixWorker_VirtualResource">
+          <End Role="VirtualResource" Type="Self.VirtualResource" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="CitrixWorker" Type="Self.CitrixWorker" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="VirtualResource">
+              <PropertyRef Name="VirtualResourceId" />
+            </Principal>
+            <Dependent Role="CitrixWorker">
+              <PropertyRef Name="VirtualResourceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Fk_EnterpriseScenario">
+          <End Role="ConfigurationTreeFolder" Type="Self.ConfigurationTreeFolder" Multiplicity="0..1" />
+          <End Role="EnterpriseScenario" Type="Self.EnterpriseScenario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ConfigurationTreeFolder">
+              <PropertyRef Name="ConfigurationTreeFolderId" />
+            </Principal>
+            <Dependent Role="EnterpriseScenario">
+              <PropertyRef Name="FolderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EnterpriseScenarioUserGroupAssoc_EnterpriseScenario">
+          <End Role="EnterpriseScenario" Type="Self.EnterpriseScenario" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="EnterpriseScenarioUserGroupAssoc" Type="Self.EnterpriseScenarioUserGroupAssoc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EnterpriseScenario">
+              <PropertyRef Name="EnterpriseScenarioId" />
+            </Principal>
+            <Dependent Role="EnterpriseScenarioUserGroupAssoc">
+              <PropertyRef Name="EnterpriseScenarioId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EnterpriseScenarioUserGroupAssoc_UserGroup">
+          <End Role="UserGroup" Type="Self.UserGroup" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="EnterpriseScenarioUserGroupAssoc" Type="Self.EnterpriseScenarioUserGroupAssoc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserGroup">
+              <PropertyRef Name="Name" />
+            </Principal>
+            <Dependent Role="EnterpriseScenarioUserGroupAssoc">
+              <PropertyRef Name="UserGroupName" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EventLogCollector_VirtualResource">
+          <End Role="VirtualResource" Type="Self.VirtualResource" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="EventLogCollector" Type="Self.EventLogCollector" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="VirtualResource">
+              <PropertyRef Name="VirtualResourceId" />
+            </Principal>
+            <Dependent Role="EventLogCollector">
+              <PropertyRef Name="VirtualResourceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LoadTester_VirtualResource">
+          <End Role="VirtualResource" Type="Self.VirtualResource" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="LoadTester" Type="Self.LoadTester" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="VirtualResource">
+              <PropertyRef Name="VirtualResourceId" />
+            </Principal>
+            <Dependent Role="LoadTester">
+              <PropertyRef Name="VirtualResourceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ResourceTypeMetadataTypeAssoc_MetadataType">
+          <End Role="MetadataType" Type="Self.MetadataType" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ResourceTypeMetadataTypeAssoc" Type="Self.ResourceTypeMetadataTypeAssoc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MetadataType">
+              <PropertyRef Name="Name" />
+            </Principal>
+            <Dependent Role="ResourceTypeMetadataTypeAssoc">
+              <PropertyRef Name="MetadataTypeName" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ResourceTypeMetadataTypeAssoc_ResourceType">
+          <End Role="ResourceType" Type="Self.ResourceType" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ResourceTypeMetadataTypeAssoc" Type="Self.ResourceTypeMetadataTypeAssoc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ResourceType">
+              <PropertyRef Name="Name" />
+            </Principal>
+            <Dependent Role="ResourceTypeMetadataTypeAssoc">
+              <PropertyRef Name="ResourceTypeName" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfficeWorker_VirtualResource">
+          <End Role="VirtualResource" Type="Self.VirtualResource" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="OfficeWorker" Type="Self.OfficeWorker" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="VirtualResource">
+              <PropertyRef Name="VirtualResourceId" />
+            </Principal>
+            <Dependent Role="OfficeWorker">
+              <PropertyRef Name="VirtualResourceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PerfMonCollector_VirtualResource">
+          <End Role="VirtualResource" Type="Self.VirtualResource" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PerfMonCollector" Type="Self.PerfMonCollector" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="VirtualResource">
+              <PropertyRef Name="VirtualResourceId" />
+            </Principal>
+            <Dependent Role="PerfMonCollector">
+              <PropertyRef Name="VirtualResourceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AssociatedProductMetadataTypeAssoc_AssociatedProduct">
+          <End Role="AssociatedProduct" Type="Self.AssociatedProduct" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AssociatedProductMetadataTypeAssoc" Type="Self.AssociatedProductMetadataTypeAssoc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AssociatedProduct">
+              <PropertyRef Name="AssociatedProductId" />
+            </Principal>
+            <Dependent Role="AssociatedProductMetadataTypeAssoc">
+              <PropertyRef Name="AssociatedProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AssociatedProductMetadataTypeAssoc_MetadataType">
+          <End Role="MetadataType" Type="Self.MetadataType" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AssociatedProductMetadataTypeAssoc" Type="Self.AssociatedProductMetadataTypeAssoc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MetadataType">
+              <PropertyRef Name="Name" />
+            </Principal>
+            <Dependent Role="AssociatedProductMetadataTypeAssoc">
+              <PropertyRef Name="MetadataTypeName" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SoftwareInstallerPackageItem_SoftwareInstaller">
+          <End Role="SoftwareInstaller" Type="Self.SoftwareInstaller" Multiplicity="1" />
+          <End Role="SoftwareInstallerPackageItem" Type="Self.SoftwareInstallerPackageItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SoftwareInstaller">
+              <PropertyRef Name="SoftwareInstallerId" />
+            </Principal>
+            <Dependent Role="SoftwareInstallerPackageItem">
+              <PropertyRef Name="SoftwareInstallerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SoftwareInstallerPackageItem_SoftwareInstallerPackage">
+          <End Role="SoftwareInstallerPackage" Type="Self.SoftwareInstallerPackage" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SoftwareInstallerPackageItem" Type="Self.SoftwareInstallerPackageItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SoftwareInstallerPackage">
+              <PropertyRef Name="SoftwareInstallerPackageId" />
+            </Principal>
+            <Dependent Role="SoftwareInstallerPackageItem">
+              <PropertyRef Name="SoftwareInstallerPackageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SoftwareInstallerPackageMetadataTypeAssoc_MetadataType">
+          <End Role="MetadataType" Type="Self.MetadataType" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SoftwareInstallerPackageMetadataTypeAssoc" Type="Self.SoftwareInstallerPackageMetadataTypeAssoc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MetadataType">
+              <PropertyRef Name="Name" />
+            </Principal>
+            <Dependent Role="SoftwareInstallerPackageMetadataTypeAssoc">
+              <PropertyRef Name="MetadataTypeName" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SoftwareInstallerPackageMetadataTypeAssoc_SoftwareInstallerPackage">
+          <End Role="SoftwareInstallerPackage" Type="Self.SoftwareInstallerPackage" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SoftwareInstallerPackageMetadataTypeAssoc" Type="Self.SoftwareInstallerPackageMetadataTypeAssoc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SoftwareInstallerPackage">
+              <PropertyRef Name="SoftwareInstallerPackageId" />
+            </Principal>
+            <Dependent Role="SoftwareInstallerPackageMetadataTypeAssoc">
+              <PropertyRef Name="SoftwareInstallerPackageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SoftwareInstallerPackageResourceTypeAssoc_ResourceType">
+          <End Role="ResourceType" Type="Self.ResourceType" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SoftwareInstallerPackageResourceTypeAssoc" Type="Self.SoftwareInstallerPackageResourceTypeAssoc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ResourceType">
+              <PropertyRef Name="Name" />
+            </Principal>
+            <Dependent Role="SoftwareInstallerPackageResourceTypeAssoc">
+              <PropertyRef Name="ResourceTypeName" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SoftwareInstallerPackageResourceTypeAssoc_SoftwareInstallerPackage">
+          <End Role="SoftwareInstallerPackage" Type="Self.SoftwareInstallerPackage" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SoftwareInstallerPackageResourceTypeAssoc" Type="Self.SoftwareInstallerPackageResourceTypeAssoc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SoftwareInstallerPackage">
+              <PropertyRef Name="SoftwareInstallerPackageId" />
+            </Principal>
+            <Dependent Role="SoftwareInstallerPackageResourceTypeAssoc">
+              <PropertyRef Name="SoftwareInstallerPackageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SolutionTester_VirtualResource">
+          <End Role="VirtualResource" Type="Self.VirtualResource" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SolutionTester" Type="Self.SolutionTester" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="VirtualResource">
+              <PropertyRef Name="VirtualResourceId" />
+            </Principal>
+            <Dependent Role="SolutionTester">
+              <PropertyRef Name="VirtualResourceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserGroupAssoc_User">
+          <End Role="User" Type="Self.User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="UserGroupAssoc" Type="Self.UserGroupAssoc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="UserName" />
+            </Principal>
+            <Dependent Role="UserGroupAssoc">
+              <PropertyRef Name="UserName" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserGroupAssoc_UserGroup">
+          <End Role="UserGroup" Type="Self.UserGroup" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="UserGroupAssoc" Type="Self.UserGroupAssoc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserGroup">
+              <PropertyRef Name="Name" />
+            </Principal>
+            <Dependent Role="UserGroupAssoc">
+              <PropertyRef Name="UserGroupName" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserGroupFrameworkClientAssociation_UserGroup">
+          <End Role="UserGroup" Type="Self.UserGroup" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="UserGroupFrameworkClientAssociation" Type="Self.UserGroupFrameworkClientAssociation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserGroup">
+              <PropertyRef Name="Name" />
+            </Principal>
+            <Dependent Role="UserGroupFrameworkClientAssociation">
+              <PropertyRef Name="UserGroupName" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VirtualResource_EnterpriseScenario">
+          <End Role="EnterpriseScenario" Type="Self.EnterpriseScenario" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="VirtualResource" Type="Self.VirtualResource" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EnterpriseScenario">
+              <PropertyRef Name="EnterpriseScenarioId" />
+            </Principal>
+            <Dependent Role="VirtualResource">
+              <PropertyRef Name="EnterpriseScenarioId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VirtualResourceMetadata_VirtualResource">
+          <End Role="VirtualResource" Type="Self.VirtualResource" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="VirtualResourceMetadata" Type="Self.VirtualResourceMetadata" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VirtualResource">
+              <PropertyRef Name="VirtualResourceId" />
+            </Principal>
+            <Dependent Role="VirtualResourceMetadata">
+              <PropertyRef Name="VirtualResourceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VirtualResourceMetadataAssetUsage_VirtualResourceMetadata">
+          <End Role="VirtualResourceMetadata" Type="Self.VirtualResourceMetadata" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="VirtualResourceMetadataAssetUsage" Type="Self.VirtualResourceMetadataAssetUsage" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="VirtualResourceMetadata">
+              <PropertyRef Name="VirtualResourceMetadataId" />
+            </Principal>
+            <Dependent Role="VirtualResourceMetadataAssetUsage">
+              <PropertyRef Name="VirtualResourceMetadataId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VirtualResourceMetadataDocumentUsage_VirtualResourceMetadata">
+          <End Role="VirtualResourceMetadata" Type="Self.VirtualResourceMetadata" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="VirtualResourceMetadataDocumentUsage" Type="Self.VirtualResourceMetadataDocumentUsage" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="VirtualResourceMetadata">
+              <PropertyRef Name="VirtualResourceMetadataId" />
+            </Principal>
+            <Dependent Role="VirtualResourceMetadataDocumentUsage">
+              <PropertyRef Name="VirtualResourceMetadataId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VirtualResourceMetadataPrintQueueUsage_VirtualResourceMetadata">
+          <End Role="VirtualResourceMetadata" Type="Self.VirtualResourceMetadata" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="VirtualResourceMetadataPrintQueueUsage" Type="Self.VirtualResourceMetadataPrintQueueUsage" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="VirtualResourceMetadata">
+              <PropertyRef Name="VirtualResourceMetadataId" />
+            </Principal>
+            <Dependent Role="VirtualResourceMetadataPrintQueueUsage">
+              <PropertyRef Name="VirtualResourceMetadataId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VirtualResourceMetadataRetrySetting_VirtualResourceMetadata">
+          <End Role="VirtualResourceMetadata" Type="Self.VirtualResourceMetadata" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="VirtualResourceMetadataRetrySetting" Type="Self.VirtualResourceMetadataRetrySetting" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VirtualResourceMetadata">
+              <PropertyRef Name="VirtualResourceMetadataId" />
+            </Principal>
+            <Dependent Role="VirtualResourceMetadataRetrySetting">
+              <PropertyRef Name="VirtualResourceMetadataId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VirtualResourceMetadataServerUsage_VirtualResourceMetadata">
+          <End Role="VirtualResourceMetadata" Type="Self.VirtualResourceMetadata" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="VirtualResourceMetadataServerUsage" Type="Self.VirtualResourceMetadataServerUsage" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="VirtualResourceMetadata">
+              <PropertyRef Name="VirtualResourceMetadataId" />
+            </Principal>
+            <Dependent Role="VirtualResourceMetadataServerUsage">
+              <PropertyRef Name="VirtualResourceMetadataId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="upd_ReserveVMsByPlatformContiguous" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="requiredRange" Type="int" Mode="In" />
+          <Parameter Name="platform" Type="nvarchar" Mode="In" />
+          <Parameter Name="sessionId" Type="varchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="EnterpriseTestModelStoreContainer">
+          <EntitySet Name="ActiveDirectoryGroup" EntityType="Self.ActiveDirectoryGroup" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AdminWorker" EntityType="Self.AdminWorker" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AssociatedProduct" EntityType="Self.AssociatedProduct" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AssociatedProductVersion" EntityType="Self.AssociatedProductVersion" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CategoryValue" EntityType="Self.CategoryValue" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CategoryValueParent" EntityType="Self.CategoryValueParent" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CitrixWorker" EntityType="Self.CitrixWorker" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ConfigurationTreeFolder" EntityType="Self.ConfigurationTreeFolder" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EnterpriseScenario" EntityType="Self.EnterpriseScenario" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EnterpriseScenarioUserGroupAssoc" EntityType="Self.EnterpriseScenarioUserGroupAssoc" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EventLogCollector" EntityType="Self.EventLogCollector" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LoadTester" EntityType="Self.LoadTester" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MetadataType" EntityType="Self.MetadataType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ResourceTypeMetadataTypeAssoc" EntityType="Self.ResourceTypeMetadataTypeAssoc" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OfficeWorker" EntityType="Self.OfficeWorker" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PerfMonCollector" EntityType="Self.PerfMonCollector" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AssociatedProductMetadataTypeAssoc" EntityType="Self.AssociatedProductMetadataTypeAssoc" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ResourceType" EntityType="Self.ResourceType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EnterpriseScenarioSession" EntityType="Self.EnterpriseScenarioSession" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SoftwareInstaller" EntityType="Self.SoftwareInstaller" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SoftwareInstallerPackage" EntityType="Self.SoftwareInstallerPackage" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SoftwareInstallerPackageItem" EntityType="Self.SoftwareInstallerPackageItem" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SoftwareInstallerPackageMetadataTypeAssoc" EntityType="Self.SoftwareInstallerPackageMetadataTypeAssoc" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SoftwareInstallerPackageResourceTypeAssoc" EntityType="Self.SoftwareInstallerPackageResourceTypeAssoc" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SolutionTester" EntityType="Self.SolutionTester" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SystemSetting" EntityType="Self.SystemSetting" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserGroup" EntityType="Self.UserGroup" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserGroupAssoc" EntityType="Self.UserGroupAssoc" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserGroupFrameworkClientAssociation" EntityType="Self.UserGroupFrameworkClientAssociation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VirtualResource" EntityType="Self.VirtualResource" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VirtualResourceMetadata" EntityType="Self.VirtualResourceMetadata" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VirtualResourceMetadataAssetUsage" EntityType="Self.VirtualResourceMetadataAssetUsage" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VirtualResourceMetadataDocumentUsage" EntityType="Self.VirtualResourceMetadataDocumentUsage" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VirtualResourceMetadataPrintQueueUsage" EntityType="Self.VirtualResourceMetadataPrintQueueUsage" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VirtualResourceMetadataRetrySetting" EntityType="Self.VirtualResourceMetadataRetrySetting" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VirtualResourceMetadataServerUsage" EntityType="Self.VirtualResourceMetadataServerUsage" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_AdminWorker_VirtualResource" Association="Self.FK_AdminWorker_VirtualResource">
+            <End Role="VirtualResource" EntitySet="VirtualResource" />
+            <End Role="AdminWorker" EntitySet="AdminWorker" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AssociatedProductVersion_AssociatedProduct" Association="Self.FK_AssociatedProductVersion_AssociatedProduct">
+            <End Role="AssociatedProduct" EntitySet="AssociatedProduct" />
+            <End Role="AssociatedProductVersion" EntitySet="AssociatedProductVersion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AssociatedProductVersion_EnterpriseScenario" Association="Self.FK_AssociatedProductVersion_EnterpriseScenario">
+            <End Role="EnterpriseScenario" EntitySet="EnterpriseScenario" />
+            <End Role="AssociatedProductVersion" EntitySet="AssociatedProductVersion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CategoryValue_CategoryId" Association="Self.FK_CategoryValue_CategoryId">
+            <End Role="CategoryValue" EntitySet="CategoryValue" />
+            <End Role="CategoryValueParent" EntitySet="CategoryValueParent" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CategoryValue_ParentId" Association="Self.FK_CategoryValue_ParentId">
+            <End Role="CategoryValue" EntitySet="CategoryValue" />
+            <End Role="CategoryValueParent" EntitySet="CategoryValueParent" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CitrixWorker_VirtualResource" Association="Self.FK_CitrixWorker_VirtualResource">
+            <End Role="VirtualResource" EntitySet="VirtualResource" />
+            <End Role="CitrixWorker" EntitySet="CitrixWorker" />
+          </AssociationSet>
+          <AssociationSet Name="Fk_EnterpriseScenario" Association="Self.Fk_EnterpriseScenario">
+            <End Role="ConfigurationTreeFolder" EntitySet="ConfigurationTreeFolder" />
+            <End Role="EnterpriseScenario" EntitySet="EnterpriseScenario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EnterpriseScenarioUserGroupAssoc_EnterpriseScenario" Association="Self.FK_EnterpriseScenarioUserGroupAssoc_EnterpriseScenario">
+            <End Role="EnterpriseScenario" EntitySet="EnterpriseScenario" />
+            <End Role="EnterpriseScenarioUserGroupAssoc" EntitySet="EnterpriseScenarioUserGroupAssoc" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EnterpriseScenarioUserGroupAssoc_UserGroup" Association="Self.FK_EnterpriseScenarioUserGroupAssoc_UserGroup">
+            <End Role="UserGroup" EntitySet="UserGroup" />
+            <End Role="EnterpriseScenarioUserGroupAssoc" EntitySet="EnterpriseScenarioUserGroupAssoc" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EventLogCollector_VirtualResource" Association="Self.FK_EventLogCollector_VirtualResource">
+            <End Role="VirtualResource" EntitySet="VirtualResource" />
+            <End Role="EventLogCollector" EntitySet="EventLogCollector" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LoadTester_VirtualResource" Association="Self.FK_LoadTester_VirtualResource">
+            <End Role="VirtualResource" EntitySet="VirtualResource" />
+            <End Role="LoadTester" EntitySet="LoadTester" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ResourceTypeMetadataTypeAssoc_MetadataType" Association="Self.FK_ResourceTypeMetadataTypeAssoc_MetadataType">
+            <End Role="MetadataType" EntitySet="MetadataType" />
+            <End Role="ResourceTypeMetadataTypeAssoc" EntitySet="ResourceTypeMetadataTypeAssoc" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ResourceTypeMetadataTypeAssoc_ResourceType" Association="Self.FK_ResourceTypeMetadataTypeAssoc_ResourceType">
+            <End Role="ResourceType" EntitySet="ResourceType" />
+            <End Role="ResourceTypeMetadataTypeAssoc" EntitySet="ResourceTypeMetadataTypeAssoc" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfficeWorker_VirtualResource" Association="Self.FK_OfficeWorker_VirtualResource">
+            <End Role="VirtualResource" EntitySet="VirtualResource" />
+            <End Role="OfficeWorker" EntitySet="OfficeWorker" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PerfMonCollector_VirtualResource" Association="Self.FK_PerfMonCollector_VirtualResource">
+            <End Role="VirtualResource" EntitySet="VirtualResource" />
+            <End Role="PerfMonCollector" EntitySet="PerfMonCollector" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AssociatedProductMetadataTypeAssoc_AssociatedProduct" Association="Self.FK_AssociatedProductMetadataTypeAssoc_AssociatedProduct">
+            <End Role="AssociatedProduct" EntitySet="AssociatedProduct" />
+            <End Role="AssociatedProductMetadataTypeAssoc" EntitySet="AssociatedProductMetadataTypeAssoc" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AssociatedProductMetadataTypeAssoc_MetadataType" Association="Self.FK_AssociatedProductMetadataTypeAssoc_MetadataType">
+            <End Role="MetadataType" EntitySet="MetadataType" />
+            <End Role="AssociatedProductMetadataTypeAssoc" EntitySet="AssociatedProductMetadataTypeAssoc" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SoftwareInstallerPackageItem_SoftwareInstaller" Association="Self.FK_SoftwareInstallerPackageItem_SoftwareInstaller">
+            <End Role="SoftwareInstaller" EntitySet="SoftwareInstaller" />
+            <End Role="SoftwareInstallerPackageItem" EntitySet="SoftwareInstallerPackageItem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SoftwareInstallerPackageItem_SoftwareInstallerPackage" Association="Self.FK_SoftwareInstallerPackageItem_SoftwareInstallerPackage">
+            <End Role="SoftwareInstallerPackage" EntitySet="SoftwareInstallerPackage" />
+            <End Role="SoftwareInstallerPackageItem" EntitySet="SoftwareInstallerPackageItem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SoftwareInstallerPackageMetadataTypeAssoc_MetadataType" Association="Self.FK_SoftwareInstallerPackageMetadataTypeAssoc_MetadataType">
+            <End Role="MetadataType" EntitySet="MetadataType" />
+            <End Role="SoftwareInstallerPackageMetadataTypeAssoc" EntitySet="SoftwareInstallerPackageMetadataTypeAssoc" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SoftwareInstallerPackageMetadataTypeAssoc_SoftwareInstallerPackage" Association="Self.FK_SoftwareInstallerPackageMetadataTypeAssoc_SoftwareInstallerPackage">
+            <End Role="SoftwareInstallerPackage" EntitySet="SoftwareInstallerPackage" />
+            <End Role="SoftwareInstallerPackageMetadataTypeAssoc" EntitySet="SoftwareInstallerPackageMetadataTypeAssoc" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SoftwareInstallerPackageResourceTypeAssoc_ResourceType" Association="Self.FK_SoftwareInstallerPackageResourceTypeAssoc_ResourceType">
+            <End Role="ResourceType" EntitySet="ResourceType" />
+            <End Role="SoftwareInstallerPackageResourceTypeAssoc" EntitySet="SoftwareInstallerPackageResourceTypeAssoc" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SoftwareInstallerPackageResourceTypeAssoc_SoftwareInstallerPackage" Association="Self.FK_SoftwareInstallerPackageResourceTypeAssoc_SoftwareInstallerPackage">
+            <End Role="SoftwareInstallerPackage" EntitySet="SoftwareInstallerPackage" />
+            <End Role="SoftwareInstallerPackageResourceTypeAssoc" EntitySet="SoftwareInstallerPackageResourceTypeAssoc" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SolutionTester_VirtualResource" Association="Self.FK_SolutionTester_VirtualResource">
+            <End Role="VirtualResource" EntitySet="VirtualResource" />
+            <End Role="SolutionTester" EntitySet="SolutionTester" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserGroupAssoc_User" Association="Self.FK_UserGroupAssoc_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="UserGroupAssoc" EntitySet="UserGroupAssoc" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserGroupAssoc_UserGroup" Association="Self.FK_UserGroupAssoc_UserGroup">
+            <End Role="UserGroup" EntitySet="UserGroup" />
+            <End Role="UserGroupAssoc" EntitySet="UserGroupAssoc" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserGroupFrameworkClientAssociation_UserGroup" Association="Self.FK_UserGroupFrameworkClientAssociation_UserGroup">
+            <End Role="UserGroup" EntitySet="UserGroup" />
+            <End Role="UserGroupFrameworkClientAssociation" EntitySet="UserGroupFrameworkClientAssociation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VirtualResource_EnterpriseScenario" Association="Self.FK_VirtualResource_EnterpriseScenario">
+            <End Role="EnterpriseScenario" EntitySet="EnterpriseScenario" />
+            <End Role="VirtualResource" EntitySet="VirtualResource" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VirtualResourceMetadata_VirtualResource" Association="Self.FK_VirtualResourceMetadata_VirtualResource">
+            <End Role="VirtualResource" EntitySet="VirtualResource" />
+            <End Role="VirtualResourceMetadata" EntitySet="VirtualResourceMetadata" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VirtualResourceMetadataAssetUsage_VirtualResourceMetadata" Association="Self.FK_VirtualResourceMetadataAssetUsage_VirtualResourceMetadata">
+            <End Role="VirtualResourceMetadata" EntitySet="VirtualResourceMetadata" />
+            <End Role="VirtualResourceMetadataAssetUsage" EntitySet="VirtualResourceMetadataAssetUsage" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VirtualResourceMetadataDocumentUsage_VirtualResourceMetadata" Association="Self.FK_VirtualResourceMetadataDocumentUsage_VirtualResourceMetadata">
+            <End Role="VirtualResourceMetadata" EntitySet="VirtualResourceMetadata" />
+            <End Role="VirtualResourceMetadataDocumentUsage" EntitySet="VirtualResourceMetadataDocumentUsage" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VirtualResourceMetadataPrintQueueUsage_VirtualResourceMetadata" Association="Self.FK_VirtualResourceMetadataPrintQueueUsage_VirtualResourceMetadata">
+            <End Role="VirtualResourceMetadata" EntitySet="VirtualResourceMetadata" />
+            <End Role="VirtualResourceMetadataPrintQueueUsage" EntitySet="VirtualResourceMetadataPrintQueueUsage" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VirtualResourceMetadataRetrySetting_VirtualResourceMetadata" Association="Self.FK_VirtualResourceMetadataRetrySetting_VirtualResourceMetadata">
+            <End Role="VirtualResourceMetadata" EntitySet="VirtualResourceMetadata" />
+            <End Role="VirtualResourceMetadataRetrySetting" EntitySet="VirtualResourceMetadataRetrySetting" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VirtualResourceMetadataServerUsage_VirtualResourceMetadata" Association="Self.FK_VirtualResourceMetadataServerUsage_VirtualResourceMetadata">
+            <End Role="VirtualResourceMetadata" EntitySet="VirtualResourceMetadata" />
+            <End Role="VirtualResourceMetadataServerUsage" EntitySet="VirtualResourceMetadataServerUsage" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="EnterpriseTestModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="EnterpriseTestEntities" a:LazyLoadingEnabled="true" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+          <EntitySet Name="VirtualResources" EntityType="EnterpriseTestModel.VirtualResource" />
+          <EntitySet Name="ResourceWindowsCategories" EntityType="EnterpriseTestModel.ResourceWindowsCategory" />
+          <AssociationSet Name="ResourceWindowsCategoryParent" Association="EnterpriseTestModel.ResourceWindowsCategoryParent">
+            <End Role="ResourceWindowsCategory" EntitySet="ResourceWindowsCategories" />
+            <End Role="ResourceWindowsCategory1" EntitySet="ResourceWindowsCategories" />
+          </AssociationSet>
+          <EntitySet Name="ScenarioSessions" EntityType="EnterpriseTestModel.ScenarioSession" />
+          <EntitySet Name="ConfigurationTreeFolders" EntityType="EnterpriseTestModel.ConfigurationTreeFolder" />
+          <EntitySet Name="MetadataTypes" EntityType="EnterpriseTestModel.MetadataType" />
+          <EntitySet Name="ResourceTypes" EntityType="EnterpriseTestModel.ResourceType" />
+          <AssociationSet Name="ResourceTypeMetadataTypeAssoc" Association="EnterpriseTestModel.ResourceTypeMetadataTypeAssoc">
+            <End Role="MetadataType" EntitySet="MetadataTypes" />
+            <End Role="ResourceType" EntitySet="ResourceTypes" />
+          </AssociationSet>
+          <EntitySet Name="VirtualResourceMetadataSet" EntityType="EnterpriseTestModel.VirtualResourceMetadata" />
+          <AssociationSet Name="FK_VirtualResourceMetadata_VirtualResource" Association="EnterpriseTestModel.FK_VirtualResourceMetadata_VirtualResource">
+            <End Role="VirtualResource" EntitySet="VirtualResources" />
+            <End Role="VirtualResourceMetadata" EntitySet="VirtualResourceMetadataSet" />
+          </AssociationSet>
+          <EntitySet Name="UserGroups" EntityType="EnterpriseTestModel.UserGroup" />
+          <EntitySet Name="VirtualMachineGroupAssocs" EntityType="EnterpriseTestModel.VirtualMachineGroupAssoc" />
+          <AssociationSet Name="FK_UserGroupFrameworkClientAssociation_UserGroup" Association="EnterpriseTestModel.FK_UserGroupFrameworkClientAssociation_UserGroup">
+            <End Role="UserGroup" EntitySet="UserGroups" />
+            <End Role="UserGroupFrameworkClientAssociation" EntitySet="VirtualMachineGroupAssocs" />
+          </AssociationSet>
+          <EntitySet Name="ActiveDirectoryGroups" EntityType="EnterpriseTestModel.ActiveDirectoryGroup" />
+          <EntitySet Name="VirtualResourceMetadataAssetUsages" EntityType="EnterpriseTestModel.VirtualResourceMetadataAssetUsage" />
+          <EntitySet Name="VirtualResourceMetadataDocumentUsages" EntityType="EnterpriseTestModel.VirtualResourceMetadataDocumentUsage" />
+          <AssociationSet Name="FK_VirtualResourceMetadataAssetUsage_VirtualResourceMetadata" Association="EnterpriseTestModel.FK_VirtualResourceMetadataAssetUsage_VirtualResourceMetadata">
+            <End Role="VirtualResourceMetadata" EntitySet="VirtualResourceMetadataSet" />
+            <End Role="VirtualResourceMetadataAssetUsage" EntitySet="VirtualResourceMetadataAssetUsages" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VirtualResourceMetadataDocumentUsage_VirtualResourceMetadata" Association="EnterpriseTestModel.FK_VirtualResourceMetadataDocumentUsage_VirtualResourceMetadata">
+            <End Role="VirtualResourceMetadata" EntitySet="VirtualResourceMetadataSet" />
+            <End Role="VirtualResourceMetadataDocumentUsage" EntitySet="VirtualResourceMetadataDocumentUsages" />
+          </AssociationSet>
+          <EntitySet Name="VirtualResourceMetadataServerUsages" EntityType="EnterpriseTestModel.VirtualResourceMetadataServerUsage" />
+          <AssociationSet Name="FK_VirtualResourceMetadataServerUsage_VirtualResourceMetadata" Association="EnterpriseTestModel.FK_VirtualResourceMetadataServerUsage_VirtualResourceMetadata">
+            <End Role="VirtualResourceMetadata" EntitySet="VirtualResourceMetadataSet" />
+            <End Role="VirtualResourceMetadataServerUsage" EntitySet="VirtualResourceMetadataServerUsages" />
+          </AssociationSet>
+          <EntitySet Name="VirtualResourceMetadataPrintQueueUsages" EntityType="EnterpriseTestModel.VirtualResourceMetadataPrintQueueUsage" />
+          <AssociationSet Name="FK_VirtualResourceMetadataPrintQueueUsage_VirtualResourceMetadata" Association="EnterpriseTestModel.FK_VirtualResourceMetadataPrintQueueUsage_VirtualResourceMetadata">
+            <End Role="VirtualResourceMetadata" EntitySet="VirtualResourceMetadataSet" />
+            <End Role="VirtualResourceMetadataPrintQueueUsage" EntitySet="VirtualResourceMetadataPrintQueueUsages" />
+          </AssociationSet>
+          <EntitySet Name="SystemSettings" EntityType="EnterpriseTestModel.SystemSetting" />
+          <EntitySet Name="VirtualResourceMetadataRetrySettings" EntityType="EnterpriseTestModel.VirtualResourceMetadataRetrySetting" />
+          <AssociationSet Name="FK_VirtualResourceMetadataRetrySetting_VirtualResourceMetadata" Association="EnterpriseTestModel.FK_VirtualResourceMetadataRetrySetting_VirtualResourceMetadata">
+            <End Role="VirtualResourceMetadata" EntitySet="VirtualResourceMetadataSet" />
+            <End Role="VirtualResourceMetadataRetrySetting" EntitySet="VirtualResourceMetadataRetrySettings" />
+          </AssociationSet>
+          <EntitySet Name="Users" EntityType="EnterpriseTestModel.User" />
+          <AssociationSet Name="UserGroupAssoc" Association="EnterpriseTestModel.UserGroupAssoc">
+            <End Role="User" EntitySet="Users" />
+            <End Role="UserGroup" EntitySet="UserGroups" />
+          </AssociationSet>
+          <EntitySet Name="EnterpriseScenarios" EntityType="EnterpriseTestModel.EnterpriseScenario" />
+          <AssociationSet Name="FK_VirtualResource_EnterpriseScenario" Association="EnterpriseTestModel.FK_VirtualResource_EnterpriseScenario">
+            <End Role="EnterpriseScenario" EntitySet="EnterpriseScenarios" />
+            <End Role="VirtualResource" EntitySet="VirtualResources" />
+          </AssociationSet>
+          <AssociationSet Name="EnterpriseScenarioUserGroupAssoc" Association="EnterpriseTestModel.EnterpriseScenarioUserGroupAssoc">
+            <End Role="EnterpriseScenario" EntitySet="EnterpriseScenarios" />
+            <End Role="UserGroup" EntitySet="UserGroups" />
+          </AssociationSet>
+          <EntitySet Name="AssociatedProducts" EntityType="EnterpriseTestModel.AssociatedProduct" />
+          <AssociationSet Name="Fk_EnterpriseScenario" Association="EnterpriseTestModel.Fk_EnterpriseScenario">
+            <End Role="ConfigurationTreeFolder" EntitySet="ConfigurationTreeFolders" />
+            <End Role="EnterpriseScenario" EntitySet="EnterpriseScenarios" />
+          </AssociationSet>
+          <EntitySet Name="AssociatedProductVersions" EntityType="EnterpriseTestModel.AssociatedProductVersion" />
+          <AssociationSet Name="FK_AssociatedProductVersion_AssociatedProduct" Association="EnterpriseTestModel.FK_AssociatedProductVersion_AssociatedProduct">
+            <End Role="AssociatedProduct" EntitySet="AssociatedProducts" />
+            <End Role="AssociatedProductVersion" EntitySet="AssociatedProductVersions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AssociatedProductVersion_EnterpriseScenario" Association="EnterpriseTestModel.FK_AssociatedProductVersion_EnterpriseScenario">
+            <End Role="EnterpriseScenario" EntitySet="EnterpriseScenarios" />
+            <End Role="AssociatedProductVersion" EntitySet="AssociatedProductVersions" />
+          </AssociationSet>
+          <AssociationSet Name="AssociatedProductMetadataTypeAssoc" Association="EnterpriseTestModel.AssociatedProductMetadataTypeAssoc">
+            <End Role="AssociatedProduct" EntitySet="AssociatedProducts" />
+            <End Role="MetadataType" EntitySet="MetadataTypes" />
+          </AssociationSet>
+          <EntitySet Name="SoftwareInstallers" EntityType="EnterpriseTestModel.SoftwareInstaller" />
+          <EntitySet Name="SoftwareInstallerPackages" EntityType="EnterpriseTestModel.SoftwareInstallerPackage" />
+          <EntitySet Name="SoftwareInstallerSettings" EntityType="EnterpriseTestModel.SoftwareInstallerSetting" />
+          <AssociationSet Name="FK_SoftwareInstallerPackageItem_SoftwareInstaller" Association="EnterpriseTestModel.FK_SoftwareInstallerPackageItem_SoftwareInstaller">
+            <End Role="SoftwareInstaller" EntitySet="SoftwareInstallers" />
+            <End Role="SoftwareInstallerPackageItem" EntitySet="SoftwareInstallerSettings" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SoftwareInstallerPackageItem_SoftwareInstallerPackage" Association="EnterpriseTestModel.FK_SoftwareInstallerPackageItem_SoftwareInstallerPackage">
+            <End Role="SoftwareInstallerPackage" EntitySet="SoftwareInstallerPackages" />
+            <End Role="SoftwareInstallerPackageItem" EntitySet="SoftwareInstallerSettings" />
+          </AssociationSet>
+          <AssociationSet Name="SoftwareInstallerPackageMetadataTypeAssoc" Association="EnterpriseTestModel.SoftwareInstallerPackageMetadataTypeAssoc">
+            <End Role="MetadataType" EntitySet="MetadataTypes" />
+            <End Role="SoftwareInstallerPackage" EntitySet="SoftwareInstallerPackages" />
+          </AssociationSet>
+          <AssociationSet Name="SoftwareInstallerPackageResourceTypeAssoc" Association="EnterpriseTestModel.SoftwareInstallerPackageResourceTypeAssoc">
+            <End Role="ResourceType" EntitySet="ResourceTypes" />
+            <End Role="SoftwareInstallerPackage" EntitySet="SoftwareInstallerPackages" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="VirtualResource" Abstract="false">
+          <Key>
+            <PropertyRef Name="VirtualResourceId" />
+          </Key>
+          <Property Type="Guid" Name="VirtualResourceId" Nullable="false" />
+          <Property Type="Guid" Name="EnterpriseScenarioId" Nullable="false" />
+          <Property Type="String" Name="Name" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Type="String" Name="Description" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ResourceType" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="InstanceCount" Nullable="false" />
+          <Property Type="String" Name="Platform" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="ResourcesPerVM" />
+          <Property Type="Boolean" Name="Enabled" Nullable="false" />
+          <Property Type="Guid" Name="FolderId" />
+          <NavigationProperty Name="VirtualResourceMetadataSet" Relationship="EnterpriseTestModel.FK_VirtualResourceMetadata_VirtualResource" FromRole="VirtualResource" ToRole="VirtualResourceMetadata" />
+          <Property Name="TestCaseId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="EnterpriseScenario" Relationship="EnterpriseTestModel.FK_VirtualResource_EnterpriseScenario" FromRole="VirtualResource" ToRole="EnterpriseScenario" />
+        </EntityType>
+        <EntityType Name="EventLogCollector" BaseType="EnterpriseTestModel.VirtualResource">
+          <Property Type="String" Name="HostName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="PollingInterval" Nullable="false" />
+          <Property Type="String" Name="ComponentsData" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EntryTypesData" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="AdminWorker" BaseType="EnterpriseTestModel.VirtualResource">
+          <Property Type="String" Name="DBExecutionMode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" a:GetterAccess="Private" a:SetterAccess="Private" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+        </EntityType>
+        <EntityType Name="ResourceWindowsCategory">
+          <Key>
+            <PropertyRef Name="CategoryId" />
+          </Key>
+          <Property Type="Int32" Name="CategoryId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CategoryType" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Parents" Relationship="EnterpriseTestModel.ResourceWindowsCategoryParent" FromRole="ResourceWindowsCategory" ToRole="ResourceWindowsCategory1" a:SetterAccess="Private" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+          <NavigationProperty Name="Children" Relationship="EnterpriseTestModel.ResourceWindowsCategoryParent" FromRole="ResourceWindowsCategory1" ToRole="ResourceWindowsCategory" a:SetterAccess="Private" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+        </EntityType>
+        <Association Name="ResourceWindowsCategoryParent">
+          <End Type="EnterpriseTestModel.ResourceWindowsCategory" Role="ResourceWindowsCategory" Multiplicity="*" />
+          <End Type="EnterpriseTestModel.ResourceWindowsCategory" Role="ResourceWindowsCategory1" Multiplicity="*" />
+        </Association>
+        <EntityType Name="ScenarioSession">
+          <Key>
+            <PropertyRef Name="EnterpriseScenarioId" />
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Type="Guid" Name="EnterpriseScenarioId" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Notes" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="EditedDate" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="ConfigurationTreeFolder">
+          <Key>
+            <PropertyRef Name="ConfigurationTreeFolderId" />
+          </Key>
+          <Property Type="Guid" Name="ConfigurationTreeFolderId" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="FolderType" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Guid" Name="ParentId" />
+          <NavigationProperty Name="EnterpriseScenarios" Relationship="EnterpriseTestModel.Fk_EnterpriseScenario" FromRole="ConfigurationTreeFolder" ToRole="EnterpriseScenario" />
+        </EntityType>
+        <EntityType Name="PerfMonCollector" BaseType="EnterpriseTestModel.VirtualResource">
+          <Property Type="String" Name="HostName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="LoadTester" BaseType="EnterpriseTestModel.VirtualResource">
+          <Property Type="Int32" Name="ThreadsPerVM" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MetadataType">
+          <Key>
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Title" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Group" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="SoftwareInstallerPackages" Relationship="EnterpriseTestModel.SoftwareInstallerPackageMetadataTypeAssoc" FromRole="MetadataType" ToRole="SoftwareInstallerPackage" />
+          <NavigationProperty Name="ResourceTypes" Relationship="EnterpriseTestModel.ResourceTypeMetadataTypeAssoc" FromRole="MetadataType" ToRole="ResourceType" />
+          <Property Name="AssemblyName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Icon" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <NavigationProperty Name="AssociatedProducts" Relationship="EnterpriseTestModel.AssociatedProductMetadataTypeAssoc" FromRole="MetadataType" ToRole="AssociatedProduct" />
+        </EntityType>
+        <EntityType Name="ResourceType">
+          <Key>
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="MaxResourcesPerHost" Nullable="false" />
+          <NavigationProperty Name="MetadataTypes" Relationship="EnterpriseTestModel.ResourceTypeMetadataTypeAssoc" FromRole="ResourceType" ToRole="MetadataType" />
+          <NavigationProperty Name="SoftwareInstallerPackages" Relationship="EnterpriseTestModel.SoftwareInstallerPackageResourceTypeAssoc" FromRole="ResourceType" ToRole="SoftwareInstallerPackage" />
+        </EntityType>
+        <Association Name="ResourceTypeMetadataTypeAssoc">
+          <End Type="EnterpriseTestModel.MetadataType" Role="MetadataType" Multiplicity="*" />
+          <End Type="EnterpriseTestModel.ResourceType" Role="ResourceType" Multiplicity="*" />
+        </Association>
+        <EntityType Name="VirtualResourceMetadata">
+          <Key>
+            <PropertyRef Name="VirtualResourceMetadataId" />
+          </Key>
+          <Property Name="VirtualResourceMetadataId" Type="Guid" Nullable="false" />
+          <Property Name="VirtualResourceId" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ResourceType" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MetadataType" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Metadata" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Enabled" Type="Boolean" Nullable="false" />
+          <Property Name="FolderId" Type="Guid" />
+          <Property Name="ExecutionPlan" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="VirtualResource" Relationship="EnterpriseTestModel.FK_VirtualResourceMetadata_VirtualResource" FromRole="VirtualResourceMetadata" ToRole="VirtualResource" />
+          <NavigationProperty Name="AssetUsage" Relationship="EnterpriseTestModel.FK_VirtualResourceMetadataAssetUsage_VirtualResourceMetadata" FromRole="VirtualResourceMetadata" ToRole="VirtualResourceMetadataAssetUsage" />
+          <NavigationProperty Name="DocumentUsage" Relationship="EnterpriseTestModel.FK_VirtualResourceMetadataDocumentUsage_VirtualResourceMetadata" FromRole="VirtualResourceMetadata" ToRole="VirtualResourceMetadataDocumentUsage" />
+          <Property Name="MetadataVersion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="ServerUsage" Relationship="EnterpriseTestModel.FK_VirtualResourceMetadataServerUsage_VirtualResourceMetadata" FromRole="VirtualResourceMetadata" ToRole="VirtualResourceMetadataServerUsage" />
+          <NavigationProperty Name="PrintQueueUsage" Relationship="EnterpriseTestModel.FK_VirtualResourceMetadataPrintQueueUsage_VirtualResourceMetadata" FromRole="VirtualResourceMetadata" ToRole="VirtualResourceMetadataPrintQueueUsage" />
+          <NavigationProperty Name="VirtualResourceMetadataRetrySettings" Relationship="EnterpriseTestModel.FK_VirtualResourceMetadataRetrySetting_VirtualResourceMetadata" FromRole="VirtualResourceMetadata" ToRole="VirtualResourceMetadataRetrySetting" />
+        </EntityType>
+        <Association Name="FK_VirtualResourceMetadata_VirtualResource">
+          <End Type="EnterpriseTestModel.VirtualResource" Role="VirtualResource" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="EnterpriseTestModel.VirtualResourceMetadata" Role="VirtualResourceMetadata" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VirtualResource">
+              <PropertyRef Name="VirtualResourceId" />
+            </Principal>
+            <Dependent Role="VirtualResourceMetadata">
+              <PropertyRef Name="VirtualResourceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="UserGroup">
+          <Key>
+            <PropertyRef Name="GroupName" />
+          </Key>
+          <Property Type="String" Name="GroupName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Creator" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="VirtualMachineGroupAssocs" Relationship="EnterpriseTestModel.FK_UserGroupFrameworkClientAssociation_UserGroup" FromRole="UserGroup" ToRole="UserGroupFrameworkClientAssociation" />
+          <NavigationProperty Name="Users" Relationship="EnterpriseTestModel.UserGroupAssoc" FromRole="UserGroup" ToRole="User" />
+          <NavigationProperty Name="EnterpriseScenarios" Relationship="EnterpriseTestModel.EnterpriseScenarioUserGroupAssoc" FromRole="UserGroup" ToRole="EnterpriseScenario" />
+        </EntityType>
+        <EntityType Name="VirtualMachineGroupAssoc">
+          <Key>
+            <PropertyRef Name="MachineName" />
+            <PropertyRef Name="GroupName" />
+          </Key>
+          <Property Type="String" Name="MachineName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="GroupName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="UserGroup" Relationship="EnterpriseTestModel.FK_UserGroupFrameworkClientAssociation_UserGroup" FromRole="UserGroupFrameworkClientAssociation" ToRole="UserGroup" />
+        </EntityType>
+        <Association Name="FK_UserGroupFrameworkClientAssociation_UserGroup">
+          <End Type="EnterpriseTestModel.UserGroup" Role="UserGroup" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="EnterpriseTestModel.VirtualMachineGroupAssoc" Role="UserGroupFrameworkClientAssociation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserGroup">
+              <PropertyRef Name="GroupName" />
+            </Principal>
+            <Dependent Role="UserGroupFrameworkClientAssociation">
+              <PropertyRef Name="GroupName" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="CitrixWorker" BaseType="EnterpriseTestModel.OfficeWorker">
+          <Property Name="ServerHostname" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DBWorkerRunMode" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PublishedApp" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="ActiveDirectoryGroup">
+          <Key>
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="SolutionTester" BaseType="EnterpriseTestModel.OfficeWorker">
+          <Property Name="CredentialType" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" a:SetterAccess="Private" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:GetterAccess="Public" />
+          <Property Name="UseCredential" Type="Boolean" Nullable="false" />
+          <Property Name="CredentialName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" a:SetterAccess="Private" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:GetterAccess="Public" />
+          <Property Name="CredentialDomain" Type="String" MaxLength="50" FixedLength="false" Unicode="true" a:SetterAccess="Private" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:GetterAccess="Public" />
+          <Property Name="CredentialPassword" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" a:SetterAccess="Private" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:GetterAccess="Public" />
+        </EntityType>
+        <EntityType Name="VirtualResourceMetadataAssetUsage">
+          <Key>
+            <PropertyRef Name="VirtualResourceMetadataId" />
+          </Key>
+          <Property Name="VirtualResourceMetadataId" Type="Guid" Nullable="false" />
+          <Property Name="AssetSelectionData" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="VirtualResourceMetadata" Relationship="EnterpriseTestModel.FK_VirtualResourceMetadataAssetUsage_VirtualResourceMetadata" FromRole="VirtualResourceMetadataAssetUsage" ToRole="VirtualResourceMetadata" />
+        </EntityType>
+        <EntityType Name="VirtualResourceMetadataDocumentUsage">
+          <Key>
+            <PropertyRef Name="VirtualResourceMetadataId" />
+          </Key>
+          <Property Name="VirtualResourceMetadataId" Type="Guid" Nullable="false" />
+          <Property Name="DocumentSelectionData" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="VirtualResourceMetadata" Relationship="EnterpriseTestModel.FK_VirtualResourceMetadataDocumentUsage_VirtualResourceMetadata" FromRole="VirtualResourceMetadataDocumentUsage" ToRole="VirtualResourceMetadata" />
+        </EntityType>
+        <Association Name="FK_VirtualResourceMetadataAssetUsage_VirtualResourceMetadata">
+          <End Type="EnterpriseTestModel.VirtualResourceMetadata" Role="VirtualResourceMetadata" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="EnterpriseTestModel.VirtualResourceMetadataAssetUsage" Role="VirtualResourceMetadataAssetUsage" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="VirtualResourceMetadata">
+              <PropertyRef Name="VirtualResourceMetadataId" />
+            </Principal>
+            <Dependent Role="VirtualResourceMetadataAssetUsage">
+              <PropertyRef Name="VirtualResourceMetadataId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VirtualResourceMetadataDocumentUsage_VirtualResourceMetadata">
+          <End Type="EnterpriseTestModel.VirtualResourceMetadata" Role="VirtualResourceMetadata" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="EnterpriseTestModel.VirtualResourceMetadataDocumentUsage" Role="VirtualResourceMetadataDocumentUsage" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="VirtualResourceMetadata">
+              <PropertyRef Name="VirtualResourceMetadataId" />
+            </Principal>
+            <Dependent Role="VirtualResourceMetadataDocumentUsage">
+              <PropertyRef Name="VirtualResourceMetadataId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="VirtualResourceMetadataServerUsage">
+          <Key>
+            <PropertyRef Name="VirtualResourceMetadataId" />
+          </Key>
+          <Property Name="VirtualResourceMetadataId" Type="Guid" Nullable="false" />
+          <Property Name="ServerSelectionData" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="VirtualResourceMetadata" Relationship="EnterpriseTestModel.FK_VirtualResourceMetadataServerUsage_VirtualResourceMetadata" FromRole="VirtualResourceMetadataServerUsage" ToRole="VirtualResourceMetadata" />
+        </EntityType>
+        <Association Name="FK_VirtualResourceMetadataServerUsage_VirtualResourceMetadata">
+          <End Type="EnterpriseTestModel.VirtualResourceMetadata" Role="VirtualResourceMetadata" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="EnterpriseTestModel.VirtualResourceMetadataServerUsage" Role="VirtualResourceMetadataServerUsage" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="VirtualResourceMetadata">
+              <PropertyRef Name="VirtualResourceMetadataId" />
+            </Principal>
+            <Dependent Role="VirtualResourceMetadataServerUsage">
+              <PropertyRef Name="VirtualResourceMetadataId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="VirtualResourceMetadataPrintQueueUsage">
+          <Key>
+            <PropertyRef Name="VirtualResourceMetadataId" />
+          </Key>
+          <Property Name="VirtualResourceMetadataId" Type="Guid" Nullable="false" />
+          <Property Name="PrintQueueSelectionData" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="VirtualResourceMetadata" Relationship="EnterpriseTestModel.FK_VirtualResourceMetadataPrintQueueUsage_VirtualResourceMetadata" FromRole="VirtualResourceMetadataPrintQueueUsage" ToRole="VirtualResourceMetadata" />
+        </EntityType>
+        <Association Name="FK_VirtualResourceMetadataPrintQueueUsage_VirtualResourceMetadata">
+          <End Type="EnterpriseTestModel.VirtualResourceMetadata" Role="VirtualResourceMetadata" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="EnterpriseTestModel.VirtualResourceMetadataPrintQueueUsage" Role="VirtualResourceMetadataPrintQueueUsage" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="VirtualResourceMetadata">
+              <PropertyRef Name="VirtualResourceMetadataId" />
+            </Principal>
+            <Dependent Role="VirtualResourceMetadataPrintQueueUsage">
+              <PropertyRef Name="VirtualResourceMetadataId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="SystemSetting">
+          <Key>
+            <PropertyRef Name="Type" />
+            <PropertyRef Name="SubType" />
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Name="Type" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="SubType" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Value" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="VirtualResourceMetadataRetrySetting">
+          <Key>
+            <PropertyRef Name="SettingId" />
+          </Key>
+          <Property Name="SettingId" Type="Guid" Nullable="false" />
+          <Property Name="VirtualResourceMetadataId" Type="Guid" Nullable="false" />
+          <Property Name="State" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Action" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="RetryLimit" Type="Int32" Nullable="false" />
+          <Property Name="RetryDelay" Type="Int32" Nullable="false" />
+          <Property Name="LimitExceededAction" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="VirtualResourceMetadata" Relationship="EnterpriseTestModel.FK_VirtualResourceMetadataRetrySetting_VirtualResourceMetadata" FromRole="VirtualResourceMetadataRetrySetting" ToRole="VirtualResourceMetadata" />
+        </EntityType>
+        <Association Name="FK_VirtualResourceMetadataRetrySetting_VirtualResourceMetadata">
+          <End Type="EnterpriseTestModel.VirtualResourceMetadata" Role="VirtualResourceMetadata" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="EnterpriseTestModel.VirtualResourceMetadataRetrySetting" Role="VirtualResourceMetadataRetrySetting" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VirtualResourceMetadata">
+              <PropertyRef Name="VirtualResourceMetadataId" />
+            </Principal>
+            <Dependent Role="VirtualResourceMetadataRetrySetting">
+              <PropertyRef Name="VirtualResourceMetadataId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="UserName" />
+          </Key>
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Domain" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="RoleName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="UserGroups" Relationship="EnterpriseTestModel.UserGroupAssoc" FromRole="User" ToRole="UserGroup" />
+        </EntityType>
+        <Association Name="UserGroupAssoc">
+          <End Type="EnterpriseTestModel.User" Role="User" Multiplicity="*" />
+          <End Type="EnterpriseTestModel.UserGroup" Role="UserGroup" Multiplicity="*" />
+        </Association>
+        <EntityType Name="EnterpriseScenario">
+          <Key>
+            <PropertyRef Name="EnterpriseScenarioId" />
+          </Key>
+          <Property Name="EnterpriseScenarioId" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Vertical" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Company" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FolderId" Type="Guid" />
+          <Property Name="Owner" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="VirtualResources" Relationship="EnterpriseTestModel.FK_VirtualResource_EnterpriseScenario" FromRole="EnterpriseScenario" ToRole="VirtualResource" />
+          <NavigationProperty Name="UserGroups" Relationship="EnterpriseTestModel.EnterpriseScenarioUserGroupAssoc" FromRole="EnterpriseScenario" ToRole="UserGroup" />
+          <NavigationProperty Name="ConfigurationTreeFolder" Relationship="EnterpriseTestModel.Fk_EnterpriseScenario" FromRole="EnterpriseScenario" ToRole="ConfigurationTreeFolder" />
+          <Property Name="ScenarioSettings" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AssociatedProductVersions" Relationship="EnterpriseTestModel.FK_AssociatedProductVersion_EnterpriseScenario" FromRole="EnterpriseScenario" ToRole="AssociatedProductVersion" />
+        </EntityType>
+        <Association Name="FK_VirtualResource_EnterpriseScenario">
+          <End Type="EnterpriseTestModel.EnterpriseScenario" Role="EnterpriseScenario" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="EnterpriseTestModel.VirtualResource" Role="VirtualResource" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EnterpriseScenario">
+              <PropertyRef Name="EnterpriseScenarioId" />
+            </Principal>
+            <Dependent Role="VirtualResource">
+              <PropertyRef Name="EnterpriseScenarioId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="EnterpriseScenarioUserGroupAssoc">
+          <End Type="EnterpriseTestModel.EnterpriseScenario" Role="EnterpriseScenario" Multiplicity="*" />
+          <End Type="EnterpriseTestModel.UserGroup" Role="UserGroup" Multiplicity="*" />
+        </Association>
+        <EntityType Name="AssociatedProduct">
+          <Key>
+            <PropertyRef Name="AssociatedProductId" />
+          </Key>
+          <Property Name="AssociatedProductId" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Vendor" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AssociatedProductVersions" Relationship="EnterpriseTestModel.FK_AssociatedProductVersion_AssociatedProduct" FromRole="AssociatedProduct" ToRole="AssociatedProductVersion" />
+          <NavigationProperty Name="MetadataTypes" Relationship="EnterpriseTestModel.AssociatedProductMetadataTypeAssoc" FromRole="AssociatedProduct" ToRole="MetadataType" />
+        </EntityType>
+        <Association Name="Fk_EnterpriseScenario">
+          <End Type="EnterpriseTestModel.ConfigurationTreeFolder" Role="ConfigurationTreeFolder" Multiplicity="0..1" />
+          <End Type="EnterpriseTestModel.EnterpriseScenario" Role="EnterpriseScenario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ConfigurationTreeFolder">
+              <PropertyRef Name="ConfigurationTreeFolderId" />
+            </Principal>
+            <Dependent Role="EnterpriseScenario">
+              <PropertyRef Name="FolderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="OfficeWorker" BaseType="EnterpriseTestModel.VirtualResource">
+          <Property Name="RepeatCount" Type="Int32" Nullable="false" />
+          <Property Name="RandomizeStartupDelay" Type="Boolean" Nullable="false" />
+          <Property Name="MinStartupDelay" Type="Int32" Nullable="false" />
+          <Property Name="MaxStartupDelay" Type="Int32" Nullable="false" />
+          <Property Name="RandomizeActivities" Type="Boolean" Nullable="false" />
+          <Property Name="RandomizeActivityDelay" Type="Boolean" Nullable="false" />
+          <Property Name="MinActivityDelay" Type="Int32" Nullable="false" />
+          <Property Name="MaxActivityDelay" Type="Int32" Nullable="false" />
+          <Property Name="DBRunMode" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" a:GetterAccess="Private" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Private" />
+          <Property Name="DurationTime" Type="Int32" Nullable="false" />
+          <Property Name="SecurityGroups" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ExecutionSchedule" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UserPool" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="AssociatedProductVersion">
+          <Key>
+            <PropertyRef Name="AssociatedProductId" />
+            <PropertyRef Name="EnterpriseScenarioId" />
+          </Key>
+          <Property Name="Version" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AssociatedProductId" Type="Guid" Nullable="false" />
+          <Property Name="EnterpriseScenarioId" Type="Guid" Nullable="false" />
+          <NavigationProperty Name="AssociatedProduct" Relationship="EnterpriseTestModel.FK_AssociatedProductVersion_AssociatedProduct" FromRole="AssociatedProductVersion" ToRole="AssociatedProduct" />
+          <NavigationProperty Name="EnterpriseScenario" Relationship="EnterpriseTestModel.FK_AssociatedProductVersion_EnterpriseScenario" FromRole="AssociatedProductVersion" ToRole="EnterpriseScenario" />
+          <Property Name="Active" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_AssociatedProductVersion_AssociatedProduct">
+          <End Type="EnterpriseTestModel.AssociatedProduct" Role="AssociatedProduct" Multiplicity="1" />
+          <End Type="EnterpriseTestModel.AssociatedProductVersion" Role="AssociatedProductVersion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AssociatedProduct">
+              <PropertyRef Name="AssociatedProductId" />
+            </Principal>
+            <Dependent Role="AssociatedProductVersion">
+              <PropertyRef Name="AssociatedProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AssociatedProductVersion_EnterpriseScenario">
+          <End Type="EnterpriseTestModel.EnterpriseScenario" Role="EnterpriseScenario" Multiplicity="1" />
+          <End Type="EnterpriseTestModel.AssociatedProductVersion" Role="AssociatedProductVersion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EnterpriseScenario">
+              <PropertyRef Name="EnterpriseScenarioId" />
+            </Principal>
+            <Dependent Role="AssociatedProductVersion">
+              <PropertyRef Name="EnterpriseScenarioId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="AssociatedProductMetadataTypeAssoc">
+          <End Type="EnterpriseTestModel.AssociatedProduct" Role="AssociatedProduct" Multiplicity="*" />
+          <End Type="EnterpriseTestModel.MetadataType" Role="MetadataType" Multiplicity="*" />
+        </Association>
+        <EntityType Name="SoftwareInstaller">
+          <Key>
+            <PropertyRef Name="InstallerId" />
+          </Key>
+          <Property Name="InstallerId" Type="Guid" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+          <Property Name="FilePath" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Arguments" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="RebootSetting" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CopyDirectory" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="SoftwareInstallerSettings" Relationship="EnterpriseTestModel.FK_SoftwareInstallerPackageItem_SoftwareInstaller" FromRole="SoftwareInstaller" ToRole="SoftwareInstallerPackageItem" />
+        </EntityType>
+        <EntityType Name="SoftwareInstallerPackage">
+          <Key>
+            <PropertyRef Name="PackageId" />
+          </Key>
+          <Property Type="Guid" Name="PackageId" Nullable="false" />
+          <Property Type="String" Name="Description" MaxLength="500" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="SoftwareInstallerSettings" Relationship="EnterpriseTestModel.FK_SoftwareInstallerPackageItem_SoftwareInstallerPackage" FromRole="SoftwareInstallerPackage" ToRole="SoftwareInstallerPackageItem" />
+          <NavigationProperty Name="MetadataTypes" Relationship="EnterpriseTestModel.SoftwareInstallerPackageMetadataTypeAssoc" FromRole="SoftwareInstallerPackage" ToRole="MetadataType" />
+          <NavigationProperty Name="ResourceTypes" Relationship="EnterpriseTestModel.SoftwareInstallerPackageResourceTypeAssoc" FromRole="SoftwareInstallerPackage" ToRole="ResourceType" />
+        </EntityType>
+        <EntityType Name="SoftwareInstallerSetting">
+          <Key>
+            <PropertyRef Name="PackageId" />
+            <PropertyRef Name="InstallerId" />
+          </Key>
+          <Property Name="PackageId" Type="Guid" Nullable="false" />
+          <Property Name="InstallerId" Type="Guid" Nullable="false" />
+          <Property Name="InstallOrderNumber" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="SoftwareInstaller" Relationship="EnterpriseTestModel.FK_SoftwareInstallerPackageItem_SoftwareInstaller" FromRole="SoftwareInstallerPackageItem" ToRole="SoftwareInstaller" />
+          <NavigationProperty Name="SoftwareInstallerPackage" Relationship="EnterpriseTestModel.FK_SoftwareInstallerPackageItem_SoftwareInstallerPackage" FromRole="SoftwareInstallerPackageItem" ToRole="SoftwareInstallerPackage" />
+        </EntityType>
+        <Association Name="FK_SoftwareInstallerPackageItem_SoftwareInstaller">
+          <End Type="EnterpriseTestModel.SoftwareInstaller" Role="SoftwareInstaller" Multiplicity="1" />
+          <End Type="EnterpriseTestModel.SoftwareInstallerSetting" Role="SoftwareInstallerPackageItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SoftwareInstaller">
+              <PropertyRef Name="InstallerId" />
+            </Principal>
+            <Dependent Role="SoftwareInstallerPackageItem">
+              <PropertyRef Name="InstallerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SoftwareInstallerPackageItem_SoftwareInstallerPackage">
+          <End Type="EnterpriseTestModel.SoftwareInstallerPackage" Role="SoftwareInstallerPackage" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="EnterpriseTestModel.SoftwareInstallerSetting" Role="SoftwareInstallerPackageItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SoftwareInstallerPackage">
+              <PropertyRef Name="PackageId" />
+            </Principal>
+            <Dependent Role="SoftwareInstallerPackageItem">
+              <PropertyRef Name="PackageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SoftwareInstallerPackageMetadataTypeAssoc">
+          <End Type="EnterpriseTestModel.MetadataType" Role="MetadataType" Multiplicity="*" />
+          <End Type="EnterpriseTestModel.SoftwareInstallerPackage" Role="SoftwareInstallerPackage" Multiplicity="*" />
+        </Association>
+        <Association Name="SoftwareInstallerPackageResourceTypeAssoc">
+          <End Type="EnterpriseTestModel.ResourceType" Role="ResourceType" Multiplicity="*" />
+          <End Type="EnterpriseTestModel.SoftwareInstallerPackage" Role="SoftwareInstallerPackage" Multiplicity="*" />
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="EnterpriseTestModelStoreContainer" CdmEntityContainer="EnterpriseTestEntities">
+          <EntitySetMapping Name="VirtualResources">
+            <EntityTypeMapping TypeName="IsTypeOf(EnterpriseTestModel.VirtualResource)">
+              <MappingFragment StoreEntitySet="VirtualResource">
+                <ScalarProperty Name="TestCaseId" ColumnName="TestCaseId" />
+                <ScalarProperty Name="FolderId" ColumnName="FolderId" />
+                <ScalarProperty Name="ResourcesPerVM" ColumnName="ResourcesPerVM" />
+                <ScalarProperty Name="VirtualResourceId" ColumnName="VirtualResourceId" />
+                <ScalarProperty Name="EnterpriseScenarioId" ColumnName="EnterpriseScenarioId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="ResourceType" ColumnName="ResourceType" />
+                <ScalarProperty Name="InstanceCount" ColumnName="InstanceCount" />
+                <ScalarProperty Name="Platform" ColumnName="Platform" />
+                <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+              </MappingFragment>
+            </EntityTypeMapping>
+            <EntityTypeMapping TypeName="IsTypeOf(EnterpriseTestModel.EventLogCollector)">
+              <MappingFragment StoreEntitySet="EventLogCollector">
+                <ScalarProperty Name="EntryTypesData" ColumnName="EntryTypesData" />
+                <ScalarProperty Name="ComponentsData" ColumnName="ComponentsData" />
+                <ScalarProperty Name="VirtualResourceId" ColumnName="VirtualResourceId" />
+                <ScalarProperty Name="HostName" ColumnName="HostName" />
+                <ScalarProperty Name="PollingInterval" ColumnName="PollingInterval" />
+              </MappingFragment>
+            </EntityTypeMapping>
+            <EntityTypeMapping TypeName="IsTypeOf(EnterpriseTestModel.AdminWorker)">
+              <MappingFragment StoreEntitySet="AdminWorker">
+                <ScalarProperty Name="VirtualResourceId" ColumnName="VirtualResourceId" />
+                <ScalarProperty Name="DBExecutionMode" ColumnName="ExecutionMode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+            <EntityTypeMapping TypeName="IsTypeOf(EnterpriseTestModel.PerfMonCollector)">
+              <MappingFragment StoreEntitySet="PerfMonCollector">
+                <ScalarProperty Name="VirtualResourceId" ColumnName="VirtualResourceId" />
+                <ScalarProperty Name="HostName" ColumnName="HostName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+            <EntityTypeMapping TypeName="IsTypeOf(EnterpriseTestModel.LoadTester)">
+              <MappingFragment StoreEntitySet="LoadTester">
+                <ScalarProperty Name="VirtualResourceId" ColumnName="VirtualResourceId" />
+                <ScalarProperty Name="ThreadsPerVM" ColumnName="ThreadsPerVM" />
+              </MappingFragment>
+            </EntityTypeMapping>
+            <EntityTypeMapping TypeName="IsTypeOf(EnterpriseTestModel.OfficeWorker)">
+              <MappingFragment StoreEntitySet="OfficeWorker">
+                <ScalarProperty Name="VirtualResourceId" ColumnName="VirtualResourceId" />
+                <ScalarProperty Name="RepeatCount" ColumnName="RepeatCount" />
+                <ScalarProperty Name="RandomizeStartupDelay" ColumnName="RandomizeStartupDelay" />
+                <ScalarProperty Name="MinStartupDelay" ColumnName="MinStartupDelay" />
+                <ScalarProperty Name="MaxStartupDelay" ColumnName="MaxStartupDelay" />
+                <ScalarProperty Name="RandomizeActivities" ColumnName="RandomizeActivities" />
+                <ScalarProperty Name="RandomizeActivityDelay" ColumnName="RandomizeActivityDelay" />
+                <ScalarProperty Name="MinActivityDelay" ColumnName="MinActivityDelay" />
+                <ScalarProperty Name="MaxActivityDelay" ColumnName="MaxActivityDelay" />
+                <ScalarProperty Name="DBRunMode" ColumnName="RunMode" />
+                <ScalarProperty Name="DurationTime" ColumnName="DurationTime" />
+                <ScalarProperty Name="SecurityGroups" ColumnName="SecurityGroups" />
+                <ScalarProperty Name="ExecutionSchedule" ColumnName="ExecutionSchedule" />
+                <ScalarProperty Name="UserPool" ColumnName="UserPool" />
+              </MappingFragment>
+            </EntityTypeMapping>
+            <EntityTypeMapping TypeName="IsTypeOf(EnterpriseTestModel.CitrixWorker)" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+              <MappingFragment StoreEntitySet="CitrixWorker">
+                <ScalarProperty Name="VirtualResourceId" ColumnName="VirtualResourceId" />
+                <ScalarProperty Name="ServerHostname" ColumnName="ServerHostName" />
+                <ScalarProperty Name="DBWorkerRunMode" ColumnName="CitrixExecutionMode" />
+                <ScalarProperty Name="PublishedApp" ColumnName="PublishedApp" />
+              </MappingFragment>
+            </EntityTypeMapping>
+            <EntityTypeMapping TypeName="IsTypeOf(EnterpriseTestModel.SolutionTester)" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+              <MappingFragment StoreEntitySet="SolutionTester">
+                <ScalarProperty Name="VirtualResourceId" ColumnName="VirtualResourceId" />
+                <ScalarProperty Name="CredentialType" ColumnName="CredentialType" />
+                <ScalarProperty Name="UseCredential" ColumnName="UseCredential" />
+                <ScalarProperty Name="CredentialName" ColumnName="CredentialName" />
+                <ScalarProperty Name="CredentialDomain" ColumnName="CredentialDomain" />
+                <ScalarProperty Name="CredentialPassword" ColumnName="CredentialPassword" />
+              </MappingFragment>
+            </EntityTypeMapping>
+            </EntitySetMapping>
+          <EntitySetMapping Name="ResourceWindowsCategories">
+            <EntityTypeMapping TypeName="EnterpriseTestModel.ResourceWindowsCategory">
+              <MappingFragment StoreEntitySet="CategoryValue" >
+                <ScalarProperty Name="CategoryType" ColumnName="Category" />
+                <ScalarProperty Name="Name" ColumnName="Value" />
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryValueId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="ResourceWindowsCategoryParent" TypeName="EnterpriseTestModel.ResourceWindowsCategoryParent" StoreEntitySet="CategoryValueParent" >
+            <EndProperty Name="ResourceWindowsCategory1">
+              <ScalarProperty Name="CategoryId" ColumnName="ParentCategoryValueId" />
+            </EndProperty>
+            <EndProperty Name="ResourceWindowsCategory">
+              <ScalarProperty Name="CategoryId" ColumnName="CategoryValueId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <EntitySetMapping Name="ScenarioSessions">
+            <EntityTypeMapping TypeName="EnterpriseTestModel.ScenarioSession">
+              <MappingFragment StoreEntitySet="EnterpriseScenarioSession">
+                <ScalarProperty Name="EditedDate" ColumnName="EditedDate" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="EnterpriseScenarioId" ColumnName="EnterpriseScenarioId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ConfigurationTreeFolders">
+            <EntityTypeMapping TypeName="EnterpriseTestModel.ConfigurationTreeFolder">
+              <MappingFragment StoreEntitySet="ConfigurationTreeFolder">
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="FolderType" ColumnName="FolderType" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ConfigurationTreeFolderId" ColumnName="ConfigurationTreeFolderId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MetadataTypes">
+            <EntityTypeMapping TypeName="EnterpriseTestModel.MetadataType">
+              <MappingFragment StoreEntitySet="MetadataType">
+                <ScalarProperty Name="Icon" ColumnName="Icon" />
+                <ScalarProperty Name="AssemblyName" ColumnName="AssemblyName" />
+                <ScalarProperty Name="Group" ColumnName="Group" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ResourceTypes">
+            <EntityTypeMapping TypeName="EnterpriseTestModel.ResourceType">
+              <MappingFragment StoreEntitySet="ResourceType">
+                <ScalarProperty Name="MaxResourcesPerHost" ColumnName="MaxResourcesPerHost" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="ResourceTypeMetadataTypeAssoc" TypeName="EnterpriseTestModel.ResourceTypeMetadataTypeAssoc" StoreEntitySet="ResourceTypeMetadataTypeAssoc">
+            <EndProperty Name="ResourceType">
+              <ScalarProperty Name="Name" ColumnName="ResourceTypeName" />
+            </EndProperty>
+            <EndProperty Name="MetadataType">
+              <ScalarProperty Name="Name" ColumnName="MetadataTypeName" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <EntitySetMapping Name="VirtualResourceMetadataSet">
+            <EntityTypeMapping TypeName="EnterpriseTestModel.VirtualResourceMetadata">
+              <MappingFragment StoreEntitySet="VirtualResourceMetadata">
+                <ScalarProperty Name="MetadataVersion" ColumnName="MetadataVersion" />
+                <ScalarProperty Name="ExecutionPlan" ColumnName="ExecutionPlan" />
+                <ScalarProperty Name="FolderId" ColumnName="FolderId" />
+                <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+                <ScalarProperty Name="Metadata" ColumnName="Metadata" />
+                <ScalarProperty Name="MetadataType" ColumnName="MetadataType" />
+                <ScalarProperty Name="ResourceType" ColumnName="ResourceType" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="VirtualResourceId" ColumnName="VirtualResourceId" />
+                <ScalarProperty Name="VirtualResourceMetadataId" ColumnName="VirtualResourceMetadataId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserGroups">
+            <EntityTypeMapping TypeName="EnterpriseTestModel.UserGroup">
+              <MappingFragment StoreEntitySet="UserGroup">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Creator" ColumnName="Creator" />
+                <ScalarProperty Name="GroupName" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VirtualMachineGroupAssocs">
+            <EntityTypeMapping TypeName="EnterpriseTestModel.VirtualMachineGroupAssoc">
+              <MappingFragment StoreEntitySet="UserGroupFrameworkClientAssociation">
+                <ScalarProperty Name="GroupName" ColumnName="UserGroupName" />
+                <ScalarProperty Name="MachineName" ColumnName="FrameworkClientHostName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ActiveDirectoryGroups">
+            <EntityTypeMapping TypeName="EnterpriseTestModel.ActiveDirectoryGroup">
+              <MappingFragment StoreEntitySet="ActiveDirectoryGroup">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VirtualResourceMetadataAssetUsages">
+            <EntityTypeMapping TypeName="EnterpriseTestModel.VirtualResourceMetadataAssetUsage">
+              <MappingFragment StoreEntitySet="VirtualResourceMetadataAssetUsage">
+                <ScalarProperty Name="AssetSelectionData" ColumnName="AssetSelectionData" />
+                <ScalarProperty Name="VirtualResourceMetadataId" ColumnName="VirtualResourceMetadataId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VirtualResourceMetadataDocumentUsages">
+            <EntityTypeMapping TypeName="EnterpriseTestModel.VirtualResourceMetadataDocumentUsage">
+              <MappingFragment StoreEntitySet="VirtualResourceMetadataDocumentUsage">
+                <ScalarProperty Name="DocumentSelectionData" ColumnName="DocumentSelectionData" />
+                <ScalarProperty Name="VirtualResourceMetadataId" ColumnName="VirtualResourceMetadataId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VirtualResourceMetadataServerUsages">
+            <EntityTypeMapping TypeName="EnterpriseTestModel.VirtualResourceMetadataServerUsage">
+              <MappingFragment StoreEntitySet="VirtualResourceMetadataServerUsage">
+                <ScalarProperty Name="ServerSelectionData" ColumnName="ServerSelectionData" />
+                <ScalarProperty Name="VirtualResourceMetadataId" ColumnName="VirtualResourceMetadataId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VirtualResourceMetadataPrintQueueUsages">
+            <EntityTypeMapping TypeName="EnterpriseTestModel.VirtualResourceMetadataPrintQueueUsage">
+              <MappingFragment StoreEntitySet="VirtualResourceMetadataPrintQueueUsage">
+                <ScalarProperty Name="PrintQueueSelectionData" ColumnName="PrintQueueSelectionData" />
+                <ScalarProperty Name="VirtualResourceMetadataId" ColumnName="VirtualResourceMetadataId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SystemSettings">
+            <EntityTypeMapping TypeName="EnterpriseTestModel.SystemSetting">
+              <MappingFragment StoreEntitySet="SystemSetting">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="SubType" ColumnName="SubType" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VirtualResourceMetadataRetrySettings">
+            <EntityTypeMapping TypeName="EnterpriseTestModel.VirtualResourceMetadataRetrySetting">
+              <MappingFragment StoreEntitySet="VirtualResourceMetadataRetrySetting">
+                <ScalarProperty Name="LimitExceededAction" ColumnName="LimitExceededAction" />
+                <ScalarProperty Name="RetryDelay" ColumnName="RetryDelay" />
+                <ScalarProperty Name="RetryLimit" ColumnName="RetryLimit" />
+                <ScalarProperty Name="Action" ColumnName="Action" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="VirtualResourceMetadataId" ColumnName="VirtualResourceMetadataId" />
+                <ScalarProperty Name="SettingId" ColumnName="VirtualResourceMetadataRetrySettingId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="EnterpriseTestModel.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+                <ScalarProperty Name="Domain" ColumnName="Domain" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="UserGroupAssoc" TypeName="EnterpriseTestModel.UserGroupAssoc" StoreEntitySet="UserGroupAssoc">
+            <EndProperty Name="UserGroup">
+              <ScalarProperty Name="GroupName" ColumnName="UserGroupName" />
+            </EndProperty>
+            <EndProperty Name="User">
+              <ScalarProperty Name="UserName" ColumnName="UserName" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <EntitySetMapping Name="EnterpriseScenarios">
+            <EntityTypeMapping TypeName="EnterpriseTestModel.EnterpriseScenario">
+              <MappingFragment StoreEntitySet="EnterpriseScenario">
+                <ScalarProperty Name="ScenarioSettings" ColumnName="ScenarioSettings" />
+                <ScalarProperty Name="Owner" ColumnName="Owner" />
+                <ScalarProperty Name="FolderId" ColumnName="FolderId" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="Vertical" ColumnName="Vertical" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="EnterpriseScenarioId" ColumnName="EnterpriseScenarioId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="EnterpriseScenarioUserGroupAssoc" TypeName="EnterpriseTestModel.EnterpriseScenarioUserGroupAssoc" StoreEntitySet="EnterpriseScenarioUserGroupAssoc">
+            <EndProperty Name="UserGroup">
+              <ScalarProperty Name="GroupName" ColumnName="UserGroupName" />
+            </EndProperty>
+            <EndProperty Name="EnterpriseScenario">
+              <ScalarProperty Name="EnterpriseScenarioId" ColumnName="EnterpriseScenarioId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <EntitySetMapping Name="AssociatedProducts">
+            <EntityTypeMapping TypeName="EnterpriseTestModel.AssociatedProduct">
+              <MappingFragment StoreEntitySet="AssociatedProduct">
+                <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="AssociatedProductId" ColumnName="AssociatedProductId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AssociatedProductVersions">
+            <EntityTypeMapping TypeName="EnterpriseTestModel.AssociatedProductVersion">
+              <MappingFragment StoreEntitySet="AssociatedProductVersion">
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="EnterpriseScenarioId" ColumnName="EnterpriseScenarioId" />
+                <ScalarProperty Name="AssociatedProductId" ColumnName="AssociatedProductId" />
+                <ScalarProperty Name="Version" ColumnName="Version" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="AssociatedProductMetadataTypeAssoc" TypeName="EnterpriseTestModel.AssociatedProductMetadataTypeAssoc" StoreEntitySet="AssociatedProductMetadataTypeAssoc">
+            <EndProperty Name="MetadataType">
+              <ScalarProperty Name="Name" ColumnName="MetadataTypeName" />
+            </EndProperty>
+            <EndProperty Name="AssociatedProduct">
+              <ScalarProperty Name="AssociatedProductId" ColumnName="AssociatedProductId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <EntitySetMapping Name="SoftwareInstallers">
+            <EntityTypeMapping TypeName="EnterpriseTestModel.SoftwareInstaller">
+              <MappingFragment StoreEntitySet="SoftwareInstaller">
+                <ScalarProperty Name="CopyDirectory" ColumnName="CopyDirectory" />
+                <ScalarProperty Name="RebootSetting" ColumnName="RebootSetting" />
+                <ScalarProperty Name="Arguments" ColumnName="Arguments" />
+                <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="InstallerId" ColumnName="SoftwareInstallerId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SoftwareInstallerPackages">
+            <EntityTypeMapping TypeName="EnterpriseTestModel.SoftwareInstallerPackage">
+              <MappingFragment StoreEntitySet="SoftwareInstallerPackage">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="PackageId" ColumnName="SoftwareInstallerPackageId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SoftwareInstallerSettings">
+            <EntityTypeMapping TypeName="EnterpriseTestModel.SoftwareInstallerSetting">
+              <MappingFragment StoreEntitySet="SoftwareInstallerPackageItem">
+                <ScalarProperty Name="InstallOrderNumber" ColumnName="InstallOrder" />
+                <ScalarProperty Name="InstallerId" ColumnName="SoftwareInstallerId" />
+                <ScalarProperty Name="PackageId" ColumnName="SoftwareInstallerPackageId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="SoftwareInstallerPackageMetadataTypeAssoc" TypeName="EnterpriseTestModel.SoftwareInstallerPackageMetadataTypeAssoc" StoreEntitySet="SoftwareInstallerPackageMetadataTypeAssoc">
+            <EndProperty Name="SoftwareInstallerPackage">
+              <ScalarProperty Name="PackageId" ColumnName="SoftwareInstallerPackageId" />
+            </EndProperty>
+            <EndProperty Name="MetadataType">
+              <ScalarProperty Name="Name" ColumnName="MetadataTypeName" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="SoftwareInstallerPackageResourceTypeAssoc" TypeName="EnterpriseTestModel.SoftwareInstallerPackageResourceTypeAssoc" StoreEntitySet="SoftwareInstallerPackageResourceTypeAssoc">
+            <EndProperty Name="SoftwareInstallerPackage">
+              <ScalarProperty Name="PackageId" ColumnName="SoftwareInstallerPackageId" />
+            </EndProperty>
+            <EndProperty Name="ResourceType">
+              <ScalarProperty Name="Name" ColumnName="ResourceTypeName" />
+            </EndProperty>
+          </AssociationSetMapping>
+          </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="UseLegacyProvider" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="EnterpriseTestModel" ZoomLevel="92">
+        <EntityTypeShape EntityType="EnterpriseTestModel.VirtualResource" Width="2.125" PointX="24.5" PointY="4.75" Height="3.7109993489583335" />
+        <EntityTypeShape EntityType="EnterpriseTestModel.EventLogCollector" Width="2.125" PointX="1.625" PointY="8.875" Height="1.7879850260416674" />
+        <InheritanceConnector EntityType="EnterpriseTestModel.EventLogCollector" ManuallyRouted="false">
+          <ConnectorPoint PointX="7.3125" PointY="8.9609993489583335" />
+          <ConnectorPoint PointX="7.3125" PointY="10.125" />
+          <ConnectorPoint PointX="8.6875" PointY="10.125" />
+          <ConnectorPoint PointX="8.6875" PointY="10.5" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="EnterpriseTestModel.AdminWorker" Width="2.125" PointX="1.625" PointY="13.875" Height="1.2110807291666657" />
+        <InheritanceConnector EntityType="EnterpriseTestModel.AdminWorker" ManuallyRouted="false">
+          <ConnectorPoint PointX="7.3125" PointY="8.9609993489583335" />
+          <ConnectorPoint PointX="7.3125" PointY="14.45" />
+          <ConnectorPoint PointX="5.8125" PointY="14.45" />
+          <ConnectorPoint PointX="5.8125" PointY="14.75" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="EnterpriseTestModel.ResourceWindowsCategory" Width="2.125" PointX="18.125" PointY="3" Height="1.9802864583333246" />
+        <AssociationConnector Association="EnterpriseTestModel.ResourceWindowsCategoryParent">
+          <ConnectorPoint PointX="24.126220012019232" PointY="7.1052864583333246" />
+          <ConnectorPoint PointX="24.126220012019232" PointY="7.3552864583333246" />
+          <ConnectorPoint PointX="24.763602844551283" PointY="7.3552864583333246" />
+          <ConnectorPoint PointX="24.763602844551283" PointY="7.1052864583333246" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="EnterpriseTestModel.ScenarioSession" Width="2.25" PointX="20.75" PointY="3" Height="1.7879850260416665" />
+        <EntityTypeShape EntityType="EnterpriseTestModel.ConfigurationTreeFolder" Width="2.25" PointX="7.25" PointY="2.875" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="EnterpriseTestModel.PerfMonCollector" Width="2.125" PointX="1.625" PointY="10.875" Height="1.2110807291666674" />
+        <InheritanceConnector EntityType="EnterpriseTestModel.PerfMonCollector" ManuallyRouted="false">
+          <ConnectorPoint PointX="7.3125" PointY="8.9609993489583335" />
+          <ConnectorPoint PointX="7.3125" PointY="12.51" />
+          <ConnectorPoint PointX="8.6875" PointY="12.51" />
+          <ConnectorPoint PointX="8.6875" PointY="12.75" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="EnterpriseTestModel.SoftwareInstallerPackage" Width="2.25" PointX="10.25" PointY="8.75" />
+        <EntityTypeShape EntityType="EnterpriseTestModel.SoftwareInstallerSetting" Width="2.375" PointX="10.25" PointY="11.25" />
+        <AssociationConnector Association="EnterpriseTestModel.FK_SoftwareInstallerPackageItem_SoftwareInstaller" />
+        <EntityTypeShape EntityType="EnterpriseTestModel.SoftwareInstaller" Width="2.125" PointX="13.25" PointY="11.25" />
+        <AssociationConnector Association="EnterpriseTestModel.FK_SoftwareInstallerPackageItem_SoftwareInstallerPackage" />
+        <EntityTypeShape EntityType="EnterpriseTestModel.LoadTester" Width="2.125" PointX="1.625" PointY="12.375" />
+        <InheritanceConnector EntityType="EnterpriseTestModel.LoadTester" />
+        <EntityTypeShape EntityType="EnterpriseTestModel.MetadataType" Width="2.25" PointX="10.25" PointY="5.25" />
+        <AssociationConnector Association="EnterpriseTestModel.SoftwareInstallerPackageMetadataTypeAssoc" />
+        <EntityTypeShape EntityType="EnterpriseTestModel.ResourceType" Width="2.25" PointX="13.125" PointY="7.375" />
+        <AssociationConnector Association="EnterpriseTestModel.ResourceTypeMetadataTypeAssoc" />
+        <AssociationConnector Association="EnterpriseTestModel.SoftwareInstallerPackageResourceTypeAssoc" />
+        <EntityTypeShape EntityType="EnterpriseTestModel.VirtualResourceMetadata" Width="2.25" PointX="7.25" PointY="5" />
+        <AssociationConnector Association="EnterpriseTestModel.FK_VirtualResourceMetadata_VirtualResource" />
+        <EntityTypeShape EntityType="EnterpriseTestModel.UserGroup" Width="2.25" PointX="7.25" PointY="0.5" />
+        <EntityTypeShape EntityType="EnterpriseTestModel.VirtualMachineGroupAssoc" Width="2.25" PointX="10.25" PointY="0.5" />
+        <AssociationConnector Association="EnterpriseTestModel.FK_UserGroupFrameworkClientAssociation_UserGroup" />
+        <EntityTypeShape EntityType="EnterpriseTestModel.CitrixWorker" Width="2.125" PointX="4.625" PointY="13.375" />
+        <EntityTypeShape EntityType="EnterpriseTestModel.ActiveDirectoryGroup" Width="2.125" PointX="20.875" PointY="7.875" />
+        <EntityTypeShape EntityType="EnterpriseTestModel.SolutionTester" Width="2.125" PointX="4.625" PointY="15.375" />
+        <EntityTypeShape EntityType="EnterpriseTestModel.VirtualResourceMetadataAssetUsage" Width="2.25" PointX="7.25" PointY="9.5" />
+        <EntityTypeShape EntityType="EnterpriseTestModel.VirtualResourceMetadataDocumentUsage" Width="2.25" PointX="7.25" PointY="11.375" />
+        <AssociationConnector Association="EnterpriseTestModel.FK_VirtualResourceMetadataAssetUsage_VirtualResourceMetadata" />
+        <AssociationConnector Association="EnterpriseTestModel.FK_VirtualResourceMetadataDocumentUsage_VirtualResourceMetadata" />
+        <EntityTypeShape EntityType="EnterpriseTestModel.VirtualResourceMetadataServerUsage" Width="2.25" PointX="7.25" PointY="13.25" />
+        <AssociationConnector Association="EnterpriseTestModel.FK_VirtualResourceMetadataServerUsage_VirtualResourceMetadata" />
+        <EntityTypeShape EntityType="EnterpriseTestModel.VirtualResourceMetadataPrintQueueUsage" Width="2.25" PointX="7.25" PointY="15.125" />
+        <AssociationConnector Association="EnterpriseTestModel.FK_VirtualResourceMetadataPrintQueueUsage_VirtualResourceMetadata" />
+        <EntityTypeShape EntityType="EnterpriseTestModel.SystemSetting" Width="1.5" PointX="16.375" PointY="8.75" />
+        <EntityTypeShape EntityType="EnterpriseTestModel.VirtualResourceMetadataRetrySetting" Width="1.875" PointX="10.25" PointY="13.625" />
+        <AssociationConnector Association="EnterpriseTestModel.FK_VirtualResourceMetadataRetrySetting_VirtualResourceMetadata" />
+        <EntityTypeShape EntityType="EnterpriseTestModel.User" Width="1.5" PointX="10.5" PointY="2.25" />
+        <AssociationConnector Association="EnterpriseTestModel.UserGroupAssoc" />
+        <EntityTypeShape EntityType="EnterpriseTestModel.EnterpriseScenario" Width="1.875" PointX="4.625" PointY="0.5" />
+        <AssociationConnector Association="EnterpriseTestModel.FK_VirtualResource_EnterpriseScenario" />
+        <AssociationConnector Association="EnterpriseTestModel.EnterpriseScenarioUserGroupAssoc" />
+        <EntityTypeShape EntityType="EnterpriseTestModel.AssociatedProduct" Width="1.75" PointX="0.5" PointY="2.875" />
+        <AssociationConnector Association="EnterpriseTestModel.Fk_EnterpriseScenario" />
+        <EntityTypeShape EntityType="EnterpriseTestModel.OfficeWorker" Width="2" PointX="4.75" PointY="8.875" />
+        <InheritanceConnector EntityType="EnterpriseTestModel.OfficeWorker" />
+        <InheritanceConnector EntityType="EnterpriseTestModel.CitrixWorker" />
+        <InheritanceConnector EntityType="EnterpriseTestModel.SolutionTester" />
+        <EntityTypeShape EntityType="EnterpriseTestModel.AssociatedProductVersion" Width="1.5" PointX="2.75" PointY="1.5" />
+        <AssociationConnector Association="EnterpriseTestModel.FK_AssociatedProductVersion_AssociatedProduct" />
+        <AssociationConnector Association="EnterpriseTestModel.FK_AssociatedProductVersion_EnterpriseScenario" />
+        <AssociationConnector Association="EnterpriseTestModel.AssociatedProductMetadataTypeAssoc" />
+        </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

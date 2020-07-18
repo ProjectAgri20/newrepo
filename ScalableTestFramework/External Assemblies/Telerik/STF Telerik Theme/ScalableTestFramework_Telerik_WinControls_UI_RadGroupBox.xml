@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ScalableTestFramework" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="WhiteFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GroupBoxContent">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="fillGroupBoxContent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ControlBorderDark">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GroupBoxContent">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="borderGroupBoxContent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Windows7StandardGradient">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GroupBoxHeader">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="fillGroupBoxHeader" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ControlBorderDark">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GroupBoxHeader">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="borderGroupBoxHeader" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Windows7StandardGradient">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GroupBoxFooter">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="fillGroupBoxFooter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ControlBorderDark">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GroupBoxFooter">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="borderGroupBoxFooter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll4">
+            <Selectors>
+              <XmlClassSelector ElementClass="GroupBoxContent" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DefaultFont">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadGroupBox" ElementType="Telerik.WinControls.RootRadElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

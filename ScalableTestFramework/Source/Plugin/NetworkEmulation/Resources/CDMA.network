@@ -1,0 +1,53 @@
+<NetworkEmulationProfile name="CDMA" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+<Emulation>
+  <VirtualChannel name="CDMA-Channel1">
+    <FilterList />
+    <VirtualLink instances="1" name="link1">
+      <LinkRule dir="upstream">
+        <Bandwidth>
+          <Speed unit="kbps">512</Speed>
+          <QueueManagement>
+            <NormalQueue>
+              <Size>100</Size>
+              <QueueMode>packet</QueueMode>
+              <DropType>DropTail</DropType>
+            </NormalQueue>
+          </QueueManagement>
+        </Bandwidth>
+        <Latency>
+          <Fixed>
+            <Time unit="msec">250</Time>
+          </Fixed>
+        </Latency>
+        <Loss>
+          <Random>
+            <Rate>0.005</Rate>
+          </Random>
+        </Loss>
+      </LinkRule>
+      <LinkRule dir="downstream">
+        <Bandwidth>
+          <Speed unit="kbps">94</Speed>
+          <QueueManagement>
+            <NormalQueue>
+              <Size>100</Size>
+              <QueueMode>packet</QueueMode>
+              <DropType>DropTail</DropType>
+            </NormalQueue>
+          </QueueManagement>
+        </Bandwidth>
+        <Latency>
+          <Fixed>
+            <Time unit="msec">250</Time>
+          </Fixed>
+        </Latency>
+        <Loss>
+          <Random>
+            <Rate>0.005</Rate>
+          </Random>
+        </Loss>
+      </LinkRule>
+    </VirtualLink>
+  </VirtualChannel>
+</Emulation>
+</NetworkEmulationProfile>

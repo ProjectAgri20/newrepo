@@ -1,0 +1,551 @@
+<Sitemaps>
+  <Pages>
+    <Page key="802.1x_Authentication" relative_path="#hId-pgWired802dot1x">
+      <Elements>
+        <Element key="Dot1x_PEAP" id="app-wired-802dot1x-peap-field-Inp_PEAP" name="" xpath="" class="" type="" />
+        <Element key="Dot1x_EAPTLS" id="app-wired-802dot1x-peap-field-Inp_EAP_TLS" name="" xpath="" class="" type="" />
+        <Element key="Dot1x_UserName" id="tmpId32-Inp" name="" xpath="" class="" type="" />
+        <Element key="Dot1x_Password" id="tmpId34-Inp" name="" xpath="" class="" type="" />
+        <Element key="Dot1x_ConfirmPassword" id="tmpId36-Inp" name="" xpath="" class="" type="" />
+        <Element key="Dot1x_EncryptionStrength" id="" name="" xpath="" class="" type="" />
+        <Element key="Dot1x_Connect" id="tmpId42-Inp_allow" name="tmpId42-Inp" xpath="" class="" type="" />
+        <Element key="Dot1x_Block" id="tmpId42-Inp_drop" name="tmpId42-Inp" xpath="" class="" type="radio" />
+        <Element key="Dot1x_Apply" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/div/input[6]" class="" type="" />
+        <Element key="Dot1x_Confirm" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/div/input[7]" class="" type="" />
+        <Element key="Dot1x_Restore_Defaults" id="" name="" xpath="" class="gui-cmd-btn-restore_btn" type="" />
+        <Element key="ConfirmOk" id="" name="" xpath="/html/body/div[5]/div[2]/button" class="" type="" />
+        <Element key="ConfirmCancel" id="" name="" xpath="/html/body/div[6]/div[2]/button[1]" class="" type="" />
+        <Element key="Dot1x_Reset_Ok" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/div[2]/div/input" class="gui-cmd-btn-ok_btn" type="" />
+      </Elements>
+    </Page>
+    <Page key="CertificateManagement" relative_path="#hId-pgCertificates">
+      <Elements>
+        <Element key="Certificates_Table" id="app-certificates-ca-cert-table-Tbl" name="" xpath="" class="" type="" />
+        <Element key="Import" id="app-certificates-ca-import-Inp" name="ca_imp-Inp" xpath="" class="" type="" />
+        <Element key="Ca_Certificate_File" id="cAfileLocation" name="" xpath="" class="" type="" />
+        <Element key="Install_Ca_Certificate" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[3]/div/input[3]" class="" type="" />
+        <Element key="Confirm_Install_Ca_Certificate" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/div[2]/div/input" class="" type="" />
+        <Element key="Remove_Certificate" id="app-certificates-ca-remove-Inp" name="ca_rm-Inp" xpath="" class="" type="" />
+	      <Element key="Confirm_Deletion" id="" name="" xpath="/html/body/div[5]/div[2]/button" class="" type="" />
+      </Elements>
+    </Page>
+    <Page key="WSD" relative_path="#hId-pgWSD">
+      <Elements>
+        <Element key="WS_Discovery" id="tmpId4-Inp" name="" xpath="" class="" type="" />
+      <Element key="Apply" id="" name="" xpath="" class="gui-cmd-btn-apply" type="" />
+      </Elements>
+    </Page>
+      
+    <Page key="CA_InstallCertificate" relative_path="#hId-pgCertificates">
+      <Elements>
+        <Element key="JDConfigure" id="pc_config-Inp" name="" xpath="" class="" type="" />
+        <Element key="CAConfigure" id="" name="" xpath="" class="" type="" />
+        <Element key="RequestCAConfigure" id="pc_config-Inp" name="" xpath="" class="" type="" />
+        <Element key="ImportCert" id="netInfraSecurity_importCertPrivateKey" name="" xpath="" class="" type="" />
+        <Element key="CertificateNext" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[3]/div/input[2]" class="" type="" />
+        <Element key="ImportFile" id="iPfileLocation" name="" xpath="" class="" type="" />
+        <Element key="PasswordJD" id="tmpId24-Inp" name="" xpath="" class="" type="" />
+        <Element key="Finish" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[3]/div/input[3]" class="" type="" />
+        <Element key="Ok" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/div[2]/div/input" class="" type="" />
+        <Element key="Install_Certificate" id="netInfraSecurity_installCertificate" name="" xpath="" class="" type="" />
+        <Element key="Install_Path" id="iCfileLocation" name="" xpath="" class="" type="" />
+        <Element key="Create_Certificate" id="netInfraSecurity_createCertReq" name="" xpath="" class="" type="" />
+        <Element key="Common_Name" id="tmpId6-Inp" name="" xpath="" class="" type="" />
+        <Element key="Organization" id="tmpId8-Inp" name="" xpath="" class="" type="" />
+        <Element key="Organizational_Unit" id="tmpId10-Inp" name="" xpath="" class="" type="" />
+        <Element key="City" id="tmpId12-Inp" name="" xpath="" class="" type="" />
+        <Element key="State" id="tmpId14-Inp" name="" xpath="" class="" type="" />
+        <Element key="Country" id="tmpId16-Inp" name="" xpath="" class="" type="" />
+        <Element key="Key_Path" id="app-certificates-self-signed-cert-req-result" name="" xpath="" class="" type="" />
+        <Element key="Install" id="Install_File" name="" xpath="" class="" type="" />
+        <Element key="Create_New_Self_Signed_Certificate" id="netInfraSecurity_newSelfSignedCert" name="" xpath="" class="" type="" />
+        <Element key="IntermediateCA" id="Intermediate_CA" name="" xpath="" class="" type="" />
+        <Element key="InstallCA" id="InstallCAcert" name="" xpath="" class="" type="" />
+        <Element key="DeleteCA" id="DeleteCAcert" name="" xpath="" class="" type="" />
+        <Element key="Cancel" id="" name="Cancel" xpath="" class="buttonA" type="submit" />
+        <Element key="Install_Id" id="netInfraSecurity_iCpK" name="netInfraSecurity" xpath="" class="" type="" />
+        <Element key="Id_Certificate_File" id="iPfileLocation" name="certificate" xpath="" class="" type="" />
+        <Element key="Id_Certificate_Password" id="iCpK_entPwd-Inp" name="password" xpath="" class="" type="" />
+        <Element key="Next" id="" name="" xpath="/html/body/div[1]/div[5]/div[2]/div[2]/div[2]/div[1]/input[2]" class="" type="" />
+        <Element key="Save" id="" name="" xpath="/html/body/div[1]/div[5]/div[2]/div[2]/div[2]/div[1]/input[5]" class="" type="" />
+        <Element key="Create_IDRequest" id="netInfraSecurity_cCr" name="netInfraSecurity" xpath="" class="" type="" />
+        <Element key="Export_PrivateKey" id="iC_mark-Inp" name="pkey_exportable" xpath="" class="" type="" />
+        </Elements>
+    </Page>
+    <Page key="Network_Identification" relative_path="#hId-pgHostName">
+      <Elements>
+        <Element key="HostName" id="tmpId3-Inp" name="" xpath="" class="" type="" />
+        <Element key="Apply" id="" name="" xpath="" class="gui-cmd-btn-apply" type="" />
+        <Element key="ConfirmOk" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/div[2]/div/input" class="" type="" />
+        <Element key="ConfirmCancel" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/form/div[2]/div/input[2]" class="" type="" />
+        <Element key="Network_Change_Ok" id="" name="" xpath="/html/body/div[5]/div[2]/button" class="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Date_And_Time" relative_path="#hId-pgDateTime">
+      <Elements>
+        <Element key="DateTime_Advanced" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/form/div/div[2]/div/input" class="" type="" />
+        <Element key="DateFomat_DDMMMYYYY" id="tmpId13-Inp_DDMMMYYYY" name="tmpId13-Inp" xpath="" class="" type="" />
+        <Element key="DateFormat_MMMDDYYYY" id="tmpId13-Inp_MMMDDYYYY" name="tmpId13-Inp" xpath="" class="" type="" />
+        <Element key="DateFormat_YYYYMMMDD" id="tmpId13-Inp_YYYYMMMDD" name="tmpId13-Inp" xpath="" class="" type="" />
+        <Element key="TimeFormat_12Hours" id="tmpId14-Inp_HR12" name="tmpId14-Inp" xpath="" class="" type="" />
+        <Element key="TimeFormat_24Hours" id="tmpId14-Inp_HR24" name="tmpId14-Inp" xpath="" class="" type="" />
+        <Element key="DateTime_SyncComputer" id="btnSync-Inp" name="btnSync-Inp" xpath="" class="" type="button" />
+	      <Element key="DateTime_SyncNetwork" id="tmpId6-Inp" name="" xpath="" class="" type="button" />
+        <Element key="DateTime_SyncOk" id="" name="" xpath="/html/body/div[5]/div[2]/button" class="gui-action-btn" type="button" />
+        <Element key="DateSettings_Apply" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/form/div[2]/div[2]/div/input" class="" type="" />
+        <Element key="DateSettings_Ok" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/div[2]/div/input" class="" type="" />
+        <Element key="CurrentDate" id="tmpId3-Inp" name="" xpath="" class="" type="" />
+        <Element key="Hour" id="tmpId5-HH-Inp" name="" xpath="" class="" type="" />
+        <Element key="Minutes" id="tmpId5-MM-Inp" name="" xpath="" class="" type="" />
+        <Element key="Sconds" id="tmpId5-SS-Inp" name="" xpath="" class="" type="" />
+        <Element key="AMPM" id="tmpId5-ampm-Inp" name="" xpath="" class="" type="" />
+        <Element key="TimeZone" id="timeZone-main" name="" xpath="" class="" type="" />
+        <Element key="AutoAdjustClock" id="tmpId76-Inp" name="" xpath="" class="" type="" />
+        <Element key="Apply" id="" name="" xpath="" class="gui-cmd-btn-apply" type="" />
+        <Element key="Ok" id="" name="" xpath="" class="gui-cmd-btn-ok_btn" type="" />
+        <Element key="CurrentDeviceTime" id="clock" name="" xpath="" class="" type="" />
+      </Elements>
+    </Page>
+    <Page key="International" relative_path="#hId-pgInternational">
+      <Elements>
+        <Element key="Region" id="tmpId2-Inp" name="" xpath="" class="" type="" />
+        <Element key="ControlPanel_Language" id="tmpId3-Inp" name="" xpath="" class="" type="" />
+        <Element key="Ok" id="" name="" xpath="" class="gui-cmd-btn-ok_btn" type="" />
+        <Element key="Use_Browser_Language" id="international-ifield-ews-language-radio-Inp_browser" name="" xpath="" class="" type="" />
+        <Element key="Use_Printer_Language" id="international-ifield-ews-language-radio-Inp_device" name="" xpath="" class="" type="" />
+        <Element key="Select_Language" id="international-ifield-ews-language-radio-Inp_user" name="" xpath="" class="" type="" />
+        <Element key="Language" id="international-ifield-ews-language-user-Inp" name="" xpath="" class="" type="" />
+        <Element key="Apply" id="" name="" xpath="" class="gui-cmd-btn-apply" type="" />
+      </Elements>
+    </Page>
+    <Page key="IPv4_Config" relative_path="#hId-ipv4Page">
+      <Elements>
+        <Element key="DHCP" id="tmpId2-Inp_auto" name="tmpId2-Inp" xpath="" class="" type="radio" />
+        <Element key="BOOTP" id="tmpId2-Inp_bootP" name="" xpath="" class="" type="" />
+        <Element key="AUTO_IP" id="tmpId2-Inp_autoIP" name="" xpath="" class="" type="" />
+        <Element key="Manual_IP" id="tmpId2-Inp_manual" name="tmpId1-Inp" xpath="" class="" type="" />
+        <Element key="IP_0" id="tmpId4-Inp0" name="tmpId3-Inp-name" xpath="" class="" type="text" />
+        <Element key="IP_1" id="tmpId4-Inp1" name="tmpId3-Inp-name" xpath="" class="" type="text" />
+        <Element key="IP_2" id="tmpId4-Inp2" name="tmpId3-Inp-name" xpath="" class="" type="text" />
+        <Element key="IP_3" id="tmpId4-Inp3" name="tmpId3-Inp-name" xpath="" class="" type="text" />
+        <Element key="Subnet_0" id="tmpId6-Inp0" name="tmpId5-Inp-name" xpath="" class="" type="text" />
+        <Element key="Subnet_1" id="tmpId6-Inp1" name="tmpId5-Inp-name" xpath="" class="" type="text" />
+        <Element key="Subnet_2" id="tmpId6-Inp2" name="tmpId5-Inp-name" xpath="" class="" type="text" />
+        <Element key="Subnet_3" id="tmpId6-Inp3" name="tmpId5-Inp-name" xpath="" class="" type="text" />
+        <Element key="Gateway_0" id="tmpId8-Inp0" name="tmpId7-Inp-name" xpath="" class="" type="text" />
+        <Element key="Gateway_1" id="tmpId8-Inp1" name="tmpId7-Inp-name" xpath="" class="" type="text" />
+        <Element key="Gateway_2" id="tmpId8-Inp2" name="tmpId7-Inp-name" xpath="" class="" type="text" />
+        <Element key="Gateway_3" id="tmpId8-Inp3" name="tmpId7-Inp-name" xpath="" class="" type="text" />
+        <Element key="Automatic_DNS_Server" id="tmpId9-Inp_auto" name="net-dns-auto-radio_net-dns-man-radio-Inp" xpath="" class="" type="radio" />
+        <Element key="Manual_DNS_Server" id="tmpId9-Inp_manual" name="net-dns-auto-radio_net-dns-man-radio-Inp" xpath="" class="" type="radio" />
+        <Element key="PreferredDNS_0" id="tmpId19-Inp0" name="tmpId19-Inp-name" xpath="" class="" type="text" />
+        <Element key="PreferredDNS_1" id="tmpId19-Inp1" name="tmpId19-Inp-name" xpath="" class="" type="text" />
+        <Element key="PreferredDNS_2" id="tmpId19-Inp2" name="tmpId19-Inp-name" xpath="" class="" type="text" />
+        <Element key="PreferredDNS_3" id="tmpId19-Inp3" name="tmpId19-Inp-name" xpath="" class="" type="text" />
+        <Element key="AlternateDNS_0" id="tmpId20-Inp0" name="tmpId20-Inp-name" xpath="" class="" type="text" />
+        <Element key="AlternateDNS_1" id="tmpId20-Inp1" name="tmpId20-Inp-name" xpath="" class="" type="text" />
+        <Element key="AlternateDNS_2" id="tmpId20-Inp2" name="tmpId20-Inp-name" xpath="" class="" type="text" />
+        <Element key="AlternateDNS_3" id="tmpId20-Inp3" name="tmpId20-Inp-name" xpath="" class="" type="text" />
+        <Element key="Apply" id="" name="" xpath="" class="gui-cmd-btn-apply" type="" />
+        <Element key="Cancel" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/form/div[2]/div/input[2]" class="" type="" />
+        <Element key="OK" id="" name="" xpath="" class="gui-cmd-btn-ok_btn" type="" />
+        <Element key="" id="" name="" xpath="" class="" type="" />
+        <Element key="" id="" name="" xpath="" class="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Wired_Status" relative_path="#hId-statusPage">
+      <Elements>
+        <Element key="IP_Configuration_Method" id="ip4-Conf-Mtd" name="" xpath="" class="" type="" />
+        <Element key="IPv4_Address" id="ip4-ip" name="" xpath="" class="" type="" />
+        <Element key="Subnet_Mask" id="ip4-Sub-Msk" name="" xpath="" class="" type="" />
+        <Element key="Default_Gateway" id="ip4-Def-GatW" name="" xpath="" class="" type="" />
+        <Element key="HostName" id="ip4-Hn" name="" xpath="" class="" type="" />
+        <Element key="DomainName" id="ip4-domN" name="" xpath="" class="" type="" />
+        <Element key="DNS_IPv4Primary" id="Pref-Dns-Addr" name="" xpath="" class="" type="" />
+        <Element key="DNS_IPv4_Secondary" id="Alt-Dns-Addr" name="" xpath="" class="" type="" />
+        <Element key="DNS_IPv6_Primary" id="Pref-Dns6-Addr" name="" xpath="" class="" type="" />
+        <Element key="DNS_IPv6_Secondary" id="Alt-Dns6-Addr" name="" xpath="" class="" type="" />
+        <Element key="DomainName_IPv6" id="" name="" xpath="" class="" type="" />
+        <!--Wins for setting values-->
+        <Element key="Primary_IPv4" id="" name="" xpath="" class="" type="" />
+        <Element key="Secondary_IPv4" id="" name="" xpath="" class="" type="" />
+        <Element key="Link_Status" id="wd-link-st" name="" xpath="" class="" type="" />
+        <Element key="" id="" name="" xpath="" class="" type="" />
+      </Elements>
+    </Page>
+     <Page key="Wired_Advanced" relative_path="#hId-advancedPage">
+      <Elements>
+        <Element key="Apply" id="" name="" xpath="" class="gui-cmd-btn-apply" type="button" />
+        <Element key="Link_settings" id="tmpId4-Inp" name="" xpath="" class="" type="button" />
+	      <Element key="OK" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/div[2]/div/input" class="" type="button" />
+      </Elements>
+	</Page>
+    <Page key="NetProtocol" relative_path="#hId-pgNetProto">
+      <Elements>
+        <Element key="IPv4" id="tmpId2-Inp_ipv4" name="" xpath="" class="" type="" />
+        <Element key="IPv6" id="tmpId2-Inp_ip" name="" xpath="" class="" type="" />
+        <Element key="IPv4v6" id="tmpId2-Inp_ip" name="" xpath="" class="" type="" />
+
+        <Element key="Apply" id="" name="" xpath="" class="gui-cmd-btn-apply gui-action-btn" type="" />
+      </Elements>
+    </Page>
+    <Page key="FactoryDefaults" relative_path="#hId-pgFactoryDefaults">
+      <Elements>
+        <Element key="RestoreFactoryDefaults" id="" name="" xpath="" class="gui-cmd-btn-factory_defaults" type="" />
+        <Element key="yes" id="" name="" xpath="/html/body/div[5]/div[2]/button" class="" type="" />
+        <Element key="ok" id="" name="" xpath="" class="gui-cmd-btn-ok_btn" type="" />
+
+
+      </Elements>
+    </Page>
+    <Page key="IPsec_Firewall" relative_path="#hId-pgFirewall">
+      <Elements>
+        <Element key="Default_Action_Allow" id="" name="" xpath="" class="gui-cmd-btn-allow_btn" type="" />
+        <Element key="Default_Action_Drop" id="" name="" xpath="" class="gui-cmd-btn-drop_btn" type="" />
+        <Element key="Default_Action_Ok" id="" name="" xpath="" class="gui-cmd-btn-ok_btn" type="" />
+        <Element key="Delete_Rules" id="" name="" xpath="" class="gui-cmd-btn-del_btn" type="" />
+        <Element key="Apply" id="" name="" xpath="" class="gui-cmd-btn-ok_btn" type="" />
+        <Element key="Delete_Rules_Ok" id="" name="" xpath="/html/body/div[5]/div[2]/button" class="" type="" />
+        <Element key="Enable_IPsec_Firewall" id="enableFw-Inp" name="" xpath="" class="" type="" />
+        <Element key="Delete_AllRules" id="" name="rules_tbl_div-Tick" xpath="" class="" type="" />
+
+
+        <Element key="IPSec_Apply" id="AdvApply-Inp" name="" xpath="" class="" type="" />
+        <Element key="Rules_Table" id="rules_tbl_div-Tbl" name="" xpath="" class="" type="" />
+        
+        <Element key="Add_rule" id="" name="" xpath="" class="gui-table-bar" type="" />
+        <Element key="Address_List" id="addrTemp_tbl_div-Tbl" name="" xpath="" class="" type="" />
+        <Element key="Address_Template_New" id="selAddrTemp_Pre_selAddrTemp_New-Inp_New" name="" xpath="" class="" type="" />
+        <Element key="Address_Template_New_Next" id="" name="" xpath="" class="gui-cmd-btn-next_btn" type="" />
+        <Element key="Address_Template_Name" id="addrTempName-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Local_IPAddress" id="locAddr_locIP" name="" xpath="" class="" type="" />
+        <Element key="Address_Local_IPAddress_Value" id="locIPAddr-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Remote_IPAddress" id="remAddr_remIP" name="" xpath="" class="" type="" />
+        <Element key="Address_Remote_IPAddress_Value" id="remIPAddr-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Local_Predefined" id="locAddr_locPredef" name="" xpath="" class="" type="" />
+        <Element key="Address_Local_Predefined_Value" id="locIPPredef-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Remote_Predefined" id="remAddr_remPredef" name="" xpath="" class="" type="" />
+        <Element key="Address_Remote_Predefined_Value" id="remIPPredef-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Local_Range" id="locAddr_locRange" name="" xpath="" class="" type="" />
+        <Element key="Address_Local_FromRange_Value" id="locIPRangeFrom-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Local_ToRange_Value" id="locIPRangeTo-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Remote_Range" id="remAddr_remRange" name="" xpath="" class="" type="" />
+        <Element key="Address_Remote_FromRange_Value" id="remIPRangeFrom-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Remote_ToRange_Value" id="remIPRangeTo-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Local_Prefix" id="locAddr_locPrefix" name="" xpath="" class="" type="" />
+        <Element key="Address_Local_Prefix_Address" id="locIPPrefix-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Local_Prefix_Value" id="locPrefix-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Remote_Prefix" id="remAddr_remPrefix" name="" xpath="" class="" type="" />
+        <Element key="Address_Remote_Prefix_Address" id="remIPPrefix-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Remote_Prefix_Value" id="remPrefix-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Custom_Template_Next" id="" name="" xpath="" class="gui-cmd-btn-next_btn" type="" />
+        <Element key="Address_Template_Ok" id="" name="" xpath="" class="gui-cmd-btn-next_btn" type="" />
+        <Element key="Traffic_Allow" id="act_rd_div-Inp_allow" name="" xpath="" class="" type="" />
+        <Element key="Traffic_Drop" id="act_rd_div-Inp_drop" name="" xpath="" class="" type="" />
+        <Element key="Traffic_Next" id="" name="" xpath="" class="gui-cmd-btn-next_btn" type="" />
+        <Element key="Rule_Save" id="" name="" xpath="" class="gui-cmd-btn-finish_btn" type="" />
+        <Element key="ConfigResult_OK" id="" name="" xpath="" class="gui-cmd-btn-ok_btn" type="" />
+        <Element key="Address_Next" id="" name="" xpath="" class="gui-cmd-btn-next_btn" type="" />
+        <Element key="Address_Template_Table" id="addrTemp_tbl_div-Tbl" name="" xpath="" class="" type="" />
+        <Element key="Service_Template_Table" id="svcTemp_tbl_div-Tbl" name="" xpath="" class="" type="" />
+        <Element key="Address_Template_Radio_button" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div/div[2]/div[2]/div/table/tbody/tr[3]/td/input" class="" type="" />
+        <Element key="Service_Manage_Service" id="crtSvcTemp_New" name="" xpath="" class="" type="" />
+        <Element key="Service_Manage_Service_Next" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div[2]/div/input[2]" class="" type="" />
+        
+        
+       
+        
+     
+        
+        
+        
+        
+        
+        
+        
+        <Element key="Page_Cancel" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div[2]/div/input[5]" class="" type="" />
+        <Element key="Action List" id="" name="action_list" xpath="" class="" type="" />
+        <Element key="dataTable" id="" name="" xpath="" class="dataTable" type="" />
+        <Element key="Enable_1" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div/div/div[6]/div/table/tbody/tr/td/label/input" class="" type="" />
+        <Element key="Enable_2" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div/div/div[6]/div/table/tbody/tr[2]/td/label/input" class="" type="" />
+        <Element key="Enable_3" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div/div/div[6]/div/table/tbody/tr[3]/td/label/input" class="" type="" />
+        <Element key="Enable_4" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div/div/div[6]/div/table/tbody/tr[4]/td/label/input" class="" type="" />
+        <Element key="Enable_5" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div/div/div[6]/div/table/tbody/tr[5]/td/label/input" class="" type="" />
+        <Element key="Enable_6" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div/div/div[6]/div/table/tbody/tr[6]/td/label/input" class="" type="" />
+        <Element key="Enable_7" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div/div/div[6]/div/table/tbody/tr[7]/td/label/input" class="" type="" />
+        <Element key="Enable_8" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div/div/div[6]/div/table/tbody/tr[8]/td/label/input" class="" type="" />
+        <Element key="Enable_9" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div/div/div[6]/div/table/tbody/tr[9]/td/label/input" class="" type="" />
+        <Element key="Enable_10" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div/div/div[6]/div/table/tbody/tr[10]/td/label/input" class="" type="" />
+        <Element key="Add_Rules" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div/div/div[5]/ul/li/a/div" class="" type="" />
+        <Element key="IPaddr_local1" id="IPaddr_local1" name="" xpath="" class="" type="" />
+        
+        <Element key="ipsec_cancel" id="ipsec_cancel" name="ipsec_cancel" xpath="" class="" type="" />
+        
+        <Element key="ipsec_advanced_ok" id="" name="ok" xpath="" class="" type="" />
+        <Element key="ruleDelete_1" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div/div/div[6]/div/table/tbody/tr/td/label/input" class="" type="" />
+        <Element key="ruleDelete_2" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div/div/div[6]/div/table/tbody/tr[2]/td/label/input" class="" type="" />
+        <Element key="ruleDelete_3" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div/div/div[6]/div/table/tbody/tr[3]/td/label/input" class="" type="" />
+        <Element key="ruleDelete_4" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div/div/div[6]/div/table/tbody/tr[4]/td/label/input" class="" type="" />
+        <Element key="ruleDelete_5" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div/div/div[6]/div/table/tbody/tr[5]/td/label/input" class="" type="" />
+        <Element key="ruleDelete_6" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div/div/div[6]/div/table/tbody/tr[6]/td/label/input" class="" type="" />
+        <Element key="ruleDelete_7" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div/div/div[6]/div/table/tbody/tr[7]/td/label/input" class="" type="" />
+        <Element key="ruleDelete_8" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div/div/div[6]/div/table/tbody/tr[8]/td/label/input" class="" type="" />
+        <Element key="ruleDelete_9" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div/div/div[6]/div/table/tbody/tr[9]/td/label/input" class="" type="" />
+        <Element key="ruleDelete_10" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div/div/div[6]/div/table/tbody/tr[10]/td/label/input" class="" type="" />
+        <Element key="Addr_Ok" id="Ok" name="" xpath="" class="" type="" />
+        <Element key="Addr_Cancel" id="" name="Cancel" xpath="" class="" type="" />
+        <Element key="Confirm_Yes" id="" name="yes" xpath="" class="" type="" />
+        <Element key="Addr_Delete" id="Delete" name="" xpath="" class="" type="" />
+        <Element key="IPSecTemp_Next" id="" name="Next" xpath="" class="" type="" />
+        <Element key="IPsecTemplateName" id="IPsecTemplateName" name="" xpath="" class="" type="" />
+        <Element key="Service_New" id="selSvcTemp_Pre_selSvcTemp_New-Inp_New" name="" xpath="" class="" type="" />
+        <Element key="Service_New_Next" id="" name="" xpath="" class="gui-cmd-btn-next_btn" type="" />
+        <Element key="Service_Template_Name" id="svcTempName-Inp" name="" xpath="" class="" type="" />
+        <Element key="Service_Manage_Custom" id="crtSvcTemp_New" name="" xpath="" class="" type="" />
+        <Element key="Service_Manage_Custom_Next" id="" name="" xpath="" class="gui-cmd-btn-next_btn" type="" />
+        <Element key="Custom_Service_Name" id="customSvcName-Inp" name="" xpath="" class="" type="" />
+        <Element key="Custom_Service_Protocol" id="protocol_div-Inp" name="" xpath="" class="" type="" />
+        <Element key="Custom_Service_Type" id="svcType_div-Inp" name="" xpath="" class="" type="" />
+        <Element key="Printer_AnyPort" id="prntPort_all_ports" name="" xpath="" class="" type="" />
+        <Element key="Printer_PortRange" id="prntPort_port_range" name="" xpath="" class="" type="" />
+        <Element key="Printer_Port_FromRange" id="" name="prntPrtRngFrm-Inp" xpath="" class="" type="" />
+        <Element key="Printer_Port_ToRange" id="" name="prntPrtRngTo-Inp" xpath="" class="" type="" />
+        <Element key="Printer_SpecificPort" id="prntPort_single_port" name="" xpath="" class="" type="" />
+        <Element key="Printer_SpecificPort_Value" id="prntPrtSpc-Inp" name="" xpath="" class="" type="" />
+        <Element key="Remote_AnyPort" id="remPort_all_ports" name="" xpath="" class="" type="" />
+        <Element key="Remote_PortRange" id="remPort_port_range" name="" xpath="" class="" type="" />
+        <Element key="Remote_Port_FromRange" id="" name="remPrtRngFrm-Inp" xpath="" class="" type="" />
+        <Element key="Remote_Port_ToRange" id="" name="remPrtRngTo-Inp" xpath="" class="" type="" />
+        <Element key="Remote_SpecificPort" id="remPort_single_port" name="" xpath="" class="" type="" />
+        <Element key="Remote_SpecificPort_Value" id="remPrtSpc-Inp" name="" xpath="" class="" type="" />
+        <Element key="ICMP_Type" id="ICMPMsgRate-Inp" name="" xpath="" class="" type="" />
+        <Element key="Custom_Service_Add" id="" name="" xpath="" class="gui-cmd-btn-next_btn" type="" />
+        <Element key="Custom_Service_Ok" id="" name="" xpath="" class="gui-cmd-btn-next_btn" type="" />
+        <Element key="Service_Manage_Service_Table" id="svcwiz_tbl_div-Tbl" name="" xpath="" class="" type="" />
+        <Element key="Service_Manage_Ok" id="" name="" xpath="" class="gui-cmd-btn-next_btn" type="" />
+        <Element key="Service_Select_Next" id="" name="" xpath="" class="gui-cmd-btn-next_btn" type="" />
+        <Element key="Service_Next" id="" name="" xpath="" class="gui-cmd-btn-next_btn" type="" />
+        <Element key="Select_Srv" id="SelectSrv" name="" xpath="" class="" type="" />
+        <Element key="ServiceTemplate_Cancel" id="Cancel" name="Cancel" xpath="" class="" type="" />
+        <Element key="ManageCustom_Srv" id="MngCusSrv" name="" xpath="" class="" type="" />
+        <Element key="ManageCustomSrv_Ok" id="" name="Ok" xpath="" class="" type="" />
+        <Element key="ManageCustomSrv_Cancel" id="" name="Cancel" xpath="" class="" type="" />
+        <Element key="IPsec_CustServiceName" id="IPsec_CustServiceName" name="" xpath="" class="" type="" />
+        <Element key="IPsec_protocol" id="IPsec_protocol" name="" xpath="" class="" type="" />
+        <Element key="IPsec_service" id="IPsec_service" name="" xpath="" class="" type="" />
+        <Element key="IPsec_sourceports" id="IPsec_sourceports" name="" xpath="" class="" type="" />
+        <Element key="IPsec_localportsrng" id="IPsec_localportsrng" name="" xpath="" class="" type="" />
+        <Element key="IPsec_LocalPortRangeFrom" id="" name="IPsec_LocalPortRangeFrom" xpath="" class="" type="" />
+        <Element key="IPsec_LocalPortRangeTo" id="" name="IPsec_LocalPortRangeTo" xpath="" class="" type="" />
+        <Element key="IPsec_specificports" id="IPsec_specificports" name="" xpath="" class="" type="" />
+        <Element key="LocalSinglePort" id="LocalSinglePort" name="" xpath="" class="" type="" />
+        <Element key="IPsec_remoteallports" id="IPsec_remoteallports" name="" xpath="" class="" type="" />
+        <Element key="IPsec_remoteportsRng" id="IPsec_remoteportsRng" name="" xpath="" class="" type="" />
+        <Element key="IPsec_RemotePortRangeFrom" id="" name="IPsec_RemotePortRangeFrom" xpath="" class="" type="" />
+        <Element key="IPsec_RemotePortRangeTo" id="" name="IPsec_RemotePortRangeTo" xpath="" class="" type="" />
+        <Element key="IPsec_remoteportsS" id="IPsec_remoteportsS" name="" xpath="" class="" type="" />
+        <Element key="RemoteSingPort" id="RemoteSingPort" name="" xpath="" class="" type="" />
+        <Element key="ICMP_MsgType" id="ICMP_MsgType" name="" xpath="" class="" type="" />
+        <Element key="IPsec_Add" id="" name="IPsec_Add" xpath="" class="" type="" />
+        <Element key="ConfigdnewService" id="" name="configdnewService" xpath="" class="" type="" />
+        <Element key="Delete" id="" name="Delete" xpath="" class="" type="" />
+        <Element key="ConfigResult_OK" id="" name="ok" xpath="" class="" type="" />
+        <Element key="CustSrv_Ok" id="" name="Ok" xpath="" class="" type="" />
+        <Element key="CustSrv_Cancel" id="" name="Cancel" xpath="" class="" type="" />
+        <Element key="IPSec_SrvTempOk" id="" name="Ok" xpath="" class="" type="" />
+        <Element key="ManageServiceTable" id="uniqueTableId2" name="" xpath="" class="" type="" />
+        <Element key="MngSrv_Ok" id="Ok" name="" xpath="" class="" type="" />
+        <Element key="MngSrv_Cancel" id="Cancel" name="" xpath="" class="" type="" />
+        <Element key="SrvOk" id="Ok" name="" xpath="" class="" type="" />
+        <Element key="SrvCancel" id="Cancel" name="" xpath="" class="" type="" />
+        <Element key="Delete_Ok" id="Delete_Ok" name="" xpath="" class="" type="" />
+        <Element key="New_IPsecTemplate" id="" name="New" xpath="" class="" type="" />
+        <Element key="Advanced" id="ipsec_advanced" name="" xpath="" class="" type="" />
+        <Element key="Cancel" id="ipsec_cancel" name="" xpath="" class="" type="" />
+        <Element key="Addrlist" id="addrlist" name="" xpath="" class="" type="" />
+        <Element key="IPSecTemp_Next" id="Next" name="Next" xpath="" class="" type="" />
+        <Element key="IPSecSrvTmp_Next" id="" name="Next" xpath="" class="" type="" />
+        <Element key="ServiceTemplates" id="" name="ServiceTemplates" xpath="" class="" type="" />
+        <Element key="ProtectPolicy" id="Protect" name="" xpath="" class="" type="" />
+        <Element key="New" id="New" name="" xpath="" class="" type="" />
+        <Element key="IPsec_Authtype_Internet" id="" name="" xpath=".//*[contains(@id,'IPsec_Authtype') and contains(@value,'IPSIKEV')]" class="" type="" />
+        <Element key="IPsec_Authtype_Manual" id="" name="" xpath=".//*[contains(@id,'IPsec_Authtype') and contains(@value,'IPSMAN')]" class="" type="" />
+        <Element key="IPsecTemplateName" id="IPsecTemplateName" name="" xpath="" class="" type="" />
+        <Element key="IPsec_Authtype" id="IPsec_Authtype" name="" xpath="" class="" type="" />
+        <Element key="Select_Srv" id="SelectSrv" name="" xpath="" class="" type="" />
+        <Element key="ipsecTemplates" id="" name="ipsecTemplates" xpath="" class="" type="" />
+        <Element key="Finish" id="Finish" name="" xpath="" class="" type="" />
+        <Element key="yes" id="" name="yes" xpath="" class="" type="" />
+        <Element key="IP_SEC" id="IP_SEC" name="" xpath="" class="" type="" />
+      </Elements>
+    </Page>
+    <Page key="IPsec_Advanced" relative_path="#hId-advOptPage">
+      <Elements>
+        <Element key="Enable_Failsafe" id="tmpId2-Inp" name="" xpath="" class="" type="" />
+        <Element key="IPSec_Apply" id="" name="" xpath="" class="gui-cmd-btn-apply" type="" />
+        <Element key="Ws_Discovery_Option" id="tmpId10-Inp" name="" xpath="" class="" type="" />
+      </Elements>
+    </Page>
+
+    <Page key="Delete_Template_Page" relative_path="#hId-firewallAddrTempPage">
+      <Elements>
+        <Element key="Delete_Template" id="" name="" xpath="" class="gui-table-bar" type="" />
+        <Element key="Delete_Confirmation" id="" name="" xpath="" class="gui-action-btn" type="" />
+        <Element key="Address_Template_New" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div/div/div/ul/li/a/div" class="" type="" />
+        <Element key="New_Addr" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div/div/div/ul/li/a/div" class="" type="" />
+        <Element key="Delete_Addr" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div/div/div[3]/ul/li[2]/a/div" class="" type="" />
+        <Element key="Address_Template_Name" id="addrTempName-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Tmp_Name" id="addrTempName-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Local_IPAddress" id="locAddr_locIP" name="" xpath="" class="" type="" />
+        <Element key="IPaddr_Local" id="locAddr_locIP" name="" xpath="" class="" type="" />
+        <Element key="Address_Local_IPAddress_Value" id="locIPAddr-Inp" name="" xpath="" class="" type="" />
+        <Element key="IPv4addr_List" id="locIPAddr-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Local_Predefined" id="locAddr_locPredef" name="" xpath="" class="" type="" />
+        <Element key="Predefined_Local" id="locAddr_locPredef" name="" xpath="" class="" type="" />
+        <Element key="Address_Local_Predefined_Value" id="locIPPredef-Inp" name="" xpath="" class="" type="" />
+        <Element key="Addr_Local_Prelist" id="locIPPredef-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Local_Range" id="locAddr_locRange" name="" xpath="" class="" type="" />
+        <Element key="Range_Local" id="locAddr_locRange" name="" xpath="" class="" type="" />
+        <Element key="Address_Local_FromRange_Value" id="locIPRangeFrom-Inp" name="" xpath="" class="" type="" />
+        <Element key="LocalIPAddr_From" id="locIPRangeFrom-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Local_ToRange_Value" id="locIPRangeTo-Inp" name="" xpath="" class="" type="" />
+        <Element key="LocalIPAddr_To" id="locIPRangeTo-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Local_Prefix" id="locAddr_locPrefix" name="" xpath="" class="" type="" />
+        <Element key="Prefix_Local" id="locAddr_locPrefix" name="" xpath="" class="" type="" />
+        <Element key="Address_Local_Prefix_Address" id="locIPPrefix-Inp" name="" xpath="" class="" type="" />
+        <Element key="IPAddrPrefixLocal_From" id="locIPPrefix-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Local_Prefix_Value" id="locPrefix-Inp" name="" xpath="" class="" type="" />
+        <Element key="IPAddrPrefixLocal_To" id="locPrefix-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Remote_IPAddress" id="remAddr_remIP" name="" xpath="" class="" type="" />
+        <Element key="IPaddr_Remote" id="remAddr_remIP" name="" xpath="" class="" type="" />
+        <Element key="Address_Remote_IPAddress_Value" id="remIPAddr-Inp" name="" xpath="" class="" type="" />
+        <Element key="Remote_IPAddr" id="remIPAddr-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Remote_Predefined" id="remAddr_remPredef" name="" xpath="" class="" type="" />
+        <Element key="Predefined_Remote" id="remAddr_remPredef" name="" xpath="" class="" type="" />
+        <Element key="Address_Remote_Predefined_Value" id="remIPPredef-Inp" name="" xpath="" class="" type="" />
+        <Element key="Addr_Remote_Prelist" id="remIPPredef-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Remote_Range" id="remAddr_remRange" name="" xpath="" class="" type="" />
+        <Element key="Range_Remote" id="remAddr_remRange" name="" xpath="" class="" type="" />
+        <Element key="Address_Remote_FromRange_Value" id="remIPRangeFrom-Inp" name="" xpath="" class="" type="" />
+        <Element key="RemoteIPAddr_From" id="remIPRangeFrom-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Remote_ToRange_Value" id="remIPRangeTo-Inp" name="" xpath="" class="" type="" />
+        <Element key="RemoteIPAddr_To" id="remIPRangeTo-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Remote_Prefix" id="remAddr_remPrefix" name="" xpath="" class="" type="" />
+        <Element key="Prefix_Remote" id="remAddr_remPrefix" name="" xpath="" class="" type="" />
+        <Element key="Address_Remote_Prefix_Address" id="remIPPrefix-Inp" name="" xpath="" class="" type="" />
+        <Element key="IPAddrPrefixRemote_From" id="remIPPrefix-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Remote_Prefix_Value" id="remPrefix-Inp" name="" xpath="" class="" type="" />
+        <Element key="IPAddrPrefixRemote_To" id="remPrefix-Inp" name="" xpath="" class="" type="" />
+        <Element key="Address_Template_Ok" id="" name="" xpath="" class="gui-cmd-btn-next_btn" type="" />
+        <Element key="Address_Next" id="" name="" xpath="" class="gui-cmd-btn-finish_btn" type="" />
+        <Element key="Address_Ok" id="" name="" xpath="" class="gui-cmd-btn-ok_btn" type="" /> // newly added
+      </Elements>
+    </Page>
+
+    <Page key="Firewall_Service_Template" relative_path="#hId-firewallSvcTempPage">
+      <Elements>
+        <Element key="Service_List" id="" name="svcTemp_tbl_div-Tbl" xpath="" class="" type="" />
+        <Element key="Service_New" id="" name="" xpath="" class="gui-table-bar" type="" />
+        <Element key="Service_Template_Name" id="svcTempName-Inp" name="" xpath="" class="" type="" />
+        <Element key="Service_Template_Ok" id="" name="" xpath="" class="gui-cmd-btn-next_btn" type="" />
+        <Element key="Service_Manage_Service" id="crtSvcTemp_Predef" name="" xpath="" class="" type="" />
+        <Element key="Service_Manage_Service_Table" id="svcwiz_tbl_div-Tbl" name="" xpath="" class="" type="" />
+        <Element key="Service_Manage_Ok" id="" name="" xpath="" class="gui-cmd-btn-next_btn" type="" />
+        <Element key="Service_Manage_Custom" id="crtSvcTemp_New" name="" xpath="" class="" type="" />
+        <Element key="Custom_Service_Name" id="customSvcName-Inp" name="" xpath="" class="" type="" />
+        <Element key="Custom_Service_Protocol" id="protocol_div-Inp" name="" xpath="" class="" type="" />
+        <Element key="Custom_Service_Type" id="svcType_div-Inp" name="" xpath="" class="" type="" />
+        <Element key="Printer_AnyPort" id="prntPort_all_ports" name="" xpath="" class="" type="" />
+        <Element key="Printer_PortRange" id="prntPort_port_range" name="" xpath="" class="" type="" />
+        <Element key="Printer_Port_FromRange" id="" name="prntPrtRngFrm-Inp" xpath="" class="" type="" />
+        <Element key="Printer_Port_ToRange" id="" name="prntPrtRngTo-Inp" xpath="" class="" type="" />
+        <Element key="Printer_SpecificPort" id="prntPort_single_port" name="" xpath="" class="" type="" />
+        <Element key="Printer_SpecificPort_Value" id="prntPrtSpc-Inp" name="" xpath="" class="" type="" />
+        <Element key="Remote_AnyPort" id="remPort_all_ports" name="" xpath="" class="" type="" />
+        <Element key="Remote_PortRange" id="remPort_port_range" name="" xpath="" class="" type="" />
+        <Element key="Remote_Port_FromRange" id="" name="remPrtRngFrm-Inp" xpath="" class="" type="" />
+        <Element key="Remote_Port_ToRange" id="" name="remPrtRngTo-Inp" xpath="" class="" type="" />
+        <Element key="Remote_SpecificPort" id="remPort_single_port" name="" xpath="" class="" type="" />
+        <Element key="Remote_SpecificPort_Value" id="remPrtSpc-Inp" name="" xpath="" class="" type="" />
+        <Element key="ICMP_Type" id="ICMPMsgRate-Inp" name="" xpath="" class="" type="" />
+        <Element key="Custom_Service_Add" id="" name="" xpath="" class="gui-table-bar" type="" />
+        <Element key="Custom_Service_Delete" id="" name="" xpath="" class="gui-cmd-btn-del_btn" type="" />
+        <Element key="Custom_Service_Table" id="svcTemp_tbl_div-Tbl" name="" xpath="" class="" type="" />
+        <Element key="Custom_Service_Next" id="gui-cmd-btn-next_btn" name="" xpath="" class="" type="" />
+        <Element key="Custom_Service_Ok" id="" name="" xpath="" class="gui-cmd-btn-finish_btn" type="" />
+        <Element key="Service_Next" id="" name="" xpath="" class="gui-cmd-btn-ok_btn" type="" />
+        <Element key="Traffic_Allow" id="act_rd_div-Inp_allow" name="" xpath="" class="" type="" />
+        <Element key="Traffic_Drop" id="act_rd_div-Inp_drop" name="" xpath="" class="" type="" />
+        <Element key="Traffic_Next" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div[2]/div/input[2]" class="" type="" />
+        <Element key="Final_Next" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div[2]/div/input[4]" class="" type="" />
+        <Element key="Finalize_Rule" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/form/div/div[12]/div[2]/div/input" class="" type="" />
+      </Elements>
+    </Page>
+
+ <Page key="Wireless_Config" relative_path="#hId-pgWirelessAdvanced">
+      <Elements>
+        <Element key="WirelessEnable" id="tmpId2-Inp_true" name="tmpId33-Inp" xpath="" class="" type="radio" />
+        <Element key="WirelessDisable" id="tmpId2-Inp_false" name="tmpId33-Inp" xpath="" class="" type="radio" />
+	      <Element key="WirelessNetworkName" id="app-wireless-adv-ssid-Inp" name="" xpath="" class="" type="text" />
+        <Element key="WirelessSecurity_None" id="app-wls-adv-no-auth-rad-field_app-wls-adv-wep-auth-rad-field_app-wls-adv-wpa2-auth-rad-field-Inp_none" name="app-wls-adv-no-auth-rad-field_app-wls-adv-wep-auth-rad-field_app-wls-adv-wpa2-auth-rad-field-Inp" xpath="" class="" type="radio" />
+        <Element key="WirelessSecurity_WEP" id="app-wls-adv-no-auth-rad-field_app-wls-adv-wep-auth-rad-field_app-wls-adv-wpa2-auth-rad-field-Inp_WEP" name="app-wls-adv-no-auth-rad-field_app-wls-adv-wep-auth-rad-field_app-wls-adv-wpa2-auth-rad-field-Inp" xpath="" class="" type="radio" />
+        <Element key="WirelessSecurity_WEPMode" id="app-wls-adv-wep-auth-field-Inp" name="" xpath="" class="" type="select" />
+        <Element key="WirelessSecurity_WEPKey" id="app-wls-adv-wep-key-field-Inp" name="" xpath="" class="" type="" />
+	      <Element key="WirelessSecurity_WEPKey_Confirm" id="app-wls-adv-wep-confirm-key-field-Inp" name="" xpath="" class="" type="" />
+        <Element key="WirelessSecurity_WEPKeyIndex" id="app-wls-adv-wep-index-field-Inp" name="" xpath="" class="" type="" />
+	      <Element key="WirelessSecurity_WPA" id="app-wls-adv-no-auth-rad-field_app-wls-adv-wep-auth-rad-field_app-wls-adv-wpa2-auth-rad-field-Inp_WPA" name="app-wls-adv-no-auth-rad-field_app-wls-adv-wep-auth-rad-field_app-wls-adv-wpa2-auth-rad-field-Inp" xpath="" class="" type="radio" />
+        <Element key="WirelessSecurity_WPAPersonal" id="app-wls-adv-wpa-psk-rad-field_app-wls-adv-wpa-ent-rad-field-Inp_WPA2" name="app-wls-adv-wpa-psk-rad-field_app-wls-adv-wpa-ent-rad-field-Inp" xpath="" class="" type="radio" />
+        <Element key="WirelessSecurity_WPAEnterprise" id="app-wls-adv-wpa-psk-rad-field_app-wls-adv-wpa-ent-rad-field-Inp_WPA2_Enterprise" name="app-wls-adv-wpa-psk-rad-field_app-wls-adv-wpa-ent-rad-field-Inp" xpath="" class="" type="radio" />
+        <Element key="Wireless_WPAPassphrase" id="app-wls-adv-wpa-personal-passwd-field-Inp" name="" xpath="" class="" type="password" />
+        <Element key="Wireless_WPAConfirmPassphrase" id="app-wls-adv-wpa-personal-confirm-passwd-field-Inp" name="" xpath="" class="" type="password" />
+        <Element key="Wireless_WPALEAP" id="app-wls-adv-wpa-ent-leap_app-wls-adv-wpa-ent-peap_app-wls-adv-wpa-ent-eaptls-Inp_LEAP" name="" xpath="" class="" type="checkbox" />
+        <Element key="Wireless_WPAEAPTLS" id="app-wls-adv-wpa-ent-leap_app-wls-adv-wpa-ent-peap_app-wls-adv-wpa-ent-eaptls-Inp_EAP_TLS" name="" xpath="" class="" type="checkbox" />
+        <Element key="Wireless_WPAPEAP" id="app-wls-adv-wpa-ent-leap_app-wls-adv-wpa-ent-peap_app-wls-adv-wpa-ent-eaptls-Inp_PEAP" name="" xpath="" class="" type="checkbox" />
+        <Element key="Wireless_WPAUsername" id="app-wls-adv-wpa-ent-username-field-Inp" name="" xpath="" class="" type="text" />
+        <Element key="Wireless_WPAPassword" id="app-wls-adv-wpa-ent-passwd-field-Inp" name="" xpath="" class="" type="password" />
+        <Element key="Wireless_WPAConfirmPassword" id="app-wls-adv-wpa-ent-confirm-passwd-field-Inp" name="" xpath="" class="" type="password" />
+        <Element key="Wireless_WPAServerId" id="app-wls-adv-wpa-ent-server-id-field-Inp" name="" xpath="" class="" type="text" />
+        <Element key="Wireless_WPAExactMatch" id="app-wls-adv-wpa-ent-serverID-check-field-Inp" name="" xpath="" class="" type="checkbox" />
+        <Element key="Wireless_WPAEncryptionStrength" id="app-wls-adv-wpa-ent-enc-sth-field-Inp" name="" xpath="" class="" type="select" />
+        <Element key="Wireless_Apply" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/div/input[6]" class="" type="submit" />
+        <Element key="Wireless_Cancel" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/div/input[7]" class="" type="submit" />
+        <Element key="Wireless_Ok" id="" name="ok" xpath="" class="gui-cmd-btn-ok_btn" type="submit" />
+      </Elements>
+    </Page>
+    <Page key="Wireless_Config_Ssid" relative_path="#hId-pgWirelessSetup">
+      <Elements>
+        <Element key="begin_next" id="" name="" xpath="" class="gui-cmd-btn-start_btn" type="button" />
+        <Element key="Enter_NW_Name" id="wifiNetwork_Hidden" name="" xpath="" class="" type="button" />
+        <Element key="ssid_name" id="ssid_Name-Inp" name="" xpath="" class="" type="button" />
+        <Element key="ssid_next" id="" name="" xpath="" class="gui-cmd-btn-next_btn" type="button" />
+        <Element key="no_password" id="netInfraCommSecurity_none" name="" xpath="" class="" type="button" />
+        <Element key="final_next" id="" name="" xpath="" class="gui-cmd-btn-next_btn" type="button" />
+        <Element key="finish" id="" name="" xpath="" class="gui-cmd-btn-finish_btn" type="button" />
+      </Elements>
+    </Page>
+    <Page key="Configuration_Page" relative_path="#hId-defaultProfilePage">
+      <Elements />
+    </Page>
+     <Page key="Wireless_SetupWizard" relative_path="#hId-pgWirelessSetup">
+       <Elements>
+         <Element key="WirelessSetup_Next" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/div/input" class="gui-cmd-btn-start_btn" type="button" />
+         <Element key="WirelessSSID_Refresh" id="wirelessRefresh-Inp" name="" xpath="" class="" type="" />
+         <Element key="WirelessSetup_Cancel" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/div/input[8]" class="gui-cmd-btn-cancel_btn" type="" />
+         <Element key="WirelessSSID_Select" id="wifiNetwork_Select" name="" xpath="" class="" type="" />
+         <Element key="Wireless_SSIDList" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div/div[3]/div/div[2]/div/div/div[2]/table" class="" type="" />
+       </Elements>
+    </Page>
+<Page key="WiFiDirect" relative_path="#hId-pgWifiDirect">
+      <Elements>
+        <Element key="EditSettings" id="edit-settings-btn-Inp" name="edit-settings-btn-Inp" xpath="" class="" type="" />
+        <Element key="ConnectionMethod" id="tmpId5-Inp" name="" xpath="" class="" type="" />
+        <Element key="Password" id="wifi-direct-passcode-Inp" name="" xpath="" class="" type="" />
+        <Element key="Apply" id="Apply" name="Apply" xpath="" class="" type="" />
+        <Element key="SSIDName" id="wifi-direct-name-Inp" name="" xpath="" class="" type="" />
+        <Element key="DoNotBroadcast" id="wifi-direct-disable-ssid-broadcast-Inp" name="" xpath="" class="" type="" />
+        <Element key="DoNotShowName" id="wifi-direct-hide-ssid-reports" name="" xpath="" class="" type="" />
+        <Element key="DoNotShowPassword" id="wifi-direct-hide-passcode-reports-Inp" name="" xpath="" class="" type="" />       
+      </Elements>
+    </Page>
+ </Pages>
+</Sitemaps>

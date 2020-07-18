@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <tcx:TestDefinition
+                    xmlns:tcx="http://sherman.americas.hpqcorp.net/topcat/schemas/framework"
+                    xmlns:dib="http://sherman.americas.hpqcorp.net/topcat/schemas/group/dibble"
+                    xmlns:assert="http://sherman.americas.hpqcorp.net/topcat/schemas/libraries/assert"
+		                xmlns:gui="http://sherman.americas.hpqcorp.net/topcat/schemas/tools/gui-automation"
+                    xmlns:vmps="http://sherman.americas.hpqcorp.net/topcat/schemas/tools/vmps"
+                    xmlns:jack="http://sherman.americas.hpqcorp.net/topcat/schemas/components/jackalope"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xmlns:print="http://sherman.americas.hpqcorp.net/topcat/schemas/windows/printing"
+                    xmlns:xsd="http://sherman.americas.hpqcorp.net/topcat/schemas/framework">
+  <tcx:Annotation>
+    <tcx:Description>
+      UI Automation of Printing Configuration
+    </tcx:Description>
+    <tcx:Created tcx:Author="stf" tcx:Date="2014-05-13" />
+    <tcx:LastUpdated tcx:Author="stf" tcx:Date="2014-05-22" />
+  </tcx:Annotation>
+
+  <tcx:Context>
+    <tcx:Properties>
+      <tcx:Property tcx:ID="TopCatPath">
+        <tcx:Value>"C:\VirtualResource\TopCat\x64"</tcx:Value>
+        <tcx:Description>Path for Topcat binaries</tcx:Description>
+      </tcx:Property>
+      <tcx:Property tcx:ID="Copies">
+        <tcx:Value>1</tcx:Value>
+        <tcx:Description>No of Copies</tcx:Description>
+      </tcx:Property>
+      <tcx:Property tcx:ID="PaperSize">
+        <tcx:Value>A4</tcx:Value>
+        <tcx:Description>Specify the paper size</tcx:Description>
+      </tcx:Property>
+      <tcx:Property tcx:ID="PaperSource">
+        <tcx:Value>Tray 1</tcx:Value>
+        <tcx:Description>Specify the Paper source</tcx:Description>
+      </tcx:Property>
+      <tcx:Property tcx:ID="Orientation">
+        <tcx:Value>Portrait</tcx:Value>
+        <tcx:Description>Orientation</tcx:Description>
+      </tcx:Property>
+      <tcx:Property tcx:ID="PaperType">
+        <tcx:Value>Plain</tcx:Value>
+        <tcx:Description>PaperType</tcx:Description>
+      </tcx:Property>
+      <tcx:Property tcx:ID="DuplexValue">
+        <tcx:Value>No</tcx:Value>
+      <tcx:Description>Print on both side options</tcx:Description>
+      </tcx:Property>
+      <tcx:Property tcx:ID="QueueName">
+        <tcx:Value>HP Officejet Pro 276dw MFP (16.185.186.34)</tcx:Value>
+        <tcx:Description>Printer Name</tcx:Description>
+      </tcx:Property>
+	  <tcx:Property tcx:ID="DriverModel">
+        <tcx:Value>HP Universal Printing PCL 6</tcx:Value>
+        <tcx:Description>Printer Driver Model</tcx:Description>
+      </tcx:Property>
+      <tcx:Property tcx:ID="Duplexer">
+        <tcx:Value>Installed</tcx:Value>
+        <tcx:Description>Type</tcx:Description>
+      </tcx:Property>
+    </tcx:Properties>
+
+    <tcx:Dibbles>
+      <tcx:Dibble tcx:ID="gui" tcx:Namespace="http://sherman.americas.hpqcorp.net/topcat/schemas/dibbles/tools/gui-automation">
+        <tcx:Assembly>${TopCatPath}\TopCat.Tools.GUIAutomation.dll</tcx:Assembly>
+      </tcx:Dibble>
+      <tcx:Dibble tcx:ID="assert" tcx:Namespace="http://sherman.americas.hpqcorp.net/topcat/schemas/dibbles/libraries/assert">
+        <tcx:Assembly>${TopCatPath}\TopCat.Libraries.Assert.dll</tcx:Assembly>
+      </tcx:Dibble>
+      <tcx:Dibble tcx:ID="vmps" tcx:Namespace="http://sherman.americas.hpqcorp.net/topcat/schemas/dibbles/tools/vmps">
+        <tcx:Assembly>${TopCatPath}\TopCat.Tools.VMPS.dll</tcx:Assembly>
+      </tcx:Dibble>
+      <tcx:Dibble tcx:ID="jack" tcx:Namespace="http://sherman.americas.hpqcorp.net/topcat/schemas/components/jackalope">
+        <tcx:Assembly>${TopCatPath}\TopCat.Components.Jackalope.dll</tcx:Assembly>
+      </tcx:Dibble>
+      <tcx:Dibble tcx:ID="xsd" tcx:Namespace="http://sherman.americas.hpqcorp.net/topcat/schemas/framework">
+        <tcx:Assembly>${TopCatPath}\TopCat.Tools.GUIAutomation.dll</tcx:Assembly>
+      </tcx:Dibble>
+      <tcx:Dibble tcx:ID="print" tcx:Namespace="http://sherman.americas.hpqcorp.net/topcat/schemas/windows/printing">
+        <tcx:Assembly>${TopCatPath}\TopCat.Windows.Printing.dll</tcx:Assembly>
+      </tcx:Dibble>
+    </tcx:Dibbles>
+
+    <tcx:Imports>
+      <tcx:ConfigurationFile tcx:ID="PrintPref">
+        <tcx:Path>${TestPath}\printPreferences.tcc</tcx:Path>
+      </tcx:ConfigurationFile>
+    </tcx:Imports>
+  </tcx:Context>
+
+  <tcx:Setup>
+
+  </tcx:Setup>
+
+  <tcx:Tests>
+  <tcx:TestCase tcx:ID="Printer_Duplex">
+      <tcx:Annotation>
+        <tcx:Description>
+          Change the duplex type
+        </tcx:Description>
+      </tcx:Annotation>
+      <tcx:Setup>
+        <gui:Highlights.Enable/>
+      </tcx:Setup>
+      <tcx:TestSteps>
+        <print:LaunchPrinterProperties>
+          <print:PrinterName>${QueueName}</print:PrinterName>
+        </print:LaunchPrinterProperties>
+         <!--Sets the duplexer value-->
+        <gui:TabItem.Select gui:ControlID="PrintPref.DeviceSettingsTabItem" gui:Timeout="5"/>
+        <gui:TreeItem.Select gui:ControlID="PrintPref.InstallableOptiTreeItem" gui:Timeout="5"/>
+        <gui:TreeItem.Select gui:ControlID="PrintPref.DuplexUnitfor2STreeItem" gui:Timeout="2" xsd:TreatErrorsAsWarnings="true"/>
+        <gui:TreeItem.Select gui:ControlID="PrintPref.DuplexUnitfor2SNTreeItem" gui:Timeout="2" xsd:TreatErrorsAsWarnings="true"/>
+        <gui:ListItem.Select gui:ControlID="PrintPref.${Duplexer}ListItem" gui:Timeout="5"/>
+        <gui:Button.Click gui:ControlID="PrintPref.OKButton1Button" gui:Timeout="5"/>
+      </tcx:TestSteps>
+    </tcx:TestCase>
+    <tcx:TestCase tcx:ID="Printer_preferences">
+      <tcx:Annotation>
+        <tcx:Description>
+          Change printer preferences
+        </tcx:Description>
+        <tcx:Created tcx:Author="stf" tcx:Date="2014-09-10" />
+        <tcx:LastUpdated tcx:Author="stf" tcx:Date="2014-09-10" />
+      </tcx:Annotation>
+      <tcx:Setup>
+        <gui:Highlights.Enable/>
+      </tcx:Setup>
+      <tcx:TestSteps>
+        <print:LaunchPrintingPreferences>
+        <print:PrinterName>${QueueName}</print:PrinterName>
+        </print:LaunchPrintingPreferences>
+        <gui:Control.WaitForAvailable gui:ControlID="PrintPref.HPOfficejetProXWindow" gui:Timeout="5"/>
+        <gui:TabItem.Select gui:ControlID="PrintPref.PrintingShortcuTabItem" gui:Timeout="5"/>
+        <!--Selects the default printer installed-->
+        <gui:ListItem.Select gui:ControlID="PrintPref.${PaperSize}ListItem" gui:Timeout="5" />
+        <tcx:Sleep tcx:Seconds="2" tcx:Message="Waiting 2 seconds " />
+        <!--Supports upto 10 trays-->
+        <gui:ListItem.Select gui:ControlID="PrintPref.${PaperSource}ListItem" gui:Timeout="5"/>
+        <tcx:Sleep tcx:Seconds="2" tcx:Message="Waiting 2 seconds " />
+        <!--Selects the required paper type-->
+        <gui:ListItem.Select gui:ControlID="PrintPref.${PaperType}ListItem" gui:Timeout="5"/>
+        <tcx:Sleep tcx:Seconds="2" tcx:Message="Waiting 2 seconds " />
+        <!--Selects the required orientation . Supported Orientation/Landscape-->
+        <gui:ListItem.Select gui:ControlID="PrintPref.${Orientation}ListItem" gui:Timeout="5"/>
+        <tcx:Sleep tcx:Seconds="2" tcx:Message="Waiting 2 " />
+        <gui:ListItem.Select gui:ControlID="PrintPref.${DuplexValue}ListItem" gui:Timeout="5"/>
+        <tcx:Sleep tcx:Seconds="2" tcx:Message="Waiting 2 " />
+        
+        <!--Sets the required number of copies-->
+        <gui:TabItem.Select gui:ControlID="PrintPref.AdvancedTabItem" gui:Timeout="5"/>
+        <tcx:Sleep tcx:Seconds="2" tcx:Message="Waiting 2 seconds " />
+        <gui:Spinner.SetValue gui:ControlID="PrintPref.CopyCountmsctlsSpinner" gui:Timeout="5">
+          <gui:Value>${Copies}</gui:Value>
+        </gui:Spinner.SetValue>		
+        <gui:Button.Click gui:ControlID="PrintPref.OKButton1Button" gui:Timeout="5"/>
+        </tcx:TestSteps>
+      <tcx:Cleanup>
+        <gui:Highlights.Disable/>
+      </tcx:Cleanup>
+    </tcx:TestCase>
+    
+  </tcx:Tests>
+
+  <tcx:Cleanup>
+  </tcx:Cleanup>
+
+  <tcx:Publish>
+    <vmps:GatherTestResults>
+      <vmps:ResultsFile>${Environment.Temp}\PrintSettingResults.xml</vmps:ResultsFile>
+    </vmps:GatherTestResults>
+    <vmps:PublishTriageBundle/>
+  </tcx:Publish>
+</tcx:TestDefinition>

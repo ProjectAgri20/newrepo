@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AccessControlConfig_Phoenix_Default" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Contract">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="Parameters" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+			  <xs:element name="uniquePinEnable" type="xs:string" minOccurs="1" maxOccurs="1" />
+			  <xs:element name="printerUniquePin" type="xs:string" minOccurs="1" maxOccurs="1" />
+			  <xs:element name="confirmPrinterUniquePin" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="generalSignInMethod" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="deviceGuestAuthForAll" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="deviceUserAuthForAll" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="copySignInMethod" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="copyDeviceGuestAuth" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="copyDeviceUserAuth" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="scanToEmailSignInMethod" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="scanToEmailDeviceGuestAuth" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="scanToEmailDeviceUserAuth" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="scanToFolderSignInMethod" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="scanToFolderDeviceGuestAuth" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="scanToFolderDeviceUserAuth" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="scanToFlowSignInMethod" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="scanToFlowDeviceGuestAuth" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="scanToFlowDeviceUserAuth" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="sendThumbSignInMethod" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="sendThumbDeviceGuestAuth" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="sendThumbDeviceUserAuth" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="printThumbSignInMethod" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="printThumbDeviceGuestAuth" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="printThumbDeviceUserAuth" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="faxSendSignInMethod" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="faxSendDeviceGuestAuth" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="faxSendDeviceUserAuth" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="appsSignInMethod" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="appsDeviceGuestAuth" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="appsDeviceUserAuth" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="allowAltMethods" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="ldapSignInEnable" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="windowsSignInEnable" type="xs:string" minOccurs="0" maxOccurs="1" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AccessControlConfig_Phoenix_Default" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="1" maxOccurs="1">
+        <xs:element ref="Contract" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

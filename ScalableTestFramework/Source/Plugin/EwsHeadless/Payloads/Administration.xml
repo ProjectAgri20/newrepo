@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Printers FilterType="Administration">
+  
+  <Printer Type="JEDI" SubFilterType="SetPassword" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>  
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>  
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/GeneralSecurity/Save</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>isSet=Falseamp;newPassword={newPassword}amp;verifyPassword={verifyPassword}amp;ServicePin={ServicePin}amp;VerifyServicePin={VerifyServicePin}amp;dssPassword={dssPassword}amp;dssVerifyPassword={dssVerifyPassword}amp;displayPrintPage={displayPrintPage}amp;displayJobLogPage={displayJobLogPage}amp;NewPjlPassword={NewPjlPassword}amp;VerifyNewPjlPassword={VerifyNewPjlPassword}amp;EnableDeviceAccess={EnableDeviceAccess}amp;IsPrintPathEnabled={IsPrintPathEnabled}amp;LegacyEncryptionAlgorithm={LegacyEncryptionAlgorithm}amp;PJLFileSystemAccess={PJLFileSystemAccess}amp;PostScriptFileSystemAccess={PostScriptFileSystemAccess}amp;disableDirectConnect={disableDirectConnect}amp;UsbPortsEnabled={UsbPortsEnabled}amp;FormButtonSubmit=Apply</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="JEDI" SubFilterType="EditRemovePassword" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>  
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>  
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/GeneralSecurity/Save</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>isSet=Trueamp;oldPassword={oldPassword}amp;newPassword={newPassword}amp;verifyPassword={verifyPassword}amp;ServicePin={ServicePin}amp;VerifyServicePin={VerifyServicePin}amp;dssPassword={dssPassword}amp;dssVerifyPassword={dssVerifyPassword}amp;displayPrintPage={displayPrintPage}amp;displayJobLogPage={displayJobLogPage}amp;NewPjlPassword={NewPjlPassword}amp;VerifyNewPjlPassword={VerifyNewPjlPassword}amp;EnableDeviceAccess={EnableDeviceAccess}amp;IsPrintPathEnabled={IsPrintPathEnabled}amp;LegacyEncryptionAlgorithm={LegacyEncryptionAlgorithm}amp;PJLFileSystemAccess={PJLFileSystemAccess}amp;PostScriptFileSystemAccess={PostScriptFileSystemAccess}amp;disableDirectConnect={disableDirectConnect}amp;UsbPortsEnabled={UsbPortsEnabled}amp;FormButtonSubmit=Apply</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="JEDI" SubFilterType="GetInformationPage" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/DeviceStatus/Index</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>GET</Method>
+        <Payload></Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="PHOENIX" SubFilterType="SetEditPassword" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>http://{0}/hp/device/set_config_password.html/config</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>Password={Password}amp;ConfirmPassword={ConfirmPassword}amp;Tab=Systemamp;usbFlashDrive_control={usbFlashDrive_control}amp;scanToEmail_control={scanToEmail_control}amp;scanToFolder_control={scanToFolder_control}amp;scanToFlowCM_control={scanToFlowCM_control}amp;NFC_control={NFC_control}amp;SecurePJL={SecurePJL}amp;Apply=Apply</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+      <Request Order="2" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>http://{0}/hp/device/config_result.html/config</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>Back=OKamp;Menu=PasswdVal</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="PHOENIX" SubFilterType="RemovePassword" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>http://{0}/hp/device/set_config_password.html/config</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>Password={Password}amp;ConfirmPassword={ConfirmPassword}amp;Tab=Systemamp;usbFlashDrive_control={usbFlashDrive_control}amp;scanToEmail_control={scanToEmail_control}amp;scanToFolder_control={scanToFolder_control}amp;scanToFlowCM_control={scanToFlowCM_control}amp;NFC_control={NFC_control}amp;SecurePJL={SecurePJL}amp;Apply=Apply</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+      <Request Order="2" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/config_result_YesNo.html/config</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>Clear=Yesamp;Menu=PasswdClearamp;Configuration=</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="SIRIUS" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/DevMgmt/SecurityDyn.xml</URL>
+        <ViewstateURL></ViewstateURL>
+        <WizardIDURL></WizardIDURL>
+        <HideURL></HideURL>
+        <Method>PUT</Method>
+        <Payload>lt;secdyn:SecurityDyn xmlns:secdyn="http://www.hp.com/schemas/imaging/con/ledm/securitydyn/2008/02/01" xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.hp.com/schemas/imaging/con/ledm/securitydyn/2008/02/01 ../schemas/SecurityDyn.xsd"gt;lt;dd:Passwordgt;{Password}lt;/dd:Passwordgt;lt;/secdyn:SecurityDyngt;</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="JEDI" SubFilterType="">
+    <ModelNames>
+      <ModelName>HP LaserJet M4555 MFP</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>2302908_435006</FirmwareVersion>
+      <FirmwareVersion>2302908_435006</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/GeneralSecurity/Save</URL>
+        <ViewstateURL></ViewstateURL>
+        <WizardIDURL></WizardIDURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>isSet=Trueamp;oldPassword={oldPassword}amp;newPassword={newPassword}amp;verifyPassword={verifyPassword}amp;ServicePin={ServicePin}amp;VerifyServicePin={VerifyServicePin}amp;dssPassword={dssPassword}amp;dssVerifyPassword={dssVerifyPassword}amp;displayPrintPage={displayPrintPage}amp;displayJobLogPage={displayJobLogPage}amp;NewPjlPassword={NewPjlPassword}amp;VerifyNewPjlPassword={VerifyNewPjlPassword}amp;EnableDeviceAccess={EnableDeviceAccess}amp;IsPrintPathEnabled={IsPrintPathEnabled}amp;LegacyEncryptionAlgorithm={LegacyEncryptionAlgorithm}amp;PJLFileSystemAccess={PJLFileSystemAccess}amp;PostScriptFileSystemAccess={PostScriptFileSystemAccess}amp;disableDirectConnect={disableDirectConnect}amp;UsbPortsEnabled={UsbPortsEnabled}amp;FormButtonSubmit=Apply</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="JEDI" SubFilterType="">
+    <ModelNames>
+      <ModelName>HP LaserJet M4555 MFP</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>2302908_435006</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/GeneralSecurity/Save</URL>
+        <ViewstateURL></ViewstateURL>
+        <WizardIDURL></WizardIDURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>isSet=Trueamp;oldPassword={oldPassword}amp;newPassword={newPassword}amp;verifyPassword={verifyPassword}amp;ServicePin={ServicePin}amp;VerifyServicePin={VerifyServicePin}amp;dssPassword={dssPassword}amp;dssVerifyPassword={dssVerifyPassword}amp;displayPrintPage={displayPrintPage}amp;displayJobLogPage={displayJobLogPage}amp;NewPjlPassword={NewPjlPassword}amp;VerifyNewPjlPassword={NewPjlPassword}amp;EnableDeviceAccess={EnableDeviceAccess}amp;IsPrintPathEnabled={IsPrintPathEnabled}amp;LegacyEncryptionAlgorithm={LegacyEncryptionAlgorithm}amp;PJLFileSystemAccess={PJLFileSystemAccess}amp;PostScriptFileSystemAccess={PostScriptFileSystemAccess}amp;disableDirectConnect={disableDirectConnect}amp;UsbPortsEnabled={UsbPortsEnabled}amp;FormButtonSubmit=Apply</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="PHOENIX"  SubFilterType="RemovePassword">
+    <ModelNames>
+      <ModelName>HP LaserJet 500 colorMFP M570dw</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>20130717_0848</FirmwareVersion>
+      <FirmwareVersion>20150204_0518</FirmwareVersion>
+      <FirmwareVersion>20140205_0550</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>http://{0}/hp/device/set_config_password.html/config</URL>
+        <ViewstateURL></ViewstateURL>
+        <WizardIDURL></WizardIDURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>Password={Password}amp;ConfirmPassword={ConfirmPassword}amp;Tab=Systemamp;usbFlashDrive_control={usbFlashDrive_control}amp;scanToEmail_control={scanToEmail_control}amp;scanToFolder_control={scanToFolder_control}amp;scanToFlowCM_control={scanToFlowCM_control}amp;NFC_control={NFC_control}amp;SignatureCheck=PromptIfInvalidamp;Apply=Applyamp;invalidEntry=Entry+is+invalid.amp;entriesDoNotMatch=The+values+typed+in+the+Password+and+Confirm+Password+fields+do+not+match.</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+      <Request Order="2" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/config_result_YesNo.html/config</URL>
+        <ViewstateURL></ViewstateURL>
+        <WizardIDURL></WizardIDURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>Clear=Yesamp;Menu=PasswdClearamp;Configuration=</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="SIRIUS"  SubFilterType="">
+    <ModelNames>
+      <ModelName>HP Officejet Pro X476dw MFP</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>LWM1CA1224ER</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/DevMgmt/SecurityDyn.xml</URL>
+        <ViewstateURL></ViewstateURL>
+        <WizardIDURL></WizardIDURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>lt;secdyn:SecurityDyn xmlns:secdyn="http://www.hp.com/schemas/imaging/con/ledm/securitydyn/2008/02/01" xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.hp.com/schemas/imaging/con/ledm/securitydyn/2008/02/01 ../schemas/SecurityDyn.xsd"gt;lt;dd:Passwordgt;{Password}lt;/dd:Passwordgt;lt;/secdyn:SecurityDyngt;</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="OMNI" SubFilterType="EditRemovePassword" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>  
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>  
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/GeneralSecurity/Save</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Default item="displayPrintPage">on</Default>
+        <Default item="displayJobLogPage">on</Default>
+        <Default item="EnableDeviceAccess">on</Default>
+        <Default item="IsPrintPathEnabled">on</Default>
+        <Default item="LegacyEncryptionAlgorithm">on</Default>
+        <Default item="PJLFileSystemAccess">on</Default>
+        <Default item="PostScriptFileSystemAccess">on</Default>
+        <Default item="UsbPortsEnabled">on</Default>
+        <Payload>isSet=Trueamp;oldPassword={oldPassword}amp;newPassword={newPassword}amp;verifyPassword={verifyPassword}amp;ServicePin={ServicePin}amp;VerifyServicePin={VerifyServicePin}amp;dssPassword={dssPassword}amp;dssVerifyPassword={dssVerifyPassword}amp;displayPrintPage={displayPrintPage}amp;displayJobLogPage={displayJobLogPage}amp;defaultSessionTimeout=30amp;NewPjlPassword={NewPjlPassword}amp;VerifyNewPjlPassword={VerifyNewPjlPassword}amp;EnableDeviceAccess={EnableDeviceAccess}amp;IsPrintPathEnabled={IsPrintPathEnabled}amp;LegacyEncryptionAlgorithm={LegacyEncryptionAlgorithm}amp;PJLFileSystemAccess={PJLFileSystemAccess}amp;PostScriptFileSystemAccess={PostScriptFileSystemAccess}amp;UsbPortsEnabled={UsbPortsEnabled}amp;FormButtonSubmit=Apply</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Cache-Control</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+<Printer Type="OMNI" SubFilterType="SetPassword" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>  
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>  
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/GeneralSecurity/Save</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Default item="displayPrintPage">on</Default>
+        <Default item="displayJobLogPage">on</Default>
+        <Default item="EnableDeviceAccess">on</Default>
+        <Default item="IsPrintPathEnabled">on</Default>
+        <Default item="LegacyEncryptionAlgorithm">on</Default>
+        <Default item="PJLFileSystemAccess">on</Default>
+        <Default item="PostScriptFileSystemAccess">on</Default>
+        <Default item="UsbPortsEnabled">on</Default>
+        <Payload>isSet=Falseamp;newPassword={newPassword}amp;verifyPassword={verifyPassword}amp;ServicePin={ServicePin}amp;VerifyServicePin={VerifyServicePin}amp;dssPassword={dssPassword}amp;dssVerifyPassword={dssVerifyPassword}amp;displayPrintPage={displayPrintPage}amp;displayJobLogPage={displayJobLogPage}amp;defaultSessionTimeout=30amp;NewPjlPassword={NewPjlPassword}amp;VerifyNewPjlPassword={VerifyNewPjlPassword}amp;EnableDeviceAccess={EnableDeviceAccess}amp;IsPrintPathEnabled={IsPrintPathEnabled}amp;LegacyEncryptionAlgorithm={LegacyEncryptionAlgorithm}amp;PJLFileSystemAccess={PJLFileSystemAccess}amp;PostScriptFileSystemAccess={PostScriptFileSystemAccess}amp;UsbPortsEnabled={UsbPortsEnabled}amp;FormButtonSubmit=Apply</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+</Printers>

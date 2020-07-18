@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{50114C79-5288-4645-944A-C53C2621EDBB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SDKPluginDevelopment</RootNamespace>
+    <AssemblyName>SDKPluginDevelopment</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DeviceAutomation-2.1, Version=2.1.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ScalableTestFramework\External Assemblies\DeviceAutomation-2.1.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CriticalSectionMockInternal.cs" />
+    <Compile Include="DataLoggerMockInternal.cs" />
+    <Compile Include="FileRepositoryMockInternal.cs" />
+    <Compile Include="InternalFrameworkSimulator.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SessionRuntimeMockInternal.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\Development\STF.Development.csproj">
+      <Project>{326d6885-a412-46a2-b50d-de2c11943e01}</Project>
+      <Name>STF.Development</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\DeviceAutomation\STF.DeviceAutomation.csproj">
+      <Project>{8FA37AF9-F2B8-4E72-BFF7-580491A62832}</Project>
+      <Name>STF.DeviceAutomation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\FrameworkInternal\STF.FrameworkInternal.csproj">
+      <Project>{1d38c759-e5f6-4603-bbbc-566f1276aba2}</Project>
+      <Name>STF.FrameworkInternal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\Framework\STF.Framework.csproj">
+      <Project>{b91dcc51-8664-49e3-97d0-6fcfd2918a1a}</Project>
+      <Name>STF.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\Plugin\DirtyDevice\Plugin.DirtyDevice.csproj">
+      <Project>{0210c95b-bfe8-4719-a9b0-3f2e5088d215}</Project>
+      <Name>Plugin.DirtyDevice</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\STFCore\Source\Data\AssetInventory.Library\STF.AssetInventory.Library.csproj">
+      <Project>{FF46E958-61AB-45FC-A983-C76CAACD5467}</Project>
+      <Name>STF.AssetInventory.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\STFCore\Source\Data\AssetInventory.Model\STF.AssetInventory.Model.csproj">
+      <Project>{c188ce04-49b1-4d18-89ff-fe0cfffd1191}</Project>
+      <Name>STF.AssetInventory.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\STFCore\Source\Framework\FrameworkCommon.Library\STF.FrameworkCommon.Library.csproj">
+      <Project>{4a72b792-4c4e-4217-befc-8f128917f836}</Project>
+      <Name>STF.FrameworkCommon.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\STFCore\Source\Framework\STF.PluginFrameworkServices\STF.PluginFrameworkServices.csproj">
+      <Project>{77fdbbf6-f0b1-4351-b218-ffb8b7c0a06e}</Project>
+      <Name>STF.PluginFrameworkServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\Plugin\Authentication\Plugin.Authentication.csproj">
+      <Project>{2332e74c-ca61-4f64-9723-2fe33762c62b}</Project>
+      <Name>Plugin.Authentication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\Plugin\EquitracPullPrinting\Plugin.EquitracPullPrinting.csproj">
+      <Project>{5f82609a-3929-4f14-98a7-0be19215759c}</Project>
+      <Name>Plugin.EquitracPullPrinting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\Plugin\HpacPullPrinting\Plugin.HpacPullPrinting.csproj">
+      <Project>{7cc60e59-971d-4c5b-ac88-c7eabdf25e86}</Project>
+      <Name>Plugin.HpacPullPrinting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\Plugin\Hpec\Plugin.Hpec.csproj">
+      <Project>{5730a096-ef31-474d-a690-e9f550a4033e}</Project>
+      <Name>Plugin.Hpec</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\Plugin\mPrint\Plugin.mPrint.csproj">
+      <Project>{413fe861-9cd2-486b-ab07-2edb73f9b738}</Project>
+      <Name>Plugin.mPrint</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\Plugin\ScanToHpcr\Plugin.ScanToHpcr.csproj">
+      <Project>{1087df3e-dcb2-4dcf-b978-bfd7b37fbf6d}</Project>
+      <Name>Plugin.ScanToHpcr</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\Plugin\SafeComPullPrinting\Plugin.SafeComPullPrinting.csproj">
+      <Project>{a3778434-217c-47e0-80b5-066f0d42b386}</Project>
+      <Name>Plugin.SafeComPullPrinting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\Plugin\ScanToEmail\Plugin.ScanToEmail.csproj">
+      <Project>{f98991ab-31f4-439a-ba8c-5c99698bec23}</Project>
+      <Name>Plugin.ScanToEmail</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\Plugin\ScanToFolder\Plugin.ScanToFolder.csproj">
+      <Project>{e42def72-9d11-43fc-b5e9-f1e89357a6dc}</Project>
+      <Name>Plugin.ScanToFolder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\Plugin\ScanToWorkflow\Plugin.ScanToWorkflow.csproj">
+      <Project>{5c959dc1-e4d8-4a1d-8420-9929d8fb724a}</Project>
+      <Name>Plugin.ScanToWorkflow</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

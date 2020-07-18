@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Printers FilterType="SignIn">
+  <Printer Type="JEDI" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/SignIn/Index</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>agentIdSelect=hp_EmbeddedPin_v1amp;DomainDropDown=amp;UserNameTextBox=amp;PinDropDown=AdminItemamp;PasswordTextBox={Password}amp;signInOk=Sign+In</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="JEDI" SubFilterType="">
+    <ModelNames>
+      <ModelName>HP LaserJet 700 color MFP M775</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>2357492_473170</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/SignIn/Index</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>agentIdSelect=hp_EmbeddedPin_v1amp;DomainDropDown=amp;UserNameTextBox=amp;PinDropDown=AdminItemamp;PasswordTextBox={Password}amp;signInOk=Sign+In</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="JEDI" SubFilterType="">
+    <ModelNames>
+      <ModelName>HP LaserJet 700 color MFP M775</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>2307781_551206</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/SignIn/Index</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>agentIdSelect=hp_EmbeddedPin_v1amp;DomainDropDown=amp;UserNameTextBox=amp;PinDropDown=AdminItemamp;PasswordTextBox={Password}amp;signInOk=Sign+In</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="JEDI" SubFilterType="">
+    <ModelNames>
+      <ModelName>HP LaserJet M4555 MFP</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>2302908_435006</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/SignIn/Index</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>UserNameTextBox=adminamp;PinTextBox={Password}amp;signInOk=OKamp;agentId=hp_EmbeddedPin_v1</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+</Printers>
+
+
+

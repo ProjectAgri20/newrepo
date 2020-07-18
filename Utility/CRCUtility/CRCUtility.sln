@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaperlessUtilGui", "CRCUtilGui\PaperlessUtilGui.csproj", "{4F75CF43-4748-4EDC-856E-AAFEA5511922}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaperlessUtil", "CRCUtil\PaperlessUtil.csproj", "{F28E0D82-26EE-41AB-A4C5-C3088C97C3CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug (Code Analysis + XML Doc)|Any CPU = Debug (Code Analysis + XML Doc)|Any CPU
+		Debug (Code Analysis + XML Doc)|x86 = Debug (Code Analysis + XML Doc)|x86
+		Debug (XML Doc)|Any CPU = Debug (XML Doc)|Any CPU
+		Debug (XML Doc)|x86 = Debug (XML Doc)|x86
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F75CF43-4748-4EDC-856E-AAFEA5511922}.Debug (Code Analysis + XML Doc)|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F75CF43-4748-4EDC-856E-AAFEA5511922}.Debug (Code Analysis + XML Doc)|Any CPU.Build.0 = Debug|Any CPU
+		{4F75CF43-4748-4EDC-856E-AAFEA5511922}.Debug (Code Analysis + XML Doc)|x86.ActiveCfg = Debug|Any CPU
+		{4F75CF43-4748-4EDC-856E-AAFEA5511922}.Debug (Code Analysis + XML Doc)|x86.Build.0 = Debug|Any CPU
+		{4F75CF43-4748-4EDC-856E-AAFEA5511922}.Debug (XML Doc)|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F75CF43-4748-4EDC-856E-AAFEA5511922}.Debug (XML Doc)|Any CPU.Build.0 = Debug|Any CPU
+		{4F75CF43-4748-4EDC-856E-AAFEA5511922}.Debug (XML Doc)|x86.ActiveCfg = Debug|Any CPU
+		{4F75CF43-4748-4EDC-856E-AAFEA5511922}.Debug (XML Doc)|x86.Build.0 = Debug|Any CPU
+		{4F75CF43-4748-4EDC-856E-AAFEA5511922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F75CF43-4748-4EDC-856E-AAFEA5511922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F75CF43-4748-4EDC-856E-AAFEA5511922}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4F75CF43-4748-4EDC-856E-AAFEA5511922}.Debug|x86.Build.0 = Debug|Any CPU
+		{4F75CF43-4748-4EDC-856E-AAFEA5511922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F75CF43-4748-4EDC-856E-AAFEA5511922}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F75CF43-4748-4EDC-856E-AAFEA5511922}.Release|x86.ActiveCfg = Release|Any CPU
+		{4F75CF43-4748-4EDC-856E-AAFEA5511922}.Release|x86.Build.0 = Release|Any CPU
+		{F28E0D82-26EE-41AB-A4C5-C3088C97C3CA}.Debug (Code Analysis + XML Doc)|Any CPU.ActiveCfg = Debug|Any CPU
+		{F28E0D82-26EE-41AB-A4C5-C3088C97C3CA}.Debug (Code Analysis + XML Doc)|Any CPU.Build.0 = Debug|Any CPU
+		{F28E0D82-26EE-41AB-A4C5-C3088C97C3CA}.Debug (Code Analysis + XML Doc)|x86.ActiveCfg = Debug|Any CPU
+		{F28E0D82-26EE-41AB-A4C5-C3088C97C3CA}.Debug (Code Analysis + XML Doc)|x86.Build.0 = Debug|Any CPU
+		{F28E0D82-26EE-41AB-A4C5-C3088C97C3CA}.Debug (XML Doc)|Any CPU.ActiveCfg = Debug|Any CPU
+		{F28E0D82-26EE-41AB-A4C5-C3088C97C3CA}.Debug (XML Doc)|Any CPU.Build.0 = Debug|Any CPU
+		{F28E0D82-26EE-41AB-A4C5-C3088C97C3CA}.Debug (XML Doc)|x86.ActiveCfg = Debug|Any CPU
+		{F28E0D82-26EE-41AB-A4C5-C3088C97C3CA}.Debug (XML Doc)|x86.Build.0 = Debug|Any CPU
+		{F28E0D82-26EE-41AB-A4C5-C3088C97C3CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F28E0D82-26EE-41AB-A4C5-C3088C97C3CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F28E0D82-26EE-41AB-A4C5-C3088C97C3CA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F28E0D82-26EE-41AB-A4C5-C3088C97C3CA}.Debug|x86.Build.0 = Debug|Any CPU
+		{F28E0D82-26EE-41AB-A4C5-C3088C97C3CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F28E0D82-26EE-41AB-A4C5-C3088C97C3CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F28E0D82-26EE-41AB-A4C5-C3088C97C3CA}.Release|x86.ActiveCfg = Release|Any CPU
+		{F28E0D82-26EE-41AB-A4C5-C3088C97C3CA}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

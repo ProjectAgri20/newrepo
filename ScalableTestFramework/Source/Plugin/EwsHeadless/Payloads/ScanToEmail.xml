@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Printers FilterType="ScanToEmail">
+
+  <Printer Type="SIRIUS" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/DevMgmt/Email/CommonEmailServerDyn.xml</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>PUT</Method>
+        <Payload>lt;emaildyn:CommonEmailServerDyn xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/" xmlns:dd3="http://www.hp.com/schemas/imaging/con/dictionaries/2009/04/06" xmlns:dsd="http://www.hp.com/schemas/imaging/con/digitalsending/2009/02/11" xmlns:dsd2="http://www.hp.com/schemas/imaging/con/digitalsending/2010/11/22" xmlns:emaildyn="http://www.hp.com/schemas/imaging/con/ledm/emailservicedyn/2010/11/22" xmlns:security="http://www.hp.com/schemas/imaging/con/security/2009/02/11"gt;lt;dd:Versiongt;lt;dd:Revisiongt;1.0lt;/dd:Revisiongt;lt;/dd:Versiongt;lt;dsd2:SMTPServerSettingsgt;lt;dd3:NetworkIDgt;{NetworkID}lt;/dd3:NetworkIDgt;lt;dd:Portgt;{Port}lt;/dd:Portgt;lt;dd:MaxAttachmentSizegt;{MaxAttachmentSize}lt;/dd:MaxAttachmentSizegt;lt;dd:ServerRequiresAuthenticationgt;{ServerRequiresAuthentication}lt;/dd:ServerRequiresAuthenticationgt;lt;security:AuthenticationSettingsgt;lt;security:CredentialTypegt;{CredentialType}lt;/security:CredentialTypegt;lt;security:SimpleAuthenticationSettingsgt;lt;dd:UserNamegt;{UserName}lt;/dd:UserNamegt;lt;dd:Passwordgt;{Password}lt;/dd:Passwordgt;lt;/security:SimpleAuthenticationSettingsgt;lt;/security:AuthenticationSettingsgt;lt;dd:UseSSLgt;{UseSSL}lt;/dd:UseSSLgt;lt;/dsd2:SMTPServerSettingsgt;lt;emaildyn:EnableCertificateValidationgt;{EnableCertificateValidation}lt;/emaildyn:EnableCertificateValidationgt;lt;/emaildyn:CommonEmailServerDyngt;</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+      <Request Order="2" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/DevMgmt/Email/ScanToEmailDyn.xml</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>PUT</Method>
+        <Payload>lt;emaildyn:ScanToEmailDyn xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/" xmlns:dd3="http://www.hp.com/schemas/imaging/con/dictionaries/2009/04/06" xmlns:dsd="http://www.hp.com/schemas/imaging/con/digitalsending/2009/02/11" xmlns:dsd2="http://www.hp.com/schemas/imaging/con/digitalsending/2010/11/22" xmlns:emaildyn="http://www.hp.com/schemas/imaging/con/ledm/emailservicedyn/2010/11/22" xmlns:security="http://www.hp.com/schemas/imaging/con/security/2009/02/11"gt;lt;emaildyn:UseSignedInUserAsSendergt;{UseSignedInUserAsSender}lt;/emaildyn:UseSignedInUserAsSendergt;lt;emaildyn:EmailCopygt;{EmailCopy}lt;/emaildyn:EmailCopygt;lt;/emaildyn:ScanToEmailDyngt;</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="SIRIUS" SubFilterType="DefaultFrom" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/DevMgmt/Email/CommonEmailServerDyn.xml</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>PUT</Method>
+        <Payload>lt;emaildyn:CommonEmailServerDyn xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/" xmlns:dd3="http://www.hp.com/schemas/imaging/con/dictionaries/2009/04/06" xmlns:dsd="http://www.hp.com/schemas/imaging/con/digitalsending/2009/02/11" xmlns:dsd2="http://www.hp.com/schemas/imaging/con/digitalsending/2010/11/22" xmlns:emaildyn="http://www.hp.com/schemas/imaging/con/ledm/emailservicedyn/2010/11/22" xmlns:security="http://www.hp.com/schemas/imaging/con/security/2009/02/11"gt;lt;dd:Versiongt;lt;dd:Revisiongt;1.0lt;/dd:Revisiongt;lt;/dd:Versiongt;lt;dsd2:SMTPServerSettingsgt;lt;dd3:NetworkIDgt;{NetworkID}lt;/dd3:NetworkIDgt;lt;dd:Portgt;{Port}lt;/dd:Portgt;lt;dd:MaxAttachmentSizegt;{MaxAttachmentSize}lt;/dd:MaxAttachmentSizegt;lt;dd:ServerRequiresAuthenticationgt;{ServerRequiresAuthentication}lt;/dd:ServerRequiresAuthenticationgt;lt;security:AuthenticationSettingsgt;lt;security:CredentialTypegt;{CredentialType}lt;/security:CredentialTypegt;lt;security:SimpleAuthenticationSettingsgt;lt;dd:UserNamegt;{UserName}lt;/dd:UserNamegt;lt;dd:Passwordgt;{Password}lt;/dd:Passwordgt;lt;/security:SimpleAuthenticationSettingsgt;lt;/security:AuthenticationSettingsgt;lt;dd:UseSSLgt;{UseSSL}lt;/dd:UseSSLgt;lt;/dsd2:SMTPServerSettingsgt;lt;emaildyn:EnableCertificateValidationgt;{EnableCertificateValidation}lt;/emaildyn:EnableCertificateValidationgt;lt;/emaildyn:CommonEmailServerDyngt;</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+      <Request Order="2" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/DevMgmt/Email/ScanToEmailDyn.xml</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>PUT</Method>
+        <Payload>lt;emaildyn:ScanToEmailDyn xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/" xmlns:dd3="http://www.hp.com/schemas/imaging/con/dictionaries/2009/04/06" xmlns:dsd="http://www.hp.com/schemas/imaging/con/digitalsending/2009/02/11" xmlns:dsd2="http://www.hp.com/schemas/imaging/con/digitalsending/2010/11/22" xmlns:emaildyn="http://www.hp.com/schemas/imaging/con/ledm/emailservicedyn/2010/11/22" xmlns:security="http://www.hp.com/schemas/imaging/con/security/2009/02/11"gt;lt;emaildyn:FromAddressgt;lt;dd:EmailAddressgt;{EmailAddress}lt;/dd:EmailAddressgt;lt;dd:DisplayNamegt;{DisplayName}lt;/dd:DisplayNamegt;lt;/emaildyn:FromAddressgt;lt;/emaildyn:ScanToEmailDyngt;</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="OMNI" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/Send/Save</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Default item="NumberOfPagesForEachFile">1</Default>
+        <Default item="ColorPreference">1</Default>
+        <Default item="OutputQuality">1</Default>
+        <Default item="Resolution">2</Default>
+        <Default item="ColorTiffCompression">4</Default>
+        <Default item="BlackTiffCompression">0</Default>
+        <Default item="FileType">0</Default>
+        <Default item="FileNumberFormat">0</Default>
+        <Default item="FileName">[Untitled]</Default>
+        <Default item="SameWidthAllEdgesBack">0.00</Default>
+        <Default item="EraseBackRight">0.00</Default>
+        <Default item="EraseBackLeft">0.00</Default>
+        <Default item="EraseBackBottom">0.00</Default>
+        <Default item="EraseBackTop">0.00</Default>
+        <Default item="BackSide">diff</Default>
+        <Default item="SameWidthAllEdgesFront">0.00</Default>
+        <Default item="EraseFrontRight">0.00</Default>
+        <Default item="EraseFrontLeft">0.00</Default>
+        <Default item="EraseFrontTop">0.00</Default>
+        <Default item="EraseFrontBottom">0.00</Default>
+        <Default item="FrontSide">diff</Default>
+        <Default item="AutoCrop">0</Default>
+        <Default item="ImagePreviewConfiguration">2</Default>
+        <Default item="Sharpness">2</Default>
+        <Default item="Contrast">4</Default>
+        <Default item="Darkness">4</Default>
+        <Default item="BackgroundRemoval">2</Default>
+        <Default item="ContentOrientation">1</Default>
+        <Default item="TextPicture">2</Default>
+        <Default item="OriginalSides">0</Default>
+        <Default item="NotificationMethod">Email</Default>
+        <Default item="ConditionNotify">Never</Default>
+        <Payload>EmailEnabled=onamp;FormHasChanges=yesamp;FilterUsage=SendToEmailamp;QuickSetStartOption=Trueamp;AddressFieldRestrictions=Falseamp;UseSignedInUserAsSender=Falseamp;FromEditable=onamp;EmailFromAddress={EmailFromAddress}amp;EmailFromDisplayName={EmailFromDisplayName}amp;EmailToAddress={EmailToAddress}amp;ToEditable=on amp;CcAddress={CcAddress}amp;CcEditable={CcEditable}amp;BccAddress={BccAddress}amp;BccEditable={BccEditable}amp;EmailSubject={EmailSubject}amp;SubjectEditable={SubjectEditable}amp;EmailBody={EmailBody}amp;BodyEditable={BodyEditable}amp;EmailSigningEnabled={EmailSigningEnabled}amp;HashAlgorithm=2amp;EmailEncryptionEnabled=Falseamp;EncryptionAlgorithm={EncryptionAlgorithm}amp;UserCertificateAttributeId=userCertificateamp;CheckRecipientNameInCertificate=onamp;ConditionNotify={ConditionNotify}amp;NotificationMethod={NotificationMethod}amp;EmailAddress={EmailAddress}amp;EmailAddressEditable={EmailAddressEditable}amp;OriginalSize={OriginalSize}amp;OriginalSides={OriginalSides}amp;TextPicture={TextPicture}amp;ContentOrientation={ContentOrientation}amp;BackgroundRemoval={BackgroundRemoval}amp;Darkness={Darkness}amp;Contrast={Contrast}amp;Sharpness={Sharpness}amp;ImagePreviewConfiguration={ImagePreviewConfiguration}amp;AutoCrop={AutoCrop}amp;EraseUseInches=onamp;FrontSide={FrontSide}amp;EraseFrontTop={EraseFrontTop}amp;EraseFrontBottom={EraseFrontBottom}amp;EraseFrontLeft={EraseFrontLeft}amp;EraseFrontRight={EraseFrontRight}amp;SameWidthAllEdgesFront={SameWidthAllEdgesFront}amp;BackSide={BackSide}amp;EraseBackTop={EraseBackTop}amp;EraseBackBottom={EraseBackBottom}amp;EraseBackLeft={EraseBackLeft}amp;EraseBackRight={EraseBackRight}amp;SameWidthAllEdgesBack={SameWidthAllEdgesBack}amp;FileNamePrefix={FileNamePrefix}amp;FileName={FileName}amp;FileNameUserEditable={FileNameUserEditable}amp;FileNameSuffix={FileNameSuffix}amp;FileNumberFormat={FileNumberFormat}amp;FileType={FileType}amp;FileTypeEditable=onamp;BlackTiffCompression={BlackTiffCompression}amp;ColorTiffCompression={ColorTiffCompression}amp;Resolution={Resolution}amp;OutputQuality={OutputQuality}amp;ColorPreference={ColorPreference}amp;NumberOfPagesForEachFile={NumberOfPagesForEachFile}amp;FormButtonSubmit=Apply</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Language</HeaderName>
+            <HeaderValue>en-US</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="3">
+            <HeaderName>Cache-Control</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+</Printers>
+
+
+

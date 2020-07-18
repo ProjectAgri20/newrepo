@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SiteMapDataSet" targetNamespace="http://tempuri.org/SiteMapDataSet.xsd" xmlns:mstns="http://tempuri.org/SiteMapDataSet.xsd" xmlns="http://tempuri.org/SiteMapDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SiteMapDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SiteMapDataSet" msprop:Generator_UserDSName="SiteMapDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SiteMaps" msprop:Generator_TableClassName="SiteMapsDataTable" msprop:Generator_TableVarName="tableSiteMaps" msprop:Generator_TablePropName="SiteMaps" msprop:Generator_RowDeletingName="SiteMapsRowDeleting" msprop:Generator_RowChangingName="SiteMapsRowChanging" msprop:Generator_RowEvHandlerName="SiteMapsRowChangeEventHandler" msprop:Generator_RowDeletedName="SiteMapsRowDeleted" msprop:Generator_UserTableName="SiteMaps" msprop:Generator_RowChangedName="SiteMapsRowChanged" msprop:Generator_RowEvArgName="SiteMapsRowChangeEvent" msprop:Generator_RowClassName="SiteMapsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Key" msprop:Generator_ColumnVarNameInTable="columnKey" msprop:Generator_ColumnPropNameInRow="Key" msprop:Generator_ColumnPropNameInTable="KeyColumn" msprop:Generator_UserColumnName="Key" type="xs:string" minOccurs="0" />
+              <xs:element name="ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="XPath" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="XPath" msprop:Generator_ColumnVarNameInTable="columnXPath" msprop:Generator_ColumnPropNameInTable="XPathColumn" msprop:Generator_UserColumnName="XPath" type="xs:string" minOccurs="0" />
+              <xs:element name="Class" msprop:Generator_ColumnVarNameInTable="columnClass" msprop:Generator_ColumnPropNameInRow="Class" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="ClassColumn" msprop:Generator_UserColumnName="Class" type="xs:string" minOccurs="0" />
+              <xs:element name="Type" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Keys" msprop:Generator_TableClassName="KeysDataTable" msprop:Generator_TableVarName="tableKeys" msprop:Generator_RowChangedName="KeysRowChanged" msprop:Generator_TablePropName="Keys" msprop:Generator_RowDeletingName="KeysRowDeleting" msprop:Generator_RowChangingName="KeysRowChanging" msprop:Generator_RowEvHandlerName="KeysRowChangeEventHandler" msprop:Generator_RowDeletedName="KeysRowDeleted" msprop:Generator_RowClassName="KeysRow" msprop:Generator_UserTableName="Keys" msprop:Generator_RowEvArgName="KeysRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Key1" msprop:Generator_ColumnVarNameInTable="columnKey1" msprop:Generator_ColumnPropNameInRow="Key1" msprop:Generator_ColumnPropNameInTable="Key1Column" msprop:Generator_UserColumnName="Key1" type="xs:string" minOccurs="0" />
+              <xs:element name="Key2" msprop:Generator_ColumnVarNameInTable="columnKey2" msprop:Generator_ColumnPropNameInRow="Key2" msprop:Generator_ColumnPropNameInTable="Key2Column" msprop:Generator_UserColumnName="Key2" type="xs:string" minOccurs="0" />
+              <xs:element name="Key3" msprop:Generator_ColumnVarNameInTable="columnKey3" msprop:Generator_ColumnPropNameInRow="Key3" msprop:Generator_ColumnPropNameInTable="Key3Column" msprop:Generator_UserColumnName="Key3" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

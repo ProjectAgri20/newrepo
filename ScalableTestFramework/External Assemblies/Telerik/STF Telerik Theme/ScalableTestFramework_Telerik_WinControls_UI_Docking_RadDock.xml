@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ScalableTestFramework" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="DefaultFont">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="White" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemFillNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemFillHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemFillSelected">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem.Selected">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemFillSelected">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem.Selected.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemFillSelected">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem.Selected.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemBorderSelected">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabItemBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemBorderNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabItemBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="5353Padding">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="5353Padding">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlClassSelector ElementClass="SplitContainerFill" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemBorderSelected">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem.Selected">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabItemBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CollapsedBorder">
+            <Selectors>
+              <XmlClassSelector ElementClass="SplitContainerBorder" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemFillNormal,TabItemBorderNormal,RoundRectShape2,BlackText,Padding(4;2;4;2)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemFillSelected,TabItemBorderSelected,RoundRectShape2,BlackText,Padding(4;2;4;2)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripItem.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemFillHover,TabItemBorderMouseOver">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripItem.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemFillSelected,TabItemBorderSelected">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripItem.Selected.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.Docking.AutoHideTabStripElement.AutoHidePopupOffset" Value="0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AutoHideTabStripElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.Docking.AutoHideTabStripElement.AutoHidePopupOffset" Value="3" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AutoHideTabStripElement.LeftAlign" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.Docking.AutoHideTabStripElement.AutoHidePopupOffset" Value="0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AutoHideTabStripElement.RightAlign" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.Docking.AutoHideTabStripElement.AutoHidePopupOffset" Value="0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AutoHideTabStripElement.BottomAlign" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.Docking.RadDock" ElementType="Telerik.WinControls.RootRadElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

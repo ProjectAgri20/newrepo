@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{62F8FFA6-CE56-472D-94B2-E59EAC57C68F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HP.SolutionTest</RootNamespace>
+    <AssemblyName>StbInstaller</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="log4net">
+      <Version>2.0.8</Version>
+    </PackageReference>
+    <Reference Include="System" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Install\DatabaseScripts.cs" />
+    <Compile Include="Install\EmbeddedResource.cs" />
+    <Compile Include="Install\InstallerBase.cs" />
+    <Compile Include="Install\SchemaTicket.cs" />
+    <Compile Include="Install\SharedDrive.cs" />
+    <Compile Include="Install\SqlTextAdapter.cs" />
+    <Compile Include="Install\SqlUpdateScript.cs" />
+    <Compile Include="Install\SystemTrace.cs" />
+    <Compile Include="Install\MainInstallerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install\MainInstallerForm.Designer.cs">
+      <DependentUpon>MainInstallerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install\MainInstaller.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Install\ProgressState.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Install\ProgressEventArgs.cs" />
+    <Compile Include="Install\StatusEventArgs.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install\MainInstallerForm.resx">
+      <DependentUpon>MainInstallerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileShare\Content\TestLibrary\Documents\Excel\SimpleExcel.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileShare\Content\TestLibrary\Documents\PowerPoint\SimplePowerPoint.pptx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileShare\Content\TestLibrary\Documents\Word\SimpleWord.docx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileShare\Content\Reports\ActivityDetails.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileShare\Content\Reports\DeviceMemoryReport.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileShare\Content\Reports\ACT Digital Scan Summary.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileShare\Content\Reports\ACT Pull Print Summary.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SqlExpressInstallation\SQLEXPR_CONFIGURATION.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\3.16\AssetInventory.sql">
+      <Link>DatabaseUpdates\v3.16\AssetInventory.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\3.16\DataLog.sql">
+      <Link>DatabaseUpdates\v3.16\DataLog.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\3.16\EnterpriseTest.sql">
+      <Link>DatabaseUpdates\v3.16\EnterpriseTest.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\3.17\AssetInventory.sql">
+      <Link>DatabaseUpdates\v3.17\AssetInventory.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\3.17\DataLog.sql">
+      <Link>DatabaseUpdates\v3.17\DataLog.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\3.17\EnterpriseTest.sql">
+      <Link>DatabaseUpdates\v3.17\EnterpriseTest.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.0\EnterpriseTest.sql">
+      <Link>DatabaseUpdates\v4.00\EnterpriseTest.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.0\DataLog.sql">
+      <Link>DatabaseUpdates\v4.00\DataLog.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.2\DataLog.sql">
+      <Link>DatabaseUpdates\v4.02\DataLog.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.2\EnterpriseTest.sql">
+      <Link>DatabaseUpdates\v4.02\EnterpriseTest.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.3\AssetInventory.sql">
+      <Link>DatabaseUpdates\v4.03\AssetInventory.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.3\DataLog.sql">
+      <Link>DatabaseUpdates\v4.03\DataLog.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.3\EnterpriseTest.sql">
+      <Link>DatabaseUpdates\v4.03\EnterpriseTest.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.1\DataLog.sql">
+      <Link>DatabaseUpdates\v4.01\DataLog.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.4\AssetInventory.sql">
+      <Link>DatabaseUpdates\v4.04\AssetInventory.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.4\DataLog.sql">
+      <Link>DatabaseUpdates\v4.04\DataLog.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.4\EnterpriseTest.sql">
+      <Link>DatabaseUpdates\v4.04\EnterpriseTest.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.5\EnterpriseTest.sql">
+      <Link>DatabaseUpdates\v4.05\EnterpriseTest.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.5\DataLog.sql">
+      <Link>DatabaseUpdates\v4.05\DataLog.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.6\DataLog.sql">
+      <Link>DatabaseUpdates\v4.06\DataLog.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.6\EnterpriseTest.sql">
+      <Link>DatabaseUpdates\v4.06\EnterpriseTest.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.7\DataLog.sql">
+      <Link>DatabaseUpdates\v4.07\DataLog.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.8\DataLog.sql">
+      <Link>DatabaseUpdates\v4.08\DataLog.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.8\EnterpriseTest.sql">
+      <Link>DatabaseUpdates\v4.08\EnterpriseTest.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.9\AssetInventory.sql">
+      <Link>DatabaseUpdates\v4.09\AssetInventory.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.9\DataLog.sql">
+      <Link>DatabaseUpdates\v4.09\DataLog.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.10\AssetInventory.sql">
+      <Link>DatabaseUpdates\v4.10\AssetInventory.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.10\DataLog.sql">
+      <Link>DatabaseUpdates\v4.10\DataLog.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.11\DataLog.sql">
+      <Link>DatabaseUpdates\v4.11\DataLog.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.11\EnterpriseTest.sql">
+      <Link>DatabaseUpdates\v4.11\EnterpriseTest.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.12\DataLog.sql">
+      <Link>DatabaseUpdates\v4.12\DataLog.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.12\EnterpriseTest.sql">
+      <Link>DatabaseUpdates\v4.12\EnterpriseTest.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.12\AssetInventory.sql">
+      <Link>DatabaseUpdates\v4.12\AssetInventory.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.13\EnterpriseTest.sql">
+      <Link>DatabaseUpdates\v4.13\EnterpriseTest.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.13\AssetInventory.sql">
+      <Link>DatabaseUpdates\v4.13\AssetInventory.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.13\DataLog.sql">
+      <Link>DatabaseUpdates\v4.13\DataLog.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.13\DocumentLibrary.sql">
+      <Link>DatabaseUpdates\v4.13\DocumentLibrary.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.14\AssetInventory.sql">
+      <Link>DatabaseUpdates\v4.14\AssetInventory.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.14\DataLog.sql">
+      <Link>DatabaseUpdates\v4.14\DataLog.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.14\DocumentLibrary.sql">
+      <Link>DatabaseUpdates\v4.14\DocumentLibrary.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.14\EnterpriseTest.sql">
+      <Link>DatabaseUpdates\v4.14\EnterpriseTest.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.15\AssetInventory.sql">
+      <Link>DatabaseUpdates\v4.15\AssetInventory.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.15\DocumentLibrary.sql">
+      <Link>DatabaseUpdates\v4.15\DocumentLibrary.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.15\EnterpriseTest.sql">
+      <Link>DatabaseUpdates\v4.15\EnterpriseTest.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.15\DataLog.sql">
+      <Link>DatabaseUpdates\v4.15\DataLog.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.16\AssetInventory.sql">
+      <Link>DatabaseUpdates\v4.16\AssetInventory.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.16\DataLog.sql">
+      <Link>DatabaseUpdates\v4.16\DataLog.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.17\AssetInventory.sql">
+      <Link>DatabaseUpdates\v4.17\AssetInventory.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.17\DataLog.sql">
+      <Link>DatabaseUpdates\v4.17\DataLog.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.17\DocumentLibrary.sql">
+      <Link>DatabaseUpdates\v4.17\DocumentLibrary.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.17\EnterpriseTest.sql">
+      <Link>DatabaseUpdates\v4.17\EnterpriseTest.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.18.0\DataLog.sql">
+      <Link>DatabaseUpdates\v4.18.0\DataLog.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.19.0\DataLog.sql">
+      <Link>DatabaseUpdates\v4.19.0\DataLog.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.19.0\EnterpriseTest.sql">
+      <Link>DatabaseUpdates\v4.19.0\EnterpriseTest.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.18.1\DataLog.sql">
+      <Link>DatabaseUpdates\v4.18.1\DataLog.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.19.1\DataLog.sql">
+      <Link>DatabaseUpdates\v4.19.1\DataLog.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.19.3\AssetInventory.sql">
+      <Link>DatabaseUpdates\v4.19.3\AssetInventory.sql</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\STFCore\Databases\Updates\4.20.0\AssetInventory.sql">
+      <Link>DatabaseUpdates\v4.20.0\AssetInventory.sql</Link>
+    </EmbeddedResource>
+    <Content Include="DatabaseUpdates\Readme.txt" />
+    <EmbeddedResource Include="FileShare\Content\TestLibrary\Documents\Text\SimpleText.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Content Include="FileShare\Readme.txt" />
+    <Content Include="stbblogo.ico" />
+    <EmbeddedResource Include="DatabaseCreation\SchemaVersion.txt" />
+    <Content Include="DatabaseCreation\Readme.txt" />
+    <EmbeddedResource Include="DatabaseCreation\create_SchemaAssetInventory.sql" />
+    <EmbeddedResource Include="DatabaseCreation\create_DatabaseInstances.sql" />
+    <EmbeddedResource Include="DatabaseCreation\create_DatabaseUsers.sql" />
+    <EmbeddedResource Include="DatabaseCreation\create_SchemaEnterpriseTest.sql" />
+    <EmbeddedResource Include="DatabaseCreation\create_SchemaScalableTestDatalog.sql" />
+    <EmbeddedResource Include="DatabaseCreation\create_SchemaTestDocumentLibrary.sql" />
+    <EmbeddedResource Include="DatabaseCreation\ins_BaseConfigurationData.sql" />
+    <EmbeddedResource Include="DatabaseCreation\ins_SchemaVersion.sql" />
+    <EmbeddedResource Include="FileShare\FolderList.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\Core\AssetInventory\STF.Core.AssetInventory.csproj">
+      <Project>{b84feab0-3c8d-4934-bd59-d3948c0595f1}</Project>
+      <Name>STF.Core.AssetInventory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\Core\Configuration\STF.Core.Configuration.csproj">
+      <Project>{5C0FB620-0AC0-4F06-97D6-0EE90818E92F}</Project>
+      <Name>STF.Core.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\Core\DocumentLibrary\STF.Core.DocumentLibrary.csproj">
+      <Project>{270D101E-EFDB-4B57-883C-47937FE76F5D}</Project>
+      <Name>STF.Core.DocumentLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\Core\Root\STF.Core.csproj">
+      <Project>{1B4E6157-55BA-4F35-B73F-9A7E8FAAB8D1}</Project>
+      <Name>STF.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\Framework\STF.Framework.csproj">
+      <Project>{b91dcc51-8664-49e3-97d0-6fcfd2918a1a}</Project>
+      <Name>STF.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ScalableTestFramework\Source\Utility\STF.Utility.csproj">
+      <Project>{0a02ea9d-11d5-4078-9036-385709cb365a}</Project>
+      <Name>STF.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\STFCore\Source\Data\EnterpriseTest.Library\STF.EnterpriseTest.Library.csproj">
+      <Project>{4fd3aad9-f8a4-46cb-9c8e-4165fe64674c}</Project>
+      <Name>STF.EnterpriseTest.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\STFCore\Source\Data\EnterpriseTestModel\STF.EnterpriseTest.Model.csproj">
+      <Project>{975c43d5-c1c6-4a45-82d4-1abdc6805c05}</Project>
+      <Name>STF.EnterpriseTest.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\STFCore\Source\Framework\FrameworkCommon.Library\STF.FrameworkCommon.Library.csproj">
+      <Project>{4a72b792-4c4e-4217-befc-8f128917f836}</Project>
+      <Name>STF.FrameworkCommon.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\STFCore\Source\Framework\STF.FrameworkCore.Library\STF.FrameworkCore.Library.csproj">
+      <Project>{0c83cb1e-3fc2-4e07-bab3-532a5be53a38}</Project>
+      <Name>STF.FrameworkCore.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\STFCore\Source\UI\FrameworkControls.Library\STF.FrameworkControls.csproj">
+      <Project>{e2574f75-2943-4138-aa2e-d270447655a8}</Project>
+      <Name>STF.FrameworkControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\STFCore\Source\UI\ScenarioConfiguration.Library\STF.ScenarioConfiguration.Library.csproj">
+      <Project>{97c22a18-16d4-49da-ac1a-487fb0c7818f}</Project>
+      <Name>STF.ScenarioConfiguration.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FileShare\Content\External\" />
+    <Folder Include="FileShare\Content\TestLibrary\Documents\Image\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>if exist "$(TargetPath).locked" del "$(TargetPath).locked"
+if exist "$(TargetPath)" if not exist "$(TargetPath).locked" move "$(TargetPath)" "$(TargetPath).locked"</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

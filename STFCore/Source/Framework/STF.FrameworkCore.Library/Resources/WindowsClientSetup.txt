@@ -1,0 +1,21 @@
+:: This script will be executed to start Windows client VMs.
+:: Each line in this script must be a complete command (no multi-line statements).
+:: They will be joined into a single command using the && operator
+:: and executed on the remote VM.
+:: Lines beginning with "::" will be ignored.
+
+:: Two String.Format parameters are required:
+:: {0}: The machine name of the dispatcher
+:: {1}: The session ID
+
+:: Make sure there is nothing in the virtual resource directory
+:: (Parentheses needed to prevent the whole statement from falling into the if statement)
+(if exist C:\VirtualResource rmdir C:\VirtualResource /S /Q)
+
+:: Copy down the distribution ({0} is the dispatcher)
+mkdir C:\VirtualResource\Deployment
+xcopy /S /Y \\{0}\VirtualResource\Deployment C:\VirtualResource\Deployment
+
+:: Start up the client factory ({0} is the dispatcher, {1} is the 
+cd C:\VirtualResource\Deployment
+StartClient.cmd {0} {1}

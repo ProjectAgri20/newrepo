@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ScalableTestFramework" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="RoundRectTopLeftRight5,Windows7Font8.25AndForeColor">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="White" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarFillNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBar.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TitleFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarFillInactive">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBar">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TitleFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CloseButtonImageNormal">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="6, 3, 6, 3" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 0, 5, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CloseButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CollapsedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBar">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TitleBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockCloseButtonFillNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CloseButton.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CloseButtonImageNormal">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="6, 3, 6, 3" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 0, 5, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CloseButton.IsFormActive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CloseButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CloseButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonBorderNormalFormActive">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CloseButton.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CollapsedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBar.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TitleBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockCloseButtonFillNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CloseButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CloseButton.MouseOver.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="FormCloseButtonActivePressedlFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CloseButton.MouseDown.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="FormOuterBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadFormElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadFormBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="FormOuterBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadFormElement.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadFormBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="201, 207, 214" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadFormElement.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadFormImageBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="201, 207, 214" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadFormElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadFormImageBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 5, 0, 5" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBar">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TitleCaption" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 5, 0, 5" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBar.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TitleCaption" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CloseButtonImageNormal,8383Padding,RoundRectShapeAll2,0380Margin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CloseButtonImageNormal,8383Padding,RoundRectShapeAll2,0380Margin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.FormNormal.IsFormActive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.MouseOver.FormNormal.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.MouseDown.FormNormal.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.FormNormal.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.FormNormal.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.MouseOver.FormNormal.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TitleBarCloseButton.MouseDown.FormNormal.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectTopLeftRight5">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadFormElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectTopLeftRight5">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadFormElement.IsFormActive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.Docking.FloatingWindow" ElementType="Telerik.WinControls.RootRadElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

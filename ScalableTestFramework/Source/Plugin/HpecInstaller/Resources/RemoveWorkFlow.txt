@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TaskList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>RemoveECWorkflow</Name>
+  <Tasks>
+    <Task name="Check if a Bundle is installed" assembly="Hp.NSE.FDT" classname="Hp.NSE.FDT.JediTasks.CheckIfBundleIsInstalled">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>JEDI</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="SolutionName">HPEC</Parameter>
+        <Parameter id="BundleVersion">{0}</Parameter>
+        <Parameter id="BundleSimulator">false</Parameter>
+        <Parameter id="FailIfBundleNotInstalled">true</Parameter>
+        <Parameter id="FailIfBundleInstalled">false</Parameter>
+        <Parameter id="LegacySolutionNames">NSE-Jedi</Parameter>
+        <Parameter id="OldestVersionCompatible">1.2.0</Parameter>
+        <Parameter id="FailIfApiNotResponding">true</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Check if HPEC jar is installed" assembly="Hp.NSE.FDT" classname="Hp.NSE.FDT.OZTasks.CheckIfJarIsInstalled">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>OZ</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="JarURN">urn:hp:MFPScan</Parameter>
+        <Parameter id="JarVersion">{0}</Parameter>
+        <Parameter id="FailIfJarIsNotInstalled">true</Parameter>
+        <Parameter id="FailIfJarIsInstalled">false</Parameter>
+        <Parameter id="OldestVersionCompatible">1.2.0</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Delete all HP Embedded Capture Items" assembly="Hp.NSE.FDT" classname="Hp.NSE.FDT.JediTasks.DeleteGraph">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>JEDI</PrinterFamily>
+      </Platforms>
+      <Parameters />
+    </Task>
+    <Task name="Update HP Embedded Capture Button on Future Smart" assembly="Hp.NSE.FDT" classname="Hp.NSE.FDT.OZTasks.UpdateButton">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>JEDI</PrinterFamily>
+      </Platforms>
+      <Parameters />
+    </Task>
+    <Task name="Delete HP Embedded Capture Jobs" assembly="Hp.NSE.FDT" classname="Hp.NSE.FDT.OZTasks.DeleteJob">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>OZ</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="FailIfNSENotInstalled">true</Parameter>
+        <Parameter id="JobId">0</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Update HP Embedded Capture Button" assembly="Hp.NSE.FDT" classname="Hp.NSE.FDT.OZTasks.UpdateButton">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>OZ</PrinterFamily>
+      </Platforms>
+      <Parameters />
+    </Task>
+  </Tasks>
+</TaskList>

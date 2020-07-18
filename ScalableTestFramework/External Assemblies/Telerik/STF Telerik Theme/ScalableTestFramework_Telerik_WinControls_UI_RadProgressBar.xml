@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ScalableTestFramework" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="ProgressBarVertictalFill,ProgressBarBorder,Padding(0;0;0;0)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadProgressBarElement.IsVertical" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ProgressBarHorizontalFill,ProgressBarBorder,Padding(0;0;0;0)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadProgressBarElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ProgressBarIndicator1HorizontalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="UpperProgressIndicatorElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ProgressBarIndicator1VerticalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="UpperProgressIndicatorElement.IsVertical" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ProgressBarIndicator2VerticalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ProgressIndicatorElement.IsVertical" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ProgressBarIndicator2HorizontalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ProgressIndicatorElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DefaultFont,DefaultForeColor">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.ProgressBarTextElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2,ProgressBarVertictalFill,ProgressBarBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ProgressBarElement.IsVertical" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2,ProgressBarHorizontalFill,ProgressBarBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ProgressBarElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadProgressBar" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadProgressBarElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

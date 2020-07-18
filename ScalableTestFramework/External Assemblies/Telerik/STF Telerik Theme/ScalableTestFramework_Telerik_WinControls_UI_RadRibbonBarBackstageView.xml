@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ScalableTestFramework" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,BackstageHeaderFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="0, 3" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageViewHeader" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="BackstageViewBorder,RoundRectShape3">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderGradientStyle" Value="Solid" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageViewElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="BackstageItemsPanelBorder,BackstageItemsPanelFill,TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageItemsPanelElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="BackstageButtonItemFill,BackstageButtonItemBorder,Margin(6;1;6;1)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageButtonItem.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShape2,TransparentFill,Margin(6;1;6;1),SegoeUI9ptBlack,TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageButtonItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Margin(0;1;0;0),TransparentFill,TransparentBorder,SegoeUI10ptBlack">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageTabItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="BackstageTabItemHoverFill,TransparentBorder,TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageTabItem.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SegoeUI10ptBlack,BackstageTabItemSelectedFill,Margin(0;1;0;0),TransparentBorder,TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageTabItem.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="BackstageItemsPanelBorderRTL,TransparentFill,BackstageItemsPanelFillRTL">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageItemsPanelElement.RightToLeft" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SegoeUI10ptBlack,Margin(0;1;0;0),TransparentBorder,TransparentFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageTabItem.RightToLeft" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="BackstageTabItemHoverFillRTL,TransparentBorder,TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageTabItem.MouseOver.RightToLeft" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="BackstageTabItemHoverFill,TransparentBorder,TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageTabItem.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="BackstageTabItemSelectedFillRTL,SegoeUI10ptBlack,Margin(0;1;0;0),TransparentBorder,TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageTabItem.RightToLeft.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="BackstageTabItemHoverFillRTL,TransparentBorder,TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageTabItem.MouseDown.RightToLeft" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="BackstageContentAreaFill,TransparentFill,WhiteBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageContentPanelElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="BackstageContentAreaFillRTL,WhiteBorder,TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageContentPanelElement.RightToLeft" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShape3,BackstageViewBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageViewElement.RightToLeft" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,BackstageHeaderFillRTL">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="0, 3" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageViewHeader.RightToLeft" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadRibbonBarBackstageView" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.BackstageViewElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadRibbonBarBackstageViewElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

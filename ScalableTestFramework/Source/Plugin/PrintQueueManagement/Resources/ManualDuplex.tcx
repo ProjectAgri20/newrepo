@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <tcx:TestDefinition
+                    xmlns:tcx="http://sherman.americas.hpqcorp.net/topcat/schemas/framework"
+                    xmlns:dib="http://sherman.americas.hpqcorp.net/topcat/schemas/group/dibble"
+                    xmlns:assert="http://sherman.americas.hpqcorp.net/topcat/schemas/libraries/assert"
+		                xmlns:gui="http://sherman.americas.hpqcorp.net/topcat/schemas/tools/gui-automation"
+                    xmlns:vmps="http://sherman.americas.hpqcorp.net/topcat/schemas/tools/vmps"
+                    xmlns:jack="http://sherman.americas.hpqcorp.net/topcat/schemas/components/jackalope"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xmlns:print="http://sherman.americas.hpqcorp.net/topcat/schemas/windows/printing"
+                    xmlns:xsd="http://sherman.americas.hpqcorp.net/topcat/schemas/framework">
+  <tcx:Annotation>
+    <tcx:Description>
+      Printing Configuration (Duplex)
+    </tcx:Description>
+    <tcx:Created tcx:Author="stf" tcx:Date="2014-05-13" />
+    <tcx:LastUpdated tcx:Author="stf" tcx:Date="2014-05-22" />
+  </tcx:Annotation>
+
+  <tcx:Context>
+    <tcx:Properties>
+      <tcx:Property tcx:ID="TopCatPath">
+        <tcx:Value>"C:\VirtualResource\TopCat\x64"</tcx:Value>
+        <tcx:Description>Path for Topcat binaries</tcx:Description>
+      </tcx:Property>
+      <tcx:Property tcx:ID="QueueName">
+        <tcx:Value>HP Officejet Pro 276dw MFP (16.185.186.34)</tcx:Value>
+        <tcx:Description>Printer Name</tcx:Description>
+      </tcx:Property>
+    </tcx:Properties>
+
+    <tcx:Dibbles>
+      <tcx:Dibble tcx:ID="gui" tcx:Namespace="http://sherman.americas.hpqcorp.net/topcat/schemas/dibbles/tools/gui-automation">
+        <tcx:Assembly>${TopCatPath}\TopCat.Tools.GUIAutomation.dll</tcx:Assembly>
+      </tcx:Dibble>
+      <tcx:Dibble tcx:ID="assert" tcx:Namespace="http://sherman.americas.hpqcorp.net/topcat/schemas/dibbles/libraries/assert">
+        <tcx:Assembly>${TopCatPath}\TopCat.Libraries.Assert.dll</tcx:Assembly>
+      </tcx:Dibble>
+      <tcx:Dibble tcx:ID="vmps" tcx:Namespace="http://sherman.americas.hpqcorp.net/topcat/schemas/dibbles/tools/vmps">
+        <tcx:Assembly>${TopCatPath}\TopCat.Tools.VMPS.dll</tcx:Assembly>
+      </tcx:Dibble>
+      <tcx:Dibble tcx:ID="jack" tcx:Namespace="http://sherman.americas.hpqcorp.net/topcat/schemas/components/jackalope">
+        <tcx:Assembly>${TopCatPath}\TopCat.Components.Jackalope.dll</tcx:Assembly>
+      </tcx:Dibble>
+      <tcx:Dibble tcx:ID="xsd" tcx:Namespace="http://sherman.americas.hpqcorp.net/topcat/schemas/framework">
+        <tcx:Assembly>${TopCatPath}\TopCat.Tools.GUIAutomation.dll</tcx:Assembly>
+      </tcx:Dibble>
+      <tcx:Dibble tcx:ID="print" tcx:Namespace="http://sherman.americas.hpqcorp.net/topcat/schemas/windows/printing">
+        <tcx:Assembly>${TopCatPath}\TopCat.Windows.Printing.dll</tcx:Assembly>
+      </tcx:Dibble>
+    </tcx:Dibbles>
+
+    <tcx:Imports>
+      <tcx:ConfigurationFile tcx:ID="PrintProp">
+        <tcx:Path>${TestPath}\DuplexPreferences.tcc</tcx:Path>
+      </tcx:ConfigurationFile>
+    </tcx:Imports>
+  </tcx:Context>
+
+  <tcx:Setup>
+
+  </tcx:Setup>
+
+  <tcx:Tests>
+    <tcx:TestCase tcx:ID="Printer_preferences">
+      <tcx:Annotation>
+        <tcx:Description>
+          Change duplex settings
+        </tcx:Description>
+        <tcx:Created tcx:Author="stf" tcx:Date="2014-09-10" />
+        <tcx:LastUpdated tcx:Author="stf" tcx:Date="2014-09-10" />
+      </tcx:Annotation>
+      <tcx:Setup>
+        <gui:Highlights.Enable/>
+      </tcx:Setup>
+      <tcx:TestSteps>
+        <print:LaunchPrintingPreferences>
+          <print:PrinterName>${QueueName}</print:PrinterName>
+        </print:LaunchPrintingPreferences>
+        <gui:TabItem.Select gui:ControlID="PrintProp.DeviceSettingsTabItem" gui:Timeout="5"/>
+        <gui:TreeItem.Select gui:ControlID="PrintProp.InstallableOptiTreeItem" gui:Timeout="5"/>
+        <jack:TSendKeys jack:KeyString="{DOWN}" jack:SendDelay="1" />
+        <jack:TSendKeys jack:KeyString="{DOWN}" jack:SendDelay="1" />
+        <jack:TSendKeys jack:KeyString="{DOWN}" jack:SendDelay="1" />
+        <jack:TSendKeys jack:KeyString="{DOWN}" jack:SendDelay="1" />
+        <jack:TSendKeys jack:KeyString="{DOWN}" jack:SendDelay="1" />
+        <jack:TSendKeys jack:KeyString="{DOWN}" jack:SendDelay="1" />
+        <jack:TSendKeys jack:KeyString="{DOWN}" jack:SendDelay="1" />
+        <jack:TSendKeys jack:KeyString="{DOWN}" jack:SendDelay="1" />
+        <jack:TSendKeys jack:KeyString="{DOWN}" jack:SendDelay="1" />
+        <jack:TSendKeys jack:KeyString="{DOWN}" jack:SendDelay="1" />
+        <jack:TSendKeys jack:KeyString="{DOWN}" jack:SendDelay="1" />
+        <jack:TSendKeys jack:KeyString="{DOWN}" jack:SendDelay="1" />
+        <jack:TSendKeys jack:KeyString="{DOWN}" jack:SendDelay="1" />
+        <gui:ListItem.Select gui:ControlID="PrintProp.NotInstalledListItem" gui:Timeout="5"/>
+        <gui:Button.Click gui:ControlID="PrintProp.OKButton1Button" gui:Timeout="5"/>
+      </tcx:TestSteps>
+
+      <tcx:Cleanup>
+        <gui:Highlights.Disable/>
+      </tcx:Cleanup>
+    </tcx:TestCase>
+  </tcx:Tests>
+
+  <tcx:Cleanup>
+  </tcx:Cleanup>
+
+  <tcx:Publish>
+    <vmps:GatherTestResults>
+      <vmps:ResultsFile>${Environment.Temp}\DuplexSettingsResult.xml</vmps:ResultsFile>
+    </vmps:GatherTestResults>
+    <vmps:PublishTriageBundle/>
+  </tcx:Publish>
+</tcx:TestDefinition>

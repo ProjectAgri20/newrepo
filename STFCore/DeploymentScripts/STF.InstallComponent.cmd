@@ -1,0 +1,1 @@
+CALL STF.Copy.cmd \\%1\VirtualResource\Distribution\%2 %~dp0..\Distribution\%2

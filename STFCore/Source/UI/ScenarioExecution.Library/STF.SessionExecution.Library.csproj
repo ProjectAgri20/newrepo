@@ -1,0 +1,530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D3A02882-F97B-4D0B-AA94-9DBAC057946A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HP.ScalableTest.UI.SessionExecution</RootNamespace>
+    <AssemblyName>HP.STF.SessionExecution</AssemblyName>
+    <CodeAnalysisRuleSet>..\..\..\..\STF Standard Rules.ruleset</CodeAnalysisRuleSet>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <CodeAnalysisForceOutput>false</CodeAnalysisForceOutput>
+    <CodeAnalysisGenerateSuccessFile>false</CodeAnalysisGenerateSuccessFile>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug (XML Doc)|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug (Code Analysis + XML Doc)|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug %28XML Doc%29|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug %28Code Analysis + XML Doc%29|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.WinControls, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ScalableTestFramework\External Assemblies\Telerik\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ScalableTestFramework\External Assemblies\Telerik\Telerik.WinControls.GridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ScalableTestFramework\External Assemblies\Telerik\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivityDetailsGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActivityDetailsGrid.Designer.cs">
+      <DependentUpon>ActivityDetailsGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExecutionDashboard\ElementInfoContainerControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExecutionDashboard\ElementInfoContainerControl.Designer.cs">
+      <DependentUpon>ElementInfoContainerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExecutionDashboard\GenericMapElementControlLite.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExecutionDashboard\GenericMapElementControlLite.Designer.cs">
+      <DependentUpon>GenericMapElementControlLite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExecutionDashboard\WorkerActivityLogInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExecutionDashboard\WorkerActivityLogInfoControl.Designer.cs">
+      <DependentUpon>WorkerActivityLogInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExecutionDashboard\DeviceReportData.cs" />
+    <Compile Include="ExecutingSessionInfo.cs" />
+    <Compile Include="ExecutionDashboard\BlankElementInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExecutionDashboard\BlankElementInfoControl.Designer.cs">
+      <DependentUpon>BlankElementInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExecutionDashboard\ElementInfoControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExecutionDashboard\ElementInfoControlBase.Designer.cs">
+      <DependentUpon>ElementInfoControlBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExecutionDashboard\GenericMapElementControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExecutionDashboard\GenericMapElementControl.Designer.cs">
+      <DependentUpon>GenericMapElementControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExecutionDashboard\MachineInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExecutionDashboard\MachineInfoControl.Designer.cs">
+      <DependentUpon>MachineInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExecutionDashboard\IElementInfoControlBase.cs" />
+    <Compile Include="ExecutionDashboard\DeviceInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExecutionDashboard\DeviceInfoControl.Designer.cs">
+      <DependentUpon>DeviceInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExecutionDashboard\SessionInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExecutionDashboard\SessionInfoControl.Designer.cs">
+      <DependentUpon>SessionInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExecutionDashboard\ActivityInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExecutionDashboard\ActivityInfoControl.Designer.cs">
+      <DependentUpon>ActivityInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExecutionDashboard\WorkerInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExecutionDashboard\WorkerInfoControl.Designer.cs">
+      <DependentUpon>WorkerInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="InsufficientPlatformsErrorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsufficientPlatformsErrorForm.Designer.cs">
+      <DependentUpon>InsufficientPlatformsErrorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfflineDevicesMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OfflineDevicesMessageBox.Designer.cs">
+      <DependentUpon>OfflineDevicesMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\SessionStartScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizard\SessionStartScheduleForm.Designer.cs">
+      <DependentUpon>SessionStartScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\WizardPageManager.cs" />
+    <Compile Include="Wizard\WizardScenarioBatchPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\WizardScenarioBatchPage.Designer.cs">
+      <DependentUpon>WizardScenarioBatchPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\WizardScenarioSelectionPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\WizardScenarioSelectionPage.Designer.cs">
+      <DependentUpon>WizardScenarioSelectionPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkerExecutionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkerExecutionForm.Designer.cs">
+      <DependentUpon>WorkerExecutionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectedSessionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConnectedSessionsControl.Designer.cs">
+      <DependentUpon>ConnectedSessionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SessionExecutionManager.cs" />
+    <Compile Include="SessionResetManager.cs" />
+    <Compile Include="SessionControlRefreshEventArgs.cs" />
+    <Compile Include="SessionStatusControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SessionStatusControlFactory.cs" />
+    <Compile Include="Wizard\IWizardPage.cs" />
+    <Compile Include="SessionNotesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SessionNotesForm.Designer.cs">
+      <DependentUpon>SessionNotesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\ScenarioSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizard\ScenarioSelectionForm.Designer.cs">
+      <DependentUpon>ScenarioSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\SelectedVirtualMachinesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizard\SelectedVirtualMachinesForm.Designer.cs">
+      <DependentUpon>SelectedVirtualMachinesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\SessionConfigurationWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizard\SessionConfigurationWizard.Designer.cs">
+      <DependentUpon>SessionConfigurationWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlSessionExecution.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlSessionExecution.Designer.cs">
+      <DependentUpon>ControlSessionExecution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SessionExecutionTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SessionExecutionTreeView.Designer.cs">
+      <DependentUpon>SessionExecutionTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SessionShutdownForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SessionShutdownForm.Designer.cs">
+      <DependentUpon>SessionShutdownForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\WizardAssetReservationPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\WizardAssetReservationPage.Designer.cs">
+      <DependentUpon>WizardAssetReservationPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\WizardConfiguration.cs" />
+    <Compile Include="Wizard\WizardDeviceSetupPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\WizardDeviceSetupPage.Designer.cs">
+      <DependentUpon>WizardDeviceSetupPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\WizardSessionInitializationPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\WizardSessionInitializationPage.Designer.cs">
+      <DependentUpon>WizardSessionInitializationPage.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\AssetInventory\STF.Core.AssetInventory.csproj">
+      <Project>{b84feab0-3c8d-4934-bd59-d3948c0595f1}</Project>
+      <Name>STF.Core.AssetInventory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\Configuration\STF.Core.Configuration.csproj">
+      <Project>{5c0fb620-0ac0-4f06-97d6-0ee90818e92f}</Project>
+      <Name>STF.Core.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\DataLog\STF.Core.DataLog.csproj">
+      <Project>{93E02676-956F-4E18-A564-5DA1967A9E1C}</Project>
+      <Name>STF.Core.DataLog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\DocumentLibrary\STF.Core.DocumentLibrary.csproj">
+      <Project>{270d101e-efdb-4b57-883c-47937fe76f5d}</Project>
+      <Name>STF.Core.DocumentLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\Root\STF.Core.csproj">
+      <Project>{1B4E6157-55BA-4F35-B73F-9A7E8FAAB8D1}</Project>
+      <Name>STF.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\UI\STF.Core.UI.csproj">
+      <Project>{66f4d6fc-ecef-49c7-8d2e-4d0102353e94}</Project>
+      <Name>STF.Core.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\FrameworkInternal\STF.FrameworkInternal.csproj">
+      <Project>{1d38c759-e5f6-4603-bbbc-566f1276aba2}</Project>
+      <Name>STF.FrameworkInternal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Framework\STF.Framework.csproj">
+      <Project>{b91dcc51-8664-49e3-97d0-6fcfd2918a1a}</Project>
+      <Name>STF.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Print\STF.Print.csproj">
+      <Project>{b549acae-daed-4f96-a962-14bd02428770}</Project>
+      <Name>STF.Print</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Utility\STF.Utility.csproj">
+      <Project>{0a02ea9d-11d5-4078-9036-385709cb365a}</Project>
+      <Name>STF.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\SolutionTestBench\Configuration\STF.ConfigurationManagement.csproj">
+      <Project>{bb85c6a6-9062-4215-a750-8edbf73e3fa4}</Project>
+      <Name>STF.ConfigurationManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\EnterpriseTest.Library\STF.EnterpriseTest.Library.csproj">
+      <Project>{4FD3AAD9-F8A4-46CB-9C8E-4165FE64674C}</Project>
+      <Name>STF.EnterpriseTest.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\EnterpriseTestModel\STF.EnterpriseTest.Model.csproj">
+      <Project>{975C43D5-C1C6-4A45-82D4-1ABDC6805C05}</Project>
+      <Name>STF.EnterpriseTest.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\FrameworkCommon.Library\STF.FrameworkCommon.Library.csproj">
+      <Project>{4A72B792-4C4E-4217-BEFC-8F128917F836}</Project>
+      <Name>STF.FrameworkCommon.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\STF.FrameworkCore.Library\STF.FrameworkCore.Library.csproj">
+      <Project>{0c83cb1e-3fc2-4e07-bab3-532a5be53a38}</Project>
+      <Name>STF.FrameworkCore.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrameworkControls.Library\STF.FrameworkControls.csproj">
+      <Project>{E2574F75-2943-4138-AA2E-D270447655A8}</Project>
+      <Name>STF.FrameworkControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScenarioConfiguration.Library\STF.ScenarioConfiguration.Library.csproj">
+      <Project>{97c22a18-16d4-49da-ac1a-487fb0c7818f}</Project>
+      <Name>STF.ScenarioConfiguration.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ActivityDetailsGrid.resx">
+      <DependentUpon>ActivityDetailsGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExecutionDashboard\ElementInfoContainerControl.resx">
+      <DependentUpon>ElementInfoContainerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExecutionDashboard\GenericMapElementControlLite.resx">
+      <DependentUpon>GenericMapElementControlLite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExecutionDashboard\WorkerActivityLogInfoControl.resx">
+      <DependentUpon>WorkerActivityLogInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExecutionDashboard\BlankElementInfoControl.resx">
+      <DependentUpon>BlankElementInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExecutionDashboard\ElementInfoControlBase.resx">
+      <DependentUpon>ElementInfoControlBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExecutionDashboard\GenericMapElementControl.resx">
+      <DependentUpon>GenericMapElementControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExecutionDashboard\MachineInfoControl.resx">
+      <DependentUpon>MachineInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExecutionDashboard\DeviceInfoControl.resx">
+      <DependentUpon>DeviceInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExecutionDashboard\SessionInfoControl.resx">
+      <DependentUpon>SessionInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExecutionDashboard\ActivityInfoControl.resx">
+      <DependentUpon>ActivityInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExecutionDashboard\WorkerInfoControl.resx">
+      <DependentUpon>WorkerInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsufficientPlatformsErrorForm.resx">
+      <DependentUpon>InsufficientPlatformsErrorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfflineDevicesMessageBox.resx">
+      <DependentUpon>OfflineDevicesMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Wizard\SessionStartScheduleForm.resx">
+      <DependentUpon>SessionStartScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\WizardScenarioBatchPage.resx">
+      <DependentUpon>WizardScenarioBatchPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\WizardScenarioSelectionPage.resx">
+      <DependentUpon>WizardScenarioSelectionPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkerExecutionForm.resx">
+      <DependentUpon>WorkerExecutionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectedSessionsControl.resx">
+      <DependentUpon>ConnectedSessionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SessionNotesForm.resx">
+      <DependentUpon>SessionNotesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ScenarioSelectionForm.resx">
+      <DependentUpon>ScenarioSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SelectedVirtualMachinesForm.resx">
+      <DependentUpon>SelectedVirtualMachinesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SessionConfigurationWizard.resx">
+      <DependentUpon>SessionConfigurationWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlSessionExecution.resx">
+      <DependentUpon>ControlSessionExecution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SessionExecutionTreeView.resx">
+      <DependentUpon>SessionExecutionTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SessionShutdownForm.resx">
+      <DependentUpon>SessionShutdownForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\WizardAssetReservationPage.resx">
+      <DependentUpon>WizardAssetReservationPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\WizardDeviceSetupPage.resx">
+      <DependentUpon>WizardDeviceSetupPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\WizardSessionInitializationPage.resx">
+      <DependentUpon>WizardSessionInitializationPage.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\AssetReportData.datasource" />
+    <None Include="Properties\DataSources\ControlSessionExecution.datasource" />
+    <None Include="Properties\DataSources\HP.ScalableTest.Data.TraceLog.ActivityExecutionDeviceUsage.datasource" />
+    <None Include="Properties\DataSources\HP.ScalableTest.Data.TraceLog.ActivityExecution.datasource" />
+    <None Include="Properties\DataSources\HP.ScalableTest.UI.ScenarioConfiguration.Import.ScenarioProduct.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="..\..\..\..\_STFDictionary.xml">
+      <Link>_STFDictionary.xml</Link>
+    </CodeAnalysisDictionary>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MachineAssignmentIncrease.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="..\..\..\..\ScalableTestFramework\Source\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckboxOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckboxOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VU20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VU21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VU22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VU23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VU24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VU25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VU26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VU27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VU28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VU29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VU30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VU31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VU32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\VU33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EntityFramework">
+      <Version>6.1.3</Version>
+    </PackageReference>
+  </ItemGroup>
+</Project>

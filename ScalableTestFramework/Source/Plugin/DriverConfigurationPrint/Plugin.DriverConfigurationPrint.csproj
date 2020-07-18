@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{0493859E-FDAF-4FE8-99B3-BA8B0CFEBEF9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HP.ScalableTest.Plugin.DriverConfigurationPrint</RootNamespace>
+    <AssemblyName>Plugin.DriverConfigurationPrint</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+	<OutputPath>..\..\..\..\VirtualResource\Distribution\Plugin\</OutputPath>
+	<CodeAnalysisRuleSet>BasicDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+	<DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.WinControls, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\External Assemblies\Telerik\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\External Assemblies\Telerik\Telerik.WinControls.GridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\External Assemblies\Telerik\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="TopCat, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PluginSupport\TopCat\References\TopCat.exe</HintPath>
+    </Reference>
+    <Reference Include="TopCat.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PluginSupport\TopCat\References\TopCat.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="TopCat.Framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PluginSupport\TopCat\References\TopCat.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="TopCat.TestApi, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PluginSupport\TopCat\References\TopCat.TestApi.dll</HintPath>
+    </Reference>
+    <Reference Include="TopCat.Tools.GUIAutomation, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PluginSupport\TopCat\References\TopCat.Tools.GUIAutomation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="DriverConfigurationPrintActivityData.cs" />
+    <Compile Include="DriverConfigurationPrintConfigControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DriverConfigurationPrintConfigControl.designer.cs">
+      <DependentUpon>DriverConfigurationPrintConfigControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DriverConfigurationPrintExecutionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DriverConfigurationPrintExecutionControl.Designer.cs">
+      <DependentUpon>DriverConfigurationPrintExecutionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enum\PrintPreferenceEnum.cs" />
+    <Compile Include="DriverConfigPrintingEngine.cs" />
+    <Compile Include="PrinterPreferenceData.cs" />
+    <Compile Include="PrinterPreferencesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrinterPreferencesForm.designer.cs">
+      <DependentUpon>PrinterPreferencesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UIMaps\PrintPreferences.cs" />
+    <Compile Include="UIMaps\TopCatUIHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DriverConfigurationPrintConfigControl.resx">
+      <DependentUpon>DriverConfigurationPrintConfigControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverConfigurationPrintExecutionControl.resx">
+      <DependentUpon>DriverConfigurationPrintExecutionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrinterPreferencesForm.resx">
+      <DependentUpon>PrinterPreferencesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\FrameworkInternal\STF.FrameworkInternal.csproj">
+      <Project>{1d38c759-e5f6-4603-bbbc-566f1276aba2}</Project>
+      <Name>STF.FrameworkInternal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\STF.Framework.csproj">
+      <Project>{b91dcc51-8664-49e3-97d0-6fcfd2918a1a}</Project>
+      <Name>STF.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PluginSupport\Print\PluginSupport.Print.csproj">
+      <Project>{0d774600-2d99-4376-b8c9-83967ddd56f9}</Project>
+      <Name>PluginSupport.Print</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Print\STF.Print.csproj">
+      <Project>{b549acae-daed-4f96-a962-14bd02428770}</Project>
+      <Name>STF.Print</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utility\STF.Utility.csproj">
+      <Project>{0a02ea9d-11d5-4078-9036-385709cb365a}</Project>
+      <Name>STF.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <CodeAnalysisLogFile>$(IntermediateOutputPath)$(TargetFileName).CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisSucceededFile>$(IntermediateOutputPath)$(TargetFileName).lastcodeanalysissucceeded</CodeAnalysisSucceededFile>
+  </PropertyGroup>
+</Project>

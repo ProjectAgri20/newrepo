@@ -1,0 +1,347 @@
+<DeviceSettings>
+	<EndPoint Name="Fim">
+		fim
+		<ResourceURI>urn:hp:imaging:con:service:fim:FIMService:Assets</ResourceURI>
+		<Parent Name="Assets">
+			Assets
+			<Parent Name="Asset">
+				Asset
+				<Parent Name="AssetMetadata">
+					AssetMetadata
+					<IdentName>AssetName</IdentName>
+					<Parent Name="Version">
+						Version
+						<IdentName>Revision</IdentName>
+						<IdentName>Date</IdentName>
+					</Parent>
+				</Parent>
+			</Parent>
+		</Parent>
+	</EndPoint>
+	<EndPoint Name="UI Configuration">uiconfiguration
+		<ResourceURI>urn:hp:imaging:con:service:uiconfiguration:UIConfigurationService:ServiceDefaults</ResourceURI>
+		<Parent>ServiceDefaults
+			<IdentName>DisplayNetworkAddress</IdentName>
+            <IdentName>InactivityTimeoutInSeconds</IdentName>
+		</Parent>
+	</EndPoint>
+	<EndPoint Name="Copy">copy
+		<ResourceURI>urn:hp:imaging:con:service:copy:CopyService</ResourceURI>
+		<Parent Name="Default Job">DefaultJob
+			<Parent Name="Scan Settings">ScanSettings
+				<IdentName>ScanMediaSize</IdentName>
+			</Parent>
+			<Parent Name ="Copy Settings">CopySettings		
+				<IdentName>CopySides</IdentName>
+			</Parent>
+		</Parent>    
+	</EndPoint>
+	<EndPoint Name="Email">
+		email
+		<ResourceURI>urn:hp:imaging:con:service:email:EmailService</ResourceURI>
+		<Parent Name="ServiceDefaults">
+			ServiceDefaults
+			<IdentName>SendToEmailEnabled</IdentName>
+			<IdentName>ProcessingLocation</IdentName>
+			<IdentName>BlockUnauthenticatedEmails</IdentName>
+			<IdentName>DisableOcrFileTypes</IdentName>
+			<IdentName>ValidateEmailAddresses</IdentName>
+		</Parent>
+		<Parent Name="SMTPServersWithSettings">
+			SMTPServersWithSettings
+			<Parent Name="SMTPServerSettings">
+				SMTPServerSettings
+				<IdentName>NetworkID</IdentName>
+				<IdentName>Port</IdentName>
+				<IdentName>MaxAttachmentSize</IdentName>
+				<IdentName>ServerRequiresAuthentication</IdentName>
+				<IdentName>UseMFPUsersCredentials</IdentName>
+				<IdentName>UseSSL</IdentName>
+				<Parent Name="AuthenticationSettings">
+					AuthenticationSettings
+					<IdentName>CredentialType</IdentName>
+					<Parent Name="SimpleAuthenticationSettings">
+						SimpleAuthenticationSettings
+						<IdentName>PasswordStatus</IdentName>
+					</Parent>
+				</Parent>
+			</Parent>
+		</Parent>
+		<Parent Name="DefaultJob">
+			DefaultJob
+			<IdentName>ImagePreview</IdentName>
+			<IdentName>MaxRetryAttempts</IdentName>
+			<IdentName>RetryInterval</IdentName>
+			<IdentName>MultiScan</IdentName>
+			<IdentName>OneTouchSidesPrompt</IdentName>
+			<IdentName>OneTouchLoadDocumentOptionPrompt</IdentName>
+			<IdentName>CaptureMode</IdentName>
+			<IdentName>PromptNotificationSettingsPriorToJobStart</IdentName>
+			<Parent Name="NotificationSettings">
+				NotificationSettings
+				<IdentName>NotificationConditions</IdentName>
+				<IdentName>NotificationMode</IdentName>
+				<IdentName>IncludeThumbnailOfFirstPage</IdentName>
+				<IdentName>ToAddressesEditable</IdentName>
+				<Parent Name="To Address">
+					ToAddress
+					<IdentName>EmailAddress</IdentName>
+					<IdentName>DisplayName</IdentName>
+				</Parent>
+			</Parent>
+			<Parent Name="ScanSettings">
+				ScanSettings
+				<IdentName>BackgroundRemoval</IdentName>
+				<IdentName>Contrast</IdentName>
+				<IdentName>Exposure</IdentName>
+				<IdentName>OriginalContentOrientation</IdentName>
+				<IdentName>OriginalPageBinding</IdentName>
+				<IdentName>ScanMode</IdentName>
+				<IdentName>ScanMediaSize</IdentName>
+				<IdentName>ScanPlexMode</IdentName>
+				<IdentName>Sharpness</IdentName>
+				<IdentName>TextGraphicsPriority</IdentName>
+				<IdentName>MisfeedDetection</IdentName>
+				<IdentName>ScannerDropoutColor</IdentName>
+				<IdentName>AutoTone</IdentName>
+				<IdentName>AutoCrop</IdentName>
+				<IdentName>AutoOrientation</IdentName>
+				<IdentName>AutoPageCrop</IdentName>
+				<IdentName>AutoStraighten</IdentName>
+				<IdentName>JobScanLimit</IdentName>
+				<Parent Name="EdgeErase">
+					EdgeErase
+					<IdentName>Unit</IdentName>
+					<IdentName>FrontLeft</IdentName>
+					<IdentName>FrontTop</IdentName>
+					<IdentName>FrontRight</IdentName>
+					<IdentName>FrontBottom</IdentName>
+					<IdentName>BackLeft</IdentName>
+					<IdentName>BackTop</IdentName>
+					<IdentName>BackRight</IdentName>
+					<IdentName>BackBottom</IdentName>
+				</Parent>
+			</Parent>
+			<Parent Name="AttachmentSettings">
+				AttachmentSettings
+				<IdentName>DSAttachmentSize</IdentName>
+				<IdentName>DSColorPreference</IdentName>
+				<IdentName>DSFileType</IdentName>
+				<IdentName>DSImageResolution</IdentName>
+				<IdentName>FileName</IdentName>
+				<IdentName>FileTextLanguage</IdentName>
+				<IdentName>EncryptAttachment</IdentName>
+				<IdentName>CompressAttachment</IdentName>
+				<IdentName>BlankPageSuppression</IdentName>
+				<IdentName>SeparateOnBlankPage</IdentName>
+				<IdentName>ColorGrayscaleTiffCompression</IdentName>
+				<IdentName>MonochromeTiffCompression>Auto</IdentName>
+				<IdentName>FileNameIsEditable</IdentName>
+				<IdentName>FileNamePrefix</IdentName>
+				<IdentName>FileNameSuffix</IdentName>
+				<IdentName>FileNameSupportedMacros</IdentName>
+				<IdentName>FileNameCounterEnabled</IdentName>
+				<IdentName>FileNameCounterResetValue</IdentName>
+				<IdentName>DSFileTypeIsEditable</IdentName>
+				<IdentName>AttachmentFileNameFormat</IdentName>
+				<IdentName>ColorGrayscalePdfCompression</IdentName>
+				<IdentName>ScanToMultipleFiles</IdentName>
+				<IdentName>MaxImagesPerFile</IdentName>
+				<IdentName>BlackMonoImages</IdentName>
+			</Parent>
+			<Parent Name="EmailSettings">
+				EmailSettings
+				<IdentName>BodyTextEditable</IdentName>
+				<IdentName>FromAddressEditable</IdentName>
+				<IdentName>ToRecipientsEditable</IdentName>
+				<IdentName>CcRecipientsEditable</IdentName>
+				<IdentName>BccRecipientsEditable</IdentName>
+				<IdentName>UseSignedInUserAsSender</IdentName>
+				<IdentName>AddSenderAsToRecipient</IdentName>
+				<IdentName>AddSenderAsCcRecipient</IdentName>
+				<IdentName>AddSenderAsBccRecipient</IdentName>
+				<IdentName>EmailSigning</IdentName>
+				<IdentName>EmailSubject</IdentName>
+				<IdentName>EmailBodyText</IdentName>
+				<IdentName>EmailSubjectEditable</IdentName>
+				<IdentName>EmailSigningEditable</IdentName>
+				<IdentName>EmailEncryptionEditable</IdentName>
+				<IdentName>EmailEncryption</IdentName>
+				<IdentName>LdapUserCertificateAttribute</IdentName>
+				<IdentName>UserMustSelectFromAddressBook</IdentName>
+				<IdentName>EmailEncryptionAlogrithm</IdentName>
+				<IdentName>EmailSigningHashAlgorithm</IdentName>
+				<IdentName>VerifyRecipientAgainstCertificate</IdentName>
+				<Parent Name="FromAddress">
+					FromAddress
+					<IdentName>EmailAddress</IdentName>
+					<IdentName>DisplayName</IdentName>
+				</Parent>
+			</Parent>
+		</Parent>
+	</EndPoint>
+	<EndPoint Name="Fax">
+		fax
+		<ResourceURI>urn:hp:imaging:con:service:fax:FaxService</ResourceURI>
+		<Parent Name="Service Defaults">
+			ServiceDefaults
+			<Parent Name="ServiceSendDefaults">
+				ServiceSendDefaults
+				<IdentName>FaxMethod</IdentName>
+				<IdentName>PrintToFax</IdentName>
+				<Parent Name="BillingCodeSettings">
+					BillingCodeSettings
+					<IdentName>BillingCodeEnabled</IdentName>
+					<IdentName>DefaultBillingCode</IdentName>
+					<IdentName>BillingCodeEditable</IdentName>
+				</Parent>
+			</Parent>
+			<Parent Name="ServiceReceiveDefaults">
+				ServiceReceiveDefaults
+				<IdentName>FaxRingsToAnswer</IdentName>
+			</Parent>
+		</Parent>
+		<Parent Name="Analog Fax Settings">
+			AnalogFaxSettings
+			<Parent Name="FaxOperationSettings">
+				FaxOperationSettings
+				<IdentName>FaxModemVolume</IdentName>
+				<IdentName>DialingMode</IdentName>
+				<IdentName>RetryInterval</IdentName>
+				<IdentName>FaxRetryCountBusy</IdentName>
+				<IdentName>FaxRetryCountNoAnswer</IdentName>
+				<IdentName>FaxRingerVolume</IdentName>
+				<IdentName>FaxReceiveSpeed</IdentName>
+			</Parent>
+		</Parent>
+		<Parent Name="Default Jobs">
+			DefaultJobs
+			<Parent Name="DefaultSendJob">
+				DefaultSendJob
+				<IdentName>DeviceJobName</IdentName>
+				<Parent Name="NotificationSettings">
+					NotificationSettings
+					<IdentName>NotificationConditions</IdentName>
+					<IdentName>NotificationMode</IdentName>
+					<Parent Name="ToAddresses">
+						ToAddresses
+						<Parent Name="ToAddress">
+							ToAddress
+							<IdentName>ToAddress</IdentName>
+							<IdentName>DisplayName</IdentName>
+						</Parent>
+					</Parent>
+				</Parent>
+				<Parent Name="Scan Settings">
+					ScanSettings
+					<IdentName>BackgroundRemoval</IdentName>
+					<IdentName>Exposure</IdentName>
+					<IdentName>Sharpness</IdentName>
+				</Parent>
+				<Parent Name="Send Fax Settings">
+					SendFaxSettings
+					<IdentName>FaxSendResolution</IdentName>
+				</Parent>
+			</Parent>
+			<Parent Name="Default Receive Job">
+				DefaultReceiveJob
+				<Parent Name="NotificationSettings">
+					NotificationSettings
+					<IdentName>NotificationConditions</IdentName>
+					<IdentName>NotificationMode</IdentName>
+					<Parent Name="ToAddresses">
+						ToAddresses
+						<Parent Name="ToAddress">
+							ToAddress
+							<IdentName>EmailAddress</IdentName>
+							<IdentName>DisplayName</IdentName>
+						</Parent>
+					</Parent>
+				</Parent>
+				<Parent Name="ReceiveFaxSettings">
+					ReceiveFaxSettings
+					<IdentName>FaxOutputPlex</IdentName>
+					<IdentName>StampReceivedFax</IdentName>
+				</Parent>
+			</Parent>
+		</Parent>
+	</EndPoint>
+	<EndPoint Name="Folder">folder
+		<ResourceURI>urn:hp:imaging:con:service:folder:FolderService</ResourceURI>
+		<Parent Name="DefaultJob">DefaultJob
+			<Parent Name="NotificationSettings">NotificationSettings
+				<IdentName>NotificationConditions</IdentName>
+				<IdentName>NotificationMode</IdentName>			
+				<Parent Name="ToAddressess">ToAddresses
+					<Parent Name="ToAddress">ToAddress
+						<IdentName>EmailAddress</IdentName>
+						<IdentName>DisplayName</IdentName>
+					</Parent>
+				</Parent>			
+			</Parent>
+			<Parent Name="ScanSettings">ScanSettings
+				<IdentName>BackgroundRemoval</IdentName>
+				<IdentName>Exposure</IdentName>
+			</Parent>
+			<Parent Name="AttachmentSettings">AttachmentSettings
+				<IdentName>FileName</IdentName>
+				<IdentName>DSFileType</IdentName>
+				<IdentName>DSImageResolution</IdentName>
+				<IdentName>DSAttachmentSize</IdentName>
+				<IdentName>DSColorPreference</IdentName>
+				<IdentName>BlankPageSuppression</IdentName>
+			</Parent>
+		</Parent>    
+	</EndPoint>
+	<EndPoint Name="Print">print
+		<ResourceURI>urn:hp:imaging:con:service:print:PrintService</ResourceURI>
+		<Parent Name="DefaultJob">DefaultJob
+			<IdentName>TrayDisableUseInstead</IdentName>
+			<IdentName>ImageEdgeBinding</IdentName>
+			<IdentName>SuppressBlankPagesAtEndOfPclJobs</IdentName>
+			<IdentName>PrintPdfErrors</IdentName>
+			<IdentName>PrintPostscriptErrors</IdentName>
+		</Parent>
+	</EndPoint>
+	<EndPoint Name="Security">
+		security
+		<ResourceURI>urn:hp:imaging:con:service:security:SecurityService</ResourceURI>
+		<Parent Name="SecurityService">SecurityService
+			<IdentName>SystemDefaultAuthenticationAgentIdentifier</IdentName>
+			<IdentName>CurrentPolicyAgent</IdentName>
+			<IdentName>EnableUsb</IdentName>
+			<IdentName>AutomaticallySignUsersOutAfterStartingEachJob</IdentName>
+			<IdentName>DirectConnectPortsAccess</IdentName>
+			<IdentName>PJLPasswordStatus</IdentName>
+			<IdentName>PjlDeviceAccess</IdentName>
+			<IdentName>CustomServicePINStatus</IdentName>
+		</Parent>
+		<Parent Name="AuthenticationAgents">AuthenticationAgents
+			<Parent Name="AuthenticationAgent">AuthenticationAgent
+				<IdentName>AuthenticationAgentIdentifier</IdentName>
+				<IdentName>AuthenticationAgentName</IdentName>
+			</Parent>
+			<Parent Name="AuthenticationAgent">AuthenticationAgent
+				<IdentName>AuthenticationAgentIdentifier</IdentName>
+				<IdentName>AuthenticationAgentName</IdentName>
+			</Parent>
+		</Parent>
+	</EndPoint>
+	<EndPoint Name="Time">time
+		<ResourceURI>urn:hp:imaging:con:service:time:TimeService</ResourceURI>
+		<Parent Name="SNTPTimeSynchronization">SNTPTimeSynchronization
+			<IdentName>EnableDisable</IdentName>
+			<IdentName>Frequency</IdentName>
+			<IdentName>SNTPServerAddress </IdentName>
+			<IdentName>Port</IdentName>
+		</Parent>
+		<Parent Name="AutoOffDelay">AutoOffDelay
+			<IdentName>AutoOffDelaySetting</IdentName>
+			<IdentName>AutoOffDelayAfterTime</IdentName>
+			<IdentName>AutoOffDelayAfterTimeLimit</IdentName>
+            <Parent Name="AutoOnEvents">AutoOnEvents
+                <IdentName>AutoOnEvent</IdentName>
+            </Parent>
+		</Parent>
+	</EndPoint> 
+</DeviceSettings>

@@ -1,0 +1,9 @@
+diff a/ScalableTestFramework/Source/Plugin/HpRoam/HpRoamExecutionControl.cs b/ScalableTestFramework/Source/Plugin/HpRoam/HpRoamExecutionControl.cs	(rejected hunks)
+@@ -114,6 +114,7 @@
+ +                CollectionSelectorMode mode = _activityData.ShuffleDocuments ? CollectionSelectorMode.ShuffledRoundRobin : CollectionSelectorMode.RoundRobin;
+ +                _documentIterator = new DocumentCollectionIterator(mode);
+              }
+++<<<<<<< HEAD
+ +
+ +
+ +            string workingDirectory = Environment.CurrentDirectory;

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Administration_Jedi_Default" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Contract">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="Parameters" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+			  <xs:element name="oldPassword" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="newPassword" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="verifyPassword" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="ServicePin" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="VerifyServicePin" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="dssPassword" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="dssVerifyPassword" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="displayPrintPage" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="displayJobLogPage" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="NewPjlPassword" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			  <xs:element name="VerifyNewPjlPassword" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			  <xs:element name="EnableDeviceAccess" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			  <xs:element name="IsPrintPathEnabled" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			  <xs:element name="LegacyEncryptionAlgorithm" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			  <xs:element name="PJLFileSystemAccess" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			  <xs:element name="PostScriptFileSystemAccess" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			  <xs:element name="disableDirectConnect" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			  <xs:element name="UsbPortsEnabled" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Administration_Jedi_Default" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="1" maxOccurs="1">
+        <xs:element ref="Contract" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

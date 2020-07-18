@@ -1,0 +1,5 @@
+﻿The FileShare folder contains any files that will be put on the STB file share when the installer runs for the first time.  The installer will attempt to create the file share on the server where the installer is executing, and will share it out to Everyone.  
+
+Once the file share is set up the installer will read the FolderList.txt file and create all folders listed in the file relative to the root of the file share.  The root of the file share is passed into the installer from the main Inno Setup script.  
+
+After all the folders are created, the installer will iterate over any actual file stored in the "Content" subfolder.  Any file added to the Content must be flaged as an "Embedded Resource" in visual studio.  The installer will iterate over the embedded resources and copy them out to their appropriate locations in the File Share.  

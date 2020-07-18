@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Printers FilterType="AccessControlLDAPSetup">
+  <Printer Type="SIRIUS" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/DevMgmt/Authentication/NetworkAuthentication.xml</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>PUT</Method>
+        <Default item="EnableLDAPAuthentication">disabled</Default>
+        <Default item="NetworkID">KER2K8.COM</Default>
+        <Default item="Port">389</Default>
+        <Default item="LDAPEnableSSL">disabled</Default>
+        <Default item="UseMFPUsersCredentials">false</Default>
+        <Default item="CredentialType">hp_simple_v1</Default>
+        <Default item="UserName">U0000001</Default>
+        <Default item="Password">!QAZ2wsx</Default>
+        <Default item="LDAPBindRoot">cn=users,dc=HSSL,dc=com</Default>
+        <Default item="MatchingLDAPAttribute">cn</Default>
+        <Default item="LDAPNameAttribute">mail</Default>
+        <Default item="EmailLDAPAttribute">cn</Default>
+        <Payload>lt;auth:NetworkAuthentication xmlns:auth="http://www.hp.com/schemas/imaging/con/ledm/authentication/2013/04/26" xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/" xmlns:dd2="http://www.hp.com/schemas/imaging/con/dictionaries/2008/10/10" xmlns:dd3="http://www.hp.com/schemas/imaging/con/dictionaries/2009/04/06" xmlns:dir="http://www.hp.com/schemas/imaging/con/directoryservices/2009/02/11" xmlns:ldapdd="http://www.hp.com/schemas/imaging/con/service/ldapaddressing/2009/02/11" xmlns:security="http://www.hp.com/schemas/imaging/con/security/2009/02/11"gt;lt;auth:LDAPAuthenticationgt;lt;dd:EnableLDAPAuthenticationgt;{EnableLDAPAuthentication}lt;/dd:EnableLDAPAuthenticationgt;lt;ldapdd:LDAPAddressingServicegt;lt;dir:LDAPServerSettingsgt;lt;dir:ServerSettingsgt;lt;dd3:NetworkIDgt;{NetworkID}lt;/dd3:NetworkIDgt;lt;dd:Portgt;{Port}lt;/dd:Portgt;lt;dd:LDAPEnableSSLgt;{LDAPEnableSSL}lt;/dd:LDAPEnableSSLgt;lt;dd:UseMFPUsersCredentialsgt;{UseMFPUsersCredentials}lt;/dd:UseMFPUsersCredentialsgt;lt;security:AuthenticationSettingsgt;lt;security:CredentialTypegt;{CredentialType}lt;/security:CredentialTypegt;lt;security:SimpleAuthenticationSettingsgt;lt;dd:UserNamegt;{UserName}lt;/dd:UserNamegt;lt;dd:Passwordgt;{Password}lt;/dd:Passwordgt;lt;/security:SimpleAuthenticationSettingsgt;lt;/security:AuthenticationSettingsgt;lt;dd:LDAPBindPrefix/gt;lt;dd:LDAPBindRootgt;{LDAPBindRoot}lt;/dd:LDAPBindRootgt;lt;/dir:ServerSettingsgt;lt;dir:DatabaseSettingsgt;lt;dd:MatchingLDAPAttributegt;{MatchingLDAPAttribute}lt;/dd:MatchingLDAPAttributegt;lt;dd2:LDAPNameAttributegt;{LDAPNameAttribute}lt;/dd2:LDAPNameAttributegt;lt;dd:EmailLDAPAttributegt;{EmailLDAPAttribute}lt;/dd:EmailLDAPAttributegt;lt;/dir:DatabaseSettingsgt;lt;/dir:LDAPServerSettingsgt;lt;/ldapdd:LDAPAddressingServicegt;lt;/auth:LDAPAuthenticationgt;lt;/auth:NetworkAuthenticationgt;</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="PHOENIX" SubFilterType="Enable" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>http://{0}/hp/device/set_config_ldap.html/config</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Default item="ldapAuthEnable">on</Default>
+        <Default item="ldapServerAddress">15.212.64.189</Default>
+        <Default item="ldapServerPort">389</Default>
+        <Default item="bindPrefix">cn</Default>
+        <Default item="bindAndSearchRoot">cn%3Dusers%2CDC%3Dhssl%2CDC%3Dcom</Default>
+        <Default item="ldapNameAttribute">cn</Default>
+        <Default item="ldapEmailAttribute">mail</Default>
+        <Default item="ldapDisplayName">cn</Default>
+        <Default item="testUsername">optional</Default>
+        <Default item="testPassword">optional</Default>
+        <Payload>ldapAuthEnable={ldapAuthEnable}amp;ldapServerAddress={ldapServerAddress}amp;ldapServerPort={ldapServerPort}amp;bindPrefix={bindPrefix}amp;bindAndSearchRoot={bindAndSearchRoot}amp;ldapNameAttribute={ldapNameAttribute}amp;ldapEmailAttribute={ldapEmailAttribute}amp;ldapDisplayName={ldapDisplayName}amp;testUsername={testUsername}amp;testPassword={testPassword}amp;Apply=Applyamp;requiredField=*+required+fieldamp;testingInProgress=Testing+...</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="PHOENIX" SubFilterType="Disable" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>http://{0}/hp/device/set_config_ldap.html/config</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>Apply=Applyamp;requiredField=*+required+fieldamp;testingInProgress=Testing+...</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="OMNI" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/AccessControlSetup/Save?jsAnchor=AgentsMasterCustomViewSectionId</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>deviceGuest=deviceMaintenanceamp;deviceGuest=admin-TroubleshootingMenuamp;deviceGuest=retrieveDiagnosticDataamp;deviceGuest=admin-ReportsMenuamp;deviceGuest=admin-ConfigurationStatusMenuamp;deviceGuest=printConfigurationPageamp;deviceGuest=admin-UsageMenuamp;deviceGuest=printFileDirectoryamp;deviceGuest=admin-SuppliesStatusMenuamp;deviceGuest=printColorUsageReportamp;deviceGuest=admin-FaxReportsMenuamp;deviceGuest=printFaxBillingCodesReportamp;deviceGuest=printBlockedFaxListamp;deviceGuest=printFaxActivityLogamp;deviceGuest=printLastFaxCallReportamp;deviceGuest=admin-OtherPagesMenuamp;deviceGuest=adminamp;deviceGuest=admin-GeneralSettingsMenuamp;deviceGuest=admin-DateTimeMenuamp;deviceGuest=admin-EnergySettingsMenuamp;deviceGuest=admin-RestoreFactorySettingsMenuamp;deviceGuest=admin-DisplaySettingsMenuamp;deviceGuest=admin-CopyPrintSettingsMenuamp;deviceGuest=HP_ConfigureDeviceUSB_v1amp;deviceGuest=admin-PrintQualityMenuamp;deviceGuest=admin-ManageStoredJobsamp;deviceGuest=admin-PrintSettingsMenuamp;deviceGuest=admin-PrintOptionsMenuamp;deviceGuest=admin-ManageTraysMenuamp;deviceGuest=admin-PrintFromUSBMassStorageSettingsMenuamp;deviceGuest=admin-NetworkSettingsMenuamp;deviceGuest=admin-NetworkProtocolsMenuamp;deviceGuest=admin-FaxSettingsMenuamp;deviceGuest=fax-ConfigureSendSetupWizardamp;deviceGuest=admin-FaxSendSettingsMenuamp;deviceGuest=fax-GeneralFaxSendSettingsMenuamp;deviceGuest=admin-FaxArchiveAndForwardingMenuamp;deviceGuest=admin-FaxReceiveSettingsMenuamp;deviceGuest=fax-ConfigureReceiveSetupamp;deviceGuest=fax-ConfigurePrintingScheduleamp;deviceGuest=fax-ConfigureReceiveBlockedFaxNumberamp;deviceGuest=fax-ConfigureReceiveDefaultJobOptionsamp;deviceGuest=admin-ManageSuppliesMenuamp;deviceGuest=admin-ResetSuppliesMenuamp;deviceGuest=admin-DigitalSendSettingsMenuamp;deviceGuest=configureDigitalSendServiceSetupamp;deviceGuest=admin-DigitalSendEmailSettingsMenuamp;deviceGuest=sendToEmail-ConfigureSetupamp;deviceGuest=admin-SendToFolderSettingsMenuamp;deviceGuest=admin-SaveToUSBMassStorageSettingsMenuamp;deviceGuest=jobStoragePrintamp;deviceGuest=jobStorage-AccessStoredFaxJobamp;deviceGuest=copyamp;deviceGuest=HP_copySimplexOutput_v1amp;deviceGuest=copy-Coloramp;deviceGuest=admin-CopySettingsMenuamp;deviceGuest=supplyStatusamp;deviceGuest=trayStatus-ModifyTraysamp;deviceGuest=printFromUSBMassStorageamp;deviceGuest=print-Coloramp;deviceGuest=faxamp;deviceGuest=HP_faxEditBillingCode_v1amp;deviceGuest=fax-ConfigureSendDefaultJobOptionsamp;deviceGuest=sendToEmailamp;deviceGuest=HP_sendToEmailEditFromField_v1amp;deviceGuest=HP_sendToEmailEditToField_v1amp;deviceGuest=HP_sendToEmailEditCcField_v1amp;deviceGuest=HP_sendToEmailEditBccField_v1amp;deviceGuest=HP_sendToEmailEditSubjectField_v1amp;deviceGuest=HP_sendToEmailEditMessageBody_v1amp;deviceGuest=sendToEmail-ConfigureDefaultJobSettingsamp;deviceGuest=contactsamp;deviceGuest=fax-EditSpeedDialamp;deviceGuest=modifyPrivateAddressBooksamp;deviceGuest=modifyPublicAddressBookamp;deviceGuest=sendToFolderamp;deviceGuest=sendToFolder-EditPathamp;deviceGuest=sendToFolder-ConfigureDefaultJobSettingsamp;deviceGuest=jobStatusamp;deviceGuest=jobStatus-ManageAllJobsamp;deviceGuest=jobStatus-PromoteJobamp;deviceGuest=jobStatus-ViewAllJobsamp;deviceGuest=sendToUSBMassStorageamp;deviceGuest=sendToUSBMassStorage-ConfigureJobSettingsamp;deviceGuest=jobStorageSaveamp;deviceGuest=oxpworkflow_436170656C6C614D4A20110209495001_v16amp;deviceGuest=print-Coloramp;deviceGuest=print-Coloramp;deviceUser=deviceMaintenanceamp;deviceUser=admin-TroubleshootingMenuamp;deviceUser=retrieveDiagnosticDataamp;deviceUser=admin-ReportsMenuamp;deviceUser=admin-ConfigurationStatusMenuamp;deviceUser=printConfigurationPageamp;deviceUser=admin-UsageMenuamp;deviceUser=printFileDirectoryamp;deviceUser=admin-SuppliesStatusMenuamp;deviceUser=printColorUsageReportamp;deviceUser=admin-FaxReportsMenuamp;deviceUser=printFaxBillingCodesReportamp;deviceUser=printBlockedFaxListamp;deviceUser=printFaxActivityLogamp;deviceUser=printLastFaxCallReportamp;deviceUser=admin-OtherPagesMenuamp;deviceUser=adminamp;deviceUser=admin-GeneralSettingsMenuamp;deviceUser=admin-DateTimeMenuamp;deviceUser=admin-EnergySettingsMenuamp;deviceUser=admin-RestoreFactorySettingsMenuamp;deviceUser=admin-DisplaySettingsMenuamp;deviceUser=admin-CopyPrintSettingsMenuamp;deviceUser=HP_ConfigureDeviceUSB_v1amp;deviceUser=admin-PrintQualityMenuamp;deviceUser=admin-ManageStoredJobsamp;deviceUser=admin-PrintSettingsMenuamp;deviceUser=admin-PrintOptionsMenuamp;deviceUser=admin-ManageTraysMenuamp;deviceUser=admin-PrintFromUSBMassStorageSettingsMenuamp;deviceUser=admin-NetworkSettingsMenuamp;deviceUser=admin-NetworkProtocolsMenuamp;deviceUser=admin-FaxSettingsMenuamp;deviceUser=fax-ConfigureSendSetupWizardamp;deviceUser=admin-FaxSendSettingsMenuamp;deviceUser=fax-GeneralFaxSendSettingsMenuamp;deviceUser=admin-FaxArchiveAndForwardingMenuamp;deviceUser=admin-FaxReceiveSettingsMenuamp;deviceUser=fax-ConfigureReceiveSetupamp;deviceUser=fax-ConfigurePrintingScheduleamp;deviceUser=fax-ConfigureReceiveBlockedFaxNumberamp;deviceUser=fax-ConfigureReceiveDefaultJobOptionsamp;deviceUser=admin-ManageSuppliesMenuamp;deviceUser=admin-ResetSuppliesMenuamp;deviceUser=admin-DigitalSendSettingsMenuamp;deviceUser=configureDigitalSendServiceSetupamp;deviceUser=admin-DigitalSendEmailSettingsMenuamp;deviceUser=sendToEmail-ConfigureSetupamp;deviceUser=admin-SendToFolderSettingsMenuamp;deviceUser=admin-SaveToUSBMassStorageSettingsMenuamp;deviceUser=jobStoragePrintamp;deviceUser=jobStorage-AccessStoredFaxJobamp;deviceUser=copyamp;deviceUser=HP_copySimplexOutput_v1amp;deviceUser=copy-Coloramp;deviceUser=admin-CopySettingsMenuamp;deviceUser=supplyStatusamp;deviceUser=trayStatus-ModifyTraysamp;deviceUser=printFromUSBMassStorageamp;deviceUser=print-Coloramp;deviceUser=faxamp;deviceUser=HP_faxEditBillingCode_v1amp;deviceUser=fax-ConfigureSendDefaultJobOptionsamp;deviceUser=sendToEmailamp;deviceUser=HP_sendToEmailEditFromField_v1amp;deviceUser=HP_sendToEmailEditToField_v1amp;deviceUser=HP_sendToEmailEditCcField_v1amp;deviceUser=HP_sendToEmailEditBccField_v1amp;deviceUser=HP_sendToEmailEditSubjectField_v1amp;deviceUser=HP_sendToEmailEditMessageBody_v1amp;deviceUser=sendToEmail-ConfigureDefaultJobSettingsamp;deviceUser=contactsamp;deviceUser=fax-EditSpeedDialamp;deviceUser=modifyPrivateAddressBooksamp;deviceUser=modifyPublicAddressBookamp;deviceUser=sendToFolderamp;deviceUser=sendToFolder-EditPathamp;deviceUser=sendToFolder-ConfigureDefaultJobSettingsamp;deviceUser=jobStatusamp;deviceUser=jobStatus-ManageAllJobsamp;deviceUser=jobStatus-PromoteJobamp;deviceUser=jobStatus-ViewAllJobsamp;deviceUser=sendToUSBMassStorageamp;deviceUser=sendToUSBMassStorage-ConfigureJobSettingsamp;deviceUser=jobStorageSaveamp;deviceUser=oxpworkflow_436170656C6C614D4A20110209495001_v16amp;deviceUser=print-Coloramp;deviceUser=print-Coloramp;SignInMethod__DefaultValue=hp_EmbeddedPin_v1amp;SignInMethod__deviceMaintenance=defaultamp;SignInMethod__reports=defaultamp;SignInMethod__administration=defaultamp;SignInMethod__jobStoragePrint=defaultamp;SignInMethod__copy=defaultamp;SignInMethod__supplyStatus=defaultamp;SignInMethod__trayStatus=defaultamp;SignInMethod__printFromUSBMassStorage=defaultamp;SignInMethod__printing=defaultamp;SignInMethod__fax=defaultamp;SignInMethod__sendToEmail=defaultamp;SignInMethod__addressBook=defaultamp;SignInMethod__sendToFolder=defaultamp;SignInMethod__jobStatus=defaultamp;SignInMethod__sendToUSBMassStorage=defaultamp;SignInMethod__jobStorageSave=defaultamp;SignInMethod__oxpworkflow_436170656C6C614D4A20110209495001_v16=defaultamp;AllowUsersChooseSignIn=onamp;SignOutDelay=Immediateamp;RetainSettingsCopy=Alwaysamp;RetainSettingsSend=Promptamp;RetainSettingsFax=Promptamp;DefaultRole__hp_EmbeddedLDAP_v1=deviceUseramp;DefaultRole__hp_EmbeddedWindows_v1=deviceUseramp;DefaultPermissionSetNewAccounts=deviceUseramp;PinListPagination__itemsPerPage=25amp;PinListPagination__current=1amp;PinListPagination__totalNumberOfItems=0amp;ButtonEdit_hp_EmbeddedLDAP_v1=Setupamp;StepBackAnchor=AgentsMasterCustomViewSectionIdamp;jsAnchor=AgentsMasterCustomViewSectionId</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Language</HeaderName>
+            <HeaderValue>en-US</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="3">
+            <HeaderName>Cache-Control</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+          <Header Order="4">
+            <HeaderName>DNT</HeaderName>
+            <HeaderValue>1</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+      <Request Order="2" sessionID="yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/LdapAuthentication/Save</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Default item="EnableSSLField">donotsend</Default>
+        <Default item="PortNumber">389</Default>
+        <Default item="AuthenticationMode">UserCredentials</Default>
+        <Default item="AdminLdapDN">donotsend</Default>
+        <Default item="AdminPassword">donotsend</Default>
+        <Default item="RetrieveEmail">mail</Default>
+        <Default item="RetrieveName">cn</Default>
+        <Default item="TestUsername">donotsend</Default>
+        <Default item="TestPassword">donotsend</Default>
+        <Payload>EnableField=onamp;LdapServerAddress={LdapServerAddress}amp;EnableSSLField={EnableSSLField}amp;PortNumber={PortNumber}amp;AuthenticationMode={AuthenticationMode}amp;BindPrefix={BindPrefix}amp;AdminLdapDN={AdminLdapDN}amp;AdminPassword={AdminPassword}amp;SearchRoot={SearchRoot}amp;MatchName={MatchName}amp;RetrieveEmail={RetrieveEmail}amp;RetrieveName={RetrieveName}amp;RetrieveGroup=objectClassamp;ExactMatch=onamp;TestUsername={TestUsername}amp;TestPassword={TestPassword}amp;StepBackAnchor=LdapAuthenticationTestViewSectionIdamp;jsAnchor=LdapAuthenticationTestViewSectionIdamp;FormButtonSubmit=ok</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Language</HeaderName>
+            <HeaderValue>en-US</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="3">
+            <HeaderName>Cache-Control</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+          <Header Order="4">
+            <HeaderName>DNT</HeaderName>
+            <HeaderValue>1</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+</Printers>
+
+
+

@@ -1,0 +1,330 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<HTML DIR="LTR">
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>Dureg.exe: Registry Size Estimator</TITLE>
+
+<STYLE TYPE="text/css">
+body    { color: #000000;
+		background: #FFFFFF;  	
+		font-size: 70%;    		
+		font-family: Verdana, Arial, Sans Serif; }
+h1
+		{ font-size: 125%; 
+		margin-bottom:" .5em"; clear:both; }
+h2
+		{ font-size: 110%;  
+		margin-top: "1.5em";
+		margin-bottom:" .5em"; clear:both; }
+h3
+		{ font-size: 100%; 
+		margin-top: "1.2em";  
+		margin-bottom: ".5em"; clear:both; }
+h4
+		{ font-size: 100%; 
+		margin-top: "1.2em";  
+		margin-bottom: ".5em"; clear:both; }
+p
+		{ margin-top:" .6em"; 
+		margin-bottom: ".6em"; }
+ol
+		{ margin-top: ".5em"; 
+		margin-bottom: 0; 
+		margin-left: "2.1em"; 
+		padding-left: "0em";
+		margin-right:"2.1em" }
+ul
+		{ margin-top: ".6em"; 	
+		margin-bottom: 0;
+		list-style-type: disc;
+		margin-left: "1.5em";
+		padding-left: "0em";
+		margin-right: "1.5em"; }
+li
+		{ margin-bottom: ".7em"; clear:both; }
+p.browse
+		{text-align: right;
+		margin-top: -.5em;
+		margin-bottom: -.5em;}
+p.note, p.tip, p.important, p.caution, p.warning
+		{ font-weight:bold;
+		clear:both; margin-top: "1.2em";
+		margin-bottom: "-.4em"; }
+p.alert
+	{ margin-left: 1.5em; 
+	margin-top: -1.0em; margin-bottom: -.3em; font-weight: bold } 
+
+p.indent	
+		{ margin-left: "1.3em"; }       	
+		
+p.topics	{font-weight: bold}
+p.info		{font-weight: bold}
+p.files		{font-weight: bold}
+p.syntax	{background: #dddddd;
+			margin-top: 1em; 
+			margin-bottom: 1em;}
+dl		{margin-top: -.5em;}
+dt.SyntaxTerm {font-weight: normal}
+a.poplink
+		{ color: "#000000";
+		cursor: "text";
+		text-decoration: "none"; }
+table
+		{ font-size: 100%;
+		margin-top: 1em; 
+		margin-bottom: 1em; 
+		cellpadding: 0.5em; }
+		
+th
+		{ text-align: left;
+		background: #dddddd;
+		vertical-align: bottom;
+		padding: .2em;
+		padding-left: .45em;
+		padding-right: .5em; }
+		
+tr
+		{ vertical-align: top; }
+
+td
+		{ background: #EEEEEE;
+		vertical-align: top;
+		padding: .2em;
+		padding-left: .45em;
+		padding-right: .5em; }
+</style>
+
+</HEAD>
+
+<BODY>
+
+
+<H1>Dureg.exe: Registry Size Estimator</H1>
+
+<HR>
+
+<P>Registry Size Estimator (DuReg) is a command-line tool that enables you to discover how much data is stored in the registry, or in any registry subtree, key, or subkey. The tool also enables you to search for all occurrences of a text string in the registry. This search can be limited to a specific subtree.</P>
+
+<P><B>Note</B></P>
+<UL>
+	<LI>DuReg counts data, not space. Because the space any data occupies varies with the storage method and amount of free space available, the size of data and the size of space consumed are not equal. Also, because it measures data, DuReg does not account for fragmented free space in the registry.</LI>
+</UL>
+
+<P>The DuReg helps developers and administrators estimate how much space registry data is consuming. Developers can use this tool to discover how much data they are contributing to the registry. Administrators can use this tool to investigate which applications are filling a registry when the registry approaches its maximum size.</P>
+
+<P>The registry data size function is unique to each system. You can determine the maximum registry size and an estimate of the current registry size by using System in Control Panel. You can also find the current:maximum size ratio (expressed as a percentage) by using the System: % Registry Quota in Use counter in Perfmon\Sysmon. However, only DuReg returns the size of individual keys and subkeys.</P>
+
+<P CLASS="files">File Required</P>
+<UL>
+	<LI>Dureg.exe</LI>
+</UL>
+
+<A NAME="dureg_topics"></A>
+<P CLASS="topics">DuReg Topics</P>
+<UL>
+     <LI><A HREF="#dureg_syntax">DuReg Syntax</A></LI>
+     <LI><A HREF="#dureg_examples">DuReg Example</A></LI>
+</UL>
+
+<A NAME="dureg_syntax"></A>
+<HR>
+<P class="browse"><A HREF="#top">top</A></P>
+<H2>DuReg Syntax</H2>
+<HR>
+
+<P CLASS="syntax"><B>dureg</B>&nbsp;[{<B>/cr</B> | <B>/cu</B> | <B>/u</B> | <B>/lm</B> | <B>/a</B>}] [{<B>/s</B> | <B>/d</B>}] [&quot;<i>registry_path</i>&quot;] [&quot;<i>string to search</i>&quot;]</P>
+
+<P>Where:</p>
+
+<DL>
+
+<DT CLASS="SyntaxTerm"><B>/a</B></DT>
+<DD>finds the size of entire registry (all).</DD>
+
+<DT CLASS="SyntaxTerm"><B>/cr</B> &quot;<I>registry_path</I>&quot;</DT>
+<DD>by default, returns the size of HKEY_CLASSES_ROOT. Include a registry path to find the size of any key within this subtree.</DD>
+
+<DT CLASS="SyntaxTerm"><B>/cu</B> &quot;<I>registry_path</I>&quot;</DT>
+<DD>by default, returns the size of HKEY_CURRENT_USER. Include a registry path to find the size of any key within this subtree.</DD>
+
+<DT CLASS="SyntaxTerm"><B>/lm</B> &quot;<I>registry_path</I>&quot;</DT>
+<DD>by default, returns the size of HKEY_LOCAL_MACHINE. Include a registry path to find the size of any key within this subtree. For example, <B>dureg /lm</B> &quot;software\microsoft&quot;  finds the size of the HKLM\Software\Microsoft key.</DD>
+
+<DT CLASS="SyntaxTerm"><B>/u</B> &quot;<I>registry_path</I>&quot;</DT>
+<DD>by default, returns the size of HKEY_USERS. Include a registry path to find the size of any key within this subtree.</DD>
+
+<DT CLASS="SyntaxTerm">[/<I>Subtree switch</I>] &quot;<I>registry_path</I>&quot;</DT>
+<DD>finds the size of any registry key.</DD>
+
+<DT CLASS="SyntaxTerm"><B>/s</B> &quot;<I>string</I>&quot;</DT>
+<DD>searches for string in the registry. For example, <B>dureg /s</B> &quot;video&quot; finds all occurrences of &quot;video&quot; in the registry.
+<P><B>Note</B></P>
+<UL>
+	<LI>To stop a search, press CTRL+BREAK.
+	</LI>
+</UL>
+
+</DD>
+
+<DT CLASS="SyntaxTerm"><B>/s</B> [/<I>subtree switch</I>] &quot;<I>string</I>&quot;</DT>
+<DD>searches for string in the registry subtree. For example, <B>dureg /lm /s</B> &quot;video&quot; finds all occurrences of &quot;video&quot; in HKLM.
+<P><B>Note</B></P>
+<UL>
+	<LI>To stop a search, press CTRL+BREAK.
+	</LI>
+</UL>
+
+</DD>
+
+</DL>
+
+<A NAME="dureg_examples"></A>
+<HR>
+<P class="browse"><A HREF="#top">top</A></P>
+<H2>DuReg Examples</H2>
+<HR>
+
+<H3>Example 1</H3>
+
+<P>To find the size of the registry</P>
+
+<pre><code>Size of HKEY_CLASSES_ROOT   :    4139400
+Size of HKEY_USERS          :     557562
+Size of HKEY_LOCAL_MACHINE  :    8407113
+
+    Total Registry data size:    13104075</code></pre>
+	
+<H3>Example 2</H3>
+
+<P>To display all occurances of &quot;Content Type&quot; only in HKEY_CLASSES_ROOT</P>
+
+<pre><code>
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/cdf\Extension : .cdf
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/fractals\Extension : .fif
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/hta\CLSID : {3050f4d8-98B5-11CF-BB82-00AA00BDCE0B}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/hta\Extension : .hta
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/mac-binhex40\Extension : .hqx
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/postscript\Extension : .ps
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/set-payment-initiation\Extension : .setpay
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/set-registration-initiation\Extension : .setreg
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/x-cdf\Extension : .cdf
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/x-compress\Extension : .z
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/x-compressed\Extension : .tgz
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/x-gzip\Extension : .gz
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/x-internet-signup\Extension : .ins
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/x-iphone\Extension : .iii
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/x-latex\Extension : .latex
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/x-mix-transfer\Extension : .nix
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/x-mix-transfer\CLSID : {10000000-0000-0000-0000-000000000001}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/x-mplayer2\CLSID : {22D6F312-B0F6-11D0-94AB-0080C74C7E95}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/x-mplayer2\Extension : .asx
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/x-stuffit\Extension : .sit
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/x-tar\Extension : .tar
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/x-troff-man\Extension : .man
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/x-x509-ca-cert\Extension : .crt
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/x-zip-compressed\Extension : .zip
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/aiff\CLSID : {22D6F312-B0F6-11D0-94AB-0080C74C7E95}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/aiff\MPlayer2.BAK.CLSID : {05589fa1-c356-11ce-bf01-00aa0055595a}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/aiff\Extension : .aiff
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/basic\CLSID : {22D6F312-B0F6-11D0-94AB-0080C74C7E95}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/basic\MPlayer2.BAK.CLSID : {05589fa1-c356-11ce-bf01-00aa0055595a}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/basic\Extension : .au
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/mid\CLSID : {22D6F312-B0F6-11D0-94AB-0080C74C7E95}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/mid\MPlayer2.BAK.CLSID : {05589fa1-c356-11ce-bf01-00aa0055595a}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/mid\Extension : .mid
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/midi\CLSID : {22D6F312-B0F6-11D0-94AB-0080C74C7E95}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/midi\Extension : .mid
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/mpeg\CLSID : {22D6F312-B0F6-11D0-94AB-0080C74C7E95}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/mpeg\Extension : .mp3
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/wav\CLSID : {22D6F312-B0F6-11D0-94AB-0080C74C7E95}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/wav\MPlayer2.BAK.CLSID : {05589fa1-c356-11ce-bf01-00aa0055595a}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/wav\Extension : .wav
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/x-aiff\CLSID : {22D6F312-B0F6-11D0-94AB-0080C74C7E95}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/x-aiff\MPlayer2.BAK.CLSID : {05589fa1-c356-11ce-bf01-00aa0055595a}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/x-aiff\Extension : .aiff
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/x-midi\CLSID : {22D6F312-B0F6-11D0-94AB-0080C74C7E95}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/x-midi\Extension : .mid
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/x-mpegurl\CLSID : {22D6F312-B0F6-11D0-94AB-0080C74C7E95}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/x-mpegurl\Extension : .m3u
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/x-pn-realaudio\Extension : .ra
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/x-wav\CLSID : {22D6F312-B0F6-11D0-94AB-0080C74C7E95}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/x-wav\MPlayer2.BAK.CLSID : {05589fa1-c356-11ce-bf01-00aa0055595a}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\audio/x-wav\Extension : .wav
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/bmp\Extension : .bmp
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/bmp\Image Filter CLSID : {607fd4e8-0a03-11d1-ab1d-00c04fc9b304}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/bmp\Bits\0 : 2
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/gif\CLSID : {25336920-03F9-11cf-8FD0-00AA00686F13}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/gif\Extension : .gif
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/gif\Image Filter CLSID : {607fd4e8-0a03-11d1-ab1d-00c04fc9b304}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/gif\Bits\0 : 4
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/jpeg\CLSID : {25336920-03F9-11cf-8FD0-00AA00686F13}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/jpeg\Extension : .jpg
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/jpeg\Image Filter CLSID : {607fd4e8-0a03-11d1-ab1d-00c04fc9b304}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/jpeg\Bits\0 : 2
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/pjpeg\CLSID : {25336920-03F9-11cf-8FD0-00AA00686F13}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/pjpeg\Extension : .jpg
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/pjpeg\Image Filter CLSID : {607fd4e8-0a03-11d1-ab1d-00c04fc9b304}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/pjpeg\Bits\0 : 2
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/png\Image Filter CLSID : {A3CCEDF7-2DE2-11D0-86F4-00A0C913F750}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/png\Bits\0 : 8
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/tiff\Extension : .tif
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/tiff\CLSID : {02B01C80-E03D-101A-B294-00DD010F2BF9}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/tiff\Image Filter CLSID : {EBD0F6B6-4AED-11D1-9CDB-00805F0C62F5}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/tiff\Bits\0 : 4
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/tiff\Bits\1 : 4
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/x-jg\CLSID : {25336920-03F9-11cf-8FD0-00AA00686F13}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/x-png\Image Filter CLSID : {A3CCEDF7-2DE2-11D0-86F4-00A0C913F750}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/x-png\Bits\0 : 8
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/x-wmf\Image Filter CLSID : {607fd4e8-0a03-11d1-ab1d-00c04fc9b304}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/x-wmf\Bits\0 : 4
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/x-xbitmap\CLSID : {25336920-03F9-11cf-8FD0-00AA00686F13}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/x-xbitmap\Extension : .xbm
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/xbm\Extension : .xbm
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/xiff\Image Filter CLSID : {EBD0F6B6-4AED-11D1-9CDB-00805F0C62F5}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/xiff\Bits\0 : 12
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/xiff\Bits\1 : 12
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\message/rfc822\CLSID : {3050F3D9-98B5-11CF-BB82-00AA00BDCE0B}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\text/css\Extension : .css
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\text/h323\Extension : .323
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\text/html\CLSID : {25336920-03F9-11cf-8FD0-00AA00686F13}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\text/html\Extension : .htm
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\text/html\Encoding : 8
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\text/iuls\Extension : .uls
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\text/plain\CLSID : {25336920-03F9-11cf-8FD0-00AA00686F13}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\text/plain\Extension : .txt
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\text/plain\Encoding : 7
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\text/scriptlet\CLSID : {21617250-A071-11D1-89B6-006008C3FBFC}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\text/scriptlet\Extension : .sct
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\text/webviewhtml\CLSID : {25336920-03F9-11CF-8FD0-00AA00686F13}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\text/webviewhtml\Extension : .htt
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\text/x-scriptlet\CLSID : {AE24FDAE-03C6-11D1-8B76-0080C744F389}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/avi\CLSID : {22D6F312-B0F6-11D0-94AB-0080C74C7E95}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/avi\MPlayer2.BAK.CLSID : {05589fa1-c356-11ce-bf01-00aa0055595a}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/avi\Extension : .avi
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/mpeg\CLSID : {22D6F312-B0F6-11D0-94AB-0080C74C7E95}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/mpeg\MPlayer2.BAK.CLSID : {05589fa1-c356-11ce-bf01-00aa0055595a}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/mpeg\Extension : .mpeg
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/msvideo\CLSID : {22D6F312-B0F6-11D0-94AB-0080C74C7E95}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/msvideo\Extension : .avi
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/quicktime\CLSID : {22D6F312-B0F6-11D0-94AB-0080C74C7E95}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/quicktime\MPlayer2.BAK.CLSID : {05589fa1-c356-11ce-bf01-00aa0055595a}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/quicktime\Extension : .qt
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/x-ivf\Extension : .IVF
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/x-ivf\CLSID : {05589FA1-C356-11CE-BF01-00AA0055595A}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/x-la-asf\CLSID : {22D6F312-B0F6-11D0-94AB-0080C74C7E95}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/x-la-asf\Extension : .lsx
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/x-mpeg\CLSID : {22D6F312-B0F6-11D0-94AB-0080C74C7E95}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/x-mpeg\Extension : .mp2
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/x-mpeg2a\CLSID : {22D6F312-B0F6-11D0-94AB-0080C74C7E95}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/x-mpeg2a\Extension : .mp2
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/x-ms-asf\CLSID : {22D6F312-B0F6-11D0-94AB-0080C74C7E95}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/x-ms-asf\Extension : .asx
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/x-ms-asf-plugin\CLSID : {22D6F312-B0F6-11D0-94AB-0080C74C7E95}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/x-ms-asf-plugin\Extension : .asx
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/x-msvideo\CLSID : {22D6F312-B0F6-11D0-94AB-0080C74C7E95}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/x-msvideo\MPlayer2.BAK.CLSID : {05589fa1-c356-11ce-bf01-00aa0055595a}
+HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/x-msvideo\Extension : .avi
+</code></pre>
+
+</BODY>
+</HTML>

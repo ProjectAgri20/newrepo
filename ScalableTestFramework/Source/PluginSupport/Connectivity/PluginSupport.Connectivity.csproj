@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0B2A00EE-BC24-490E-BBC0-F8FB7E12985C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HP.ScalableTest.PluginSupport.Connectivity</RootNamespace>
+    <AssemblyName>PluginSupport.Connectivity</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OutputPath>..\..\..\Binaries\STF.Plugin\</OutputPath>
+    <CodeAnalysisRuleSet>BasicDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DeviceAutomation-2.2, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\External Assemblies\DeviceAutomation-2.2.dll</HintPath>
+    </Reference>
+    <PackageReference Include="log4net">
+      <Version>2.0.8</Version>
+    </PackageReference>
+    <Reference Include="Routrek.granados, Version=2.0.0.0, Culture=neutral, PublicKeyToken=085153c4fdf3ca14">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\Routrek.granados.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="BacabodWrapper.cs" />
+    <Compile Include="CertificateUtility.cs" />
+    <Compile Include="ConnectivityTestDetailLog.cs" />
+    <Compile Include="ConnectivityUtilityServiceClient.cs" />
+    <Compile Include="ControlPanelUtility.cs" />
+    <Compile Include="CtcBaseConfigurationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtcBaseConfigurationControl.Designer.cs">
+      <DependentUpon>CtcBaseConfigurationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CtcBaseTests.cs" />
+    <Compile Include="CtcMetadataConverter.cs" />
+    <Compile Include="CtcServiceLogger.cs" />
+    <Compile Include="CtcSettings.cs" />
+    <Compile Include="CtcTestCaseDetails1.Designer.cs">
+      <DependentUpon>CTCTestCaseDetails.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CtcTestCaseDetailsDataSet2.Designer.cs">
+      <DependentUpon>CtcTestCaseDetailsDataSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CtcUtility.cs" />
+    <Compile Include="DeviceServiceState.cs" />
+    <Compile Include="Dhcp\DhcpApplication.cs" />
+    <Compile Include="Dhcp\DhcpApplicationServiceClient.cs" />
+    <Compile Include="Dhcp\IDhcpApplication.cs" />
+    <Compile Include="Discovery\DeviceInfo.cs" />
+    <Compile Include="Discovery\DiscoveryBase.cs" />
+    <Compile Include="Discovery\PrinterDiscovery.cs" />
+    <Compile Include="Dns\DnsApplication.cs" />
+    <Compile Include="Dns\DnsApplicationServiceClient.cs" />
+    <Compile Include="Dns\IDnsApplication.cs" />
+    <Compile Include="Dot1XConfigurationDetails.cs" />
+    <Compile Include="EmbeddedWebServer\EwsAdapter.cs" />
+    <Compile Include="EmbeddedWebServer\EwsCertWrapper.cs" />
+    <Compile Include="EmbeddedWebServer\EwsSecurityWrapper.cs" />
+    <Compile Include="EmbeddedWebServer\EwsSeleniumSettings.cs" />
+    <Compile Include="EmbeddedWebServer\EwsSettings.cs" />
+    <Compile Include="EmbeddedWebServer\EwsSettingsFactory.cs" />
+    <Compile Include="EmbeddedWebServer\EwsSiteMapData.cs" />
+    <Compile Include="EmbeddedWebServer\EwsWirelessWrapper.cs" />
+    <Compile Include="EmbeddedWebServer\EwsWrapper.cs" />
+    <Compile Include="EnumValue.cs" />
+    <Compile Include="EnumValueAttribute.cs" />
+    <Compile Include="Extension.cs" />
+    <Compile Include="IConnectivityUtility.cs" />
+    <Compile Include="IEBrowserSettingsAutomation.cs" />
+    <Compile Include="KiwiSyslog\IKiwiSyslogApplication.cs" />
+    <Compile Include="KiwiSyslog\KiwiSyslogApplication.cs" />
+    <Compile Include="KiwiSyslog\KiwiSyslogApplicationServiceClient.cs" />
+    <Compile Include="LinuxUtils.cs" />
+    <Compile Include="NetworkSwitch\HPProCurveSwitch.cs" />
+    <Compile Include="NetworkSwitch\INetworkSwitch.cs" />
+    <Compile Include="NetworkSwitch\SwitchFactory.cs" />
+    <Compile Include="NetworkSwitch\VirtualLAN.cs" />
+    <Compile Include="NetworkUtil.cs" />
+    <Compile Include="ObjectId.cs" />
+    <Compile Include="PacketCapture\IPacketCapture.cs" />
+    <Compile Include="PacketCapture\NetworkDevice.cs" />
+    <Compile Include="PacketCapture\PacketCaptureServiceClient.cs" />
+    <Compile Include="PacketCapture\PacketCaptureUtility.cs" />
+    <Compile Include="PacketCapture\PacketDetails.cs" />
+    <Compile Include="PowerSwitch\AvioSysPowerSwitch.cs" />
+    <Compile Include="PowerSwitch\IPowerSwitch.cs" />
+    <Compile Include="PowerSwitch\PowerSwitchFactory.cs" />
+    <Compile Include="Printer\FTPPrintingEventArgs.cs" />
+    <Compile Include="Printer\InterfaceMode.cs" />
+    <Compile Include="Printer\IPConfigMethod.cs" />
+    <Compile Include="Printer\IPv6Details.cs" />
+    <Compile Include="Printer\JediPrinter.cs" />
+    <Compile Include="Printer\MarvellPrinter.cs" />
+    <Compile Include="Printer\PhoenixPrinter.cs" />
+    <Compile Include="Printer\PrintController.cs" />
+    <Compile Include="Printer\Printer.cs" />
+    <Compile Include="Printer\PrinterFactory.cs" />
+    <Compile Include="Printer\PrinterFamilies.cs" />
+    <Compile Include="Printer\PrinterLinkSpeed.cs" />
+    <Compile Include="Printer\PrinterStatus.cs" />
+    <Compile Include="Printer\ProductType.cs" />
+    <Compile Include="Printer\SiriusPrinter.cs" />
+    <Compile Include="Printer\SSHProtocol.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RadiusServer\AuthenticationMode.cs" />
+    <Compile Include="RadiusServer\IRadiusApplication.cs" />
+    <Compile Include="RadiusServer\RadiusApplication.cs" />
+    <Compile Include="RadiusServer\RadiusApplicationServiceClient.cs" />
+    <Compile Include="RadiusServer\RadiusServerTypes.cs" />
+    <Compile Include="Router\HPProcurveRouter.cs" />
+    <Compile Include="Router\IRouter.cs" />
+    <Compile Include="Router\RouterFactory.cs" />
+    <Compile Include="Router\RouterVirtualLAN.cs" />
+    <Compile Include="SecurityRuleSettings.cs" />
+    <Compile Include="Selenium\BrowserModel.cs" />
+    <Compile Include="Selenium\ISeleniumBase.cs" />
+    <Compile Include="Selenium\JavaUtil.cs" />
+    <Compile Include="Selenium\SeleniumServer.cs" />
+    <Compile Include="Selenium\SeleniumWebDriver.cs" />
+    <Compile Include="SnmpWrapper.cs" />
+    <Compile Include="SystemConfiguration\ISystemConfiguration.cs" />
+    <Compile Include="SystemConfiguration\SystemConfiguration.cs" />
+    <Compile Include="SystemConfiguration\SystemConfigurationClient.cs" />
+    <Compile Include="Telnet\TelnetIpc.cs" />
+    <Compile Include="Telnet\TelnetLib.cs" />
+    <Compile Include="Telnet\TelnetWrapper.cs" />
+    <Compile Include="TestDetailAttribute.cs" />
+    <Compile Include="TraceFactory.cs" />
+    <Compile Include="UI\DataGridViewAutoFilterColumnHeaderCell.cs" />
+    <Compile Include="UI\DataGridViewAutoFilterTextBoxColumn.cs" />
+    <Compile Include="UI\PrintDriverSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\PrintDriverSelector.Designer.cs">
+      <DependentUpon>PrintDriverSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PrinterDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\PrinterDetails.Designer.cs">
+      <DependentUpon>PrinterDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SitemapVersionSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SitemapVersionSelector.Designer.cs">
+      <DependentUpon>SitemapVersionSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SwitchDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SwitchDetails.Designer.cs">
+      <DependentUpon>SwitchDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserImpersonator.cs" />
+    <Compile Include="WebProxyConfigurationDetails.cs" />
+    <Compile Include="Wins\IWinsApplication.cs" />
+    <Compile Include="Wins\WinsApplication.cs" />
+    <Compile Include="Wins\WinsApplicationServiceClient.cs" />
+    <Compile Include="Wireless\AuthSettings.cs" />
+    <Compile Include="Wireless\EapUserFactory.cs" />
+    <Compile Include="Wireless\Enums.cs" />
+    <Compile Include="Wireless\Exceptions.cs" />
+    <Compile Include="Wireless\Interop.cs" />
+    <Compile Include="Wireless\PasswordHelper.cs" />
+    <Compile Include="Wireless\ProfileFactory.cs" />
+    <Compile Include="Wireless\Structs.cs" />
+    <Compile Include="Wireless\Wifi.cs" />
+    <Compile Include="Wireless\WirelessNetwork.cs" />
+    <Compile Include="Wireless\WlanClient.cs" />
+    <Compile Include="Wireless\WlanHelpers.cs" />
+    <Compile Include="Wireless\WlanInterface.cs" />
+    <Compile Include="Wireless\WlanNotificationStructs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DeviceAutomation\STF.DeviceAutomation.csproj">
+      <Project>{8fa37af9-f2b8-4e72-bff7-580491a62832}</Project>
+      <Name>STF.DeviceAutomation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FrameworkInternal\STF.FrameworkInternal.csproj">
+      <Project>{1d38c759-e5f6-4603-bbbc-566f1276aba2}</Project>
+      <Name>STF.FrameworkInternal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\STF.Framework.csproj">
+      <Project>{b91dcc51-8664-49e3-97d0-6fcfd2918a1a}</Project>
+      <Name>STF.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Print\STF.Print.csproj">
+      <Project>{b549acae-daed-4f96-a962-14bd02428770}</Project>
+      <Name>STF.Print</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utility\STF.Utility.csproj">
+      <Project>{0a02ea9d-11d5-4078-9036-385709cb365a}</Project>
+      <Name>STF.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WindowsAutomation\STF.WindowsAutomation.csproj">
+      <Project>{d9823f40-464d-451e-86cc-0c5339196522}</Project>
+      <Name>STF.WindowsAutomation</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CtcBaseConfigurationControl.resx">
+      <DependentUpon>CtcBaseConfigurationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PrintDriverSelector.resx">
+      <DependentUpon>PrintDriverSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PrinterDetails.resx">
+      <DependentUpon>PrinterDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SitemapVersionSelector.resx">
+      <DependentUpon>SitemapVersionSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SwitchDetails.resx">
+      <DependentUpon>SwitchDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wireless\EapUserXML\EAP-MS-CHAPv2.xml" />
+    <EmbeddedResource Include="Wireless\EapUserXML\EAP-TLS.xml" />
+    <EmbeddedResource Include="Wireless\EapUserXML\PEAP-MS-CHAPv2.xml" />
+    <EmbeddedResource Include="Wireless\EapUserXML\PEAP-TLS.xml" />
+    <EmbeddedResource Include="Wireless\EapUserXML\SDK.xml" />
+    <EmbeddedResource Include="Wireless\ProfileXML\OPEN.xml" />
+    <EmbeddedResource Include="Wireless\ProfileXML\WEP.xml" />
+    <EmbeddedResource Include="Wireless\ProfileXML\WPA-Enterprise-PEAP-MSCHAPv2.xml" />
+    <EmbeddedResource Include="Wireless\ProfileXML\WPA-Enterprise-TLS.xml" />
+    <EmbeddedResource Include="Wireless\ProfileXML\WPA-PSK.xml" />
+    <EmbeddedResource Include="Wireless\ProfileXML\WPA2-Enterprise-PEAP-MSCHAPv2.xml" />
+    <EmbeddedResource Include="Wireless\ProfileXML\WPA2-Enterprise-TLS.xml" />
+    <EmbeddedResource Include="Wireless\ProfileXML\WPA2-PSK.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CTCTestCaseDetails.xsc">
+      <DependentUpon>CTCTestCaseDetails.xsd</DependentUpon>
+    </None>
+    <None Include="CTCTestCaseDetails.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CtcTestCaseDetails1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CTCTestCaseDetails.xss">
+      <DependentUpon>CTCTestCaseDetails.xsd</DependentUpon>
+    </None>
+    <None Include="CtcTestCaseDetailsDataSet.xsc">
+      <DependentUpon>CtcTestCaseDetailsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CtcTestCaseDetailsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CtcTestCaseDetailsDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CtcTestCaseDetailsDataSet.xss">
+      <DependentUpon>CtcTestCaseDetailsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\plink.exe" />
+    <None Include="Resources\pscp.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BacabodTool.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sdisdk.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="log4net">
+      <Version>2.0.8</Version>
+    </PackageReference>
+    <PackageReference Include="Selenium.Support">
+      <Version>2.35.0</Version>
+    </PackageReference>
+    <PackageReference Include="Selenium.WebDriver">
+      <Version>2.35.0</Version>
+    </PackageReference>
+    <PackageReference Include="Selenium.WebDriverBackedSelenium">
+      <Version>2.35.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <CodeAnalysisLogFile>$(IntermediateOutputPath)$(TargetFileName).CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisSucceededFile>$(IntermediateOutputPath)$(TargetFileName).lastcodeanalysissucceeded</CodeAnalysisSucceededFile>
+  </PropertyGroup>
+</Project>

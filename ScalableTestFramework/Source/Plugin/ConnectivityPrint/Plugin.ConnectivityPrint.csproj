@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{3DAB8EC7-44FA-49E5-87F4-7AA4DB640A77}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HP.ScalableTest.Plugin.ConnectivityPrint</RootNamespace>
+    <AssemblyName>Plugin.ConnectivityPrint</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OutputPath>..\..\..\..\VirtualResource\Distribution\Plugin\</OutputPath>
+    <CodeAnalysisRuleSet>BasicDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DeviceAutomation-2.2, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\External Assemblies\DeviceAutomation-2.2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TopCat.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PluginSupport\TopCat\References\TopCat.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="TopCat.Framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PluginSupport\TopCat\References\TopCat.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="TopCat.TestApi, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PluginSupport\TopCat\References\TopCat.TestApi.dll</HintPath>
+    </Reference>
+    <Reference Include="TopCat.Tools.GUIAutomation, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PluginSupport\TopCat\References\TopCat.Tools.GUIAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="ConnectivityPrintActivityData.cs" />
+    <Compile Include="ConnectivityPrintConfigurationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConnectivityPrintConfigurationControl.Designer.cs">
+      <DependentUpon>ConnectivityPrintConfigurationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectivityPrintExecutionEngine.cs" />
+    <Compile Include="ConnectivityPrintTemplates.cs" />
+    <Compile Include="ConnectivityPrintTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UIMaps\AddPrinter.cs" />
+    <Compile Include="UIMaps\ChoosePrinter.cs" />
+    <Compile Include="UIMaps\ClickHyperlink.cs" />
+    <Compile Include="UIMaps\FindPrinter.cs" />
+    <Compile Include="UIMaps\FinishInstall.cs" />
+    <Compile Include="UIMaps\InstallDriver.cs" />
+    <Compile Include="UIMaps\InstallFromDisk.cs" />
+    <Compile Include="UIMaps\SelectModel.cs" />
+    <Compile Include="UIMaps\SelectPrinter.cs" />
+    <Compile Include="UIMaps\SuccessfulInstall.cs" />
+    <Compile Include="UIMaps\TopCatUIHelper.cs" />
+    <Compile Include="UIMaps\WindowsSecurityToInstall.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\FrameworkInternal\STF.FrameworkInternal.csproj">
+      <Project>{1d38c759-e5f6-4603-bbbc-566f1276aba2}</Project>
+      <Name>STF.FrameworkInternal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\STF.Framework.csproj">
+      <Project>{b91dcc51-8664-49e3-97d0-6fcfd2918a1a}</Project>
+      <Name>STF.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PluginSupport\Connectivity\PluginSupport.Connectivity.csproj">
+      <Project>{0b2a00ee-bc24-490e-bbc0-f8fb7e12985c}</Project>
+      <Name>PluginSupport.Connectivity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Print\STF.Print.csproj">
+      <Project>{b549acae-daed-4f96-a962-14bd02428770}</Project>
+      <Name>STF.Print</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utility\STF.Utility.csproj">
+      <Project>{0a02ea9d-11d5-4078-9036-385709cb365a}</Project>
+      <Name>STF.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WindowsAutomation\STF.WindowsAutomation.csproj">
+      <Project>{d9823f40-464d-451e-86cc-0c5339196522}</Project>
+      <Name>STF.WindowsAutomation</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConnectivityPrintConfigurationControl.resx">
+      <DependentUpon>ConnectivityPrintConfigurationControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UploadFile.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <CodeAnalysisLogFile>$(IntermediateOutputPath)$(TargetFileName).CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisSucceededFile>$(IntermediateOutputPath)$(TargetFileName).lastcodeanalysissucceeded</CodeAnalysisSucceededFile>
+  </PropertyGroup>
+</Project>

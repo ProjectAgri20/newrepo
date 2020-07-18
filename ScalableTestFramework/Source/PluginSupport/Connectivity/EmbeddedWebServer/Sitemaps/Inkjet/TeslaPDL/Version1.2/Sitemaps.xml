@@ -1,0 +1,177 @@
+<Sitemaps>
+  <Pages>
+    <Page key="802.1x_Authentication" relative_path="#hId-pgWired802dot1x">
+      <Elements>
+        <Element key="Dot1x_PEAP" id="app-wired-802dot1x-peap-field-Inp_PEAP" name="" xpath="" class="" type="" />
+        <Element key="Dot1x_EAPTLS" id="app-wired-802dot1x-peap-field-Inp_EAP_TLS" name="" xpath="" class="" type="" />
+        <Element key="Dot1x_UserName" id="tmpId32-Inp" name="" xpath="" class="" type="" />
+        <Element key="Dot1x_Password" id="tmpId34-Inp" name="" xpath="" class="" type="" />
+        <Element key="Dot1x_ConfirmPassword" id="tmpId36-Inp" name="" xpath="" class="" type="" />
+        <Element key="Dot1x_EncryptionStrength" id="" name="" xpath="" class="" type="" />
+        <Element key="Dot1x_Connect" id="tmpId42-Inp_allow" name="tmpId42-Inp" xpath="" class="" type="" />
+        <Element key="Dot1x_Block" id="tmpId42-Inp_drop" name="tmpId42-Inp" xpath="" class="" type="radio" />
+        <Element key="Dot1x_Apply" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/div/input[6]" class="" type="" />
+        <Element key="Dot1x_Confirm" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/div/input[7]" class="" type="" />
+        <Element key="Dot1x_Restore_Defaults" id="" name="" xpath="" class="gui-cmd-btn-restore_btn" type="" />
+        <Element key="ConfirmOk" id="" name="" xpath="/html/body/div[5]/div[2]/button" class="" type="" />
+        <Element key="ConfirmCancel" id="" name="" xpath="/html/body/div[6]/div[2]/button[1]" class="" type="" />
+        <Element key="Dot1x_Reset_Ok" id="" name="" xpath="/html/body/div[5]/div[2]/button" class="gui-action-btn" type="" />
+      </Elements>
+    </Page>
+    <Page key="CertificateManagement" relative_path="#hId-pgCertificates">
+      <Elements>
+        <Element key="Certificates_Table" id="app-certificates-ca-cert-table-Tbl" name="" xpath="" class="" type="" />
+        <Element key="Import" id="app-certificates-ca-import-Inp" name="ca_imp-Inp" xpath="" class="" type="" />
+        <Element key="Ca_Certificate_File" id="cAfileLocation" name="" xpath="" class="" type="" />
+        <Element key="Install_Ca_Certificate" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[3]/div/input[3]" class="" type="" />
+        <Element key="Confirm_Install_Ca_Certificate" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/div[2]/div/input" class="" type="" />
+        <Element key="Remove_Certificate" id="app-certificates-ca-remove-Inp" name="ca_rm-Inp" xpath="" class="" type="" />
+	<Element key="Confirm_Deletion" id="" name="" xpath="/html/body/div[5]/div[2]/button" class="" type="" />
+      </Elements>
+    </Page>
+    <Page key="CA_InstallCertificate" relative_path="#hId-pgCertificates">
+      <Elements>
+        <Element key="JDConfigure" id="pc_config-Inp" name="" xpath="" class="" type="" />
+        <Element key="CAConfigure" id="" name="" xpath="" class="" type="" />
+        <Element key="RequestCAConfigure" id="pc_config-Inp" name="" xpath="" class="" type="" />
+        <Element key="ImportCert" id="netInfraSecurity_importCertPrivateKey" name="" xpath="" class="" type="" />
+        <Element key="CertificateNext" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[3]/div/input[2]" class="" type="" />
+        <Element key="ImportFile" id="iPfileLocation" name="" xpath="" class="" type="" />
+        <Element key="PasswordJD" id="tmpId24-Inp" name="" xpath="" class="" type="" />
+        <Element key="Finish" id="" name="" xpath="" class="gui-cmd-btn-finish_btn" type="" />
+        <Element key="Ok" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/div[2]/div/input" class="" type="" />
+        <Element key="Install_Certificate" id="netInfraSecurity_installCertificate" name="" xpath="" class="" type="" />
+        <Element key="Install_Path" id="iCfileLocation" name="" xpath="" class="" type="" />
+        <Element key="Create_Certificate" id="netInfraSecurity_createCertReq" name="" xpath="" class="" type="" />
+        <Element key="Common_Name" id="tmpId6-Inp" name="" xpath="" class="" type="" />
+        <Element key="Organization" id="tmpId8-Inp" name="" xpath="" class="" type="" />
+        <Element key="Organizational_Unit" id="tmpId10-Inp" name="" xpath="" class="" type="" />
+        <Element key="City" id="tmpId12-Inp" name="" xpath="" class="" type="" />
+        <Element key="State" id="tmpId14-Inp" name="" xpath="" class="" type="" />
+        <Element key="Country" id="tmpId16-Inp" name="" xpath="" class="" type="" />
+        <Element key="Key_Path" id="app-certificates-self-signed-cert-req-result" name="" xpath="" class="" type="" />
+        <Element key="Install" id="Install_File" name="" xpath="" class="" type="" />
+        <Element key="Create_New_Self_Signed_Certificate" id="netInfraSecurity_newSelfSignedCert" name="" xpath="" class="" type="" />
+        <Element key="IntermediateCA" id="Intermediate_CA" name="" xpath="" class="" type="" />
+        <Element key="InstallCA" id="InstallCAcert" name="" xpath="" class="" type="" />
+        <Element key="DeleteCA" id="DeleteCAcert" name="" xpath="" class="" type="" />
+        <Element key="Cancel" id="" name="Cancel" xpath="" class="buttonA" type="submit" />
+        <Element key="Install_Id" id="netInfraSecurity_iCpK" name="netInfraSecurity" xpath="" class="" type="" />
+        <Element key="Id_Certificate_File" id="iPfileLocation" name="certificate" xpath="" class="" type="" />
+        <Element key="Id_Certificate_Password" id="iCpK_entPwd-Inp" name="password" xpath="" class="" type="" />
+        <Element key="Next" id="" name="" xpath="/html/body/div[1]/div[5]/div[2]/div[2]/div[2]/div[1]/input[2]" class="" type="" />
+        <Element key="Save" id="" name="" xpath="/html/body/div[1]/div[5]/div[2]/div[2]/div[2]/div[1]/input[5]" class="" type="" />
+        <Element key="Create_IDRequest" id="netInfraSecurity_cCr" name="netInfraSecurity" xpath="" class="" type="" />
+        <Element key="Export_PrivateKey" id="iC_mark-Inp" name="pkey_exportable" xpath="" class="" type="" />
+        </Elements>
+    </Page>
+    <Page key="Network_Identification" relative_path="#hId-pgHostName">
+      <Elements>
+        <Element key="HostName" id="tmpId3-Inp" name="" xpath="" class="" type="" />
+        <Element key="Apply" id="" name="" xpath="" class="gui-cmd-btn-apply" type="" />
+        <Element key="ConfirmOk" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/div[2]/div/input" class="" type="" />
+        <Element key="ConfirmCancel" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/form/div[2]/div/input[2]" class="" type="" />
+        <Element key="Network_Change_Ok" id="" name="" xpath="/html/body/div[5]/div[2]/button" class="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Date_And_Time" relative_path="#hId-pgDateTime">
+      <Elements>
+        <Element key="DateTime_Advanced" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/form/div/div[2]/div/input" class="" type="" />
+        <Element key="DateFomat_DDMMMYYYY" id="tmpId13-Inp_DDMMMYYYY" name="tmpId13-Inp" xpath="" class="" type="" />
+        <Element key="DateFormat_MMMDDYYYY" id="tmpId13-Inp_MMMDDYYYY" name="tmpId13-Inp" xpath="" class="" type="" />
+        <Element key="DateFormat_YYYYMMMDD" id="tmpId13-Inp_YYYYMMMDD" name="tmpId13-Inp" xpath="" class="" type="" />
+        <Element key="TimeFormat_12Hours" id="tmpId14-Inp_HR12" name="tmpId14-Inp" xpath="" class="" type="" />
+        <Element key="TimeFormat_24Hours" id="tmpId14-Inp_HR24" name="tmpId14-Inp" xpath="" class="" type="" />
+        <Element key="DateTime_SyncComputer" id="btnSync-Inp" name="btnSync-Inp" xpath="" class="" type="button" />
+	      <Element key="DateTime_SyncNetwork" id="tmpId6-Inp" name="" xpath="" class="" type="button" />
+        <Element key="DateTime_SyncOk" id="" name="" xpath="/html/body/div[5]/div[2]/button" class="gui-action-btn" type="button" />
+        <Element key="DateSettings_Apply" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/form/div[2]/div[2]/div/input" class="" type="" />
+        <Element key="DateSettings_Ok" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/div[2]/div/input" class="" type="" />
+        <Element key="CurrentDate" id="tmpId3-Inp" name="" xpath="" class="" type="" />
+        <Element key="Hour" id="tmpId5-HH-Inp" name="" xpath="" class="" type="" />
+        <Element key="Minutes" id="tmpId5-MM-Inp" name="" xpath="" class="" type="" />
+        <Element key="Sconds" id="tmpId5-SS-Inp" name="" xpath="" class="" type="" />
+        <Element key="AMPM" id="tmpId5-ampm-Inp" name="" xpath="" class="" type="" />
+        <Element key="TimeZone" id="timeZone-main" name="" xpath="" class="" type="" />
+        <Element key="AutoAdjustClock" id="tmpId76-Inp" name="" xpath="" class="" type="" />
+        <Element key="Apply" id="" name="" xpath="" class="gui-cmd-btn-apply" type="" />
+        <Element key="Ok" id="" name="" xpath="" class="gui-cmd-btn-ok_btn" type="" />
+        <Element key="CurrentDeviceTime" id="clock" name="" xpath="" class="" type="" />
+      </Elements>
+    </Page>
+    <Page key="International" relative_path="#hId-pgInternational">
+      <Elements>
+        <Element key="Region" id="tmpId2-Inp" name="" xpath="" class="" type="" />
+        <Element key="ControlPanel_Language" id="tmpId3-Inp" name="" xpath="" class="" type="" />
+        <Element key="Ok" id="" name="" xpath="" class="gui-cmd-btn-ok_btn" type="" />
+        <Element key="Use_Browser_Language" id="international-ifield-ews-language-radio-Inp_browser" name="" xpath="" class="" type="" />
+        <Element key="Use_Printer_Language" id="international-ifield-ews-language-radio-Inp_device" name="" xpath="" class="" type="" />
+        <Element key="Select_Language" id="international-ifield-ews-language-radio-Inp_user" name="" xpath="" class="" type="" />
+        <Element key="Language" id="international-ifield-ews-language-user-Inp" name="" xpath="" class="" type="" />
+        <Element key="Apply" id="" name="" xpath="" class="gui-cmd-btn-apply" type="" />
+      </Elements>
+    </Page>
+    <Page key="IPv4_Config" relative_path="#hId-ipv4Page">
+      <Elements>
+        <Element key="DHCP" id="tmpId2-Inp_auto" name="tmpId2-Inp" xpath="" class="" type="radio" />
+        <Element key="BOOTP" id="tmpId2-Inp_bootP" name="" xpath="" class="" type="" />
+        <Element key="AUTO_IP" id="tmpId2-Inp_autoIP" name="" xpath="" class="" type="" />
+        <Element key="Manual_IP" id="tmpId2-Inp_manual" name="tmpId1-Inp" xpath="" class="" type="" />
+        <Element key="IP_0" id="tmpId4-Inp0" name="tmpId3-Inp-name" xpath="" class="" type="text" />
+        <Element key="IP_1" id="tmpId4-Inp1" name="tmpId3-Inp-name" xpath="" class="" type="text" />
+        <Element key="IP_2" id="tmpId4-Inp2" name="tmpId3-Inp-name" xpath="" class="" type="text" />
+        <Element key="IP_3" id="tmpId4-Inp3" name="tmpId3-Inp-name" xpath="" class="" type="text" />
+        <Element key="Subnet_0" id="tmpId6-Inp0" name="tmpId5-Inp-name" xpath="" class="" type="text" />
+        <Element key="Subnet_1" id="tmpId6-Inp1" name="tmpId5-Inp-name" xpath="" class="" type="text" />
+        <Element key="Subnet_2" id="tmpId6-Inp2" name="tmpId5-Inp-name" xpath="" class="" type="text" />
+        <Element key="Subnet_3" id="tmpId6-Inp3" name="tmpId5-Inp-name" xpath="" class="" type="text" />
+        <Element key="Gateway_0" id="tmpId8-Inp0" name="tmpId7-Inp-name" xpath="" class="" type="text" />
+        <Element key="Gateway_1" id="tmpId8-Inp1" name="tmpId7-Inp-name" xpath="" class="" type="text" />
+        <Element key="Gateway_2" id="tmpId8-Inp2" name="tmpId7-Inp-name" xpath="" class="" type="text" />
+        <Element key="Gateway_3" id="tmpId8-Inp3" name="tmpId7-Inp-name" xpath="" class="" type="text" />
+        <Element key="Automatic_DNS_Server" id="tmpId9-Inp_auto" name="net-dns-auto-radio_net-dns-man-radio-Inp" xpath="" class="" type="radio" />
+        <Element key="Manual_DNS_Server" id="tmpId9-Inp_manual" name="net-dns-auto-radio_net-dns-man-radio-Inp" xpath="" class="" type="radio" />
+        <Element key="PreferredDNS_0" id="tmpId19-Inp0" name="tmpId19-Inp-name" xpath="" class="" type="text" />
+        <Element key="PreferredDNS_1" id="tmpId19-Inp1" name="tmpId19-Inp-name" xpath="" class="" type="text" />
+        <Element key="PreferredDNS_2" id="tmpId19-Inp2" name="tmpId19-Inp-name" xpath="" class="" type="text" />
+        <Element key="PreferredDNS_3" id="tmpId19-Inp3" name="tmpId19-Inp-name" xpath="" class="" type="text" />
+        <Element key="AlternateDNS_0" id="tmpId20-Inp0" name="tmpId20-Inp-name" xpath="" class="" type="text" />
+        <Element key="AlternateDNS_1" id="tmpId20-Inp1" name="tmpId20-Inp-name" xpath="" class="" type="text" />
+        <Element key="AlternateDNS_2" id="tmpId20-Inp2" name="tmpId20-Inp-name" xpath="" class="" type="text" />
+        <Element key="AlternateDNS_3" id="tmpId20-Inp3" name="tmpId20-Inp-name" xpath="" class="" type="text" />
+        <Element key="Apply" id="" name="" xpath="" class="gui-cmd-btn-apply" type="" />
+        <Element key="Cancel" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/form/div[2]/div/input[2]" class="" type="" />
+        <Element key="OK" id="" name="" xpath="" class="gui-cmd-btn-ok_btn" type="" />
+        <Element key="" id="" name="" xpath="" class="" type="" />
+        <Element key="" id="" name="" xpath="" class="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Wired_Status" relative_path="#hId-statusPage">
+      <Elements>
+        <Element key="IP_Configuration_Method" id="ip4-Conf-Mtd" name="" xpath="" class="" type="" />
+        <Element key="IPv4_Address" id="ip4-ip" name="" xpath="" class="" type="" />
+        <Element key="Subnet_Mask" id="ip4-Sub-Msk" name="" xpath="" class="" type="" />
+        <Element key="Default_Gateway" id="ip4-Def-GatW" name="" xpath="" class="" type="" />
+        <Element key="HostName" id="ip4-Hn" name="" xpath="" class="" type="" />
+        <Element key="DomainName" id="ip4-domN" name="" xpath="" class="" type="" />
+        <Element key="DNS_IPv4Primary" id="Pref-Dns-Addr" name="" xpath="" class="" type="" />
+        <Element key="DNS_IPv4_Secondary" id="Alt-Dns-Addr" name="" xpath="" class="" type="" />
+        <Element key="DNS_IPv6_Primary" id="Pref-Dns6-Addr" name="" xpath="" class="" type="" />
+        <Element key="DNS_IPv6_Secondary" id="Alt-Dns6-Addr" name="" xpath="" class="" type="" />
+        <Element key="DomainName_IPv6" id="" name="" xpath="" class="" type="" />
+        <!--Wins for setting values-->
+        <Element key="Primary_IPv4" id="" name="" xpath="" class="" type="" />
+        <Element key="Secondary_IPv4" id="" name="" xpath="" class="" type="" />
+        <Element key="Link_Status" id="wd-link-st" name="" xpath="" class="" type="" />
+        <Element key="" id="" name="" xpath="" class="" type="" />
+      </Elements>
+    </Page>
+     <Page key="Wired_Advanced" relative_path="#hId-advancedPage">
+      <Elements>
+        <Element key="Apply" id="" name="" xpath="" class="gui-cmd-btn-apply" type="button" />
+        <Element key="Link_settings" id="tmpId4-Inp" name="" xpath="" class="" type="button" />
+	      <Element key="OK" id="" name="" xpath="/html/body/div/div[5]/div[2]/div[2]/div[2]/div[2]/div/input" class="" type="button" />
+      </Elements>
+	</Page>
+  </Pages>
+</Sitemaps>

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+    <head>
+        <title>Global Settings Management</title>
+    </head>
+    <body style="color:#015; font-family:Lucida Sans, Sans-Serif; font-size:9pt">
+    <h3>Plugin Reference Management</h3>
+        Some Virtual Resources within the Scalable Test Framework use a plugin model for 
+        extensibility.&nbsp; This dialog provide the ability to manage data in the STF 
+        database so new plugins can be added and made available for use in test 
+        scenarios.&nbsp; Each plugin is a standalone assembly that conforms to a defined 
+        interface.&nbsp; As new plugins are written and integrated into the framework, 
+        they are enabled through this dialog.&nbsp; Below is a description of the data 
+        used to manage plugin references.
+    <ul>
+    <li><b>Name</b> - This is the name of the plugin.&nbsp; Each plugin assembly uses a 
+        naming convention of &quot;Plugin.&lt;name&gt;.DLL&quot;, and the name entered in this field 
+        must correspond to the name used in the assembly itself.&nbsp; For example, if a 
+        new plugin was created and the assembly name was Plugin.WebAutomation.DLL, then 
+        &quot;WebAutomation&quot; would be the name entered here.<br /><br />
+    </li>
+    <li><b>Title</b> - This defines what the user will see in the dropdown menu when 
+        using the STF administration console to add a plugin to a test configuration.&nbsp; 
+        It is the title or label value for the plugin.&nbsp; Typically it will be very 
+        short and may be the same as the Name, but with spaces.&nbsp; For example, 
+        &quot;WebAutomation&quot; as a Name may simply be &quot;Web Automation&quot; for the title.&nbsp; <br /><br />
+    </li>
+    <li><b>Group</b> - This field is purely for administrative purposes and provides a 
+        way to categorize any plugin that is added to the system.&nbsp; The field 
+        provides a dropdown that shows any existing group names, but also allows the 
+        user to enter a new group if needed.&nbsp; It helps provide an aspect of 
+        ownership to the plugin which may be used by testers when they are trying to 
+        find the right contact if there is an issue or question with a plugin.<br /><br />
+    </li>
+    <li><b>Resource Type</b> - This defines what type of Virtual Resource this 
+        plugin is associated with.&nbsp; Some plugins are written to specifically work 
+        with a particulary type of Virtual Resource, such as an Office Worker or Admin 
+        Worker.&nbsp; Select the resource that this plugin is associated with.&nbsp; 
+        Future releases of STF will allow the same plugin to be associated with multiple 
+        Virtual Resources, but for now you can only associate it with one.
+    </li>
+    </ul>
+    </body>
+</html>

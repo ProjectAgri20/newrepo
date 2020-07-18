@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Administration_Omni_Default" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Contract" msprop:Generator_TableClassName="ContractDataTable" msprop:Generator_TableVarName="tableContract" msprop:Generator_TablePropName="Contract" msprop:Generator_RowDeletingName="ContractRowDeleting" msprop:Generator_RowChangingName="ContractRowChanging" msprop:Generator_RowEvHandlerName="ContractRowChangeEventHandler" msprop:Generator_RowDeletedName="ContractRowDeleted" msprop:Generator_UserTableName="Contract" msprop:Generator_RowChangedName="ContractRowChanged" msprop:Generator_RowEvArgName="ContractRowChangeEvent" msprop:Generator_RowClassName="ContractRow">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+        <xs:element name="Parameters" msprop:Generator_TableClassName="ParametersDataTable" msprop:Generator_TableVarName="tableParameters" msprop:Generator_TablePropName="Parameters" msprop:Generator_RowDeletingName="ParametersRowDeleting" msprop:Generator_RowChangingName="ParametersRowChanging" msprop:Generator_RowEvHandlerName="ParametersRowChangeEventHandler" msprop:Generator_RowDeletedName="ParametersRowDeleted" msprop:Generator_UserTableName="Parameters" msprop:Generator_RowChangedName="ParametersRowChanged" msprop:Generator_RowEvArgName="ParametersRowChangeEvent" msprop:Generator_RowClassName="ParametersRow" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="oldPassword" msprop:Generator_ColumnVarNameInTable="columnoldPassword" msprop:Generator_ColumnPropNameInRow="oldPassword" msprop:Generator_ColumnPropNameInTable="oldPasswordColumn" msprop:Generator_UserColumnName="oldPassword" type="xs:string" minOccurs="0" />
+              <xs:element name="newPassword" msprop:Generator_ColumnVarNameInTable="columnnewPassword" msprop:Generator_ColumnPropNameInRow="newPassword" msprop:Generator_ColumnPropNameInTable="newPasswordColumn" msprop:Generator_UserColumnName="newPassword" type="xs:string" minOccurs="0" />
+              <xs:element name="verifyPassword" msprop:Generator_ColumnVarNameInTable="columnverifyPassword" msprop:Generator_ColumnPropNameInRow="verifyPassword" msprop:Generator_ColumnPropNameInTable="verifyPasswordColumn" msprop:Generator_UserColumnName="verifyPassword" type="xs:string" minOccurs="0" />
+              <xs:element name="ServicePin" msprop:Generator_ColumnVarNameInTable="columnServicePin" msprop:Generator_ColumnPropNameInRow="ServicePin" msprop:Generator_ColumnPropNameInTable="ServicePinColumn" msprop:Generator_UserColumnName="ServicePin" type="xs:string" minOccurs="0" />
+              <xs:element name="VerifyServicePin" msprop:Generator_ColumnVarNameInTable="columnVerifyServicePin" msprop:Generator_ColumnPropNameInRow="VerifyServicePin" msprop:Generator_ColumnPropNameInTable="VerifyServicePinColumn" msprop:Generator_UserColumnName="VerifyServicePin" type="xs:string" minOccurs="0" />
+              <xs:element name="dssPassword" msprop:Generator_ColumnVarNameInTable="columndssPassword" msprop:Generator_ColumnPropNameInRow="dssPassword" msprop:Generator_ColumnPropNameInTable="dssPasswordColumn" msprop:Generator_UserColumnName="dssPassword" type="xs:string" minOccurs="0" />
+              <xs:element name="dssVerifyPassword" msprop:Generator_ColumnVarNameInTable="columndssVerifyPassword" msprop:Generator_ColumnPropNameInRow="dssVerifyPassword" msprop:Generator_ColumnPropNameInTable="dssVerifyPasswordColumn" msprop:Generator_UserColumnName="dssVerifyPassword" type="xs:string" minOccurs="0" />
+              <xs:element name="displayPrintPage" msprop:Generator_ColumnVarNameInTable="columndisplayPrintPage" msprop:Generator_ColumnPropNameInRow="displayPrintPage" msprop:Generator_ColumnPropNameInTable="displayPrintPageColumn" msprop:Generator_UserColumnName="displayPrintPage" type="xs:string" minOccurs="0" />
+              <xs:element name="displayJobLogPage" msprop:Generator_ColumnVarNameInTable="columndisplayJobLogPage" msprop:Generator_ColumnPropNameInRow="displayJobLogPage" msprop:Generator_ColumnPropNameInTable="displayJobLogPageColumn" msprop:Generator_UserColumnName="displayJobLogPage" type="xs:string" minOccurs="0" />
+              <xs:element name="NewPjlPassword" msprop:Generator_ColumnVarNameInTable="columnNewPjlPassword" msprop:Generator_ColumnPropNameInRow="NewPjlPassword" msprop:Generator_ColumnPropNameInTable="NewPjlPasswordColumn" msprop:Generator_UserColumnName="NewPjlPassword" type="xs:string" minOccurs="0" />
+              <xs:element name="VerifyNewPjlPassword" msprop:Generator_ColumnVarNameInTable="columnVerifyNewPjlPassword" msprop:Generator_ColumnPropNameInRow="VerifyNewPjlPassword" msprop:Generator_ColumnPropNameInTable="VerifyNewPjlPasswordColumn" msprop:Generator_UserColumnName="VerifyNewPjlPassword" type="xs:string" minOccurs="0" />
+              <xs:element name="EnableDeviceAccess" msprop:Generator_ColumnVarNameInTable="columnEnableDeviceAccess" msprop:Generator_ColumnPropNameInRow="EnableDeviceAccess" msprop:Generator_ColumnPropNameInTable="EnableDeviceAccessColumn" msprop:Generator_UserColumnName="EnableDeviceAccess" type="xs:string" minOccurs="0" />
+              <xs:element name="IsPrintPathEnabled" msprop:Generator_ColumnVarNameInTable="columnIsPrintPathEnabled" msprop:Generator_ColumnPropNameInRow="IsPrintPathEnabled" msprop:Generator_ColumnPropNameInTable="IsPrintPathEnabledColumn" msprop:Generator_UserColumnName="IsPrintPathEnabled" type="xs:string" minOccurs="0" />
+              <xs:element name="LegacyEncryptionAlgorithm" msprop:Generator_ColumnVarNameInTable="columnLegacyEncryptionAlgorithm" msprop:Generator_ColumnPropNameInRow="LegacyEncryptionAlgorithm" msprop:Generator_ColumnPropNameInTable="LegacyEncryptionAlgorithmColumn" msprop:Generator_UserColumnName="LegacyEncryptionAlgorithm" type="xs:string" minOccurs="0" />
+              <xs:element name="PJLFileSystemAccess" msprop:Generator_ColumnVarNameInTable="columnPJLFileSystemAccess" msprop:Generator_ColumnPropNameInRow="PJLFileSystemAccess" msprop:Generator_ColumnPropNameInTable="PJLFileSystemAccessColumn" msprop:Generator_UserColumnName="PJLFileSystemAccess" type="xs:string" minOccurs="0" />
+              <xs:element name="PostScriptFileSystemAccess" msprop:Generator_ColumnVarNameInTable="columnPostScriptFileSystemAccess" msprop:Generator_ColumnPropNameInRow="PostScriptFileSystemAccess" msprop:Generator_ColumnPropNameInTable="PostScriptFileSystemAccessColumn" msprop:Generator_UserColumnName="PostScriptFileSystemAccess" type="xs:string" minOccurs="0" />
+              <xs:element name="disableDirectConnect" msprop:Generator_ColumnVarNameInTable="columndisableDirectConnect" msprop:Generator_ColumnPropNameInRow="disableDirectConnect" msprop:Generator_ColumnPropNameInTable="disableDirectConnectColumn" msprop:Generator_UserColumnName="disableDirectConnect" type="xs:string" minOccurs="0" />
+              <xs:element name="UsbPortsEnabled" msprop:Generator_ColumnVarNameInTable="columnUsbPortsEnabled" msprop:Generator_ColumnPropNameInRow="UsbPortsEnabled" msprop:Generator_ColumnPropNameInTable="UsbPortsEnabledColumn" msprop:Generator_UserColumnName="UsbPortsEnabled" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+            <xs:attribute name="Contract_Id" msprop:Generator_ColumnVarNameInTable="columnContract_Id" msprop:Generator_ColumnPropNameInRow="Contract_Id" msprop:Generator_ColumnPropNameInTable="Contract_IdColumn" msprop:Generator_UserColumnName="Contract_Id" type="xs:int" use="prohibited" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="Contract_Id" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnContract_Id" msprop:Generator_ColumnPropNameInRow="Contract_Id" msprop:Generator_ColumnPropNameInTable="Contract_IdColumn" msprop:Generator_UserColumnName="Contract_Id" type="xs:int" msdata:AllowDBNull="false" use="prohibited" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Administration_Omni_Default" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="Administration_Omni_Default" msprop:Generator_UserDSName="Administration_Omni_Default">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Contract" />
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//Contract" />
+      <xs:field xpath="@Contract_Id" />
+    </xs:unique>
+    <xs:keyref name="Contract_Parameters" refer="Constraint1" msdata:IsNested="true" msprop:rel_Generator_UserChildTable="Parameters" msprop:rel_Generator_ChildPropName="GetParametersRows" msprop:rel_Generator_UserRelationName="Contract_Parameters" msprop:rel_Generator_ParentPropName="ContractRow" msprop:rel_Generator_RelationVarName="relationContract_Parameters" msprop:rel_Generator_UserParentTable="Contract">
+      <xs:selector xpath=".//Parameters" />
+      <xs:field xpath="@Contract_Id" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

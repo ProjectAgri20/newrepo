@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Printers FilterType="SetInActivityTimer">
+  
+  
+  <Printer Type="SIRIUS" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>http://{0}/DevMgmt/ProductConfigDyn.xml</URL>
+        <ViewstateURL></ViewstateURL>
+        <WizardIDURL></WizardIDURL>
+        <HideURL></HideURL>
+        <Method>PUT</Method>
+        <Payload>lt;prdcfgdyn2:ProductConfigDyn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/" xmlns:prdcfgdyn2="http://www.hp.com/schemas/imaging/con/ledm/productconfigdyn/2009/03/16" xmlns:prdcfgdyn="http://www.hp.com/schemas/imaging/con/ledm/productconfigdyn/2007/11/05" xsi:schemaLocation="http://www.hp.com/schemas/imaging/con/ledm/productconfigdyn/2009/03/16 ../schemas/ledm2/ProductConfigDyn.xsd http://www.hp.com/schemas/imaging/con/ledm/productconfigdyn/2007/11/05 ../schemas/ProductConfigDyn.xsd http://www.hp.com/schemas/imaging/con/dictionaries/1.0/ ../schemas/dd/DataDictionaryMasterLEDM.xsd"gt;lt;prdcfgdyn2:ProductSettingsgt;lt;prdcfgdyn2:UIInactivityTimeoutInSecondsgt;{UIInactivityTimeoutInSeconds}lt;/prdcfgdyn2:UIInactivityTimeoutInSecondsgt;lt;/prdcfgdyn2:ProductSettingsgt;lt;/prdcfgdyn2:ProductConfigDyngt;</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="PHOENIX" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>http://{0}/hp/device/set_config_systemSetup.html/config</URL>
+        <ViewstateURL></ViewstateURL>
+        <WizardIDURL></WizardIDURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>JamRecovery={JamRecovery}amp;AutoContinue={AutoContinue}amp;ConnectionTimeout={ConnectionTimeout}amp;DeviceLanguage={DeviceLanguage}amp;Apply=Applyamp;invalidEntry=Entry+is+invalid.</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>    
+</Printers>

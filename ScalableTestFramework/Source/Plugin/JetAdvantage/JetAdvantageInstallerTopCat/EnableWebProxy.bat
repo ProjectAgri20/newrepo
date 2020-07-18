@@ -1,0 +1,1 @@
+C:\TopCat\TopCatRuns\TopCatExe\TopCat.exe C:\TopCat\TopCatRuns\SigninPopupHandler\EnableWebProxy.tcx /verbosity:Debug /property:TopCatPath,C:\TopCat\TopCatRuns\TopCatExe /property:TopCatScriptsPath,C:\TopCat\TopCatRuns\SigninPopupHandler

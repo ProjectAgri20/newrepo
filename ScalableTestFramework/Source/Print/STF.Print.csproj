@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B549ACAE-DAED-4F96-A962-14BD02428770}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HP.ScalableTest.Print</RootNamespace>
+    <AssemblyName>STF.Print</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OutputPath>..\..\Binaries\STF.Common\</OutputPath>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
+    <CodeAnalysisRuleSet>Properties\STF.Print.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug (Code Analysis)|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.PowerPoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ReachFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.ServiceProcess" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Drivers\DriverArchitecture.cs" />
+    <Compile Include="Drivers\DriverController.cs" />
+    <Compile Include="Drivers\DriverDetails.cs" />
+    <Compile Include="Drivers\DriverInf.cs" />
+    <Compile Include="Drivers\DriverInfParser.cs" />
+    <Compile Include="Drivers\DriverInfReader.cs" />
+    <Compile Include="Drivers\DriverInstaller.cs" />
+    <Compile Include="Drivers\DriverVersion.cs" />
+    <Compile Include="FilePrinter.cs" />
+    <Compile Include="FilePrinterFactory.cs" />
+    <Compile Include="FilePrinters\ExcelFilePrinter.cs" />
+    <Compile Include="FilePrinters\GenericFilePrinter.cs" />
+    <Compile Include="FilePrinters\ImageFilePrinter.cs" />
+    <Compile Include="FilePrinters\MSOfficeInteropFilePrinter.cs" />
+    <Compile Include="FilePrinters\PdfFilePrinter.cs" />
+    <Compile Include="FilePrinters\PowerPointFilePrinter.cs" />
+    <Compile Include="FilePrinters\ShellFilePrinter.cs" />
+    <Compile Include="FilePrinters\WordFilePrinter.cs" />
+    <Compile Include="FilePrintException.cs" />
+    <Compile Include="FilePrintOptions.cs" />
+    <Compile Include="FilePrintResult.cs" />
+    <Compile Include="Properties\GlobalSuppressions.cs" />
+    <Compile Include="Monitor\JobNotificationEventArgs.cs" />
+    <Compile Include="Monitor\JobNotifyField.cs" />
+    <Compile Include="Monitor\JobStatus.cs" />
+    <Compile Include="Monitor\MonitoredQueueInfoCache.cs" />
+    <Compile Include="Monitor\NotifyType.cs" />
+    <Compile Include="Monitor\PrinterChanges.cs" />
+    <Compile Include="Monitor\PrinterNotifyInfo.cs" />
+    <Compile Include="Monitor\PrinterNotifyInfoData.cs" />
+    <Compile Include="Monitor\PrinterNotifyInfoReader.cs" />
+    <Compile Include="Monitor\PrinterNotifyInfoStatus.cs" />
+    <Compile Include="Monitor\PrinterNotifyOptions.cs" />
+    <Compile Include="Monitor\PrinterNotifyOptionsType.cs" />
+    <Compile Include="Monitor\PrintJobData.cs" />
+    <Compile Include="Monitor\PrintJobDataBuilder.cs" />
+    <Compile Include="Monitor\PrintJobDataEventArgs.cs" />
+    <Compile Include="Monitor\PrintJobMonitor.cs" />
+    <Compile Include="Monitor\PrintServerJobLog.cs" />
+    <Compile Include="Monitor\SafePrinterChangeNotificationHandle.cs" />
+    <Compile Include="Monitor\SafePrinterNotifyInfoHandle.cs" />
+    <Compile Include="Monitor\WinSpoolPrintMonitor.cs" />
+    <Compile Include="PrintingEngine.cs" />
+    <Compile Include="PrintingEngineResult.cs" />
+    <Compile Include="PrintJobClientLog.cs" />
+    <Compile Include="PrintJobRenderLocation.cs" />
+    <Compile Include="PrintPortManager.cs" />
+    <Compile Include="PrintQueueController.cs" />
+    <Compile Include="PrintQueueInstallationException.cs" />
+    <Compile Include="PrintQueueInstaller.cs" />
+    <Compile Include="PrintQueueNotFoundException.cs" />
+    <Compile Include="PrintRegistryUtil.cs" />
+    <Compile Include="PrintSpooler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SafePrinterHandle.cs" />
+    <Compile Include="VirtualDevice\PjlHeader.cs" />
+    <Compile Include="VirtualDevice\PjlJobReader.cs" />
+    <Compile Include="VirtualDevice\VirtualDeviceHost.cs" />
+    <Compile Include="VirtualDevice\VirtualPrinterJobInfo.cs" />
+    <Compile Include="VirtualDevice\VirtualPrinterJobInfoEventArgs.cs" />
+    <Compile Include="VirtualDevice\VirtualPrinterJobLog.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FrameworkInternal\STF.FrameworkInternal.csproj">
+      <Project>{1d38c759-e5f6-4603-bbbc-566f1276aba2}</Project>
+      <Name>STF.FrameworkInternal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\STF.Framework.csproj">
+      <Project>{b91dcc51-8664-49e3-97d0-6fcfd2918a1a}</Project>
+      <Name>STF.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility\STF.Utility.csproj">
+      <Project>{0a02ea9d-11d5-4078-9036-385709cb365a}</Project>
+      <Name>STF.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WindowsAutomation\STF.WindowsAutomation.csproj">
+      <Project>{d9823f40-464d-451e-86cc-0c5339196522}</Project>
+      <Name>STF.WindowsAutomation</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Properties\STF.Print.Dictionary.xml" />
+    <None Include="Properties\STF.Print.ruleset" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <CodeAnalysisLogFile>$(IntermediateOutputPath)$(TargetFileName).CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisSucceededFile>$(IntermediateOutputPath)$(TargetFileName).lastcodeanalysissucceeded</CodeAnalysisSucceededFile>
+  </PropertyGroup>
+</Project>

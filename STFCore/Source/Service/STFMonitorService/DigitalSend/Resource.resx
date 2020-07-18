@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CreateInsertTriggerSql" xml:space="preserve">
+    <value>CREATE TRIGGER [dbo].[tr_JobLogInsert] ON [dbo].[DssJobLogMaster] FOR INSERT
+AS
+INSERT INTO STFTransactionLog SELECT JobId, GETDATE() FROM inserted</value>
+  </data>
+  <data name="CreateTransactionTableSql" xml:space="preserve">
+    <value>IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[STFTransactionLog]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[STFTransactionLog](
+ [JobId] [uniqueidentifier] NOT NULL,
+ [TransactionTime] [datetime] NOT NULL
+) ON [PRIMARY]
+END</value>
+  </data>
+  <data name="DeleteTriggersSql" xml:space="preserve">
+    <value>IF  EXISTS (SELECT * FROM sys.triggers WHERE object_id = OBJECT_ID(N'[dbo].[tr_JobLogInsert]'))
+DROP TRIGGER [dbo].[tr_JobLogInsert]</value>
+  </data>
+  <data name="JobLogDeviceSql" xml:space="preserve">
+    <value>SELECT d.Id, d.JobType, d.CompletionTime, d.XmlJobInfo, a.DeliveredFileName, a.DeliveredFileSize, e.EmailSubject, f.FaxNumber
+FROM DSSDeviceJobLog d
+LEFT OUTER JOIN DssAttachmentSettings a ON d.Id = a.JobID
+LEFT OUTER JOIN DssEmailBasicInformation e ON d.Id = e.JobID
+LEFT OUTER JOIN DssFaxJobLogs f ON d.Id = f.JobID
+WHERE d.Id IN ({0})
+ORDER BY CompletionTime</value>
+  </data>
+  <data name="JobLogMasterSql" xml:space="preserve">
+    <value>SELECT m.JobID, m.JobType, m.JobCompletionStatus, m.CompletionTime, a.DeliveredFileName, a.DeliveredFileSize, m.FileType, m.ScannedPages, m.DssSoftwareVersion, m.ProcessedBy, m.DeviceModel, e.EmailSubject, f.FaxNumber
+FROM DSSJobLogMaster m
+LEFT OUTER JOIN DssAttachmentSettings a ON m.JobID = a.JobID
+LEFT OUTER JOIN DssEmailBasicInformation e ON m.JobID = e.JobID
+LEFT OUTER JOIN DssFaxJobLogs f ON m.JobID = f.JobID
+WHERE m.JobID IN ({0})
+ORDER BY m.CompletionTime</value>
+  </data>
+  <data name="RecentSessionSql" xml:space="preserve">
+    <value>SELECT DeliveredFileName, FaxNumber
+FROM (SELECT TOP 200 JobId, CompletionTime FROM DssJobLogMaster ORDER BY CompletionTime DESC) m
+INNER JOIN DSSAttachmentSettings a on a.JobID = m.JobID
+LEFT OUTER JOIN DSSFaxJobLogs f on f.JobID = m.JobID
+ORDER BY CompletionTime DESC</value>
+  </data>
+  <data name="TransactionCleanupSql" xml:space="preserve">
+    <value>DELETE FROM STFTransactionLog WITH (ROWLOCK)
+WHERE JobID IN ({0})</value>
+  </data>
+  <data name="TransactionRetrieveSql" xml:space="preserve">
+    <value>SELECT TOP 200 JobId
+FROM STFTransactionLog
+ORDER BY TransactionTime ASC</value>
+  </data>
+</root>

@@ -1,0 +1,26 @@
+# Using a 4 page PDF job "CTFPrintPDF.pdf" for testing
+{
+	NAME "Print Job operation for Media Size with value letter"
+	
+	OPERATION Print-Job
+	
+	GROUP operation-attributes-tag
+	ATTR charset attributes-charset utf-8
+	ATTR naturalLanguage attributes-natural-language en
+	ATTR uri printer-uri $uri
+	ATTR name requesting-user-name $user
+	ATTR mimeMediaType document-format application/pdf
+	
+	GROUP job-attributes-tag
+	ATTR keyword media na_letter_8.5x11in
+
+	FILE $filename
+
+	STATUS successful-ok
+	
+	EXPECT job-uri OF-TYPE uri COUNT 1 IN-GROUP job-attributes-tag
+	EXPECT job-id OF-TYPE integer COUNT 1 IN-GROUP job-attributes-tag WITH-VALUE >0
+	EXPECT job-state OF-TYPE enum COUNT 1 IN-GROUP job-attributes-tag WITH-VALUE 3,4,5,6,7,8,9
+	EXPECT job-state-reasons OF-TYPE keyword IN-GROUP job-attributes-tag
+}
+

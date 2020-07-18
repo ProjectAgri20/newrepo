@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ScanNetworkFolder_Sirius_Default" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Contract">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="Parameters" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Contrast" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="ScanMediaSize" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="ScanPlexMode" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="ColorPreference" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="DSFileType" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="DSImageResolution" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="CompressAttachment" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			  <xs:element name="FileNamePrefix" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			  <xs:element name="UNCPath" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			  <xs:element name="UserName" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			  <xs:element name="UserPassword" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			  <xs:element name="Name" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			  <xs:element name="PIN" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScanNetworkFolder_Sirius_Default" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="1" maxOccurs="1">
+        <xs:element ref="Contract" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

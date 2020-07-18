@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NetworkContactsForLDAP_Phoenix_Default" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Contract">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="Parameters" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+			  <xs:element name="ldapLookEnable" type="xs:string" minOccurs="1" maxOccurs="1" />
+			  <xs:element name="ldapServerAddress" type="xs:string" minOccurs="1" maxOccurs="1" />
+			  <xs:element name="ldapServerPort" type="xs:string" minOccurs="1" maxOccurs="1" />
+			  <xs:element name="authentication" type="xs:string" minOccurs="1" maxOccurs="1"/>
+	          <xs:element name="searchRoot" type="xs:string" minOccurs="0" maxOccurs="1" />
+			  <xs:element name="nameAttribute" type="xs:string" minOccurs="0" maxOccurs="1"/>
+		      <xs:element name="emailAttribute" type="xs:string" minOccurs="0" maxOccurs="1" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NetworkContactsForLDAP_Phoenix_Default" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="1" maxOccurs="1">
+        <xs:element ref="Contract" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

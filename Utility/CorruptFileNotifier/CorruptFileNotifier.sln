@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorruptFileNotifier", "CorruptFileNotifier.csproj", "{18204636-6FDB-4306-909A-43FF84343B48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STF.Common", "..\..\CommonComponents\STF.Common\STF.Common.csproj", "{D5B4585A-5027-4DA8-8673-3EF9FBC12D87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STF.FileAnalysis", "..\..\CommonComponents\STF.FileAnalysis\STF.FileAnalysis.csproj", "{0D65F086-813A-4253-83A6-B45AD591D2CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug (Code Analysis + XML Doc)|Any CPU = Debug (Code Analysis + XML Doc)|Any CPU
+		Debug (XML Doc)|Any CPU = Debug (XML Doc)|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18204636-6FDB-4306-909A-43FF84343B48}.Debug (Code Analysis + XML Doc)|Any CPU.ActiveCfg = Debug|Any CPU
+		{18204636-6FDB-4306-909A-43FF84343B48}.Debug (Code Analysis + XML Doc)|Any CPU.Build.0 = Debug|Any CPU
+		{18204636-6FDB-4306-909A-43FF84343B48}.Debug (XML Doc)|Any CPU.ActiveCfg = Debug|Any CPU
+		{18204636-6FDB-4306-909A-43FF84343B48}.Debug (XML Doc)|Any CPU.Build.0 = Debug|Any CPU
+		{18204636-6FDB-4306-909A-43FF84343B48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18204636-6FDB-4306-909A-43FF84343B48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18204636-6FDB-4306-909A-43FF84343B48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18204636-6FDB-4306-909A-43FF84343B48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5B4585A-5027-4DA8-8673-3EF9FBC12D87}.Debug (Code Analysis + XML Doc)|Any CPU.ActiveCfg = Debug (Code Analysis + XML Doc)|Any CPU
+		{D5B4585A-5027-4DA8-8673-3EF9FBC12D87}.Debug (Code Analysis + XML Doc)|Any CPU.Build.0 = Debug (Code Analysis + XML Doc)|Any CPU
+		{D5B4585A-5027-4DA8-8673-3EF9FBC12D87}.Debug (XML Doc)|Any CPU.ActiveCfg = Debug (XML Doc)|Any CPU
+		{D5B4585A-5027-4DA8-8673-3EF9FBC12D87}.Debug (XML Doc)|Any CPU.Build.0 = Debug (XML Doc)|Any CPU
+		{D5B4585A-5027-4DA8-8673-3EF9FBC12D87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5B4585A-5027-4DA8-8673-3EF9FBC12D87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5B4585A-5027-4DA8-8673-3EF9FBC12D87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5B4585A-5027-4DA8-8673-3EF9FBC12D87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D65F086-813A-4253-83A6-B45AD591D2CC}.Debug (Code Analysis + XML Doc)|Any CPU.ActiveCfg = Debug (Code Analysis + XML Doc)|Any CPU
+		{0D65F086-813A-4253-83A6-B45AD591D2CC}.Debug (Code Analysis + XML Doc)|Any CPU.Build.0 = Debug (Code Analysis + XML Doc)|Any CPU
+		{0D65F086-813A-4253-83A6-B45AD591D2CC}.Debug (XML Doc)|Any CPU.ActiveCfg = Debug (XML Doc)|Any CPU
+		{0D65F086-813A-4253-83A6-B45AD591D2CC}.Debug (XML Doc)|Any CPU.Build.0 = Debug (XML Doc)|Any CPU
+		{0D65F086-813A-4253-83A6-B45AD591D2CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D65F086-813A-4253-83A6-B45AD591D2CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D65F086-813A-4253-83A6-B45AD591D2CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D65F086-813A-4253-83A6-B45AD591D2CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

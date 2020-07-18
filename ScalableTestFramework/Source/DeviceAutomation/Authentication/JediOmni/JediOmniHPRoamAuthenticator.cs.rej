@@ -1,0 +1,9 @@
+diff a/ScalableTestFramework/Source/DeviceAutomation/Authentication/JediOmni/JediOmniHPRoamAuthenticator.cs b/ScalableTestFramework/Source/DeviceAutomation/Authentication/JediOmni/JediOmniHPRoamAuthenticator.cs	(rejected hunks)
+@@ -35,6 +35,7 @@
+         /// </summary>
+         private void EnterPin()
+         {
++            ControlPanel.Press("#hpid-signin-textbox-UserNameTextBox");
+             if (!ControlPanel.WaitForAvailable(KeyboardId, TimeSpan.FromSeconds(3)) || !VerifyKeyboard(KeyboardId))
+             {
+                 throw new DeviceWorkflowException("Keyboard is not displayed");

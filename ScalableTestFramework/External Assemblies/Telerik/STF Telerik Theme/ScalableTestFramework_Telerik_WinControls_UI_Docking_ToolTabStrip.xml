@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ScalableTestFramework" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="TabItemFillNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemFillSelected">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem.Selected">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemBorderSelected">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabItemBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemBorderSelected">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem.Selected.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabItemBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemBorderNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabItemBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemBorderNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem.Selected">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabItemBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemBorderSelected">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem.Selected.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabItemBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="5353Padding">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="5353Padding">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarFillInactive">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ToolWindowCaption">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TitleFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarFillNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ToolWindowCaption.IsToolWindowActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TitleFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockCloseButtonNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CloseButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockPinImageNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AutoHideButton.ToggleState=On" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockUnpinImageNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AutoHideButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockDropDownImageNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SystemDropDownButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.MouseOver.ActionPart">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SystemDropDownButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CollapsedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ToolWindowCaption">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TitleBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CollapsedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ToolWindowCaption.IsToolWindowActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TitleBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ControlBorderDark">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SplitContainerBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SplitContainerFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemFillSelected">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem.Selected.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemFillHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CloseButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CloseButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CloseButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CloseButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CloseButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CloseButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AutoHideButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="AutoHideButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AutoHideButton.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="AutoHideButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AutoHideButton.ToggleState=Intermediate">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="AutoHideButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AutoHideButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="AutoHideButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AutoHideButton.ToggleState=On.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="AutoHideButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AutoHideButton.ToggleState=Intermediate.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="AutoHideButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AutoHideButton.ToggleState=Intermediate.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="AutoHideButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AutoHideButton.ToggleState=On.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="AutoHideButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AutoHideButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="AutoHideButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AutoHideButton.ToggleState=Intermediate.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AutoHideButton.ToggleState=On.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AutoHideButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AutoHideButton.ToggleState=Intermediate.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AutoHideButton.ToggleState=On.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AutoHideButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SystemDropDownButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.DropDownOpened">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SystemDropDownButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.MouseOver.ActionPart">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.DropDownOpened">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockPinImageHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AutoHideButton.ToggleState=On.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockPinImageHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AutoHideButton.ToggleState=On.Pressed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockDropDownImageHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.MouseOver.ActionPart" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockDropDownImageHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.MouseOver.ArrowPart" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockDropDownImageHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.Pressed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockDropDownImageHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.DropDownOpened" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockCloseButtonFillNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CloseButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CloseButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CloseButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AutoHideButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AutoHideButton.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AutoHideButton.ToggleState=Intermediate">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="BlackText">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ToolWindowCaption">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TitleCaption" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteFill,BlackText">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewTabStripElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteFill,DockContentBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 1, 0, 1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadPageViewContentAreaElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="BlackText">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ToolWindowCaption.IsToolWindowActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TitleCaption" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockToolWindowItemContainerBottomBorder,DockToolItemContainerFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="4, 0, 4, -1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewItemContainer" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockToolWindowItemContainerRightBorder,DockToolItemContainerFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 4, -1, 4" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewItemContainer.LeftAlign" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockToolWindowItemContainerLeftBorder,DockToolItemContainerFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="-1, 4, 0, 4" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewItemContainer.RightAlign" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockToolWindowItemContainerTopBorder,DockToolItemContainerFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="4, -1, 4, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewItemContainer.BottomAlign" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemFillNormal,TabItemBorderNormal,Padding(4;2;4;2)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemFillSelected,TabToolItemBorderSelected,Padding(4;2;4;2)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripItem.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemFillHover,TabItemBorderMouseOver">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripItem.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemFillSelected,TabToolItemBorderSelected">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripItem.Selected.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockCloseButtonNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabCloseButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockCloseButtonFillNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabCloseButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabCloseButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabCloseButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabCloseButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabCloseButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabCloseButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.Docking.ToolTabStrip" ElementType="Telerik.WinControls.RootRadElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

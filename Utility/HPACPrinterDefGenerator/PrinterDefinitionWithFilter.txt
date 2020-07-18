@@ -1,0 +1,14 @@
+ PRTLNAME = {0}
+ DEPT = {1}
+ COMMTYPE = TCPIP/SOCK
+ F1ARGS   = "&prt_tcphost" "&infile" "&outfile" "&rmtqueue" "&filename" "&ctime" "&bytes" "&pages" "&color" "&duplex" "&host" "&pagesize" "&spoolid" notracking
+ ERRACTN  = HOLD
+ FILTER1  = C:\Program Files\Hewlett-Packard\HP Access Control\bin\printenterprise.exe
+ F1DTYPE  = all
+ COLOR    = YES
+ DUPLEX   = YES
+ PULLPRINT = YES
+ TCPHOST  = {2}
+ TCPRPORT = 9100
+ PJL      = NO
+ SNMP     = NO

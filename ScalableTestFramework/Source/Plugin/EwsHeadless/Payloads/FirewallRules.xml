@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Printers FilterType="FirewallRules">
+  <Printer Type="SIRIUS" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/Firewall/Update</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>PUT</Method>
+		<Default item="State">enabled</Default>
+		<Default item="Action">allow</Default>
+        <Payload>lt;fwdyn:Update xmlns:fwdyn="http://www.hp.com/schemas/imaging/con/ledm/fwdyn/2011/01/05" xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/" xmlns:dd3="http://www.hp.com/schemas/imaging/con/dictionaries/2009/04/06" xmlns:fw="http://www.hp.com/schemas/imaging/con/firewall/2011/01/05"gt;lt;fw:Stategt;lt;fw:Stategt;{State}lt;/fw:Stategt;lt;/fw:Stategt;lt;fw:Rulesgt;lt;fw:Defaultgt;lt;fw:Actiongt;{Action}lt;/fw:Actiongt;lt;/fw:Defaultgt;lt;/fw:Rulesgt;lt;fw:Advanced/gt;lt;/fwdyn:Updategt;</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate, sdch</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-US,en;q=0.8</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+      <Request Order="2" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/Firewall/Commit</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>PUT</Method>
+        <Payload></Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate, sdch</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-US,en;q=0.8</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="PHOENIX" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>http://{0}/hp/device/set_config_networkFirewall.html/config</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+		<Default item="firewallEnable">on</Default>
+		<Default item="httpsFailsafe">on</Default>
+        <Payload>firewallEnable={firewallEnable}amp;httpsFailsafe={httpsFailsafe}amp;ruleAction1=ALLOWamp;ruleAction2=ALLOWamp;ruleAction3=ALLOWamp;ruleAction4=ALLOWamp;ruleAction5=ALLOWamp;ruleAction6=ALLOWamp;ruleAction7=ALLOWamp;ruleAction8=ALLOWamp;ruleAction9=ALLOWamp;ruleAction10=ALLOWamp;default_action=ALLOWamp;Apply=Applyamp;enablePrompt=You+are+enabling+the+firewall+with+the+default+rule+set+to+block+all+packets%0D%0Aand+you+have+no+other+rule+enabled.+Are+you+sure+you+want+to+do+this%3Famp;cFullStr=Fullamp;tableOrder=tr1tr2tr3tr4tr5tr6tr7tr8tr9tr10amp;deletePrompt=Are+you+sure+you+want+to+delete+this+rule%3Famp;restorePrompt=Warning%3A+This+will+restore+Firewall+to+factory+defaults.%0D%0AAre+you+sure+you+want+to+restore+defaults%3Famp;failsafePrompt=Failsafe+Option+is+not+enabled.+Are+you+sure+you+want+to+continue%3Famp;deleteEntry=999amp;hasRoomForRules=1amp;ruleCfg1=0amp;ruleCfg2=0amp;ruleCfg3=0amp;ruleCfg4=0amp;ruleCfg5=0amp;ruleCfg6=0amp;ruleCfg7=0amp;ruleCfg8=0amp;ruleCfg9=0amp;ruleCfg10=0</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate, sdch</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-US,en;q=0.8</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="JEDI" SubFilterType="enabled" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="YES">
+        <URL>https://{0}/ipsec_main.htm/config</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL>https://{0}/ipsec_main.htm/config</HideURL>
+        <Method>POST</Method>
+        <Payload>IP_SEC=onamp;1.0.10.RuleNo=1amp;1.1.10.RuleNo=2amp;1.2.10.RuleNo=3amp;1.3.10.RuleNo=4amp;1.4.10.RuleNo=5amp;1.5.10.RuleNo=6amp;1.6.10.RuleNo=7amp;1.7.10.RuleNo=8amp;1.8.10.RuleNo=9amp;1.9.10.RuleNo=10amp;action_list=ALLOWamp;ipsec_addrule=Add+Rules...</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+      <Request Order="2" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/ipsec_addrtmpl.htm/config</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>addrlist=1amp;CfgIdName=All+IP+Addressesamp;Next=Next+%3Eamp;Hide={HideID}</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+      <Request Order="3" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/ipsec_sertmpl.htm/ipsec_addrtemplat.htm</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>ServiceTemplates=1amp;SvrTmpName=All+Servicesamp;Next=Next+%3Eamp;Hide={HideID}</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+      <Request Order="4" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/ipsec_action.htm/config</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>ipsec_action=ALLOWamp;Next=Next+%3Eamp;Hide={HideID}</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+      <Request Order="5" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/ipsec_summary.htm/config</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>Finish=Finishamp;Hide={HideID}</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+      <Request Order="6" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/ipsec_confirm.htm/config</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>IPsec_confirm=YESamp;IPsec_Failsafeconfirm=YESamp;yes=OKamp;Hide=</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+</Printers>
+
+
+

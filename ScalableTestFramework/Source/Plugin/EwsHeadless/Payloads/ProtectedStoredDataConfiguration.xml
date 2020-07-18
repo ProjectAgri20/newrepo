@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Printers FilterType="StoredDataConfiguration">
+  <Printer Type="OMNI" SubFilterType="ManagingTemporaryJobFiles" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/ProtectStoredData/Save</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Default item="RequirePinMaxDigits">on</Default>
+        <Default item="RequirePinSaveDeviceMemory">on</Default>
+        <Default item="RequirePinPrintStoredJobs">on</Default>
+        <Default item="CancelPrintJobsWithoutPin">on</Default>
+        <Default item="AddPinToJobsWithout">on</Default>
+        <Default item="SortOrder">Alphabetical</Default>
+        <Default item="PublicFolderName">Untitled</Default>
+        <Default item="TemporaryStoreJobRetainOnPowerCycle">DoNotRetain</Default>
+        <Default item="TemporaryStoreJobLimit">32</Default>
+        <Default item="TemporaryStoreJobHeldTimeout">Off</Default>
+        <Default item="PermanentStoreJobHeldTimeout">Off</Default>
+        <Payload>Enable=onamp;RequirePinMaxDigits={RequirePinMaxDigits}amp;RequirePinSaveDeviceMemory={RequirePinSaveDeviceMemory}amp;RequirePinPrintStoredJobs={RequirePinPrintStoredJobs}amp;CancelPrintJobsWithoutPin={CancelPrintJobsWithoutPin}amp;AddPinToJobsWithout={AddPinToJobsWithout}amp;PIN={PIN}amp;SortOrder={SortOrder}amp;PublicFolderName={PublicFolderName}amp;TemporaryStoreJobRetainOnPowerCycle={TemporaryStoreJobRetainOnPowerCycle}amp;TemporaryStoreJobLimit={TemporaryStoreJobLimit}amp;TemporaryStoreJobHeldTimeout={TemporaryStoreJobHeldTimeout}amp;PermanentStoreJobHeldTimeout={PermanentStoreJobHeldTimeout}amp;FormButtonSubmit=Apply</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Language</HeaderName>
+            <HeaderValue>en-US</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="3">
+            <HeaderName>Cache-Control</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="OMNI" SubFilterType="Erase" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/ProtectStoredData/Save</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>SecureDataEraseMode={SecureDataEraseMode}amp;SecureDataEraseButton=Erase...amp;EraseMode={EraseMode}</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Language</HeaderName>
+            <HeaderValue>en-US</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="3">
+            <HeaderName>Cache-Control</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+      <Request Order="2" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/ProtectStoredData/DialogResponse</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>DialogButtonYes=Eraseamp;OperationIdentifier=SecureEraseJobDataOperation</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Language</HeaderName>
+            <HeaderValue>en-US</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="3">
+            <HeaderName>Cache-Control</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+</Printers>

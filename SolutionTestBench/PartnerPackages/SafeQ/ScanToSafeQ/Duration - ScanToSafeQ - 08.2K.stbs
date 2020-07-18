@@ -1,0 +1,245 @@
+<Composite xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="1" z:Type="HP.ScalableTest.Core.ImportExport.EnterpriseScenarioCompositeContract" z:Assembly="HP.STF.FrameworkCore, Version=4.16.12.0, Culture=neutral, PublicKeyToken=null" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/">
+  <Documents z:Id="2" z:Size="0" />
+  <Printers z:Id="3" z:Size="0" />
+  <Scenario z:Id="4">
+    <ActivityAssetUsage xmlns:d3p1="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Core.ImportExport" z:Id="5">
+      <d3p1:items z:Id="6" z:Type="System.Collections.Generic.List`1[[HP.ScalableTest.Core.ImportExport.ResourceUsageContract, HP.STF.FrameworkCore, Version=4.16.12.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+        <d3p1:_items z:Id="7" z:Size="4">
+          <d3p1:ResourceUsageContract z:Id="8">
+            <d3p1:VirtualResourceMetadataId>d4712e2f-8085-4710-ab4d-3117febc0d06</d3p1:VirtualResourceMetadataId>
+            <d3p1:XmlSelectionData z:Id="9">&lt;AssetSelectionData xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework.Assets" z:Id="1" z:Type="HP.ScalableTest.Framework.Assets.AssetSelectionData" z:Assembly="STF.Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"&gt;&lt;_inactiveAssets z:Id="2"&gt;&lt;items xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="3" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0"&gt;&lt;_items z:Id="4" z:Size="0" /&gt;&lt;_size&gt;0&lt;/_size&gt;&lt;_version&gt;0&lt;/_version&gt;&lt;/items&gt;&lt;/_inactiveAssets&gt;&lt;_selectedAssets z:Id="5"&gt;&lt;items xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="6" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0"&gt;&lt;_items z:Id="7" z:Size="4"&gt;&lt;string z:Id="8"&gt;STB-BLUEFIN01&lt;/string&gt;&lt;string i:nil="true" /&gt;&lt;string i:nil="true" /&gt;&lt;string i:nil="true" /&gt;&lt;/_items&gt;&lt;_size&gt;1&lt;/_size&gt;&lt;_version&gt;1&lt;/_version&gt;&lt;/items&gt;&lt;/_selectedAssets&gt;&lt;/AssetSelectionData&gt;</d3p1:XmlSelectionData>
+          </d3p1:ResourceUsageContract>
+          <d3p1:ResourceUsageContract z:Id="10">
+            <d3p1:VirtualResourceMetadataId>f494082f-7c7b-4a63-bb19-3117febc0d07</d3p1:VirtualResourceMetadataId>
+            <d3p1:XmlSelectionData z:Id="11">&lt;AssetSelectionData xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework.Assets" z:Id="1" z:Type="HP.ScalableTest.Framework.Assets.AssetSelectionData" z:Assembly="STF.Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"&gt;&lt;_inactiveAssets z:Id="2"&gt;&lt;items xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="3" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0"&gt;&lt;_items z:Id="4" z:Size="0" /&gt;&lt;_size&gt;0&lt;/_size&gt;&lt;_version&gt;0&lt;/_version&gt;&lt;/items&gt;&lt;/_inactiveAssets&gt;&lt;_selectedAssets z:Id="5"&gt;&lt;items xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="6" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0"&gt;&lt;_items z:Ref="4" i:nil="true" /&gt;&lt;_size&gt;0&lt;/_size&gt;&lt;_version&gt;0&lt;/_version&gt;&lt;/items&gt;&lt;/_selectedAssets&gt;&lt;/AssetSelectionData&gt;</d3p1:XmlSelectionData>
+          </d3p1:ResourceUsageContract>
+          <d3p1:ResourceUsageContract z:Id="12">
+            <d3p1:VirtualResourceMetadataId>57ebc253-02a5-44ec-9d73-3117febc0d08</d3p1:VirtualResourceMetadataId>
+            <d3p1:XmlSelectionData z:Id="13">&lt;AssetSelectionData xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework.Assets" z:Id="1" z:Type="HP.ScalableTest.Framework.Assets.AssetSelectionData" z:Assembly="STF.Framework, Version=4.16.12.0, Culture=neutral, PublicKeyToken=null"&gt;&lt;_inactiveAssets z:Id="2"&gt;&lt;items xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="3" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0"&gt;&lt;_items z:Id="4" z:Size="0" /&gt;&lt;_size&gt;0&lt;/_size&gt;&lt;_version&gt;0&lt;/_version&gt;&lt;/items&gt;&lt;/_inactiveAssets&gt;&lt;_selectedAssets z:Id="5"&gt;&lt;items xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="6" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0"&gt;&lt;_items z:Id="7" z:Size="4"&gt;&lt;string z:Id="8"&gt;SafeQ&lt;/string&gt;&lt;string i:nil="true" /&gt;&lt;string i:nil="true" /&gt;&lt;string i:nil="true" /&gt;&lt;/_items&gt;&lt;_size&gt;1&lt;/_size&gt;&lt;_version&gt;1&lt;/_version&gt;&lt;/items&gt;&lt;/_selectedAssets&gt;&lt;/AssetSelectionData&gt;</d3p1:XmlSelectionData>
+          </d3p1:ResourceUsageContract>
+          <d3p1:ResourceUsageContract z:Id="14">
+            <d3p1:VirtualResourceMetadataId>27460daf-3c82-43c8-a6ad-3117febc0d09</d3p1:VirtualResourceMetadataId>
+            <d3p1:XmlSelectionData z:Id="15">&lt;AssetSelectionData xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework.Assets" z:Id="1" z:Type="HP.ScalableTest.Framework.Assets.AssetSelectionData" z:Assembly="STF.Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"&gt;&lt;_inactiveAssets z:Id="2"&gt;&lt;items xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="3" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0"&gt;&lt;_items z:Id="4" z:Size="0" /&gt;&lt;_size&gt;0&lt;/_size&gt;&lt;_version&gt;0&lt;/_version&gt;&lt;/items&gt;&lt;/_inactiveAssets&gt;&lt;_selectedAssets z:Id="5"&gt;&lt;items xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="6" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0"&gt;&lt;_items z:Id="7" z:Size="4"&gt;&lt;string z:Id="8"&gt;STB-BLUEFIN01&lt;/string&gt;&lt;string i:nil="true" /&gt;&lt;string i:nil="true" /&gt;&lt;string i:nil="true" /&gt;&lt;/_items&gt;&lt;_size&gt;1&lt;/_size&gt;&lt;_version&gt;1&lt;/_version&gt;&lt;/items&gt;&lt;/_selectedAssets&gt;&lt;/AssetSelectionData&gt;</d3p1:XmlSelectionData>
+          </d3p1:ResourceUsageContract>
+        </d3p1:_items>
+        <d3p1:_size>4</d3p1:_size>
+        <d3p1:_version>5</d3p1:_version>
+      </d3p1:items>
+    </ActivityAssetUsage>
+    <ActivityDocumentUsage xmlns:d3p1="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Core.ImportExport" z:Id="16">
+      <d3p1:items z:Id="17" z:Type="System.Collections.Generic.List`1[[HP.ScalableTest.Core.ImportExport.ResourceUsageContract, HP.STF.FrameworkCore, Version=4.16.12.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+        <d3p1:_items z:Id="18" z:Size="0" />
+        <d3p1:_size>0</d3p1:_size>
+        <d3p1:_version>1</d3p1:_version>
+      </d3p1:items>
+    </ActivityDocumentUsage>
+    <ActivityPrintQueueUsage xmlns:d3p1="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Core.ImportExport" z:Id="19">
+      <d3p1:items z:Id="20" z:Type="System.Collections.Generic.List`1[[HP.ScalableTest.Core.ImportExport.ResourceUsageContract, HP.STF.FrameworkCore, Version=4.16.12.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+        <d3p1:_items z:Ref="18" i:nil="true" />
+        <d3p1:_size>0</d3p1:_size>
+        <d3p1:_version>1</d3p1:_version>
+      </d3p1:items>
+    </ActivityPrintQueueUsage>
+    <ActivityRetrySettings xmlns:d3p1="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Core.ImportExport" z:Id="21">
+      <d3p1:items z:Id="22" z:Type="System.Collections.Generic.List`1[[HP.ScalableTest.Core.ImportExport.RetrySettingContract, HP.STF.FrameworkCore, Version=4.16.12.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+        <d3p1:_items z:Id="23" z:Size="0" />
+        <d3p1:_size>0</d3p1:_size>
+        <d3p1:_version>1</d3p1:_version>
+      </d3p1:items>
+    </ActivityRetrySettings>
+    <ActivityServerUsage xmlns:d3p1="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Core.ImportExport" z:Id="24">
+      <d3p1:items z:Id="25" z:Type="System.Collections.Generic.List`1[[HP.ScalableTest.Core.ImportExport.ResourceUsageContract, HP.STF.FrameworkCore, Version=4.16.12.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+        <d3p1:_items z:Ref="18" i:nil="true" />
+        <d3p1:_size>0</d3p1:_size>
+        <d3p1:_version>1</d3p1:_version>
+      </d3p1:items>
+    </ActivityServerUsage>
+    <AllAssets xmlns:d3p1="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework.Assets" z:Id="26">
+      <d3p1:items z:Id="27" z:Type="System.Collections.Generic.List`1[[HP.ScalableTest.Framework.Assets.AssetInfo, STF.Framework, Version=4.16.12.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+        <d3p1:_items z:Id="28" z:Size="0" />
+        <d3p1:_size>0</d3p1:_size>
+        <d3p1:_version>1</d3p1:_version>
+      </d3p1:items>
+    </AllAssets>
+    <AssociatedProductNames xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="29">
+      <d3p1:items z:Id="30" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+        <d3p1:_items z:Id="31" z:Size="0" />
+        <d3p1:_size>0</d3p1:_size>
+        <d3p1:_version>0</d3p1:_version>
+      </d3p1:items>
+    </AssociatedProductNames>
+    <Company i:nil="true" />
+    <ContractVersion z:Id="32">1.0</ContractVersion>
+    <Description z:Id="33">Exposes defects like crashes and memory leaks that manifest over many workflow iterations.</Description>
+    <Folders xmlns:d3p1="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Core.ImportExport" z:Id="34">
+      <d3p1:items z:Id="35" z:Type="System.Collections.Generic.List`1[[HP.ScalableTest.Core.ImportExport.FolderContract, HP.STF.FrameworkCore, Version=4.16.12.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+        <d3p1:_items z:Id="36" z:Size="0" />
+        <d3p1:_size>0</d3p1:_size>
+        <d3p1:_version>0</d3p1:_version>
+      </d3p1:items>
+    </Folders>
+    <Name z:Id="37">Duration - ScanToSafeQ - 08.2K</Name>
+    <Owner z:Id="38">administrator</Owner>
+    <ResourceDetails xmlns:d3p1="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework.Manifest" z:Id="39">
+      <d3p1:items z:Id="40" z:Type="System.Collections.Generic.List`1[[HP.ScalableTest.Framework.Manifest.ResourceDetailBase, HP.STF.FrameworkCommon, Version=4.16.12.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+        <d3p1:_items z:Id="41" z:Size="4">
+          <d3p1:ResourceDetailBase z:Id="42" z:Type="HP.ScalableTest.Framework.Manifest.SolutionTesterDetail" z:Assembly="HP.STF.FrameworkCommon, Version=4.16.12.0, Culture=neutral, PublicKeyToken=null">
+            <d3p1:Description i:nil="true" />
+            <d3p1:Enabled>true</d3p1:Enabled>
+            <d3p1:InstanceCount>4</d3p1:InstanceCount>
+            <d3p1:MetadataDetails z:Id="43">
+              <d3p1:items z:Id="44" z:Type="System.Collections.Generic.List`1[[HP.ScalableTest.Framework.Manifest.ResourceMetadataDetail, HP.STF.FrameworkCommon, Version=4.16.12.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+                <d3p1:_items z:Id="45" z:Size="4">
+                  <d3p1:ResourceMetadataDetail z:Id="46" z:Type="HP.ScalableTest.Framework.Manifest.OfficeWorkerMetadataDetail" z:Assembly="HP.STF.FrameworkCommon, Version=4.16.12.0, Culture=neutral, PublicKeyToken=null">
+                    <d3p1:Data z:Id="47">&lt;CollectDeviceSystemInfoActivityData xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Plugin.CollectDeviceSystemInfo" z:Id="1" z:Type="HP.ScalableTest.Plugin.CollectDeviceSystemInfo.CollectDeviceSystemInfoActivityData" z:Assembly="Plugin.CollectDeviceSystemInfo, Version=4.16.12.0, Culture=neutral, PublicKeyToken=null"&gt;&lt;LockTimeouts xmlns:d2p1="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework.Synchronization" z:Id="2"&gt;&lt;d2p1:_acquireTimeout&gt;PT5M&lt;/d2p1:_acquireTimeout&gt;&lt;d2p1:_holdTimeout&gt;PT5M&lt;/d2p1:_holdTimeout&gt;&lt;/LockTimeouts&gt;&lt;/CollectDeviceSystemInfoActivityData&gt;</d3p1:Data>
+                    <d3p1:Enabled>true</d3p1:Enabled>
+                    <d3p1:Id>d4712e2f-8085-4710-ab4d-3117febc0d06</d3p1:Id>
+                    <d3p1:MetadataType z:Id="48">CollectDeviceSystemInfo</d3p1:MetadataType>
+                    <d3p1:MetadataVersion z:Id="49">1.1</d3p1:MetadataVersion>
+                    <d3p1:Name z:Id="50">01-Snapshot@08.2KDevice</d3p1:Name>
+                    <d3p1:Plan z:Id="51" z:Type="HP.ScalableTest.Framework.WorkerExecutionPlan" z:Assembly="HP.STF.FrameworkCommon, Version=4.16.12.0, Culture=neutral, PublicKeyToken=null">
+                      <ActivityPacing z:Id="52" xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework">
+                        <DelayOnRepeat>true</DelayOnRepeat>
+                        <Enabled>false</Enabled>
+                        <MaxDelay>PT0S</MaxDelay>
+                        <MinDelay>PT0S</MinDelay>
+                        <Randomize>false</Randomize>
+                      </ActivityPacing>
+                      <Mode xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework">Iteration</Mode>
+                      <Order xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework">1</Order>
+                      <Phase xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework">Setup</Phase>
+                      <Value xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework">1</Value>
+                    </d3p1:Plan>
+                  </d3p1:ResourceMetadataDetail>
+                  <d3p1:ResourceMetadataDetail z:Id="53" z:Type="HP.ScalableTest.Framework.Manifest.OfficeWorkerMetadataDetail" z:Assembly="HP.STF.FrameworkCommon, Version=4.16.12.0, Culture=neutral, PublicKeyToken=null">
+                    <d3p1:Data z:Id="54">&lt;CollectDeviceSystemInfoActivityData xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Plugin.CollectDeviceSystemInfo" z:Id="1" z:Type="HP.ScalableTest.Plugin.CollectDeviceSystemInfo.CollectDeviceSystemInfoActivityData" z:Assembly="Plugin.CollectDeviceSystemInfo, Version=4.16.12.0, Culture=neutral, PublicKeyToken=null"&gt;&lt;LockTimeouts xmlns:d2p1="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework.Synchronization" z:Id="2"&gt;&lt;d2p1:_acquireTimeout&gt;PT5M&lt;/d2p1:_acquireTimeout&gt;&lt;d2p1:_holdTimeout&gt;PT5M&lt;/d2p1:_holdTimeout&gt;&lt;/LockTimeouts&gt;&lt;/CollectDeviceSystemInfoActivityData&gt;</d3p1:Data>
+                    <d3p1:Enabled>true</d3p1:Enabled>
+                    <d3p1:Id>f494082f-7c7b-4a63-bb19-3117febc0d07</d3p1:Id>
+                    <d3p1:MetadataType z:Id="55">CollectDeviceSystemInfo</d3p1:MetadataType>
+                    <d3p1:MetadataVersion z:Id="56">1.1</d3p1:MetadataVersion>
+                    <d3p1:Name z:Id="57">04-Snapshot@08.2KDevice</d3p1:Name>
+                    <d3p1:Plan z:Id="58" z:Type="HP.ScalableTest.Framework.WorkerExecutionPlan" z:Assembly="HP.STF.FrameworkCommon, Version=4.16.12.0, Culture=neutral, PublicKeyToken=null">
+                      <ActivityPacing z:Id="59" xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework">
+                        <DelayOnRepeat>true</DelayOnRepeat>
+                        <Enabled>false</Enabled>
+                        <MaxDelay>PT0S</MaxDelay>
+                        <MinDelay>PT0S</MinDelay>
+                        <Randomize>false</Randomize>
+                      </ActivityPacing>
+                      <Mode xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework">Iteration</Mode>
+                      <Order xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework">1</Order>
+                      <Phase xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework">Teardown</Phase>
+                      <Value xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework">1</Value>
+                    </d3p1:Plan>
+                  </d3p1:ResourceMetadataDetail>
+                  <d3p1:ResourceMetadataDetail z:Id="60" z:Type="HP.ScalableTest.Framework.Manifest.OfficeWorkerMetadataDetail" z:Assembly="HP.STF.FrameworkCommon, Version=4.16.12.0, Culture=neutral, PublicKeyToken=null">
+                    <d3p1:Data z:Id="61">&lt;ScanToSafeQActivityData xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Plugin.ScanToSafeQ" z:Id="1" z:Type="HP.ScalableTest.Plugin.ScanToSafeQ.ScanToSafeQActivityData" z:Assembly="Plugin.ScanToSafeQ, Version=4.16.12.0, Culture=neutral, PublicKeyToken=null"&gt;&lt;AuthProvider&gt;SafeQ&lt;/AuthProvider&gt;&lt;DeviceMemoryProfilerConfig xmlns:d2p1="http://schemas.datacontract.org/2004/07/HP.ScalableTest.PluginSupport.MemoryCollection" z:Id="2"&gt;&lt;d2p1:SampleAtCountIntervals&gt;false&lt;/d2p1:SampleAtCountIntervals&gt;&lt;d2p1:SampleAtTimeIntervals&gt;false&lt;/d2p1:SampleAtTimeIntervals&gt;&lt;d2p1:TargetSampleCount&gt;100&lt;/d2p1:TargetSampleCount&gt;&lt;d2p1:TargetSampleTime&gt;PT30M&lt;/d2p1:TargetSampleTime&gt;&lt;/DeviceMemoryProfilerConfig&gt;&lt;LockTimeouts xmlns:d2p1="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework.Synchronization" z:Id="3"&gt;&lt;d2p1:_acquireTimeout&gt;PT5M&lt;/d2p1:_acquireTimeout&gt;&lt;d2p1:_holdTimeout&gt;PT10M&lt;/d2p1:_holdTimeout&gt;&lt;/LockTimeouts&gt;&lt;PrintAll&gt;false&lt;/PrintAll&gt;&lt;ReleaseOnSignIn&gt;false&lt;/ReleaseOnSignIn&gt;&lt;SafeQAuthentication&gt;false&lt;/SafeQAuthentication&gt;&lt;SafeQFileType&gt;PDF&lt;/SafeQFileType&gt;&lt;ScanCount&gt;1&lt;/ScanCount&gt;&lt;WorkFlowDescription z:Id="4"&gt;SF&lt;/WorkFlowDescription&gt;&lt;/ScanToSafeQActivityData&gt;</d3p1:Data>
+                    <d3p1:Enabled>true</d3p1:Enabled>
+                    <d3p1:Id>57ebc253-02a5-44ec-9d73-3117febc0d08</d3p1:Id>
+                    <d3p1:MetadataType z:Id="62">ScanToSafeQ</d3p1:MetadataType>
+                    <d3p1:MetadataVersion z:Id="63">1.0</d3p1:MetadataVersion>
+                    <d3p1:Name z:Id="64">02-SafeQScanRoute@08.2KDevice</d3p1:Name>
+                    <d3p1:Plan z:Id="65" z:Type="HP.ScalableTest.Framework.WorkerExecutionPlan" z:Assembly="HP.STF.FrameworkCommon, Version=4.16.12.0, Culture=neutral, PublicKeyToken=null">
+                      <ActivityPacing z:Id="66" xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework">
+                        <DelayOnRepeat>true</DelayOnRepeat>
+                        <Enabled>false</Enabled>
+                        <MaxDelay>PT0S</MaxDelay>
+                        <MinDelay>PT0S</MinDelay>
+                        <Randomize>false</Randomize>
+                      </ActivityPacing>
+                      <Mode xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework">Iteration</Mode>
+                      <Order xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework">1</Order>
+                      <Phase xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework">Main</Phase>
+                      <Value xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework">48</Value>
+                    </d3p1:Plan>
+                  </d3p1:ResourceMetadataDetail>
+                  <d3p1:ResourceMetadataDetail z:Id="67" z:Type="HP.ScalableTest.Framework.Manifest.OfficeWorkerMetadataDetail" z:Assembly="HP.STF.FrameworkCommon, Version=4.16.12.0, Culture=neutral, PublicKeyToken=null">
+                    <d3p1:Data z:Id="68">&lt;AuthenticationData xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Plugin.Authentication" z:Id="1" z:Type="HP.ScalableTest.Plugin.Authentication.AuthenticationData" z:Assembly="Plugin.Authentication, Version=4.16.12.0, Culture=neutral, PublicKeyToken=null"&gt;&lt;AuthProvider&gt;Auto&lt;/AuthProvider&gt;&lt;InitiationButton z:Id="2"&gt;Sign In&lt;/InitiationButton&gt;&lt;LockTimeouts xmlns:d2p1="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework.Synchronization" z:Id="3"&gt;&lt;d2p1:_acquireTimeout&gt;PT5M&lt;/d2p1:_acquireTimeout&gt;&lt;d2p1:_holdTimeout&gt;PT5M&lt;/d2p1:_holdTimeout&gt;&lt;/LockTimeouts&gt;&lt;UnAuthenticateMethod z:Id="4"&gt;Wait For Inactivity Timeout&lt;/UnAuthenticateMethod&gt;&lt;/AuthenticationData&gt;</d3p1:Data>
+                    <d3p1:Enabled>true</d3p1:Enabled>
+                    <d3p1:Id>27460daf-3c82-43c8-a6ad-3117febc0d09</d3p1:Id>
+                    <d3p1:MetadataType z:Id="69">Authentication</d3p1:MetadataType>
+                    <d3p1:MetadataVersion z:Id="70">1.1</d3p1:MetadataVersion>
+                    <d3p1:Name z:Id="71">03-WaitForTimeout@08.2KDevice</d3p1:Name>
+                    <d3p1:Plan z:Id="72" z:Type="HP.ScalableTest.Framework.WorkerExecutionPlan" z:Assembly="HP.STF.FrameworkCommon, Version=4.16.12.0, Culture=neutral, PublicKeyToken=null">
+                      <ActivityPacing z:Id="73" xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework">
+                        <DelayOnRepeat>true</DelayOnRepeat>
+                        <Enabled>false</Enabled>
+                        <MaxDelay>PT0S</MaxDelay>
+                        <MinDelay>PT0S</MinDelay>
+                        <Randomize>false</Randomize>
+                      </ActivityPacing>
+                      <Mode xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework">Iteration</Mode>
+                      <Order xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework">2</Order>
+                      <Phase xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework">Main</Phase>
+                      <Value xmlns="http://schemas.datacontract.org/2004/07/HP.ScalableTest.Framework">1</Value>
+                    </d3p1:Plan>
+                  </d3p1:ResourceMetadataDetail>
+                </d3p1:_items>
+                <d3p1:_size>4</d3p1:_size>
+                <d3p1:_version>4</d3p1:_version>
+              </d3p1:items>
+            </d3p1:MetadataDetails>
+            <d3p1:Name z:Id="74">08.2K_OW</d3p1:Name>
+            <d3p1:Platform z:Id="75">LOCAL</d3p1:Platform>
+            <d3p1:ResourceId>225eff44-0274-4647-887f-3117febc0c58</d3p1:ResourceId>
+            <d3p1:ResourceType>SolutionTester</d3p1:ResourceType>
+            <d3p1:ResourcesPerVM>10</d3p1:ResourcesPerVM>
+            <d3p1:CommandPortOffset>0</d3p1:CommandPortOffset>
+            <d3p1:DurationTime>0</d3p1:DurationTime>
+            <d3p1:ExecutionMode>Iteration</d3p1:ExecutionMode>
+            <d3p1:ExecutionSchedule i:nil="true" />
+            <d3p1:MaxActivityDelay>20</d3p1:MaxActivityDelay>
+            <d3p1:MaxStartupDelay>20</d3p1:MaxStartupDelay>
+            <d3p1:MinActivityDelay>10</d3p1:MinActivityDelay>
+            <d3p1:MinStartupDelay>10</d3p1:MinStartupDelay>
+            <d3p1:OfficeWorkerCount>0</d3p1:OfficeWorkerCount>
+            <d3p1:RandomizeActivities>false</d3p1:RandomizeActivities>
+            <d3p1:RandomizeActivityDelay>false</d3p1:RandomizeActivityDelay>
+            <d3p1:RandomizeStartupDelay>false</d3p1:RandomizeStartupDelay>
+            <d3p1:RepeatCount>14</d3p1:RepeatCount>
+            <d3p1:SecurityGroups z:Id="76"></d3p1:SecurityGroups>
+            <d3p1:StartIndex>0</d3p1:StartIndex>
+            <d3p1:UserCredentials z:Id="77">
+              <d3p1:items z:Id="78" z:Type="System.Collections.Generic.List`1[[HP.ScalableTest.Framework.Manifest.OfficeWorkerCredential, HP.STF.FrameworkCommon, Version=4.16.12.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+                <d3p1:_items z:Id="79" z:Size="0" />
+                <d3p1:_size>0</d3p1:_size>
+                <d3p1:_version>0</d3p1:_version>
+              </d3p1:items>
+            </d3p1:UserCredentials>
+            <d3p1:UserNameFormat i:nil="true" />
+            <d3p1:CredentialType z:Id="80">DefaultDesktop</d3p1:CredentialType>
+            <d3p1:Domain i:nil="true" />
+            <d3p1:Password z:Ref="76" i:nil="true" />
+            <d3p1:UseCredential>false</d3p1:UseCredential>
+            <d3p1:Username i:nil="true" />
+          </d3p1:ResourceDetailBase>
+          <d3p1:ResourceDetailBase i:nil="true" />
+          <d3p1:ResourceDetailBase i:nil="true" />
+          <d3p1:ResourceDetailBase i:nil="true" />
+        </d3p1:_items>
+        <d3p1:_size>1</d3p1:_size>
+        <d3p1:_version>1</d3p1:_version>
+      </d3p1:items>
+    </ResourceDetails>
+    <TestDocuments z:Id="81">
+      <items z:Id="82" z:Type="System.Collections.Generic.List`1[[HP.ScalableTest.Core.ImportExport.TestDocumentContract, HP.STF.FrameworkCore, Version=4.16.12.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0">
+        <_items z:Id="83" z:Size="0" />
+        <_size>0</_size>
+        <_version>1</_version>
+      </items>
+    </TestDocuments>
+    <UserGroups xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="84">
+      <d3p1:items z:Id="85" z:Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" z:Assembly="0">
+        <d3p1:_items z:Id="86" z:Size="4">
+          <d3p1:string z:Id="87">Everyone</d3p1:string>
+          <d3p1:string i:nil="true" />
+          <d3p1:string i:nil="true" />
+          <d3p1:string i:nil="true" />
+        </d3p1:_items>
+        <d3p1:_size>1</d3p1:_size>
+        <d3p1:_version>1</d3p1:_version>
+      </d3p1:items>
+    </UserGroups>
+    <Vertical i:nil="true" />
+  </Scenario>
+</Composite>

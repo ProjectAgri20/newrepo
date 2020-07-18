@@ -1,0 +1,18 @@
+[Encoding]
+InputEncoding=UTF8
+
+[WFClient]
+username={0}\{1}
+clearpassword=1qaz2wsx
+Version=2
+
+[ApplicationServers]
+Wordpad $S2-3=
+
+[Wordpad $S2-3]
+Address={3}
+InitialProgram=#Wordpad $S2-3
+TWIMode=Off
+TransportDriver=TCP/IP
+WinStationDriver=ICA 3.0
+BrowserProtocol=HTTPonTCP

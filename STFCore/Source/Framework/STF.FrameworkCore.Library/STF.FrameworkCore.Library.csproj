@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0C83CB1E-3FC2-4E07-BAB3-532A5BE53A38}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HP.ScalableTest.Framework</RootNamespace>
+    <AssemblyName>HP.STF.FrameworkCore</AssemblyName>
+    <CodeAnalysisRuleSet>..\..\..\..\STF Standard Rules.ruleset</CodeAnalysisRuleSet>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <CodeAnalysisForceOutput>false</CodeAnalysisForceOutput>
+    <CodeAnalysisGenerateSuccessFile>false</CodeAnalysisGenerateSuccessFile>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug (XML Doc)|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug (Code Analysis + XML Doc)|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug %28XML Doc%29|AnyCPU'">
+    <DocumentationFile>bin\Debug %28XML Doc%29\HP.STF.FrameworkCore.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug %28Code Analysis + XML Doc%29|AnyCPU'">
+    <DocumentationFile>bin\Debug %28Code Analysis + XML Doc%29\HP.STF.FrameworkCore.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DeviceAutomation-2.2">
+      <HintPath>..\..\..\..\ScalableTestFramework\External Assemblies\DeviceAutomation-2.2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Camera\CameraSessionException.cs" />
+    <Compile Include="Camera\CameraSessionManager.cs" />
+    <Compile Include="ClientController\ActivityExecution\Activity.cs" />
+    <Compile Include="ClientController\ActivityExecution\ActivityDelay.cs" />
+    <Compile Include="ClientController\ActivityExecution\ActivityInfo.cs" />
+    <Compile Include="ClientController\ActivityExecution\ActivityPacingInfo.cs" />
+    <Compile Include="ClientController\ActivityExecution\ActivityQueueBase.cs" />
+    <Compile Include="ClientController\ActivityExecution\ActivityState.cs" />
+    <Compile Include="ClientController\ActivityExecution\ActivityStateEventArgs.cs" />
+    <Compile Include="ClientController\ActivityExecution\AdminWorkerActivityQueue.cs" />
+    <Compile Include="ClientController\ActivityExecution\DurationBasedEngine.cs" />
+    <Compile Include="ClientController\ActivityExecution\EngineBase.cs" />
+    <Compile Include="ClientController\ActivityExecution\EngineEventBus.cs" />
+    <Compile Include="ClientController\ActivityExecution\EngineExecutionAttribute.cs" />
+    <Compile Include="ClientController\ActivityExecution\EngineFlowControlMonitor.cs" />
+    <Compile Include="ClientController\ActivityExecution\ExecutionSchedule.cs" />
+    <Compile Include="ClientController\ActivityExecution\IterationBasedEngine.cs" />
+    <Compile Include="ClientController\ActivityExecution\OfficeWorkerActivityQueue.cs" />
+    <Compile Include="ClientController\ActivityExecution\RateBasedEngine.cs" />
+    <Compile Include="ClientController\ActivityExecution\ResourceEventArgs.cs" />
+    <Compile Include="ClientController\ActivityExecution\ScheduleBasedEngine.cs" />
+    <Compile Include="ClientController\ActivityExecution\SessionDocumentLogger.cs" />
+    <Compile Include="ClientController\ActivityExecution\ActivityExecutionLogger.cs" />
+    <Compile Include="ClientController\ActivityExecution\SessionServerLogger.cs" />
+    <Compile Include="ClientController\ActivityExecution\SetPaceBasedEngine.cs" />
+    <Compile Include="ClientController\ActivityExecution\WorkerHaltedException.cs" />
+    <Compile Include="ClientController\AdminWorker\AdminWorkerEngineController.cs" />
+    <Compile Include="ClientController\AdminWorker\AdminWorkerHandler.cs" />
+    <Compile Include="ClientController\EventLogCollector\WindowsEventDataLog.cs" />
+    <Compile Include="ClientController\VirtualResourceUserProfile.cs" />
+    <Compile Include="ClientController\CitrixWorker\CitrixPublishedApplicationHandler.cs" />
+    <Compile Include="ClientController\CitrixWorker\CitrixQueueClientData.cs" />
+    <Compile Include="ClientController\CitrixWorker\CitrixQueueMonitor.cs" />
+    <Compile Include="ClientController\CitrixWorker\CitrixQueueMonitorConnection.cs" />
+    <Compile Include="ClientController\CitrixWorker\CitrixSessionManager.cs" />
+    <Compile Include="ClientController\CitrixWorker\CitrixStartupHandler.cs" />
+    <Compile Include="ClientController\CitrixWorker\CitrixUserProfile.cs" />
+    <Compile Include="ClientController\CitrixWorker\CitrixWorkerHandler.cs" />
+    <Compile Include="ClientController\CitrixWorker\ICitrixQueueMonitorService.cs" />
+    <Compile Include="ClientController\CitrixWorker\PrinterRegistryEntry.cs" />
+    <Compile Include="ClientController\EmailMonitor\EmailAnalyzer.cs" />
+    <Compile Include="ClientController\EmailMonitor\ExchangeEmailMonitor.cs" />
+    <Compile Include="ClientController\EmailMonitor\IEmailAnalyzer.cs" />
+    <Compile Include="ClientController\EventLogCollector\EventLogCollector.cs" />
+    <Compile Include="ClientController\EventLogCollector\EventLogCollectorHandler.cs" />
+    <Compile Include="ClientController\LoadTester\LoadTesterActivityController.cs" />
+    <Compile Include="ClientController\LoadTester\LoadTesterHandler.cs" />
+    <Compile Include="ClientController\LoadTester\LoadTestThread.cs" />
+    <Compile Include="ClientController\MachineReservation\MachineReservationHandler.cs" />
+    <Compile Include="ClientController\MachineReservation\MachineReservationMetadata.cs" />
+    <Compile Include="ClientController\OfficeWorker\LocalPrintDeviceInstaller.cs" />
+    <Compile Include="ClientController\OfficeWorker\LocalPrintQueueInstaller.cs" />
+    <Compile Include="ClientController\OfficeWorker\OfficeWorkerHandler.cs" />
+    <Compile Include="ClientController\OfficeWorker\OfficeWorkerActivityController.cs" />
+    <Compile Include="ClientController\PerfMonCollector\PerfMonCollectorHandler.cs" />
+    <Compile Include="ClientController\PerfMonCollector\PerfMonController.cs" />
+    <Compile Include="ClientController\PerfMonCollector\PerfMonCounterData.cs" />
+    <Compile Include="ClientController\VirtualClientControllerLite.cs" />
+    <Compile Include="ClientController\SolutionTester\SolutionTesterActivityController.cs" />
+    <Compile Include="ClientController\SolutionTester\SolutionTesterHandler.cs" />
+    <Compile Include="ClientController\VirtualClientController.cs" />
+    <Compile Include="ClientController\VirtualResourceHandler.cs" />
+    <Compile Include="ClientController\VirtualResourceHandlerFactory.cs" />
+    <Compile Include="Dispatcher\AssetMap\BadgeBoxHost.cs" />
+    <Compile Include="Dispatcher\AssetMap\CameraHost.cs" />
+    <Compile Include="Dispatcher\AssetMap\MobileDeviceHost.cs" />
+    <Compile Include="Dispatcher\AssetMap\SiriusSimulatorHost.cs" />
+    <Compile Include="Dispatcher\DeviceEventLog\DeviceEventLogger.cs" />
+    <Compile Include="Dispatcher\DeviceEventLog\JediWsEventLogs.cs" />
+    <Compile Include="Dispatcher\DeviceEventLog\WSEventLog.cs" />
+    <Compile Include="Dispatcher\DeviceEventLog\WSEventLogList.cs" />
+    <Compile Include="Dispatcher\DeviceSetup\SessionDeviceSetupManager.cs" />
+    <Compile Include="Dispatcher\DeviceSetup\SessionDeviceLogger.cs" />
+    <Compile Include="Dispatcher\AssociatedProductSerializable.cs" />
+    <Compile Include="Dispatcher\SessionServices\DispatcherQueryService.cs" />
+    <Compile Include="Dispatcher\SessionServices\IAssetInventoryDispatcherQueryService.cs" />
+    <Compile Include="Dispatcher\MachineSetup\MachineStop.cs" />
+    <Compile Include="Dispatcher\RemotePrintQueueMap\RemotePrintQueueElement.cs" />
+    <Compile Include="Dispatcher\RemotePrintQueueMap\RemotePrintQueueMap.cs" />
+    <Compile Include="Dispatcher\ResourceMap\CitrixWorkerInstance.cs" />
+    <Compile Include="Dispatcher\ResourceMap\HostMachineEventArgs.cs" />
+    <Compile Include="Dispatcher\ResourceMap\WindowsMachineDesktop.cs" />
+    <Compile Include="Dispatcher\ResourceMap\ManagedMachineResourcePool.cs" />
+    <Compile Include="Dispatcher\ResourceMap\SolutionTesterInstance.cs" />
+    <Compile Include="Dispatcher\ResourceMap\OfficeWorkerInstance.cs" />
+    <Compile Include="Dispatcher\ResourceMap\WindowsMachinePhysical.cs" />
+    <Compile Include="Dispatcher\ResourceMap\WindowsMachineVirtual.cs" />
+    <Compile Include="Dispatcher\ResourceMap\WorkerInstanceBase.cs" />
+    <Compile Include="Dispatcher\ResourceMap\HostMachine.cs" />
+    <Compile Include="Dispatcher\SessionMap\ElementType.cs" />
+    <Compile Include="Dispatcher\SessionMap\ErrorLevel.cs" />
+    <Compile Include="Dispatcher\SessionServices\EventPublisherBase.cs" />
+    <Compile Include="Dispatcher\SessionServices\FailNotification.cs" />
+    <Compile Include="Dispatcher\SessionServices\FailNotificationInfo.cs" />
+    <Compile Include="Dispatcher\SessionServices\SessionClientConnection.cs" />
+    <Compile Include="Dispatcher\SessionServices\SessionConfigurationDataLogger.cs" />
+    <Compile Include="Dispatcher\SessionServices\SessionDispatcherConnection.cs" />
+    <Compile Include="Dispatcher\SessionServices\SessionProxyEventPublisher.cs" />
+    <Compile Include="Dispatcher\MachineSetup\MachineStart.cs" />
+    <Compile Include="Dispatcher\AssetMap\AssetHost.cs" />
+    <Compile Include="Dispatcher\AssetMap\PrintDeviceHost.cs" />
+    <Compile Include="Dispatcher\ResourceMap\AdminWorkerInstance.cs" />
+    <Compile Include="Dispatcher\ResourceMap\ResourceMetadata.cs" />
+    <Compile Include="Dispatcher\AssetMap\JediSimulatorHost.cs" />
+    <Compile Include="Dispatcher\SessionMap\ISessionMapElement.cs" />
+    <Compile Include="Dispatcher\SessionMap\SessionMapElementEventArgs.cs" />
+    <Compile Include="Dispatcher\DataModelCache.cs" />
+    <Compile Include="Dispatcher\SessionServices\ISessionProxy.cs" />
+    <Compile Include="Dispatcher\SessionServices\ISessionClient.cs" />
+    <Compile Include="Dispatcher\SessionServices\ISessionDispatcher.cs" />
+    <Compile Include="Dispatcher\SessionServices\SessionProxy.cs" />
+    <Compile Include="Dispatcher\SessionServices\SessionIdEventArgs.cs" />
+    <Compile Include="Dispatcher\SessionServices\SessionClient.cs" />
+    <Compile Include="Dispatcher\SessionServices\SessionProxyControllerSet.cs" />
+    <Compile Include="Dispatcher\SessionServices\SessionProxyController.cs" />
+    <Compile Include="Dispatcher\SessionServices\SessionStartSchedule.cs" />
+    <Compile Include="Dispatcher\SessionServices\SessionStartupTransition.cs" />
+    <Compile Include="Dispatcher\SessionServices\SessionStartupTransitionEventArgs.cs" />
+    <Compile Include="Dispatcher\SessionServices\SessionStateEventArgs.cs" />
+    <Compile Include="Dispatcher\DomainAccountReservationSet.cs" />
+    <Compile Include="Dispatcher\DomainAccountService.cs" />
+    <Compile Include="Dispatcher\SessionMap\SessionMapElementCollectionAttribute.cs" />
+    <Compile Include="Dispatcher\ResourceMap\ResourceMap.cs" />
+    <Compile Include="Dispatcher\ResourceMap\ResourceHost.cs" />
+    <Compile Include="Dispatcher\AssetMap\AssetMap.cs" />
+    <Compile Include="Dispatcher\ResourceMap\PhysicalHostMachine.cs" />
+    <Compile Include="Dispatcher\SessionMap\SessionMapObject.cs" />
+    <Compile Include="Dispatcher\SessionMap\SessionMapElement.cs" />
+    <Compile Include="Dispatcher\SessionServices\SessionDispatcherEventPublisher.cs" />
+    <Compile Include="Dispatcher\ResourceMap\ResourceInstance.cs" />
+    <Compile Include="Dispatcher\ResourceMap\ResourceInstanceEventArgs.cs" />
+    <Compile Include="ImportExport\AdminWorkerContract.cs" />
+    <Compile Include="ImportExport\AssetContract.cs" />
+    <Compile Include="ImportExport\AssetContractCollection.cs" />
+    <Compile Include="ImportExport\CitrixWorkerContract.cs" />
+    <Compile Include="ImportExport\EnterpriseScenarioCompositeContract.cs" />
+    <Compile Include="ImportExport\ContractFactory.cs" />
+    <Compile Include="ImportExport\DocumentContract.cs" />
+    <Compile Include="ImportExport\DocumentContractCollection.cs" />
+    <Compile Include="ImportExport\EnterpriseScenarioContract.cs" />
+    <Compile Include="ImportExport\EventLogCollectorContract.cs" />
+    <Compile Include="ImportExport\FolderContract.cs" />
+    <Compile Include="ImportExport\LoadTesterContract.cs" />
+    <Compile Include="ImportExport\MachineReservationContract.cs" />
+    <Compile Include="ImportExport\MetadataTypeInstallerContract.cs" />
+    <Compile Include="ImportExport\OfficeWorkerContract.cs" />
+    <Compile Include="ImportExport\PerfMonCollectorContract.cs" />
+    <Compile Include="ImportExport\PrinterContract.cs" />
+    <Compile Include="ImportExport\ResourceContract.cs" />
+    <Compile Include="ImportExport\ResourceMetadataContract.cs" />
+    <Compile Include="ImportExport\RetrySettingContract.cs" />
+    <Compile Include="ImportExport\ResourceUsageContract.cs" />
+    <Compile Include="ImportExport\ResourceUsageEntry.cs" />
+    <Compile Include="ImportExport\SoftwareInstallerContract.cs" />
+    <Compile Include="ImportExport\SoftwareInstallerPackageContract.cs" />
+    <Compile Include="ImportExport\SoftwareInstallerSettingContract.cs" />
+    <Compile Include="ImportExport\SolutionTesterContract.cs" />
+    <Compile Include="ImportExport\TestDocumentContract.cs" />
+    <Compile Include="StfLiteCentralHub.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Dispatcher\ScenarioPlatformUsage.cs" />
+    <Compile Include="Dispatcher\ScenarioPlatformUsageSet.cs" />
+    <Compile Include="SystemManifest\CitrixWorkerDetailBuilder.cs" />
+    <Compile Include="SystemManifest\AdminWorkerDetailBuilder.cs" />
+    <Compile Include="SystemManifest\EventLogCollectorDetailBuilder.cs" />
+    <Compile Include="SystemManifest\Extension.cs" />
+    <Compile Include="SystemManifest\IManifestComponentAgent.cs" />
+    <Compile Include="SystemManifest\LoadTesterDetailBuilder.cs" />
+    <Compile Include="SystemManifest\ManifestAssetAgent.cs" />
+    <Compile Include="SystemManifest\ManifestPluginAssembliesAgent.cs" />
+    <Compile Include="SystemManifest\ManifestPrintQueueAgent.cs" />
+    <Compile Include="SystemManifest\ManifestRetrySettingsAgent.cs" />
+    <Compile Include="SystemManifest\ManifestDocumentAgent.cs" />
+    <Compile Include="SystemManifest\ManifestServerAgent.cs" />
+    <Compile Include="SystemManifest\ManifestSettingsAgent.cs" />
+    <Compile Include="SystemManifest\SolutionTesterDetailBuilder.cs" />
+    <Compile Include="SystemManifest\MachineReservationDetailBuilder.cs" />
+    <Compile Include="SystemManifest\SystemManifestAgent.cs" />
+    <Compile Include="SystemManifest\OfficeWorkerDetailBuilder.cs" />
+    <Compile Include="SystemManifest\DetailBuilderBase.cs" />
+    <Compile Include="SystemManifest\PerfMonCollectorDetailBuilder.cs" />
+    <Compile Include="Dispatcher\SessionServices\SessionTicket.cs" />
+    <Compile Include="Dispatcher\DispatcherOperationException.cs" />
+    <Compile Include="Dispatcher\SessionServices\SessionState.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemManifest\VirtualResourceDetailBuilder.cs" />
+    <Compile Include="SystemManifest\VirtualResourcePackedSet.cs" />
+    <Compile Include="Dispatcher\ResourceMap\MachineReservationManager.cs" />
+    <Compile Include="Dispatcher\SessionServices\SessionResourceQuantity.cs" />
+    <Compile Include="Dispatcher\ResourceMap\ShutdownOptions.cs" />
+    <Compile Include="Dispatcher\SessionServices\SessionDispatcher.cs" />
+    <Compile Include="SystemManifest\VirtualResourcePacker.cs" />
+    <Compile Include="Virtualization\JediSimulatorManager.cs" />
+    <Compile Include="Virtualization\ManagedMachine.cs" />
+    <Compile Include="Virtualization\ManagedMachineType.cs" />
+    <Compile Include="Virtualization\RequestedVMDictionary.cs" />
+    <Compile Include="Virtualization\VirtualMachine.cs" />
+    <Compile Include="Virtualization\VMController.cs" />
+    <Compile Include="Virtualization\VMInventoryException.cs" />
+    <Compile Include="Virtualization\VMInventoryManager.cs" />
+    <Compile Include="Virtualization\VMInventorySynchronizer.cs" />
+    <Compile Include="Virtualization\VMQuantityDictionary.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\AssetInventory\STF.Core.AssetInventory.csproj">
+      <Project>{B84FEAB0-3C8D-4934-BD59-D3948C0595F1}</Project>
+      <Name>STF.Core.AssetInventory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\Configuration\STF.Core.Configuration.csproj">
+      <Project>{5C0FB620-0AC0-4F06-97D6-0EE90818E92F}</Project>
+      <Name>STF.Core.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\DataLog\STF.Core.DataLog.csproj">
+      <Project>{93E02676-956F-4E18-A564-5DA1967A9E1C}</Project>
+      <Name>STF.Core.DataLog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\DocumentLibrary\STF.Core.DocumentLibrary.csproj">
+      <Project>{270D101E-EFDB-4B57-883C-47937FE76F5D}</Project>
+      <Name>STF.Core.DocumentLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\EnterpriseTest\STF.Core.EnterpriseTest.csproj">
+      <Project>{E9D988B3-C8AB-40AE-B492-1A7427D259B6}</Project>
+      <Name>STF.Core.EnterpriseTest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\Lock\STF.Core.Lock.csproj">
+      <Project>{D630797C-DEE8-42C9-AF18-DEC96374ACB1}</Project>
+      <Name>STF.Core.Lock</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\Root\STF.Core.csproj">
+      <Project>{1B4E6157-55BA-4F35-B73F-9A7E8FAAB8D1}</Project>
+      <Name>STF.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\Virtualization\STF.Core.Virtualization.csproj">
+      <Project>{47da4dd2-3f33-4dc9-a9e0-1f9bed7e16a7}</Project>
+      <Name>STF.Core.Virtualization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\DeviceAutomation\STF.DeviceAutomation.csproj">
+      <Project>{8fa37af9-f2b8-4e72-bff7-580491a62832}</Project>
+      <Name>STF.DeviceAutomation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Email\STF.Email.csproj">
+      <Project>{907179e4-37e2-4eeb-b334-d4265359d070}</Project>
+      <Name>STF.Email</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\FrameworkInternal\STF.FrameworkInternal.csproj">
+      <Project>{1d38c759-e5f6-4603-bbbc-566f1276aba2}</Project>
+      <Name>STF.FrameworkInternal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Framework\STF.Framework.csproj">
+      <Project>{b91dcc51-8664-49e3-97d0-6fcfd2918a1a}</Project>
+      <Name>STF.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Print\STF.Print.csproj">
+      <Project>{b549acae-daed-4f96-a962-14bd02428770}</Project>
+      <Name>STF.Print</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Utility\STF.Utility.csproj">
+      <Project>{0A02EA9D-11D5-4078-9036-385709CB365A}</Project>
+      <Name>STF.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\WindowsAutomation\STF.WindowsAutomation.csproj">
+      <Project>{D9823F40-464D-451E-86CC-0C5339196522}</Project>
+      <Name>STF.WindowsAutomation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\EnterpriseTestModel\STF.EnterpriseTest.Model.csproj">
+      <Project>{975C43D5-C1C6-4A45-82D4-1ABDC6805C05}</Project>
+      <Name>STF.EnterpriseTest.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\EnterpriseTest.Library\STF.EnterpriseTest.Library.csproj">
+      <Project>{4FD3AAD9-F8A4-46CB-9C8E-4165FE64674C}</Project>
+      <Name>STF.EnterpriseTest.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrameworkCommon.Library\STF.FrameworkCommon.Library.csproj">
+      <Project>{4a72b792-4c4e-4217-befc-8f128917f836}</Project>
+      <Name>STF.FrameworkCommon.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\STF.PluginFrameworkServices\STF.PluginFrameworkServices.csproj">
+      <Project>{77fdbbf6-f0b1-4351-b218-ffb8b7c0a06e}</Project>
+      <Name>STF.PluginFrameworkServices</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="..\..\..\..\_STFDictionary.xml">
+      <Link>_STFDictionary.xml</Link>
+      <SubType>Designer</SubType>
+    </CodeAnalysisDictionary>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pscp.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plink.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WindowsClientSetup.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="..\..\..\..\ScalableTestFramework\Source\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CitrixClientTemplate.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CitrixWorkerXenApp.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CitrixWorkerXenDesktop.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TSLogoff.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EntityFramework">
+      <Version>6.1.3</Version>
+    </PackageReference>
+  </ItemGroup>
+</Project>

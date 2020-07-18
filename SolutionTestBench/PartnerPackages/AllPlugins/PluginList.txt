@@ -1,0 +1,111 @@
+﻿// This is the list of plugins available in STB.  It is a master
+// list and can be adjusted for specific distributions.  You can
+// delete the line or comment it out by used the "*" character
+// at the beginning of the line.  For example:
+// *CertificateInstaller,CertInstaller,HUB
+// If commented or deleted it won't be included in a STB server installation.
+ActivityOutcome,ActivityOutcome,Developer
+Authentication,Authentication,
+AutoStore,AutoStore,
+BashLogger,Bash Logger,HUB
+Blueprint,Pharos Blue Print,
+Celiveo,Celiveo Pull Printing,
+CertificateInstaller,CertificateInstaller,HUB
+CertificateManagement,CertificateManagement,HUB
+Clio,Clio,
+CloudConnector,Cloud Connector,
+CollectDeviceSystemInfo,Collect Device System Info,
+ComplexPrint,ComplexPrint,CTC
+ConnectivityPrint,ConnectivityPrint,CTC
+Contention,Contention,
+ControlPanel,Control Panel,HUB
+Copy,Copy,
+DeviceConfiguration,Device Configuration,
+DeviceInspector,Device Inspector,
+DeviceUtility,Device Utility,HUB
+DotOneX,DotOneX,CTC
+DirtyDevice,DirtyDevice,
+Discovery,Discovery,CTC
+DriverConfigurationPrint,Driver Configuration Print,
+DriverlessPrinting,DriverlessPrinting,HUB
+DSSConfiguration,DSSConfiguration,HUB
+DSSInstall,DSSInstall,HUB
+Email,Email,
+EPrint,EPrint,
+ePrintAdmin,ePrintAdmin,HUB
+EquitracInstaller,Equitrac Installer,PullPrint Solution Installers
+EquitracPullPrinting,Equitrac Pull Printing,
+Ews,Ews,CTC
+EWSFirmwarePerformance,EwsFirmwarePerformance,
+EwsHeadless,EwsHeadless,HUB
+Executor,Executor,HUB
+Fax,Fax,Digital Send
+Firewall,Firewall,CTC
+FlashFirmware,Flash Firmware,HUB
+GeniusBytesPullPrinting,GeniusBytesPullPrinting,
+GeniusBytesScan,GeniusBytesScan,
+GFriendExecution,GFriendExecution,
+HPEasyStart,HPEasyStart,HUB
+HpacClient,HpacClient,HUB
+HpacServerConfiguration,HpacServerConfiguration,PullPrint Solution Installers
+HpacSimulation,HpacSimulation,
+HpacPullPrinting,HpacPullPrinting,
+HpcrInstaller,Hpcr Installer,Scan Solution Installers
+HpcrSimulation,HpcrSimulation,
+Hpec,Hpec,
+HpecInstaller,Hpec Installer,Scan Solution Installers
+HpRoam,HP Roam,
+iManage,iManage,
+iSecStarPullPrinting,iSecStarPullPrinting,
+IPConfiguration,IPConfiguration,CTC
+IPSecurity,IPSecurity,CTC
+JetAdvantage,JetAdvantage,HP JetAdvantage
+JetAdvantageUpload,JetAdvantageUpload,HP JetAdvantage
+JetAdvantageScan,JetAdvantageScan,HP JetAdvantage
+LinkScanApps,LinkScanApps,
+LowLevelConfig,LowLevelConfig,
+LocksmithConfiguration,LocksmithConfiguration,
+MailMerge,MailMerge,HUB
+MessageCenter,Message Center,HUB
+mPrint,mPrint,
+MyQPullPrinting,MyQPullPrinting,
+NetworkEmulation,NetworkEmulation,HUB
+NetworkNamingServices,NetworkNamingServices,CTC
+PaperCut,PaperCut Pull Printing
+PaperCutAgentless,PaperCutAgentless Pull Printing
+PrinterOnMobile,PrinterOnMobile,
+Printing,Printing,
+PrintFromJobStorage,PrintFromJobStorage,HUB
+PrintFromUsb,PrintFromUsb,
+PrintQueueManagement,PrintQueueManagement,HUB
+PSPullPrint,PSPullPrint,HUB
+RegusKiosk,Regus Kiosk,
+RoboAction,RoboAction,HUB
+SafeComInstaller,SafeCom Installer,PullPrint Solution Installers
+SafeComSimulation,SafeComSimulation,
+SafeComPullPrinting,SafeComPullPrinting,
+SafeComUCPullPrinting,SafeComUCPullPrinting,
+SafeQPullPrinting,SafeQPullPrinting,
+ScanToEmail,ScanToEmail,Digital Send
+ScanToFolder,ScanToFolder,Digital Send
+ScanToHpcr,ScanToHpcr,
+ScanToJobStorage,ScanToJobStorage,
+ScanToSafeQ,ScanToSafeQ,
+ScanToUsb,ScanToUsb,
+ScanToWorkflow,ScanToWorkflow,Digital Send
+Security,Security,CTC
+SecurityConfiguration,SecurityConfiguration,HUB
+ServiceStartStop,ServiceStartStop,
+SoidBerg,SoidBerg,
+SyncPoint, Sync Point,
+TelnetSnmp,TelnetSnmp,CTC
+TopCat,TopCat,HUB
+TwainDriverConfiguration,TwainDriverConfiguration,HUB
+UdocxScan,UdocxScan,
+USBFirmwarePerformance,UsbFirmwarePerformance,
+UserIntervention,UserIntervention,HUB
+Vpn,Vpn,HUB
+WebProxy,WebProxy,CTC
+WiFiDirect,WiFiDirect,CTC
+Wireless,Wireless,CTC
+WirelessAssociation,WirelessAssociation,HUB

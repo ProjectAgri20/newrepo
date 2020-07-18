@@ -1,0 +1,1 @@
+﻿SELECT ConfigurationData FROM Reports.vw_rpt_SessionConfiguration WHERE SessionId = '{0}'

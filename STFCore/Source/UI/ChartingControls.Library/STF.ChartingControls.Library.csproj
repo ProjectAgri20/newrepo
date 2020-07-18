@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B5BF02C5-DC5E-4868-8E92-5E39C85673DB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HP.ScalableTest.UI.Charting</RootNamespace>
+    <AssemblyName>HP.STF.ChartingControls</AssemblyName>
+    <CodeAnalysisRuleSet>..\..\..\..\STF Standard Rules.ruleset</CodeAnalysisRuleSet>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <CodeAnalysisForceOutput>false</CodeAnalysisForceOutput>
+    <CodeAnalysisGenerateSuccessFile>false</CodeAnalysisGenerateSuccessFile>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug (XML Doc)|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug (Code Analysis + XML Doc)|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug %28XML Doc%29|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug %28Code Analysis + XML Doc%29|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms.DataVisualization">
+      <HintPath>..\..\SupportLibraries\ThirdPartyLibs\System.Windows.Forms.DataVisualization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.WinControls, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ScalableTestFramework\External Assemblies\Telerik\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ScalableTestFramework\External Assemblies\Telerik\Telerik.WinControls.GridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ScalableTestFramework\External Assemblies\Telerik\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivityErrorsTimeGraph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActivityErrorTotalsGraph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActivityInstanceTimeGraph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActivityInstanceTotalsGraph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActivityTypeTimeGraph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActivityTypeTotalsGraph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BarGraphBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BarGraphBase.Designer.cs">
+      <DependentUpon>BarGraphBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalculatedSeries.cs" />
+    <Compile Include="CalculatedSeriesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculatedSeriesForm.Designer.cs">
+      <DependentUpon>CalculatedSeriesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColorWheel.cs" />
+    <Compile Include="DataPointClickEventArgs.cs" />
+    <Compile Include="DisplayOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayOptionsForm.Designer.cs">
+      <DependentUpon>DisplayOptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorListForm.Designer.cs">
+      <DependentUpon>ErrorListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="GraphDateTimeSettings.cs" />
+    <Compile Include="GraphingUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GraphingUserControl.Designer.cs">
+      <DependentUpon>GraphingUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IGraph.cs" />
+    <Compile Include="PieChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PieChart.Designer.cs">
+      <DependentUpon>PieChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SeriesFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeriesFilterForm.Designer.cs">
+      <DependentUpon>SeriesFilterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeriesInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StoredCalculatedSeries.cs" />
+    <Compile Include="SubstringFilter.cs" />
+    <Compile Include="TimeGraphBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TimeGraphBase.Designer.cs">
+      <DependentUpon>TimeGraphBase.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BarGraphBase.resx">
+      <DependentUpon>BarGraphBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculatedSeriesForm.resx">
+      <DependentUpon>CalculatedSeriesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayOptionsForm.resx">
+      <DependentUpon>DisplayOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorListForm.resx">
+      <DependentUpon>ErrorListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphingUserControl.resx">
+      <DependentUpon>GraphingUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PieChart.resx">
+      <DependentUpon>PieChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeriesFilterForm.resx">
+      <DependentUpon>SeriesFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeGraphBase.resx">
+      <DependentUpon>TimeGraphBase.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="..\..\..\..\_STFDictionary.xml">
+      <Link>_STFDictionary.xml</Link>
+    </CodeAnalysisDictionary>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\Configuration\STF.Core.Configuration.csproj">
+      <Project>{5c0fb620-0ac0-4f06-97d6-0ee90818e92f}</Project>
+      <Name>STF.Core.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\DataLog\STF.Core.DataLog.csproj">
+      <Project>{93E02676-956F-4E18-A564-5DA1967A9E1C}</Project>
+      <Name>STF.Core.DataLog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Core\Root\STF.Core.csproj">
+      <Project>{1B4E6157-55BA-4F35-B73F-9A7E8FAAB8D1}</Project>
+      <Name>STF.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\FrameworkInternal\STF.FrameworkInternal.csproj">
+      <Project>{1d38c759-e5f6-4603-bbbc-566f1276aba2}</Project>
+      <Name>STF.FrameworkInternal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Framework\STF.Framework.csproj">
+      <Project>{B91DCC51-8664-49E3-97D0-6FCFD2918A1A}</Project>
+      <Name>STF.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ScalableTestFramework\Source\Utility\STF.Utility.csproj">
+      <Project>{0A02EA9D-11D5-4078-9036-385709CB365A}</Project>
+      <Name>STF.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\EnterpriseTest.Library\STF.EnterpriseTest.Library.csproj">
+      <Project>{4FD3AAD9-F8A4-46CB-9C8E-4165FE64674C}</Project>
+      <Name>STF.EnterpriseTest.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\FrameworkCommon.Library\STF.FrameworkCommon.Library.csproj">
+      <Project>{4A72B792-4C4E-4217-BEFC-8F128917F836}</Project>
+      <Name>STF.FrameworkCommon.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="..\..\..\..\ScalableTestFramework\Source\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EntityFramework">
+      <Version>6.1.3</Version>
+    </PackageReference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,617 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="attachmentSettings" xml:space="preserve">
+    <value>&lt;dsd:AttachmentSettings&gt;
+		&lt;dd:DSAttachmentSize&gt;standard&lt;/dd:DSAttachmentSize&gt;
+		&lt;dd:DSColorPreference&gt;autoDetect&lt;/dd:DSColorPreference&gt;
+		&lt;dd:DSFileType&gt;{0}&lt;/dd:DSFileType&gt;
+		&lt;dd:DSImageResolution&gt;{1}&lt;/dd:DSImageResolution&gt;
+		&lt;dd:FileName&gt;[Untitled]&lt;/dd:FileName&gt;
+		&lt;dd:FileTextLanguage&gt;English&lt;/dd:FileTextLanguage&gt;
+		&lt;dd:EncryptAttachment&gt;disabled&lt;/dd:EncryptAttachment&gt;
+		&lt;dd:CompressAttachment&gt;disabled&lt;/dd:CompressAttachment&gt;
+		&lt;dsd:BlankPageSuppression&gt;disabled&lt;/dsd:BlankPageSuppression&gt;
+		&lt;dsd:SeparateOnBlankPage&gt;disabled&lt;/dsd:SeparateOnBlankPage&gt;
+		&lt;dd:ColorGrayscaleTiffCompression&gt;Tiff6&lt;/dd:ColorGrayscaleTiffCompression&gt;
+		&lt;dd:MonochromeTiffCompression&gt;Auto&lt;/dd:MonochromeTiffCompression&gt;
+		&lt;dd:FileNameIsEditable&gt;true&lt;/dd:FileNameIsEditable&gt;
+		&lt;dd:FileNamePrefix/&gt;
+		&lt;dd:FileNameSuffix/&gt;
+		&lt;dd:FileNameSupportedMacros /&gt;
+		&lt;dsd:FileNameCounterEnabled&gt;disabled&lt;/dsd:FileNameCounterEnabled&gt;
+		&lt;dsd:FileNameCounterResetValue&gt;999&lt;/dsd:FileNameCounterResetValue&gt;
+		&lt;dsd:DSFileTypeIsEditable&gt;true&lt;/dsd:DSFileTypeIsEditable&gt;
+		&lt;dsd:AttachmentFileNameFormat&gt;x_dash_y&lt;/dsd:AttachmentFileNameFormat&gt;
+		&lt;dsd:ColorGrayscalePdfCompression&gt;Auto&lt;/dsd:ColorGrayscalePdfCompression&gt;
+		&lt;dsd:ScanToMultipleFiles&gt;disabled&lt;/dsd:ScanToMultipleFiles&gt;
+		&lt;dsd:MaxImagesPerFile&gt;1&lt;/dsd:MaxImagesPerFile&gt;
+		&lt;dsd:BlackMonoImages&gt;true&lt;/dsd:BlackMonoImages&gt;
+	&lt;/dsd:AttachmentSettings&gt;</value>
+    <comment>{0} - FileType
+{1} - ImageResolution</comment>
+  </data>
+  <data name="copyPredefinedJob" xml:space="preserve">
+    <value>&lt;dd:DeviceJobName&gt;{0}&lt;/dd:DeviceJobName&gt;
+	{1}
+	{2}
+	&lt;dsd:ImagePreview&gt;{3}&lt;/dsd:ImagePreview&gt;
+      &lt;dd:MultiScan&gt;disabled&lt;/dd:MultiScan&gt;
+      &lt;dsd:OneTouchSidesPrompt&gt;false&lt;/dsd:OneTouchSidesPrompt&gt;
+      &lt;dsd:OneTouchLoadDocumentOptionPrompt&gt;false&lt;/dsd:OneTouchLoadDocumentOptionPrompt&gt;
+      &lt;dd:JobHoldMode&gt;PrivatePrint&lt;/dd:JobHoldMode&gt;
+      &lt;copy:CaptureMode&gt;standardDocument&lt;/copy:CaptureMode&gt;
+	  {4}</value>
+    <comment>{0} - devicejobname
+{1} - copyScanSettings
+{2} - copySettings
+{3} - data.ScanSetData.ImagePreview.Key
+{4} - displaysettings</comment>
+  </data>
+  <data name="copyScanSettings" xml:space="preserve">
+    <value>&lt;dsd:ScanSettings&gt;
+        &lt;dd:BackgroundRemoval&gt;2&lt;/dd:BackgroundRemoval&gt;
+        &lt;dd:Contrast&gt;4&lt;/dd:Contrast&gt;
+        &lt;dd:Exposure&gt;4&lt;/dd:Exposure&gt;
+        &lt;dd:OriginalContentOrientation&gt;{0}&lt;/dd:OriginalContentOrientation&gt;
+        &lt;dd:OriginalPageBinding&gt;longEdge&lt;/dd:OriginalPageBinding&gt;
+        &lt;dd:ScanMode&gt;Mixed&lt;/dd:ScanMode&gt;
+        &lt;dd:ScanMediaSize&gt;{1}&lt;/dd:ScanMediaSize&gt;
+        &lt;dd:ScanPlexMode&gt;{2}&lt;/dd:ScanPlexMode&gt;
+        &lt;dd:Sharpness&gt;2&lt;/dd:Sharpness&gt;
+        &lt;dd:TextGraphicsPriority&gt;2&lt;/dd:TextGraphicsPriority&gt;
+        &lt;dd:MisfeedDetection&gt;enabled&lt;/dd:MisfeedDetection&gt;
+        &lt;dsd:ScannerDropoutColor&gt;off&lt;/dsd:ScannerDropoutColor&gt;
+        &lt;dsd:EdgeErase&gt;
+          &lt;dd:Unit&gt;inches&lt;/dd:Unit&gt;
+          &lt;dd:FrontLeft&gt;0&lt;/dd:FrontLeft&gt;
+          &lt;dd:FrontTop&gt;0&lt;/dd:FrontTop&gt;
+          &lt;dd:FrontRight&gt;0&lt;/dd:FrontRight&gt;
+          &lt;dd:FrontBottom&gt;0&lt;/dd:FrontBottom&gt;
+          &lt;dd:BackLeft&gt;0&lt;/dd:BackLeft&gt;
+          &lt;dd:BackTop&gt;0&lt;/dd:BackTop&gt;
+          &lt;dd:BackRight&gt;0&lt;/dd:BackRight&gt;
+          &lt;dd:BackBottom&gt;0&lt;/dd:BackBottom&gt;
+        &lt;/dsd:EdgeErase&gt;
+        &lt;dsd:JobScanLimit&gt;0&lt;/dsd:JobScanLimit&gt;
+        &lt;dsd:MarkSettings&gt;
+          &lt;dsd:Watermark&gt;
+            &lt;dsd:WatermarkType&gt;None&lt;/dsd:WatermarkType&gt;
+            &lt;dsd:MessageType&gt;Custom&lt;/dsd:MessageType&gt;
+            &lt;dsd:Font&gt;letterGothic&lt;/dsd:Font&gt;
+            &lt;dsd:Text&gt;&lt;/dsd:Text&gt;
+            &lt;dsd:TextSize&gt;40&lt;/dsd:TextSize&gt;
+            &lt;dsd:TextColor&gt;Black&lt;/dsd:TextColor&gt;
+            &lt;dsd:OnlyFirstPage&gt;false&lt;/dsd:OnlyFirstPage&gt;
+            &lt;dsd:Transparency&gt;0&lt;/dsd:Transparency&gt;
+            &lt;dsd:BackgroundColor&gt;Gray&lt;/dsd:BackgroundColor&gt;
+            &lt;dsd:RotationAngle&gt;false&lt;/dsd:RotationAngle&gt;
+            &lt;dsd:BackgroundPattern&gt;Scroll&lt;/dsd:BackgroundPattern&gt;
+            &lt;dsd:Darkness&gt;0&lt;/dsd:Darkness&gt;
+          &lt;/dsd:Watermark&gt;
+          &lt;dsd:Stamp&gt;
+            &lt;dsd:StampType&gt;None&lt;/dsd:StampType&gt;
+            &lt;dsd:Text&gt;&lt;/dsd:Text&gt;
+            &lt;dsd:Format&gt;
+              &lt;dsd:Font&gt;letterGothic&lt;/dsd:Font&gt;
+              &lt;dsd:TextSize&gt;12&lt;/dsd:TextSize&gt;
+              &lt;dsd:TextColor&gt;Black&lt;/dsd:TextColor&gt;
+              &lt;dsd:WhiteBackground&gt;false&lt;/dsd:WhiteBackground&gt;
+              &lt;dsd:StartingPage&gt;1&lt;/dsd:StartingPage&gt;
+            &lt;/dsd:Format&gt;
+            &lt;dsd:Location&gt;upperLeft&lt;/dsd:Location&gt;
+            &lt;dsd:PolicyType&gt;None&lt;/dsd:PolicyType&gt;
+          &lt;/dsd:Stamp&gt;
+          &lt;dsd:Stamp&gt;
+            &lt;dsd:StampType&gt;None&lt;/dsd:StampType&gt;
+            &lt;dsd:Text&gt;&lt;/dsd:Text&gt;
+            &lt;dsd:Format&gt;
+              &lt;dsd:Font&gt;letterGothic&lt;/dsd:Font&gt;
+              &lt;dsd:TextSize&gt;12&lt;/dsd:TextSize&gt;
+              &lt;dsd:TextColor&gt;Black&lt;/dsd:TextColor&gt;
+              &lt;dsd:WhiteBackground&gt;false&lt;/dsd:WhiteBackground&gt;
+              &lt;dsd:StartingPage&gt;1&lt;/dsd:StartingPage&gt;
+            &lt;/dsd:Format&gt;
+            &lt;dsd:Location&gt;upperCenter&lt;/dsd:Location&gt;
+            &lt;dsd:PolicyType&gt;None&lt;/dsd:PolicyType&gt;
+          &lt;/dsd:Stamp&gt;
+          &lt;dsd:Stamp&gt;
+            &lt;dsd:StampType&gt;None&lt;/dsd:StampType&gt;
+            &lt;dsd:Text&gt;&lt;/dsd:Text&gt;
+            &lt;dsd:Format&gt;
+              &lt;dsd:Font&gt;letterGothic&lt;/dsd:Font&gt;
+              &lt;dsd:TextSize&gt;12&lt;/dsd:TextSize&gt;
+              &lt;dsd:TextColor&gt;Black&lt;/dsd:TextColor&gt;
+              &lt;dsd:WhiteBackground&gt;false&lt;/dsd:WhiteBackground&gt;
+              &lt;dsd:StartingPage&gt;1&lt;/dsd:StartingPage&gt;
+            &lt;/dsd:Format&gt;
+            &lt;dsd:Location&gt;upperRight&lt;/dsd:Location&gt;
+            &lt;dsd:PolicyType&gt;None&lt;/dsd:PolicyType&gt;
+          &lt;/dsd:Stamp&gt;
+          &lt;dsd:Stamp&gt;
+            &lt;dsd:StampType&gt;None&lt;/dsd:StampType&gt;
+            &lt;dsd:Text&gt;&lt;/dsd:Text&gt;
+            &lt;dsd:Format&gt;
+              &lt;dsd:Font&gt;letterGothic&lt;/dsd:Font&gt;
+              &lt;dsd:TextSize&gt;12&lt;/dsd:TextSize&gt;
+              &lt;dsd:TextColor&gt;Black&lt;/dsd:TextColor&gt;
+              &lt;dsd:WhiteBackground&gt;false&lt;/dsd:WhiteBackground&gt;
+              &lt;dsd:StartingPage&gt;1&lt;/dsd:StartingPage&gt;
+            &lt;/dsd:Format&gt;
+            &lt;dsd:Location&gt;lowerLeft&lt;/dsd:Location&gt;
+            &lt;dsd:PolicyType&gt;None&lt;/dsd:PolicyType&gt;
+          &lt;/dsd:Stamp&gt;
+          &lt;dsd:Stamp&gt;
+            &lt;dsd:StampType&gt;None&lt;/dsd:StampType&gt;
+            &lt;dsd:Text&gt;&lt;/dsd:Text&gt;
+            &lt;dsd:Format&gt;
+              &lt;dsd:Font&gt;letterGothic&lt;/dsd:Font&gt;
+              &lt;dsd:TextSize&gt;12&lt;/dsd:TextSize&gt;
+              &lt;dsd:TextColor&gt;Black&lt;/dsd:TextColor&gt;
+              &lt;dsd:WhiteBackground&gt;false&lt;/dsd:WhiteBackground&gt;
+              &lt;dsd:StartingPage&gt;1&lt;/dsd:StartingPage&gt;
+            &lt;/dsd:Format&gt;
+            &lt;dsd:Location&gt;lowerCenter&lt;/dsd:Location&gt;
+            &lt;dsd:PolicyType&gt;None&lt;/dsd:PolicyType&gt;
+          &lt;/dsd:Stamp&gt;
+          &lt;dsd:Stamp&gt;
+            &lt;dsd:StampType&gt;None&lt;/dsd:StampType&gt;
+            &lt;dsd:Text&gt;&lt;/dsd:Text&gt;
+            &lt;dsd:Format&gt;
+              &lt;dsd:Font&gt;letterGothic&lt;/dsd:Font&gt;
+              &lt;dsd:TextSize&gt;12&lt;/dsd:TextSize&gt;
+              &lt;dsd:TextColor&gt;Black&lt;/dsd:TextColor&gt;
+              &lt;dsd:WhiteBackground&gt;false&lt;/dsd:WhiteBackground&gt;
+              &lt;dsd:StartingPage&gt;1&lt;/dsd:StartingPage&gt;
+            &lt;/dsd:Format&gt;
+            &lt;dsd:Location&gt;lowerRight&lt;/dsd:Location&gt;
+            &lt;dsd:PolicyType&gt;None&lt;/dsd:PolicyType&gt;
+          &lt;/dsd:Stamp&gt;
+        &lt;/dsd:MarkSettings&gt;
+      &lt;/dsd:ScanSettings&gt;</value>
+    <comment>{0} - Content Orientation
+{1} - Original Size
+{2} - Original Side
+</comment>
+  </data>
+  <data name="copySettings" xml:space="preserve">
+    <value>&lt;copy:CopySettings&gt;
+        &lt;dd:DefaultPrintCopies&gt;{0}&lt;/dd:DefaultPrintCopies&gt;
+        &lt;dd:ChromaticMode&gt;autoDetect&lt;/dd:ChromaticMode&gt;
+        &lt;finishing:Staple&gt;none&lt;/finishing:Staple&gt;
+        &lt;dd:SheetCollate&gt;Collated&lt;/dd:SheetCollate&gt;
+        &lt;dd:CopyOriginalOutputBindings&gt;sideToSide&lt;/dd:CopyOriginalOutputBindings&gt;
+        &lt;dd:MediaInputID&gt;PrinterSelect&lt;/dd:MediaInputID&gt;
+        &lt;dd:MediaOutputID&gt;Face-down&lt;/dd:MediaOutputID&gt;
+        &lt;dd:EdgeToEdge&gt;false&lt;/dd:EdgeToEdge&gt;
+        &lt;copy:ReduceEnlarge&gt;
+          &lt;dd:AutoScale&gt;true&lt;/dd:AutoScale&gt;
+          &lt;dd:Scaling&gt;100&lt;/dd:Scaling&gt;
+          &lt;copy:IncludeMarginsIfScaled&gt;false&lt;/copy:IncludeMarginsIfScaled&gt;
+        &lt;/copy:ReduceEnlarge&gt;
+        &lt;dd:CopySides&gt;simplexToSimplex&lt;/dd:CopySides&gt;
+        &lt;dd:CopyOutputNumberUpCount&gt;oneUp&lt;/dd:CopyOutputNumberUpCount&gt;
+        &lt;dd:NumberUpPresentationDirection&gt;TobottomToright&lt;/dd:NumberUpPresentationDirection&gt;
+        &lt;dd:ImageBorder&gt;NoBorders&lt;/dd:ImageBorder&gt;
+        &lt;copy:CopyBookletSetting&gt;off&lt;/copy:CopyBookletSetting&gt;
+        &lt;copy:PunchingOption&gt;none&lt;/copy:PunchingOption&gt;
+        &lt;copy:BookletMakerOption&gt;None&lt;/copy:BookletMakerOption&gt;
+        &lt;copy:MediaPathSelection&gt;Unknown&lt;/copy:MediaPathSelection&gt;
+        &lt;copy:PaperSelection&gt;
+          &lt;copy:MediaSizeSettings&gt;
+            &lt;dd:MediaSizeID&gt;any&lt;/dd:MediaSizeID&gt;
+            &lt;copy:CustomMediaSizeSettings&gt;
+              &lt;dd:Length&gt;279.4&lt;/dd:Length&gt;
+              &lt;dd:Width&gt;215.9&lt;/dd:Width&gt;
+              &lt;dd:Unit&gt;millimeters&lt;/dd:Unit&gt;
+            &lt;/copy:CustomMediaSizeSettings&gt;
+          &lt;/copy:MediaSizeSettings&gt;
+          &lt;dd:MediaTypeID&gt;plain&lt;/dd:MediaTypeID&gt;
+        &lt;/copy:PaperSelection&gt;
+      &lt;/copy:CopySettings&gt;</value>
+    <comment>{0} - Copy count</comment>
+  </data>
+  <data name="displaySettings" xml:space="preserve">
+    <value>&lt;dsd:DisplaySettings&gt;
+		&lt;dd:Name&gt;{0}&lt;/dd:Name&gt;
+		&lt;dd:Description/&gt;
+		&lt;dsd:AvailableOnHomeScreen&gt;false&lt;/dsd:AvailableOnHomeScreen&gt;
+		&lt;dsd:OneTouchStart&gt;false&lt;/dsd:OneTouchStart&gt;
+		&lt;dsd:OneTouchSidesPrompt&gt;false&lt;/dsd:OneTouchSidesPrompt&gt;
+		&lt;dsd:OneTouchLoadDocumentOptionPrompt&gt;false&lt;/dsd:OneTouchLoadDocumentOptionPrompt&gt;
+		&lt;dsd:Priority&gt;{1}&lt;/dsd:Priority&gt;
+	&lt;/dsd:DisplaySettings&gt;</value>
+    <comment>{0} - Name</comment>
+  </data>
+  <data name="emailPredefinedJob" xml:space="preserve">
+    <value>&lt;dd:DeviceJobName&gt;{0}&lt;/dd:DeviceJobName&gt;
+	{1}
+	{2}
+	&lt;dsd:ImagePreview&gt;{3}&lt;/dsd:ImagePreview&gt;
+	{4}
+	{5}
+	&lt;dd:MaxRetryAttempts&gt;5&lt;/dd:MaxRetryAttempts&gt;
+	&lt;dd:RetryInterval&gt;180&lt;/dd:RetryInterval&gt;
+	&lt;dd:MultiScan&gt;disabled&lt;/dd:MultiScan&gt;
+	&lt;dsd:OneTouchSidesPrompt&gt;false&lt;/dsd:OneTouchSidesPrompt&gt;
+	&lt;dsd:OneTouchLoadDocumentOptionPrompt&gt;false&lt;/dsd:OneTouchLoadDocumentOptionPrompt&gt;
+	&lt;email:CaptureMode&gt;standardDocument&lt;/email:CaptureMode&gt;
+	&lt;email:PromptNotificationSettingsPriorToJobStart&gt;false&lt;/email:PromptNotificationSettingsPriorToJobStart&gt;
+	{6}</value>
+    <comment>{0} - devicejobname
+{1} - notificationsettings
+{2} - scansettings
+{3} - data.ScanSetData.ImagePreview.Key
+{4} - attachmentsettings
+{5} - emailSettings
+{6} - displaysettings</comment>
+  </data>
+  <data name="emailSettings" xml:space="preserve">
+    <value>&lt;email:EmailSettings&gt;
+        &lt;dd:BodyTextEditable&gt;true&lt;/dd:BodyTextEditable&gt;
+		&lt;dd:FromAddressEditable&gt;true&lt;/dd:FromAddressEditable&gt;
+		&lt;email:ToRecipientsEditable&gt;true&lt;/email:ToRecipientsEditable&gt;
+		&lt;email:CcRecipientsEditable&gt;true&lt;/email:CcRecipientsEditable&gt;
+		&lt;email:BccRecipientsEditable&gt;true&lt;/email:BccRecipientsEditable&gt;
+		&lt;email:UseSignedInUserAsSender&gt;{0}&lt;/email:UseSignedInUserAsSender&gt;
+		&lt;email:AddSenderAsToRecipient&gt;{0}&lt;/email:AddSenderAsToRecipient&gt;
+		&lt;email:AddSenderAsCcRecipient&gt;disabled&lt;/email:AddSenderAsCcRecipient&gt;
+		&lt;email:AddSenderAsBccRecipient&gt;disabled&lt;/email:AddSenderAsBccRecipient&gt;
+		&lt;dd:EmailSigning&gt;disabled&lt;/dd:EmailSigning&gt;
+		&lt;dd:FromAddress&gt;
+			&lt;dd:EmailAddress&gt;noreply@hp.com&lt;/dd:EmailAddress&gt;
+			&lt;dd:DisplayName/&gt;
+		&lt;/dd:FromAddress&gt;
+		&lt;dd:ToAddresses /&gt;
+		&lt;dd:CcAddresses /&gt;
+		&lt;dd:BccAddresses /&gt;
+		&lt;dd:EmailSubject/&gt;
+		&lt;dd:EmailBodyText/&gt;
+		&lt;email:EmailSubjectEditable&gt;true&lt;/email:EmailSubjectEditable&gt;
+		&lt;dd:EmailSigningEditable&gt;false&lt;/dd:EmailSigningEditable&gt;
+		&lt;dd:EmailEncryptionEditable&gt;false&lt;/dd:EmailEncryptionEditable&gt;
+		&lt;dd:EmailEncryption&gt;disabled&lt;/dd:EmailEncryption&gt;
+		&lt;dd:LdapUserCertificateAttribute&gt;userCertificate&lt;/dd:LdapUserCertificateAttribute&gt;
+		&lt;dd:UserMustSelectFromAddressBook&gt;disabled&lt;/dd:UserMustSelectFromAddressBook&gt;
+		&lt;email:EmailEncryptionAlogrithm&gt;AES_256&lt;/email:EmailEncryptionAlogrithm&gt;
+		&lt;email:EmailSigningHashAlgorithm&gt;SHA256&lt;/email:EmailSigningHashAlgorithm&gt;
+		&lt;email:VerifyRecipientAgainstCertificate&gt;true&lt;/email:VerifyRecipientAgainstCertificate&gt;
+        &lt;/email:EmailSettings&gt;</value>
+    <comment>{0} - enabled or disabled</comment>
+  </data>
+  <data name="notificationSettings" xml:space="preserve">
+    <value>&lt;dsd:NotificationSettings&gt;
+        &lt;dd:ToAddresses /&gt;
+        &lt;dd:NotificationConditions&gt;never&lt;/dd:NotificationConditions&gt;
+        &lt;dd:NotificationMode&gt;email&lt;/dd:NotificationMode&gt;
+        &lt;dsd:IncludeThumbnailOfFirstPage&gt;false&lt;/dsd:IncludeThumbnailOfFirstPage&gt;
+        &lt;dsd:ToAddressesEditable&gt;true&lt;/dsd:ToAddressesEditable&gt;
+      &lt;/dsd:NotificationSettings&gt;</value>
+  </data>
+  <data name="scanSettings" xml:space="preserve">
+    <value>&lt;dsd:ScanSettings&gt;
+        &lt;dd:BackgroundRemoval&gt;2&lt;/dd:BackgroundRemoval&gt;
+        &lt;dd:Contrast&gt;4&lt;/dd:Contrast&gt;
+        &lt;dd:Exposure&gt;4&lt;/dd:Exposure&gt;
+        &lt;dd:OriginalContentOrientation&gt;{0}&lt;/dd:OriginalContentOrientation&gt;
+        &lt;dd:OriginalPageBinding&gt;longEdge&lt;/dd:OriginalPageBinding&gt;
+        &lt;dd:ScanMode&gt;Mixed&lt;/dd:ScanMode&gt;
+        &lt;dd:ScanMediaSize&gt;{1}&lt;/dd:ScanMediaSize&gt;
+        &lt;dd:ScanPlexMode&gt;{2}&lt;/dd:ScanPlexMode&gt;
+        &lt;dd:Sharpness&gt;2&lt;/dd:Sharpness&gt;
+        &lt;dd:TextGraphicsPriority&gt;2&lt;/dd:TextGraphicsPriority&gt;
+        &lt;dsd:ScannerDropoutColor&gt;off&lt;/dsd:ScannerDropoutColor&gt;
+        &lt;dsd:AutoTone&gt;off&lt;/dsd:AutoTone&gt;
+        &lt;dsd:AutoCrop&gt;off&lt;/dsd:AutoCrop&gt;
+        &lt;dsd:AutoOrientation&gt;off&lt;/dsd:AutoOrientation&gt;
+        &lt;dsd:AutoPageCrop&gt;off&lt;/dsd:AutoPageCrop&gt;
+        &lt;dsd:AutoStraighten&gt;off&lt;/dsd:AutoStraighten&gt;
+        &lt;dsd:EdgeErase&gt;
+          &lt;dd:Unit&gt;inches&lt;/dd:Unit&gt;
+          &lt;dd:FrontLeft&gt;0&lt;/dd:FrontLeft&gt;
+          &lt;dd:FrontTop&gt;0&lt;/dd:FrontTop&gt;
+          &lt;dd:FrontRight&gt;0&lt;/dd:FrontRight&gt;
+          &lt;dd:FrontBottom&gt;0&lt;/dd:FrontBottom&gt;
+          &lt;dd:BackLeft&gt;0&lt;/dd:BackLeft&gt;
+          &lt;dd:BackTop&gt;0&lt;/dd:BackTop&gt;
+          &lt;dd:BackRight&gt;0&lt;/dd:BackRight&gt;
+          &lt;dd:BackBottom&gt;0&lt;/dd:BackBottom&gt;
+        &lt;/dsd:EdgeErase&gt;
+        &lt;dsd:JobScanLimit&gt;0&lt;/dsd:JobScanLimit&gt;
+      &lt;/dsd:ScanSettings&gt;</value>
+    <comment>{0} - Content Orientation
+{1} - Original Size
+{2} - Original Side
+</comment>
+  </data>
+  <data name="sendFaxDestination" xml:space="preserve">
+    <value>&lt;fax:FaxDestination&gt;
+          &lt;dd:DisplayName&gt;&lt;/dd:DisplayName&gt;
+          &lt;dd:FaxNumber&gt;{0}&lt;/dd:FaxNumber&gt;
+          &lt;dd:BillingCode&gt;&lt;/dd:BillingCode&gt;
+          &lt;fax:DestinationType&gt;FaxManual&lt;/fax:DestinationType&gt;
+          &lt;fax:SpeedDialcode&gt;&lt;/fax:SpeedDialcode&gt;
+          &lt;fax:SpeedDialName&gt;&lt;/fax:SpeedDialName&gt;
+        &lt;/fax:FaxDestination&gt;</value>
+  </data>
+  <data name="sendFaxPredefinedJob" xml:space="preserve">
+    <value>{0}
+     {1}
+    &lt;dsd:ImagePreview&gt;{2}&lt;/dsd:ImagePreview&gt;
+    &lt;fax:SendFaxSettings&gt;
+    &lt;dd:FaxSendResolution&gt;standard&lt;/dd:FaxSendResolution&gt;
+      &lt;fax:FaxDestinations&gt;
+       {3}
+      &lt;/fax:FaxDestinations&gt;
+    &lt;/fax:SendFaxSettings&gt;
+    &lt;dd:MultiScan&gt;disabled&lt;/dd:MultiScan&gt;
+    &lt;dsd:OneTouchSidesPrompt&gt;false&lt;/dsd:OneTouchSidesPrompt&gt;
+    &lt;dsd:OneTouchLoadDocumentOptionPrompt&gt;false&lt;/dsd:OneTouchLoadDocumentOptionPrompt&gt;
+    {4}
+    &lt;fax:CaptureMode&gt;standardDocument&lt;/fax:CaptureMode&gt;
+    &lt;fax:PromptNotificationSettingsPriorToJobStart&gt;false&lt;/fax:PromptNotificationSettingsPriorToJobStart&gt;
+    &lt;fax:ConsolidatedPrintedReport&gt;disabled&lt;/fax:ConsolidatedPrintedReport&gt;
+    {5}</value>
+    <comment>{0} - notificationsettings
+	{1} - scansettings	
+	{2} - data.ScanSetData.ImagePreview.Key
+	{3} - send fax destination
+	{4} - attachmentsettings	
+	{5} -displaysettings</comment>
+  </data>
+  <data name="sendFolderDestination" xml:space="preserve">
+    <value>&lt;folder:SendFolderDestination&gt;
+        &lt;dd:UNCPath&gt;{0}&lt;/dd:UNCPath&gt;
+        &lt;security:AuthenticationSettings xmlns:security="http://www.hp.com/schemas/imaging/con/security/2009/02/11"&gt;
+          &lt;security:CredentialType&gt;hp_windowsNegotiated_v1&lt;/security:CredentialType&gt;
+          &lt;security:WindowsAuthenticationSettings /&gt;
+        &lt;/security:AuthenticationSettings&gt;
+        &lt;dd:UNCPathSuffix /&gt;
+        &lt;folder:RestrictAccessToUser&gt;false&lt;/folder:RestrictAccessToUser&gt;
+        &lt;folder:CustomSubfolderLDAPAttribute /&gt;
+      &lt;/folder:SendFolderDestination&gt;</value>
+    <comment>{0} - UNC Patch</comment>
+  </data>
+  <data name="sendFolderPredefinedJob" xml:space="preserve">
+    <value>&lt;dd:DeviceJobName&gt;{0}&lt;/dd:DeviceJobName&gt;
+    {1}
+    {2}
+    &lt;dsd:ImagePreview&gt;{3}&lt;/dsd:ImagePreview&gt;
+    {4}
+    &lt;dd:MaxRetryAttempts&gt;5&lt;/dd:MaxRetryAttempts&gt;
+    &lt;dd:RetryInterval&gt;180&lt;/dd:RetryInterval&gt;
+    &lt;dd:MultiScan&gt;disabled&lt;/dd:MultiScan&gt;
+    &lt;dsd:OneTouchSidesPrompt&gt;false&lt;/dsd:OneTouchSidesPrompt&gt;
+    &lt;dsd:OneTouchLoadDocumentOptionPrompt&gt;false&lt;/dsd:OneTouchLoadDocumentOptionPrompt&gt;
+    &lt;dsd:MetadataSettings&gt;
+      &lt;dd:MetadataFormatType&gt;xml&lt;/dd:MetadataFormatType&gt;
+      &lt;dd:GenerateMetadata&gt;false&lt;/dd:GenerateMetadata&gt;
+    &lt;/dsd:MetadataSettings&gt;
+    &lt;dd:FolderVerification&gt;true&lt;/dd:FolderVerification&gt;
+    &lt;dd:SendToFolderWithoutReadAccess&gt;false&lt;/dd:SendToFolderWithoutReadAccess&gt;
+    &lt;folder:CaptureMode&gt;standardDocument&lt;/folder:CaptureMode&gt;
+    &lt;folder:PromptNotificationSettingsPriorToJobStart&gt;false&lt;/folder:PromptNotificationSettingsPriorToJobStart&gt;
+    &lt;folder:SendFolderDestinations&gt;
+      {7}
+    &lt;/folder:SendFolderDestinations&gt;
+   {6}
+    &lt;folder:AddUsersHomeFolderToDestinationList&gt;disabled&lt;/folder:AddUsersHomeFolderToDestinationList&gt;
+    &lt;dsd:HomeFolderAttributeId&gt;homeDirectory&lt;/dsd:HomeFolderAttributeId&gt;
+    &lt;folder:CreateFolderFromUserName&gt;disabled&lt;/folder:CreateFolderFromUserName&gt;
+    &lt;folder:RestrictUserNameFolderToUser&gt;false&lt;/folder:RestrictUserNameFolderToUser&gt;
+    &lt;folder:SendFolderDestinationList&gt;
+      {5}
+    &lt;/folder:SendFolderDestinationList&gt;</value>
+    <comment>{0} - devicejobname
+	  {1} - notificationsettings
+	  {2} - scansettings
+	  {3} - data.ScanSetData.ImagePreview.Key
+	  {4} - attachmentsettings
+	  {5} - sendFolderDestination
+	  {6} -displaysettings {7} - Initial Send Destination</comment>
+  </data>
+  <data name="sendFTPDestination" xml:space="preserve">
+    <value>&lt;folder:SendFTPDestination&gt;
+          &lt;dd3:NetworkID&gt;{0}&lt;/dd3:NetworkID&gt;
+          &lt;dd:Port&gt;{1}&lt;/dd:Port&gt;
+          &lt;dd:DirectoryPath&gt;{2}&lt;/dd:DirectoryPath&gt;
+          &lt;security:SimpleAuthenticationSettings&gt;
+            &lt;dd:UserName&gt;{3}&lt;/dd:UserName&gt;
+            &lt;dd:PasswordStatus&gt;notSet&lt;/dd:PasswordStatus&gt;
+          &lt;/security:SimpleAuthenticationSettings&gt;
+          &lt;dd:FTPPathSuffix&gt;
+          &lt;/dd:FTPPathSuffix&gt;
+          &lt;dd:FTPTransferMode&gt;passive&lt;/dd:FTPTransferMode&gt;
+          &lt;folder:CustomSubfolderLDAPAttribute&gt;
+          &lt;/folder:CustomSubfolderLDAPAttribute&gt;
+          &lt;dd:FTPProtocol&gt;{4}&lt;/dd:FTPProtocol&gt;
+        &lt;/folder:SendFTPDestination&gt;</value>
+    <comment>{0}- FTP Server
+{1}- Port
+{2} - Directory Path
+{3} - User name
+{4} - FTP protocol</comment>
+  </data>
+  <data name="sendSharePointDestination" xml:space="preserve">
+    <value>&lt;folder:SendSharePointDestination&gt;
+          &lt;folder:SharePointPath&gt;{0}&lt;/folder:SharePointPath&gt;
+          &lt;security:AuthenticationSettings&gt;
+            &lt;security:CredentialType&gt;hp_windowsNegotiated_v1&lt;/security:CredentialType&gt;
+            &lt;security:WindowsAuthenticationSettings&gt;
+              &lt;dd:UserName&gt;&lt;/dd:UserName&gt;
+              &lt;dd3:DomainName&gt;&lt;/dd3:DomainName&gt;
+            &lt;/security:WindowsAuthenticationSettings&gt;
+          &lt;/security:AuthenticationSettings&gt;
+          &lt;folder:AllowOverwriteFiles&gt;false&lt;/folder:AllowOverwriteFiles&gt;
+        &lt;/folder:SendSharePointDestination&gt;</value>
+  </data>
+  <data name="sendSharePointPredefinedJob" xml:space="preserve">
+    <value>&lt;dd:DeviceJobName&gt;{0}&lt;/dd:DeviceJobName&gt;
+      {1}
+      {2}
+      &lt;dsd:ImagePreview&gt;{3}&lt;/dsd:ImagePreview&gt;
+     {4}
+      &lt;dd:MaxRetryAttempts&gt;5&lt;/dd:MaxRetryAttempts&gt;
+      &lt;dd:RetryInterval&gt;180&lt;/dd:RetryInterval&gt;
+      &lt;dd:MultiScan&gt;disabled&lt;/dd:MultiScan&gt;
+      &lt;dsd:OneTouchSidesPrompt&gt;false&lt;/dsd:OneTouchSidesPrompt&gt;
+      &lt;dsd:OneTouchLoadDocumentOptionPrompt&gt;false&lt;/dsd:OneTouchLoadDocumentOptionPrompt&gt;
+      &lt;dsd:MetadataSettings&gt;
+        &lt;dd:MetadataFormatType&gt;xml&lt;/dd:MetadataFormatType&gt;
+        &lt;dd:GenerateMetadata&gt;false&lt;/dd:GenerateMetadata&gt;
+      &lt;/dsd:MetadataSettings&gt;
+      &lt;dd:FolderVerification&gt;true&lt;/dd:FolderVerification&gt;
+      &lt;folder:CaptureMode&gt;standardDocument&lt;/folder:CaptureMode&gt;
+      &lt;folder:PromptNotificationSettingsPriorToJobStart&gt;false&lt;/folder:PromptNotificationSettingsPriorToJobStart&gt;
+      {5}
+      &lt;folder:SendFolderDestinationList&gt;
+        {6}
+      &lt;/folder:SendFolderDestinationList&gt;</value>
+    <comment>{0} - devicejobname
+	{1} - notificationsettings
+	{2} - scansettings
+	{3} - data.ScanSetData.ImagePreview.Key
+	{4} - attachmentsettings
+	{5} -displaysettings
+	{6} - sendFolderDestination</comment>
+  </data>
+  <data name="sendUsbPredefinedJob" xml:space="preserve">
+    <value>&lt;dd:DeviceJobName&gt;{0}&lt;/dd:DeviceJobName&gt;
+      {1}
+      {2}
+      {3}
+      &lt;dsd:ImagePreview&gt;{4}&lt;/dsd:ImagePreview&gt;
+      &lt;dd:MultiScan&gt;disabled&lt;/dd:MultiScan&gt;
+      &lt;dsd:OneTouchSidesPrompt&gt;false&lt;/dsd:OneTouchSidesPrompt&gt;
+      &lt;dsd:OneTouchLoadDocumentOptionPrompt&gt;false&lt;/dsd:OneTouchLoadDocumentOptionPrompt&gt;
+      &lt;usb:CaptureMode&gt;standardDocument&lt;/usb:CaptureMode&gt;
+      &lt;usb:PromptNotificationSettingsPriorToJobStart&gt;false&lt;/usb:PromptNotificationSettingsPriorToJobStart&gt;
+      {5}
+      &lt;usb:Destination&gt;
+        &lt;dd:Path&gt;&lt;/dd:Path&gt;
+      &lt;/usb:Destination&gt;</value>
+    <comment>USB Predefined job
+	  {0} - devicejobname
+	{1} - notificationsettings
+	{2} - scansettings	
+	{3} - attachmentsettings
+	{4} - data.ScanSetData.ImagePreview.Key
+	{5} -displaysettings</comment>
+  </data>
+</root>

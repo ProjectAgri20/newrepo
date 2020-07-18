@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ScalableTestFramework" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="WhiteFill,SegoeUI9ptBlack,ControlBorderDark">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.PropertyGridElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ApplicationMenuTopRightContentFIll,TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridHelpElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MenuBackFill,AlertWindowGripImage,ProeprtyGridSizeGripBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="0, 8" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridSizeGripElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="White" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ToolbarTextBoxElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ToolbarTextBoxElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TextBoxFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TextEditorBorderContainsFocus">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ToolbarTextBoxElement.ContainsMouse">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TextBoxBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TextBoxEditorContainsMouseBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ToolbarTextBoxElement.ContainsFocus">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TextBoxBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarTextBoxBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ToolbarTextBoxElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TextBoxBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AlphabeticalToggleButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AlphabeticalToggleButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AlphabeticalToggleButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ToggleButtonToggleStateOnFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AlphabeticalToggleButton.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AlphabeticalToggleButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AlphabeticalToggleButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AlphabeticalToggleButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AlphabeticalToggleButton.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShape2,PropertyGridSortButtonImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AlphabeticalToggleButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShape2,PropertyGridSortButtonImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="AlphabeticalToggleButton.ToggleState=On" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShape2,PropertyGridGroupButtonImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CategorizedAlphabeticalToggleButton.ToggleState=On" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShape2,PropertyGridGroupButtonImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CategorizedAlphabeticalToggleButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CategorizedAlphabeticalToggleButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CategorizedAlphabeticalToggleButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CategorizedAlphabeticalToggleButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ToggleButtonToggleStateOnFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CategorizedAlphabeticalToggleButton.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CategorizedAlphabeticalToggleButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CategorizedAlphabeticalToggleButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CategorizedAlphabeticalToggleButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CategorizedAlphabeticalToggleButton.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CollapsedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ToolbarTextBoxButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CollapsedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ToolbarTextBoxButton.IsSearching">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ToolbarTextBoxButton.IsSearching">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ToolbarTextBoxButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PropertyGridSearchButtonNormalImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ToolbarTextBoxButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PropertyGridSearchButtonSearchingHoverImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ToolbarTextBoxButton.MouseOver.IsSearching" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PropertyGridSearchButtonSearchingNormalImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ToolbarTextBoxButton.IsSearching" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PropertyGridExpanderCollapsedImage">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.DrawSignBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.SignStyle" Value="Image" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridGroupExpanderItem.IsExpanded" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PropertyGridExpanderExpandedImage">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.SignStyle" Value="Image" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.DrawSignBorder" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridGroupExpanderItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PropertyGridExpanderCollapsedImage">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.SignStyle" Value="Image" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.DrawSignBorder" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ExpanderItem.IsExpanded" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PropertyGridExpanderExpandedImage">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.SignStyle" Value="Image" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.DrawSignBorder" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ExpanderItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridGroupExpanderElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridGroupExpanderElement.IsExpanded" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridGroupTextElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridGroupTextElement.IsExpanded" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalFill,TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridGroupElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverFill,TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridGroupElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridExpanderElement.IsChildItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,DefaultFont">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Shape" Value="(none)" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridItemElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PropertyGridItemTextElementBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridTextElement.IsChildItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="GridRowSelectedFill,GridRowSelectedBorder,DefaultFont,RoundRectShapeAll4">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridItemElement.IsSelected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="GridRowHoveredFill,GridRowHoveredBorder,RoundRectShapeAll4">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridItemElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyValueButtonElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PropertyGridItemSetNormalImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyValueButtonElement.IsModified" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PropertyGridItemSetHoverImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyValueButtonElement.MouseOver.IsModified" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PropertyGridItemSetPressedImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyValueButtonElement.MouseDown.IsModified" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Windows7FontBold,ControlBorderNormal,TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridItemElement.IsModified" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="GridRowSelectedFill,GridRowSelectedBorder,Windows7FontBold">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridItemElement.IsSelected.IsModified" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="GridRowHoveredBorder,GridRowHoveredFill,Windows7FontBold">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridItemElement.MouseOver.IsModified" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PropertyGridItemTextElementBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridTextElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ErrorIndicator">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.PropertyGridErrorIndicatorElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridValueElement.ContainsError" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridValueElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PropertyGridItemTextElementRTLBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridTextElement.IsRightToLeft" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PropertyGridItemTextElementRTLBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridTextElement.IsRightToLeft.IsChildItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Windows7FontBold,GridRowSelectedFill,GridRowSelectedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridItemElement.IsSelected.IsRightToLeft.IsModified" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Windows7FontBold,GridRowHoveredBorder,GridRowHoveredFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridItemElement.MouseOver.IsRightToLeft.IsModified" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PropertyGridExpanderExpandedRTLImage">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.DrawSignBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.SignStyle" Value="Image" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridGroupExpanderItem.IsRightToLeft" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PropertyGridExpanderCollapsedRTLImage">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.DrawSignBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.SignStyle" Value="Image" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PropertyGridGroupExpanderItem.IsExpanded.IsRightToLeft" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PropertyGridExpanderCollapsedRTLImage">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.SignStyle" Value="Image" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.DrawSignBorder" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ExpanderItem.IsRightToLeft" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PropertyGridExpanderExpandedRTLImage">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.SignStyle" Value="Image" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.DrawSignBorder" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ExpanderItem.IsExpanded.IsRightToLeft" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadPropertyGrid" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.PropertyGridElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadPropertyGridElement" />
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadPropertyGrid" ElementType="Telerik.WinControls.UI.RadToggleButtonElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

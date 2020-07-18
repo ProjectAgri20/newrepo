@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dictionary>
+  <Words>
+    <Recognized>
+      <Word>Dat</Word>
+      <Word>Perf</Word>
+    </Recognized>
+  </Words>
+  <Acronyms>
+    <CasingExceptions>
+      <Acronym>STF</Acronym>
+    </CasingExceptions>
+  </Acronyms>
+</Dictionary>

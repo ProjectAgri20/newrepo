@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ScalableTestFramework" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="Windows7Font8.25AndForeColor">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="235, 241, 246" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerAllDayCellFill,SchedulerAllDayCellBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="True" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerAllDayElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellBorder,SchedulerCellFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,TransparentBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CornerHeaderCell2" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerRulerFill,TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CornerHeaderCell3" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteFill,SchedulerMonthCellBorder,Margin(0;0;0;1)">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Margin(0;0;0;1),WhiteFill,SchedulerMonthViewTodayBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerRulerFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="139, 152, 167" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Microsoft Sans Serif, 12pt" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RulerPrimitive.HourLineColor" Value="139, 152, 167" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RulerPrimitive.HourLineShadowColor" Value="White" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RulerPrimitive.MinutesFont" Value="Microsoft Sans Serif, 7pt" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RulerPrimitive.HourLineStartPosition" Value="8" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RulerPrimitive.SectionLineColor" Value="139, 152, 167" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="SchedulerVisualElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="Ruler" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ControlBorderDark">
+            <Selectors>
+              <XmlClassSelector ElementClass="SchedulerVisualElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Windows7StandardGradient,SchedulerHeaderCellBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerHeaderCellElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellBorder,SchedulerCellSelectedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteFill,SchedulerCellBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellTodayBorder,SchedulerCellFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteFill,SchedulerCellTodayBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.IsToday.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellTodayBorder,SchedulerCellSelectedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.Selected.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellTodayBorder,SchedulerCellSelectedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.Selected.IsToday.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellBorder,SchedulerCellSelectedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.Selected.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerHeaderCellTodayFill,SchedulerHeaderCellBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerHeaderCellElement.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerAllDayCellFill,SchedulerAllDayCellTodayBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerAllDayElement.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerMonthCellSelectedFill,SchedulerMonthCellBorder,Margin(0;0;0;1)">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerMonthCellSelectedFill,Margin(0;0;0;1),SchedulerMonthViewTodayBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement.Selected.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.DayViewHeader.HeaderHeight" Value="25" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="DayViewHeader" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerAllDayCellFill,SchedulerAllDayCellBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerAllDayElement.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AllDayHeaderBorder">
+            <Selectors>
+              <XmlClassSelector ElementClass="DayViewAllDayHeader" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerMonthCellBorder,Margin(0;0;0;1),SchedulerMonthViewWorkTimeCellFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerMonthCellSelectedFill,SchedulerMonthCellBorder,Margin(0;0;0;1)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement.Selected.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Margin(0;0;0;1),SchedulerMonthViewWorkTimeCellFill,SchedulerMonthViewTodayBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement.IsToday.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerMonthCellSelectedFill,Margin(0;0;0;1),SchedulerMonthViewTodayBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement.Selected.IsToday.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerAllDayCellBorder,SchedulerAllDaySelectedCellFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerAllDayElement.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerAllDayCellTodayBorder,SchedulerAllDaySelectedCellFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerAllDayElement.Selected.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,TransparentBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthViewMainHeaderCellElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Windows7StandardGradient,SchedulerHeaderCellBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthViewHeaderCellElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerHeaderCellTodayFill,SchedulerHeaderCellBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthViewHeaderCellElement.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadScheduler" ElementType="Telerik.WinControls.RootRadElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NetworkIdentification_Phoenix_Default" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Contract">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="Parameters" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+			  <xs:element name="HostName" type="xs:string" minOccurs="1" maxOccurs="1" />
+			  <xs:element name="DomainName" type="xs:string" minOccurs="1" maxOccurs="1" />
+			  <xs:element name="DomainNameIPv6" type="xs:string" minOccurs="1" maxOccurs="1" />
+			  <xs:element name="DNSPrimaryV4" type="xs:string" minOccurs="1" maxOccurs="1" />
+			  <xs:element name="DNSSecV4" type="xs:string" minOccurs="1" maxOccurs="1" />
+			  <xs:element name="DNSPrimaryV6" type="xs:string" minOccurs="1" maxOccurs="1" />
+			  <xs:element name="DNSSecV6" type="xs:string" minOccurs="1" maxOccurs="1" />
+			  <xs:element name="WINS" type="xs:string" minOccurs="1" maxOccurs="1" />
+			  <xs:element name="BonjourServiceName" type="xs:string" minOccurs="1" maxOccurs="1" />
+			  <xs:element name="BonjourHighestService" type="xs:string" minOccurs="1" maxOccurs="1" />
+			  <xs:element name="previousHostName" type="xs:string" minOccurs="1" maxOccurs="1" />
+			  <xs:element name="previousDomainName" type="xs:string" minOccurs="1" maxOccurs="1" />
+			  <xs:element name="previousDomainNameIPv6" type="xs:string" minOccurs="1" maxOccurs="1" />
+			  <xs:element name="previousDNSPrimaryV4" type="xs:string" minOccurs="1" maxOccurs="1" />
+			  <xs:element name="previousDNSSecV4" type="xs:string" minOccurs="1" maxOccurs="1" />
+			  <xs:element name="previousDNSPrimaryV6" type="xs:string" minOccurs="1" maxOccurs="1" />
+			  <xs:element name="previousDNSSecV6" type="xs:string" minOccurs="1" maxOccurs="1" />
+			  <xs:element name="previousWINS" type="xs:string" minOccurs="1" maxOccurs="1" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NetworkIdentification_Phoenix_Default" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="1" maxOccurs="1">
+        <xs:element ref="Contract" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

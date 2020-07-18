@@ -1,0 +1,82 @@
+﻿<Window x:Class="HP.RDL.EDT.AutoTestHelper.BulkEditorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HP.RDL.EDT.AutoTestHelper"
+        xmlns:ui="clr-namespace:HP.ScalableTest.Framework.UI;assembly=STF.Framework"
+        mc:Ignorable="d"
+        Title="Auto Test Helper" Height="600" Width="800" Icon="HPLOGO.ico" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="Gray">
+            <StackPanel Orientation="Horizontal" Height="32">
+                <TextBlock Text="Choose Plugin:" Width="100" Height="20" HorizontalAlignment="Left" Margin="10,0,0,0" />
+                <ComboBox Name="PluginComboBox" Width="150" Style="{StaticResource StyledComboBox}" SelectionChanged="PluginComboBox_OnSelectionChanged" DisplayMemberPath="Name" SelectedValuePath="AssemblyName" />
+            </StackPanel>
+        </Grid>
+        <Grid Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.6*" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <TreeView Name="MetadataTreeView" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" SelectedItemChanged="MetadataTreeView_OnSelectedItemChanged"  Background="Gray">
+                <TreeView.ItemTemplate>
+                    <HierarchicalDataTemplate DataType="{x:Type local:TreeNode}" ItemsSource="{Binding}">
+                        <TextBlock Text="{Binding Path=Name}" FontStyle="{Binding Path=FontStyle}" FontWeight="{Binding Path=FontWeight}" />
+                    </HierarchicalDataTemplate>
+                </TreeView.ItemTemplate>
+            </TreeView>
+            <Border  Grid.Row="0" Grid.Column="1" BorderBrush="Black" Background="LightGray">
+                <StackPanel Name="DataMemberStackPanel" DataContext="{Binding}">
+                    <TextBlock Text="Plugin Metadata Members" Width="150" />
+                    <TextBlock Text="{Binding Description}" Width="300" Margin="0,10,0,0" FontWeight="Bold" FontStyle="Italic" />
+                    <StackPanel Orientation="Horizontal" Height="32" Margin="40,10,0,0">
+                        <TextBox Name="MetadataMemberTextBox" Style="{StaticResource StyledTextBox}" Text="{Binding Path=Text}" IsReadOnly="{Binding Path=IsReadOnly}" Width="200" />
+                        <ComboBox Name="MetadataMemberCombobox" Style="{StaticResource StyledComboBox}" ItemsSource="{Binding Path=EnumValueCollection}" Width="200" Margin="20,0,0,0" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Width="320">
+                        <TextBlock Text="The Member type is: " FontStyle="Italic" />
+                        <TextBlock Text="{Binding Path=PropertyType}" Width="200"></TextBlock>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="1" BorderBrush="Black" Background="LightGray">
+                <StackPanel Name="FrameWorkServerStackPanel">
+                    <TextBlock Text="Framework Server (Optional)" HorizontalAlignment="Center"></TextBlock>
+                    <WindowsFormsHost Name="FrameworkServerHost" Height="28" Width="400">
+                        <ui:ServerComboBox Name="StfServerComboBox"/>
+                    </WindowsFormsHost>
+                    <Button Name="ApplyButton" Content="Apply" Style="{StaticResource StyledButton}" Width="75" Height="32" Click="ApplyButton_OnClick" Margin="0,5,0,0" />
+                </StackPanel>
+            </Border>
+        </Grid>
+        <Grid Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="32" />
+            </Grid.RowDefinitions>
+            <GroupBox Header="Test Scenarios">
+                <DataGrid Name="ScenarioDataGrid"  HorizontalAlignment="Left" Margin="10,10,10,0" VerticalAlignment="Top" Height="190" Width="760" ItemsSource="{Binding}" AutoGenerateColumns="False" Style="{StaticResource StyledDataGrid}" RowStyle="{StaticResource StyledRowWithAlternation}"
+                          CellStyle="{StaticResource StyledDataGridCell}"  RowHeight="24" HorizontalScrollBarVisibility="Disabled" CanUserSortColumns="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Scenario Name" Binding="{Binding ScenarioName}" Width="180" IsReadOnly="True" />
+                        <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="450" IsReadOnly="True" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </GroupBox>
+            <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Right">
+                <Button Name="SaveButton" Content="Save Changes" Width="90" Style="{StaticResource StyledButton}" Margin="0,0,20,0" Click="SaveButton_OnClick" />
+                <Button Name="CloseButton" Content="Close" Width="90" Style="{StaticResource StyledButton}" Margin="0,0,10,0" Click="CloseButton_OnClick" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{326D6885-A412-46A2-B50D-DE2C11943E01}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HP.ScalableTest.Development</RootNamespace>
+    <AssemblyName>STF.Development</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OutputPath>..\..\Binaries\STF.Common\</OutputPath>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
+    <CodeAnalysisRuleSet>ExtendedDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug (Code Analysis)|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'SDK Release|AnyCPU'">
+    <OutputPath>..\..\Binaries\PluginSdk\</OutputPath>
+    <DefineConstants>SDK</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="AssetInfoBuilder.cs" />
+    <Compile Include="AssetInventoryMock.cs" />
+    <Compile Include="CriticalSectionMock.cs" />
+    <Compile Include="CriticalSectionMockBehavior.cs" />
+    <Compile Include="DataLoggerMock.cs" />
+    <Compile Include="DataLoggerMockException.cs" />
+    <Compile Include="DataLoggerMockRecord.cs" />
+    <Compile Include="DataLoggerMockTable.cs" />
+    <Compile Include="DataLoggerMockTableEventArgs.cs" />
+    <Compile Include="DocumentBuilder.cs" />
+    <Compile Include="DocumentLibraryMock.cs" />
+    <Compile Include="EnvironmentConfigurationMock.cs" />
+    <Compile Include="FileRepositoryMock.cs" />
+    <Compile Include="FrameworkServicesContext.cs" />
+    <Compile Include="ICriticalSectionMock.cs" />
+    <Compile Include="IDataLoggerMock.cs" />
+    <Compile Include="IPluginFrameworkSimulator.cs" />
+    <Compile Include="PluginConfigurationTransformer.cs" />
+    <Compile Include="PluginFrameworkSimulator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\GlobalSuppressions.cs" />
+    <Compile Include="ServerInfoBuilder.cs" />
+    <Compile Include="SessionRuntimeMock.cs" />
+    <Compile Include="SystemTraceMessageEventArgs.cs" />
+    <Compile Include="SystemTraceMock.cs" />
+    <Compile Include="UI\ConfigurationDataRenameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigurationDataRenameForm.Designer.cs">
+      <DependentUpon>ConfigurationDataRenameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CriticalSectionMockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CriticalSectionMockForm.Designer.cs">
+      <DependentUpon>CriticalSectionMockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataLoggerMockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataLoggerMockForm.Designer.cs">
+      <DependentUpon>DataLoggerMockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataLoggerMockTableGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DataLoggerMockTableGridView.Designer.cs">
+      <DependentUpon>DataLoggerMockTableGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PluginConfigurationDataDisplayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PluginConfigurationDataDisplayForm.Designer.cs">
+      <DependentUpon>PluginConfigurationDataDisplayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PluginFrameworkSimulatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PluginFrameworkSimulatorForm.Designer.cs">
+      <DependentUpon>PluginFrameworkSimulatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SelectPluginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SelectPluginForm.Designer.cs">
+      <DependentUpon>SelectPluginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserAppDataRegistry.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Properties\STF.Development.Dictionary.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Framework\STF.Framework.csproj">
+      <Project>{b91dcc51-8664-49e3-97d0-6fcfd2918a1a}</Project>
+      <Name>STF.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\ConfigurationDataRenameForm.resx">
+      <DependentUpon>ConfigurationDataRenameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CriticalSectionMockForm.resx">
+      <DependentUpon>CriticalSectionMockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataLoggerMockForm.resx">
+      <DependentUpon>DataLoggerMockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataLoggerMockTableGridView.resx">
+      <DependentUpon>DataLoggerMockTableGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PluginConfigurationDataDisplayForm.resx">
+      <DependentUpon>PluginConfigurationDataDisplayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PluginFrameworkSimulatorForm.resx">
+      <DependentUpon>PluginFrameworkSimulatorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SelectPluginForm.resx">
+      <DependentUpon>SelectPluginForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <CodeAnalysisLogFile>$(IntermediateOutputPath)$(TargetFileName).CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisSucceededFile>$(IntermediateOutputPath)$(TargetFileName).lastcodeanalysissucceeded</CodeAnalysisSucceededFile>
+  </PropertyGroup>
+</Project>

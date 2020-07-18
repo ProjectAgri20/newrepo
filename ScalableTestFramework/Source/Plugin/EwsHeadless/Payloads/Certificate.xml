@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Printers FilterType="Certificate">
+
+  <Printer Type="SIRIUS" SubFilterType="InstallCertificate" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/Security/CACertificate/Upload</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>UPLOAD</Method>
+        <Payload>{CertificatePath}</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+        <NameValuePairs>
+          <NameValuePair Order="1">
+            <Name></Name>
+            <Value></Value>
+          </NameValuePair>
+        </NameValuePairs>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="PHOENIX" SubFilterType="InstallCertificate" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>http://{0}/hp/device/CertificateCA.pem</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>UPLOAD</Method>
+        <Payload>{CertificatePath}</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+        <NameValuePairs>
+          <NameValuePair Order="1">
+            <Name>FinishText</Name>
+            <Value>Finish</Value>
+          </NameValuePair>
+        </NameValuePairs>
+      </Request>
+    </Requests>
+  </Printer>
+</Printers>

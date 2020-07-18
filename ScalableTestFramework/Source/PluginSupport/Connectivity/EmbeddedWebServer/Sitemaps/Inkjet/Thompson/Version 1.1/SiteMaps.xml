@@ -1,0 +1,274 @@
+<Sitemaps>
+  <Pages>
+    <Page key="Network_Summary" relative_path="#hId-networkSumPage">
+      <Elements>
+        <Element key="Network_Summary" id="#hId-networkSumPage" name="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Host_Name" relative_path="#hId-HostNamePage">
+      <Elements>
+        <Element key="Host_Name" id="hostname-Inp" name="" type="" />
+        <Element key="Apply" id="applyBtn-Inp" name="" type="" />
+        <Element key="Cancel" id="cancelBtn-Inp" name="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Network_Protocols" relative_path="#hId-netProtoPage">
+      <Elements>
+        <Element key="" id="" name="" type="" />
+        <Element key="" id="" name="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Proxy_Settings" relative_path="#hId-ProxySettingsPage">
+      <Elements>
+        <Element key="" id="" name="" type="" />
+        <Element key="" id="" name="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Wired_Status" relative_path="#hId-statusPage">
+      <Elements>
+        <Element key="" id="" name="" type="" />
+        <Element key="" id="" name="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Wired_IPv4" relative_path="#hId-ipv4Page">
+      <Elements>
+        <Element key="Automatic_IP" id="net-ip-auto-radio_net-ip-man-radio-Inp_autoIP" name="" type="" />
+        <Element key="Manual_IP" id="net-ip-auto-radio_net-ip-man-radio-Inp_manual" name="" type="" />
+        <Element key="Manual_IP_Address0" id="tmpId1-Inp0" name="" type="" />
+        <Element key="Manual_IP_Address1" id="tmpId1-Inp1" name="" type="" />
+        <Element key="Manual_IP_Address2" id="tmpId1-Inp2" name="" type="" />
+        <Element key="Manual_IP_Address3" id="tmpId1-Inp3" name="" type="" />
+        <Element key="Manual_Subnet_Mask0" id="tmpId2-Inp0" name="" type="" />
+        <Element key="Manual_Subnet_Mask1" id="tmpId2-Inp1" name="" type="" />
+        <Element key="Manual_Subnet_Mask2" id="tmpId2-Inp2" name="" type="" />
+        <Element key="Manual_Subnet_Mask3" id="tmpId2-Inp3" name="" type="" />
+        <Element key="Manual_Default_Gateway0" id="tmpId3-Inp0" name="" type="" />
+        <Element key="Manual_Default_Gateway1" id="tmpId3-Inp1" name="" type="" />
+        <Element key="Manual_Default_Gateway2" id="tmpId3-Inp2" name="" type="" />
+        <Element key="Manual_Default_Gateway3" id="tmpId3-Inp3" name="" type="" />
+        <Element key="Automatic_DNS_Server" id="net-dns-auto-radio_net-dns-man-radio-Inp_AutoDns" name="" type="" />
+        <Element key="Manual_DNS_Server" id="net-dns-auto-radio_net-dns-man-radio-Inp_ManDns" name="" type="" />
+        <Element key="Manual_Preferred_DNS_Server0" id="tmpId4-Inp0" name="" type="" />
+        <Element key="Manual_Preferred_DNS_Server1" id="tmpId4-Inp1" name="" type="" />
+        <Element key="Manual_Preferred_DNS_Server2" id="tmpId4-Inp2" name="" type="" />
+        <Element key="Manual_Preferred_DNS_Server3" id="tmpId4-Inp3" name="" type="" />
+        <Element key="Manual_Alternate_DNS_Server0" id="tmpId5-Inp0" name="" type="" />
+        <Element key="Manual_Alternate_DNS_Server1" id="tmpId5-Inp1" name="" type="" />
+        <Element key="Manual_Alternate_DNS_Server2" id="tmpId5-Inp2" name="" type="" />
+        <Element key="Manual_Alternate_DNS_Server3" id="tmpId5-Inp3" name="" type="" />
+        <Element key="Apply" id="gui-cmd-btn-apply" name="" type="" />
+        <Element key="Cancel" id="gui-cmd-btn-cancel" name="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Wired_IPv6" relative_path="#hId-ipv6Page">
+      <Elements>
+        <Element key="Manual_IP_Address" id="tmpId6-Inp" name="" type="" />
+        <Element key="Manual_Preferred_DNS_Server" id="tmpId7-Inp" name="" type="" />
+        <Element key="Manual_Alternate_DNS_Server" id="tmpId8-Inp" name="" type="" />
+        <Element key="Apply" id="gui-cmd-btn-apply" name="" type="" />
+        <Element key="Cancel" id="gui-cmd-btn-cancel" name="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Wired_Advanced" relative_path="#hId-advancedPage">
+      <Elements>
+        <Element key="On" id="net-intf-enable-radio_net-intf-disable-radio-Inp_on" name="" type="" />
+        <Element key="Off" id="net-intf-enable-radio_net-intf-disable-radio-Inp_off" name="" type="" />
+        <Element key="Auto" id="net-link-auto-radio_net-link-manual-radio-Inp_auto" name="" type="" />
+        <Element key="Manual" id="net-link-auto-radio_net-link-manual-radio-Inp_manual" name="" type="" />
+        <Element key="Link_Speed" id="net-link-speed-sel-Inp" name="" type="" />
+        <Element key="Communication_Mode" id="net-link-comm-mode-sel-Inp" name="" type="" />
+        <Element key="DHCP" id="net-ip-dhcp-radio_net-ip-bootp-radio-Inp_auto" name="" type="" />
+        <Element key="BOOTP" id="net-ip-dhcp-radio_net-ip-bootp-radio-Inp_bootP" name="" type="" />
+        <Element key="Apply" id="gui-cmd-btn-apply" name="" type="" />
+        <Element key="Cancel" id="gui-cmd-btn-cancel" name="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Wireless_Status" relative_path="#hId-defaultProfilePage">
+      <Elements>
+        <Element key="" id="" name="" type="" />
+        <Element key="" id="" name="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Wireless_Setup_Wizard" relative_path="#hId-setupPage">
+      <Elements>
+        <Element key="Start_Wizard" id="gui-cmd-btn-start_btn" name="" type="" />
+        <Element key="Select_a_Network_Name" id="wifiNetWork_chose" name="" type="" />
+        <Element key="Enter_a_Network_Name" id="wifiNetWork_create" name="" type="" />
+        <Element key="Back" id="gui-cmd-btn-back_btn" name="" type="" />
+        <Element key="Next" id="gui-cmd-btn-next_btn" name="" type="" />
+        <Element key="Cancel" id="gui-cmd-btn-cancel_btn" name="" type="" />
+        <Element key="WEP_Key" id="wep_key1-Inp" name="" type="" />
+        <Element key="Confirm_WEP_Key" id="wep_key2-Inp" name="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Wireless_IPv4" relative_path="#hId-wipv4Page">
+      <Elements>
+        <Element key="Automatic_IP" id="net-ip-auto-radio_net-ip-man-radio-Inp_autoIP" name="" type="" />
+        <Element key="Manual_IP" id="net-ip-auto-radio_net-ip-man-radio-Inp_manual" name="" type="" />
+        <Element key="Manual_IP_Address0" id="tmpId1-Inp0" name="" type="" />
+        <Element key="Manual_IP_Address1" id="tmpId1-Inp1" name="" type="" />
+        <Element key="Manual_IP_Address2" id="tmpId1-Inp2" name="" type="" />
+        <Element key="Manual_IP_Address3" id="tmpId1-Inp3" name="" type="" />
+        <Element key="Manual_Subnet_Mask0" id="tmpId2-Inp0" name="" type="" />
+        <Element key="Manual_Subnet_Mask1" id="tmpId2-Inp1" name="" type="" />
+        <Element key="Manual_Subnet_Mask2" id="tmpId2-Inp2" name="" type="" />
+        <Element key="Manual_Subnet_Mask3" id="tmpId2-Inp3" name="" type="" />
+        <Element key="Manual_Default_Gateway0" id="tmpId3-Inp0" name="" type="" />
+        <Element key="Manual_Default_Gateway1" id="tmpId3-Inp1" name="" type="" />
+        <Element key="Manual_Default_Gateway2" id="tmpId3-Inp2" name="" type="" />
+        <Element key="Manual_Default_Gateway3" id="tmpId3-Inp3" name="" type="" />
+        <Element key="Automatic_DNS_Server" id="net-dns-auto-radio_net-dns-man-radio-Inp_AutoDns" name="" type="" />
+        <Element key="Manual_DNS_Server" id="net-dns-auto-radio_net-dns-man-radio-Inp_ManDns" name="" type="" />
+        <Element key="Manual_Preferred_DNS_Server0" id="tmpId4-Inp0" name="" type="" />
+        <Element key="Manual_Preferred_DNS_Server1" id="tmpId4-Inp1" name="" type="" />
+        <Element key="Manual_Preferred_DNS_Server2" id="tmpId4-Inp2" name="" type="" />
+        <Element key="Manual_Preferred_DNS_Server3" id="tmpId4-Inp3" name="" type="" />
+        <Element key="Manual_Alternate_DNS_Server0" id="tmpId5-Inp0" name="" type="" />
+        <Element key="Manual_Alternate_DNS_Server1" id="tmpId5-Inp1" name="" type="" />
+        <Element key="Manual_Alternate_DNS_Server2" id="tmpId5-Inp2" name="" type="" />
+        <Element key="Manual_Alternate_DNS_Server3" id="tmpId5-Inp3" name="" type="" />
+        <Element key="Apply" id="gui-cmd-btn-apply" name="" type="" />
+        <Element key="Cancel" id="gui-cmd-btn-cancel" name="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Wireless_IPv6" relative_path="#hId-wipv6Page">
+      <Elements>
+        <Element key="Manual_IP_Address" id="tmpId6-Inp" name="" type="" />
+        <Element key="Manual_Preferred_DNS_Server" id="tmpId7-Inp" name="" type="" />
+        <Element key="Manual_Alternate_DNS_Server" id="tmpId8-Inp" name="" type="" />
+        <Element key="Apply" id="gui-cmd-btn-apply" name="" type="" />
+        <Element key="Cancel" id="gui-cmd-btn-cancel" name="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Wireless_Advanced" relative_path="#hId-wadvancedPage">
+      <Elements>
+        <Element key="ON" id="wifiRad_Enb_wifiRad_Dis-Inp_on" name="" type="" />
+        <Element key="OFF" id="wifiRad_Enb_wifiRad_Dis-Inp_off" name="" type="" />
+        <Element key="SSID" id="ss_id-Inp" name="" type="" />
+        <Element key="No_Authentication" id="aselIsecu_Nope_aselIsecu_Wep_aselIsecu_Wpa-Inp_none" name="" type="" />
+        <Element key="WEP_Encription" id="aselIsecu_Nope_aselIsecu_Wep_aselIsecu_Wpa-Inp_WEP" name="" type="" />
+        <Element key="Authentication" id="Auth_cate-Inp" name="" type="" />
+        <Element key="WEP_Key" id="wKey_1st-Inp" name="" type="" />
+        <Element key="Confirm_WEP_Key" id="wKey_2nd-Inp" name="" type="" />
+        <Element key="Index" id="Wep_Kin-Inp" name="" type="" />
+        <Element key="WPA_PSK_Auhtentication" id="aselIsecu_Nope_aselIsecu_Wep_aselIsecu_Wpa-Inp_WPA_PSK" name="" type="" />
+        <Element key="WPA_Version" id="Wpa_Ver-Inp" name="" type="" />
+        <Element key="Encruption" id="Wpa_Enc-Inp" name="" type="" />
+        <Element key="Passphrase" id="wpa_ky1-Inp" name="" type="" />
+        <Element key="Confirm_Passphrase" id="wpa_ky2-Inp" name="" type="" />
+        <Element key="Use_802.11b_Behaviour" id="inet_80211b-Inp" name="" type="" />
+        <Element key="Use_802.11bg_Behaviour" id="inet_80211bg-Inp" name="" type="" />
+        <Element key="Apply" id="gui-cmd-btn-apply" name="" type="" />
+        <Element key="Cancel" id="gui-cmd-btn-cancel" name="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Bonjour" relative_path="#hId-mDNSPage">
+      <Elements>
+        <Element key="Disable_Bonjour" id="mdns_RadButtons-Inp_disabled" name="" type="" />
+        <Element key="Enable Bonjour" id="mdns_RadButtons-Inp_enabled" name="" type="" />
+        <Element key="Bonjour Service Name" id="ServiceName-Inp" name="" type="" />
+        <Element key="Bonjour Highest Priority Service" id="PriorityService-Inp" name="" type="" />
+        <Element key="Apply" id="applyBtn-Inp" name="" type="" />
+        <Element key="Cancel" id="cancelBtn-Inp" name="" type="" />
+      </Elements>
+    </Page>
+    <Page key="SNMP" relative_path="#hId-SNMPPage">
+      <Elements>
+        <Element key="Enable_SNMPv1_Read_Write_Access" id="SNMPEnRWA_SNMPEnRA_SNMPDis-Inp_enable1" name="" type="" />
+        <Element key="Set_Community_Name" id="SCN-Inp" name="" type="" />
+        <Element key="Confirm_Set_Community_Name" id="ConfSCN-Inp" name="" type="" />
+        <Element key="Get_Community_Name" id="GCN-Inp" name="" type="" />
+        <Element key="Confirm_Get_Community_Name" id="ConfGCN-Inp" name="" type="" />
+        <Element key="Enable_SNMPv1_Read_Only_Access" id="SNMPEnRWA_SNMPEnRA_SNMPDis-Inp_enable2" name="" type="" />
+        <Element key="Disable_SNMPv1" id="SNMPEnRWA_SNMPEnRA_SNMPDis-Inp_disable" name="" type="" />
+        <Element key="Apply" id="applyBtn-Inp" name="" type="" />
+        <Element key="Cancel" id="cancelBtn-Inp" name="" type="" />
+      </Elements>
+    </Page>
+    <Page key="WINS" relative_path="#hId-WINSPage">
+      <Elements>
+        <Element key="Disable_WINS" id="wins_RadButtons-Inp_disabled" name="" type="" />
+        <Element key="Enable_WINS" id="wins_RadButtons-Inp_enabled" name="" type="" />
+        <Element key="Primary_WINS_Server0" id="PrimServer-Inp0" name="" type="" />
+        <Element key="Primary_WINS_Server1" id="PrimServer-Inp1" name="" type="" />
+        <Element key="Primary_WINS_Server2" id="PrimServer-Inp2" name="" type="" />
+        <Element key="Primary_WINS_Server3" id="PrimServer-Inp3" name="" type="" />
+        <Element key="Secondary_WINS_Server0" id="SecServer-Inp0" name="" type="" />
+        <Element key="Secondary_WINS_Server1" id="SecServer-Inp1" name="" type="" />
+        <Element key="Secondary_WINS_Server2" id="SecServer-Inp2" name="" type="" />
+        <Element key="Secondary_WINS_Server3" id="SecServer-Inp3" name="" type="" />
+        <Element key="Apply" id="" name="" type="" />
+        <Element key="Cancel" id="" name="" type="" />
+      </Elements>
+    </Page>
+    <Page key="SLP" relative_path="#hId-SLPPage">
+      <Elements>
+        <Element key="Enable_SLP" id="slp_RadButtons-Inp_enabled" name="" type="" />
+        <Element key="Disable_SLP" id="slp_RadButtons-Inp_disabled" name="" type="" />
+        <Element key="Apply" id="applyBtn-Inp" name="" type="" />
+        <Element key="Cancel" id="cancelBtn-Inp" name="" type="" />
+      </Elements>
+    </Page>
+    <Page key="LPD" relative_path="#hId-LPDPage">
+      <Elements>
+        <Element key="Enable_LPD" id="lpd_RadButtons-Inp_enabled" name="" type="" />
+        <Element key="Disable_LPD" id="lpd_RadButtons-Inp_disabled" name="" type="" />
+        <Element key="Apply" id="applyBtn-Inp" name="" type="" />
+        <Element key="Cancel" id="cancelBtn-Inp" name="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Port_9100" relative_path="#hId-P9100Page">
+      <Elements>
+        <Element key="Enable_TCP_Port_9100_Printing" id="p9100_RadButtons-Inp_enabled" name="" type="" />
+        <Element key="Disable_TCP_Port_9100_Printing" id="p9100_RadButtons-Inp_disabled" name="" type="" />
+        <Element key="Apply" id="applyBtn-Inp" name="" type="" />
+        <Element key="Cancel" id="cancelBtn-Inp" name="" type="" />
+      </Elements>
+    </Page>
+    <Page key="HTTPS_Redirection" relative_path="#hId-HTTPSPage">
+      <Elements>
+        <Element key="Redirect to HTTPS" id="https_RadButtons-Inp_enabled" name="" type="" />
+        <Element key="Do Not Redirect to HTTPS" id="https_RadButtons-Inp_disabled" name="" type="" />
+        <Element key="Apply" id="applyBtn-Inp" name="" type="" />
+        <Element key="Cancel" id="cancelBtn-Inp" name="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Web_Services" relative_path="#hId-WebservicesPage">
+      <Elements>
+        <Element key="Enable_WS_Discovery_only" id="webservices_RadButtons-Inp_enableD" name="" type="" />
+        <Element key="Enable_WS_Discovery_and_WSD_Print" id="webservices_RadButtons-Inp_enableDP" name="" type="" />
+        <Element key="Disable_WS_Discover_and_WSD_Print" id="webservices_RadButtons-Inp_disableP" name="" type="" />
+        <Element key="Apply" id="applyBtn-Inp" name="" type="" />
+        <Element key="Cancel" id="cancelBtn-Inp" name="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Syslog" relative_path="#hId-syslogPage">
+      <Elements>
+        <Element key="Enable_Syslog" id="enableSyslog-Inp" name="" type="" />
+        <Element key="Syslog_Server" id="syslogServer-Inp" name="" type="" />
+        <Element key="Syslog_Protocol" id="syslogProtocol-Inp" name="" type="" />
+        <Element key="Syslog_Port *" id="syslogPort-Inp" name="" type="" />
+        <Element key="Syslog_Maximum Messages *" id="syslogMaxMsg-Inp" name="" type="" />
+        <Element key="Syslog_Priority" id="syslogPrio-Inp" name="" type="" />
+        <Element key="Apply" id="applyBtn-Inp" name="" type="" />
+        <Element key="Cancel" id="cancelBtn-Inp" name="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Advanced_DHCP" relative_path="#hId-dhcpAdvAPage">
+      <Elements>
+        <Element key="Enable_DHCPv4_FQDN" id="dhcpv4Opt-Inp" name="" type="" />
+        <Element key="Apply" id="applyBtn-Inp" name="" type="" />
+        <Element key="Cancel" id="cancelBtn-Inp" name="" type="" />
+      </Elements>
+    </Page>
+    <Page key="Internet_Printing_Protocol" relative_path="#hId-IPPPage">
+      <Elements>
+        <Element key="Disable_IPP" id="ipp-enable-Inp_disabled" name="" type="" />
+        <Element key="Enable_IPP" id="ipp-enable-Inp_enabled" name="" type="" />
+        <Element key="Printer_Location" id="tmpId28-Inp" name="" type="" />
+        <Element key="Apply" id="applyBtn-Inp" name="" type="" />
+        <Element key="Cancel" id="cancelBtn-Inp" name="" type="" />
+      </Elements>
+    </Page>
+  </Pages>
+</Sitemaps>

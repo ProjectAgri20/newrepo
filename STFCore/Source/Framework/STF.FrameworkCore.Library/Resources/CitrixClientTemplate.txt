@@ -1,0 +1,22 @@
+[Encoding]
+InputEncoding=UTF8
+
+[WFClient]
+Version=2
+username={0}\{1}
+clearpassword={2}
+
+[ClientPrinterQueue]
+CPMAllowed=On
+VSLAllowed=On
+
+[ApplicationServers]
+{4}=
+
+[{4}]
+Address={3}
+InitialProgram=#{4}
+TWIMode=On
+TransportDriver=TCP/IP
+WinStationDriver=ICA 3.0
+BrowserProtocol=HTTPonTCP

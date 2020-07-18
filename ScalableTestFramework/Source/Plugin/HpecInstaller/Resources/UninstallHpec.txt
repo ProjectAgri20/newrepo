@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TaskList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>UninstallEC</Name>
+  <Tasks>
+    <Task name="Check if a Bundle is installed" assembly="Hp.NSE.FDT" classname="Hp.NSE.FDT.JediTasks.CheckIfBundleIsInstalled">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>JEDI</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="SolutionName">HPEC</Parameter>
+        <Parameter id="BundleVersion">{0}</Parameter>
+        <Parameter id="BundleSimulator">false</Parameter>
+        <Parameter id="FailIfBundleNotInstalled">true</Parameter>
+        <Parameter id="FailIfBundleInstalled">false</Parameter>
+        <Parameter id="LegacySolutionNames">NSE-Jedi</Parameter>
+        <Parameter id="OldestVersionCompatible">1.2.0</Parameter>
+        <Parameter id="FailIfApiNotResponding">false</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Check if HPEC jar is installed" assembly="Hp.NSE.FDT" classname="Hp.NSE.FDT.OZTasks.CheckIfJarIsInstalled">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>OZ</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="JarURN">urn:hp:MFPScan</Parameter>
+        <Parameter id="JarVersion">{0}</Parameter>
+        <Parameter id="FailIfJarIsNotInstalled">true</Parameter>
+        <Parameter id="FailIfJarIsInstalled">false</Parameter>
+        <Parameter id="OldestVersionCompatible">1.2.0</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Remove Solution Data" assembly="Hp.NSE.FDT" classname="Hp.NSE.FDT.OZTasks.RemoveData">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>ALL</PrinterFamily>
+      </Platforms>
+      <Parameters />
+    </Task>
+    <Task name="Uninstall HP Embedded Capture" assembly="Commons" classname="Hp.SolutionsManager.Commons.UnloadJarTask">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>OZ</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="URN">urn:hp:MFPScan</Parameter>
+        <Parameter id="Reboot">False</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Uninstall HP Embedded Capture for Future Smart" assembly="Commons" classname="Hp.SolutionsManager.Commons.UninstallBundleTask">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>JEDI</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="SolutionName">HPEC</Parameter>
+        <Parameter id="BundleSimulator">False</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Uninstall Legacy HP Embedded Capture for Future Smart" assembly="Commons" classname="Hp.SolutionsManager.Commons.UninstallBundleTask">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>JEDI</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="SolutionName">NSE-Jedi</Parameter>
+        <Parameter id="BundleSimulator">False</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Uninstall HP Embedded Capture License Service" assembly="Commons" classname="Hp.SolutionsManager.Commons.UnloadJarTask">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>OZ</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="URN">urn:hp:CHAILicensingService</Parameter>
+        <Parameter id="Reboot">False</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Uninstall DataListenerPlaceholder" assembly="Commons" classname="Hp.SolutionsManager.Commons.UnloadJarTask">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>OZ</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="URN">urn:hp:DataListenerPlaceholder</Parameter>
+        <Parameter id="Reboot">False</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Uninstall HP Embedded Capture Utils" assembly="Commons" classname="Hp.SolutionsManager.Commons.UnloadJarTask">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>OZ</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="URN">urn:hp:NSEUtils</Parameter>
+        <Parameter id="Reboot">False</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Uninstall JCIFS" assembly="Commons" classname="Hp.SolutionsManager.Commons.UnloadJarTask">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>OZ</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="URN">urn:hp:jcifs</Parameter>
+        <Parameter id="Reboot">False</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Uninstall Log4Java Mini" assembly="Commons" classname="Hp.SolutionsManager.Commons.UnloadJarTask">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>OZ</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="URN">urn:hp:log4jme</Parameter>
+        <Parameter id="Reboot">False</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Uninstall Security Services" assembly="Commons" classname="Hp.SolutionsManager.Commons.UnloadJarTask">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>OZ</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="URN">urn:hp:laserjet:security:services</Parameter>
+        <Parameter id="Reboot">False</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Uninstall ScanControl" assembly="Commons" classname="Hp.SolutionsManager.Commons.UnloadJarTask">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>OZ</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="URN">urn:hp-laserjet-chaisdk:ScanControl</Parameter>
+        <Parameter id="Reboot">False</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Uninstall ChaiGUI" assembly="Commons" classname="Hp.SolutionsManager.Commons.UnloadJarTask">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>OZ</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="URN">urn:hp:laserjet:cgui</Parameter>
+        <Parameter id="Reboot">False</Parameter>
+      </Parameters>
+    </Task>
+    <Task name="Reboot Oz device" assembly="Commons" classname="Hp.SolutionsManager.Commons.RebootTask">
+      <ActionIfError>ABORT</ActionIfError>
+      <ExecutionFilter xsi:type="CustomExpression">
+        <Name>[EMPTY]</Name>
+        <Type>CustomExpression</Type>
+        <Operands />
+      </ExecutionFilter>
+      <Platforms>
+        <PrinterFamily>OZ</PrinterFamily>
+      </Platforms>
+      <Parameters>
+        <Parameter id="RebootTimeout">0</Parameter>
+      </Parameters>
+    </Task>
+  </Tasks>
+</TaskList>

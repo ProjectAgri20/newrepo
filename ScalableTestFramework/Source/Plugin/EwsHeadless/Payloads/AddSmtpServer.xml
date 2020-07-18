@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Printers FilterType="AddSmtpServer">
+  <Printer Type="OMNI" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/BasicSend/Save?jsAnchor=BasicSmtpListSectionId</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>Post</Method>
+        <Payload>FilterUsage=SendToEmailamp;SmtpServerContractId=amp;UseSignedInUserAsSender=Falseamp;FromEditable=onamp;EmailFromAddress=amp;EmailFromDisplayName=amp;EmailSubject=amp;SubjectEditable=onamp;EmailBody=amp;BodyEditable=onamp;FileName=%5BUntitled%5Damp;FileNameUserEditable=onamp;FileType=0amp;FileTypeEditable=onamp;ColorPreference=4amp;OutputQuality=1amp;Resolution=2amp;FormButtonAddSmtpServer=Add...amp;StepBackAnchor=BasicSmtpListSectionIdamp;jsAnchor=BasicSmtpListSectionId</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+          <Header Order="3">
+            <HeaderName>Cache-Control</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+      <Request Order="2" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/SmtpWizard/Save</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>StepId=1amp;FilterUsage=SendToEmailamp;StepBackController=BasicSendamp;StepBackAction=Editamp;StepBackId=amp;StepBackAnchor=BasicSmtpListSectionIdamp;SmtpSelection=1amp;SmtpServerName={SmtpServerName}amp;FormButtonNext=Next</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+          <Header Order="3">
+            <HeaderName>Cache-Control</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+      <Request Order="3" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/SmtpWizard/Save</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Default item="SmtpServerPort">25</Default>
+        <Default item="UseSsl">donotsend</Default>
+        <Default item="SmtpSplitEmail">0</Default>
+        <Payload>StepId=4amp;FilterUsage=SendToEmailamp;StepBackController=BasicSendamp;StepBackAction=Editamp;StepBackId=amp;StepBackAnchor=BasicSmtpListSectionIdamp;SmtpServerContractId=amp;SmtpServerAddress={ConfirmSmtpServerAddress}amp;SmtpServerPort={SmtpServerPort}amp;SmtpSplitEmail={SmtpSplitEmail}amp;UseSsl={UseSsl}amp;ValidateServerCertificate={ValidateServerCertificate}amp;FormButtonNext=Next</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+          <Header Order="3">
+            <HeaderName>Cache-Control</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+      <Request Order="4" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/SmtpWizard/Save</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Default item="SmtpAuthentication">False</Default>
+        <Default item="SmtpCredentials">False</Default>
+        <Payload>StepId=5amp;FilterUsage=SendToEmailamp;StepBackController=BasicSendamp;StepBackAction=Editamp;StepBackId=amp;StepBackAnchor=BasicSmtpListSectionIdamp;SmtpServerContractId=amp;SmtpAuthentication={SmtpAuthentication}amp;SmtpCredentials={SmtpCredentials}amp;SmtpUserName={SmtpUserName}amp;SmtpPassword={SmtpPassword}amp;FormButtonNext=Next</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+          <Header Order="3">
+            <HeaderName>Cache-Control</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+      <Request Order="5" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/SmtpWizard/Save</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>StepId=6amp;FilterUsage=SendToEmailamp;StepBackController=BasicSendamp;StepBackAction=Editamp;StepBackId=amp;StepBackAnchor=BasicSmtpListSectionIdamp;SmtpServerContractId=amp;SmtpUsage=SendToEmailamp;SmtpUsage=InternetFaxamp;SmtpUsage=Alertsamp;SmtpUsage=AutoSendamp;FormButtonNext=Next</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+          <Header Order="3">
+            <HeaderName>Cache-Control</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+      <Request Order="6" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/SmtpWizard/Save</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>StepId=8amp;FilterUsage=SendToEmailamp;StepBackController=BasicSendamp;StepBackAction=Editamp;StepBackId=amp;StepBackAnchor=BasicSmtpListSectionIdamp;SmtpServerContractId=amp;SmtpTestEmailTo={SmtpTestEmailTo}amp;FormButtonFinish=Finish</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+          <Header Order="3">
+            <HeaderName>Cache-Control</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+</Printers>

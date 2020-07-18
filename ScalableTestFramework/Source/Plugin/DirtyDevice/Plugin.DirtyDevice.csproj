@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0210C95B-BFE8-4719-A9B0-3F2E5088D215}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HP.ScalableTest.Plugin.DirtyDevice</RootNamespace>
+    <AssemblyName>Plugin.DirtyDevice</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OutputPath>..\..\..\..\VirtualResource\Distribution\Plugin\</OutputPath>
+    <CodeAnalysisRuleSet>BasicDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DeviceAutomation-2.2, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\External Assemblies\DeviceAutomation-2.2.dll</HintPath>
+    </Reference>
+    <Reference Include="OXPdLib-1.7.2">
+      <HintPath>..\..\..\External Assemblies\OXPdLib-1.7.2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="ActivityData\DigitalSendOutputFolderActivityData.cs" />
+    <Compile Include="ActivityData\DirtyDeviceActivityData.cs" />
+    <Compile Include="ActivityData\PluginActionsFlags.cs" />
+    <Compile Include="ActivityData\QuickSetActivityData.cs" />
+    <Compile Include="ActualVsExpectedException.cs" />
+    <Compile Include="Controls\DigitalSendOutputFolderSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DigitalSendOutputFolderSettings.Designer.cs">
+      <DependentUpon>DigitalSendOutputFolderSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DirtyDeviceSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DirtyDeviceSettings.Designer.cs">
+      <DependentUpon>DirtyDeviceSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EwsSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\EwsSettings.Designer.cs">
+      <DependentUpon>EwsSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PluginActionsPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PluginActionsPicker.Designer.cs">
+      <DependentUpon>PluginActionsPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DigitalSendOutputLocation.cs" />
+    <Compile Include="DirtyDeviceConfigurationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DirtyDeviceConfigurationControl.Designer.cs">
+      <DependentUpon>DirtyDeviceConfigurationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DirtyDeviceDataConverter1_1.cs" />
+    <Compile Include="DirtyDeviceExecutionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DirtyDeviceExecutionControl.Designer.cs">
+      <DependentUpon>DirtyDeviceExecutionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DirtyDeviceManager.cs" />
+    <Compile Include="EndpointResponders\EndpointManager.cs" />
+    <Compile Include="EndpointResponders\EndpointPath.cs" />
+    <Compile Include="EndpointResponders\Ftp\ClientConnection.cs" />
+    <Compile Include="EndpointResponders\Ftp\FtpServer.cs" />
+    <Compile Include="EndpointResponders\Ftp\FtpUser.cs" />
+    <Compile Include="EndpointResponders\Ftp\LogEntry.cs" />
+    <Compile Include="EndpointResponders\Ftp\UserStore.cs" />
+    <Compile Include="EndpointResponders\NetworkFolder\NetworkFolderHandler.cs" />
+    <Compile Include="EndpointResponders\PathManager.cs" />
+    <Compile Include="EndpointResponders\WebServer\AgentCallbackListenerBase.cs" />
+    <Compile Include="EndpointResponders\WebServer\CustomServerPage.cs" />
+    <Compile Include="EndpointResponders\WebServer\HttpListenerBase.cs" />
+    <Compile Include="EndpointResponders\WebServer\HttpListenerScanReceiver.cs" />
+    <Compile Include="EndpointResponders\WebServer\HttpListenerServerSim.cs" />
+    <Compile Include="EndpointResponders\WebServer\RequestInstance.cs" />
+    <Compile Include="EndpointResponders\WebServer\UploadedFile.cs" />
+    <Compile Include="EndpointResponders\WebServer\UploadedFileParser.cs" />
+    <Compile Include="EwsAutomationException.cs" />
+    <Compile Include="Exercisers\DigitalSendExerciser.cs" />
+    <Compile Include="Exercisers\EwsExerciserViaSeleniumWebDriver.cs" />
+    <Compile Include="Exercisers\PrintExerciser.cs" />
+    <Compile Include="Exercisers\SnmpExerciser.cs" />
+    <Compile Include="Exercisers\UIExerciser.cs" />
+    <Compile Include="Exercisers\WebServicesExerciser.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="JediOmniDeviceHelper.cs" />
+    <Compile Include="NetUtil.cs" />
+    <Compile Include="PluginValidation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DeviceAutomation\STF.DeviceAutomation.csproj">
+      <Project>{8fa37af9-f2b8-4e72-bff7-580491a62832}</Project>
+      <Name>STF.DeviceAutomation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FrameworkInternal\STF.FrameworkInternal.csproj">
+      <Project>{1d38c759-e5f6-4603-bbbc-566f1276aba2}</Project>
+      <Name>STF.FrameworkInternal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\STF.Framework.csproj">
+      <Project>{b91dcc51-8664-49e3-97d0-6fcfd2918a1a}</Project>
+      <Name>STF.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utility\STF.Utility.csproj">
+      <Project>{0a02ea9d-11d5-4078-9036-385709cb365a}</Project>
+      <Name>STF.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\DigitalSendOutputFolderSettings.resx">
+      <DependentUpon>DigitalSendOutputFolderSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DirtyDeviceSettings.resx">
+      <DependentUpon>DirtyDeviceSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\EwsSettings.resx">
+      <DependentUpon>EwsSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PluginActionsPicker.resx">
+      <DependentUpon>PluginActionsPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DirtyDeviceConfigurationControl.resx">
+      <DependentUpon>DirtyDeviceConfigurationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DirtyDeviceExecutionControl.resx">
+      <DependentUpon>DirtyDeviceExecutionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IEDriverServer.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Selenium.Support">
+      <Version>2.35.0</Version>
+    </PackageReference>
+    <PackageReference Include="Selenium.WebDriver">
+      <Version>2.35.0</Version>
+    </PackageReference>
+    <PackageReference Include="Selenium.WebDriverBackedSelenium">
+      <Version>2.35.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <CodeAnalysisLogFile>$(IntermediateOutputPath)$(TargetFileName).CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisSucceededFile>$(IntermediateOutputPath)$(TargetFileName).lastcodeanalysissucceeded</CodeAnalysisSucceededFile>
+  </PropertyGroup>
+</Project>

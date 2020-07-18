@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tcx:TestDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xmlns:tcx="http://sherman.americas.hpqcorp.net/topcat/schemas/framework"
+                    xmlns:printing="http://sherman.americas.hpqcorp.net/topcat/schemas/windows/printing"
+                    xmlns:assert="http://sherman.americas.hpqcorp.net/topcat/schemas/libraries/assert"
+			          		xmlns:vmps="http://sherman.americas.hpqcorp.net/topcat/schemas/tools/vmps"
+			          		xmlns:windows="http://sherman.americas.hpqcorp.net/topcat/schemas/os/windows"
+			          		xmlns:gui="http://sherman.americas.hpqcorp.net/topcat/schemas/tools/gui-automation"
+                    xmlns:jackalope="http://sherman.americas.hpqcorp.net/topcat/schemas/components/jackalope">
+
+  <tcx:Annotation>
+    <tcx:Description>
+      Use TopCat to setup HP JetAdvantage for print to cloud operations
+    </tcx:Description>
+    <tcx:Created tcx:Author="kennejoh" tcx:Date="2015-01-16" />
+    <tcx:LastUpdated tcx:Author="kennejoh" tcx:Date="2015-01-16" />
+  </tcx:Annotation>
+
+  <tcx:Context>
+    <tcx:Properties>
+      <tcx:Property tcx:ID="TopCatPath">
+        <tcx:Value>c:\fred</tcx:Value>  <!-- c:\TopCat\TopCatRuns\TopCatExe\x64 -->
+        <tcx:Description>The location where the TopCat bits are stored</tcx:Description>
+      </tcx:Property>
+      <tcx:Property tcx:ID="TopCatScriptsPath">
+        <tcx:Value>c:\barney</tcx:Value> <!-- c:\TopCat\TopCatRuns\SigninPopupHandler -->
+        <tcx:Description>The location where the TopCat scripts are stored</tcx:Description>
+      </tcx:Property>
+      <tcx:Property tcx:ID="AccountId">
+        <tcx:Value>barney.rubble@hp.com</tcx:Value>
+        <tcx:Description>HP JetAdvantage account id (email address)</tcx:Description>
+      </tcx:Property>
+      <tcx:Property tcx:ID="AccountPassword">
+        <tcx:Value>foobar</tcx:Value>
+        <tcx:Description>HP JetAdvantage account password</tcx:Description>
+      </tcx:Property>
+      <tcx:Property tcx:ID="RESULT">
+        <tcx:Value>_FAILED</tcx:Value>
+        <tcx:Description>Unique ID for Test results</tcx:Description>
+      </tcx:Property>
+    </tcx:Properties>
+    <tcx:Dibbles>
+      <tcx:Dibble tcx:ID="printing" tcx:Namespace="http://sherman.americas.hpqcorp.net/topcat/schemas/windows/printing">
+        <tcx:Assembly>${TopCatPath}\TopCat.Windows.Printing.dll</tcx:Assembly>
+      </tcx:Dibble>
+      <tcx:Dibble tcx:ID="vmps" tcx:Namespace="http://sherman.americas.hpqcorp.net/topcat/schemas/tools/vmps">
+        <tcx:Assembly>${TopCatPath}\TopCat.Tools.VMPS.dll</tcx:Assembly>
+      </tcx:Dibble>
+      <tcx:Dibble tcx:ID="windows" tcx:Namespace="http://sherman.americas.hpqcorp.net/topcat/schemas/os/windows">
+        <tcx:Assembly>${TopCatPath}\TopCat.OS.Windows.dll</tcx:Assembly>
+      </tcx:Dibble>
+      <tcx:Dibble tcx:ID="gui" tcx:Namespace="http://sherman.americas.hpqcorp.net/topcat/schemas/tools/gui-automation">
+        <tcx:Assembly>${TopCatPath}\TopCat.Tools.GUIAutomation.dll</tcx:Assembly>
+      </tcx:Dibble>
+      <tcx:Dibble tcx:ID="assert" tcx:Namespace="http://sherman.americas.hpqcorp.net/topcat/schemas/libraries/assert">
+        <tcx:Assembly>${TopCatPath}\TopCat.Libraries.Assert.dll</tcx:Assembly>
+      </tcx:Dibble>
+      <tcx:Dibble tcx:ID="jackalope" tcx:Namespace="http://sherman.americas.hpqcorp.net/topcat/schemas/components/jackalope">
+        <tcx:Assembly>${TopCatPath}\TopCat.Components.Jackalope.dll</tcx:Assembly>
+      </tcx:Dibble>
+    </tcx:Dibbles>
+    <tcx:Imports>
+      <tcx:ConfigurationFile tcx:ID ="JetAdvantageUIMap">
+        <tcx:Path>${TopCatScriptsPath}\UI\JetAdvantageUIMap.tcc</tcx:Path>
+      </tcx:ConfigurationFile>
+      <tcx:ConfigurationFile tcx:ID ="JetAdvRegUIMap">
+        <tcx:Path>${TopCatScriptsPath}\UI\JetAdvRegUIMap.tcc</tcx:Path>
+      </tcx:ConfigurationFile>
+      <tcx:ConfigurationFile tcx:ID ="JetAdvSelectedUIMap">
+        <tcx:Path>${TopCatScriptsPath}\UI\JetAdvSelectedUIMap.tcc</tcx:Path>
+      </tcx:ConfigurationFile>
+      <tcx:ConfigurationFile tcx:ID ="JetAdvInstallLic">
+        <tcx:Path>${TopCatScriptsPath}\UI\JetAdvInstallLic.tcc</tcx:Path>
+      </tcx:ConfigurationFile>
+      <tcx:ConfigurationFile tcx:ID ="JetAdvSetDef">
+        <tcx:Path>${TopCatScriptsPath}\UI\JetAdvSetDef.tcc</tcx:Path>
+      </tcx:ConfigurationFile>
+      <tcx:ConfigurationFile tcx:ID ="JetAdvInstallFinish">
+        <tcx:Path>${TopCatScriptsPath}\UI\JetAdvInstallFinish.tcc</tcx:Path>
+      </tcx:ConfigurationFile>
+      <tcx:ConfigurationFile tcx:ID ="JetAdvInstallClose">
+        <tcx:Path>${TopCatScriptsPath}\UI\JetAdvInstallClose.tcc</tcx:Path>
+      </tcx:ConfigurationFile>
+      <tcx:ConfigurationFile tcx:ID ="JAePrintMain">
+        <tcx:Path>${TopCatScriptsPath}\UI\JAePrintMain.tcc</tcx:Path>
+      </tcx:ConfigurationFile>
+      <tcx:ConfigurationFile tcx:ID ="Credentials">
+        <tcx:Path>${TopCatScriptsPath}\UI\Credentials.tcc</tcx:Path>
+      </tcx:ConfigurationFile>
+    </tcx:Imports>
+
+    <tcx:Resources/>
+    <tcx:Lists/>
+  </tcx:Context>
+
+  <tcx:Setup>
+  </tcx:Setup>
+
+  <tcx:Tests>
+    <tcx:TestCase tcx:ID="JetAdvantage-Install">
+      <tcx:Annotation>
+        <tcx:Description>Install JetAdvantage</tcx:Description>
+        <tcx:Created tcx:Author="kennejoh" tcx:Date="2015-01-16" />
+        <tcx:LastUpdated tcx:Author="kennejoh" tcx:Date="2015-01-16" />
+      </tcx:Annotation>
+	  
+	    <tcx:Setup>
+	    </tcx:Setup>
+	  
+      <tcx:TestSteps>
+        <!--Enable external access to web -->
+        <windows:Registry.WriteValue tcx:ExpectedResult="Passed" windows:OverwriteExistingValue="true">
+          <windows:RegistryKey>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings</windows:RegistryKey>
+          <windows:ValueName>ProxyServer</windows:ValueName>
+          <windows:StringData>web-proxy.corp.hp.com:8088</windows:StringData>
+        </windows:Registry.WriteValue>
+
+        <windows:Registry.WriteValue tcx:ExpectedResult="Passed" windows:OverwriteExistingValue="true">
+          <windows:RegistryKey>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings</windows:RegistryKey>
+          <windows:ValueName>AutoConfigURL</windows:ValueName>
+          <windows:StringData>http://autocache.hp.com</windows:StringData>
+        </windows:Registry.WriteValue>
+
+        <windows:Registry.WriteValue tcx:ExpectedResult="Passed" windows:OverwriteExistingValue="true">
+          <windows:RegistryKey>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings</windows:RegistryKey>
+          <windows:ValueName>ProxyEnable</windows:ValueName>
+          <windows:DWordData>1</windows:DWordData>
+        </windows:Registry.WriteValue>       
+        
+        <!--Now add the registry entry so we can register JetAdvantage using the stable stack server -->
+        <windows:Registry.WriteValue tcx:ExpectedResult="Passed" windows:OverwriteExistingValue="true">
+          <windows:RegistryKey>HKCU\SOFTWARE\Hewlett-Packard\HP Print Settings\HP JetAdvantage On Demand</windows:RegistryKey>
+          <windows:ValueName>Server</windows:ValueName>
+          <windows:StringData>https://mfp-stable.hpbizapps.com</windows:StringData>
+        </windows:Registry.WriteValue>
+
+        <!--Popup IE so that it finalizes the web proxy settings -->
+        <tcx:Execute tcx:WaitForExit="false" tcx:TreatErrorsAsWarnings="false">
+          <tcx:Executable>c:\program files (x86)\Internet Explorer\iexplore.exe</tcx:Executable>
+        </tcx:Execute>
+        
+        <tcx:Sleep tcx:Seconds="5" tcx:Message="Wait for install to initialize..." />
+                
+        <!--Install the Jetadvantage package-->
+        <tcx:Execute tcx:WaitForExit="false" tcx:TreatErrorsAsWarnings="false">
+          <tcx:Executable>${TopCatScriptsPath}\HPJetAdvantageSetup${environment.platform}.exe</tcx:Executable>
+        </tcx:Execute>
+        <tcx:Sleep tcx:Seconds="5" tcx:Message="Wait for install to initialize..." />
+
+        <!--Wait for the "I agree box" checkbox, check it, and click Install-->
+        <gui:Control.WaitForAvailable gui:ControlID="JetAdvInstallLic.Button1031CheckBox" gui:Timeout="120" />
+        <gui:CheckBox.Check gui:ControlID="JetAdvInstallLic.Button1031CheckBox"/>
+
+        <tcx:Sleep tcx:Seconds="2" tcx:Message="Wait for JetAdv Setup Install button to become active..." />
+        <gui:Control.ClickWithMouse gui:ControlID="JetAdvInstallLic.InstallButton10Button" />
+
+        <!--Now fill out the registration form (assumes it is active form) -->
+        <tcx:Sleep tcx:Seconds="10" tcx:Message="Wait for login credentials box..." />
+        <gui:Control.WaitForAvailable gui:ControlID="Credentials.HPJetAdvantageOWindow" gui:Timeout="300" />
+        <gui:Control.BringToFront gui:ControlID="Credentials.HPJetAdvantageOWindow" gui:Timeout="10" />
+        
+        <tcx:Sleep tcx:Seconds="2" tcx:Message="Wait a bit before entering credentials..." />
+        <jackalope:TSendKeys jackalope:KeyString="${AccountId}" jackalope:SendDelay="2" />
+        <jackalope:TSendKeys jackalope:KeyString="{TAB}" jackalope:SendDelay="2" />
+        <jackalope:TSendKeys jackalope:KeyString="${AccountPassword}" jackalope:SendDelay="2" />
+        <jackalope:TSendKeys jackalope:KeyString="{ENTER}" jackalope:SendDelay="2" />
+ 
+        <!--Click Close on the JetAdv Setup Finish Dialog-->
+        <tcx:Sleep tcx:Message="Wait for Close screen to appear..." tcx:Seconds="5"/>
+        <gui:Control.ClickWithMouse gui:ControlID="JetAdvInstallClose.CloseButton1056_Dup0_I0XButton"/>
+        
+        <!--Add the registry entry to disable print control dialog -->
+        <windows:Registry.WriteValue tcx:ExpectedResult="Passed" windows:OverwriteExistingValue="true">
+          <windows:RegistryKey>HKLM\SYSTEM\CurrentControlSet\Control\Print\Printers\HP ePrint\PrinterDriverData</windows:RegistryKey>
+          <windows:ValueName>DisableLateBinding</windows:ValueName>
+          <windows:DWordData>1</windows:DWordData>
+        </windows:Registry.WriteValue>        
+        
+        <tcx:Sleep tcx:Message="Wait a few seconds and call it good..." tcx:Seconds="5"/>
+        
+        <tcx:AddProperty tcx:Overwrite="true">
+          <tcx:ID>RESULT</tcx:ID>
+          <tcx:Value xsi:type="tcx:StringValue"></tcx:Value>
+        </tcx:AddProperty>
+
+	  	</tcx:TestSteps>	  
+      <tcx:Cleanup/>
+    </tcx:TestCase>
+  </tcx:Tests>
+
+  <tcx:Cleanup>
+    <!--enter cleanup activities here-->
+  </tcx:Cleanup>
+
+  <tcx:Publish>
+    <vmps:GatherTestResults>
+      <vmps:ResultsFile>${VMPS_Results}\${TESTUID}JetAdvantage${RESULT}.xml</vmps:ResultsFile>
+    </vmps:GatherTestResults>
+  </tcx:Publish>
+
+</tcx:TestDefinition>

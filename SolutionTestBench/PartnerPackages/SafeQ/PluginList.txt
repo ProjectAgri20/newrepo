@@ -1,0 +1,17 @@
+﻿// This is the list of plugins available in STB.  It is a master
+// list and can be adjusted for specific distributions.  You can
+// delete the line or comment it out by used the "*" character
+// at the beginning of the line.  For example:
+// *CertificateInstaller,CertInstaller,HUB
+// If commented or deleted it won't be included in a STB server installation.
+ActivityOutcome,Activity Outcome,
+Authentication,Authentication,
+CollectDeviceSystemInfo,Collect Device System Info,
+DeviceUtility,Device Utility,
+DirtyDevice,Dirty Device,
+Fax,Fax,
+Printing,Printing,
+SafeQPullPrinting,SafeQ Pull Printing,
+ScanToEmail,Scan To Email,
+ScanToFolder,Scan To Folder,
+ScanToSafeQ,ScanToSafeQ,

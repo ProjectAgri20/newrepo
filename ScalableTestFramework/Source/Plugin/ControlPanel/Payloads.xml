@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Options>
+  <Function>
+    <Name>SetDuplexSettings</Name>
+    <Parameter>
+      <ParameterName>State</ParameterName>
+      <Value>On</Value>
+    </Parameter>
+  </Function>
+  <Function>
+    <Name>SetAlarmVolume</Name>
+    <Parameter>
+      <ParameterName>Level</ParameterName>
+      <Value>Off</Value>
+    </Parameter>
+  </Function>  
+  <Function>
+    <Name>SetRingVolume</Name>
+    <Parameter>
+      <ParameterName>Level</ParameterName>
+      <Value>Off</Value>
+    </Parameter>
+  </Function>
+  <Function>
+    <Name>SetTraySettingsForCopy</Name>
+    <Parameter>
+      <ParameterName>Setting</ParameterName>
+      <Value>Tray 1</Value>
+    </Parameter>
+  </Function>
+  <Function>
+    <Name>SetTraySettingsForPlugandPrint</Name>
+    <Parameter>
+      <ParameterName>Setting</ParameterName>
+      <Value>Tray 2</Value>
+    </Parameter>
+  </Function>
+	 <Function>
+    <Name>CheckScanFileTypeAndPaperSize</Name>
+	<Parameter>
+      <ParameterName>NetworkFolderName</ParameterName>
+      <Value></Value>
+    </Parameter>
+    <Parameter>
+      <ParameterName>ScanOutputFileType</ParameterName>
+      <Value></Value>
+    </Parameter>
+	<Parameter>
+      <ParameterName>scanPaperSize</ParameterName>
+      <Value>Automatic</Value>
+    </Parameter>	
+  </Function>
+<Function>
+    <Name>CheckPassword</Name>
+    <Parameter>
+      <ParameterName>Password</ParameterName>
+      <Value></Value>
+    </Parameter>
+  </Function>
+  <Function>
+    <Name>ValidateDefaultPaperSizeAndType</Name>
+    <Parameter>
+      <ParameterName>defaultPaperSize</ParameterName>
+      <Value></Value>
+    </Parameter>
+	<Parameter>
+      <ParameterName>defaultPaperType</ParameterName>
+      <Value></Value>
+    </Parameter>
+  </Function>
+  <Function>
+	<Name>ValidateLowCartridgeThreshold</Name>
+	<Parameter>
+      <ParameterName>cyan</ParameterName>
+      <Value>10</Value>
+    </Parameter>
+	 <Parameter>
+      <ParameterName>magenta</ParameterName>
+      <Value>10</Value>
+    </Parameter>
+	 <Parameter>
+      <ParameterName>yellow</ParameterName>
+      <Value>10</Value>
+    </Parameter>
+	<Parameter>
+      <ParameterName>black</ParameterName>
+      <Value>10</Value>
+    </Parameter>
+</Function>
+<Function>
+    <Name>RestartDevice</Name>
+  </Function>
+  <Function>
+    <Name>HPACLoginwithPICAuthentication</Name>
+  </Function>
+  <Function>
+    <Name>HPACSignInWithPICAuthentication</Name>
+  </Function>
+  <Function>
+    <Name>SafecomLoginwithPicAuthentication</Name>
+ 	<Parameter>
+      <ParameterName>ewsPassword</ParameterName>
+      <Value>admin</Value>
+    </Parameter>
+    <Parameter>
+      <ParameterName>pin</ParameterName>
+      <Value>1234</Value>
+    </Parameter>
+  </Function>
+  
+  <Function>
+  <Name>EmailAppLoginWithSafeComWindowsAuthentication</Name> 
+  </Function>
+  
+	<Function>
+	<Name>EmailAppLoginWithSafeComPicAuthentication</Name> 
+	</Function>
+	
+	<Function>
+	<Name>SendEmail</Name> 
+	<Parameter>
+		<ParameterName>ToAddress</ParameterName>
+		<Value>admin</Value>
+    </Parameter>
+	<Parameter>
+		<ParameterName>CcAddress</ParameterName>
+		<Value>1234</Value>
+    </Parameter>
+	<Parameter>
+		<ParameterName>Subject</ParameterName>
+		<Value>1234</Value>
+    </Parameter>
+	<Parameter>
+		<ParameterName>FileName</ParameterName>
+		<Value>1234</Value>
+    </Parameter>
+	<Parameter>
+		<ParameterName>Message</ParameterName>
+		<Value>1234</Value>
+    </Parameter>
+	<Parameter>
+		<ParameterName>BccAddress</ParameterName>
+		<Value>1234</Value>
+    </Parameter>
+    </Function>
+	
+	<Function>
+	<Name>FaxAppLoginWithSafeComWindowsAuthentication</Name>
+	</Function>
+	
+	<Function>
+	<Name>FaxAppLoginWithSafeComPicAuthentication</Name>
+	</Function>
+	
+	<Function>
+	<Name>SendFax</Name>
+	<Parameter>
+		<ParameterName>Destination fax no</ParameterName>
+		<Value>1234566</Value>
+    </Parameter>
+	</Function>
+	<Function>
+	<Name>SnfAppLoginWithSafeComWindowsAuthentication</Name>
+	</Function>
+	
+	<Function>
+	<Name>SnfAppLoginWithSafeComPicAuthentication</Name>
+	</Function>
+	<Function>
+	<Name>SendSnf</Name>
+	<Parameter>
+		<ParameterName>Destination Folder</ParameterName>
+		<Value></Value>
+    </Parameter> 
+	<Parameter>
+		<ParameterName>Network UserName</ParameterName>
+		<Value></Value>
+    </Parameter> 
+	<Parameter>
+		<ParameterName>Network Password</ParameterName>
+		<Value></Value>
+    </Parameter> 
+	<Parameter>
+		<ParameterName>Network Domain</ParameterName>
+		<Value></Value>
+    </Parameter> 
+	</Function>
+	
+  
+  <Function>
+    <Name>SignOut</Name>
+   <Parameter>
+      <ParameterName>UserName</ParameterName>
+      <Value>admin</Value>
+    </Parameter>
+<Parameter>
+      <ParameterName>Password</ParameterName>
+      <Value>admin</Value>
+    </Parameter>
+  </Function>
+
+<Function>
+  <Name>CancelPrintJob</Name> 
+  </Function>
+
+<Function>
+    <Name>WindowsAuthenticationforCopyApp</Name>
+<Parameter>
+      <ParameterName>Password</ParameterName>
+      <Value>admin</Value>
+    </Parameter>
+  </Function>
+
+<Function>
+    <Name>LdapAuthenticationforCopyApp</Name>
+<Parameter>
+      <ParameterName>Password</ParameterName>
+      <Value>admin</Value>
+    </Parameter>
+  </Function>
+  <Function>
+    <Name>CopyAppLoginWithHPACPicAuthentication</Name>
+  </Function>
+  
+  <Function>
+    <Name>CopyAppLoginWithHPACWindowsAuthentication</Name>
+  </Function>
+  
+  <Function>
+    <Name>CopyAppLoginWithSafeComPicAuthentication</Name>
+  </Function>
+  
+  <Function>
+    <Name>CopyAppLoginWithSafeComWindowsAuthentication</Name>
+  </Function>
+  
+  <Function>
+    <Name>PerformCopyJob</Name>
+	<Parameter>
+      <ParameterName>Number of Copies</ParameterName>
+      <Value>1</Value>
+	</Parameter>
+	<Parameter>
+	  <ParameterName>Color Mode (color/monochrome)"</ParameterName>
+      <Value></Value>
+    </Parameter>
+  </Function>
+</Options>

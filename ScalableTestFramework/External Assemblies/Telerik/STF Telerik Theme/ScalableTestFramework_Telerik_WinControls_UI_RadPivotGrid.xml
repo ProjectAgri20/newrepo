@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ScalableTestFramework" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="ControlBorderDark,WhiteFill,DefaultForeColor">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadPivotGridElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PivotGridGroupBorder,PivotGridGroupFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PivotGroupElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteFill,PivotGridCellBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PivotCellElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="GridRowHoveredFill,GridRowHoveredBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PivotCellElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="GridRowSelectedFill,GridRowSelectedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PivotCellElement.IsSelected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PivotGridCellBorder,PivotGridGrandTotalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PivotCellElement.GrandTotalRow" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PivotGridCellBorder,PivotGridGrandTotalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PivotCellElement.GrandTotalColumn" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PivotGridCellBorder,GridCellCurrentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PivotCellElement.SubTotalRow" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PivotGridCellBorder,GridCellCurrentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PivotCellElement.SubTotalColumn" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PivotGridGroupFill,PivotGridAggregateDescriptorsBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.PivotAggregateDescriptorContainer" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PivotGridGroupFill,TransparentBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.PivotColumnDescriptorContainer" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PivotGridGroupFill,PivotGridRowDescriptorsBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.PivotRowDescriptorContainer" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PivotGridGroupFill,PivotGridFilterDescriptorsBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.PivotFilterDescriptorContainer" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="GridGroupFieldElementFill,GridGroupFieldElementBorder,Padding(2;2;2;2),RoundRectShapeAll4">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PivotAggregateDescriptorElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PivotAggregateDescriptorElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PivotAggregateDescriptorElement.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="GridGroupFieldElementFill,GridGroupFieldElementBorder,Padding(2;2;2;2),RoundRectShapeAll4">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PivotGroupDescriptorElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PivotGroupDescriptorElement.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PivotGroupDescriptorElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="GridGroupFieldElementFill,GridGroupFieldElementBorder,Padding(2;2;2;2),RoundRectShapeAll4">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PivotFilterDescriptorElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PivotFilterDescriptorElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CommandBarButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PivotFilterDescriptorElement.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="GridFilterImage,Padding(2;2;2;2),TransparentBorder,TransparentFill,RoundRectShapeAll2,Margin(1;0;0;0)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PivotFilterFunctionButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverFill,ButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PivotFilterFunctionButton.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedFill,ButtonPressedBorder,Margin(1;0;0;0)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PivotFilterFunctionButton.IsFilterMenuShown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.SignStyle" Value="Image" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.SignImage" Value="Qk3aAgAAAAAAADYAAAAoAAAADQAAAA0AAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAxMTE//Hx8f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKWlpf+mpqb/6enp/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAClpaX/6Ojo/5mZmf/h4eH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAApaWl//z8/P/q6ur/jo6O/9fX1/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKWlpf/8/Pz//Pz8/+Tk5P+AgID/6+vr/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAClpaX//Pz8/+np6f+Ojo7/19fX/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAApaWl/+fn5/+ZmZn/4eHh/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKWlpf+mpqb/6enp/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADExMT/8fHx/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ExpanderItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.SignStyle" Value="Image" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.SignImage" Value="Qk3aAgAAAAAAADYAAAAoAAAADQAAAA0AAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIiIiP8mJib/JiYm/yYmJv8mJib/hoaG/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC7u7v/Kioq/1hYWP9ZWVn/WVlZ/yYmJv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALu7u/8qKir/WFhY/1lZWf8mJib/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAu7u7/yoqKv9YWFj/JiYm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC7u7v/Kioq/yYmJv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL29vf+IiIj/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.DrawSignFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.DrawSignBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawText" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ExpanderItem.IsExpanded" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Margin(1;0;0;0)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PivotFilterFunctionButton.IsFilterApplied" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadPivotGrid" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadPivotGridElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

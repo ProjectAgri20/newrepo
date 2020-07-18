@@ -1,0 +1,41 @@
+This file lists the CA warnings that are being ignored/suppressed in the framework and why.
+
+CA1014: Mark assemblies with CSLCompliantAttribute
+This code is not intended to be referenced by languages other than C#, so there isn't a need for strict CLR compliance.
+
+CA1020: Avoid namespaces with few types
+The STF is a growing library, and may contain some namespaces that don't contain many classes yet.
+
+CA1024: Use properties where appropriate
+This is a reminder to use C# properties instead of Get() and Set() methods, but we don't really need the reminder and suppressing it everywhere is annoying.
+
+CA1026: Default parameters should not be used
+This is a CLR-compliance rule.  This code is not intended to be used outside C#.
+
+CA2210: Assemblies should have valid strong names
+Because this is an internal automation tool, and is not installed in the GAC, there isn't a concern about assemblies being tampered with, etc.
+
+CA1300: Specify MessageBoxOptions
+CA1303: Do not pass literals as localized parameters
+CA1308: Normalize strings to uppercase
+This tool is not intended to be translated into other languages, and most of the literal strings used in the code are meant for debugging purposes.
+
+CA1700: Do not name enum values 'Reserved'
+There are several "reservation" systems in the STF that make this a perfectly reasonable enum value.
+
+CA1701: Resource string compound words should be cased correctly
+CA1703: Resource strings should be spelled correctly
+The resource strings in the library are frequently used to store remote access usernames, filenames of external resources, and other things that may not be "spelled" correctly.
+
+CA1716: Identifiers should not match keywords
+This is intended to make it easier to translate code into other CLR languages - which is not something we intend to do.
+
+CA1811: Avoid uncalled private code
+CA1812: Avoid uninstantiated internal classes
+The STF frequently uses reflection, which causes false positives with these rules.
+
+CA1814: Prefer jagged arrays over multidimensional
+The only time STF uses arrays instead of generic collections is when working with an external tool that requires it, in which case jagged arrays probably won't be accepted.
+
+CA2100: Review SQL queries for security vulnerabilities
+Because this is an internal automation too, there isn't a concern about SQL injections, etc.

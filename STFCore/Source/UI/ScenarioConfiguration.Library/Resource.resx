@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActiveDirectoryHelp" xml:space="preserve">
+    <value>You may assign Active Directory group membership to this worker definition.  At runtime all accounts assigned to run under this worker profile will be added to the defined Active Directory groups.  When the test completes, the assignments will be removed.</value>
+  </data>
+  <data name="CountBasedHelp" xml:space="preserve">
+    <value>This option will run the full set of activities listed below a specified number of times. One iteration includes all activities in the set.  So, for example, if there are 4 activities listed and the count is 5, all 4 activities will execute 5 times according to the execution order for a total run of 20 activities.</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="HelpDocument" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\HelpDocument.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ImportWelcome" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ImportWelcome.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="MachineAssignmentIncrease" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\MachineAssignmentIncrease.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="PluginLoadErrorMessage" xml:space="preserve">
+    <value>Unable to load plugin for Activity Type: {0}.
+Plugins must exist in the Plugin folder AND in Activity Plugin References to load correctly.</value>
+  </data>
+  <data name="RateBasedHelp" xml:space="preserve">
+    <value>This option will run the full set of activities listed below a specified number of times within the defined time period.  One iteration includes all activities in the list and the rate will be adjusted to allow full completion of each activity in the set.  
+Note: Pacing is calculated using historical run rates. If you are executing multiple activities it may take a few iterations for the proper pacing to be established.</value>
+  </data>
+  <data name="ScenarioImportComplete" xml:space="preserve">
+    <value>The Scenario '{0}' was successfully imported. Edit the Scenario and verify that the configuration is as you expected.  Items such as Platform for OfficeWorkers may need to be adjusted.</value>
+  </data>
+  <data name="ScheduledHelp" xml:space="preserve">
+    <value>This option will run the set of activities listed below over a sequence of active/idle periods based on time as defined by the configuration. Click the link to configure the scheduled execution cycle.</value>
+  </data>
+  <data name="SetPacedHelp" xml:space="preserve">
+    <value>This option will run activities for the given duration at given intervals. If the activity cannot be performed at a given time it will be executed at the next given interval time instead of the next available time.</value>
+  </data>
+  <data name="TimeBasedHelp" xml:space="preserve">
+    <value>This option will continue to run the set of activities listed below according to the execution order over the defined period of time.  When the time frame is met, the execution will stop, which means it is possible that a partial execution of the activity set may occur.</value>
+  </data>
+  <data name="UserPoolConfigHelp" xml:space="preserve">
+    <value>Add Virtual Worker Account Pools from the Administration menu - Virtual Worker Account Pools</value>
+  </data>
+  <data name="UserPoolHelp" xml:space="preserve">
+    <value>You may assign what User Pool this worker's Domain Accounts will come from.  Change this only if your worker needs to run as a specific user account.  This may be the case when certain solutions must have user accounts predefined and configured on the server and you choose to run the corresponding solution plugin against that server.</value>
+  </data>
+</root>

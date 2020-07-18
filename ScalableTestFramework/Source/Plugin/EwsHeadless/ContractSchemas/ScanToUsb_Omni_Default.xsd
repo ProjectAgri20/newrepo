@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ScanToUsb_Omni_Default"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xs:element name="Contract">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name"  type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="Parameters"  minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ConditionNotify" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="NotificationMethod" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="EmailAddress" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="OriginalSize" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="OriginalSides" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="TextPicture" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="ContentOrientation" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="BackgroundRemoval" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="Darkness" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="Contrast" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="Sharpness" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="ImagePreviewConfiguration" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="AutoCrop" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="EraseFrontTop" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="EraseFrontBottom" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="EraseFrontLeft" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="EraseFrontRight" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="SameWidthAllEdgesFront" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="EraseBackTop" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="EraseBackBottom" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="EraseBackLeft" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="EraseBackRight" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="SameWidthAllEdgesBack"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="FileName" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="FileNumberFormat" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="FileType"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="EncryptPDF" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="BlackTiffCompression" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="ColorTiffCompression" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="Resolution" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="OutputQuality" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="ColorPreference" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="ScanToMultipleFiles"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="NumberOfPagesForEachFile" type="xs:string" minOccurs="0" maxOccurs="1" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+  <xs:element name="ScanToUsb_Omni_Default" msdata:IsDataSet="true" >
+  <xs:complexType>
+      <xs:choice minOccurs="1" maxOccurs="1">
+        <xs:element ref="Contract" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Printers FilterType="NetworkIPV4Config">
+  
+  <Printer Type="SIRIUS" SubFilterType="IPAndDNSManual" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>  
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>  
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/IoMgmt/Adapters/Eth0/Profiles/1</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>PUT</Method>
+        <Payload>
+          lt;?xml version="1.0" encoding="UTF-8"?gt;lt;!--  THIS DATA SUBJECT TO DISCLAIMER(S)INCLUDED WITH THE PRODUCT OF ORIGIN. --gt;lt;io:Profile xmlns:io="http://www.hp.com/schemas/imaging/con/ledm/iomgmt/2008/11/30" xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/" xmlns:wifi="http://www.hp.com/schemas/imaging/con/wifi/2009/06/26" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="     http://www.hp.com/schemas/imaging/con/ledm/iomgmt/2008/11/30 ../../schemas/IoMgmt.xsd     http://www.hp.com/schemas/imaging/con/dictionaries/1.0/ ../../schemas/dd/DataDictionaryMasterLEDM.xsd"gt;lt;dd:IsSelectedgt;truelt;/dd:IsSelectedgt;lt;io:NetworkProfilegt;lt;io:IPv4Networkgt;lt;dd:IPv4gt;enabledlt;/dd:IPv4gt;lt;dd:IPAddressgt;{IPAddress}lt;/dd:IPAddressgt;lt;dd:SubnetMaskgt;{SubnetMask}lt;/dd:SubnetMaskgt;lt;dd:DefaultGatewaygt;{DefaultGateway}lt;/dd:DefaultGatewaygt;lt;dd:IPv4AutoAssignmentPrioritygt;lt;dd:ConfigMethodgt;{ConfigMethod}lt;/dd:ConfigMethodgt;lt;/dd:IPv4AutoAssignmentPrioritygt;lt;io:DNSConfigMethodgt;{DNSConfigMethod}lt;/io:DNSConfigMethodgt;lt;dd:DNSServerIPAddressgt;{DNSServerIPAddress}lt;/dd:DNSServerIPAddressgt;lt;dd:SecondaryDNSServerIPAddressgt;{SecondaryDNSServerIPAddress}lt;/dd:SecondaryDNSServerIPAddressgt;lt;/io:IPv4Networkgt;lt;/io:NetworkProfilegt;lt;/io:Profilegt;
+        </Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+          <Header Order="3">
+            <HeaderName>X-Requested-With</HeaderName>
+            <HeaderValue>XMLHttpRequest</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="SIRIUS" SubFilterType="IPAndDNSAuto" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/IoMgmt/Adapters/Eth0/Profiles/1</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>PUT</Method>
+        <Payload>lt;?xml version="1.0" encoding="UTF-8"?gt;lt;!--  THIS DATA SUBJECT TO DISCLAIMER(S)INCLUDED WITH THE PRODUCT OF ORIGIN. --gt;lt;io:Profile xmlns:io="http://www.hp.com/schemas/imaging/con/ledm/iomgmt/2008/11/30" xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/" xmlns:wifi="http://www.hp.com/schemas/imaging/con/wifi/2009/06/26" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="     http://www.hp.com/schemas/imaging/con/ledm/iomgmt/2008/11/30 ../../schemas/IoMgmt.xsd     http://www.hp.com/schemas/imaging/con/dictionaries/1.0/ ../../schemas/dd/DataDictionaryMasterLEDM.xsd"gt;lt;dd:IsSelectedgt;truelt;/dd:IsSelectedgt;lt;io:NetworkProfilegt;lt;io:IPv4Networkgt;lt;dd:IPv4gt;enabledlt;/dd:IPv4gt;lt;dd:IPv4AutoAssignmentPrioritygt;lt;dd:ConfigMethodgt;{ConfigMethod}lt;/dd:ConfigMethodgt;lt;/dd:IPv4AutoAssignmentPrioritygt;lt;io:DNSConfigMethodgt;{DNSConfigMethod}lt;/io:DNSConfigMethodgt;lt;/io:IPv4Networkgt;lt;/io:NetworkProfilegt;lt;/io:Profilegt;</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+          <Header Order="3">
+            <HeaderName>X-Requested-With</HeaderName>
+            <HeaderValue>XMLHttpRequest</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="SIRIUS" SubFilterType="IPAutoAndDNSManual" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/IoMgmt/Adapters/Eth0/Profiles/Active</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>PUT</Method>
+        <Payload>
+          lt;?xml version="1.0" encoding="UTF-8"?gt;lt;!--  THIS DATA SUBJECT TO DISCLAIMER(S)INCLUDED WITH THE PRODUCT OF ORIGIN. --gt;lt;io:Profile xmlns:io="http://www.hp.com/schemas/imaging/con/ledm/iomgmt/2008/11/30" xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/" xmlns:wifi="http://www.hp.com/schemas/imaging/con/wifi/2009/06/26" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="     http://www.hp.com/schemas/imaging/con/ledm/iomgmt/2008/11/30 ../../schemas/IoMgmt.xsd     http://www.hp.com/schemas/imaging/con/dictionaries/1.0/ ../../schemas/dd/DataDictionaryMasterLEDM.xsd"gt;lt;io:NetworkProfilegt;lt;io:IPv4Networkgt;lt;dd:IPv4AutoAssignmentPrioritygt;lt;dd:ConfigMethodgt;{ConfigMethod}lt;/dd:ConfigMethodgt;lt;/dd:IPv4AutoAssignmentPrioritygt;lt;io:DNSConfigMethodgt;{DNSConfigMethod}lt;/io:DNSConfigMethodgt;lt;dd:DNSServerIPAddressgt;{DNSServerIPAddress}lt;/dd:DNSServerIPAddressgt;lt;dd:SecondaryDNSServerIPAddressgt;{SecondaryDNSServerIPAddress}lt;/dd:SecondaryDNSServerIPAddressgt;lt;/io:IPv4Networkgt;lt;/io:NetworkProfilegt;lt;/io:Profilegt;
+        </Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+          <Header Order="3">
+            <HeaderName>X-Requested-With</HeaderName>
+            <HeaderValue>XMLHttpRequest</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+
+  <Printer Type="PHOENIX" SubFilterType="Manual" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>http://{0}/hp/device/set_config_IP.html/config</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>preferedMethodSelection={preferedMethodSelection}amp;IPAddr={IPAddr}amp;NetworkMask=-1024amp;Gateway={Gateway}amp;Apply=Applyamp;IPv4Enabled=1amp;requiredField=*+required+fieldamp;invalidEntryStr=Entry+is+invalid.amp;areYouSureStr=Are+you+sure+you+want+to+change+this+setting%3Famp;DHCP_enabled=yesamp;BOOTP_enabled=yesamp;AUTOIP_enabled=yesamp;newNetworkMask={newNetworkMask}amp;contactAdminStr=Contact+your+IT+administrator+if+you+need+assistance.</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="PHOENIX" SubFilterType="DHCP" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>http://{0}/hp/device/set_config_IP.html/config</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>preferedMethodSelection={preferedMethodSelection}amp;Apply=Applyamp;IPv4Enabled=1amp;requiredField=*+required+fieldamp;invalidEntryStr=Entry+is+invalid.amp;areYouSureStr=Are+you+sure+you+want+to+change+this+setting%3Famp;DHCP_enabled=yesamp;BOOTP_enabled=yesamp;AUTOIP_enabled=yesamp;newNetworkMask={newNetworkMask}amp;contactAdminStr=Contact+your+IT+administrator+if+you+need+assistance.</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip, deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>AcceptLanguage</HeaderName>
+            <HeaderValue>en-us</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+
+</Printers>
+
+
+

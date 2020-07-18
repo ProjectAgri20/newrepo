@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Printers FilterType="EnableTestService">
+  <Printer Type="SIRIUS" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="Yes" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/TestService/Config</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>PUT</Method>
+        <Payload>
+          lt;?xml version="1.0" encoding="UTF-8"?gt;
+          lt;test:TestServiceConfig xsi:schemaLocation="http://www.hp.com/schemas/imaging/con/ledm/testservice/2011/11/28 ../../schemas/TestService.xsd" xmlns:test="http://www.hp.com/schemas/imaging/con/ledm/testservice/2011/11/28" xmlns:xsi=  "http://www.w3.org/2001/XMLSchema-instance"gt;
+          lt;test:Stategt;enabledlt;/test:Stategt;
+          lt;/test:TestServiceConfiggt;
+        </Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>Accept-Encoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>X-P2P-PeerDist</HeaderName>
+            <HeaderValue>Version=1.1</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  
+</Printers>

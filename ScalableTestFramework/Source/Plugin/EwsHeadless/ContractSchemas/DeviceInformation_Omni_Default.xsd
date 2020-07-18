@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DeviceInformation_Jedi_Default" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Contract" msprop:Generator_TableClassName="ContractDataTable" msprop:Generator_TableVarName="tableContract" msprop:Generator_RowChangedName="ContractRowChanged" msprop:Generator_TablePropName="Contract" msprop:Generator_RowDeletingName="ContractRowDeleting" msprop:Generator_RowChangingName="ContractRowChanging" msprop:Generator_RowEvHandlerName="ContractRowChangeEventHandler" msprop:Generator_RowDeletedName="ContractRowDeleted" msprop:Generator_RowClassName="ContractRow" msprop:Generator_UserTableName="Contract" msprop:Generator_RowEvArgName="ContractRowChangeEvent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+        <xs:element name="Parameters" msprop:Generator_TableClassName="ParametersDataTable" msprop:Generator_TableVarName="tableParameters" msprop:Generator_RowChangedName="ParametersRowChanged" msprop:Generator_TablePropName="Parameters" msprop:Generator_RowDeletingName="ParametersRowDeleting" msprop:Generator_RowChangingName="ParametersRowChanging" msprop:Generator_RowEvHandlerName="ParametersRowChangeEventHandler" msprop:Generator_RowDeletedName="ParametersRowDeleted" msprop:Generator_RowClassName="ParametersRow" msprop:Generator_UserTableName="Parameters" msprop:Generator_RowEvArgName="ParametersRowChangeEvent" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DeviceName" msprop:Generator_ColumnVarNameInTable="columnDeviceName" msprop:Generator_ColumnPropNameInRow="DeviceName" msprop:Generator_ColumnPropNameInTable="DeviceNameColumn" msprop:Generator_UserColumnName="DeviceName" type="xs:string" />
+              <xs:element name="DeviceLocation" msprop:Generator_ColumnVarNameInTable="columnDeviceLocation" msprop:Generator_ColumnPropNameInRow="DeviceLocation" msprop:Generator_ColumnPropNameInTable="DeviceLocationColumn" msprop:Generator_UserColumnName="DeviceLocation" type="xs:string" minOccurs="0" />
+              <xs:element name="AssetNumber" msprop:Generator_ColumnVarNameInTable="columnAssetNumber" msprop:Generator_ColumnPropNameInRow="AssetNumber" msprop:Generator_ColumnPropNameInTable="AssetNumberColumn" msprop:Generator_UserColumnName="AssetNumber" type="xs:string" />
+              <xs:element name="CompanyName" msprop:Generator_ColumnVarNameInTable="columnCompanyName" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn" msprop:Generator_UserColumnName="CompanyName" type="xs:string" />
+              <xs:element name="ContactPerson" msprop:Generator_ColumnVarNameInTable="columnContactPerson" msprop:Generator_ColumnPropNameInRow="ContactPerson" msprop:Generator_ColumnPropNameInTable="ContactPersonColumn" msprop:Generator_UserColumnName="ContactPerson" type="xs:string" />
+            </xs:sequence>
+            <xs:attribute name="Contract_Id" msprop:Generator_ColumnVarNameInTable="columnContract_Id" msprop:Generator_ColumnPropNameInRow="Contract_Id" msprop:Generator_ColumnPropNameInTable="Contract_IdColumn" msprop:Generator_UserColumnName="Contract_Id" type="xs:int" use="prohibited" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="Contract_Id" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnContract_Id" msprop:Generator_ColumnPropNameInRow="Contract_Id" msprop:Generator_ColumnPropNameInTable="Contract_IdColumn" msprop:Generator_UserColumnName="Contract_Id" type="xs:int" msdata:AllowDBNull="false" use="prohibited" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeviceInformation_Jedi_Default" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DeviceInformation_Jedi_Default" msprop:Generator_UserDSName="DeviceInformation_Jedi_Default">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Contract" />
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//Contract" />
+      <xs:field xpath="@Contract_Id" />
+    </xs:unique>
+    <xs:keyref name="Contract_Parameters" refer="Constraint1" msdata:IsNested="true" msprop:rel_Generator_UserChildTable="Parameters" msprop:rel_Generator_ChildPropName="GetParametersRows" msprop:rel_Generator_UserRelationName="Contract_Parameters" msprop:rel_Generator_RelationVarName="relationContract_Parameters" msprop:rel_Generator_UserParentTable="Contract" msprop:rel_Generator_ParentPropName="ContractRow">
+      <xs:selector xpath=".//Parameters" />
+      <xs:field xpath="@Contract_Id" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

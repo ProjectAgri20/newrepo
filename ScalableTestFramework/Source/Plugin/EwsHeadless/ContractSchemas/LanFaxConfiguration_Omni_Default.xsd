@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LanFaxConfiguration_Omni_Default" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+     <xs:element name="Contract" >
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="Parameters"  minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+					<xs:element name="SharingMethod" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="FTPServerAddress" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="FTPServerPort"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="FTPFolderPath"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="FtpUsername"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="FtpPassword"  type="xs:string" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="ThirdPartyLanFaxProduct"  type="xs:string" minOccurs="0" maxOccurs="1" />
+					<xs:element name="LanFaxFileFormat" type="xs:string" minOccurs="0"  maxOccurs="1"/>
+					<xs:element name="MaxRetry" type="xs:string" minOccurs="0" maxOccurs="1" />
+					<xs:element name="RetryInterval"  type="xs:string" minOccurs="0" maxOccurs="1" />
+					<xs:element name="ErrorCorrection"  type="xs:string" minOccurs="0" maxOccurs="1" />
+					<xs:element name="CoverPage"  type="xs:string" minOccurs="0" maxOccurs="1" />
+					<xs:element name="UsernameMetadata"  type="xs:string" minOccurs="0" maxOccurs="1" />
+					<xs:element name="FaxBillingCodeEnable"  type="xs:string" minOccurs="0" maxOccurs="1" />
+					<xs:element name="FaxBillingCodeDefault"  type="xs:string" minOccurs="0" maxOccurs="1" />
+					<xs:element name="FaxBillingCodeMinimumLength"  type="xs:string" minOccurs="0" maxOccurs="1" />
+					<xs:element name="FaxBillingCodeAllowUsersEdit"  type="xs:string" minOccurs="0" maxOccurs="1" />
+					<xs:element name="MinLengthBackup"  type="xs:string" minOccurs="0" maxOccurs="1" />
+					<xs:element name="UncPath"  type="xs:string" minOccurs="0" maxOccurs="1" />
+					<xs:element name="Domain"  type="xs:string" minOccurs="0" maxOccurs="1" />
+					<xs:element name="Username"  type="xs:string" minOccurs="0" maxOccurs="1" />
+					<xs:element name="Password"  type="xs:string" minOccurs="0" maxOccurs="1" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+	<xs:element name="LanFaxConfiguration_Omni_Default" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+	<xs:complexType>
+      <xs:choice minOccurs="1" maxOccurs="1">
+        <xs:element ref="Contract" />
+      </xs:choice>
+    </xs:complexType>
+	</xs:element>
+</xs:schema>

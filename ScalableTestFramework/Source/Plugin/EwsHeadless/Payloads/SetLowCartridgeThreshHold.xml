@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Printers FilterType="SetLowCartridgeThreshHold">
+  
+  <Printer Type="PHOENIX" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>  
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>  
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>http://{0}/hp/device/set_config_systemSetup.html/config</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>JamRecovery=EWS_AUTOamp;AutoContinue=EWS_OFFamp;ConnectionTimeout=120amp;LowThresholdBlack={LowThresholdBlack}amp;LowThresholdCyan={LowThresholdCyan}amp;LowThresholdMagenta={LowThresholdMagenta}amp;LowThresholdYellow={LowThresholdYellow}amp;StoreUsageData=EWS_ONamp;DeviceLanguage=1amp;Apply=Apply</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  <Printer Type="PHOENIX" SubFilterType="" Default="">
+    <ModelNames>
+      <ModelName>HP LaserJet MFP M426fdw</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>20150204_0518</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/hp/device/set_config_suppliesSettings.html/config</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>POST</Method>
+        <Payload>LowThresholdBlack={LowThresholdBlack}amp;LowThresholdCyan={LowThresholdCyan}amp;LowThresholdMagenta={LowThresholdMagenta}amp;LowThresholdYellow={LowThresholdYellow}amp;StoreUsageData=EWS_ONamp;CartridgePolicy=EWS_OFFamp;CartridgeProtection=EWS_OFFamp;Apply=Applyamp;invalidEntry=Entry+is+invalid.</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>Pragma</HeaderName>
+            <HeaderValue>no-cache</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+
+  <Printer Type="SIRIUS" SubFilterType="" Default="Yes">
+    <ModelNames>
+      <ModelName>Default</ModelName>
+    </ModelNames>
+    <FirmwareVersions>
+      <FirmwareVersion>Default</FirmwareVersion>
+    </FirmwareVersions>
+    <Requests>
+      <Request Order="1" sessionID="" Viewstate="" WizardID="" Hide="">
+        <URL>https://{0}/DevMgmt/ConsumableConfigDyn.xml</URL>
+        <WizardIDURL></WizardIDURL>
+        <ViewstateURL></ViewstateURL>
+        <HideURL></HideURL>
+        <Method>PUT</Method>
+        <Payload>lt;ccdyn:ConsumableConfigDyn xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/" xmlns:dd2="http://www.hp.com/schemas/imaging/con/dictionaries/2008/10/10" xmlns:ccdyn="http://www.hp.com/schemas/imaging/con/ledm/consumableconfigdyn/2007/11/19" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.hp.com/schemas/imaging/con/ledm/consumableconfigdyn/2007/11/19 ../schemas/ConsumableConfigDyn.xsd http://www.hp.com/schemas/imaging/con/dictionaries/1.0/ ../schemas/dd/DataDictionaryMasterLEDM.xsd"gt;lt;ccdyn:ConsumableInfogt;lt;dd:ConsumableLabelCodegt;Mlt;/dd:ConsumableLabelCodegt;lt;dd:ConsumableLowThresholdgt;{LowThresholdMagenta}lt;/dd:ConsumableLowThresholdgt;lt;/ccdyn:ConsumableInfogt;lt;ccdyn:ConsumableInfogt;lt;dd:ConsumableLabelCodegt;Clt;/dd:ConsumableLabelCodegt;lt;dd:ConsumableLowThresholdgt;{LowThresholdCyan}lt;/dd:ConsumableLowThresholdgt;lt;/ccdyn:ConsumableInfogt;lt;ccdyn:ConsumableInfogt;lt;dd:ConsumableLabelCodegt;Ylt;/dd:ConsumableLabelCodegt;lt;dd:ConsumableLowThresholdgt;{LowThresholdYellow}lt;/dd:ConsumableLowThresholdgt;lt;/ccdyn:ConsumableInfogt;lt;ccdyn:ConsumableInfogt;lt;dd:ConsumableLabelCodegt;Klt;/dd:ConsumableLabelCodegt;lt;dd:ConsumableLowThresholdgt;{LowThresholdBlack}lt;/dd:ConsumableLowThresholdgt;lt;/ccdyn:ConsumableInfogt;lt;/ccdyn:ConsumableConfigDyngt;</Payload>
+        <Headers>
+          <Header Order="1">
+            <HeaderName>AcceptEncoding</HeaderName>
+            <HeaderValue>gzip,deflate</HeaderValue>
+          </Header>
+          <Header Order="2">
+            <HeaderName>X-Requested-With</HeaderName>
+            <HeaderValue>XMLHttpRequest</HeaderValue>
+          </Header>
+        </Headers>
+      </Request>
+    </Requests>
+  </Printer>
+  
+</Printers>

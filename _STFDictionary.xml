@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dictionary>
+  <Words>
+    <Recognized>
+      <!--General framework terms-->
+      <Word>Appender</Word>
+      <Word>Assoc</Word>
+      <Word>Assocs</Word>
+      <Word>Autodiscover</Word>
+      <Word>Config</Word>
+      <Word>Configs</Word>
+      <Word>Perf</Word>
+      <Word>PerfMon</Word>
+      <Word>PreProcess</Word>
+      <Word>PostProcess</Word>
+      <Word>Stdout</Word>
+      <Word>Stderr</Word>
+      <Word>Util</Word>
+
+      <!--Products, solutions, etc.-->
+      <Word>DSS</Word>
+      <Word>EPR</Word>
+      <Word>EPRs</Word>
+      <Word>ePrint</Word>
+      <Word>HPAC</Word>
+      <Word>Oxp</Word>
+      <Word>Oz</Word>
+      <Word>QTP</Word>
+      <Word>SafeCom</Word>
+      <Word>Sim</Word>
+      <Word>Swiper</Word>
+
+      <!--Abbreviations-->
+      <Word>ACL</Word>
+      <Word>ADF</Word>
+      <Word>CFM</Word>
+      <Word>CPU</Word>
+      <Word>CRC</Word>
+      <Word>EWS</Word>
+      <Word>INF</Word>
+      <Word>IPC</Word>
+      <Word>NVRAM</Word>
+      <Word>OCR</Word>
+      <Word>OID</Word>
+      <Word>PDL</Word>
+      <Word>SNMP</Word>
+      <Word>VM</Word>
+      <Word>UUID</Word>
+      <Word>DHCP</Word>
+      <Word>BOOTP</Word>
+      <Word>LAA</Word>
+      <Word>LFP</Word>
+      <Word>VEP</Word>
+      <Word>TPS</Word>
+      <Word>LLMNR</Word>
+      <Word>DNS</Word>
+      <Word>EAP</Word>
+      <Word>PEAP</Word>
+      
+      <!--Time codes and units-->
+      <Word>ms</Word>
+      <Word>ss</Word>
+      <Word>mm</Word>
+      <Word>hh</Word>
+      <Word>dd</Word>
+      <Word>yy</Word>
+      <Word>yyyy</Word>
+      
+      <!--File types-->
+      <Word>xls</Word>
+      <Word>xlsx</Word>
+      <Word>xlsm</Word>
+      
+      <!--Other-->
+      <Word>Pv</Word> <!--As in IPv4-->
+      <Word>Tx</Word> <!--As in NTx86-->
+    </Recognized>
+    <Unrecognized>
+    </Unrecognized>
+    <Deprecated>
+    </Deprecated>
+    <Compound>
+      <Term CompoundAlternate ="ePrint">eprint</Term>
+      <Term CompoundAlternate="PerfMon">perfmon</Term>
+      <Term CompoundAlternate="PreProcess">preprocess</Term>
+      <Term CompoundAlternate="PostProcess">postprocess</Term>
+      <Term CompoundAlternate="SafeCom">safecom</Term>
+      <Term CompoundAlternate="SmartCard">smartcard</Term>
+      <Term CompoundAlternate="WebServer">webserver</Term>
+      <Term CompoundAlternate="WebSite">website</Term>
+      <Term CompoundAlternate="WebSites">websites</Term>
+    </Compound>
+    <DiscreteExceptions>
+      <Term>InState</Term>
+      <Term>RunTime</Term>
+      <Term>ToRun</Term>
+      <Term>UpTime</Term>
+    </DiscreteExceptions>
+  </Words>
+  <Acronyms>
+    <CasingExceptions>
+      <Acronym>STF</Acronym>
+      <Acronym>GPD</Acronym>
+      <Acronym>LAN</Acronym>
+      <Acronym>NTx</Acronym>
+      <Acronym>NTAMD</Acronym>
+      <Acronym>NVRAM</Acronym>
+      <Acronym>UPD</Acronym>
+      <Acronym>VM</Acronym>
+      <Acronym>WER</Acronym>
+      <Acronym>CTC</Acronym>
+    </CasingExceptions>
+  </Acronyms>
+</Dictionary>

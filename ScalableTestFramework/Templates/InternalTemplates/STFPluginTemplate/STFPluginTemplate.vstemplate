@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>STF Plugin Template</Name>
+    <Description>Create the initial set of files for an STF plugin project.</Description>
+    <Icon>STF_Icon.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>19714f83-e1b9-4b76-a80a-27cf6c2750a3</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>STFPluginTemplate</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true" TargetFileName="Plugin.$safeclassprefix$.csproj" >
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeclassprefix$ActivityData.cs" OpenInEditor="true">ActivityData.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeclassprefix$ConfigurationControl.cs">ConfigurationControl.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeclassprefix$ConfigurationControl.Designer.cs">ConfigurationControl.Designer.cs</ProjectItem>
+      <ProjectItem TargetFileName="$safeclassprefix$ConfigurationControl.resx">ConfigurationControl.resx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeclassprefix$ExecutionControl.cs">ExecutionControl.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeclassprefix$ExecutionControl.Designer.cs">ExecutionControl.Designer.cs</ProjectItem>
+      <ProjectItem TargetFileName="$safeclassprefix$ExecutionControl.resx">ExecutionControl.resx</ProjectItem>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>STF Templates, Version=1.0.0.0, Culture=neutral, PublicKeyToken=949404569857b4e8</Assembly>
+    <FullClassName>STFTemplateWizard.WizardImplementation</FullClassName>
+  </WizardExtension>
+</VSTemplate>

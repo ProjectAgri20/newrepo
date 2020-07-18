@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ScalableTestFramework" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="Padding(4;4;4;4),StackViewItemNormalFill,PageViewStackItemBorderNormal,StackViewItemFont">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewOutlookItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StackViewBackFill,8888Padding">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadPageViewElement.ItemSpacing" Value="-1" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadPageViewElement.ItemDragHint" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIj48UGFpbnRNb2RlPlN0cmV0Y2hYWVRpbGVJbm5lcjwvUGFpbnRNb2RlPjxJbWFnZVN0cmVhbT5RazBHQlFBQUFBQUFBRFlBQUFBb0FBQUFIQUFBQUFzQUFBQUJBQ0FBQUFBQUFBQUFBQURFRGdBQXhBNEFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFQNysvbW45L2Yyei9mMzlzLzcrL21rQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBRCsvdjVwL2YzOXMvMzkvYlArL3Y1cEFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUQ5L2YyenZVOEEvNEl4QVAvOS9mMnovdjcrYVFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBRCsvdjVwL2YzOXMzUXNBUCtyUndELy9mMzlzd0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQS9mMzlzNzFQQVArclJ3RC9kQ3dBLy8zOS9iUCsvdjVwQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBRCsvdjVwL2YzOXMyY25BUCtaUUFEL3EwY0EvLzM5L2JNQUFBQUFBQUFBQUFBQUFBQUFBQUFBLy8vL0QvNysvbW45L2Yyei9mMzlzLzM5L2JQOS9mMnpxMGNBLzVsQUFQOW5Kd0QvL2YzOXMvNysvbWtBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBRCsvdjVwL2YzOXMxc2pBUCtIT0FEL21VQUEvLzM5L2JQOS9mMnovZjM5cy8zOS9iUCsvdjVwLy8vL0QvNysvbW41cEdqWjYySUEvOTVjQVAvT1ZnRC92VThBLzZ0SEFQK1pRQUQvaHpnQS8xc2pBUC85L2Yyei92NythZi8vLzNqLy8vL00vLy8velAvLy8zaisvdjVwL2YzOXMxRWVBUDk0TWdEL2h6Z0EvNWxBQVArclJ3RC92VThBLzg1V0FQL2VYQUQvODZObzJmNysvbW45L2YyejlHWUEvK3RpQVAvZVhBRC96bFlBLzcxUEFQK3JSd0QvbVVBQS80YzRBUDk0TWdEL1VSNEEvLzM5L2JQLy8vL00zbHdBLzk1Y0FQLy8vLy9NL2YzOXMwc2NBUDlyTEFEL2VESUEvNGM0QVArWlFBRC9xMGNBLzcxUEFQL09WZ0QvM2x3QS8rdGlBUC85L2Yyei92NythZm1rYU5ucllnRC8zbHdBLzg1V0FQKzlUd0QvcTBjQS81bEFBUCtIT0FEL1d5TUEvLzM5L2JQKy92NXAvLy8vZVAvLy84ei8vLy9NLy8vL2VQNysvbW45L2YyelVSNEEvM2d5QVArSE9BRC9tVUFBLzZ0SEFQKzlUd0QvemxZQS85NWNBUC96bzJqWi92NythZi8vL3cvKy92NXAvZjM5cy8zOS9iUDkvZjJ6L2YzOXM2dEhBUCtaUUFEL1p5Y0EvLzM5L2JQKy92NXBBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQS92NythZjM5L2JOYkl3RC9oemdBLzVsQUFQLzkvZjJ6L2YzOXMvMzkvYlA5L2Yyei92NythZi8vL3c4QUFBQUFBQUFBQUFBQUFBQUFBQUFBL2YzOXM3MVBBUCtyUndEL2RDd0EvLzM5L2JQKy92NXBBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFEKy92NXAvZjM5czJjbkFQK1pRQUQvcTBjQS8vMzkvYk1BQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFQMzkvYk85VHdEL2dqRUEvLzM5L2JQKy92NXBBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQVA3Ky9tbjkvZjJ6ZEN3QS82dEhBUC85L2YyekFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUQrL3Y1cC9mMzlzLzM5L2JQKy92NXBBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBL3Y3K2FmMzkvYlA5L2Yyei92NythUUFBQUFBQUFBQUFBQUFBQUFBQUFBQT08L0ltYWdlU3RyZWFtPjxNYXJnaW5zPjxBbGw+LTE8L0FsbD48Qm90dG9tPjA8L0JvdHRvbT48TGVmdD4xMjwvTGVmdD48UmlnaHQ+MTI8L1JpZ2h0PjxUb3A+MDwvVG9wPjwvTWFyZ2lucz48L1JhZEltYWdlU2hhcGU+" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewOutlookElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PageViewStackContentAreaBorder,PageViewStackContentAreaFill">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadPageViewContentAreaElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Padding(4;4;4;4),StackViewItemHoverBorder,StackViewItemSelectedFill,StackViewItemFont">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewOutlookItem.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StackViewItemHoverBorder,StackViewItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewOutlookItem.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StackViewItemSelectedHoverFill,StackViewItemHoverBorder,Padding(4;4;4;4)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewOutlookItem.Selected.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PageViewHeaderFill,PageViewStackContentAreaBorder,Margin(0;0;0;-1),StackViewHeaderFont,3333Padding">
+            <Selectors>
+              <XmlClassSelector ElementClass="PageViewHeader" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="OverflowItemsContainerBorder,OverflowItemsContainerFill,Margin(0;-1;0;0)">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="0, 28" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.OverflowItemsContainer" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="OverflowButtonImage,5353Padding,TransparentFill,ItemAssociatedButtonBorderNormal,RoundRectShapeAll2">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="OverflowMenuButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="OverflowItemsContainerButtonHoverFill,OverflowItemsContainerButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="OverflowMenuButton.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="OverflowItemsContainerButtonHoverFill,OverflowItemsContainerButtonHoverBorder,RoundRectShapeAll2">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="OverflowMenuButton.OverflowMenuOpened" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,ItemAssociatedButtonBorderNormal,RoundRectShapeAll2,5343Padding">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ItemAssociatedButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="OverflowItemsContainerButtonHoverFill,OverflowItemsContainerButtonHoverBorder,RoundRectShapeAll2,5343Padding">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ItemAssociatedButton.AssociatedItemSelected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="OverflowItemsContainerButtonHoverFill,OverflowItemsContainerButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ItemAssociatedButton.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="OutlookViewOverflowGripFill,OutlookViewOverflowGripBorder,OutlookViewOverflowGripImage,Margin(0;-1;0;-1)">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="0, 9" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.OutlookViewOverflowGrip" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadPageView" ElementType="Telerik.WinControls.UI.RadPageViewOutlookElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadPageViewOutlookElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<tcx:TestDefinition
+                    xmlns:tcx="http://sherman.americas.hpqcorp.net/topcat/schemas/framework"
+                    xmlns:dib="http://sherman.americas.hpqcorp.net/topcat/schemas/group/dibble"
+                    xmlns:assert="http://sherman.americas.hpqcorp.net/topcat/schemas/libraries/assert"
+		                xmlns:gui="http://sherman.americas.hpqcorp.net/topcat/schemas/tools/gui-automation"
+                    xmlns:vmps="http://sherman.americas.hpqcorp.net/topcat/schemas/tools/vmps"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xmlns:jackalope="http://sherman.americas.hpqcorp.net/topcat/schemas/components/jackalope">
+
+  <tcx:Annotation>
+    <tcx:Description>
+      Selection of printer using TopCat
+    </tcx:Description>
+    <tcx:Created tcx:Author="xxxx" tcx:Date="2016-06-02" />
+    <tcx:LastUpdated tcx:Author="xxx" tcx:Date="2016-06-02" />
+  </tcx:Annotation>
+
+  <tcx:Context>
+
+    <tcx:Properties>
+      <tcx:Property tcx:ID="BonjourServiceName">
+        <tcx:Value>xyxz</tcx:Value>
+        <tcx:Description>
+          Protocol Type
+        </tcx:Description>
+      </tcx:Property>
+      <tcx:Property tcx:ID="BonjourPath">
+        <tcx:Value>C:\Program Files\Bonjour Print Services</tcx:Value>
+        <tcx:Description>
+          Path of executable
+        </tcx:Description>
+      </tcx:Property> 
+    </tcx:Properties>
+
+    <tcx:Dibbles>
+      <tcx:Dibble tcx:ID="gui" tcx:Namespace="http://sherman.americas.hpqcorp.net/topcat/schemas/dibbles/tools/gui-automation">
+        <tcx:Assembly>${TopCatPath}\TopCat.Tools.GUIAutomation.dll</tcx:Assembly>
+      </tcx:Dibble>
+      <tcx:Dibble tcx:ID="assert" tcx:Namespace="http://sherman.americas.hpqcorp.net/topcat/schemas/dibbles/libraries/assert">
+        <tcx:Assembly>${TopCatPath}\TopCat.Libraries.Assert.dll</tcx:Assembly>
+      </tcx:Dibble>
+      <tcx:Dibble tcx:ID="vmps" tcx:Namespace="http://sherman.americas.hpqcorp.net/topcat/schemas/dibbles/tools/vmps">
+        <tcx:Assembly>${TopCatPath}\TopCat.Tools.VMPS.dll</tcx:Assembly>
+      </tcx:Dibble>
+      <tcx:Dibble tcx:ID="dib" tcx:Namespace="http://sherman.americas.hpqcorp.net/topcat/schemas/group/dibble">
+        <tcx:Assembly>${TopCatPath}\TopCat.Tools.GUIAutomation.dll</tcx:Assembly>
+      </tcx:Dibble>
+      <tcx:Dibble tcx:ID="jackalope" tcx:Namespace="http://sherman.americas.hpqcorp.net/topcat/schemas/group/dibble">
+        <tcx:Assembly>${TopCatPath}\TopCat.Components.Jackalope.dll</tcx:Assembly>
+      </tcx:Dibble>
+    </tcx:Dibbles>
+
+    <tcx:Imports>
+      <tcx:ConfigurationFile tcx:ID="InstallationPrinterList">
+        <tcx:Path>${TestPath}\InstallationPrinterList.tcc</tcx:Path>
+      </tcx:ConfigurationFile>
+      <tcx:ConfigurationFile tcx:ID="InstallationFinishScreen">
+        <tcx:Path>${TestPath}\InstallationFinishScreen.tcc</tcx:Path>
+      </tcx:ConfigurationFile>
+   </tcx:Imports>
+
+  </tcx:Context>
+  <tcx:Setup>
+    <!--enter setup activities here-->
+  </tcx:Setup>
+
+  <tcx:Tests>
+    <tcx:TestCase tcx:ID="TestCase01">
+      <tcx:Annotation>
+        <tcx:Description>
+          Open Bonjour Application
+        </tcx:Description>
+        <tcx:Created tcx:Author="xxxx" tcx:Date="2016-06-02" />
+        <tcx:LastUpdated tcx:Author="xxx" tcx:Date="2016-06-02" />
+      </tcx:Annotation>
+      <tcx:Setup>
+        <gui:Highlights.Enable />
+      </tcx:Setup>
+      <tcx:TestSteps>
+        <tcx:Execute tcx:WaitForExit="false" tcx:RunInNewShell="true">
+          <tcx:Executable>${BonjourPath}\PrinterWizard.exe</tcx:Executable>
+        </tcx:Execute>
+        <gui:Control.WaitForAvailable gui:ControlID="InstallationPrinterList.SysTabControl32Tab" gui:Timeout="10"/>
+        <gui:TreeItem.Select gui:ControlID="InstallationPrinterList.PrinterName" gui:Timeout="5"/>
+        <gui:Button.Click gui:ControlID="InstallationPrinterList.NextButton12324Button" gui:Timeout="5"/>
+        <gui:Control.WaitForAvailable gui:ControlID="InstallationFinishScreen.BonjourPrinterWWindow" gui:Timeout="10"/>
+        <gui:Button.Click gui:ControlID="InstallationFinishScreen.CloseCloseButton" gui:Timeout="30"/>
+        <tcx:Sleep tcx:Message="Waiting for 10s to close...." tcx:Seconds="10"/>
+      </tcx:TestSteps>
+
+      <tcx:Cleanup>
+        <gui:Highlights.Disable />
+      </tcx:Cleanup>
+    </tcx:TestCase>
+  </tcx:Tests>
+  <tcx:Cleanup>
+  </tcx:Cleanup>
+
+  <tcx:Publish>
+    <vmps:GatherTestResults>
+      <vmps:ResultsFile>${Environment.Temp}\test-01.xml</vmps:ResultsFile>
+    </vmps:GatherTestResults>
+    <vmps:PublishTriageBundle />
+  </tcx:Publish>
+</tcx:TestDefinition>

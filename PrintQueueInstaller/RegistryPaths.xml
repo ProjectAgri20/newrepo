@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RegistryPaths>
+  <Path Hive="LocalMachine">SOFTWARE\Microsoft\Windows NT\CurrentVersion\Print</Path>
+  <Path Hive="LocalMachine">SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Print</Path>
+  <Path Hive="LocalMachine">SYSTEM\CurrentControlSet\Control\Print</Path>
+  <Path Hive="LocalMachine">SYSTEM\ControlSet001\Control\Print</Path>
+  <Path Hive="LocalMachine">SYSTEM\ControlSet002\Control\Print</Path>
+  <Path Hive="CurrentUser">Software\Hewlett-Packard</Path>
+</RegistryPaths>

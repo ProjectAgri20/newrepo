@@ -1,0 +1,1 @@
+C:\TopCat\TopCatRuns\TopCatExe\TopCat.exe C:\TopCat\TopCatRuns\SigninPopupHandler\JetAdvantage.tcx /verbosity:Debug /property:TopCatPath,C:\TopCat\TopCatRuns\TopCatExe /property:TopCatScriptsPath,C:\TopCat\TopCatRuns\SigninPopupHandler /property:AccountId,donald.anderson@hp.com /property:AccountPassword,14CycleCross

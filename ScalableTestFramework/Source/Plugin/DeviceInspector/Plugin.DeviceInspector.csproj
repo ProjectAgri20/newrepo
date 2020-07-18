@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CF128A31-8356-4202-AD69-32000C5BF757}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HP.ScalableTest.Plugin.DeviceInspector</RootNamespace>
+    <AssemblyName>Plugin.DeviceInspector</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OutputPath>..\..\..\..\VirtualResource\Distribution\Plugin\</OutputPath>
+    <CodeAnalysisRuleSet>BasicDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DeviceAutomation-2.2, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\External Assemblies\DeviceAutomation-2.2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.WinControls, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Classes\FileSettings.cs" />
+    <Compile Include="FieldControls\ChoiceNumericControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FieldControls\ChoiceNumericControl.Designer.cs">
+      <DependentUpon>ChoiceNumericControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FieldControls\FourChoiceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FieldControls\FourChoiceControl.Designer.cs">
+      <DependentUpon>FourChoiceControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FieldControls\ThreeChoiceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FieldControls\ThreeChoiceControl.Designer.cs">
+      <DependentUpon>ThreeChoiceControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PluginValidation.cs" />
+    <Compile Include="SettingsControls\FaxDefaultControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettingsControls\FaxDefaultControl.Designer.cs">
+      <DependentUpon>FaxDefaultControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsControls\FileSettingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettingsControls\FileSettingsControl.Designer.cs">
+      <DependentUpon>FileSettingsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsControls\FolderDefaultControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettingsControls\FolderDefaultControl.Designer.cs">
+      <DependentUpon>FolderDefaultControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsControls\JobStorageDefaultControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettingsControls\JobStorageDefaultControl.Designer.cs">
+      <DependentUpon>JobStorageDefaultControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsControls\PrintDefaultControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettingsControls\PrintDefaultControl.Designer.cs">
+      <DependentUpon>PrintDefaultControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsControls\CopyDefaultControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettingsControls\CopyDefaultControl.Designer.cs">
+      <DependentUpon>CopyDefaultControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\ListValues.cs" />
+    <Compile Include="SettingsControls\ProtocolDefaultControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettingsControls\ProtocolDefaultControl.Designer.cs">
+      <DependentUpon>ProtocolDefaultControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsControls\QuickSetControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettingsControls\QuickSetControl.Designer.cs">
+      <DependentUpon>QuickSetControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsControls\QuickSetParameterData.cs" />
+    <Compile Include="SettingsControls\QuickSetTableData.cs" />
+    <Compile Include="SettingsControls\ScanSettingsUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettingsControls\ScanSettingsUserControl.Designer.cs">
+      <DependentUpon>ScanSettingsUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsControls\ScanToUsbDefaultControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettingsControls\ScanToUsbDefaultControl.Designer.cs">
+      <DependentUpon>ScanToUsbDefaultControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsData\CopyQuickSetData.cs" />
+    <Compile Include="Classes\DataPair.cs" />
+    <Compile Include="SettingsData\FaxSettingsData.cs" />
+    <Compile Include="SettingsData\FolderSettingsData.cs" />
+    <Compile Include="SettingsData\FTPQuickSetData.cs" />
+    <Compile Include="SettingsData\JobSettingsData.cs" />
+    <Compile Include="SettingsData\PrintSettingsData.cs" />
+    <Compile Include="SettingsData\CopySettingsData.cs" />
+    <Compile Include="SettingsData\EmailQuickSetData.cs" />
+    <Compile Include="Classes\AQuickSet.cs" />
+    <Compile Include="SettingsData\ProtocolSettingsData.cs" />
+    <Compile Include="SettingsData\ScanFaxQuickSetData.cs" />
+    <Compile Include="Classes\ScanSettings.cs" />
+    <Compile Include="DeviceInspectorActivityData.cs" />
+    <Compile Include="DeviceInspectorConfigurationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeviceInspectorConfigurationControl.Designer.cs">
+      <DependentUpon>DeviceInspectorConfigurationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceInspectorExecutionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeviceInspectorExecutionControl.Designer.cs">
+      <DependentUpon>DeviceInspectorExecutionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FieldControls\ChoiceComboControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FieldControls\ChoiceComboControl.Designer.cs">
+      <DependentUpon>ChoiceComboControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FieldControls\IChoiceControl.cs" />
+    <Compile Include="FieldControls\ChoiceIPControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FieldControls\ChoiceIPControl.Designer.cs">
+      <DependentUpon>ChoiceIPControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FieldControls\ChoiceTextControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FieldControls\ChoiceTextControl.Designer.cs">
+      <DependentUpon>ChoiceTextControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FieldControls\ChoiceTimePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FieldControls\ChoiceTimePicker.Designer.cs">
+      <DependentUpon>ChoiceTimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FieldControls\MultiFieldChoiceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FieldControls\MultiFieldChoiceControl.Designer.cs">
+      <DependentUpon>MultiFieldChoiceControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsControls\GeneralSettingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettingsControls\GeneralSettingsControl.Designer.cs">
+      <DependentUpon>GeneralSettingsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsData\GeneralSettingsData.cs" />
+    <Compile Include="SettingsData\IComponentData.cs" />
+    <Compile Include="SettingsControls\IGetSetComponentData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsControls\EmailDefaultControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettingsControls\EmailDefaultControl.Designer.cs">
+      <DependentUpon>EmailDefaultControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsControls\PasswordWindowsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettingsControls\PasswordWindowsControl.Designer.cs">
+      <DependentUpon>PasswordWindowsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsData\EmailSettingsData.cs" />
+    <Compile Include="SettingsData\PasswordWindowsData.cs" />
+    <Compile Include="SettingsData\QuickSetSettingsData.cs" />
+    <Compile Include="SettingsData\STNFQuickSetData.cs" />
+    <Compile Include="SettingsData\STSharePointQuickSetData.cs" />
+    <Compile Include="SettingsData\STUSBQuickSetData.cs" />
+    <Compile Include="SettingsData\STUsbSettingData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DeviceAutomation\STF.DeviceAutomation.csproj">
+      <Project>{8FA37AF9-F2B8-4E72-BFF7-580491A62832}</Project>
+      <Name>STF.DeviceAutomation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FrameworkInternal\STF.FrameworkInternal.csproj">
+      <Project>{1d38c759-e5f6-4603-bbbc-566f1276aba2}</Project>
+      <Name>STF.FrameworkInternal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\STF.Framework.csproj">
+      <Project>{b91dcc51-8664-49e3-97d0-6fcfd2918a1a}</Project>
+      <Name>STF.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utility\STF.Utility.csproj">
+      <Project>{0a02ea9d-11d5-4078-9036-385709cb365a}</Project>
+      <Name>STF.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DeviceInspectorConfigurationControl.resx">
+      <DependentUpon>DeviceInspectorConfigurationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeviceInspectorExecutionControl.resx">
+      <DependentUpon>DeviceInspectorExecutionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FieldControls\ChoiceComboControl.resx">
+      <DependentUpon>ChoiceComboControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FieldControls\ChoiceIPControl.resx">
+      <DependentUpon>ChoiceIPControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FieldControls\ChoiceTextControl.resx">
+      <DependentUpon>ChoiceTextControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FieldControls\ChoiceTimePicker.resx">
+      <DependentUpon>ChoiceTimePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FieldControls\ChoiceNumericControl.resx">
+      <DependentUpon>ChoiceNumericControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FieldControls\FourChoiceControl.resx">
+      <DependentUpon>FourChoiceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FieldControls\MultiFieldChoiceControl.resx">
+      <DependentUpon>MultiFieldChoiceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FieldControls\ThreeChoiceControl.resx">
+      <DependentUpon>ThreeChoiceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="SettingsControls\FaxDefaultControl.resx">
+      <DependentUpon>FaxDefaultControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsControls\FileSettingsControl.resx">
+      <DependentUpon>FileSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsControls\FolderDefaultControl.resx">
+      <DependentUpon>FolderDefaultControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsControls\JobStorageDefaultControl.resx">
+      <DependentUpon>JobStorageDefaultControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsControls\PrintDefaultControl.resx">
+      <DependentUpon>PrintDefaultControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsControls\CopyDefaultControl.resx">
+      <DependentUpon>CopyDefaultControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsControls\GeneralSettingsControl.resx">
+      <DependentUpon>GeneralSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsControls\EmailDefaultControl.resx">
+      <DependentUpon>EmailDefaultControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsControls\PasswordWindowsControl.resx">
+      <DependentUpon>PasswordWindowsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsControls\ProtocolDefaultControl.resx">
+      <DependentUpon>ProtocolDefaultControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsControls\QuickSetControl.resx">
+      <DependentUpon>QuickSetControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsControls\ScanSettingsUserControl.resx">
+      <DependentUpon>ScanSettingsUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsControls\ScanToUsbDefaultControl.resx">
+      <DependentUpon>ScanToUsbDefaultControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\HP.ScalableTest.Plugin.DeviceConfiguration.SettingsControls.QuickSetParameterData.datasource" />
+    <None Include="Properties\DataSources\HP.ScalableTest.Plugin.DeviceConfiguration.SettingsControls.QuickSetTableData.datasource" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <CodeAnalysisLogFile>$(IntermediateOutputPath)$(TargetFileName).CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisSucceededFile>$(IntermediateOutputPath)$(TargetFileName).lastcodeanalysissucceeded</CodeAnalysisSucceededFile>
+  </PropertyGroup>
+</Project>

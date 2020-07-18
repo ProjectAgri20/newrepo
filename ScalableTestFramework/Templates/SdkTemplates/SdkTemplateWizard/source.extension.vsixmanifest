@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="StbSdkPluginTemplateWizard.4cf50cf6-7212-436a-9f66-42d68d92b677" Version="1.1" Language="en-US" Publisher="HP Inc." />
+        <DisplayName>HP Inc. STB SDK Plugin Template</DisplayName>
+        <Description xml:space="preserve">Install files that can be used to help create a plugin for HP Inc. Scalable Test Workbench.</Description>
+        <Icon>HP_Blue_RGB_72_SM.ico</Icon>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0,17.0)" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.6,)" />
+    </Dependencies>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="SdkPluginTemplate" d:TargetPath="|SdkPluginTemplate;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+        <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" AssemblyName="|%CurrentProject%;AssemblyName|" />
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[14.0,)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+</PackageManifest>

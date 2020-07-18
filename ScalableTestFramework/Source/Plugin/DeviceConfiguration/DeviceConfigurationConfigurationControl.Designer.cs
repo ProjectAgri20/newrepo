@@ -1,0 +1,489 @@
+﻿namespace HP.ScalableTest.Plugin.DeviceConfiguration
+{
+    partial class DeviceConfigurationConfigurationControl
+    {
+        /// <summary> 
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.fieldValidator = new HP.ScalableTest.Framework.UI.FieldValidator(this.components);
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.deviceSelection_Tab = new System.Windows.Forms.TabPage();
+            this.assetSelectionControl = new HP.ScalableTest.Framework.UI.AssetSelectionControl();
+            this.TimeLanguage_Settings = new System.Windows.Forms.TabPage();
+            this.generalSettingsControl = new HP.ScalableTest.Plugin.DeviceConfiguration.GeneralSettingsControl();
+            this.NotificationsTabPage = new System.Windows.Forms.TabPage();
+            this.WarningLabel = new System.Windows.Forms.Label();
+            this.passwordWindowsControl = new HP.ScalableTest.Plugin.DeviceConfiguration.SettingsControls.PasswordWindowsControl();
+            this.enablePassword_CheckBox = new System.Windows.Forms.CheckBox();
+            this.TabbedSettingsTabControl = new System.Windows.Forms.TabControl();
+            this.emailDefaults_Tab = new System.Windows.Forms.TabPage();
+            this.emailSettingsControl = new HP.ScalableTest.Plugin.DeviceConfiguration.SettingsControls.EmailDefaultControl();
+            this.copyDefaults_Tab = new System.Windows.Forms.TabPage();
+            this.copyDefaultControl = new HP.ScalableTest.Plugin.DeviceConfiguration.SettingsControls.CopyDefaultControl();
+            this.printDefaults_Tab = new System.Windows.Forms.TabPage();
+            this.printDefaultControl = new HP.ScalableTest.Plugin.DeviceConfiguration.SettingsControls.PrintDefaultControl();
+            this.faxDefaults_Tab = new System.Windows.Forms.TabPage();
+            this.faxDefaultControl = new HP.ScalableTest.Plugin.DeviceConfiguration.SettingsControls.FaxDefaultControl();
+            this.folderDefaults_Tab = new System.Windows.Forms.TabPage();
+            this.folderDefaultControl = new HP.ScalableTest.Plugin.DeviceConfiguration.SettingsControls.FolderDefaultControl();
+            this.jobDefaults_Tab = new System.Windows.Forms.TabPage();
+            this.jobStorageDefaultControl = new HP.ScalableTest.Plugin.DeviceConfiguration.SettingsControls.JobStorageDefaultControl();
+            this.usbDefaults_Tab = new System.Windows.Forms.TabPage();
+            this.scanToUsbDefaultControl = new HP.ScalableTest.Plugin.DeviceConfiguration.SettingsControls.ScanToUsbDefaultControl();
+            this.quickSet_Tab = new System.Windows.Forms.TabPage();
+            this.quickSetControl = new HP.ScalableTest.Plugin.DeviceConfiguration.SettingsControls.QuickSetControl();
+            this.webTroubleShootingTabbedControl = new System.Windows.Forms.TabPage();
+            this.webTroubleShootingControl = new HP.ScalableTest.Plugin.DeviceConfiguration.SettingsControls.WebTroubleShootingControl();
+            this.speedDial_Tab = new System.Windows.Forms.TabPage();
+            this.speedDailControl = new HP.ScalableTest.Plugin.DeviceConfiguration.SettingsControls.SpeedDialControl();
+            this.manageTrays_Tab = new System.Windows.Forms.TabPage();
+            this.manageTraysControl = new HP.ScalableTest.Plugin.DeviceConfiguration.SettingsControls.ManageTraysControl();
+            this.hpkInstall_Tab = new System.Windows.Forms.TabPage();
+            this.hpkInstallControl = new HP.ScalableTest.Plugin.DeviceConfiguration.SettingsControls.HpkInstallControl();
+            this.protocolsDefaults_Tab = new System.Windows.Forms.TabPage();
+            this.protocolDefaultControl = new HP.ScalableTest.Plugin.DeviceConfiguration.SettingsControls.ProtocolDefaultControl();
+            this.deviceSelection_Tab.SuspendLayout();
+            this.TimeLanguage_Settings.SuspendLayout();
+            this.NotificationsTabPage.SuspendLayout();
+            this.TabbedSettingsTabControl.SuspendLayout();
+            this.emailDefaults_Tab.SuspendLayout();
+            this.copyDefaults_Tab.SuspendLayout();
+            this.printDefaults_Tab.SuspendLayout();
+            this.faxDefaults_Tab.SuspendLayout();
+            this.folderDefaults_Tab.SuspendLayout();
+            this.jobDefaults_Tab.SuspendLayout();
+            this.usbDefaults_Tab.SuspendLayout();
+            this.quickSet_Tab.SuspendLayout();
+            this.webTroubleShootingTabbedControl.SuspendLayout();
+            this.speedDial_Tab.SuspendLayout();
+            this.manageTrays_Tab.SuspendLayout();
+            this.hpkInstall_Tab.SuspendLayout();
+            this.protocolsDefaults_Tab.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // deviceSelection_Tab
+            // 
+            this.deviceSelection_Tab.Controls.Add(this.assetSelectionControl);
+            this.deviceSelection_Tab.Location = new System.Drawing.Point(4, 24);
+            this.deviceSelection_Tab.Name = "deviceSelection_Tab";
+            this.deviceSelection_Tab.Padding = new System.Windows.Forms.Padding(3);
+            this.deviceSelection_Tab.Size = new System.Drawing.Size(830, 649);
+            this.deviceSelection_Tab.TabIndex = 2;
+            this.deviceSelection_Tab.Text = "Device Selection";
+            this.deviceSelection_Tab.UseVisualStyleBackColor = true;
+            // 
+            // assetSelectionControl
+            // 
+            this.assetSelectionControl.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assetSelectionControl.Location = new System.Drawing.Point(0, 0);
+            this.assetSelectionControl.Name = "assetSelectionControl";
+            this.assetSelectionControl.Size = new System.Drawing.Size(768, 358);
+            this.assetSelectionControl.TabIndex = 0;
+            // 
+            // TimeLanguage_Settings
+            // 
+            this.TimeLanguage_Settings.BackColor = System.Drawing.SystemColors.Window;
+            this.TimeLanguage_Settings.Controls.Add(this.generalSettingsControl);
+            this.TimeLanguage_Settings.Location = new System.Drawing.Point(4, 24);
+            this.TimeLanguage_Settings.Name = "TimeLanguage_Settings";
+            this.TimeLanguage_Settings.Padding = new System.Windows.Forms.Padding(3);
+            this.TimeLanguage_Settings.Size = new System.Drawing.Size(830, 649);
+            this.TimeLanguage_Settings.TabIndex = 1;
+            this.TimeLanguage_Settings.Text = "Time/Language Settings";
+            // 
+            // generalSettingsControl
+            // 
+            this.generalSettingsControl.Location = new System.Drawing.Point(16, 18);
+            this.generalSettingsControl.Name = "generalSettingsControl";
+            this.generalSettingsControl.Size = new System.Drawing.Size(725, 481);
+            this.generalSettingsControl.TabIndex = 0;
+            // 
+            // NotificationsTabPage
+            // 
+            this.NotificationsTabPage.BackColor = System.Drawing.SystemColors.Window;
+            this.NotificationsTabPage.Controls.Add(this.WarningLabel);
+            this.NotificationsTabPage.Controls.Add(this.passwordWindowsControl);
+            this.NotificationsTabPage.Controls.Add(this.enablePassword_CheckBox);
+            this.NotificationsTabPage.Location = new System.Drawing.Point(4, 24);
+            this.NotificationsTabPage.Name = "NotificationsTabPage";
+            this.NotificationsTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.NotificationsTabPage.Size = new System.Drawing.Size(830, 649);
+            this.NotificationsTabPage.TabIndex = 0;
+            this.NotificationsTabPage.Text = "Usage Settings";
+            // 
+            // WarningLabel
+            // 
+            this.WarningLabel.AutoSize = true;
+            this.WarningLabel.ForeColor = System.Drawing.Color.Red;
+            this.WarningLabel.Location = new System.Drawing.Point(49, 20);
+            this.WarningLabel.Name = "WarningLabel";
+            this.WarningLabel.Size = new System.Drawing.Size(281, 15);
+            this.WarningLabel.TabIndex = 32;
+            this.WarningLabel.Text = "Plugin should only be used with Clean/New Devices";
+            // 
+            // passwordWindowsControl
+            // 
+            this.passwordWindowsControl.Location = new System.Drawing.Point(38, 87);
+            this.passwordWindowsControl.Name = "passwordWindowsControl";
+            this.passwordWindowsControl.Size = new System.Drawing.Size(705, 177);
+            this.passwordWindowsControl.TabIndex = 31;
+            // 
+            // enablePassword_CheckBox
+            // 
+            this.enablePassword_CheckBox.AutoSize = true;
+            this.enablePassword_CheckBox.Location = new System.Drawing.Point(52, 62);
+            this.enablePassword_CheckBox.Name = "enablePassword_CheckBox";
+            this.enablePassword_CheckBox.Size = new System.Drawing.Size(155, 19);
+            this.enablePassword_CheckBox.TabIndex = 30;
+            this.enablePassword_CheckBox.Text = "Enable Default Password";
+            this.enablePassword_CheckBox.UseVisualStyleBackColor = true;
+            // 
+            // TabbedSettingsTabControl
+            // 
+            this.TabbedSettingsTabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TabbedSettingsTabControl.Controls.Add(this.deviceSelection_Tab);
+            this.TabbedSettingsTabControl.Controls.Add(this.NotificationsTabPage);
+            this.TabbedSettingsTabControl.Controls.Add(this.TimeLanguage_Settings);
+            this.TabbedSettingsTabControl.Controls.Add(this.emailDefaults_Tab);
+            this.TabbedSettingsTabControl.Controls.Add(this.copyDefaults_Tab);
+            this.TabbedSettingsTabControl.Controls.Add(this.printDefaults_Tab);
+            this.TabbedSettingsTabControl.Controls.Add(this.faxDefaults_Tab);
+            this.TabbedSettingsTabControl.Controls.Add(this.folderDefaults_Tab);
+            this.TabbedSettingsTabControl.Controls.Add(this.jobDefaults_Tab);
+            this.TabbedSettingsTabControl.Controls.Add(this.usbDefaults_Tab);
+            this.TabbedSettingsTabControl.Controls.Add(this.quickSet_Tab);
+            this.TabbedSettingsTabControl.Controls.Add(this.webTroubleShootingTabbedControl);
+            this.TabbedSettingsTabControl.Controls.Add(this.speedDial_Tab);
+            this.TabbedSettingsTabControl.Controls.Add(this.manageTrays_Tab);
+            this.TabbedSettingsTabControl.Controls.Add(this.hpkInstall_Tab);
+            this.TabbedSettingsTabControl.Controls.Add(this.protocolsDefaults_Tab);
+            this.TabbedSettingsTabControl.Location = new System.Drawing.Point(3, 3);
+            this.TabbedSettingsTabControl.Name = "TabbedSettingsTabControl";
+            this.TabbedSettingsTabControl.SelectedIndex = 0;
+            this.TabbedSettingsTabControl.Size = new System.Drawing.Size(838, 677);
+            this.TabbedSettingsTabControl.TabIndex = 4;
+            // 
+            // emailDefaults_Tab
+            // 
+            this.emailDefaults_Tab.Controls.Add(this.emailSettingsControl);
+            this.emailDefaults_Tab.Location = new System.Drawing.Point(4, 24);
+            this.emailDefaults_Tab.Name = "emailDefaults_Tab";
+            this.emailDefaults_Tab.Padding = new System.Windows.Forms.Padding(3);
+            this.emailDefaults_Tab.Size = new System.Drawing.Size(830, 649);
+            this.emailDefaults_Tab.TabIndex = 3;
+            this.emailDefaults_Tab.Text = "Email Default";
+            this.emailDefaults_Tab.UseVisualStyleBackColor = true;
+            // 
+            // emailSettingsControl
+            // 
+            this.emailSettingsControl.Location = new System.Drawing.Point(29, 24);
+            this.emailSettingsControl.Name = "emailSettingsControl";
+            this.emailSettingsControl.Size = new System.Drawing.Size(712, 554);
+            this.emailSettingsControl.TabIndex = 0;
+            // 
+            // copyDefaults_Tab
+            // 
+            this.copyDefaults_Tab.Controls.Add(this.copyDefaultControl);
+            this.copyDefaults_Tab.Location = new System.Drawing.Point(4, 24);
+            this.copyDefaults_Tab.Name = "copyDefaults_Tab";
+            this.copyDefaults_Tab.Size = new System.Drawing.Size(830, 649);
+            this.copyDefaults_Tab.TabIndex = 5;
+            this.copyDefaults_Tab.Text = "Copy Default";
+            this.copyDefaults_Tab.UseVisualStyleBackColor = true;
+            // 
+            // copyDefaultControl
+            // 
+            this.copyDefaultControl.Location = new System.Drawing.Point(10, 24);
+            this.copyDefaultControl.Name = "copyDefaultControl";
+            this.copyDefaultControl.Size = new System.Drawing.Size(810, 584);
+            this.copyDefaultControl.TabIndex = 0;
+            // 
+            // printDefaults_Tab
+            // 
+            this.printDefaults_Tab.Controls.Add(this.printDefaultControl);
+            this.printDefaults_Tab.Location = new System.Drawing.Point(4, 24);
+            this.printDefaults_Tab.Name = "printDefaults_Tab";
+            this.printDefaults_Tab.Size = new System.Drawing.Size(830, 649);
+            this.printDefaults_Tab.TabIndex = 6;
+            this.printDefaults_Tab.Text = "Print Default";
+            this.printDefaults_Tab.UseVisualStyleBackColor = true;
+            // 
+            // printDefaultControl
+            // 
+            this.printDefaultControl.Location = new System.Drawing.Point(10, 24);
+            this.printDefaultControl.Name = "printDefaultControl";
+            this.printDefaultControl.Size = new System.Drawing.Size(608, 584);
+            this.printDefaultControl.TabIndex = 0;
+            // 
+            // faxDefaults_Tab
+            // 
+            this.faxDefaults_Tab.Controls.Add(this.faxDefaultControl);
+            this.faxDefaults_Tab.Location = new System.Drawing.Point(4, 24);
+            this.faxDefaults_Tab.Name = "faxDefaults_Tab";
+            this.faxDefaults_Tab.Padding = new System.Windows.Forms.Padding(3);
+            this.faxDefaults_Tab.Size = new System.Drawing.Size(830, 649);
+            this.faxDefaults_Tab.TabIndex = 11;
+            this.faxDefaults_Tab.Text = "Fax Default";
+            this.faxDefaults_Tab.UseVisualStyleBackColor = true;
+            // 
+            // faxDefaultControl
+            // 
+            this.faxDefaultControl.Location = new System.Drawing.Point(6, 3);
+            this.faxDefaultControl.Name = "faxDefaultControl";
+            this.faxDefaultControl.Size = new System.Drawing.Size(903, 628);
+            this.faxDefaultControl.TabIndex = 0;
+            // 
+            // folderDefaults_Tab
+            // 
+            this.folderDefaults_Tab.Controls.Add(this.folderDefaultControl);
+            this.folderDefaults_Tab.Location = new System.Drawing.Point(4, 24);
+            this.folderDefaults_Tab.Name = "folderDefaults_Tab";
+            this.folderDefaults_Tab.Size = new System.Drawing.Size(830, 649);
+            this.folderDefaults_Tab.TabIndex = 7;
+            this.folderDefaults_Tab.Text = "Folder Default";
+            this.folderDefaults_Tab.UseVisualStyleBackColor = true;
+            // 
+            // folderDefaultControl
+            // 
+            this.folderDefaultControl.Location = new System.Drawing.Point(3, 3);
+            this.folderDefaultControl.Name = "folderDefaultControl";
+            this.folderDefaultControl.Size = new System.Drawing.Size(824, 650);
+            this.folderDefaultControl.TabIndex = 0;
+            // 
+            // jobDefaults_Tab
+            // 
+            this.jobDefaults_Tab.Controls.Add(this.jobStorageDefaultControl);
+            this.jobDefaults_Tab.Location = new System.Drawing.Point(4, 24);
+            this.jobDefaults_Tab.Name = "jobDefaults_Tab";
+            this.jobDefaults_Tab.Size = new System.Drawing.Size(830, 649);
+            this.jobDefaults_Tab.TabIndex = 8;
+            this.jobDefaults_Tab.Text = "Job Storage";
+            this.jobDefaults_Tab.UseVisualStyleBackColor = true;
+            // 
+            // jobStorageDefaultControl
+            // 
+            this.jobStorageDefaultControl.Location = new System.Drawing.Point(10, 24);
+            this.jobStorageDefaultControl.Name = "jobStorageDefaultControl";
+            this.jobStorageDefaultControl.Size = new System.Drawing.Size(733, 517);
+            this.jobStorageDefaultControl.TabIndex = 0;
+            // 
+            // usbDefaults_Tab
+            // 
+            this.usbDefaults_Tab.Controls.Add(this.scanToUsbDefaultControl);
+            this.usbDefaults_Tab.Location = new System.Drawing.Point(4, 24);
+            this.usbDefaults_Tab.Name = "usbDefaults_Tab";
+            this.usbDefaults_Tab.Size = new System.Drawing.Size(830, 649);
+            this.usbDefaults_Tab.TabIndex = 9;
+            this.usbDefaults_Tab.Text = "Scan To Usb Default";
+            this.usbDefaults_Tab.UseVisualStyleBackColor = true;
+            // 
+            // scanToUsbDefaultControl
+            // 
+            this.scanToUsbDefaultControl.Location = new System.Drawing.Point(3, 3);
+            this.scanToUsbDefaultControl.Name = "scanToUsbDefaultControl";
+            this.scanToUsbDefaultControl.Size = new System.Drawing.Size(824, 593);
+            this.scanToUsbDefaultControl.TabIndex = 0;
+            // 
+            // quickSet_Tab
+            // 
+            this.quickSet_Tab.Controls.Add(this.quickSetControl);
+            this.quickSet_Tab.Location = new System.Drawing.Point(4, 24);
+            this.quickSet_Tab.Name = "quickSet_Tab";
+            this.quickSet_Tab.Padding = new System.Windows.Forms.Padding(3);
+            this.quickSet_Tab.Size = new System.Drawing.Size(830, 649);
+            this.quickSet_Tab.TabIndex = 4;
+            this.quickSet_Tab.Text = "QuickSets";
+            this.quickSet_Tab.UseVisualStyleBackColor = true;
+            // 
+            // quickSetControl
+            // 
+            this.quickSetControl.Location = new System.Drawing.Point(7, 16);
+            this.quickSetControl.Name = "quickSetControl";
+            this.quickSetControl.Size = new System.Drawing.Size(817, 538);
+            this.quickSetControl.TabIndex = 0;
+            // 
+            // webTroubleShootingTabbedControl
+            // 
+            this.webTroubleShootingTabbedControl.Controls.Add(this.webTroubleShootingControl);
+            this.webTroubleShootingTabbedControl.Location = new System.Drawing.Point(4, 24);
+            this.webTroubleShootingTabbedControl.Name = "webTroubleShootingTabbedControl";
+            this.webTroubleShootingTabbedControl.Padding = new System.Windows.Forms.Padding(3);
+            this.webTroubleShootingTabbedControl.Size = new System.Drawing.Size(830, 649);
+            this.webTroubleShootingTabbedControl.TabIndex = 10;
+            this.webTroubleShootingTabbedControl.Text = "Web/TroubleShooting";
+            this.webTroubleShootingTabbedControl.UseVisualStyleBackColor = true;
+            // 
+            // webTroubleShootingControl
+            // 
+            this.webTroubleShootingControl.Location = new System.Drawing.Point(3, 6);
+            this.webTroubleShootingControl.Name = "webTroubleShootingControl";
+            this.webTroubleShootingControl.Size = new System.Drawing.Size(607, 420);
+            this.webTroubleShootingControl.TabIndex = 0;
+            // 
+            // speedDial_Tab
+            // 
+            this.speedDial_Tab.Controls.Add(this.speedDailControl);
+            this.speedDial_Tab.Location = new System.Drawing.Point(4, 24);
+            this.speedDial_Tab.Name = "speedDial_Tab";
+            this.speedDial_Tab.Size = new System.Drawing.Size(830, 649);
+            this.speedDial_Tab.TabIndex = 5;
+            this.speedDial_Tab.Text = "Speed Dial Configuration";
+            this.speedDial_Tab.UseVisualStyleBackColor = true;
+            // 
+            // speedDailControl
+            // 
+            this.speedDailControl.Location = new System.Drawing.Point(10, 24);
+            this.speedDailControl.Name = "speedDailControl";
+            this.speedDailControl.Size = new System.Drawing.Size(810, 584);
+            this.speedDailControl.TabIndex = 0;
+            // 
+            // manageTrays_Tab
+            // 
+            this.manageTrays_Tab.Controls.Add(this.manageTraysControl);
+            this.manageTrays_Tab.Location = new System.Drawing.Point(4, 24);
+            this.manageTrays_Tab.Name = "manageTrays_Tab";
+            this.manageTrays_Tab.Padding = new System.Windows.Forms.Padding(3);
+            this.manageTrays_Tab.Size = new System.Drawing.Size(830, 649);
+            this.manageTrays_Tab.TabIndex = 0;
+            this.manageTrays_Tab.Text = "Manage Trays";
+            this.manageTrays_Tab.UseVisualStyleBackColor = true;
+            // 
+            // manageTraysControl
+            // 
+            this.manageTraysControl.Location = new System.Drawing.Point(0, 0);
+            this.manageTraysControl.Name = "manageTraysControl";
+            this.manageTraysControl.Size = new System.Drawing.Size(617, 460);
+            this.manageTraysControl.TabIndex = 0;
+            // 
+            // hpkInstall_Tab
+            // 
+            this.hpkInstall_Tab.Controls.Add(this.hpkInstallControl);
+            this.hpkInstall_Tab.Location = new System.Drawing.Point(4, 24);
+            this.hpkInstall_Tab.Name = "hpkInstall_Tab";
+            this.hpkInstall_Tab.Padding = new System.Windows.Forms.Padding(3);
+            this.hpkInstall_Tab.Size = new System.Drawing.Size(830, 649);
+            this.hpkInstall_Tab.TabIndex = 12;
+            this.hpkInstall_Tab.Text = "Hpk Install";
+            this.hpkInstall_Tab.UseVisualStyleBackColor = true;
+            // 
+            // hpkInstallControl
+            // 
+            this.hpkInstallControl.Location = new System.Drawing.Point(11, 11);
+            this.hpkInstallControl.Name = "hpkInstallControl";
+            this.hpkInstallControl.Size = new System.Drawing.Size(749, 556);
+            this.hpkInstallControl.TabIndex = 0;
+            // 
+            // protocolsDefaults_Tab
+            // 
+            this.protocolsDefaults_Tab.Controls.Add(this.protocolDefaultControl);
+            this.protocolsDefaults_Tab.Location = new System.Drawing.Point(4, 24);
+            this.protocolsDefaults_Tab.Name = "protocolsDefaults_Tab";
+            this.protocolsDefaults_Tab.Size = new System.Drawing.Size(830, 649);
+            this.protocolsDefaults_Tab.TabIndex = 13;
+            this.protocolsDefaults_Tab.Text = "Protocols Default";
+            this.protocolsDefaults_Tab.UseVisualStyleBackColor = true;
+            // 
+            // protocolDefaultControl
+            // 
+            this.protocolDefaultControl.Location = new System.Drawing.Point(13, 16);
+            this.protocolDefaultControl.Name = "protocolDefaultControl";
+            this.protocolDefaultControl.Size = new System.Drawing.Size(659, 556);
+            this.protocolDefaultControl.TabIndex = 0;
+            // 
+            // DeviceConfigurationConfigurationControl
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.TabbedSettingsTabControl);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name = "DeviceConfigurationConfigurationControl";
+            this.Size = new System.Drawing.Size(844, 683);
+            this.deviceSelection_Tab.ResumeLayout(false);
+            this.TimeLanguage_Settings.ResumeLayout(false);
+            this.NotificationsTabPage.ResumeLayout(false);
+            this.NotificationsTabPage.PerformLayout();
+            this.TabbedSettingsTabControl.ResumeLayout(false);
+            this.emailDefaults_Tab.ResumeLayout(false);
+            this.copyDefaults_Tab.ResumeLayout(false);
+            this.printDefaults_Tab.ResumeLayout(false);
+            this.faxDefaults_Tab.ResumeLayout(false);
+            this.folderDefaults_Tab.ResumeLayout(false);
+            this.jobDefaults_Tab.ResumeLayout(false);
+            this.usbDefaults_Tab.ResumeLayout(false);
+            this.quickSet_Tab.ResumeLayout(false);
+            this.webTroubleShootingTabbedControl.ResumeLayout(false);
+            this.speedDial_Tab.ResumeLayout(false);
+            this.manageTrays_Tab.ResumeLayout(false);
+            this.hpkInstall_Tab.ResumeLayout(false);
+            this.protocolsDefaults_Tab.ResumeLayout(false);
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private Framework.UI.FieldValidator fieldValidator;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.TabPage deviceSelection_Tab;
+        private Framework.UI.AssetSelectionControl assetSelectionControl;
+        private System.Windows.Forms.TabPage TimeLanguage_Settings;
+        private System.Windows.Forms.TabPage NotificationsTabPage;
+        private System.Windows.Forms.TabControl TabbedSettingsTabControl;
+        private System.Windows.Forms.CheckBox enablePassword_CheckBox;
+        private GeneralSettingsControl generalSettingsControl;
+        private System.Windows.Forms.TabPage emailDefaults_Tab;
+        private SettingsControls.EmailDefaultControl emailSettingsControl;
+        private SettingsControls.PasswordWindowsControl passwordWindowsControl;
+        private System.Windows.Forms.Label WarningLabel;
+        private System.Windows.Forms.TabPage quickSet_Tab;
+        private SettingsControls.QuickSetControl quickSetControl;
+        private System.Windows.Forms.TabPage copyDefaults_Tab;
+        private System.Windows.Forms.TabPage speedDial_Tab;
+        private SettingsControls.CopyDefaultControl copyDefaultControl;
+        private SettingsControls.SpeedDialControl speedDailControl;
+        private System.Windows.Forms.TabPage printDefaults_Tab;
+        private SettingsControls.PrintDefaultControl printDefaultControl;
+        private System.Windows.Forms.TabPage folderDefaults_Tab;
+        private SettingsControls.FolderDefaultControl folderDefaultControl;
+        private System.Windows.Forms.TabPage jobDefaults_Tab;
+        private SettingsControls.JobStorageDefaultControl jobStorageDefaultControl;
+        private System.Windows.Forms.TabPage usbDefaults_Tab;
+        private SettingsControls.ScanToUsbDefaultControl scanToUsbDefaultControl;
+        private System.Windows.Forms.TabPage webTroubleShootingTabbedControl;
+        private SettingsControls.WebTroubleShootingControl webTroubleShootingControl;
+        private System.Windows.Forms.TabPage faxDefaults_Tab;
+        private SettingsControls.FaxDefaultControl faxDefaultControl;
+        private System.Windows.Forms.TabPage manageTrays_Tab;
+        private SettingsControls.ManageTraysControl manageTraysControl;
+        private System.Windows.Forms.TabPage hpkInstall_Tab;
+        private SettingsControls.HpkInstallControl hpkInstallControl;
+        private System.Windows.Forms.TabPage protocolsDefaults_Tab;
+        private SettingsControls.ProtocolDefaultControl protocolDefaultControl;
+    }
+}

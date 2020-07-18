@@ -1,0 +1,2749 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ScalableTestFramework" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="RibbonOfficeButtonFillNormal,RoundRect3Right">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarApplicationButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="OfficeButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonOfficeButtonFillHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarApplicationButton.MouseOver.ActionPart">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="OfficeButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonOfficeButtonFillHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarApplicationButton.MouseOver.ArrowPart">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="OfficeButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadQuickAccessToolBar">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="QuickAccessToolBarFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadQuickAccessToolBar">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="QuickAccesstBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarButtonElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInRibbonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarButtonElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInRibbonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemFillSelected">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem.Selected">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabItemBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="10-5-10-5Padding">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Shape" Value="Telerik.WinControls.UI.TabOffice12Shape" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ShouldPaint" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.LeftShadowInnerColor1" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.LeftShadowInnerColor2" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.LeftShadowOuterColor1" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.LeftShadowOuterColor2" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.RightShadowInnerColor1" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.RightShadowInnerColor2" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.RightShadowOuterColor1" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.RightShadowOuterColor2" Value="Transparent" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="10-5-10-5Padding">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Shape" Value="Telerik.WinControls.UI.TabOffice12Shape" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ShouldPaint" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.RightShadowInnerColor1" Value="211, 220, 233" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.RightShadowInnerColor2" Value="208, 217, 231" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.RightShadowOuterColor1" Value="221, 231, 243" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.RightShadowOuterColor2" Value="218, 228, 239" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.LeftShadowInnerColor1" Value="211, 220, 233" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.LeftShadowInnerColor2" Value="208, 217, 231" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.LeftShadowOuterColor1" Value="221, 231, 243" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.LeftShadowOuterColor2" Value="218, 228, 239" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripLeftButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripLeftButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripLeftButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripLeftButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RepeatScrollButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripLeftButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RepeatScrollButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripLeftButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RepeatScrollButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripRightButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripRightButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripRightButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripRightButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RepeatScrollButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripRightButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RepeatScrollButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripRightButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RepeatScrollButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripUpButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripUpButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripUpButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripUpButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RepeatScrollButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripUpButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RepeatScrollButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripUpButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RepeatScrollButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripDownButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripDownButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripDownButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripDownButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RepeatScrollButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripDownButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RepeatScrollButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabStripDownButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RepeatScrollButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonTabMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem.Selected.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabItemBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="1, 1, 1, 1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DialogButtonClass" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadToggleButtonElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonTabBorderSelectedNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem.Selected">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabItemBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadToggleButtonElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadButtonElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInRibbonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadButtonElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInRibbonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=Intermediate">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=Intermediate">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBackgroundNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBackGround" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBackgroundHoverNotChecked">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBackGround" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBackgroundNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBackGround" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBorderChecked">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBorderNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBackgroundHoverNotChecked">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBackGround" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInRibbonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadGalleryItem">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryItemSelectionFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadGalleryItem">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryItemSelectionBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Shape" Value="Telerik.WinControls.RoundRectShape|5" />
+              <XmlPropertySetting Property="Telerik.WinControls.RootRadElement.ApplyShapeToControl" Value="True" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="RibbonBarGroupDropDownRoot" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ControlBorderDark">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="10" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Shape" Value="Telerik.WinControls.RoundRectShape|6" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="RibbonBarGroupDropDownRoot">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RibbonBarGroupDropDownBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="GalleryShowPopupImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GalleryPopupButtonButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="GalleryDownButtonImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GalleryDownButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup.IsAtEndIndex">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInRibbonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup.GroupOrientationVertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInRibbonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup.IsAtEndIndex.GroupOrientationVertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInRibbonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Windows7GrayGradient">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.SizeGripElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GripFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlClassSelector ElementClass="GripNS">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GripItemFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlClassSelector ElementClass="GripNS">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GripItemBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="GripNSImage">
+            <Selectors>
+              <XmlClassSelector ElementClass="GripNS">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GripNSImage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="GripNSEWImage">
+            <Selectors>
+              <XmlClassSelector ElementClass="GripNSEW">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GripNSEWImage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlClassSelector ElementClass="GripNSEW">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GripItemFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlClassSelector ElementClass="GripNSEW">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GripItemBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SizingGripBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.SizeGripElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GripBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteFill">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadGalleryGroupItem">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryGroupBodyFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteFill">
+            <Selectors>
+              <XmlClassSelector ElementClass="RadGalleryPopupScrollViewer">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadGalleryPopupScrollViewerFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ControlBorderNormal">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="RadGalleryPopupScrollViewer">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadScrollViewBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 0, 4, 3" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="MDI control box" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonOfficeButtonFillHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarApplicationButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="OfficeButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonOfficeButtonFillHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarApplicationButton.DropDownOpened">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="OfficeButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll1">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Alignment" Value="TopLeft" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.MaxSize" Value="0, 19" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickAccessOverflowButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadQuickAccessToolBar+InnerItem">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="InnerItemFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CollapsedBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadQuickAccessToolBar+InnerItem">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="InnerItemBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickAccessOverflowButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="overFlowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickAccessOverflowButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="overFlowBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.OverflowPrimitive.ShadowColor" Value="Transparent" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickAccessOverflowButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="overFlowButton" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickAccessOverflowButton.MouseOver.ActionPart">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="overFlowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickAccessOverflowButton.MouseOver.ArrowPart">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="overFlowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickAccessOverflowButton.MouseOver.ArrowPart">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="overFlowBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickAccessOverflowButton.MouseOver.ActionPart">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="overFlowBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickAccessOverflowButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="overFlowBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickAccessOverflowButton.DropDownOpened">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="overFlowBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickAccessOverflowButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="overFlowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickAccessOverflowButton.DropDownOpened">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="overFlowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarButtonElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="0380Margin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadRibbonBarElement.IsRibbonFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SystemButtonsStackLayout" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MinimizeButtonImageNormal,3333Padding">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMDIMinimizeButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RestoreButtonImageNormal,3333Padding">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMDIMaximizeButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CloseButtonImageNormal,3333Padding">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMDICloseButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMDIMinimizeButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMDIMinimizeButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMDIMinimizeButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMDIMaximizeButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMDIMaximizeButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMDIMaximizeButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMDICloseButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMDICloseButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMDICloseButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMDICloseButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMDICloseButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMDIMaximizeButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMDIMaximizeButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMDIMinimizeButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMDIMinimizeButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMDIMinimizeButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMDIMaximizeButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMDICloseButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonTabBorderSelectedNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem.Selected.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabItemBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonTabMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabItemBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemFillSelected">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem.Selected.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemFillSelected">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem.Selected.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Shape" Value="Telerik.WinControls.UI.TabOffice12Shape" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.LeftShadowInnerColor1" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.LeftShadowInnerColor2" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.LeftShadowOuterColor1" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.LeftShadowOuterColor2" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.RightShadowInnerColor1" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.RightShadowInnerColor2" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.RightShadowOuterColor1" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.RightShadowOuterColor2" Value="Transparent" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonTabBaseBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadTabStripElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabBaseBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonTabBaseFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadTabStripElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabBaseFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadRibbonBarGroup">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ChunkCaptionFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CollapsedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadRibbonBarGroup">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="BodyBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="2222Padding">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Shape" Value="(none)" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadRibbonBarGroup" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonTabStripHeadFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, -1, 0, 2" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadTabStripElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabHeadFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonTitleBarFillNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadRibbonBarElement.IsRibbonFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RibbonCaptionFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonTitleBarFillInactive">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadRibbonBarElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RibbonCaptionFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DialogButtonClass">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DialogButtonClass.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DialogButtonClass.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DialogButtonClass">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DialogButtonClass.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DialogButtonClass.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadButtonElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadButtonElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInRibbonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadButtonElement.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInRibbonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadButtonElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInRibbonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadButtonElement.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInRibbonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInRibbonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInRibbonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup.MouseOver.IsAtEndIndex">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInRibbonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup.MouseDown.IsAtEndIndex">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInRibbonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup.MouseDown.GroupOrientationVertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInRibbonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup.MouseOver.GroupOrientationVertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInRibbonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup.MouseDown.IsAtEndIndex.GroupOrientationVertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInRibbonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup.MouseOver.IsAtEndIndex.GroupOrientationVertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInRibbonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInGroupBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInGroupBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInGroupBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup.IsAtEndIndex">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInGroupBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup.MouseDown.IsAtEndIndex">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInGroupBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup.MouseOver.IsAtEndIndex">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInGroupBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup.IsAtEndIndex" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonGroupFillHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadRibbonBarGroup.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RibbonBarGroupMainFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadRibbonBarGroup">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ChunkBodyFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CollapsedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonGroupDropDownButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GroupDropDownButtonInnerBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonTabBaseFill">
+            <Selectors>
+              <XmlClassSelector ElementClass="RibbonBarGroupDropDownRoot">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RibbonBarGroupDropDownFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GalleryPopupButtonButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GalleryPopupButtonButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GalleryPopupButtonButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GalleryUpButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GalleryUpButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GalleryUpButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GalleryDownButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GalleryDownButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GalleryDownButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonTabBaseFill">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadMenuElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="MenuFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadGalleryItem.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryItemSelectionBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadGalleryItem.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryItemSelectionBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadGalleryItem.IsSelected">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryItemSelectionBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadGalleryItem.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryItemSelectionFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadGalleryItem.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryItemSelectionFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadGalleryItem.IsSelected">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryItemSelectionFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarButtonElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInRibbonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarButtonElement.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInRibbonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarButtonElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInRibbonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarButtonElement.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInRibbonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MaxSize023,MinSize6023">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="3, 34, 3, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarApplicationButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ApplicationButtonBorderNormal,RoundRect3Right">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarApplicationButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="OfficeButtonInnerBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ApplicationButtonBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarApplicationButton.MouseOver.ActionPart">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="OfficeButtonInnerBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ApplicationButtonBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarApplicationButton.MouseOver.ArrowPart">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="OfficeButtonInnerBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ApplicationButtonBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarApplicationButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="OfficeButtonInnerBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ApplicationButtonBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarApplicationButton.DropDownOpened">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="OfficeButtonInnerBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ApplicationButtonImage">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.ImageAlignment" Value="MiddleCenter" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="OfficeButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonGroupFillHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadRibbonBarGroup.ContainsMouse">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RibbonBarGroupMainFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadToggleButtonElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadToggleButtonElement.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadToggleButtonElement.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadToggleButtonElement.ToggleState=On.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadToggleButtonElement.ToggleState=On.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadToggleButtonElement.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadToggleButtonElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadToggleButtonElement.ToggleState=On.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadToggleButtonElement.ToggleState=On.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadToggleButtonElement.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonGroupOuterBorder,RibbonGroupBorderMargin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadRibbonBarGroup">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RibbonBarChunkBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup.GroupOrientationVertical" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup.IsAtEndIndex.GroupOrientationVertical" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup.GroupOrientationVertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInGroupBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup.IsAtEndIndex.GroupOrientationVertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInGroupBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup.MouseOver.GroupOrientationVertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInGroupBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup.MouseDown.GroupOrientationVertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInGroupBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup.MouseOver.IsAtEndIndex.GroupOrientationVertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInGroupBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ButtonInRibbonButtonGroup.MouseDown.IsAtEndIndex.GroupOrientationVertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonInGroupBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadToggleButtonElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadToggleButtonElement.ToggleState=On" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadToggleButtonElement.ToggleState=Intermediate" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadRibbonBarButtonGroup">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonGroupFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoShape">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadRibbonBarButtonGroup" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="0380Margin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadRibbonBarElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SystemButtonsStackLayout" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadRibbonBarButtonGroup">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonGroupBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonGroupSeparatorBorderHorizontal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarGroupSeparator">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SeparatorPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonGroupSeparatorBorderHorizontal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarGroupSeparator.HorizontalOrientation">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SeparatorPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonGroupSeparatorBorderVertical">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarGroupSeparator.VerticalOrientation">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SeparatorPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="DropDownButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.MouseOver.ActionPart">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.MouseOver.ArrowPart">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.DropDownOpened">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.MouseOver.ActionPart">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.MouseOver.ArrowPart">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.DropDownOpened">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.MouseOver.ActionPart">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="DropDownButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.MouseOver.ArrowPart">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="DropDownButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="DropDownButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.DropDownOpened">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="DropDownButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CollapsedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadRepeatButtonElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadRepeatButtonElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadRepeatButtonElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadRepeatButtonElement.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadRepeatButtonElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadRepeatButtonElement.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll2">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadRepeatButtonElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBackgroundHoverNotChecked">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBackGround" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="EmptyMargin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadQuickAccessToolBar.IsBelowRibbon" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadQuickAccessToolBar.IsBelowRibbon">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="QuickAccesstBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadRibbonBarGroup">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RibbonBarGroupMainFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonTabBaseFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadTabStripElement.IsRibbonFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabBaseFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonTabBaseBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadTabStripElement.IsRibbonFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabBaseBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonTabStripHeadFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadTabStripElement.IsRibbonFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TabHeadFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.LeftShadowInnerColor2" Value="80, 203, 199, 177" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.LeftShadowInnerColor1" Value="80, 217, 212, 189" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.LeftShadowOuterColor2" Value="219, 223, 222" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.LeftShadowOuterColor1" Value="221, 229, 236" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.RightShadowInnerColor1" Value="217, 217, 204" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.RightShadowInnerColor2" Value="203, 199, 177" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.RightShadowOuterColor1" Value="221, 229, 236" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonTab.RightShadowOuterColor2" Value="219, 223, 222" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TabItem.Selected.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonGroupFill">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadRibbonBarButtonGroup">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonGroupFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonGroupBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadRibbonBarButtonGroup">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonGroupBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="115, 131, 153" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadRibbonBarGroup">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RibbonBarChunkCaption" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonGalleryBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadGalleryElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="InribbonGalleryBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonGalleryFill">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadGalleryElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="InribbonGalleryFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GalleryDownButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryDownButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="GalleryUpButtonImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GalleryUpButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GalleryUpButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryUpButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GalleryUpButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryUpButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GalleryUpButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryUpButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GalleryPopupButtonButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryPopupButtonButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GalleryPopupButtonButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryPopupButtonButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GalleryPopupButtonButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryPopupButtonButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GalleryDownButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryDownButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GalleryDownButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GalleryDownButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Windows7Font8.25AndForeColor">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MinimizeButtonImageNormal,8383Padding,RoundRectShapeAll2,2020Margin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMinimizeButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMinimizeButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMinimizeButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MaximizeButtonImage,8383Padding,RoundRectShapeAll2,2020Margin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMaximizeButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMaximizeButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMaximizeButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CloseButtonImageNormal,8383Padding,RoundRectShapeAll2,2020Margin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonCloseButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="FormCloseButtonActiveNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonCloseButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonCloseButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMinimizeButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMinimizeButton.MouseOver.FormMaximized">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMinimizeButton.MouseOver.FormNormal">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMinimizeButton.MouseDown.FormNormal">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMinimizeButton.MouseDown.FormMaximized">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMinimizeButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMinimizeButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMinimizeButton.MouseOver.FormMaximized">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMinimizeButton.MouseOver.FormNormal">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMinimizeButton.MouseDown.FormMaximized">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMinimizeButton.MouseDown.FormNormal">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMinimizeButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMaximizeButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMaximizeButton.MouseOver.FormNormal">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMaximizeButton.MouseOver.FormMaximized">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMaximizeButton.MouseDown.FormNormal">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMaximizeButton.MouseDown.FormMaximized">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMaximizeButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMaximizeButton.MouseDown.FormMaximized">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMaximizeButton.MouseDown.FormNormal">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMaximizeButton.MouseOver.FormMaximized">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMaximizeButton.MouseOver.FormNormal">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMaximizeButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMaximizeButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonCloseButton.MouseOver.FormMaximized">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonCloseButton.MouseOver.FormNormal">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonCloseButton.MouseDown.FormMaximized">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonCloseButton.MouseDown.FormNormal">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonCloseButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonCloseButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonCloseButton.MouseOver.FormMaximized">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonCloseButton.MouseOver.FormNormal">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonCloseButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonCloseButton.MouseDown.FormMaximized">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonCloseButton.MouseDown.FormNormal">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarCloseButtonPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonCloseButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadRibbonBarElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RibbonCaptionBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadRibbonBarElement.IsRibbonFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RibbonCaptionBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CollapsedBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadMenuElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="MenuBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMaximizeButton.FormMaximized">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TitleBarButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMaximizeButton.FormMaximized">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CaptionButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="8383Padding,RoundRectShapeAll2,2020Margin,RestoreButtonImageNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonMaximizeButton.FormMaximized" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonGroupDropDownButtonBorderNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonGroupDropDownButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GroupDropDownButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonGroupDropDownButtonFillNormal,NoShape">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonGroupDropDownButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonGroupFillHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonGroupDropDownButton.MouseOver.ActionPart">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonGroupFillHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonGroupDropDownButton.MouseOver.ArrowPart">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonGroupDropDownButtonFillPressed,NoShape">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonGroupDropDownButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonGroupDropDownButtonFillPressed,NoShape">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonGroupDropDownButton.DropDownOpened">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeAll1">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonGroupDropDownButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="EmptyMargin">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadQuickAccessToolBar.IsBelowRibbon.RightToLeft" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Margin(0;0;-60;0)">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 2, 2, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadQuickAccessToolBar.RightToLeft" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadQuickAccessToolBar.IsBelowRibbon">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="QuickAccessToolBarFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadQuickAccessToolBar.RightToLeft">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="QuickAccessToolBarFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadQuickAccessToolBar.IsBelowRibbon.RightToLeft">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="QuickAccessToolBarFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadQuickAccessToolBar.RightToLeft">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="QuickAccesstBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadQuickAccessToolBar.IsBelowRibbon.RightToLeft">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="QuickAccesstBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonBarExpandArrowUp,Padding(4;4;4;4)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarExpandButton.ToggleState=On" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonBarExpandArrowDown,Padding(4;4;4;4)">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 0, 0, 3" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarExpandButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarExpandButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarExpandButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarExpandButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarExpandButton.ToggleState=On.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarExpandButton.ToggleState=On.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarExpandButton.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarExpandButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarExpandButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarExpandButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemPressedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarExpandButton.ToggleState=On.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonItemHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarExpandButton.ToggleState=On.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarExpandButton.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Padding(4;4;4;4),RibbonBarExpandArrowDown">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarExpandButton.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Padding(4;4;4;4),RibbonBarExpandArrowDown">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarExpandButton.Pressed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Padding(4;4;4;4),RibbonBarExpandArrowUp">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarExpandButton.ToggleState=On.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Padding(4;4;4;4),RibbonBarExpandArrowUp">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarExpandButton.ToggleState=On.Pressed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonPageViewFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 1, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonTabStripElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonTabStripHeadFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="63, 0, 63, -1" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="10" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewItemContainer" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonTabBaseFill,RibbonTabBaseBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 0, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadPageViewContentAreaElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="10-5-10-5Padding,TransparentFill,TransparentBorder(OuterInner),RibbonTabShape">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonTab" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="10-5-10-5Padding,TabItemFillSelected,RibbonTabBorderSelectedNormal,RibbonTabShape">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonTab.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemFillSelected,10-5-10-5Padding">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonTab.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TabItemFillSelected,10-5-10-5Padding,RibbonTabMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonTab.Selected.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonTabBorderSelectedNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonTab.Selected.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RibbonTabMouseOverBorder,RibbonTabShape">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonTab.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckmarkIndeterminate">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=Intermediate">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBackGround" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckmarkIndeterminate">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=Intermediate.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBackGround" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBorderChecked">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=Intermediate">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=Intermediate.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=Intermediate.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadCheckBoxCheckPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadCheckBoxCheckPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadCheckBoxCheckPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadCheckBoxCheckPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadCheckBoxCheckPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadCheckBoxCheckPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Transparent" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=Intermediate">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadCheckBoxCheckPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Transparent" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=Intermediate.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadCheckBoxCheckPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Transparent" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=Intermediate.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadCheckBoxCheckPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckmarkIndeterminate">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=Intermediate.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBackGround" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkBackgroundHoverNotChecked">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBackGround" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 2, 0, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.StretchVertically" Value="True" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="InnerItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 4, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ButtonsContainer" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarHelpButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonBarHelpButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 4, 0, 6" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="SystemButtonsContainer" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="2, 2, 0, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="0, 20" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadQuickAccessToolBar" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.StretchVertically" Value="True" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="InnerItemsLayout" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadRibbonBar" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadRibbonBarGroupDropDownMenu" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadGalleryMenu" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadRibbonBar" ElementType="Telerik.WinControls.UI.RadButtonElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>
